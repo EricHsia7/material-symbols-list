@@ -46,7 +46,7 @@ async function main() {
   for (var key in json) {
     list.push(key);
   }
-  const inputString = list.join(',');
+  const inputString = JSON.stringify({ list: list.join(',') });
   // Compress the input string using pako
   const compressedData = pako.gzip(inputString);
   // Save the compressed data to a .gz file
