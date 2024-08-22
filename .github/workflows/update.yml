@@ -1,12 +1,14 @@
-name: HTML to PDF Workflow # The name of the workflow
+name: Update # The name of the workflow
 on:
+  schedule:
+    - cron: '0 0 * * 1'  # Runs every Monday at midnight
   workflow_dispatch:
   push:
     branches:
       - main
 
 jobs: 
-  build: # The name of the job
+  update: # The name of the job
     runs-on: ubuntu-latest # The type of runner to use
     steps: 
       - name: Check out repository code # The name of the step
@@ -17,7 +19,7 @@ jobs:
           node-version: '20.x' # The version of Node.js to use
       - name: Install dependencies
         run: npm install # The command to run
-      - name: Build
+      - name: Update
         run: node index.js
       - name: Deploy with gh-pages
         run: |
