@@ -46,12 +46,18 @@ async function main() {
   for (var key in json) {
     list.push(key);
   }
-  const inputString = JSON.stringify({ list: list.join(',') });
+  // Generate JSON
+  const jsonString = JSON.stringify({ list: list.join(',') });
   // Compress the input string using pako
-  const compressedData = pako.gzip(inputString);
+  const compressedData = pako.gzip(jsonString);
   // Save the compressed data to a .gz file
   await makeDirectory('./dist');
   await fs.promises.writeFile('./dist/index.gz', Buffer.from(compressedData));
+
+  // Generate typescript type
+  const typeString = `export type MaterialSymbols = ${list.map((e) => `'${e}'`).join(' | ')}`;
+  await fs.promises.writeFile('./dist/type.ts', typeString);
+
   process.exit(0);
 }
 
