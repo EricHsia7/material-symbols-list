@@ -55,7 +55,7 @@ async function main() {
   await fs.promises.writeFile('./dist/index.gz', Buffer.from(compressedData));
 
   // Generate typescript type
-  const typeString = `export type MaterialSymbols = ${list.map((e) => `'${e}'`).join(' | ')}`;
+  const typeString = `export type MaterialSymbols = ${list.map((e) => `'${e}'`).join('\n | ')}`;
   await fs.promises.writeFile('./dist/type.ts', typeString);
 
   process.exit(0);
