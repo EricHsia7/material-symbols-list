@@ -41,9 +41,9 @@ jobs:
       
       - name: Add tags
         run: python tag.py
-      
-      - name: Remove deleted symbols
-        run: node remove-deleted-symbols.js
+
+      - name: Merge tags
+        run: zip -ru tags.zip ./tags
       
       - name: Update versions.json
         run: cp -f "./tmp/versions.json" "versions.json"
@@ -51,6 +51,6 @@ jobs:
       - name: Deploy with gh-pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npx gh-pages -a -d tags -e tags -u "github-actions-bot <support+actions@github.com>" -b main
+          npx gh-pages -a -d tags.zip -e tags.zip -u "github-actions-bot <support+actions@github.com>" -b main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
