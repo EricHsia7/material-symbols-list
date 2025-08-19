@@ -27,6 +27,9 @@ jobs:
       - name: Install Python dependencies
         run: pip install openai-clip torch torchvision pillow
 
+      - name: Create temporary directory
+        run: mkdir ./tmp
+
       - name: Fetch versions.json
         run: curl "https://raw.githubusercontent.com/marella/material-symbols/refs/heads/main/metadata/versions.json" -o "./tmp/versions.json"
       

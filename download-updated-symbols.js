@@ -1,23 +1,6 @@
-async function makeDirectory(path) {
-  // Check if the path already exists
-  try {
-    await fs.promises.access(path);
-    // If there is no error, it means the path already exists
-    console.log('Given directory already exists!');
-  } catch (error) {
-    // If there is an error, it means the path does not exist
-    // Try to create the directory
-    try {
-      await fs.promises.mkdir(path, { recursive: true });
-      // If there is no error, log a success message
-      console.log('New directory created successfully!');
-    } catch (error) {
-      // If there is an error, log it
-      console.error(error);
-      process.exit(1);
-    }
-  }
-}
+const fs = require('fs');
+const path = require('path');
+const { makeDirectory, makeFile } = require('./files.js');
 
 async function main() {
   const outputDir = './tmp/updated/';
@@ -53,7 +36,7 @@ async function main() {
       const outputPath = path.join(outputDir, `${symbolName}.svg`);
 
       // Save the SVG content to the file, overwriting if it exists
-      await fs.writeFile(outputPath, svgContent, 'utf8');
+      await makeFile(outputPath, svgContent);
 
       console.log(`SVG successfully downloaded to: ${outputPath}`);
     } catch (error) {

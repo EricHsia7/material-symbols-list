@@ -3,6 +3,7 @@ from PIL import Image
 import json
 import time
 import re
+import os
 
 def get_class_descriptions():
   result = set()

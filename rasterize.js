@@ -43,7 +43,7 @@ async function rasterize(filePath, outputDir, size = 128, scale = 3) {
 async function main() {
   const outputDir = './tmp/rasterized/';
   await makeDirectory(outputDir);
-  const files = await getFiles('./tmp/updated/');
+  const files = await getFiles('./tmp/updated/', 'svg');
   for (const file of files) {
     await rasterize(file.path.full, outputDir);
     console.log(`Successfully rasterized ${file.path.name}.`);
