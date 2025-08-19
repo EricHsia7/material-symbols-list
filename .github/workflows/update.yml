@@ -43,14 +43,14 @@ jobs:
         run: python tag.py
 
       - name: Merge tags
+        run: zip -ru tags.zip ./tags
+      
+      - name: Separate changed files
         run: |
-          zip -ru tags.zip ./tags
-          mkdir -p ./deploy
-          cp -f tags.zip ./deploy/tags.zip
-      
-      - name: Update versions.json
-        run: cp -f "./tmp/versions.json" "versions.json"
-      
+          mkdir -p "./deploy"
+          cp -f "tags.zip" "./deploy/tags.zip"
+          cp -f "./tmp/versions.json" "./deploy/versions.json"
+
       - name: Deploy with gh-pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
