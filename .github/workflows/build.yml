@@ -18,6 +18,9 @@ jobs:
 
       - name: Install Node dependencies
         run: npm install
+
+      - name: Unzip tags
+        run: unzip tags.zip -d tags
       
       - name: Build
         run: node build.js
