@@ -1,11 +1,8 @@
-name: Update # The name of the workflow
+name: Update
 on:
   schedule:
     - cron: '0 0 * * 1'  # Runs every Monday at midnight
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 jobs: 
   update: # The name of the job
@@ -13,14 +10,39 @@ jobs:
     steps: 
       - name: Check out repository code # The name of the step
         uses: actions/checkout@v4 # The action to use
-      - name: Setup Node.js environment
+
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20.x' # The version of Node.js to use
-      - name: Install dependencies
-        run: npm install # The command to run
-      - name: Update
-        run: node index.js
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Node dependencies
+        run: npm install
+
+      - name: Install Python dependencies
+        run: pip install openai-clip torch torchvision pillow
+
+      - name: Fetch versions.json
+        run: curl "https://raw.githubusercontent.com/marella/material-symbols/refs/heads/main/metadata/versions.json" -o "./tmp/versions.json"
+      
+      - name: Download updated symbols
+        run: node download-updated-symbols.js
+      
+      - name: Rasterize
+        run: node rasterize.js
+      
+      - name: Add tags
+        run: python tag.py
+      
+      - name: Update versions.json
+        run: |
+          cp -f "./tmp/versions.json" "versions.json"
+
       - name: Deploy with gh-pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
