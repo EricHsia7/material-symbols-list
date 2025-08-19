@@ -48,12 +48,9 @@ jobs:
       - name: Update versions.json
         run: cp -f "./tmp/versions.json" "versions.json"
       
-      - name: Remove temporary files
-        run: rm -rf "./tmp"
-      
       - name: Deploy with gh-pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npx gh-pages -a -u "github-actions-bot <support+actions@github.com>" -b process
+          npx gh-pages -a -d tags -e tags -u "github-actions-bot <support+actions@github.com>" -b main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
