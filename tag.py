@@ -21,7 +21,8 @@ model, preprocess = clip.load("ViT-B/32", device=device)
 
 class_descriptions = get_class_descriptions()
 text_inputs = torch.cat([clip.tokenize(desc) for desc in class_descriptions]).to(device)
-with torch.no_grad:
+
+with torch.no_grad():
   text_features = model.encode_text(text_inputs)
   text_features = text_features / text_features.norm(dim=-1, keepdim=True)
 
