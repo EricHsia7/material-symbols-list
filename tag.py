@@ -70,6 +70,4 @@ def main(input_dir="./tmp/rasterized", output_dir="./tags"):
                 for item in result_list:
                     f.write(str(item) + "\n")
 
-            print(f"Successfully tagged {filename}.")
-
 main()
