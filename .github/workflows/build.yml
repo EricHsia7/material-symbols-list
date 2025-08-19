@@ -1,9 +1,8 @@
 name: Build
 on:
+  schedule:
+    - cron: '0 0 * * 2'
   workflow_dispatch:
-  push:
-    branches:
-      - process
 
 jobs: 
   build: # The name of the job
