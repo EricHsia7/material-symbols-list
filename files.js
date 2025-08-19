@@ -22,7 +22,7 @@ async function makeDirectory(path) {
   }
 }
 
-async function makeFile(path, content) {
+async function writeTextFile(path, content) {
   try {
     await fs.promises.writeFile(path, content, { encoding: 'utf8' });
     return `File "${path}" created successfully!`;
@@ -118,7 +118,7 @@ async function moveFile(source, destination) {
 
 module.exports = {
   makeDirectory,
-  makeFile,
+  writeTextFile,
   renameFile,
   removeDirectory,
   copyFile,

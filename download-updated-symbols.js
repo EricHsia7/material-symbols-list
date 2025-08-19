@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { makeDirectory, makeFile } = require('./files.js');
+const { makeDirectory, writeTextFile } = require('./files.js');
 
 async function main() {
   const outputDir = './tmp/updated/';
@@ -36,7 +36,7 @@ async function main() {
       const outputPath = path.join(outputDir, `${symbolName}.svg`);
 
       // Save the SVG content to the file, overwriting if it exists
-      await makeFile(outputPath, svgContent);
+      await writeTextFile(outputPath, svgContent);
 
       console.log(`SVG successfully downloaded to: ${outputPath}`);
     } catch (error) {
