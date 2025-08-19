@@ -39,6 +39,9 @@ jobs:
       - name: Add tags
         run: python tag.py
       
+      - name: Remove deleted symbols
+        run: remove-deleted-symbols.js
+      
       - name: Update versions.json
         run: |
           cp -f "./tmp/versions.json" "versions.json"
