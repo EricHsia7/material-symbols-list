@@ -17,7 +17,7 @@ def get_class_descriptions():
   return list(result)
 
 device = "cpu"
-model, preprocess = clip.load("ViT-B/32", device=device)
+model, preprocess = clip.load("ViT-B/16", device=device)
 
 class_descriptions = get_class_descriptions()
 text_inputs = torch.cat([clip.tokenize(desc) for desc in class_descriptions]).to(device)
