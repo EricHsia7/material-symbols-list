@@ -43,7 +43,7 @@ jobs:
         run: python tag.py
 
       - name: Merge tags
-        run: zip -ru tags.zip ./tags
+        run: zip -ru tags.zip ./tags # -x "*.DS_Store"
       
       - name: Separate changed files
         run: |
