@@ -12,7 +12,7 @@ def get_class_descriptions():
     for symbol_name in data:
       words = symbol_name.split("_")
       for word in words:
-        if len(word) > 3:
+        if len(word) > 1:
           result.add(word)
   return list(result)
 
