@@ -34,7 +34,7 @@ def tag_image(file_path):
     image_features = image_features / image_features.norm(dim=-1, keepdim=True)
 
     similarities = (100.0 * image_features @ text_features.T).softmax(dim=-1)
-    values, indices = similarities[0].topk(32)
+    values, indices = similarities[0].topk(128)
     result = []
     for idx, val in zip(indices, values):
       result.append(class_descriptions[idx])
@@ -43,7 +43,7 @@ def tag_image(file_path):
     text_features_1 = model.encode_text(text_inputs_1)
 
     similarities_2 = (100.0 * image_features @ text_features_1.T).softmax(dim=-1)
-    values_2, indices_2 = similarities_2[0].topk(8)
+    values_2, indices_2 = similarities_2[0].topk(16)
     result_2 = []
     for idx, val in zip(indices_2, values_2):
       result_2.append(result[idx])
