@@ -4,7 +4,6 @@ const { makeDirectory, writeTextFile, getFiles, readFile } = require('./files.js
 const pako = require('pako');
 
 async function main() {
-  const latestVersions = require('./tmp/versions.json');
   const outputDir = './dist';
   await makeDirectory(outputDir);
   const files = await getFiles('./tags/');
@@ -13,7 +12,6 @@ async function main() {
   for (const file of files) {
     const extension = path.extname(file.path.name);
     const symbolName = path.basename(file.path.name, extension);
-    if (!latestVersions.hasOwnProperty(symbolName)) continue;
     const content = await readFile(file.path.full);
     const fileNameWords = symbolName.split('_');
     const fileContentWords = content.split(/\n/g).filter((e) => e !== '');
