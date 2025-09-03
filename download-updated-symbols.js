@@ -10,7 +10,7 @@ async function main() {
 
   for (const symbolName in latestVersions) {
     if (versions.hasOwnProperty(symbolName)) {
-      if (latestVersions[symbolName] !== versions[symbolName]) {
+      if (latestVersions.hasOwnProperty(symbolName) && latestVersions[symbolName] !== versions[symbolName]) {
         updated.push(symbolName);
       }
     } else {
