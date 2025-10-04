@@ -30,6 +30,6 @@ The repository automatically updates using the following workflow:
 
 1. Pull latest SVG files from [@marella/material-symbols](https://github.com/marella/material-symbols)
 2. Convert SVG files to PNG format for raster applications
-3. Generate semantic tags using CLIP model ([@openai/CLIP](https://github.com/openai/CLIP))
+3. Pair icons with semantic tags using CLIP model ([@openai/CLIP](https://github.com/openai/CLIP))
 4. Build and compress search indices
 5. Update distribution files
