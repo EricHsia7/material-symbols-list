@@ -21,11 +21,51 @@ jobs:
         with:
           python-version: '3.13'
 
+      - name: Restore cached Node dependencies
+        id: restore-cached-node-dependencies
+        uses: actions/cache/restore@v5
+        with:
+          path: |
+            ./node_modules
+            package-lock.json
+          key: node-dependencies-${{ runner.os }}-${{ hashFiles('package.json') }}
+          restore-keys: |
+            node-dependencies-${{ runner.os }}-${{ hashFiles('package.json') }}
+
       - name: Install Node dependencies
         run: npm install
 
+      - name: Cache Node dependencies
+        id: cache-node-dependencies
+        uses: actions/cache/save@v5
+        with:
+          path: |
+            ./node_modules
+            package-lock.json
+          key: ${{ steps.restore-cached-node-dependencies.outputs.cache-primary-key }}
+
+      - name: Get pip cache directory
+        id: get-pip-cache-directory
+        run: echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
+
+      - name: Restore cached Python dependencies
+        id: restore-cached-python-dependencies
+        uses: actions/cache/restore@v5
+        with:
+          path: ${{ steps.get-pip-cache-directory.outputs.dir }}
+          key: python-dependencies-${{ runner.os }}-v1
+          restore-keys: |
+            python-dependencies-${{ runner.os }}-
+
       - name: Install Python dependencies
         run: pip install openai-clip torch torchvision pillow
+      
+      - name: Cache Python dependencies
+        id: cache-python-dependencies
+        uses: actions/cache/save@v5
+        with:
+          path: ${{ steps.get-pip-cache-directory.outputs.dir }}
+          key: ${{ steps.restore-cached-python-dependencies.outputs.cache-primary-key }}
 
       - name: Create temporary directory
         run: mkdir ./tmp
@@ -39,12 +79,30 @@ jobs:
       - name: Rasterize
         run: node rasterize.js
       
+      - name: Restore cached CLIP model
+        id: restore-cached-clip-model
+        uses: actions/cache/restore@v5
+        with:
+          path: |
+            ~/.cache/clip
+          key: clip-model-${{ runner.os }}
+          restore-keys: |
+            clip-model-${{ runner.os }}
+
       - name: Add tags
         run: python tag.py
+      
+      - name: Cache CLIP model
+        id: cache-clip-model
+        uses: actions/cache/save@v5
+        with:
+          path: |
+            ~/.cache/clip
+          key: ${{ steps.restore-cached-clip-model.outputs.cache-primary-key }}
 
       - name: Merge tags
         run: zip -ru tags.zip ./tags # -x "*.DS_Store"
-      
+
       - name: Separate changed files
         run: |
           mkdir -p "./deploy"
