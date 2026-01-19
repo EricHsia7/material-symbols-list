@@ -46,7 +46,7 @@ async function main() {
       keywords.splice(i, 1, dictionary.indexOf(keywords[i]));
     }
     keywords.sort(function (a, b) {
-      return b - a; // prioritize low-frequency words quicken narrowwing down
+      return b - a; // prioritizing low-frequency words quickens narrowwing down
     });
     result.symbols[symbol[0]] = keywords;
   }

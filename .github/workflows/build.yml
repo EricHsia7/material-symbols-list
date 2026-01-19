@@ -11,13 +11,28 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v6
 
-      - name: Setup Node
-        uses: actions/setup-node@v6
+      - name: Restore cached Node dependencies
+        id: restore-cached-node-dependencies
+        uses: actions/cache/restore@v5
         with:
-          node-version: 24
+          path: |
+            ./node_modules
+            package-lock.json
+          key: node-dependencies-${{ runner.os }}-${{ hashFiles('package.json') }}
+          restore-keys: |
+            node-dependencies-${{ runner.os }}-${{ hashFiles('package.json') }}
 
       - name: Install Node dependencies
         run: npm install
+
+      - name: Cache Node dependencies
+        id: cache-node-dependencies
+        uses: actions/cache/save@v5
+        with:
+          path: |
+            ./node_modules
+            package-lock.json
+          key: ${{ steps.restore-cached-node-dependencies.outputs.cache-primary-key }}
 
       - name: Unzip tags
         run: unzip tags.zip
