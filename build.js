@@ -48,7 +48,11 @@ async function main() {
     keywords.sort(function (a, b) {
       return b - a; // prioritizing low-frequency words quickens narrowwing down
     });
-    result.symbols[symbol[0]] = keywords;
+    const symbolNameComponents = symbol[0].split('_');
+    for (let i = symbolNameComponents.length - 1; i >= 0; i--) {
+      symbolNameComponents.splice(i, 1, dictionary.indexOf(symbolNameComponents[i]));
+    }
+    result.symbols[symbolNameComponents.join('_')] = keywords;
   }
 
   // search-index
