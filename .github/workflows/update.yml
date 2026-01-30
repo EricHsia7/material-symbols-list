@@ -39,6 +39,7 @@ jobs:
       - name: Cache Node dependencies
         id: cache-node-dependencies
         uses: actions/cache/save@v5
+        if: steps.restore-cached-node-dependencies.outputs.cache-hit != 'true'
         with:
           path: |
             ./node_modules
@@ -64,6 +65,7 @@ jobs:
       - name: Cache Python dependencies
         id: cache-python-dependencies
         uses: actions/cache/save@v5
+        if: steps.restore-cached-python-dependencies.outputs.cache-hit != 'true'
         with:
           path: ${{ steps.get-pip-cache-directory.outputs.dir }}
           key: ${{ steps.restore-cached-python-dependencies.outputs.cache-primary-key }}
@@ -96,6 +98,7 @@ jobs:
       - name: Cache CLIP model
         id: cache-clip-model
         uses: actions/cache/save@v5
+        if: steps.restore-cached-clip-model.outputs.cache-hit != 'true'
         with:
           path: |
             ~/.cache/clip

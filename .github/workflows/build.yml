@@ -28,6 +28,7 @@ jobs:
       - name: Cache Node dependencies
         id: cache-node-dependencies
         uses: actions/cache/save@v5
+        if: steps.restore-cached-dependencies.outputs.cache-hit != 'true'
         with:
           path: |
             ./node_modules
