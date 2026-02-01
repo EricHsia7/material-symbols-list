@@ -13,7 +13,7 @@ This repository provides a complete catalog of Material Symbols with additional 
 
 ## Distribution Files
 
-All files can be found on [dist branch](https://github.com/EricHsia7/material-symbols-list/tree/dist).
+All files can be found on [dist branch](https://github.com/EricHsia7/material-symbols-list/tree/dist) and accessed via `https://erichsia7.github.io/material-symbols-list/<filename>`.
 
 JSON files are available in both compressed (.gz) and uncompressed (.json) formats:
 
