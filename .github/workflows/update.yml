@@ -8,6 +8,7 @@ on:
 jobs: 
   update:
     runs-on: ubuntu-latest
+    environment: update
     steps: 
       - name: Check out repository code
         uses: actions/checkout@v6
