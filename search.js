@@ -61,6 +61,7 @@ class MaterialSymbolsList {
     this.searchIndex = await response.json();
     this.searchStructures = this.__buildSearchStructures(this.searchIndex);
     this.ready = true;
+    return true;
   }
 
   searchFor(query, searchFrom = 0, skipBroadTerms = true, broadThreshold = 0.3) {
