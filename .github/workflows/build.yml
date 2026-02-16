@@ -41,6 +41,9 @@ jobs:
       
       - name: Build
         run: node build.js
+      
+      - name: Copy Symbol Search to dist
+        run: cp -r index.html ./dist/index.html
 
       - name: Deploy with gh-pages
         run: |
