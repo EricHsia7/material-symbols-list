@@ -2,7 +2,6 @@ import clip, torch
 from PIL import Image
 import json
 import time
-import re
 import os
 
 def get_class_descriptions():
@@ -10,6 +9,10 @@ def get_class_descriptions():
   with open("./tmp/versions.json", "r", encoding="utf-8") as file:
     data = json.load(file)
     for symbol_name in data:
+      # full phrase -> exact semantic meaning
+      phrase = symbol_name.replace("_", " ")
+      result.add(phrase)
+      # split words -> broad tag matching
       words = symbol_name.split("_")
       for word in words:
         if len(word) > 1:
@@ -20,36 +23,47 @@ device = "cpu"
 model, preprocess = clip.load("ViT-B/16", device=device)
 
 class_descriptions = get_class_descriptions()
-text_inputs = torch.cat([clip.tokenize(desc) for desc in class_descriptions]).to(device)
 
-with torch.no_grad():
-  text_features = model.encode_text(text_inputs)
-  text_features = text_features / text_features.norm(dim=-1, keepdim=True)
+# Prompt ensembling: Providing context helps CLIP understand it's looking at graphical symbols
+templates = [
+    "a black and white icon of [{}]",
+    "a material design symbol representing [{}]",
+    "a minimalist illustration of [{}]"
+]
+
+def encode_with_templates(descriptions):
+  print("Encoding text features with prompt ensembling...")
+  with torch.no_grad():
+    all_features = []
+    for desc in descriptions:
+      # Create multiple prompt variations for a single word/phrase
+      texts = [template.format(desc) for template in templates]
+      text_inputs = torch.cat([clip.tokenize(t) for t in texts]).to(device)
+      features = model.encode_text(text_inputs)
+      
+      # Average the features across the templates to get a robust vector
+      features = features.mean(dim=0, keepdim=True)
+      features = features / features.norm(dim=-1, keepdim=True)
+      all_features.append(features)
+  return torch.cat(all_features)
+
+text_features = encode_with_templates(class_descriptions)
 
 def tag_image(file_path):
   start = time.time()
-  image = preprocess(Image.open(file_path)).unsqueeze(0).to(device)
+  image_tensor = preprocess(Image.open(file_path)).unsqueeze(0).to(device)
   with torch.no_grad():
-    image_features = model.encode_image(image)
+    image_features = model.encode_image(image_tensor)
     image_features = image_features / image_features.norm(dim=-1, keepdim=True)
 
     similarities = (100.0 * image_features @ text_features.T).softmax(dim=-1)
-    values, indices = similarities[0].topk(128)
-    result = []
-    for idx, val in zip(indices, values):
-      result.append(class_descriptions[idx])
+    values, indices = similarities[0].topk(16)
 
-    text_inputs_1 = torch.cat([clip.tokenize(desc) for desc in result]).to(device)
-    text_features_1 = model.encode_text(text_inputs_1)
+    result = [class_descriptions[idx] for idx in indices]
 
-    similarities_2 = (100.0 * image_features @ text_features_1.T).softmax(dim=-1)
-    values_2, indices_2 = similarities_2[0].topk(16)
-    result_2 = []
-    for idx, val in zip(indices_2, values_2):
-      result_2.append(result[idx])
     end = time.time()
     print(f"Successfully tagged {file_path} in {end - start:.2f}s")
-    return result_2
+    return result
 
 def main(input_dir="./tmp/rasterized", output_dir="./tags"):
     # Ensure output directory exists
