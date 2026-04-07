@@ -16,15 +16,23 @@ async function main() {
     if (!versions.hasOwnProperty(symbolName)) continue;
     const content = await readFile(file.path.full);
     const fileNameWords = symbolName.split('_');
-    const fileContentWords = content.split(/\n/g).filter((e) => e !== '');
+    const fileContentWords = content.split(/[\n\s]+/g).filter((e) => e !== '');
     const allWords = fileNameWords.concat(fileContentWords);
+    // Keep the semantic frequency
     for (const word of allWords) {
       if (!frequencyMap.hasOwnProperty(word)) {
         frequencyMap[word] = 0;
       }
       frequencyMap[word]++;
     }
-    symbols.push([symbolName, allWords]);
+    // Deduplicate
+    const allWordsUnique = [];
+    for (const word of allWords) {
+      if (allWordsUnique.indexOf(word) < 0) {
+        allWordsUnique.push(word);
+      }
+    }
+    symbols.push([symbolName, allWordsUnique]);
   }
 
   const words = [];
