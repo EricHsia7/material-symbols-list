@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const { makeDirectory, writeTextFile } = require('./files.js');
-const core = require('@actions/core');
 
 async function main() {
   const outputDir = './tmp/updated/';
@@ -45,7 +44,7 @@ async function main() {
     }
   }
 
-  core.setOutput('updated-symbols-count', updated.length);
+  fs.appendFileSync(process.env.GITHUB_OUTPUT, `updated-symbols-count=${updated.length}\n`);
   process.exit(0);
 }
 
