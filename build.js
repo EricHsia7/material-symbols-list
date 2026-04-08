@@ -58,9 +58,9 @@ async function main() {
     });
     const symbolNameComponents = symbol[0].split('_');
     for (let i = symbolNameComponents.length - 1; i >= 0; i--) {
-      symbolNameComponents.splice(i, 1, dictionary.indexOf(symbolNameComponents[i]));
+      symbolNameComponents.splice(i, 1, dictionary.indexOf(symbolNameComponents[i]).toString(36));
     }
-    result.symbols[symbolNameComponents.join('_')] = keywords;
+    result.symbols[symbolNameComponents.join('_')] = keywords.map((k) => k.toString(36)).join(',');
   }
 
   // search-index
