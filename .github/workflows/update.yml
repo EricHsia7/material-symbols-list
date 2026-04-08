@@ -56,12 +56,12 @@ jobs:
         uses: actions/cache/restore@v5
         with:
           path: ${{ steps.get-pip-cache-directory.outputs.dir }}
-          key: python-dependencies-${{ runner.os }}-v1
+          key: python-dependencies-${{ runner.os }}-v2
           restore-keys: |
-            python-dependencies-${{ runner.os }}-
+            python-dependencies-${{ runner.os }}-v2
 
       - name: Install Python dependencies
-        run: pip install openai-clip torch torchvision pillow
+        run: pip install openai-clip==1.0.1 torch==2.8.0 torchvision==0.23.0 pillow==11.3.0
       
       - name: Cache Python dependencies
         id: cache-python-dependencies
