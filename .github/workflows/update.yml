@@ -79,11 +79,12 @@ jobs:
         run: curl "https://raw.githubusercontent.com/marella/material-symbols/refs/heads/main/metadata/versions.json" -o "./tmp/versions.json"
       
       - name: Download updated symbols
+        id: download-updated-symbols
         run: node download-updated-symbols.js
-      
+
       - name: Rasterize
         run: node rasterize.js
-      
+
       - name: Restore cached CLIP model
         id: restore-cached-clip-model
         uses: actions/cache/restore@v5
@@ -95,6 +96,7 @@ jobs:
             clip-model-${{ runner.os }}
 
       - name: Add tags
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         run: python tag.py
       
       - name: Cache CLIP model
