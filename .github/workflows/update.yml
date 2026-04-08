@@ -83,6 +83,7 @@ jobs:
         run: node download-updated-symbols.js
 
       - name: Rasterize
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         run: node rasterize.js
 
       - name: Restore cached CLIP model
@@ -109,15 +110,18 @@ jobs:
           key: ${{ steps.restore-cached-clip-model.outputs.cache-primary-key }}
 
       - name: Merge tags
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         run: zip -ru tags.zip ./tags # -x "*.DS_Store"
 
       - name: Separate changed files
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         run: |
           mkdir -p "./deploy"
           cp -f "tags.zip" "./deploy/tags.zip"
           cp -f "./tmp/versions.json" "./deploy/versions.json"
 
       - name: Deploy with gh-pages
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           npx gh-pages -a -d deploy -u "github-actions-bot <support+actions@github.com>" -b main
