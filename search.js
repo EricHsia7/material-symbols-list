@@ -13,6 +13,7 @@ class MaterialSymbolsList {
     const symbols = searchIndex.symbols;
     const names = [];
     const wordToSymbols = {}; // { w0: [0, 2], ... }
+    const symbolToWords = []; // [[0, 1, 2, 3], [4, 5, 6], ...]
 
     let nameIndex = 0;
     for (const symbolKey in symbols) {
@@ -32,10 +33,11 @@ class MaterialSymbolsList {
         }
         wordToSymbols[key].push(nameIndex);
       }
+      symbolToWords.push(wordIndexes);
       nameIndex++;
     }
 
-    return { dictionary, names, wordToSymbols };
+    return { dictionary, names, wordToSymbols, symbolToWords };
   }
 
   __getIntersection(a, b) {
@@ -66,7 +68,7 @@ class MaterialSymbolsList {
   }
 
   searchFor(query, searchFrom = 0, skipBroadTerms = true, broadThreshold = 0.3) {
-    const { dictionary, names, wordToSymbols } = this.searchStructures;
+    const { dictionary, names, wordToSymbols, symbolToWords } = this.searchStructures;
     const broadLength = Math.round(names.length * broadThreshold);
 
     // Split query
@@ -118,7 +120,8 @@ class MaterialSymbolsList {
         if (matchedWordIndexes[j] < 0) continue;
         const symbolWordIndexes = wordToSymbols[`w${matchedWordIndexes[j]}`] || [];
         if (symbolWordIndexes.indexOf(candidates[i]) > -1) {
-          score -= j; // earlier query words = higher weight
+          score -= j + (symbolToWords[candidates[i]].indexOf(matchedWordIndexes[j]) + 1) * matchedWordIndexes[j];
+          // earlier query words && higher proability = higher weight
         }
       }
       scored.push([names[candidates[i]], score]);

@@ -49,18 +49,16 @@ async function main() {
     symbols: {}
   };
   for (const symbol of symbols) {
-    const keywords = Array.from(new Set(symbol[1]));
+    // keep proabilities calculated by the model
+    const keywords = symbol[1];
     for (let i = keywords.length - 1; i >= 0; i--) {
-      keywords.splice(i, 1, dictionary.indexOf(keywords[i]));
+      keywords.splice(i, 1, dictionary.indexOf(keywords[i]).toString(36));
     }
-    keywords.sort(function (a, b) {
-      return b - a; // prioritizing low-frequency words quickens narrowwing down
-    });
     const symbolNameComponents = symbol[0].split('_');
     for (let i = symbolNameComponents.length - 1; i >= 0; i--) {
       symbolNameComponents.splice(i, 1, dictionary.indexOf(symbolNameComponents[i]).toString(36));
     }
-    result.symbols[symbolNameComponents.join('_')] = keywords.map((k) => k.toString(36)).join(',');
+    result.symbols[symbolNameComponents.join('_')] = keywords.join(',');
   }
 
   // search-index
