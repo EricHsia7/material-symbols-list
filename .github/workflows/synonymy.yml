@@ -1,7 +1,9 @@
 name: List Synonymy
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - dev-synonymy
 
 jobs:
   generate-response:
@@ -78,6 +80,6 @@ jobs:
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npx gh-pages -a -d deploy -u "github-actions-bot <support+actions@github.com>" -b dev-synonymy
+          npx gh-pages -a -d deploy -u "github-actions-bot <support+actions@github.com>" -b dev-synonymy-test
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
