@@ -1,12 +1,9 @@
 name: Gemma 4 E4B Inference
 
 on:
-  workflow_dispatch:
-    inputs:
-      prompt:
-        description: 'Your prompt for Gemma 4'
-        required: true
-        default: 'Explain why E4B is better for edge devices than a dense model.'
+  push:
+    branches:
+      - dev-synonymy
 
 jobs:
   generate-response:
@@ -26,7 +23,7 @@ jobs:
       - name: Generate AI Response
         id: gemma
         run: |
-          RESPONSE=$(ollama run gemma4:e4b "${{ github.event.inputs.prompt }}")
+          RESPONSE=$(ollama run gemma4:e4b "Explain why E4B is better for edge devices than a dense model.")
           
           echo "### Gemma 4 E4B Output" >> $GITHUB_STEP_SUMMARY
           echo "$RESPONSE" >> $GITHUB_STEP_SUMMARY
