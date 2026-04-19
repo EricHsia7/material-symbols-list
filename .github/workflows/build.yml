@@ -12,6 +12,11 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v6
 
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
       - name: Restore cached Node dependencies
         id: restore-cached-node-dependencies
         uses: actions/cache/restore@v5
