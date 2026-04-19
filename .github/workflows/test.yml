@@ -23,14 +23,7 @@ jobs:
       - name: Generate AI Response
         id: gemma
         run: |
-          RESPONSE=$(ollama run gemma4:e4b "Explain why E4B is better for edge devices than a dense model.")
-          
-          echo "### Gemma 4 E4B Output" >> $GITHUB_STEP_SUMMARY
-          echo "$RESPONSE" >> $GITHUB_STEP_SUMMARY
-          
-          echo "ai_response<<EOF" >> $GITHUB_ENV
-          echo "$RESPONSE" >> $GITHUB_ENV
-          echo "EOF"
+          ollama run gemma4:e4b "Explain why E4B is better for edge devices than a dense model."
 
       - name: Log Performance
         run: |
