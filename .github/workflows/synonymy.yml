@@ -1,9 +1,7 @@
 name: List Synonymy
 
 on:
-  push:
-    branches:
-      - dev-synonymy
+  workflow_dispatch:
 
 jobs:
   generate-response:
