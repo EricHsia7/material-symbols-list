@@ -1,22 +1,23 @@
-name: Build
-on:
-  schedule:
-    - cron: '0 0 * * 1,3,5'
-  workflow_dispatch:
+name: List Synonymy
 
-jobs: 
-  build:
+on:
+  push:
+    branches:
+      - dev-synonymy
+
+jobs:
+  generate-response:
     runs-on: ubuntu-latest
-    environment: build
-    steps: 
-      - name: Check out repository code
+    
+    steps:
+      - name: Checkout Repository
         uses: actions/checkout@v6
       
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
           node-version: 24
-
+      
       - name: Restore cached Node dependencies
         id: restore-cached-node-dependencies
         uses: actions/cache/restore@v5
@@ -42,18 +43,41 @@ jobs:
             package-lock.json
           key: ${{ steps.restore-cached-node-dependencies.outputs.cache-primary-key }}
 
+      - name: Install Ollama
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+
+      - name: Pull Gemma 4 E4B Model
+        run: ollama pull gemma4:e4b
+      
       - name: Unzip tags
         run: unzip tags.zip
       
-      - name: Build
-        run: node build.js
+      - name: Unzip synonymies
+        run: unzip synonymies.zip
+
+      - name: Generate prompts
+        run: |
+          node generate-prompts.js
       
-      - name: Copy Symbol Search to dist
-        run: cp -r index.html ./dist/index.html
+      - name: List synonymies
+        run: |
+          chmod +x ./synonymy.sh
+          ./synonymy.sh
+      
+      - name: Merge synonymies
+        run: zip -ru synonymies.zip ./synonymies
+      
+      - name: Separate changed files
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
+        run: |
+          mkdir -p "./deploy"
+          cp -f "synonymies.zip" "./deploy/synonymies.zip"
 
       - name: Deploy with gh-pages
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npx gh-pages -d dist -u "github-actions-bot <support+actions@github.com>" -b dist
+          npx gh-pages -a -d deploy -u "github-actions-bot <support+actions@github.com>" -b dev-synonymy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
