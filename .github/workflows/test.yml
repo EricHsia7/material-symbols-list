@@ -1,0 +1,41 @@
+name: Gemma 4 E4B Inference
+
+on:
+  workflow_dispatch:
+    inputs:
+      prompt:
+        description: 'Your prompt for Gemma 4'
+        required: true
+        default: 'Explain why E4B is better for edge devices than a dense model.'
+
+jobs:
+  generate-response:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Ollama
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+
+      - name: Pull Gemma 4 E4B Model
+        run: ollama pull gemma4:e4b
+
+      - name: Generate AI Response
+        id: gemma
+        run: |
+          RESPONSE=$(ollama run gemma4:e4b "${{ github.event.inputs.prompt }}")
+          
+          echo "### Gemma 4 E4B Output" >> $GITHUB_STEP_SUMMARY
+          echo "$RESPONSE" >> $GITHUB_STEP_SUMMARY
+          
+          echo "ai_response<<EOF" >> $GITHUB_ENV
+          echo "$RESPONSE" >> $GITHUB_ENV
+          echo "EOF"
+
+      - name: Log Performance
+        run: |
+          echo "Inference completed on $(uname -a)"
+          echo "Memory available: $(free -h | grep Mem | awk '{print $7}')"
