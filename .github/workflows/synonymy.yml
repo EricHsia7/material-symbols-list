@@ -52,7 +52,9 @@ jobs:
         run: unzip tags.zip
       
       - name: Unzip synonymies
-        run: unzip synonymies.zip
+        run: |
+          mkdir ./synonymies
+        # unzip synonymies.zip
 
       - name: Generate prompts
         run: |
