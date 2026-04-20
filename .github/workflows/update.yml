@@ -1,7 +1,7 @@
 name: Update
 on:
   schedule:
-    - cron: '0 0 * * 0,2,4,6' # Runs every Sunday, Tuesday, Thursday, and Saturday at midnight
+    - cron: '0 0 * * 1,5'
   workflow_dispatch:
 
 jobs: 
