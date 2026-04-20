@@ -70,6 +70,13 @@ jobs:
         with:
           path: ${{ steps.get-pip-cache-directory.outputs.dir }}
           key: ${{ steps.restore-cached-python-dependencies.outputs.cache-primary-key }}
+      
+      - name: Install Ollama
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+
+      - name: Pull Gemma 4 E4B model
+        run: ollama pull gemma4:e4b
 
       - name: Create temporary directory
         run: mkdir ./tmp
@@ -98,7 +105,7 @@ jobs:
       - name: Add tags
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         run: python tag.py
-      
+
       - name: Cache CLIP model
         id: cache-clip-model
         uses: actions/cache/save@v5
@@ -112,11 +119,23 @@ jobs:
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         run: zip -ru tags.zip ./tags # -x "*.DS_Store"
 
+      - name: Add synonymies
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
+        run: |
+          node generate-commands.js
+          chmod +x ./tmp/list-synonymies.sh
+          ./tmp/list-synonymies.sh
+
+      - name: Merge synonymies
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
+        run: zip -ru synonymies.zip ./synonymies # -x "*.DS_Store"
+
       - name: Separate changed files
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         run: |
           mkdir -p "./deploy"
           cp -f "tags.zip" "./deploy/tags.zip"
+          cp -f "synonymies.zip" "./deploy/synonymies.zip"
           cp -f "./tmp/versions.json" "./deploy/versions.json"
 
       - name: Deploy with gh-pages

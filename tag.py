@@ -65,9 +65,10 @@ def tag_image(file_path):
     print(f"Successfully tagged {file_path} in {end - start:.2f}s")
     return result
 
-def main(input_dir="./tmp/rasterized", output_dir="./tags"):
+def main(input_dir="./tmp/rasterized", output_dir="./tags", prompts_dir="./tmp/prompts"):
     # Ensure output directory exists
     os.makedirs(output_dir, exist_ok=True)
+    os.makedirs(prompts_dir, exist_ok=True)
 
     # Iterate through all PNG files
     for filename in os.listdir(input_dir):
@@ -80,9 +81,24 @@ def main(input_dir="./tmp/rasterized", output_dir="./tags"):
             # Construct output filename
             base_name = os.path.splitext(filename)[0]
             output_file = os.path.join(output_dir, f"{base_name}.txt")
+            prompt_file = os.path.join(prompts_dir, f"{base_name}.txt")
 
             # Save results to file
             with open(output_file, "w", encoding="utf-8") as f:
+                for item in result_list:
+                    f.write(str(item) + "\n")
+            with open(prompt_file, "w", encoding="utf-8") as f:
+                f.write("You are an expert in UI/UX design and iconography.\n")
+                f.write("I will provide you with a list of visually matched tags.\n")
+                f.write("For each icon, provide 3 to 5 *extra* synonyms, alternative names, or related UI concepts that a user might search for to find this icon.\n")
+                f.write("IMPORTANT RULES:\n")
+                f.write("1. Focus on what the icon *looks like* and its *UI function*.\n")
+                f.write("2. Output ONLY a list of tags concatenated by commas. No markdown formatting, no explanations.\n")
+                f.write("EXAMPLE:\n")
+                f.write("settings -> gear, cog, preferences, options, components\n")
+                f.write("favorite -> heart, like, love, save\n")
+                f.write(f"ICON NAME: {base_name}\n")
+                f.write("ICON TAGS:\n")
                 for item in result_list:
                     f.write(str(item) + "\n")
 
