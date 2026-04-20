@@ -71,13 +71,11 @@ jobs:
         run: zip -ru synonymies.zip ./synonymies
       
       - name: Separate changed files
-        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         run: |
           mkdir -p "./deploy"
           cp -f "synonymies.zip" "./deploy/synonymies.zip"
 
       - name: Deploy with gh-pages
-        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           npx gh-pages -a -d deploy -u "github-actions-bot <support+actions@github.com>" -b dev-synonymy-test
