@@ -12,9 +12,9 @@ async function main() {
   const commands = [];
   for (const prompt of prompts) {
     const extension = path.extname(prompt.path.name);
-    const symbolName = path.basename(prompt.path.name, extension);
-    const outputPath = path.join(outputDir, `${symbolName}.txt`);
-    commands.push(`ollama run gemma4:e4b --think --hidethinking < "${prompt.path.full}" | tee "${outputPath}"`, `echo "Listed synonymies for ${symbolName}".`);
+    const chunkId = path.basename(prompt.path.name, extension);
+    const outputPath = path.join(outputDir, `${chunkId}.txt`);
+    commands.push(`ollama run gemma4:e2b --think --hidethinking < "${prompt.path.full}" | tee "${outputPath}"`, `echo "Listed synonymies for chunk ${chunkId}".`);
   }
 
   await writeTextFile('./tmp/list-synonymies.sh', commands.join('\n\n'));

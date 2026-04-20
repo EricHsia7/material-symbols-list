@@ -3,20 +3,25 @@ from PIL import Image
 import json
 import time
 import os
+import re
 
-def get_class_descriptions():
+def get_class_descriptions(baseDictionary="./tmp/dictionary.txt", synonymies="./synonymies"):
   result = set()
-  with open("./tmp/versions.json", "r", encoding="utf-8") as file:
-    data = json.load(file)
-    for symbol_name in data:
-      # full phrase -> exact semantic meaning
-      phrase = symbol_name.replace("_", " ")
-      result.add(phrase)
-      # split words -> broad tag matching
-      words = symbol_name.split("_")
-      for word in words:
-        if len(word) > 1:
-          result.add(word)
+  with open(baseDictionary, "r", encoding="utf-8") as file1:
+    content1 = file1.read()
+    items1 = content1.splitlines()
+    for item1 in items1:
+      result.add(item1)
+  for filename in os.listdir(synonymies):
+    if filename.lower().endswith(".txt"):
+      file_path = os.path.join(synonymies, filename)
+      with open(baseDictionary, "r", encoding="utf-8") as file2:
+        content2 = file2.read()
+        items2 = content2.splitlines()
+        for item2 in items2:
+          items3 = re.split(r'[;,\s]+', item2)
+          for item3 in items3:
+            result.add(item3)
   return list(result)
 
 device = "cpu"
@@ -85,20 +90,6 @@ def main(input_dir="./tmp/rasterized", output_dir="./tags", prompts_dir="./tmp/p
 
             # Save results to file
             with open(output_file, "w", encoding="utf-8") as f:
-                for item in result_list:
-                    f.write(str(item) + "\n")
-            with open(prompt_file, "w", encoding="utf-8") as f:
-                f.write("You are an expert in UI/UX design and iconography.\n")
-                f.write("I will provide you with a list of visually matched tags.\n")
-                f.write("For each icon, provide 3 to 5 *extra* synonyms, alternative names, or related UI concepts that a user might search for to find this icon.\n")
-                f.write("IMPORTANT RULES:\n")
-                f.write("1. Focus on what the icon *looks like* and its *UI function*.\n")
-                f.write("2. Output ONLY a list of tags concatenated by commas. No markdown formatting, no explanations.\n")
-                f.write("EXAMPLE:\n")
-                f.write("settings -> gear, cog, preferences, options, components\n")
-                f.write("favorite -> heart, like, love, save\n")
-                f.write(f"ICON NAME: {base_name}\n")
-                f.write("ICON TAGS:\n")
                 for item in result_list:
                     f.write(str(item) + "\n")
 
