@@ -1,5 +1,5 @@
 const path = require('path');
-const { writeTextFile } = require('./files.js');
+const { writeTextFile, makeDirectory } = require('./files.js');
 
 async function main() {
   const versions = require('./tmp/versions.json');
@@ -48,7 +48,7 @@ ACTUAL INPUT:
 ${chunk}`;
     await writeTextFile(path.join(outputDir, `${i}.txt`), prompt);
   }
-  
+
   await writeTextFile(dictionaryPath, list.join('\n'));
 
   process.exit(0);
