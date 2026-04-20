@@ -14,8 +14,7 @@ async function main() {
     const extension = path.extname(prompt.path.name);
     const symbolName = path.basename(prompt.path.name, extension);
     const outputPath = path.join(outputDir, `${symbolName}.txt`);
-    const command = `ollama run gemma4:e4b --think --hidethinking < "${prompt.path.full}" > "${outputPath}"`;
-    commands.push(command);
+    commands.push(`ollama run gemma4:e4b --think --hidethinking < "${prompt.path.full}" | tee "${outputPath}"`, `echo "Listed synonymies for ${symbolName}".`);
   }
 
   await writeTextFile('./tmp/list-synonymies.sh', commands.join('\n\n'));
