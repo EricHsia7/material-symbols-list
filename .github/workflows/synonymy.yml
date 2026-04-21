@@ -77,14 +77,14 @@ jobs:
         run: zip -ru synonymies.zip ./synonymies # -x "*.DS_Store"
 
       - name: Separate changed files
-        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
+        if: steps.generate-prompts.outputs.queued-symbols-count > 0
         run: |
           mkdir -p "./deploy"
           cp -f "synonymies.zip" "./deploy/synonymies.zip"
           cp -f "./tmp/timestamps.json" "./deploy/timestamps.json"
 
       - name: Deploy with gh-pages
-        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
+        if: steps.generate-prompts.outputs.queued-symbols-count > 0
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           npx gh-pages -a -d deploy -u "github-actions-bot <support+actions@github.com>" -b dev-synonymy-3
