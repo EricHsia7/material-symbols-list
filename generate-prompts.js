@@ -42,6 +42,9 @@ async function main() {
 
   const candidates = [];
   for (const symbolKey in timestamps) {
+    if (!versions.hasOwnProperty(symbolKey)) {
+      continue;
+    }
     if (timestamps[symbolKey] < now) {
       candidates.push([symbolKey, timestamps[symbolKey]]);
     }
