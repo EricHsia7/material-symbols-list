@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs: 
-  update:
+  list:
     runs-on: ubuntu-latest
     environment: synonymy
     steps: 
