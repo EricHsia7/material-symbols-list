@@ -44,7 +44,7 @@ async function main() {
     if (!versions.hasOwnProperty(symbolName)) continue;
     const content = await readFile(file.path.full);
     const fileContentWords = content
-      .split(/[;,\n\s]+/g)
+      .split(/[;,\n\s\-\>]+/g)
       .filter((e) => e !== '' && !/\[[a-z0-9]+/g.test(e))
       .map((e) => e.replace(/\p{Cc}/gu, '').toLowerCase());
 
