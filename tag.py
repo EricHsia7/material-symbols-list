@@ -3,25 +3,20 @@ from PIL import Image
 import json
 import time
 import os
-import re
 
-def get_class_descriptions(baseDictionary="./tmp/dictionary.txt", synonymies="./synonymies"):
+def get_class_descriptions():
   result = set()
-  with open(baseDictionary, "r", encoding="utf-8") as file1:
-    content1 = file1.read()
-    items1 = content1.splitlines()
-    for item1 in items1:
-      result.add(item1)
-  for filename in os.listdir(synonymies):
-    if filename.lower().endswith(".txt"):
-      file_path = os.path.join(synonymies, filename)
-      with open(baseDictionary, "r", encoding="utf-8") as file2:
-        content2 = file2.read()
-        items2 = content2.splitlines()
-        for item2 in items2:
-          items3 = re.split(r'[;,\s]+', item2)
-          for item3 in items3:
-            result.add(item3)
+  with open("./tmp/versions.json", "r", encoding="utf-8") as file:
+    data = json.load(file)
+    for symbol_name in data:
+      # full phrase -> exact semantic meaning
+      phrase = symbol_name.replace("_", " ")
+      result.add(phrase)
+      # split words -> broad tag matching
+      words = symbol_name.split("_")
+      for word in words:
+        if len(word) > 1:
+          result.add(word)
   return list(result)
 
 device = "cpu"
@@ -70,10 +65,9 @@ def tag_image(file_path):
     print(f"Successfully tagged {file_path} in {end - start:.2f}s")
     return result
 
-def main(input_dir="./tmp/rasterized", output_dir="./tags", prompts_dir="./tmp/prompts"):
+def main(input_dir="./tmp/rasterized", output_dir="./tags"):
     # Ensure output directory exists
     os.makedirs(output_dir, exist_ok=True)
-    os.makedirs(prompts_dir, exist_ok=True)
 
     # Iterate through all PNG files
     for filename in os.listdir(input_dir):
@@ -86,7 +80,6 @@ def main(input_dir="./tmp/rasterized", output_dir="./tags", prompts_dir="./tmp/p
             # Construct output filename
             base_name = os.path.splitext(filename)[0]
             output_file = os.path.join(output_dir, f"{base_name}.txt")
-            prompt_file = os.path.join(prompts_dir, f"{base_name}.txt")
 
             # Save results to file
             with open(output_file, "w", encoding="utf-8") as f:
