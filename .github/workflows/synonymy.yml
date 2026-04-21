@@ -62,7 +62,9 @@ jobs:
 
       - name: Initialize Ollama
         if: steps.generate-prompts.outputs.queued-symbols-count > 0
-        run: ollama serve || true
+        run: |
+          ollama serve & || true
+          sleep 5
 
       - name: Pull Gemma 4 E4B model
         if: steps.generate-prompts.outputs.queued-symbols-count > 0
