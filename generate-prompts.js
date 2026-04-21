@@ -54,7 +54,7 @@ async function main() {
     return a[1] - b[1];
   });
 
-  const queue = candidates.slice(0, 16);
+  const queue = candidates.slice(0, 32);
   const prompts = [];
   const commands = [];
 
