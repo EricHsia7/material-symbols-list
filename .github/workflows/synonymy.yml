@@ -41,10 +41,10 @@ jobs:
             ./node_modules
             package-lock.json
           key: ${{ steps.restore-cached-node-dependencies.outputs.cache-primary-key }}
-      
+
       - name: Create temporary directory
         run: mkdir ./tmp
-      
+    
       - name: Unzip tags
         run: unzip tags.zip
 
@@ -87,6 +87,6 @@ jobs:
         if: steps.generate-prompts.outputs.queued-symbols-count > 0
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npx gh-pages -a -d deploy -u "github-actions-bot <support+actions@github.com>" -b dev-synonymy-3
+          npx gh-pages -a -d deploy -u "github-actions-bot <support+actions@github.com>" -b main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
