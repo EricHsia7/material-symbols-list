@@ -1,0 +1,74 @@
+const fs = require('fs');
+const path = require('path');
+const { makeDirectory, writeTextFile, getFiles, readFile } = require('./files.js');
+
+function getPrompt(symbol, tags) {
+  return `You are an expert in UI/UX design and iconography. 
+    I will provide you with a list of visually matched tags. 
+    For each icon, provide 3 to 5 *extra* synonyms, alternative names, or related UI concepts that a user might search for to find this icon.
+    
+    IMPORTANT RULES:
+    1. Focus on what the icon *looks like* and its *UI function*.
+    2. Output ONLY a list of tags concatenated by commas. No markdown formatting, no explanations.
+    
+    EXAMPLE:
+    settings -> gear, cog, preferences, options, components
+    favorite -> heart, like, love, save
+    
+    ICON NAME:
+    ${symbol}
+
+    ICON TAGS TO PROCESS:
+    ${tags}`;
+}
+
+async function main() {
+  const versions = require('./versions.json');
+  const timestamps = require('./timestamps.json');
+
+  const synonymiesDir = './synonymies';
+  const tagsDir = './tags';
+  const outputDir = './tmp/prompts';
+
+  await makeDirectory(synonymiesDir);
+  await makeDirectory(outputDir);
+
+  const now = new Date().getTime();
+  for (const symbolKey in versions) {
+    if (!timestamps.hasOwnProperty(symbolKey)) {
+      timestamps[symbolKey] = 0;
+    }
+  }
+
+  const candidates = [];
+  for (const symbolKey in timestamps) {
+    if (timestamps[symbolKey] < now) {
+      candidates.push([symbolKey, timestamps[symbolKey]]);
+      timestamps[symbolKey] = now;
+    }
+  }
+
+  candidates.sort(function (a, b) {
+    return a[1] - b[1];
+  });
+
+  const queue = candidates.slice(0, 16);
+  const prompts = [];
+  const commands = [];
+
+  for (const [symbolKey, timestamp] of queue) {
+    const promptPath = path.join(outputDir, `${symbolKey}.txt`);
+    const synonymyPath = path.join(synonymiesDir, `${symbolKey}.txt`);
+    const content = await readFile(path.join(tagsDir, `${symbolKey}.txt`));
+    await writeTextFile(promptPath, getPrompt(symbolKey, content));
+    commands.push(`echo "Start listing synonymies for ${symbolKey}"...\n`, `ollama run gemma4:e4b --think --hidethinking < "${promptPath}" | tee "${synonymyPath}"`, `echo "Listed synonymies for ${symbolKey}".\n`);
+  }
+
+  await writeTextFile('./tmp/list-synonymies.sh', commands.join('\n\n'));
+  await writeTextFile('./tmp/timestamps.json', JSON.stringify(timestamps, null, 2));
+
+  fs.appendFileSync(process.env.GITHUB_OUTPUT, `queued-symbols-count=${queue.length}\n`);
+  process.exit(0);
+}
+
+main();
