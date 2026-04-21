@@ -44,7 +44,10 @@ jobs:
 
       - name: Unzip tags
         run: unzip tags.zip
-      
+
+      - name: Unzip synonymies
+        run: unzip synonymies.zip
+
       - name: Build
         run: node build.js
       
