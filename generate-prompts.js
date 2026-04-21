@@ -44,6 +44,7 @@ async function main() {
   for (const symbolKey in timestamps) {
     if (timestamps[symbolKey] < now) {
       candidates.push([symbolKey, timestamps[symbolKey]]);
+      timestamps[symbolKey] = now;
     }
   }
 
