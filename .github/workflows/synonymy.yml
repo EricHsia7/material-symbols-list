@@ -62,7 +62,9 @@ jobs:
 
       - name: Pull Gemma 4 E4B model
         if: steps.generate-prompts.outputs.queued-symbols-count > 0
-        run: ollama pull gemma4:e4b
+        run: |
+          ollama serve
+          ollama pull gemma4:e4b
 
       - name: List synonymies
         if: steps.generate-prompts.outputs.queued-symbols-count > 0
