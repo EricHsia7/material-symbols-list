@@ -61,7 +61,7 @@ async function main() {
     const synonymyPath = path.join(synonymiesDir, `${symbolKey}.txt`);
     const content = await readFile(path.join(tagsDir, `${symbolKey}.txt`));
     await writeTextFile(promptPath, getPrompt(symbolKey, content));
-    commands.push(`ollama run gemma4:e4b --think --hidethinking < "${promptPath}" | tee "${synonymyPath}"`, `echo "Listed synonymies for ${symbolKey}".`);
+    commands.push(`echo "Start listing synonymies for ${symbolKey}"...\n`, `ollama run gemma4:e4b --think --hidethinking < "${promptPath}" | tee "${synonymyPath}"`, `echo "Listed synonymies for ${symbolKey}".\n`);
   }
 
   await writeTextFile('./tmp/list-synonymies.sh', commands.join('\n\n'));
