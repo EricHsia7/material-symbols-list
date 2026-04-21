@@ -46,7 +46,7 @@ async function main() {
     const fileContentWords = content
       .split(/[;,\n\s]+/g)
       .filter((e) => e !== '')
-      .map((e) => e.toLowerCase());
+      .map((e) => e.replace(/\p{Cc}/gu, '').toLowerCase());
 
     // Keep the semantic frequency
     for (const word of fileContentWords) {
