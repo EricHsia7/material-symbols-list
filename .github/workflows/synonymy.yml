@@ -4,11 +4,11 @@ on:
     - cron: '0 0 * * 3'
   workflow_dispatch:
 
-jobs: 
+jobs:
   list:
     runs-on: ubuntu-latest
     environment: synonymy
-    steps: 
+    steps:
       - name: Check out repository code
         uses: actions/checkout@v6
 
@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 24
-      
+
       - name: Restore cached Node dependencies
         id: restore-cached-node-dependencies
         uses: actions/cache/restore@v5
@@ -44,7 +44,7 @@ jobs:
 
       - name: Create temporary directory
         run: mkdir ./tmp
-    
+
       - name: Unzip tags
         run: unzip tags.zip
 
@@ -60,11 +60,13 @@ jobs:
         run: |
           curl -fsSL https://ollama.com/install.sh | sh
 
+      - name: Initialize Ollama
+        if: steps.generate-prompts.outputs.queued-symbols-count > 0
+        run: ollama serve || true
+
       - name: Pull Gemma 4 E4B model
         if: steps.generate-prompts.outputs.queued-symbols-count > 0
-        run: |
-          ollama serve
-          ollama pull gemma4:e4b
+        run: ollama pull gemma4:e4b
 
       - name: List synonymies
         if: steps.generate-prompts.outputs.queued-symbols-count > 0
