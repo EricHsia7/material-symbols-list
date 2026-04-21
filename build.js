@@ -19,7 +19,7 @@ async function main() {
     const content = await readFile(file.path.full);
     const fileNameWords = symbolName.split('_');
     const fileContentWords = content.split(/[\n\s]+/g).filter((e) => e !== '');
-    const allWords = fileNameWords.concat(fileContentWords);
+    const allWords = fileNameWords.concat(fileContentWords).map((e) => e.toLowerCase());
     // Keep the semantic frequency
     for (const word of allWords) {
       if (!frequencyMap.hasOwnProperty(word)) {
@@ -43,7 +43,10 @@ async function main() {
     const symbolName = path.basename(file.path.name, extension);
     if (!versions.hasOwnProperty(symbolName)) continue;
     const content = await readFile(file.path.full);
-    const fileContentWords = content.split(/[;,\n\s]+/g).filter((e) => e !== '');
+    const fileContentWords = content
+      .split(/[;,\n\s]+/g)
+      .filter((e) => e !== '')
+      .map((e) => e.toLowerCase());
 
     // Keep the semantic frequency
     for (const word of fileContentWords) {
