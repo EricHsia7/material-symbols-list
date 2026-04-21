@@ -3,6 +3,9 @@ on:
   schedule:
     - cron: '0 0 * * 3'
   workflow_dispatch:
+  push:
+    branches:
+      - dev-synonymy-3
 
 jobs: 
   update:
