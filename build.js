@@ -45,7 +45,7 @@ async function main() {
     const content = await readFile(file.path.full);
     const fileContentWords = content
       .split(/[;,\n\s]+/g)
-      .filter((e) => e !== '')
+      .filter((e) => e !== '' && !/\[[a-z0-9]+/g.test(e))
       .map((e) => e.replace(/\p{Cc}/gu, '').toLowerCase());
 
     // Keep the semantic frequency
