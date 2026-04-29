@@ -45,8 +45,8 @@ async function main() {
     if (!versions.hasOwnProperty(symbolName)) continue;
     const content = await readFile(file.path.full);
     const fileContentWords = content
-      .split(/[;,\n\s]+/g)
-      .filter((e) => e !== '' && !/\[[a-z0-9]+|(->)|[\u4E00-\u9FFF]+|[\~\*\{\}\!\#\@\$]+/g.test(e) && !emojiRegex().test(e))
+      .split(/[;,\n\s\_\/]+/g)
+      .filter((e) => e !== '' && !/\[[a-z0-9]+|(->)|[\u4E00-\u9FFF]+|[\~\*\{\}\!\#\@\$\`]+/g.test(e) && !emojiRegex().test(e))
       .map((e) => e.replace(/\p{Cc}/gu, '').toLowerCase());
 
     // Keep the semantic frequency
