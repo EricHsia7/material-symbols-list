@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { makeDirectory, writeTextFile, getFiles, readFile } = require('./files.js');
+const { sha256 } = require('./sha256.js');
 const pako = require('pako');
 const emojiRegex = require('emoji-regex');
 
@@ -103,6 +104,9 @@ async function main() {
   const compressedData = pako.gzip(jsonString);
   await fs.promises.writeFile(path.join(outputDir, 'search-index.gz'), Buffer.from(compressedData));
 
+  // output search-index.hash.txt
+  await fs.promises.writeFile(path.join(outputDir, 'search-index.hash.txt'), sha256(jsonString));
+
   // index
 
   // output index.json
@@ -113,11 +117,17 @@ async function main() {
   const compressedData2 = pako.gzip(jsonString2);
   await fs.promises.writeFile(path.join(outputDir, 'index.gz'), Buffer.from(compressedData2));
 
+  // output index.hash.txt
+  await fs.promises.writeFile(path.join(outputDir, 'index.hash.txt'), sha256(jsonString2));
+
   // typescript
 
   // output type.ts
   const typeString = `export type MaterialSymbols = ${list.map((e) => `'${e}'`).join('\n | ')}`;
   await writeTextFile(path.join(outputDir, 'type.ts'), typeString);
+
+  // output type.hash.txt
+  await fs.promises.writeFile(path.join(outputDir, 'type.hash.txt'), sha256(typeString));
 
   process.exit(0);
 }
