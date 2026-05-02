@@ -2,11 +2,13 @@
   "search_index": {
     "raw": "https://erichsia7.github.io/material-symbols-list/search-index.json",
     "compressed": "https://erichsia7.github.io/material-symbols-list/search-index.gz",
-    "hash": "15c7b7a6a26ddaa5db73156b338df0262ebdefc7e5d1673a6d063c33ef418e51"
+    "md5": "af169d07ac71c3597d837ed914e3e061",
+    "sha256": "15c7b7a6a26ddaa5db73156b338df0262ebdefc7e5d1673a6d063c33ef418e51"
   },
   "index": {
     "raw": "https://erichsia7.github.io/material-symbols-list/index.json",
     "compressed": "https://erichsia7.github.io/material-symbols-list/index.gz",
-    "hash": "10a48afadefffde0b1910ba04cd62346c8939cd18eefc689a73209815264c91f"
+    "md5": "884c4425e50f0c41cbbf58c1e5c1699e",
+    "sha256": "10a48afadefffde0b1910ba04cd62346c8939cd18eefc689a73209815264c91f"
   }
 }
