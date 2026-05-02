@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { makeDirectory, writeTextFile, getFiles, readFile } = require('./files.js');
-const { sha256 } = require('./sha256.js');
+const { sha256, md5 } = require('./hash.js');
 const pako = require('pako');
 const emojiRegex = require('emoji-regex');
 
@@ -125,12 +125,14 @@ async function main() {
     search_index: {
       raw: 'https://erichsia7.github.io/material-symbols-list/search-index.json',
       compressed: 'https://erichsia7.github.io/material-symbols-list/search-index.gz',
-      hash: sha256(jsonString)
+      md5: md5(jsonString),
+      sha256: sha256(jsonString)
     },
     index: {
       raw: 'https://erichsia7.github.io/material-symbols-list/index.json',
       compressed: 'https://erichsia7.github.io/material-symbols-list/index.gz',
-      hash: sha256(jsonString2)
+      md5: md5(jsonString2),
+      sha256: sha256(jsonString2)
     }
   };
 

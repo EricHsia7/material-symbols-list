@@ -6,6 +6,13 @@ function sha256(data) {
   return hash.digest('hex');
 }
 
+function md5(data) {
+  const hash = crypto.createHash('md5');
+  hash.update(data);
+  return hash.digest('hex');
+}
+
 module.exports = {
-  sha256
+  sha256,
+  md5
 };
