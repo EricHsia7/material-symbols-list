@@ -104,30 +104,37 @@ async function main() {
   const compressedData = pako.gzip(jsonString);
   await fs.promises.writeFile(path.join(outputDir, 'search-index.gz'), Buffer.from(compressedData));
 
-  // output search-index.hash.txt
-  await fs.promises.writeFile(path.join(outputDir, 'search-index.hash.txt'), sha256(jsonString));
-
   // index
+  const jsonString2 = JSON.stringify({ list: list.join(',') });
 
   // output index.json
-  const jsonString2 = JSON.stringify({ list: list.join(',') });
   await writeTextFile(path.join(outputDir, 'index.json'), jsonString2);
 
   // output index.gz
   const compressedData2 = pako.gzip(jsonString2);
   await fs.promises.writeFile(path.join(outputDir, 'index.gz'), Buffer.from(compressedData2));
 
-  // output index.hash.txt
-  await fs.promises.writeFile(path.join(outputDir, 'index.hash.txt'), sha256(jsonString2));
-
   // typescript
+  const typeString = `export type MaterialSymbols = ${list.map((e) => `'${e}'`).join('\n | ')}`;
 
   // output type.ts
-  const typeString = `export type MaterialSymbols = ${list.map((e) => `'${e}'`).join('\n | ')}`;
   await writeTextFile(path.join(outputDir, 'type.ts'), typeString);
 
-  // output type.hash.txt
-  await fs.promises.writeFile(path.join(outputDir, 'type.hash.txt'), sha256(typeString));
+  // output manifest.json
+  const manifest = {
+    search_index: {
+      raw: 'https://erichsia7.github.io/material-symbols-list/search-index.json',
+      compressed: 'https://erichsia7.github.io/material-symbols-list/search-index.gz',
+      hash: sha256(jsonString)
+    },
+    index: {
+      raw: 'https://erichsia7.github.io/material-symbols-list/index.json',
+      compressed: 'https://erichsia7.github.io/material-symbols-list/index.gz',
+      hash: sha256(jsonString2)
+    }
+  };
+
+  await fs.promises.writeFile(path.join(outputDir, 'manifest.json'), JSON.stringify(manifest, null, 2));
 
   process.exit(0);
 }
