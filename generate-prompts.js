@@ -64,7 +64,7 @@ async function main() {
     const content = await readFile(path.join(tagsDir, `${symbolKey}.txt`));
     await writeTextFile(promptPath, getPrompt(symbolKey, content));
     timestamps[symbolKey] = now;
-    commands.push(`echo "Start listing synonymies for ${symbolKey}"...\n`, `ollama run gemma4:e4b --think --hidethinking < "${promptPath}" | tee "${synonymyPath}"`, `echo "Listed synonymies for ${symbolKey}".\n`);
+    commands.push(`echo "\nStart listing synonymies for ${symbolKey}"...`, `jq -Rs '{model: "gemma4:e4b", prompt: ., think: true, stream: true}' "${promptPath}" | curl -s http://localhost:11434/api/generate -d @- | jq --unbuffered -j '.response // empty' | tee "${synonymyPath}"`, `echo "Listed synonymies for ${symbolKey}".\n`);
   }
 
   await writeTextFile('./tmp/list-synonymies.sh', commands.join('\n\n'));
