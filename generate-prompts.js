@@ -58,13 +58,16 @@ async function main() {
   const prompts = [];
   const commands = [];
 
+  const totalCount = queue.length;
+  let count = 0;
   for (const [symbolKey, timestamp] of queue) {
+    count++;
     const promptPath = path.join(outputDir, `${symbolKey}.txt`);
     const synonymyPath = path.join(synonymiesDir, `${symbolKey}.txt`);
     const content = await readFile(path.join(tagsDir, `${symbolKey}.txt`));
     await writeTextFile(promptPath, getPrompt(symbolKey, content));
     timestamps[symbolKey] = now;
-    commands.push(`echo "\n\nStart listing synonymies for ${symbolKey}"...`, `jq -Rs '{model: "gemma4:e4b", prompt: ., think: true, stream: true}' "${promptPath}" | curl -s http://localhost:11434/api/generate -d @- | jq --unbuffered -j '.response // empty' | tee "${synonymyPath}"`, `echo "\nListed synonymies for ${symbolKey}".\n\n`);
+    commands.push(`echo "\n\n\x1b[1m[${count}/${totalCount}]\x1b[0m \x1b[1;4m${symbolKey}\x1b[0m"`, `jq -Rs '{model: "gemma4:e4b", prompt: ., think: true, stream: true, options: {temperature: 1, top_p: 0.95, top_k: 64}}' "${promptPath}" | curl -s http://localhost:11434/api/generate -d @- | jq --unbuffered -j '.response // empty' | tee "${synonymyPath}"`, `echo "\n\n"`);
   }
 
   await writeTextFile('./tmp/list-synonymies.sh', commands.join('\n\n'));
