@@ -346,7 +346,6 @@
   <body>
     <header>
       <div class="top">
-        <h1 id="home"><span class="material-symbols-rounded">apps</span>Symbols</h1>
         <div class="search-wrap">
           <div class="search-input-wrap">
             <span class="material-symbols-rounded">search</span>
@@ -787,17 +786,6 @@
           visibleCount = PAGE;
           renderGallery(allNames);
         }
-      });
-
-      document.querySelector('#home').addEventListener('click', () => {
-        searchEl.value = '';
-        ghostEl.textContent = '';
-        suggestionsEl.classList.remove('show');
-        lastQuery = '';
-        setMode('gallery');
-        visibleCount = PAGE;
-        renderGallery(allNames);
-        window.scrollTo({ top: 0 });
       });
 
       window.addEventListener('scroll', () => {
