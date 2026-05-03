@@ -2,215 +2,415 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Symbol Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Material Symbols Viewer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0..1,0&display=swap" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" />
     <style>
       :root {
-        --primary: #6200ee;
-        --bg: #f5f5f5;
-        --surface: #ffffff;
-        --border: #dddddd;
-        --top: #eeeeee;
-        --text: #333333;
+        --background: #0f1115;
+        --panel: #161922;
+        --panel-2: #1d2230;
+        --text: #e6e9ef;
+        --muted: #8a93a6;
+        --accent: #7aa2ff;
+        --border: #262b3a;
       }
 
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --primary: #6200ee;
-          --bg: #101112;
-          --border: #333;
-          --surface: #151617;
-          --top: #202122;
-          --text: #fff;
-        }
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        height: 100%;
       }
 
       body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        background-color: var(--bg);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: var(--background);
         color: var(--text);
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: 40px 20px;
-        margin: 0;
-      }
-      h1 {
-        margin-bottom: 24px;
       }
 
-      .search-container {
-        width: 100%;
-        max-width: 600px;
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background: rgba(15, 17, 21, 0.85);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--border);
+        padding: 14px 20px;
+      }
+
+      .top {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      h1 .material-symbols-rounded {
+        vertical-align: -6px;
+        margin-right: 6px;
+        color: var(--accent);
+      }
+
+      .search-wrap {
+        flex: 1;
         position: relative;
       }
 
-      input#search-input {
+      .search-input-wrap {
+        display: flex;
+        align-items: center;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 10px 14px;
+      }
+
+      .search-input-wrap:focus-within {
+        border-color: var(--accent);
+      }
+
+      .search-input-wrap > .material-symbols-rounded {
+        color: var(--muted);
+        margin-right: 8px;
+      }
+
+      .input-stack {
+        position: relative;
+        flex: 1;
+        min-height: 22px;
+      }
+
+      #ghost,
+      #search {
+        font-size: 15px;
+        line-height: 22px;
         width: 100%;
-        padding: 16px 20px;
-        font-size: 18px;
-        background: var(--surface);
-        color: var(--text);
-        border: 2px solid var(--border);
-        border-radius: 30px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        padding: 0;
+      }
+
+      #ghost {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        color: var(--muted);
+        white-space: pre;
+        overflow: hidden;
+      }
+
+      #search {
+        position: relative;
+        border: none;
         outline: none;
-        transition: border-color 0.2s;
-        box-sizing: border-box;
-      }
-      input#search-input:focus {
-        border-color: var(--primary);
-      }
-      input#search-input:disabled {
-        opacity: 0.7;
-        color: #888;
+        background: transparent;
+        color: var(--text);
       }
 
-      .status {
-        margin-top: 10px;
-        font-size: 0.9em;
-        color: #666;
-        min-height: 20px;
-        text-align: center;
+      .suggestions {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: calc(100% + 6px);
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        overflow: hidden;
+        display: none;
+        z-index: 10;
       }
 
-      .results {
-        width: 100%;
-        max-width: 600px;
-        margin-top: 20px;
-        display: grid;
+      .suggestions.show {
+        display: block;
+      }
+
+      .suggestion {
+        padding: 10px 14px;
+        cursor: pointer;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
         gap: 10px;
       }
 
-      .result-item {
-        background: var(--surface);
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      .suggestion:hover,
+      .suggestion.active {
+        background: var(--panel-2);
+      }
+
+      .suggestion .hint {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .suggestion b {
+        color: var(--accent);
+        font-weight: 600;
+      }
+
+      main {
+        flex: 1;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 24px;
+        width: 100%;
+      }
+
+      .status {
+        color: var(--muted);
+        margin-bottom: 12px;
+        font-size: 13px;
+      }
+
+      .back {
+        background: transparent;
+        color: var(--muted);
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        gap: 6px;
+        margin-bottom: 16px;
       }
 
-      span.symbol {
-        font-family: 'Material Symbols Rounded';
-        font-weight: normal;
-        font-style: normal;
-        font-size: 24px;
-        font-variation-settings:
-          'FILL' 0,
-          'wght' 300,
-          'GRAD' 0,
-          'opsz' 24;
-        line-height: 1;
-        letter-spacing: normal;
-        text-transform: none;
-        white-space: nowrap;
-        word-wrap: normal;
-        direction: ltr;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        position: relative;
-        width: 24px;
-        height: 24px;
-        display: inline-flex;
+      .back:hover {
+        color: var(--text);
+      }
+
+      .back .material-symbols-rounded {
+        font-size: 18px;
+      }
+
+      .gallery {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+      }
+
+      .cell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        align-items: center;
-        overflow: clip;
-        contain: layout;
-        user-select: none;
-        -webkit-user-select: none;
-        -webkit-user-drag: none;
+        aspect-ratio: 1;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 12px;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        transition:
+          transform 0.08s ease,
+          border-color 0.08s ease;
       }
 
-      .symbol-name {
-        font-weight: 500;
+      .cell:hover {
+        border-color: var(--accent);
+        transform: translateY(-1px);
+      }
+
+      .cell .material-symbols-rounded {
+        font-size: 36px;
+      }
+
+      .cell .name {
+        margin-top: 8px;
+        font-size: 11px;
+        color: var(--muted);
+        text-align: center;
+        word-break: break-all;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 8px 0 60px;
+      }
+
+      .icon-card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        padding: 60px 100px;
+      }
+
+      .icon-card .material-symbols-rounded {
+        font-size: 144px;
+      }
+
+      .name-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      .name-row code {
+        background: var(--panel-2);
+        padding: 6px 12px;
+        border-radius: 8px;
+        font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+        font-size: 18px;
+      }
+
+      .copy-button {
+        border: 1px solid var(--border);
+        background: var(--panel-2);
+        color: var(--text);
+        border-radius: 8px;
+        padding: 8px 12px;
+        cursor: pointer;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .copy-button:hover {
+        border-color: var(--accent);
+      }
+
+      .copy-button .material-symbols-rounded {
         font-size: 16px;
       }
-      .symbol-score {
-        font-size: 12px;
-        color: #888;
-        background: var(--top);
-        padding: 2px 8px;
-        border-radius: 12px;
+
+      .keywords {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        max-width: 760px;
+        justify-content: center;
+      }
+
+      .keyword {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 4px 12px;
+        font-size: 13px;
+        color: var(--muted);
+        cursor: pointer;
+      }
+
+      .keyword:hover {
+        color: var(--text);
+        border-color: var(--accent);
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      .toast {
+        position: fixed;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--panel);
+        border: 1px solid var(--border);
+        padding: 10px 16px;
+        border-radius: 999px;
+        font-size: 13px;
+        opacity: 0;
+        transition: opacity 0.2s;
+        pointer-events: none;
+        z-index: 20;
+      }
+
+      .toast.show {
+        opacity: 1;
       }
     </style>
   </head>
   <body>
-    <h1>Symbol Search</h1>
-
-    <div class="search-container">
-      <input type="text" id="search-input" placeholder="Loading index..." disabled />
-      <div class="status" id="status-text">Initializing...</div>
-    </div>
-
-    <div class="results" id="results-container"></div>
+    <header>
+      <div class="top">
+        <h1 id="home"><span class="material-symbols-rounded">apps</span>Symbols</h1>
+        <div class="search-wrap">
+          <div class="search-input-wrap">
+            <span class="material-symbols-rounded">search</span>
+            <div class="input-stack">
+              <span id="ghost"></span>
+              <input id="search" type="text" placeholder="Search symbols (e.g. heart, settings, arrow)…" autocomplete="off" spellcheck="false" />
+            </div>
+          </div>
+          <div id="suggestions" class="suggestions"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="status" class="status">Loading symbol index…</div>
+      <button id="back" class="back hidden"><span class="material-symbols-rounded">arrow_back</span><span id="backLabel">Back</span></button>
+      <div id="gallery" class="gallery"></div>
+      <div id="detail" class="detail hidden"></div>
+    </main>
+    <div id="toast" class="toast"></div>
 
     <script>
+      /* ============ Levenshtein + MaterialSymbolsList (your code) ============ */
       const levenshtein = (function () {
         function _min(d0, d1, d2, bx, ay) {
           return d0 < d1 || d2 < d1 ? (d0 > d2 ? d2 + 1 : d0 + 1) : bx === ay ? d1 : d1 + 1;
         }
-
         return function (a, b) {
-          if (a === b) {
-            return 0;
-          }
-
+          if (a === b) return 0;
           if (a.length > b.length) {
             var tmp = a;
             a = b;
             b = tmp;
           }
-
-          var la = a.length;
-          var lb = b.length;
-
+          var la = a.length,
+            lb = b.length;
           while (la > 0 && a.charCodeAt(la - 1) === b.charCodeAt(lb - 1)) {
             la--;
             lb--;
           }
-
           var offset = 0;
-
-          while (offset < la && a.charCodeAt(offset) === b.charCodeAt(offset)) {
-            offset++;
-          }
-
+          while (offset < la && a.charCodeAt(offset) === b.charCodeAt(offset)) offset++;
           la -= offset;
           lb -= offset;
-
-          if (la === 0 || lb < 3) {
-            return lb;
-          }
-
-          var x = 0;
-          var y;
-          var d0;
-          var d1;
-          var d2;
-          var d3;
-          var dd;
-          var dy;
-          var ay;
-          var bx0;
-          var bx1;
-          var bx2;
-          var bx3;
-
-          var vector = [];
-
+          if (la === 0 || lb < 3) return lb;
+          var x = 0,
+            y,
+            d0,
+            d1,
+            d2,
+            d3,
+            dd,
+            dy,
+            ay,
+            bx0,
+            bx1,
+            bx2,
+            bx3,
+            vector = [];
           for (y = 0; y < la; y++) {
             vector.push(y + 1);
             vector.push(a.charCodeAt(offset + y));
           }
-
           var len = vector.length - 1;
-
           for (; x < lb - 3; ) {
             bx0 = b.charCodeAt(offset + (d0 = x));
             bx1 = b.charCodeAt(offset + (d1 = x + 1));
@@ -231,7 +431,6 @@
               d0 = dy;
             }
           }
-
           for (; x < lb; ) {
             bx0 = b.charCodeAt(offset + (d0 = x));
             dd = ++x;
@@ -241,7 +440,6 @@
               d0 = dy;
             }
           }
-
           return dd;
         };
       })();
@@ -253,61 +451,37 @@
           this.ready = false;
           this.url = 'https://erichsia7.github.io/material-symbols-list/search-index.json';
         }
-
         __buildSearchStructures(searchIndex) {
           const dictionary = searchIndex.dictionary.split(',');
           const symbols = searchIndex.symbols;
-          const names = [];
-          const wordToSymbols = {}; // { w0: [0, 2], ... }
-          const symbolToWords = []; // [[0, 1, 2, 3], [4, 5, 6], ...]
-
+          const names = [],
+            wordToSymbols = {},
+            symbolToWords = [];
           let nameIndex = 0;
           for (const symbolKey in symbols) {
-            // Create list of symbol names
-            const symbolNameComponents = symbolKey.split('_');
-            for (let i = symbolNameComponents.length - 1; i >= 0; i--) {
-              symbolNameComponents.splice(i, 1, dictionary[parseInt(symbolNameComponents[i], 36)]);
-            }
-            const symbol = symbolNameComponents.join('_');
-            names.push(symbol);
-            // Build wordIndex → nameIndex mapping
+            const parts = symbolKey.split('_');
+            for (let i = parts.length - 1; i >= 0; i--) parts.splice(i, 1, dictionary[parseInt(parts[i], 36)]);
+            names.push(parts.join('_'));
             const wordIndexes = symbols[symbolKey].split(',').map((k) => parseInt(k, 36));
-            for (const wordIndex of wordIndexes) {
-              const key = `w${wordIndex}`;
-              if (!wordToSymbols.hasOwnProperty(key)) {
-                wordToSymbols[key] = [];
-              }
-              wordToSymbols[key].push(nameIndex);
+            for (const w of wordIndexes) {
+              const key = `w${w}`;
+              (wordToSymbols[key] ||= []).push(nameIndex);
             }
             symbolToWords.push(wordIndexes);
             nameIndex++;
           }
-
           return { dictionary, names, wordToSymbols, symbolToWords };
         }
-
         __getIntersection(a, b) {
-          let result = [];
-          if (a.length <= b.length) {
-            for (const item of a) {
-              if (b.indexOf(item) > -1) {
-                result.push(item);
-              }
-            }
-          } else {
-            for (const item of b) {
-              if (a.indexOf(item) > -1) {
-                result.push(item);
-              }
-            }
-          }
-          return result;
+          const r = [];
+          const [s, l] = a.length <= b.length ? [a, b] : [b, a];
+          for (const x of s) if (l.indexOf(x) > -1) r.push(x);
+          return r;
         }
-
         async initialize() {
-          const response = await fetch(this.url);
-          if (!response.ok) throw new Error('Failed to fetch search index.');
-          this.searchIndex = await response.json();
+          const r = await fetch(this.url);
+          if (!r.ok) throw new Error('Failed to fetch search index.');
+          this.searchIndex = await r.json();
           this.searchStructures = this.__buildSearchStructures(this.searchIndex);
           this.ready = true;
           return true;
@@ -316,11 +490,17 @@
         searchFor(query, searchFrom = 0, skipBroadTerms = true, broadThreshold = 0.3) {
           const { dictionary, names, wordToSymbols, symbolToWords } = this.searchStructures;
           const broadLength = Math.round(names.length * broadThreshold);
-
-          // Split query
-          const queryWords = Array.from(new Set(query.trim().toLowerCase().split(/\s+/)));
+          const queryWords = Array.from(
+            new Set(
+              query
+                .trim()
+                .toLowerCase()
+                .split(/[\s_-]+/)
+                .filter(Boolean)
+            )
+          );
           const queryWordsLength = queryWords.length;
-
+          if (!queryWordsLength) return [];
           // Fuzzy match words to dictionary indices
           const minDistances = new Uint8Array(queryWordsLength);
           const matchedWordIndexes = new Int16Array(queryWordsLength).fill(-1);
@@ -344,85 +524,300 @@
             if (skipBroadTerms && arr.length > broadLength) continue;
             indexArrays.push(arr);
           }
-
-          const indexArraysLength = indexArrays.length;
-
-          if (indexArraysLength === 0) return [];
-
-          // Sort by length (shortest → longest)
+          if (!indexArrays.length) return [];
           indexArrays.sort((a, b) => a.length - b.length);
-
-          // Intersect
           let candidates = indexArrays[0];
-          for (let i = 1; i < indexArraysLength; i++) {
-            candidates = this.__getIntersection(candidates, indexArrays[i]);
-          }
-
-          // Rank candidates
+          for (let i = 1; i < indexArrays.length; i++) candidates = this.__getIntersection(candidates, indexArrays[i]);
           const scored = [];
-          for (let i = 0, l = candidates.length; i < l; i++) {
+          for (let i = 0; i < candidates.length; i++) {
             let score = 0;
             for (let j = queryWordsLength - 1; j >= 0; j--) {
               if (matchedWordIndexes[j] < 0) continue;
-              const symbolWordIndexes = wordToSymbols[`w${matchedWordIndexes[j]}`] || [];
-              if (symbolWordIndexes.indexOf(candidates[i]) > -1) {
-                score -= j + (symbolToWords[candidates[i]].indexOf(matchedWordIndexes[j]) + 1) * matchedWordIndexes[j];
-                // earlier query words && higher proability = higher weight
-              }
+              const sw = wordToSymbols[`w${matchedWordIndexes[j]}`] || [];
+              if (sw.indexOf(candidates[i]) > -1) score -= j + (symbolToWords[candidates[i]].indexOf(matchedWordIndexes[j]) + 1) * matchedWordIndexes[j];
             }
             scored.push([names[candidates[i]], score]);
           }
-
           scored.sort((a, b) => b[1] - a[1]);
           return scored;
         }
+
+        /* helper used by the UI */
+        getKeywords(name) {
+          const { names, symbolToWords, dictionary } = this.searchStructures;
+          const idx = names.indexOf(name);
+          return idx < 0 ? [] : symbolToWords[idx].map((w) => dictionary[w]);
+        }
+
+        /* helper used by the UI */
+        suggestPrefix(prefix, limit = 8) {
+          if (!prefix) return [];
+          const dict = this.searchStructures.dictionary,
+            out = [];
+          for (let i = 0, l = dict.length; i < l && out.length < limit; i++) if (dict[i].startsWith(prefix)) out.push(dict[i]);
+          return out;
+        }
       }
 
-      const searchInput = document.getElementById('search-input');
-      const statusText = document.getElementById('status-text');
-      const resultsContainer = document.getElementById('results-container');
-      const searchEngine = new MaterialSymbolsList();
-
-      // Initialize
-      (async () => {
-        const success = await searchEngine.initialize();
-        if (success) {
-          searchInput.disabled = false;
-          searchInput.placeholder = 'Type to search symbols...';
-          statusText.textContent = 'Ready.';
-          searchInput.focus();
-        } else {
-          statusText.textContent = 'Error loading index.';
-          statusText.style.color = 'red';
+      class KeyedList {
+        constructor(container, makeNode) {
+          this.container = container;
+          this.makeNode = makeNode;
+          this.nodes = new Map(); // key -> DOM node
         }
-      })();
+        render(items, getKey) {
+          const seen = new Set(),
+            ordered = [];
+          for (const it of items) {
+            const k = getKey(it);
+            seen.add(k);
+            let n = this.nodes.get(k);
+            if (!n) {
+              n = this.makeNode(it);
+              this.nodes.set(k, n);
+            }
+            ordered.push(n);
+          }
+          for (const [k, n] of this.nodes) {
+            if (!seen.has(k)) {
+              n.remove();
+              this.nodes.delete(k);
+            }
+          }
+          for (let i = 0; i < ordered.length; i++) {
+            const want = ordered[i],
+              have = this.container.children[i];
+            if (have !== want) this.container.insertBefore(want, have || null);
+          }
+        }
+      }
 
-      // Search Handler
-      searchInput.addEventListener('input', (e) => {
-        const query = e.target.value;
-        if (!query) {
-          resultsContainer.innerHTML = '';
+      const searchEl = document.querySelector('#search');
+      const ghostEl = document.querySelector('#ghost');
+      const suggestionsEl = document.querySelector('#suggestions');
+      const galleryEl = document.querySelector('#gallery');
+      const detailEl = document.querySelector('#detail');
+      const statusEl = document.querySelector('#status');
+      const backEl = document.querySelector('#back');
+      const backLabelEl = document.querySelector('#backLabel');
+      const toastEl = document.querySelector('#toast');
+
+      const lib = new MaterialSymbolsList();
+      let allNames = [];
+      let visibleCount = 240;
+      const PAGE = 240;
+      let mode = 'gallery'; // 'gallery' | 'search' | 'detail'
+      let lastQuery = '';
+      let suggestionItems = [];
+      let activeSuggestion = -1;
+
+      const galleryList = new KeyedList(galleryEl, makeCell);
+
+      function makeCell(name) {
+        const element = document.createElement('div');
+        element.className = 'cell';
+        element.innerHTML = `<span class="material-symbols-rounded">${name}</span><span class="name">${name}</span>`;
+        element.addEventListener('click', () => showDetail(name));
+        return element;
+      }
+
+      function showToast(msg) {
+        toastEl.textContent = msg;
+        toastEl.classList.add('show');
+        clearTimeout(showToast._t);
+        showToast._t = setTimeout(() => toastEl.classList.remove('show'), 1400);
+      }
+
+      function setMode(next) {
+        mode = next;
+        galleryEl.classList.toggle('hidden', next === 'detail');
+        detailEl.classList.toggle('hidden', next !== 'detail');
+        backEl.classList.toggle('hidden', next === 'gallery');
+        backLabelEl.textContent = next === 'detail' && lastQuery ? 'Back to results' : 'Back to gallery';
+      }
+
+      function renderGallery(list) {
+        const slice = list.slice(0, visibleCount);
+        galleryList.render(slice, (n) => n);
+        statusEl.textContent = `${list.length.toLocaleString()} symbols` + (visibleCount < list.length ? ` · showing ${slice.length.toLocaleString()}` : '');
+      }
+
+      function runSearch(q, force = false) {
+        if (!force && q === lastQuery) return;
+        lastQuery = q;
+        if (!q.trim()) {
+          setMode('gallery');
+          visibleCount = PAGE;
+          renderGallery(allNames);
           return;
         }
+        setMode('search');
+        const results = lib.searchFor(q).map((r) => r[0]);
+        galleryList.render(results.slice(0, 600), (n) => n);
+        statusEl.textContent = results.length ? `${results.length.toLocaleString()} match${results.length === 1 ? '' : 'es'} for "${q}"` : `No matches for "${q}"`;
+      }
 
-        const t0 = performance.now();
-        const results = searchEngine.searchFor(query);
-        const t1 = performance.now();
+      function updateSuggestions(value) {
+        const tokens = value.split(/[\s_-]/);
+        const current = tokens[tokens.length - 1].toLowerCase();
+        const matches = current ? lib.suggestPrefix(current, 8) : [];
 
-        statusText.textContent = `Found ${results.length} results in ${(t1 - t0).toFixed(2)}ms`;
+        if (matches.length && current && matches[0].startsWith(current) && matches[0] !== current) {
+          ghostEl.textContent = value + matches[0].slice(current.length);
+        } else {
+          ghostEl.textContent = '';
+        }
 
-        resultsContainer.innerHTML = results
-          .map(
-            ([name, score]) => `
-        <div class="result-item">
-          <span class="symbol">${name}</span>
-          <span class="symbol-name">${name.replace(/\*/g, ' ')}</span>
-          <span class="symbol-score">Score: ${score}</span>
-        </div>
-      `
-          )
-          .join('');
+        suggestionItems = matches.filter((m) => m !== current);
+        activeSuggestion = -1;
+        if (!suggestionItems.length) {
+          suggestionsEl.classList.remove('show');
+          suggestionsEl.innerHTML = '';
+          return;
+        }
+        const prefix = value.slice(0, value.length - current.length);
+        suggestionsEl.innerHTML = suggestionItems.map((m, i) => `<div class="suggestion" data-i="${i}"><span>${prefix}<b>${m}</b></span><span class="hint">↵ to apply</span></div>`).join('');
+        suggestionsEl.classList.add('show');
+      }
+
+      function applySuggestion(word) {
+        const value = searchEl.value;
+        const tokens = value.split(/(\s+)/);
+        for (let i = tokens.length - 1; i >= 0; i--) {
+          if (tokens[i] && !/^\s+$/.test(tokens[i])) {
+            tokens[i] = word;
+            break;
+          }
+        }
+        const newVal = tokens.join('') + ' ';
+        searchEl.value = newVal;
+        ghostEl.textContent = '';
+        suggestionsEl.classList.remove('show');
+        runSearch(newVal);
+      }
+
+      function highlightSuggestion() {
+        [...suggestionsEl.children].forEach((c, i) => c.classList.toggle('active', i === activeSuggestion));
+      }
+
+      /* ---------- detail view ---------- */
+      function showDetail(name) {
+        setMode('detail');
+        const keywords = lib.getKeywords(name);
+        detailEl.innerHTML = `
+    <div class="icon-card"><span class="material-symbols-rounded">${name}</span></div>
+    <div class="name-row">
+      <code>${name}</code>
+      <button class="copy-button" id="copyBtn">
+        <span class="material-symbols-rounded">content_copy</span>Copy
+      </button>
+    </div>
+    <div class="keywords"></div>`;
+        const kwWrap = detailEl.querySelector('.keywords');
+        for (const keyword of keywords) {
+          const chip = document.createElement('span');
+          chip.className = 'keyword';
+          chip.textContent = keyword;
+          chip.addEventListener('click', () => {
+            searchEl.value = keyword;
+            searchEl.focus();
+            runSearch(keyword, true);
+          });
+          kwWrap.appendChild(chip);
+        }
+        detailEl.querySelector('#copyBtn').addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(name);
+            showToast(`Copied "${name}"`);
+          } catch {
+            showToast('Copy failed');
+          }
+        });
+        statusEl.textContent = '';
+      }
+
+      searchEl.addEventListener('input', (e) => {
+        updateSuggestions(e.target.value);
+        runSearch(e.target.value);
       });
+
+      searchEl.addEventListener('keydown', (e) => {
+        if (e.key === 'Tab' && ghostEl.textContent && !e.shiftKey) {
+          e.preventDefault();
+          searchEl.value = ghostEl.textContent;
+          ghostEl.textContent = '';
+          updateSuggestions(searchEl.value);
+          runSearch(searchEl.value);
+          return;
+        }
+        if (e.key === 'ArrowDown' && suggestionItems.length) {
+          e.preventDefault();
+          activeSuggestion = (activeSuggestion + 1) % suggestionItems.length;
+          highlightSuggestion();
+        } else if (e.key === 'ArrowUp' && suggestionItems.length) {
+          e.preventDefault();
+          activeSuggestion = (activeSuggestion - 1 + suggestionItems.length) % suggestionItems.length;
+          highlightSuggestion();
+        } else if (e.key === 'Enter' && activeSuggestion >= 0) {
+          e.preventDefault();
+          applySuggestion(suggestionItems[activeSuggestion]);
+        } else if (e.key === 'Escape') {
+          suggestionsEl.classList.remove('show');
+        }
+      });
+
+      searchEl.addEventListener('blur', () => setTimeout(() => suggestionsEl.classList.remove('show'), 120));
+
+      suggestionsEl.addEventListener('mousedown', (e) => {
+        const item = e.target.closest('.suggestion');
+        if (!item) return;
+        e.preventDefault();
+        applySuggestion(suggestionItems[+item.dataset.i]);
+      });
+
+      backEl.addEventListener('click', () => {
+        if (mode === 'detail' && lastQuery) {
+          setMode('search');
+          runSearch(lastQuery, true);
+        } else {
+          searchEl.value = '';
+          ghostEl.textContent = '';
+          suggestionsEl.classList.remove('show');
+          lastQuery = '';
+          setMode('gallery');
+          visibleCount = PAGE;
+          renderGallery(allNames);
+        }
+      });
+
+      document.querySelector('#home').addEventListener('click', () => {
+        searchEl.value = '';
+        ghostEl.textContent = '';
+        suggestionsEl.classList.remove('show');
+        lastQuery = '';
+        setMode('gallery');
+        visibleCount = PAGE;
+        renderGallery(allNames);
+        window.scrollTo({ top: 0 });
+      });
+
+      window.addEventListener('scroll', () => {
+        if (mode !== 'gallery' || visibleCount >= allNames.length) return;
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 600) {
+          visibleCount = Math.min(allNames.length, visibleCount + PAGE);
+          renderGallery(allNames);
+        }
+      });
+
+      (async () => {
+        try {
+          await lib.initialize();
+          allNames = lib.searchStructures.names.slice().sort();
+          renderGallery(allNames);
+        } catch (err) {
+          statusEl.textContent = 'Failed to load symbol index: ' + err.message;
+        }
+      })();
     </script>
   </body>
 </html>
