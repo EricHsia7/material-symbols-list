@@ -72,7 +72,7 @@ class MaterialSymbolsList {
     const broadLength = Math.round(names.length * broadThreshold);
 
     // Split query
-    const queryWords = Array.from(new Set(query.trim().toLowerCase().split(/[\s\_]+/)));
+    const queryWords = Array.from(new Set(query.trim().toLowerCase().split(/[\s_-]+/)));
     const queryWordsLength = queryWords.length;
 
     // Fuzzy match words to dictionary indices
