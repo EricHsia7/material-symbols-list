@@ -48,9 +48,6 @@ jobs:
       - name: Unzip tags
         run: unzip tags.zip
 
-      - name: Unzip synonymies
-        run: unzip synonymies.zip
-
       - name: Generate prompts
         id: generate-prompts
         run: node generate-prompts.js
