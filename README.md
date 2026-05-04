@@ -7,7 +7,8 @@ A comprehensive, indexed collection of Material Symbols with enhanced search cap
 This repository provides a complete catalog of Material Symbols with additional features:
 
 - Comprehensive listing: Complete catalog of all Material Symbols
-- AI-Enhanced Search: Find symbols using semantic tags chosen by CLIP model
+- Visual Search: Find symbols using semantic tags visually matched by the CLIP model
+- Smart Synonyms: Tag synonymies are mapped and expanded using a local LLM (`gemma4:e4b`) to bridge the gap between official names and natural human vocabulary
 - TypeScript support: Includes type definitions
 - Up To Date: Regularly updated distribution files
 
