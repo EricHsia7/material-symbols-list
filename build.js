@@ -7,6 +7,7 @@ const emojiRegex = require('emoji-regex');
 
 async function main() {
   const versions = require('./versions.json');
+  const timestamps = require('./timestamps.json');
   const outputDir = './dist';
   await makeDirectory(outputDir);
   const tagFiles = await getFiles('./tags/');
@@ -94,6 +95,15 @@ async function main() {
     result.symbols[symbolNameComponents.join('_')] = keywords.join(',');
   }
 
+  let synonymiesCount = 0;
+  for (const symbolName in versions) {
+    if (timestamps.hasOwnProperty(symbolName)) {
+      if (timestamps[symbolName] > 0) {
+        synonymiesCount++;
+      }
+    }
+  }
+
   // search-index
   const jsonString = JSON.stringify(result);
 
@@ -119,6 +129,15 @@ async function main() {
 
   // output type.ts
   await writeTextFile(path.join(outputDir, 'type.ts'), typeString);
+
+  // output stats.json
+  const stats = {
+    symbols_count: list.length,
+    keywords_count: dictionary.length,
+    synonymies_coverage: Math.round((synonymiesCount / list.length) * 100) / 100
+  };
+
+  await fs.promises.writeFile(path.join(outputDir, 'stats.json'), JSON.stringify(stats, null, 2));
 
   // output manifest.json
   const manifest = {
