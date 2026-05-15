@@ -98,6 +98,7 @@ jobs:
       - name: Restore cached text features
         id: restore-cached-text-features
         uses: actions/cache/restore@v5
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         with:
           path: ./text_features.pt
           key: text-features-${{ hashFiles('tag.py') }}-
@@ -120,6 +121,7 @@ jobs:
       - name: Cache text features
         id: cache-text-features
         uses: actions/cache/save@v5
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         with:
           path: ./text_features.pt
           key: text-features-${{ hashFiles('tag.py') }}-${{ hashFiles('text_features.pt') }}
