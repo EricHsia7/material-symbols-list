@@ -1,7 +1,8 @@
 name: Synonymy
 on:
   schedule:
-    - cron: '0 0 * * 0,3,4'
+    - cron: '0 6 * * 1,2,3,4,5'
+    - cron: '0 12 * * 1,2,3,4,5'
   workflow_dispatch:
 
 jobs:
