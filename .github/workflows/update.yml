@@ -95,6 +95,16 @@ jobs:
           restore-keys: |
             clip-model-${{ runner.os }}
 
+      - name: Restore cached text features
+        id: restore-cached-text-features
+        uses: actions/cache/restore@v5
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
+        with:
+          path: ./text_features.pt
+          key: text-features-${{ hashFiles('tag.py') }}-
+          restore-keys: |
+            text-features-${{ hashFiles('tag.py') }}-
+
       - name: Add tags
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         run: python tag.py
@@ -107,6 +117,14 @@ jobs:
           path: |
             ~/.cache/clip
           key: ${{ steps.restore-cached-clip-model.outputs.cache-primary-key }}
+
+      - name: Cache text features
+        id: cache-text-features
+        uses: actions/cache/save@v5
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
+        with:
+          path: ./text_features.pt
+          key: text-features-${{ hashFiles('tag.py') }}-${{ hashFiles('text_features.pt') }}
 
       - name: Merge tags
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0

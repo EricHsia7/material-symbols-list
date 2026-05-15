@@ -31,23 +31,69 @@ templates = [
     "a minimalist illustration of [{}]"
 ]
 
-def encode_with_templates(descriptions):
-  print("Encoding text features with prompt ensembling...")
-  with torch.no_grad():
-    all_features = []
-    for desc in descriptions:
-      # Create multiple prompt variations for a single word/phrase
-      texts = [template.format(desc) for template in templates]
-      text_inputs = torch.cat([clip.tokenize(t) for t in texts]).to(device)
-      features = model.encode_text(text_inputs)
-      
-      # Average the features across the templates to get a robust vector
-      features = features.mean(dim=0, keepdim=True)
-      features = features / features.norm(dim=-1, keepdim=True)
-      all_features.append(features)
-  return torch.cat(all_features)
+def get_text_features(descriptions, cache_path="./text_features.pt"):
+    if os.path.exists(cache_path):
+        print(f"Loading cached text features from {cache_path}...")
+        cached_data = torch.load(cache_path) 
+        old_descriptions = cached_data['descriptions']
+        old_features = cached_data['features'].to(device)
+        
+        # Create a lookup dictionary mapping string -> 1D feature tensor
+        # slice [i:i+1] to keep the batch dimension (1, dim)
+        old_desc_to_feature = {
+            desc: old_features[i:i+1] 
+            for i, desc in enumerate(old_descriptions)
+        }
+    else:
+        old_desc_to_feature = {}
 
-text_features = encode_with_templates(class_descriptions)
+    features_list = []
+    descriptions_to_compute = []
+    indices_to_compute = []
+
+    # Check which descriptions are cached and which are new
+    for i, desc in enumerate(descriptions):
+        if desc in old_desc_to_feature:
+            features_list.append(old_desc_to_feature[desc])
+        else:
+            # Add a placeholder
+            features_list.append(None)
+            descriptions_to_compute.append(desc)
+            indices_to_compute.append(i)
+
+    # Compute the newly added descriptions
+    if descriptions_to_compute:
+        print(f"Computing features for {len(descriptions_to_compute)} new descriptions...")
+        with torch.no_grad():
+            computed_features = []
+            for desc in descriptions_to_compute:
+                texts = [template.format(desc) for template in templates]
+                text_inputs = torch.cat([clip.tokenize(t) for t in texts]).to(device)
+                features = model.encode_text(text_inputs)
+                
+                features = features.mean(dim=0, keepdim=True)
+                features = features / features.norm(dim=-1, keepdim=True)
+                computed_features.append(features)
+            
+            # Fill in the placeholders with newly computed features
+            for idx, feat in zip(indices_to_compute, computed_features):
+                features_list[idx] = feat
+    else:
+        print("All features were already cached!")
+
+    features_tensor = torch.cat(features_list)
+
+    # Update the cache if anything changed
+    if not os.path.exists(cache_path) or descriptions != cached_data.get('descriptions', []):
+        print(f"Updating cache at {cache_path}...")
+        torch.save({
+            'descriptions': descriptions,
+            'features': features_tensor.cpu()
+        }, cache_path)
+
+    return features_tensor
+
+text_features = get_text_features(class_descriptions)
 
 def tag_image(file_path):
   start = time.time()
