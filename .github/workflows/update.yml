@@ -82,7 +82,7 @@ jobs:
       - name: Cache Python dependencies
         id: cache-python-dependencies
         uses: actions/cache/save@v5
-        if: steps.restore-cached-python-dependencies.outputs.cache-hit != 'true'
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0 && steps.restore-cached-python-dependencies.outputs.cache-hit != 'true'
         with:
           path: ${{ steps.get-pip-cache-directory.outputs.dir }}
           key: ${{ steps.restore-cached-python-dependencies.outputs.cache-primary-key }}
@@ -115,7 +115,7 @@ jobs:
       - name: Cache CLIP model
         id: cache-clip-model
         uses: actions/cache/save@v5
-        if: steps.restore-cached-clip-model.outputs.cache-hit != 'true'
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0 && steps.restore-cached-clip-model.outputs.cache-hit != 'true'
         with:
           path: |
             ~/.cache/clip
