@@ -3,6 +3,7 @@ from PIL import Image
 import json
 import time
 import os
+import re
 
 def get_class_descriptions():
   result = set()
@@ -15,7 +16,7 @@ def get_class_descriptions():
       # split words -> broad tag matching
       words = symbol_name.split("_")
       for word in words:
-        if len(word) > 1:
+        if len(word) > 1 and re.fullmatch(r'^[+-]?(\d+\.\d*|\.\d+|\d+)([Ee][+-]?\d+)?$', word) is None:
           result.add(word)
   return list(result)
 
