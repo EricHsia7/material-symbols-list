@@ -3,23 +3,27 @@ const path = require('path');
 const { makeDirectory, writeTextFile, getFiles, readFile } = require('./files.js');
 
 function getPrompt(symbol, tags) {
-  return `You are an expert in UI/UX design and iconography. 
-    I will provide you with a list of visually matched tags. 
-    For each icon, provide 3 to 5 *extra* synonyms, alternative names, or related UI concepts that a user might search for to find this icon.
-    
-    IMPORTANT RULES:
-    1. Focus on what the icon *looks like* and its *UI function*.
-    2. Output ONLY a list of tags concatenated by commas. No markdown formatting, no explanations.
-    
-    EXAMPLE:
-    settings -> gear, cog, preferences, options, components
-    favorite -> heart, like, love, save
-    
-    ICON NAME:
-    ${symbol}
+  return `You are an expert in UI/UX design and iconography.
+I will provide you with a list of visually matched tags.
+For each icon, provide 5 to 10 *extra* synonymies, alternative names, or related UI concepts that a user might search for to find this icon.
 
-    ICON TAGS TO PROCESS:
-    ${tags}`;
+IMPORTANT RULES:
+1. Focus on what the icon *looks like* and its *UI function*.
+2. Transform them into different part of speeches and forms, such as verb, noun, pronoun, proper noun, gerund, adjective, adverb, preposition, conjunction, auxiliary, determiner, and inflections.
+3. Always check if a synonymy fits the ICON NAME in your thinking process.
+4. Output ONLY a list of tags concatenated by commas. No markdown formatting, no explanations.
+
+EXAMPLE:
+settings -> gear, cog, preferences, options, components
+favorite -> heart, like, love, save
+new -> add, create, fresh, brand-new, freshness
+
+
+ICON NAME:
+${symbol}
+
+ICON TAGS TO PROCESS:
+${tags}`;
 }
 
 async function main() {
