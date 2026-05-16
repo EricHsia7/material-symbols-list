@@ -4,7 +4,7 @@ const { makeDirectory, writeTextFile, getFiles, readFile } = require('./files.js
 
 function getPrompt(symbol, tags) {
   return `You are an expert in UI/UX design and iconography.
-I will provide you with a list of visually matched tags.
+I will provide you with a list of visually matched icon tags.
 For each icon, provide 5 to 10 *extra* synonymies, alternative names, or related UI concepts that a user might search for to find this icon.
 
 IMPORTANT RULES:
@@ -22,7 +22,7 @@ new -> add, create, fresh, brand-new, freshness
 ICON NAME:
 ${symbol}
 
-ICON TAGS TO PROCESS:
+ICON TAGS:
 ${tags}`;
 }
 
