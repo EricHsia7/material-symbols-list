@@ -835,13 +835,13 @@
         }
         const similarSymbolsWrap = detailEl.querySelector('.similar-symbols');
         for (const similarSymbol of similarSymbols) {
-          const chip = document.createElement('div');
-          chip.className = 'similar-symbol';
-          chip.innerHTML = `<span class="material-symbols-rounded">${similarSymbol}</span><span class="name">${similarSymbol}</span>`;
-          chip.addEventListener('click', () => {
+          const cell = document.createElement('div');
+          cell.className = 'similar-symbol';
+          cell.innerHTML = `<span class="material-symbols-rounded">${similarSymbol}</span><span class="name">${similarSymbol}</span>`;
+          cell.addEventListener('click', () => {
             showDetail(similarSymbol);
           });
-          similarSymbols.appendChild(chip);
+          similarSymbolsWrap.appendChild(cell);
         }
         detailEl.querySelector('#copyBtn').addEventListener('click', async () => {
           try {
