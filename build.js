@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const { makeDirectory, writeTextFile, getFiles, readFile } = require('./files.js');
-const { sha256, md5, sha512 } = require('./hash.js');
 const pako = require('pako');
 const emojiRegex = require('emoji-regex');
 
@@ -137,27 +136,7 @@ async function main() {
     synonymies_coverage: Math.round((synonymiesCount / list.length) * 100) / 100
   };
 
-  await fs.promises.writeFile(path.join(outputDir, 'stats.json'), JSON.stringify(stats, null, 2));
-
-  // output manifest.json
-  const manifest = {
-    search_index: {
-      raw: 'https://erichsia7.github.io/material-symbols-list/search-index.json',
-      compressed: 'https://erichsia7.github.io/material-symbols-list/search-index.gz',
-      md5: md5(jsonString),
-      sha256: sha256(jsonString),
-      sha512: sha512(jsonString)
-    },
-    index: {
-      raw: 'https://erichsia7.github.io/material-symbols-list/index.json',
-      compressed: 'https://erichsia7.github.io/material-symbols-list/index.gz',
-      md5: md5(jsonString2),
-      sha256: sha256(jsonString2),
-      sha512: sha512(jsonString2)
-    }
-  };
-
-  await fs.promises.writeFile(path.join(outputDir, 'manifest.json'), JSON.stringify(manifest, null, 2));
+  await writeTextFile(path.join(outputDir, 'stats.json'), JSON.stringify(stats, null, 2));
 
   process.exit(0);
 }

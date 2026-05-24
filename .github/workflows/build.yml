@@ -12,16 +12,16 @@ jobs:
     steps: 
       - name: Check out repository code
         uses: actions/checkout@v6
-      
-      - name: Setup Node
-        uses: actions/setup-node@v6
-        with:
-          node-version: 24
 
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
           node-version: 24
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
 
       - name: Restore cached Node dependencies
         id: restore-cached-node-dependencies
@@ -47,6 +47,30 @@ jobs:
             ./node_modules
             package-lock.json
           key: ${{ steps.restore-cached-node-dependencies.outputs.cache-primary-key }}
+      
+      - name: Get pip cache directory
+        id: get-pip-cache-directory
+        run: echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
+
+      - name: Restore cached Python dependencies
+        id: restore-cached-python-dependencies
+        uses: actions/cache/restore@v5
+        with:
+          path: ${{ steps.get-pip-cache-directory.outputs.dir }}
+          key: python-dependencies-build-${{ hashFiles('./similarity.requirements.txt') }}
+          restore-keys: |
+            python-dependencies-build-${{ hashFiles('./similarity.requirements.txt') }}
+
+      - name: Install Python dependencies
+        run: pip install -r similarity.requirements.txt
+
+      - name: Cache Python dependencies
+        id: cache-python-dependencies
+        uses: actions/cache/save@v5
+        if: steps.restore-cached-python-dependencies.outputs.cache-hit != 'true'
+        with:
+          path: ${{ steps.get-pip-cache-directory.outputs.dir }}
+          key: ${{ steps.restore-cached-python-dependencies.outputs.cache-primary-key }}
 
       - name: Unzip tags
         run: unzip tags.zip
@@ -55,8 +79,12 @@ jobs:
         run: unzip synonymies.zip
 
       - name: Build
-        run: node build.js
-      
+        run: |
+          node build.js
+          python similarity.py
+          node similarity.js
+          node manifest.js
+
       - name: Copy Symbol Search to dist
         run: cp -r index.html ./dist/index.html
 

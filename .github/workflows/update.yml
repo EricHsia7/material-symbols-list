@@ -71,13 +71,13 @@ jobs:
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         with:
           path: ${{ steps.get-pip-cache-directory.outputs.dir }}
-          key: python-dependencies-${{ runner.os }}-v2
+          key: python-dependencies-update-${{ hashFiles('./tag.requirements.txt') }}
           restore-keys: |
-            python-dependencies-${{ runner.os }}-v2
+            python-dependencies-update-${{ hashFiles('./tag.requirements.txt') }}
 
       - name: Install Python dependencies
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
-        run: pip install openai-clip==1.0.1 torch==2.8.0 torchvision==0.23.0 pillow==11.3.0
+        run: pip install -r tag.requirements.txt
       
       - name: Cache Python dependencies
         id: cache-python-dependencies
