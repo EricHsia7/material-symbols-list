@@ -337,6 +337,50 @@
         border-color: var(--accent);
       }
 
+      .similar-symbols {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        max-width: 760px;
+        justify-content: center;
+      }
+
+      .similar-symbol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 12px;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        transition:
+          transform 0.08s ease,
+          border-color 0.08s ease;
+      }
+
+      .similar-symbol:hover {
+        border-color: var(--accent);
+      }
+
+      .similar-symbol .material-symbols-rounded {
+        font-size: 36px;
+      }
+
+      .similar-symbol .name {
+        margin-top: 8px;
+        font-size: 11px;
+        color: var(--muted);
+        text-align: center;
+        word-break: break-all;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
       .hidden {
         display: none !important;
       }
@@ -611,45 +655,45 @@
 
       class MaterialSymbolsSimilarity {
         constructor() {
-          this.dictionary = {};
-          this.symbols = {};
+          this.similarity = {};
+          this.index = {};
+
           this.ready = false;
           this.url = 'https://erichsia7.github.io/material-symbols-list/similarity.json';
         }
-        __unpack(similarity) {
-          const dictionary = similarity.dictionary.split(',');
-          const symbols = similarity.symbols;
-          const names = [],
-            wordToSymbols = {},
-            symbolToWords = [];
-          let nameIndex = 0;
-          for (const symbolKey in symbols) {
-            const parts = symbolKey.split('_');
-            for (let i = parts.length - 1; i >= 0; i--) parts.splice(i, 1, dictionary[parseInt(parts[i], 36)]);
-            names.push(parts.join('_'));
-            const wordIndexes = symbols[symbolKey].split(',').map((k) => parseInt(k, 36));
-            for (const w of wordIndexes) {
-              const key = `w${w}`;
-              (wordToSymbols[key] ||= []).push(nameIndex);
+
+        __unpack(data) {
+          const symbols = data.symbols.split(',');
+          const similarity = data.similarity;
+          const symbolToSymbols = {};
+          for (const symbolKey in similarity) {
+            const symbolName = symbols[parseInt(symbolKey, 36)];
+            const symbolKeys = similarity[symbolKey].split(',');
+            for (let i = symbolKeys.length - 1; i >= 0; i--) {
+              symbolKeys.splice(i, 1, parseInt(symbolKeys[i], 36));
             }
-            symbolToWords.push(wordIndexes);
-            nameIndex++;
+            symbolToSymbols[symbolName] = symbolKeys;
           }
-          return { dictionary, names, wordToSymbols, symbolToWords };
+          return { symbols, symbolToSymbols };
         }
-        __getIntersection(a, b) {
-          const r = [];
-          const [s, l] = a.length <= b.length ? [a, b] : [b, a];
-          for (const x of s) if (l.indexOf(x) > -1) r.push(x);
-          return r;
-        }
+
         async initialize() {
           const r = await fetch(this.url);
-          if (!r.ok) throw new Error('Failed to fetch search index.');
-          this.searchIndex = await r.json();
-          this.searchStructures = this.__buildSearchStructures(this.searchIndex);
+          if (!r.ok) throw new Error('Failed to fetch similarity.');
+          this.similarity = await r.json();
+          this.index = this.__unpack(this.similarity);
           this.ready = true;
           return true;
+        }
+
+        getSimilarSymbols(symbolName) {
+          if (!this.ready) return [];
+
+          if (!this.index.similarity.hasOwnProperty(symbolName)) return [];
+
+          const indices = this.index.similarity;
+
+          return indices.map((e) => this.index.symbols[e]);
         }
       }
 
@@ -664,6 +708,7 @@
       const toastEl = document.querySelector('#toast');
 
       const lib = new MaterialSymbolsList();
+      const sim = new MaterialSymbolsSimilarity();
       let allNames = [];
       let visibleCount = 240;
       const PAGE = 240;
@@ -765,15 +810,17 @@
       function showDetail(name) {
         setMode('detail');
         const keywords = lib.getKeywords(name);
+        const similarSymbols = sim.getSimilarSymbols(name);
         detailEl.innerHTML = `
-    <div class="icon-card"><span class="material-symbols-rounded">${name}</span></div>
-    <div class="name-row">
-      <code>${name}</code>
-      <button class="copy-button" id="copyBtn">
-        <span class="material-symbols-rounded">content_copy</span>Copy
-      </button>
-    </div>
-    <div class="keywords"></div>`;
+      <div class="icon-card"><span class="material-symbols-rounded">${name}</span></div>
+      <div class="name-row">
+        <code>${name}</code>
+        <button class="copy-button" id="copyBtn">
+          <span class="material-symbols-rounded">content_copy</span>Copy
+        </button>
+      </div>
+      <div class="keywords"></div>
+      <div class="similar-symbols"></div>`;
         const kwWrap = detailEl.querySelector('.keywords');
         for (const keyword of keywords) {
           const chip = document.createElement('span');
@@ -785,6 +832,16 @@
             runSearch(keyword, true);
           });
           kwWrap.appendChild(chip);
+        }
+        const similarSymbolsWrap = detailEl.querySelector('.similar-symbols');
+        for (const similarSymbol of similarSymbols) {
+          const chip = document.createElement('div');
+          chip.className = 'similar-symbol';
+          chip.innerHTML = `<span class="material-symbols-rounded">${similarSymbol}</span><span class="name">${similarSymbol}</span>`;
+          chip.addEventListener('click', () => {
+            showDetail(similarSymbol);
+          });
+          similarSymbols.appendChild(chip);
         }
         detailEl.querySelector('#copyBtn').addEventListener('click', async () => {
           try {
@@ -862,6 +919,7 @@
       (async () => {
         try {
           await lib.initialize();
+          await sim.initialize();
           allNames = lib.searchStructures.names.slice().sort();
           renderGallery(allNames);
         } catch (err) {
