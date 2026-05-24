@@ -327,7 +327,7 @@
         border: 1px solid var(--border);
         border-radius: 999px;
         padding: 4px 12px;
-        font-size: 13px;
+        font-size: 15px;
         color: var(--muted);
         cursor: pointer;
       }
@@ -346,11 +346,10 @@
       }
 
       .similar-symbol {
-        display: flex;
-        flex-direction: column;
+        display: inline-flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-        aspect-ratio: 1;
         padding: 10px;
         cursor: pointer;
         border-radius: 12px;
@@ -366,12 +365,12 @@
       }
 
       .similar-symbol .material-symbols-rounded {
-        font-size: 36px;
+        font-size: 20px;
       }
 
       .similar-symbol .name {
-        margin-top: 8px;
-        font-size: 11px;
+        margin-left: 3px;
+        font-size: 15px;
         color: var(--muted);
         text-align: center;
         word-break: break-all;
@@ -819,8 +818,8 @@
           <span class="material-symbols-rounded">content_copy</span>Copy
         </button>
       </div>
-      <div class="keywords"></div>
-      <div class="similar-symbols"></div>`;
+      <div class="similar-symbols"></div>
+      <div class="keywords"></div>`;
         const kwWrap = detailEl.querySelector('.keywords');
         for (const keyword of keywords) {
           const chip = document.createElement('span');
