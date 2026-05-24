@@ -35,4 +35,8 @@ async function main() {
   };
 
   await writeTextFile(path.join(outputDir, 'manifest.json'), JSON.stringify(manifest, null, 2));
+
+  process.exit(0);
 }
+
+main();
