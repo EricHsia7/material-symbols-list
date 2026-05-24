@@ -609,6 +609,50 @@
         }
       }
 
+      class MaterialSymbolsSimilarity {
+        constructor() {
+          this.dictionary = {};
+          this.symbols = {};
+          this.ready = false;
+          this.url = 'https://erichsia7.github.io/material-symbols-list/similarity.json';
+        }
+        __unpack(similarity) {
+          const dictionary = similarity.dictionary.split(',');
+          const symbols = similarity.symbols;
+          const names = [],
+            wordToSymbols = {},
+            symbolToWords = [];
+          let nameIndex = 0;
+          for (const symbolKey in symbols) {
+            const parts = symbolKey.split('_');
+            for (let i = parts.length - 1; i >= 0; i--) parts.splice(i, 1, dictionary[parseInt(parts[i], 36)]);
+            names.push(parts.join('_'));
+            const wordIndexes = symbols[symbolKey].split(',').map((k) => parseInt(k, 36));
+            for (const w of wordIndexes) {
+              const key = `w${w}`;
+              (wordToSymbols[key] ||= []).push(nameIndex);
+            }
+            symbolToWords.push(wordIndexes);
+            nameIndex++;
+          }
+          return { dictionary, names, wordToSymbols, symbolToWords };
+        }
+        __getIntersection(a, b) {
+          const r = [];
+          const [s, l] = a.length <= b.length ? [a, b] : [b, a];
+          for (const x of s) if (l.indexOf(x) > -1) r.push(x);
+          return r;
+        }
+        async initialize() {
+          const r = await fetch(this.url);
+          if (!r.ok) throw new Error('Failed to fetch search index.');
+          this.searchIndex = await r.json();
+          this.searchStructures = this.__buildSearchStructures(this.searchIndex);
+          this.ready = true;
+          return true;
+        }
+      }
+
       const searchEl = document.querySelector('#search');
       const ghostEl = document.querySelector('#ghost');
       const suggestionsEl = document.querySelector('#suggestions');
