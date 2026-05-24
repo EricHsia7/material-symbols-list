@@ -57,12 +57,12 @@ jobs:
         uses: actions/cache/restore@v5
         with:
           path: ${{ steps.get-pip-cache-directory.outputs.dir }}
-          key: python-dependencies-build-v1
+          key: python-dependencies-build-${{ hashFiles('./similarity.requirements.txt') }}
           restore-keys: |
-            python-dependencies-build-v1
+            python-dependencies-build-${{ hashFiles('./similarity.requirements.txt') }}
 
       - name: Install Python dependencies
-        run: pip install numpy==2.2.6 torch==2.12.0
+        run: pip install -r similarity.requirements.txt
 
       - name: Cache Python dependencies
         id: cache-python-dependencies
