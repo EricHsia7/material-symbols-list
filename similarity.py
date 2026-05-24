@@ -56,7 +56,7 @@ def to_radix_string(n, radix):
         n //= radix
     return result
 
-def main(number_type: torch.dtype = torch.float32, top_k: int = 16, threshold: float = 0.5, input_file = "./dist/search-index.json", output_dir = "./dist"):
+def main(number_type: torch.dtype = torch.float32, top_k: int = 24, threshold: float = 0.5, input_file = "./dist/search-index.json", output_dir = "./dist"):
   dev = pick_device()
   data = read_input_file(input_file)
   keys = data["keys"]
