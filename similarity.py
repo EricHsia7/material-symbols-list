@@ -63,8 +63,6 @@ def main(number_type: torch.dtype = torch.float32, top_k: int = 16, threshold: f
     if len(arr) > 0:
       result["similarity"][keys[idx]] = ",".join(arr)
 
-  print(result)
-
   output_file = os.path.join(output_dir, "similarity.json")
   with open(output_file, 'w') as g:
     json.dump(result, g, ensure_ascii = False, separators = (',', ':'))
