@@ -689,9 +689,9 @@
         getSimilarSymbols(symbolName) {
           if (!this.ready) return [];
 
-          if (!this.index.similarity.hasOwnProperty(symbolName)) return [];
+          if (!this.index.symbolToSymbols.hasOwnProperty(symbolName)) return [];
 
-          const indices = this.index.similarity;
+          const indices = this.index.symbolToSymbols[symbolName];
 
           return indices.map((e) => this.index.symbols[e]);
         }
