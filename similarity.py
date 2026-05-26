@@ -75,7 +75,7 @@ def main(number_type: torch.dtype = torch.float32, top_k: int = 24, threshold: f
     matched_scores = scores.tolist()
     arr = []
     for i, matched_id in enumerate(matched_ids):
-      if matched_scores[i] >= threshold:
+      if matched_scores[i] >= threshold and matched_id != idx:
         symbol_name = key_to_symbol_name(keys[matched_id], dictionary)
         if symbol_name not in frequency_map:
           frequency_map[symbol_name] = 0
