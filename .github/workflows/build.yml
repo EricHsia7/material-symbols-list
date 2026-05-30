@@ -85,9 +85,6 @@ jobs:
           node similarity.js
           node manifest.js
 
-      - name: Copy Symbol Search to dist
-        run: cp -r index.html ./dist/index.html
-
       - name: Deploy with gh-pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
