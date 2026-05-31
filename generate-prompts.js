@@ -38,6 +38,8 @@ async function main() {
   await makeDirectory(outputDir);
 
   const now = new Date().getTime();
+  const exp = 60 * 60 * 24 * 7 * 1000;
+  const time = now - exp;
   for (const symbolKey in versions) {
     if (!timestamps.hasOwnProperty(symbolKey)) {
       timestamps[symbolKey] = 0;
@@ -49,7 +51,7 @@ async function main() {
     if (!versions.hasOwnProperty(symbolKey)) {
       continue;
     }
-    if (timestamps[symbolKey] < now) {
+    if (timestamps[symbolKey] < time) {
       candidates.push([symbolKey, timestamps[symbolKey]]);
     }
   }
