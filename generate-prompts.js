@@ -38,7 +38,7 @@ async function main() {
   await makeDirectory(outputDir);
 
   const now = new Date().getTime();
-  const exp = 60 * 60 * 24 * 7 * 1000;
+  const exp = 60 * 60 * 24 * 60 * 1000;
   const time = now - exp;
   for (const symbolKey in versions) {
     if (!timestamps.hasOwnProperty(symbolKey)) {
