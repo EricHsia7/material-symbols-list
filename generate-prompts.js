@@ -51,7 +51,7 @@ async function main() {
     if (!versions.hasOwnProperty(symbolKey)) {
       continue;
     }
-    if (timestamps[symbolKey] <= 0 || timestamps[symbolKey] < time) {
+    if (timestamps[symbolKey] <= 0 || timestamps[symbolKey] <= time) {
       candidates.push([symbolKey, timestamps[symbolKey]]);
     }
   }
