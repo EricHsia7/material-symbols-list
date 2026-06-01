@@ -59,7 +59,7 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          python -m venv python_venv_build/bin/pip
+          python -m venv python_venv_build
           python_venv_build/bin/pip install -r similarity.requirements.txt
 
       - name: Cache python virtual environment
