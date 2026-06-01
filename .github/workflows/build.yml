@@ -47,10 +47,6 @@ jobs:
             ./node_modules
             package-lock.json
           key: ${{ steps.restore-cached-node-dependencies.outputs.cache-primary-key }}
-      
-      - name: Get pip cache directory
-        id: get-pip-cache-directory
-        run: echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
 
       - name: Restore cached Python wheels
         id: restore-cached-python-wheels
@@ -68,8 +64,7 @@ jobs:
           pip wheel -w wheelhouse -r similarity.requirements.txt
 
       - name: Install Python dependencies from wheels
-        run: |
-          pip install --no-index --find-links=wheelhouse -r similarity.requirements.txt
+        run: pip install --no-index --find-links=wheelhouse -r similarity.requirements.txt
 
       - name: Cache Python wheels
         id: cache-python-wheels
