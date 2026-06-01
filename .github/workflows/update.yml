@@ -61,31 +61,33 @@ jobs:
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         run: node rasterize.js
 
-      - name: Get pip cache directory
-        id: get-pip-cache-directory
-        run: echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
-
-      - name: Restore cached Python dependencies
-        id: restore-cached-python-dependencies
+      - name: Restore cached Python wheels
+        id: restore-cached-python-wheels
         uses: actions/cache/restore@v5
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         with:
-          path: ${{ steps.get-pip-cache-directory.outputs.dir }}
-          key: python-dependencies-update-${{ hashFiles('./tag.requirements.txt') }}
+          path: wheelhouse
+          key: python-wheels-update-${{ hashFiles('./tag.requirements.txt') }}
           restore-keys: |
-            python-dependencies-update-${{ hashFiles('./tag.requirements.txt') }}
+            python-wheels-update-${{ hashFiles('./tag.requirements.txt') }}
 
-      - name: Install Python dependencies
+      - name: Build python wheels
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0 && steps.restore-cached-python-wheels.outputs.cache-hit != 'true'
+        run: |
+          pip install wheel
+          pip wheel -w wheelhouse -r tag.requirements.txt
+
+      - name: Install Python dependencies from wheels
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
-        run: pip install -r tag.requirements.txt
-      
-      - name: Cache Python dependencies
-        id: cache-python-dependencies
+        run: pip install --no-index --find-links=wheelhouse -r tag.requirements.txt
+
+      - name: Cache Python wheels
+        id: cache-python-wheels
         uses: actions/cache/save@v5
-        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0 && steps.restore-cached-python-dependencies.outputs.cache-hit != 'true'
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0 && steps.restore-cached-python-wheels.outputs.cache-hit != 'true'
         with:
-          path: ${{ steps.get-pip-cache-directory.outputs.dir }}
-          key: ${{ steps.restore-cached-python-dependencies.outputs.cache-primary-key }}
+          path: wheelhouse
+          key: ${{ steps.restore-cached-python-wheels.outputs.cache-primary-key }}
 
       - name: Restore cached CLIP model
         id: restore-cached-clip-model

@@ -47,30 +47,32 @@ jobs:
             ./node_modules
             package-lock.json
           key: ${{ steps.restore-cached-node-dependencies.outputs.cache-primary-key }}
-      
-      - name: Get pip cache directory
-        id: get-pip-cache-directory
-        run: echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
 
-      - name: Restore cached Python dependencies
-        id: restore-cached-python-dependencies
+      - name: Restore cached Python wheels
+        id: restore-cached-python-wheels
         uses: actions/cache/restore@v5
         with:
-          path: ${{ steps.get-pip-cache-directory.outputs.dir }}
-          key: python-dependencies-build-${{ hashFiles('./similarity.requirements.txt') }}
+          path: wheelhouse
+          key: python-wheels-build-${{ hashFiles('./similarity.requirements.txt') }}
           restore-keys: |
-            python-dependencies-build-${{ hashFiles('./similarity.requirements.txt') }}
+            python-wheels-build-${{ hashFiles('./similarity.requirements.txt') }}
 
-      - name: Install Python dependencies
-        run: pip install -r similarity.requirements.txt
+      - name: Build python wheels
+        if: steps.restore-cached-python-wheels.outputs.cache-hit != 'true'
+        run: |
+          pip install wheel
+          pip wheel -w wheelhouse -r similarity.requirements.txt
 
-      - name: Cache Python dependencies
-        id: cache-python-dependencies
+      - name: Install Python dependencies from wheels
+        run: pip install --no-index --find-links=wheelhouse -r similarity.requirements.txt
+
+      - name: Cache Python wheels
+        id: cache-python-wheels
         uses: actions/cache/save@v5
-        if: steps.restore-cached-python-dependencies.outputs.cache-hit != 'true'
+        if: steps.restore-cached-python-wheels.outputs.cache-hit != 'true'
         with:
-          path: ${{ steps.get-pip-cache-directory.outputs.dir }}
-          key: ${{ steps.restore-cached-python-dependencies.outputs.cache-primary-key }}
+          path: wheelhouse
+          key: ${{ steps.restore-cached-python-wheels.outputs.cache-primary-key }}
 
       - name: Unzip tags
         run: unzip tags.zip
