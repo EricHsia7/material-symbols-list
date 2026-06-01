@@ -61,33 +61,29 @@ jobs:
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         run: node rasterize.js
 
-      - name: Restore cached Python wheels
-        id: restore-cached-python-wheels
+      - name: Restore cached Python virtual environment
+        id: restore-cached-python-venv
         uses: actions/cache/restore@v5
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         with:
-          path: wheelhouse
-          key: python-wheels-update-${{ hashFiles('./tag.requirements.txt') }}
+          path: python_venv_update
+          key: python-venv-update-${{ runner.os }}-${{ hashFiles('./tag.requirements.txt') }}
           restore-keys: |
-            python-wheels-update-${{ hashFiles('./tag.requirements.txt') }}
+            python-venv-update-${{ runner.os }}-${{ hashFiles('./tag.requirements.txt') }}
 
-      - name: Build python wheels
-        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0 && steps.restore-cached-python-wheels.outputs.cache-hit != 'true'
+      - name: Install Python dependencies
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0 && steps.restore-cached-python-venv.outputs.cache-hit != 'true'
         run: |
-          pip install wheel
-          pip wheel -w wheelhouse -r tag.requirements.txt
+          python -m venv python_venv_update
+          python_venv_update/bin/pip install -r tag.requirements.txt
 
-      - name: Install Python dependencies from wheels
-        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
-        run: pip install --no-index --find-links=wheelhouse -r tag.requirements.txt
-
-      - name: Cache Python wheels
-        id: cache-python-wheels
+      - name: Cache Python virtual environment
+        id: cache-python-venv
         uses: actions/cache/save@v5
-        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0 && steps.restore-cached-python-wheels.outputs.cache-hit != 'true'
+        if: steps.download-updated-symbols.outputs.updated-symbols-count > 0 && steps.restore-cached-python-venv.outputs.cache-hit != 'true'
         with:
-          path: wheelhouse
-          key: ${{ steps.restore-cached-python-wheels.outputs.cache-primary-key }}
+          path: python_venv_update
+          key: ${{ steps.restore-cached-python-venv.outputs.cache-primary-key }}
 
       - name: Restore cached CLIP model
         id: restore-cached-clip-model
@@ -112,7 +108,10 @@ jobs:
 
       - name: Add tags
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
-        run: python tag.py
+        run: |
+          source python_venv_update/bin/activate
+          python tag.py
+          deactivate
       
       - name: Cache CLIP model
         id: cache-clip-model
