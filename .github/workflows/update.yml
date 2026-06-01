@@ -112,7 +112,7 @@ jobs:
           source python_venv_update/bin/activate
           python tag.py
           deactivate
-      
+
       - name: Cache CLIP model
         id: cache-clip-model
         uses: actions/cache/save@v5
