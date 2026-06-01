@@ -499,7 +499,7 @@
   "bolt": 399,
   "bolt_boost": 415,
   "bomb": 399,
-  "book": 329,
+  "book": -1,
   "book_2": 399,
   "book_3": 329,
   "book_4": 399,
