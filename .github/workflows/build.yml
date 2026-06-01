@@ -48,7 +48,7 @@ jobs:
             package-lock.json
           key: ${{ steps.restore-cached-node-dependencies.outputs.cache-primary-key }}
 
-      - name: Restore cached python virtual environment
+      - name: Restore cached Python virtual environment
         id: restore-cached-python-venv
         uses: actions/cache/restore@v5
         with:
@@ -58,11 +58,12 @@ jobs:
             python-venv-build-${{ runner.os }}-${{ hashFiles('./similarity.requirements.txt') }}
 
       - name: Install Python dependencies
+        if: steps.restore-cached-python-venv.outputs.cache-hit != 'true'
         run: |
           python -m venv python_venv_build
           python_venv_build/bin/pip install -r similarity.requirements.txt
 
-      - name: Cache python virtual environment
+      - name: Cache Python virtual environment
         id: cache-python-venv
         uses: actions/cache/save@v5
         if: steps.restore-cached-python-venv.outputs.cache-hit != 'true'
