@@ -108,7 +108,10 @@ jobs:
 
       - name: Add tags
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
-        run: python tag.py
+        run: |
+          source python_venv_update/bin/activate
+          python tag.py
+          deactivate
       
       - name: Cache CLIP model
         id: cache-clip-model
