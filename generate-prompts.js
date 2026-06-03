@@ -91,7 +91,6 @@ async function main() {
   });
 
   const queue = candidates.slice(0, 64);
-  const prompts = [];
   const commands = [];
 
   const totalCount = queue.length;

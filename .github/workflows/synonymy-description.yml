@@ -4,6 +4,9 @@ on:
     - cron: '0 6 * * 1,2,3,4,5'
     - cron: '0 12 * * 1,2,3,4,5'
   workflow_dispatch:
+  push:
+    branches:
+      - dev-description-2
 
 jobs:
   list:
