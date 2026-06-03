@@ -1,4 +1,4 @@
-name: Synonymy
+name: Synonymy & Description
 on:
   schedule:
     - cron: '0 6 * * 1,2,3,4,5'
