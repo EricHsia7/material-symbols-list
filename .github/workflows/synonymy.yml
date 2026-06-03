@@ -68,21 +68,24 @@ jobs:
         if: steps.generate-prompts.outputs.queued-symbols-count > 0
         run: ollama pull gemma4:e4b
 
-      - name: List synonymies
+      - name: List synonymies & Create descriptions
         if: steps.generate-prompts.outputs.queued-symbols-count > 0
         run: |
-          chmod +x ./tmp/list-synonymies.sh
-          ./tmp/list-synonymies.sh
+          chmod +x ./tmp/list-synonymies-and-create-descriptions.sh
+          ./tmp/list-synonymies-and-create-descriptions.sh
 
-      - name: Merge synonymies
+      - name: Merge synonymies and descriptions
         if: steps.generate-prompts.outputs.queued-symbols-count > 0
-        run: zip -ru synonymies.zip ./synonymies # -x "*.DS_Store"
+        run: |
+          zip -ru synonymies.zip ./synonymies # -x "*.DS_Store"
+          zip -ru descriptions.zip ./descriptions # -x "*.DS_Store"
 
       - name: Separate changed files
         if: steps.generate-prompts.outputs.queued-symbols-count > 0
         run: |
           mkdir -p "./deploy"
           cp -f "synonymies.zip" "./deploy/synonymies.zip"
+          cp -f "descriptions.zip" "./deploy/descriptions.zip"
           cp -f "./tmp/timestamps.json" "./deploy/timestamps.json"
 
       - name: Deploy with gh-pages
