@@ -45,7 +45,7 @@ Rules:
 ICON NAME:
 ${symbol}
 
-ICON TAGS:
+Here're some relevant tags of the icon:
 ${tags}`;
 }
 
@@ -97,14 +97,15 @@ async function main() {
   let count = 0;
   for (const [symbolKey, timestamp, type] of queue) {
     count++;
-    const promptPath = path.join(outputDir, `${symbolKey}.txt`);
     const content = await readFile(path.join(tagsDir, `${symbolKey}.txt`));
     if (type === 0) {
-      const synonymyPath = path.join(synonymiesDir, `${symbolKey}.synonymy.txt`);
+      const promptPath = path.join(outputDir, `${symbolKey}.synonymy.txt`);
+      const synonymyPath = path.join(synonymiesDir, `${symbolKey}.txt`);
       await writeTextFile(promptPath, getSynonymyPrompt(symbolKey, content));
       commands.push(`echo "\n\n\x1b[1m[${count}/${totalCount}]\x1b[0m \x1b[1;4m${symbolKey}\x1b[0m"`, `jq -Rs '{model: "gemma4:e4b", prompt: ., think: true, stream: true, options: {temperature: 1, top_p: 0.95, top_k: 64}}' "${promptPath}" | curl -s http://localhost:11434/api/generate -d @- | jq --unbuffered -j '.response // empty' | tee "${synonymyPath}"`, `echo "\n\n"`);
     } else if (type === 1) {
-      const descriptionPath = path.join(descriptionsDir, `${symbolKey}.description.txt`);
+      const promptPath = path.join(outputDir, `${symbolKey}.description.txt`);
+      const descriptionPath = path.join(descriptionsDir, `${symbolKey}.txt`);
       await writeTextFile(promptPath, getDescriptionPrompt(symbolKey, content));
       commands.push(`echo "\n\n\x1b[1m[${count}/${totalCount}]\x1b[0m \x1b[1;4m${symbolKey}\x1b[0m"`, `jq -Rs '{model: "gemma4:e4b", prompt: ., think: true, stream: true, options: {temperature: 1, top_p: 0.95, top_k: 64}}' "${promptPath}" | curl -s http://localhost:11434/api/generate -d @- | jq --unbuffered -j '.response // empty' | tee "${descriptionPath}"`, `echo "\n\n"`);
     }
