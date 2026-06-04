@@ -97,7 +97,7 @@ async function main() {
   let synonymiesCount = 0;
   for (const symbolName in versions) {
     if (timestamps.hasOwnProperty(symbolName)) {
-      if (timestamps[symbolName] > 0) {
+      if (timestamps[symbolName][0] > 0) {
         synonymiesCount++;
       }
     }
