@@ -19,5 +19,12 @@
     "md5": "e061d3c7316e099d8cd283cb1c938ccd",
     "sha256": "ab75297b4499b89b32f46af6f1cbc9ec4966a31cd13ae10ef33b48484954b5e0",
     "sha512": "2c86a501c3ebbbc6c2fa3b141511e46f37aace52f937ea63438b97abfea54f99cf7d5c1f971d71441951eff4452526353739edf513984f12ef7b53824426a3aa"
+  },
+  "description": {
+    "raw": "https://erichsia7.github.io/material-symbols-list/description.json",
+    "compressed": "https://erichsia7.github.io/material-symbols-list/description.gz",
+    "md5": "163fc5a9755c73ff1137cac5799acd7b",
+    "sha256": "7264da79048890e1cdd8560b818ecb3e39d3cd54c2d18f440f4972fad28bf32e",
+    "sha512": "0e960c0ac87dfae6e3378ee0f4a9614c4b9c78fcb69c9a136a529fb54fe279a61260b1e6bce5aab0c651c81dbb273334439faf6f825cf371cafcd2626f6d5cf5"
   }
 }
