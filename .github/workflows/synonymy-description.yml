@@ -4,14 +4,11 @@ on:
     - cron: '0 6 * * 1,2,3,4,5'
     - cron: '0 12 * * 1,2,3,4,5'
   workflow_dispatch:
-  push:
-    branches:
-      - dev-description-2
 
 jobs:
   list:
     runs-on: ubuntu-latest
-    environment: synonymy
+    environment: synonymy-description
     steps:
       - name: Check out repository code
         uses: actions/checkout@v6
@@ -71,13 +68,13 @@ jobs:
         if: steps.generate-prompts.outputs.queued-symbols-count > 0
         run: ollama pull gemma4:e4b
 
-      - name: List synonymies & Create descriptions
+      - name: List synonymies & create descriptions
         if: steps.generate-prompts.outputs.queued-symbols-count > 0
         run: |
           chmod +x ./tmp/list-synonymies-and-create-descriptions.sh
           ./tmp/list-synonymies-and-create-descriptions.sh
 
-      - name: Merge synonymies and descriptions
+      - name: Merge synonymies & descriptions
         if: steps.generate-prompts.outputs.queued-symbols-count > 0
         run: |
           zip -ru synonymies.zip ./synonymies # -x "*.DS_Store"
