@@ -95,10 +95,14 @@ async function main() {
   }
 
   let synonymiesCount = 0;
+  let descriptionsCount = 0;
   for (const symbolName in versions) {
     if (timestamps.hasOwnProperty(symbolName)) {
       if (timestamps[symbolName][0] > 0) {
         synonymiesCount++;
+      }
+      if (timestamps[symbolName][1] > 0) {
+        descriptionsCount++;
       }
     }
   }
@@ -133,7 +137,8 @@ async function main() {
   const stats = {
     symbols_count: list.length,
     keywords_count: dictionary.length,
-    synonymies_coverage: Math.round((synonymiesCount / list.length) * 100) / 100
+    synonymies_coverage: Math.round((synonymiesCount / list.length) * 100) / 100,
+    descriptions_coverage: Math.round((descriptionsCount / list.length) * 100) / 100
   };
 
   await writeTextFile(path.join(outputDir, 'stats.json'), JSON.stringify(stats, null, 2));
