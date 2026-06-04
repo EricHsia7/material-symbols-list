@@ -9,6 +9,7 @@ async function main() {
   const search_index = await readFile(path.join(outputDir, 'search-index.json'));
   const index = await readFile(path.join(outputDir, 'index.json'));
   const similarity = await readFile(path.join(outputDir, 'similarity.json'));
+  const description = await readFile(path.join(outputDir, 'description.json'));
 
   const manifest = {
     search_index: {
@@ -31,6 +32,13 @@ async function main() {
       md5: md5(similarity),
       sha256: sha256(similarity),
       sha512: sha512(similarity)
+    },
+    description: {
+      raw: 'https://erichsia7.github.io/material-symbols-list/description.json',
+      compressed: 'https://erichsia7.github.io/material-symbols-list/description.gz',
+      md5: md5(description),
+      sha256: sha256(description),
+      sha512: sha512(description)
     }
   };
 

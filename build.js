@@ -11,9 +11,11 @@ async function main() {
   await makeDirectory(outputDir);
   const tagFiles = await getFiles('./tags/');
   const synonymyFiles = await getFiles('./synonymies/');
+  const descriptionFiles = await getFiles('./descriptions/');
   const frequencyMap = {};
   const list = [];
   const symbols = {};
+  const descriptions = {};
   for (const file of tagFiles) {
     const extension = path.extname(file.path.name);
     const symbolName = path.basename(file.path.name, extension);
@@ -66,6 +68,14 @@ async function main() {
         }
       }
     }
+  }
+
+  for (const file of descriptionFiles) {
+    const extension = path.extname(file.path.name);
+    const symbolName = path.basename(file.path.name, extension);
+    if (!versions.hasOwnProperty(symbolName)) continue;
+    const content = await readFile(file.path.full);
+    descriptions[symbolName] = content.trim();
   }
 
   const words = [];
@@ -126,6 +136,16 @@ async function main() {
   // output index.gz
   const compressedData2 = pako.gzip(jsonString2);
   await fs.promises.writeFile(path.join(outputDir, 'index.gz'), Buffer.from(compressedData2));
+
+  // description
+  const jsonString3 = JSON.stringify(descriptions);
+
+  // output description.json
+  await writeTextFile(path.join(outputDir, 'description.json'), jsonString3);
+
+  // output description.gz
+  const compressedData3 = pako.gzip(jsonString3);
+  await fs.promises.writeFile(path.join(outputDir, 'description.gz'), Buffer.from(compressedData3));
 
   // typescript
   const typeString = `export type MaterialSymbols = ${list.map((e) => `'${e}'`).join('\n | ')}`;
