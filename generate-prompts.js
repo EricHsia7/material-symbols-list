@@ -109,7 +109,7 @@ async function main() {
       const promptPath = path.join(outputDir, `${symbolKey}.description.txt`);
       const descriptionPath = path.join(descriptionsDir, `${symbolKey}.txt`);
       await writeTextFile(promptPath, getDescriptionPrompt(symbolKey, content));
-      commands.push(`echo "\n\n\x1b[1m[D] [${count}/${totalCount}] [D]\x1b[0m \x1b[1;4m${symbolKey}\x1b[0m"`, `jq -Rs '{model: "gemma4:e4b", prompt: ., think: true, stream: true, options: {temperature: 1, top_p: 0.95, top_k: 64}}' "${promptPath}" | curl -s http://localhost:11434/api/generate -d @- | jq --unbuffered -j '.response // empty' | tee "${descriptionPath}"`, `echo "\n\n"`);
+      commands.push(`echo "\n\n\x1b[1m[${count}/${totalCount}] [D]\x1b[0m \x1b[1;4m${symbolKey}\x1b[0m"`, `jq -Rs '{model: "gemma4:e4b", prompt: ., think: true, stream: true, options: {temperature: 1, top_p: 0.95, top_k: 64}}' "${promptPath}" | curl -s http://localhost:11434/api/generate -d @- | jq --unbuffered -j '.response // empty' | tee "${descriptionPath}"`, `echo "\n\n"`);
     }
     timestamps[symbolKey][type] = now;
   }
