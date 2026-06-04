@@ -77,6 +77,9 @@ jobs:
       - name: Unzip synonymies
         run: unzip synonymies.zip
 
+      - name: Unzip descriptions
+        run: unzip descriptions.zip
+
       - name: Build
         run: |
           node build.js
