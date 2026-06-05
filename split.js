@@ -41,42 +41,7 @@ function joinByDelimiters(array, delimiters) {
   }
 }
 
-function compressDelimiters(delimiters) {
-  if (!delimiters || delimiters.length === 0) return '';
-
-  let compressed = '';
-  let current = delimiters[0];
-  let count = 1;
-
-  for (let i = 1; i < delimiters.length; i++) {
-    if (delimiters[i] === current) {
-      count++;
-    } else {
-      compressed += current + count.toString(36);
-      current = delimiters[i];
-      count = 1;
-    }
-  }
-  return compressed + current + count.toString(36);
-}
-
-function decompressDelimiters(compressedStr) {
-  const result = [];
-  // Match any non-alphanumeric char, followed by 1 or more base36 chars
-  compressedStr.replace(/([^0-9a-z])/gi, (char, index, str) => {
-    // Look ahead to grab the base36 number until the next non-alphanumeric char
-    const nextDelimiterIdx = str.slice(index + 1).search(/[^0-9a-z]/i);
-    const countStr = nextDelimiterIdx === -1 ? str.slice(index + 1) : str.slice(index + 1, index + 1 + nextDelimiterIdx);
-
-    const count = parseInt(countStr, 36);
-    result.push(...Array(count).fill(char));
-  });
-  return result;
-}
-
 module.exports = {
   splitByTopLevelDelimiter,
-  joinByDelimiters,
-  compressDelimiters,
-  decompressDelimiters
+  joinByDelimiters
 };

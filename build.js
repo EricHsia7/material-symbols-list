@@ -3,7 +3,7 @@ const path = require('path');
 const { makeDirectory, writeTextFile, getFiles, readFile } = require('./files.js');
 const pako = require('pako');
 const emojiRegex = require('emoji-regex');
-const { splitByTopLevelDelimiter, compressDelimiters } = require('./split.js');
+const { splitByTopLevelDelimiter, joinByDelimiters } = require('./split.js');
 
 const stats = {
   symbols_count: 0,
@@ -150,8 +150,7 @@ async function buildDescription(descriptionFiles, versions, timestamps, outputDi
     const symbolNameComponents = symbolName.split('_');
     const content = await readFile(file.path.full);
     const splitWords = splitByTopLevelDelimiter(content.trim());
-    const compressedDelimiters = compressDelimiters(splitWords.delimiters);
-    descriptions[symbolName] = { words: splitWords.result, delimiters: compressedDelimiters };
+    descriptions[symbolName] = { words: splitWords.result, delimiters: splitWords.delimiters };
     for (const word of splitWords.result) {
       if (!frequencyMap.hasOwnProperty(word)) {
         frequencyMap[word] = 0;
@@ -184,8 +183,9 @@ async function buildDescription(descriptionFiles, versions, timestamps, outputDi
   const result = { dictionary: dictionary.join(','), descriptions: {} };
 
   for (const symbolName in descriptions) {
-    for (let i = descriptions[symbolName].words.length - 1; i >= 0; i--) {
-      descriptions[symbolName].words.splice(i, 1, dictionary.indexOf(descriptions[symbolName].words[i]).toString(36));
+    const words = descriptions[symbolName].words;
+    for (let i = words.length - 1; i >= 0; i--) {
+      words.splice(i, 1, dictionary.indexOf(words[i]).toString(36));
     }
 
     const symbolNameComponents = symbolName.split('_');
@@ -194,7 +194,7 @@ async function buildDescription(descriptionFiles, versions, timestamps, outputDi
     }
     const symbolKey = symbolNameComponents.join('_');
 
-    result.descriptions[symbolKey] = [descriptions[symbolName].words.join(','), descriptions[symbolName].delimiters];
+    result.descriptions[symbolKey] = joinByDelimiters(words);
   }
 
   // description
