@@ -1,4 +1,4 @@
-function splitByTopLevelDelimiter(value, legalDelimiters = [' ', ',', '.']) {
+function splitByTopLevelDelimiter(value, legalDelimiters = [' ', ',', '.', `"`, `'`]) {
   value = value.trim();
   let leftBracket = 0;
   let rightBracket = 0;
