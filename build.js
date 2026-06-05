@@ -147,12 +147,18 @@ async function buildDescription(descriptionFiles, versions, timestamps, outputDi
     const symbolName = path.basename(file.path.name, extension);
 
     if (!versions.hasOwnProperty(symbolName)) continue;
-
+    const symbolNameComponents = symbolName.split('_');
     const content = await readFile(file.path.full);
     const splitWords = splitByTopLevelDelimiter(content.trim());
     const compressedDelimiters = compressDelimiters(splitWords.delimiters);
     descriptions[symbolName] = { words: splitWords.result, delimiters: compressedDelimiters };
     for (const word of splitWords.result) {
+      if (!frequencyMap.hasOwnProperty(word)) {
+        frequencyMap[word] = 0;
+      }
+      frequencyMap[word]++;
+    }
+    for (const word of symbolNameComponents) {
       if (!frequencyMap.hasOwnProperty(word)) {
         frequencyMap[word] = 0;
       }
@@ -181,7 +187,14 @@ async function buildDescription(descriptionFiles, versions, timestamps, outputDi
     for (let i = descriptions[symbolName].words.length - 1; i >= 0; i--) {
       descriptions[symbolName].words.splice(i, 1, dictionary.indexOf(descriptions[symbolName].words[i]).toString(36));
     }
-    result.descriptions[symbolName] = [descriptions[symbolName].words.join(','), descriptions[symbolName].delimiters];
+
+    const symbolNameComponents = symbolName.split('_');
+    for (let i = symbolNameComponents.length - 1; i >= 0; i--) {
+      symbolNameComponents.splice(i, 1, dictionary.indexOf(symbolNameComponents[i]).toString(36));
+    }
+    const symbolKey = symbolNameComponents.join('_');
+
+    result.descriptions[symbolKey] = [descriptions[symbolName].words.join(','), descriptions[symbolName].delimiters];
   }
 
   // description
