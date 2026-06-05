@@ -149,7 +149,7 @@ async function buildDescription(descriptionFiles, versions, timestamps, outputDi
     if (!versions.hasOwnProperty(symbolName)) continue;
     const symbolNameComponents = symbolName.split('_');
     const content = await readFile(file.path.full);
-    const splitWords = splitByTopLevelDelimiter(content.trim());
+    const splitWords = splitByTopLevelDelimiter(content);
     descriptions[symbolName] = { words: splitWords.result, delimiters: splitWords.delimiters };
     for (const word of splitWords.result) {
       if (!frequencyMap.hasOwnProperty(word)) {

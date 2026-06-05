@@ -1,5 +1,5 @@
 function splitByTopLevelDelimiter(value, legalDelimiters = [' ', ',', '.', `"`, `'`]) {
-  value = value.trim();
+  value = `\r${value.trim()}\r`;
   let leftBracket = 0;
   let rightBracket = 0;
   let start = 0;
