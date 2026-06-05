@@ -141,6 +141,7 @@ async function buildSearchIndex(tagFiles, synonymyFiles, versions, timestamps, o
 async function buildDescription(descriptionFiles, versions, timestamps, outputDir) {
   const frequencyMap = {};
   const descriptions = {};
+  let descriptionsCount = 0;
   for (const file of descriptionFiles) {
     const extension = path.extname(file.path.name);
     const symbolName = path.basename(file.path.name, extension);
