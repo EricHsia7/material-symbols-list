@@ -175,7 +175,7 @@ async function buildDescription(descriptionFiles, versions, timestamps, outputDi
   });
   const dictionary = allWords.map((e) => e[0]);
 
-  const result = { dictionary: dictionary, descriptions: {} };
+  const result = { dictionary: dictionary.join(','), descriptions: {} };
 
   for (const symbolName in descriptions) {
     for (let i = descriptions[symbolName].words.length - 1; i >= 0; i--) {
