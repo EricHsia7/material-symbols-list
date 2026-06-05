@@ -183,7 +183,7 @@ async function buildDescription(descriptionFiles, versions, timestamps, outputDi
   const result = { dictionary: dictionary.join(','), descriptions: {} };
 
   for (const symbolName in descriptions) {
-    const { words, delimiters } = descriptions[symbolName].words;
+    const { words, delimiters } = descriptions[symbolName];
     for (let i = words.length - 1; i >= 0; i--) {
       words.splice(i, 1, dictionary.indexOf(words[i]).toString(36));
     }
