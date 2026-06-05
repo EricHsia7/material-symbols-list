@@ -139,6 +139,7 @@ async function buildSearchIndex(tagFiles, synonymyFiles, versions, timestamps, o
 }
 
 async function buildDescription(descriptionFiles, versions, timestamps, outputDir) {
+  const legalDelimiters = [' ', ',', '.', `"`, `'`];
   const frequencyMap = {};
   const descriptions = {};
   let descriptionsCount = 0;
@@ -149,7 +150,7 @@ async function buildDescription(descriptionFiles, versions, timestamps, outputDi
     if (!versions.hasOwnProperty(symbolName)) continue;
     const symbolNameComponents = symbolName.split('_');
     const content = await readFile(file.path.full);
-    const splitWords = splitByTopLevelDelimiter(content);
+    const splitWords = splitByTopLevelDelimiter(content, legalDelimiters);
     descriptions[symbolName] = { words: splitWords.result, delimiters: splitWords.delimiters };
     for (const word of splitWords.result) {
       if (!frequencyMap.hasOwnProperty(word)) {
@@ -180,7 +181,7 @@ async function buildDescription(descriptionFiles, versions, timestamps, outputDi
   });
   const dictionary = allWords.map((e) => e[0]);
 
-  const result = { dictionary: dictionary.join(','), descriptions: {} };
+  const result = { dictionary: dictionary.join(','), delimiters: legalDelimiters, descriptions: {} };
 
   for (const symbolName in descriptions) {
     const { words, delimiters } = descriptions[symbolName];
