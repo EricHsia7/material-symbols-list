@@ -3,19 +3,40 @@ const path = require('path');
 const { makeDirectory, writeTextFile, getFiles, readFile } = require('./files.js');
 const pako = require('pako');
 const emojiRegex = require('emoji-regex');
+const { splitByTopLevelDelimiter, compressDelimiters } = require('./split.js');
 
-async function main() {
-  const versions = require('./versions.json');
-  const timestamps = require('./timestamps.json');
-  const outputDir = './dist';
-  await makeDirectory(outputDir);
-  const tagFiles = await getFiles('./tags/');
-  const synonymyFiles = await getFiles('./synonymies/');
-  const descriptionFiles = await getFiles('./descriptions/');
-  const frequencyMap = {};
+const stats = {
+  symbols_count: 0,
+  keywords_count: 0,
+  synonymies_coverage: 0,
+  descriptions_coverage: 0
+};
+
+async function buildIndex(tagFiles, versions, outputDir) {
   const list = [];
+  for (const file of tagFiles) {
+    const extension = path.extname(file.path.name);
+    const symbolName = path.basename(file.path.name, extension);
+    if (!versions.hasOwnProperty(symbolName)) continue;
+    list.push(symbolName);
+  }
+  // index
+  const jsonString = JSON.stringify({ list: list.join(',') });
+
+  // output index.json
+  await writeTextFile(path.join(outputDir, 'index.json'), jsonString);
+
+  // output index.gz
+  const compressedData = pako.gzip(jsonString);
+  await fs.promises.writeFile(path.join(outputDir, 'index.gz'), Buffer.from(compressedData));
+
+  // report stats
+  stats.symbols_count = list.length;
+}
+
+async function buildSearchIndex(tagFiles, synonymyFiles, versions, timestamps, outputDir) {
+  const frequencyMap = {};
   const symbols = {};
-  const descriptions = {};
   for (const file of tagFiles) {
     const extension = path.extname(file.path.name);
     const symbolName = path.basename(file.path.name, extension);
@@ -38,7 +59,6 @@ async function main() {
         allWordsUnique.push(word);
       }
     }
-    list.push(symbolName);
     symbols[symbolName] = allWordsUnique;
   }
 
@@ -68,14 +88,12 @@ async function main() {
         }
       }
     }
-  }
 
-  for (const file of descriptionFiles) {
-    const extension = path.extname(file.path.name);
-    const symbolName = path.basename(file.path.name, extension);
-    if (!versions.hasOwnProperty(symbolName)) continue;
-    const content = await readFile(file.path.full);
-    descriptions[symbolName] = content.trim();
+    if (timestamps.hasOwnProperty(symbolName)) {
+      if (timestamps[symbolName][0] > 0) {
+        synonymiesCount++;
+      }
+    }
   }
 
   const words = [];
@@ -105,16 +123,7 @@ async function main() {
   }
 
   let synonymiesCount = 0;
-  let descriptionsCount = 0;
   for (const symbolName in versions) {
-    if (timestamps.hasOwnProperty(symbolName)) {
-      if (timestamps[symbolName][0] > 0) {
-        synonymiesCount++;
-      }
-      if (timestamps[symbolName][1] > 0) {
-        descriptionsCount++;
-      }
-    }
   }
 
   // search-index
@@ -127,41 +136,105 @@ async function main() {
   const compressedData = pako.gzip(jsonString);
   await fs.promises.writeFile(path.join(outputDir, 'search-index.gz'), Buffer.from(compressedData));
 
-  // index
-  const jsonString2 = JSON.stringify({ list: list.join(',') });
+  // report stats
+  stats.keywords_count = dictionary.length;
+  stats.synonymies_coverage = Math.round((synonymiesCount / stats.symbols_count) * 100) / 100;
+}
 
-  // output index.json
-  await writeTextFile(path.join(outputDir, 'index.json'), jsonString2);
+async function buildDescription(descriptionFiles, versions, timestamps, outputDir) {
+  const frequencyMap = {};
+  const descriptions = {};
+  for (const file of descriptionFiles) {
+    const extension = path.extname(file.path.name);
+    const symbolName = path.basename(file.path.name, extension);
 
-  // output index.gz
-  const compressedData2 = pako.gzip(jsonString2);
-  await fs.promises.writeFile(path.join(outputDir, 'index.gz'), Buffer.from(compressedData2));
+    if (!versions.hasOwnProperty(symbolName)) continue;
+
+    const content = await readFile(file.path.full);
+    const splitWords = splitByTopLevelDelimiter(content.trim());
+    const compressedDelimiters = compressDelimiters(splitWords.delimiters);
+    descriptions[symbolName] = { words: splitWords.result, delimiters: compressedDelimiters };
+    for (const word of splitWords.result) {
+      if (!frequencyMap.hasOwnProperty(word)) {
+        frequencyMap[word] = 0;
+      }
+      frequencyMap[word]++;
+    }
+
+    const allWords = [];
+    for (const word in frequencyMap) {
+      allWords.push([word, frequencyMap[word]]);
+    }
+
+    allWords.sort(function (a, b) {
+      return b[1] - a[1];
+    });
+
+    const dictionary = allWords.map((e) => e[0]);
+
+    const result = { dictionary: dictionary, descriptions: {} };
+    for (const symbolName in descriptions) {
+      for (let i = descriptions[symbolName].words.length - 1; i >= 0; i++) {
+        descriptions[symbolName].words.splice(i, 1, dictionary.indexOf(descriptions[symbolName].words[i]).toString(36));
+      }
+      result.descriptions[symbolName] = [descriptions[symbolName].words.join(','), descriptions[symbolName].delimiters];
+    }
+
+    if (timestamps.hasOwnProperty(symbolName)) {
+      if (timestamps[symbolName][1] > 0) {
+        descriptionsCount++;
+      }
+    }
+  }
 
   // description
-  const jsonString3 = JSON.stringify(descriptions);
+  const jsonString = JSON.stringify(result);
 
   // output description.json
-  await writeTextFile(path.join(outputDir, 'description.json'), jsonString3);
+  await writeTextFile(path.join(outputDir, 'description.json'), jsonString);
 
   // output description.gz
-  const compressedData3 = pako.gzip(jsonString3);
-  await fs.promises.writeFile(path.join(outputDir, 'description.gz'), Buffer.from(compressedData3));
+  const compressedData = pako.gzip(jsonString);
+  await fs.promises.writeFile(path.join(outputDir, 'description.gz'), Buffer.from(compressedData));
+
+  // report stats
+  stats.descriptions_coverage = Math.round((descriptionsCount / stats.symbols_count) * 100) / 100;
+}
+
+async function buildStats(versions, timestamps, outputDir) {
+  // output stats.json
+  await writeTextFile(path.join(outputDir, 'stats.json'), JSON.stringify(stats, null, 2));
+}
+
+async function buildTypescriptFile(versions, outputDir) {
+  const list = [];
+  for (const file of tagFiles) {
+    const extension = path.extname(file.path.name);
+    const symbolName = path.basename(file.path.name, extension);
+    if (!versions.hasOwnProperty(symbolName)) continue;
+    list.push(symbolName);
+  }
 
   // typescript
   const typeString = `export type MaterialSymbols = ${list.map((e) => `'${e}'`).join('\n | ')}`;
 
   // output type.ts
   await writeTextFile(path.join(outputDir, 'type.ts'), typeString);
+}
 
-  // output stats.json
-  const stats = {
-    symbols_count: list.length,
-    keywords_count: dictionary.length,
-    synonymies_coverage: Math.round((synonymiesCount / list.length) * 100) / 100,
-    descriptions_coverage: Math.round((descriptionsCount / list.length) * 100) / 100
-  };
-
-  await writeTextFile(path.join(outputDir, 'stats.json'), JSON.stringify(stats, null, 2));
+async function main() {
+  const versions = require('./versions.json');
+  const timestamps = require('./timestamps.json');
+  const outputDir = './dist';
+  await makeDirectory(outputDir);
+  const tagFiles = await getFiles('./tags/');
+  const synonymyFiles = await getFiles('./synonymies/');
+  const descriptionFiles = await getFiles('./descriptions/');
+  await buildIndex(tagFiles, versions, outputDir);
+  await buildSearchIndex(tagFiles, synonymyFiles, versions, timestamps, outputDir);
+  await buildDescription(descriptionFiles, versions, timestamps, outputDir);
+  await buildTypescriptFile(versions, outputDir);
+  await buildStats(versions, timestamps, outputDir);
 
   process.exit(0);
 }
