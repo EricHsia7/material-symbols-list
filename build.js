@@ -194,7 +194,7 @@ async function buildDescription(descriptionFiles, versions, timestamps, outputDi
     }
     const symbolKey = symbolNameComponents.join('_');
 
-    result.descriptions[symbolKey] = joinByDelimiters(words);
+    result.descriptions[symbolKey] = joinByDelimiters(words, delimiters);
   }
 
   // description
