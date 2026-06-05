@@ -158,30 +158,30 @@ async function buildDescription(descriptionFiles, versions, timestamps, outputDi
       }
       frequencyMap[word]++;
     }
+  }
 
-    const allWords = [];
-    for (const word in frequencyMap) {
-      allWords.push([word, frequencyMap[word]]);
+  const allWords = [];
+  for (const word in frequencyMap) {
+    allWords.push([word, frequencyMap[word]]);
+  }
+
+  allWords.sort(function (a, b) {
+    return b[1] - a[1];
+  });
+
+  const dictionary = allWords.map((e) => e[0]);
+
+  const result = { dictionary: dictionary, descriptions: {} };
+  for (const symbolName in descriptions) {
+    for (let i = descriptions[symbolName].words.length - 1; i >= 0; i--) {
+      descriptions[symbolName].words.splice(i, 1, dictionary.indexOf(descriptions[symbolName].words[i]).toString(36));
     }
+    result.descriptions[symbolName] = [descriptions[symbolName].words.join(','), descriptions[symbolName].delimiters];
+  }
 
-    allWords.sort(function (a, b) {
-      return b[1] - a[1];
-    });
-
-    const dictionary = allWords.map((e) => e[0]);
-
-    const result = { dictionary: dictionary, descriptions: {} };
-    for (const symbolName in descriptions) {
-      for (let i = descriptions[symbolName].words.length - 1; i >= 0; i--) {
-        descriptions[symbolName].words.splice(i, 1, dictionary.indexOf(descriptions[symbolName].words[i]).toString(36));
-      }
-      result.descriptions[symbolName] = [descriptions[symbolName].words.join(','), descriptions[symbolName].delimiters];
-    }
-
-    if (timestamps.hasOwnProperty(symbolName)) {
-      if (timestamps[symbolName][1] > 0) {
-        descriptionsCount++;
-      }
+  if (timestamps.hasOwnProperty(symbolName)) {
+    if (timestamps[symbolName][1] > 0) {
+      descriptionsCount++;
     }
   }
 
