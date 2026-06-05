@@ -62,6 +62,7 @@ async function buildSearchIndex(tagFiles, synonymyFiles, versions, timestamps, o
     symbols[symbolName] = allWordsUnique;
   }
 
+  let synonymiesCount = 0;
   for (const file of synonymyFiles) {
     const extension = path.extname(file.path.name);
     const symbolName = path.basename(file.path.name, extension);
@@ -120,10 +121,6 @@ async function buildSearchIndex(tagFiles, synonymyFiles, versions, timestamps, o
       symbolNameComponents.splice(i, 1, dictionary.indexOf(symbolNameComponents[i]).toString(36));
     }
     result.symbols[symbolNameComponents.join('_')] = keywords.join(',');
-  }
-
-  let synonymiesCount = 0;
-  for (const symbolName in versions) {
   }
 
   // search-index
