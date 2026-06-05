@@ -205,10 +205,7 @@ async function buildStats(versions, timestamps, outputDir) {
 
 async function buildTypescriptFile(versions, outputDir) {
   const list = [];
-  for (const file of tagFiles) {
-    const extension = path.extname(file.path.name);
-    const symbolName = path.basename(file.path.name, extension);
-    if (!versions.hasOwnProperty(symbolName)) continue;
+  for (const symbolName in versions) {
     list.push(symbolName);
   }
 
