@@ -41,7 +41,6 @@ function joinByDelimiters(array, delimiters) {
   }
 }
 
-// Compress array into a string like " 5.1 12.1"
 function compressDelimiters(delimiters) {
   if (!delimiters || delimiters.length === 0) return '';
 
@@ -53,21 +52,23 @@ function compressDelimiters(delimiters) {
     if (delimiters[i] === current) {
       count++;
     } else {
-      compressed += current + count;
+      compressed += current + count.toString(36);
       current = delimiters[i];
       count = 1;
     }
   }
-  return compressed + current + count;
+  return compressed + current + count.toString(36);
 }
 
-// Decompress string back into an array
 function decompressDelimiters(compressedStr) {
   const result = [];
-  // Match any non-digit, followed by 1 or more digits
-  compressedStr.replace(/([^0-9])([0-9]+)/g, (_, char, countStr) => {
-    const count = parseInt(countStr, 10);
-    // Push the character 'count' times into the array
+  // Match any non-alphanumeric char, followed by 1 or more base36 chars
+  compressedStr.replace(/([^0-9a-z])/gi, (char, index, str) => {
+    // Look ahead to grab the base36 number until the next non-alphanumeric char
+    const nextDelimiterIdx = str.slice(index + 1).search(/[^0-9a-z]/i);
+    const countStr = nextDelimiterIdx === -1 ? str.slice(index + 1) : str.slice(index + 1, index + 1 + nextDelimiterIdx);
+
+    const count = parseInt(countStr, 36);
     result.push(...Array(count).fill(char));
   });
   return result;
