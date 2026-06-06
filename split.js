@@ -32,6 +32,6 @@ function joinByDelimiters(array, delimiters) {
 }
 
 module.exports = {
-  splitByTopLevelDelimiter: splitByDelimiter,
+  splitByDelimiter,
   joinByDelimiters
 };

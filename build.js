@@ -3,7 +3,7 @@ const path = require('path');
 const { makeDirectory, writeTextFile, getFiles, readFile } = require('./files.js');
 const pako = require('pako');
 const emojiRegex = require('emoji-regex');
-const { splitByTopLevelDelimiter, joinByDelimiters } = require('./split.js');
+const { splitByDelimiter, joinByDelimiters } = require('./split.js');
 
 const stats = {
   symbols_count: 0,
@@ -150,7 +150,7 @@ async function buildDescription(descriptionFiles, versions, timestamps, outputDi
     if (!versions.hasOwnProperty(symbolName)) continue;
     const symbolNameComponents = symbolName.split('_');
     const content = await readFile(file.path.full);
-    const splitWords = splitByTopLevelDelimiter(content, legalDelimiters);
+    const splitWords = splitByDelimiter(content, legalDelimiters);
     descriptions[symbolName] = { words: splitWords.result, delimiters: splitWords.delimiters };
     for (const word of splitWords.result) {
       if (!frequencyMap.hasOwnProperty(word)) {
