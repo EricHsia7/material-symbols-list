@@ -41,9 +41,7 @@ Rules:
 - Keep it under ~160 characters. Warm, plain English.
 - Just output the plain text, no formatting, no commentary.
 
-
-ICON NAME:
-${symbol}
+Write a description for the icon "${symbol}".
 
 Here're some relevant tags of the icon:
 ${tags}`;
