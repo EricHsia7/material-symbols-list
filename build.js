@@ -69,8 +69,8 @@ async function buildSearchIndex(tagFiles, synonymyFiles, versions, timestamps, o
     if (!versions.hasOwnProperty(symbolName)) continue;
     const content = await readFile(file.path.full);
     const fileContentWords = content
-      .split(/[;,\n\s\_\/]+/g)
-      .filter((e) => e !== '' && !/\[[a-z0-9]+|(->)|[\u4E00-\u9FFF]+|[\~\*\{\}\!\#\@\$\`\>\<\(\)\[\]]{1,}/gi.test(e) && !emojiRegex().test(e) && /^[a-z0-9\-]+$/gi.test(e))
+      .split(/[;,\n\s\_\/\-]+/g)
+      .filter((e) => e !== '' && !/\[[a-z0-9]+|(->)|[\u4E00-\u9FFF]+|[\~\*\{\}\!\#\@\$\`\>\<\(\)\[\]]{1,}/gi.test(e) && !emojiRegex().test(e) && /^[a-z0-9]+$/gi.test(e))
       .map((e) => e.replace(/\p{Cc}/gu, '').toLowerCase());
 
     // Keep the semantic frequency
