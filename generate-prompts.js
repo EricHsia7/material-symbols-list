@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { makeDirectory, writeTextFile, getFiles, readFile } = require('./files.js');
+const { makeDirectory, writeTextFile, readFile } = require('./files.js');
 
 function getSynonymyPrompt(symbol, tags) {
   return `You are an expert in UI/UX design and iconography.
@@ -10,15 +10,17 @@ For each icon, provide 5 to 10 *extra* synonymies, alternative names, or related
 Rules:
 - Focus on what the icon *looks like* and its *UI function*.
 - Transform them into *different part of speeches and forms*, such as verb, noun, pronoun, proper noun, gerund, adjective, adverb, preposition, conjunction, auxiliary, determiner, and inflections.
-- Always check if a synonymy *fits the ICON NAME* in your thinking process. Do not fabricate things that don't exist.
+- Always check if a synonymy *fits the ICON_NAME* in your thinking process.
 - Output ONLY a list of tags concatenated by commas. No markdown formatting, no explanations.
 
-EXAMPLE:
-settings -> gear, cog, preferences, options, components
-favorite -> heart, like, love, save
-new -> add, create, fresh, brand-new, freshness
+Examples:
+| Input    | Output                                      |
+|----------|---------------------------------------------|
+| settings | gear, cog, preferences, options, components |
+| favorite | heart, like, love, save                     |
+| new      | add, create, fresh, brand-new, freshness    |
 
-List synonymies for "${symbol}". (ICON NAME = "${symbol}")
+List synonymies for "${symbol}". (ICON_NAME="${symbol}")
 
 Here're some relevant tags of the icon:
 ${tags}`;
