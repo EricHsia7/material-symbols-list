@@ -18,11 +18,9 @@ settings -> gear, cog, preferences, options, components
 favorite -> heart, like, love, save
 new -> add, create, fresh, brand-new, freshness
 
+List synonymies for "${symbol}".
 
-ICON NAME:
-${symbol}
-
-ICON TAGS:
+Here're some relevant tags of the icon:
 ${tags}`;
 }
 
