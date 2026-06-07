@@ -33,7 +33,8 @@ The description consists of two sentences.
 2. Sentence 2 (optional) explains its common meaning, tone, or typical usage.
 
 Rules:
-- Be factually correct about what the emoji depicts; do not invent meanings.
+- Be factually correct about what the symbol means; do not invent meanings.
+- Do not fabricate things that don't exist.
 - Neutral, inclusive tone. Avoid slang that may not age well.
 - Do not include the icon name inside the desc text.
 - Keep it under ~160 characters. Warm, plain English.
