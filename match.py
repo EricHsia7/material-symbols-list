@@ -26,7 +26,7 @@ def main():
 
     result = []
     for idx, val in zip(indices, values):
-      result.append(f" - {class_descriptions[idx]} (similarity: {val:.5f})")
+      result.append(f" - {class_descriptions[idx]} (cosine similarity: {val:.5f})")
     result_text = "\n".join(result)
     report = f"""Matched result:
 {result_text}"""

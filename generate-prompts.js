@@ -56,6 +56,7 @@ async function main() {
   const descriptionsDir = './descriptions';
   const tagsDir = './tags';
   const outputDir = './tmp/prompts';
+  const rasterizedDir = './tmp/rasterized';
 
   await makeDirectory(synonymiesDir);
   await makeDirectory(descriptionsDir);
@@ -96,7 +97,8 @@ async function main() {
   let count = 0;
   for (const [symbolKey, timestamp, type] of queue) {
     count++;
-    const content = await readFile(path.join(tagsDir, `${symbolKey}.txt`));
+    const tagsPath = path.join(tagsDir, `${symbolKey}.txt`);
+    const content = await readFile(tagsPath);
     if (type === 0) {
       // synonymy
       const promptPath = path.join(outputDir, `${symbolKey}.synonymy.txt`);
@@ -107,8 +109,9 @@ async function main() {
       // description
       const promptPath = path.join(outputDir, `${symbolKey}.description.txt`);
       const descriptionPath = path.join(descriptionsDir, `${symbolKey}.txt`);
+      const imagePath = path.join(rasterizedDir, `${symbolKey}.png`);
       await writeTextFile(promptPath, getDescriptionPrompt(symbolKey, content));
-      commands.push(`echo "\n\n\x1b[1m[${count}/${totalCount}] [D]\x1b[0m \x1b[1;4m${symbolKey}\x1b[0m"`, `jq -Rs '{model: "gemma4:e4b", prompt: ., think: true, stream: true, options: {temperature: 0.85, top_p: 0.95, top_k: 64}}' "${promptPath}" | curl -s http://localhost:11434/api/generate -d @- | jq --unbuffered -j '.response // empty' | tee "${descriptionPath}"`, `echo "\n\n"`);
+      commands.push(`echo "\n\n\x1b[1m[${count}/${totalCount}] [D]\x1b[0m \x1b[1;4m${symbolKey}\x1b[0m"`, `node describe.js ${symbolKey} ${tagsPath} ${imagePath} ${descriptionPath}`, `echo "\n\n"`);
     }
     timestamps[symbolKey][type] = now;
   }
