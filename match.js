@@ -1,4 +1,4 @@
-const { spawn } = require('child_process');
+const { spawn } = require('node:child_process');
 
 async function matchDescription(image_path, descriptions) {
   return await new Promise(function (resolve, reject) {
