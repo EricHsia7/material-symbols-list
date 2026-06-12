@@ -2,8 +2,10 @@ const { spawn } = require('node:child_process');
 
 async function matchDescription(image_path, descriptions) {
   return await new Promise(function (resolve, reject) {
+    const pythonExecutable = 'python3.11';
+
     // Pass the script name and arguments as an array
-    const pythonProcess = spawn('python3.11', ['./match.py', image_path].concat(descriptions));
+    const pythonProcess = spawn(pythonExecutable, ['./match.py', image_path]);
 
     // Collect output from the Python script
     pythonProcess.stdout.on('data', (data) => {
@@ -19,6 +21,10 @@ async function matchDescription(image_path, descriptions) {
     pythonProcess.on('close', (code) => {
       // console.log(`Child process exited with code ${code}`);
     });
+
+    // Pass descriptions
+    pythonProcess.stdin.write(JSON.stringify({ descriptions }));
+    pythonProcess.stdin.end();
   });
 }
 

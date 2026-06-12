@@ -77,7 +77,7 @@ async function main() {
   ];
 
   // Initial call to the model
-  let response = await ollama.chat({ model: modelName, messages, tools });
+  let response = await ollama.chat({ model: modelName, messages, tools, think: true });
   messages.push(response.message);
 
   while (response.message.tool_calls && response.message.tool_calls.length > 0 && toolCallCount < maximumToolCall) {
@@ -107,7 +107,7 @@ async function main() {
     }
 
     console.log('\nSending tool results back to the model...');
-    response = await ollama.chat({ model: modelName, messages, tools });
+    response = await ollama.chat({ model: modelName, messages, tools, think: true });
 
     messages.push(response.message);
   }
