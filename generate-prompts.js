@@ -26,28 +26,6 @@ Here're some relevant tags of the icon:
 ${tags}`;
 }
 
-function getDescriptionPrompt(symbol, tags) {
-  return `You are an icon lexicographer. Given one or more icons, produce concise,
-accurate, and friendly description for each.
-
-The description consists of two sentences.
-1. Sentence 1 describes what the icon literally depicts.
-2. Sentence 2 (optional) explains its common meaning, tone, or typical usage.
-
-Rules:
-- Be factually correct about what the symbol means; do not invent meanings.
-- Do not fabricate things that don't exist.
-- Neutral, inclusive tone. Avoid slang that may not age well.
-- Do not include the icon name inside the desc text.
-- Keep it under ~160 characters. Warm, plain English.
-- Just output the plain text, no formatting, no commentary.
-
-Write a description for the icon "${symbol}".
-
-Here're some relevant tags of the icon:
-${tags}`;
-}
-
 async function main() {
   const versions = require('./versions.json');
   const timestamps = require('./timestamps.json');
@@ -110,7 +88,6 @@ async function main() {
       const promptPath = path.join(outputDir, `${symbolKey}.description.txt`);
       const descriptionPath = path.join(descriptionsDir, `${symbolKey}.txt`);
       const imagePath = path.join(rasterizedDir, `${symbolKey}.png`);
-      await writeTextFile(promptPath, getDescriptionPrompt(symbolKey, content));
       commands.push(`echo "\n\n\x1b[1m[${count}/${totalCount}] [D]\x1b[0m \x1b[1;4m${symbolKey}\x1b[0m"`, `node describe.js ${symbolKey} ${tagsPath} ${imagePath} ${descriptionPath}`, `echo "\n\n"`);
     }
     timestamps[symbolKey][type] = now;
