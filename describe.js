@@ -60,12 +60,10 @@ Rules:
   - Generate 10 candidate descriptions.
   - Break down each description into parts before using match_descriptions(). Split them by facts. For example, [['The design is an outline of a simple, modern computer monitor screen.', 'There are 5 grids that represent multi-tasking or windowing.']].
   - Use match_descriptions to get critics and revise the description.
-- Iterate 3 to 10 times so the description is relevant and accurate.
-- Return exactly one description in the final output.
+- Iterate 3 to 10 times in your thinking process so the description is relevant and accurate.
+- Return exactly one description in the final output. Just output the plain text, no formatting, no commentary.
 - Do not include the icon name inside the desc text.
-- Keep it under ~160 characters. Warm, plain English.
-- Just output the plain text, no formatting, no commentary.
-- Return content from irrelevant or off-topic candidates is forbidden.`
+- Keep it under ~160 characters. Warm, plain English.`
     },
     {
       role: 'user',
@@ -113,6 +111,8 @@ Rules:
   console.log('\n--- Final ---');
   console.log(response.message.content);
   await writeTextFile(outputPath, response.message.content);
+
+  process.exit(0);
 }
 
-main().catch(console.error);
+main();
