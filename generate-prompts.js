@@ -86,7 +86,7 @@ async function main() {
       await writeTextFile(promptPath, getSynonymyPrompt(symbolKey, content));
       commands.push(`echo "\n\n\x1b[1m[${count}/${totalCount}] [S]\x1b[0m \x1b[1;4m${symbolKey}\x1b[0m"`, `jq -Rs '{model: "gemma4:e4b", prompt: ., think: true, stream: true, options: {temperature: 0.95, top_p: 0.95, top_k: 64}}' "${promptPath}" | curl -s http://localhost:11434/api/generate -d @- | jq --unbuffered -j '.response // empty' | tee "${synonymyPath}"`, `echo "\n\n"`);
     } else if (type === 1) {
-      const url = `https://raw.githubusercontent.com/marella/material-symbols/refs/heads/main/svg/400/rounded/${symbolName}.svg`;
+      const url = `https://raw.githubusercontent.com/marella/material-symbols/refs/heads/main/svg/400/rounded/${symbolKey}.svg`;
       try {
         const response = await fetch(url);
 
