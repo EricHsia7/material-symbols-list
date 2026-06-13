@@ -18,6 +18,11 @@ jobs:
         with:
           node-version: 24
 
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
       - name: Restore cached Node dependencies
         id: restore-cached-node-dependencies
         uses: actions/cache/restore@v5
@@ -52,6 +57,45 @@ jobs:
       - name: Generate prompts
         id: generate-prompts
         run: node generate-prompts.js
+
+      - name: Rasterize
+        if: steps.generate-prompts.outputs.queued-symbols-count > 0
+        run: node rasterize.js
+
+      - name: Restore cached Python virtual environment
+        id: restore-cached-python-venv
+        uses: actions/cache/restore@v5
+        if: steps.generate-prompts.outputs.queued-symbols-count > 0
+        with:
+          path: python_venv_synonymy_description
+          key: python-venv-synonymy-description-${{ runner.os }}-${{ hashFiles('./verify.requirements.txt') }}
+          restore-keys: |
+            python-venv-synonymy-description-${{ runner.os }}-${{ hashFiles('./verify.requirements.txt') }}
+
+      - name: Install Python dependencies
+        if: steps.generate-prompts.outputs.queued-symbols-count > 0 && steps.restore-cached-python-venv.outputs.cache-hit != 'true'
+        run: |
+          python -m venv python_venv_synonymy_description
+          python_venv_synonymy_description/bin/pip install -r verify.requirements.txt
+
+      - name: Cache Python virtual environment
+        id: cache-python-venv
+        uses: actions/cache/save@v5
+        if: steps.generate-prompts.outputs.queued-symbols-count > 0 && steps.restore-cached-python-venv.outputs.cache-hit != 'true'
+        with:
+          path: python_venv_synonymy_description
+          key: ${{ steps.restore-cached-python-venv.outputs.cache-primary-key }}
+
+      - name: Restore cached CLIP model
+        id: restore-cached-clip-model
+        uses: actions/cache/restore@v5
+        if: steps.generate-prompts.outputs.queued-symbols-count > 0
+        with:
+          path: |
+            ~/.cache/clip
+          key: clip-model-${{ runner.os }}
+          restore-keys: |
+            clip-model-${{ runner.os }}
 
       - name: Install Ollama
         if: steps.generate-prompts.outputs.queued-symbols-count > 0

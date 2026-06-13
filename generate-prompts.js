@@ -26,28 +26,6 @@ Here're some relevant tags of the icon:
 ${tags}`;
 }
 
-function getDescriptionPrompt(symbol, tags) {
-  return `You are an icon lexicographer. Given one or more icons, produce concise,
-accurate, and friendly description for each.
-
-The description consists of two sentences.
-1. Sentence 1 describes what the icon literally depicts.
-2. Sentence 2 (optional) explains its common meaning, tone, or typical usage.
-
-Rules:
-- Be factually correct about what the symbol means; do not invent meanings.
-- Do not fabricate things that don't exist.
-- Neutral, inclusive tone. Avoid slang that may not age well.
-- Do not include the icon name inside the desc text.
-- Keep it under ~160 characters. Warm, plain English.
-- Just output the plain text, no formatting, no commentary.
-
-Write a description for the icon "${symbol}".
-
-Here're some relevant tags of the icon:
-${tags}`;
-}
-
 async function main() {
   const versions = require('./versions.json');
   const timestamps = require('./timestamps.json');
@@ -55,10 +33,13 @@ async function main() {
   const synonymiesDir = './synonymies';
   const descriptionsDir = './descriptions';
   const tagsDir = './tags';
+  const queuedDir = './tmp/queued';
   const outputDir = './tmp/prompts';
+  const rasterizedDir = './tmp/rasterized';
 
   await makeDirectory(synonymiesDir);
   await makeDirectory(descriptionsDir);
+  await makeDirectory(queuedDir);
   await makeDirectory(outputDir);
 
   const now = new Date().getTime();
@@ -96,7 +77,8 @@ async function main() {
   let count = 0;
   for (const [symbolKey, timestamp, type] of queue) {
     count++;
-    const content = await readFile(path.join(tagsDir, `${symbolKey}.txt`));
+    const tagsPath = path.join(tagsDir, `${symbolKey}.txt`);
+    const content = await readFile(tagsPath);
     if (type === 0) {
       // synonymy
       const promptPath = path.join(outputDir, `${symbolKey}.synonymy.txt`);
@@ -104,11 +86,25 @@ async function main() {
       await writeTextFile(promptPath, getSynonymyPrompt(symbolKey, content));
       commands.push(`echo "\n\n\x1b[1m[${count}/${totalCount}] [S]\x1b[0m \x1b[1;4m${symbolKey}\x1b[0m"`, `jq -Rs '{model: "gemma4:e4b", prompt: ., think: true, stream: true, options: {temperature: 0.95, top_p: 0.95, top_k: 64}}' "${promptPath}" | curl -s http://localhost:11434/api/generate -d @- | jq --unbuffered -j '.response // empty' | tee "${synonymyPath}"`, `echo "\n\n"`);
     } else if (type === 1) {
+      const url = `https://raw.githubusercontent.com/marella/material-symbols/refs/heads/main/svg/400/rounded/${symbolKey}.svg`;
+      try {
+        const response = await fetch(url);
+
+        if (!response.ok) {
+          throw new Error(`Failed to fetch SVG: ${response.statusText} (${response.status})`);
+        }
+        const svgContent = await response.text();
+        const svgPath = path.join(queuedDir, `${symbolKey}.svg`);
+        await writeTextFile(svgPath, svgContent);
+        console.log(`SVG successfully downloaded to: ${svgPath}`);
+      } catch (error) {
+        console.error(`Error fetching or saving SVG:`, error);
+      }
+
       // description
-      const promptPath = path.join(outputDir, `${symbolKey}.description.txt`);
       const descriptionPath = path.join(descriptionsDir, `${symbolKey}.txt`);
-      await writeTextFile(promptPath, getDescriptionPrompt(symbolKey, content));
-      commands.push(`echo "\n\n\x1b[1m[${count}/${totalCount}] [D]\x1b[0m \x1b[1;4m${symbolKey}\x1b[0m"`, `jq -Rs '{model: "gemma4:e4b", prompt: ., think: true, stream: true, options: {temperature: 0.85, top_p: 0.95, top_k: 64}}' "${promptPath}" | curl -s http://localhost:11434/api/generate -d @- | jq --unbuffered -j '.response // empty' | tee "${descriptionPath}"`, `echo "\n\n"`);
+      const imagePath = path.join(rasterizedDir, `${symbolKey}.png`);
+      commands.push(`echo "\n\n\x1b[1m[${count}/${totalCount}] [D]\x1b[0m \x1b[1;4m${symbolKey}\x1b[0m"`, `node describe.js ${symbolKey} ${tagsPath} ${imagePath} ${descriptionPath}`, `echo "\n\n"`);
     }
     timestamps[symbolKey][type] = now;
   }
