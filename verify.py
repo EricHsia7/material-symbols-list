@@ -35,26 +35,24 @@ def main():
   image_features = model.encode_image(image_tensor)
   image_features = image_features / image_features.norm(dim=-1, keepdim=True)
 
-  result = []
-  for propositionGroup in propositions:
-    n = len(propositionGroup)
-    text_inputs = torch.cat([clip.tokenize(t) for t in propositionGroup]).to(device)
+  n = len(propositions)
 
-    text_features = model.encode_text(text_inputs)
-    text_features = text_features / text_features.norm(dim=-1, keepdim=True)
-  
-    similarities = (100.0 * image_features @ text_features.T).softmax(dim=-1)
-    values, indices = similarities[0].topk(n, sorted=False)
+  text_inputs = torch.cat([clip.tokenize(t) for t in propositions]).to(device)
 
-    markedDescription = []
-    for idx, val in zip(indices, values):
-      if val < 1.2 * (0.5 - abs(idx / n - 0.5)):
-        markedDescription.append(f"- [Incorrect]: {propositionGroup[idx]}")
-      else:
-        markedDescription.append(f"- [Passed]: {propositionGroup[idx]}")
-    result.append('\n'.join(markedDescription))
-   
-  result_text = "\n".join(result) #json.dumps(, ensure_ascii=False, indent=2)
+  text_features = model.encode_text(text_inputs)
+  text_features = text_features / text_features.norm(dim=-1, keepdim=True)
+
+  similarities = (100.0 * image_features @ text_features.T).softmax(dim=-1)
+  values, indices = similarities[0].topk(n, sorted=False)
+
+  verifications = []
+  for idx, val in zip(indices, values):
+    if val < 0.6:
+      verifications.append(f"- [Incorrect]: {propositions[idx]}")
+    else:
+      verifications.append(f"- [Passed]: {propositions[idx]}")
+
+  result_text = "\n".join(verifications) #json.dumps(, ensure_ascii=False, indent=2)
   report = f"""Results:
 {result_text}"""
   print(report)
