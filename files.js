@@ -107,6 +107,12 @@ async function readFile(path) {
   return fileContent;
 }
 
+async function readImageAsArray(path) {
+  const imageBuffer = await fs.promises.readFile(imagePath);
+  const image = new Uint8Array(imageBuffer);
+  return image;
+}
+
 async function moveFile(source, destination) {
   var name = path.basename(source);
   var path2 = path.join(destination, name);
@@ -124,5 +130,6 @@ module.exports = {
   copyFile,
   getFiles,
   readFile,
+  readImageAsArray,
   moveFile
 };

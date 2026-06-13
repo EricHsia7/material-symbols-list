@@ -1,5 +1,5 @@
 const { default: ollama } = require('ollama');
-const { readFile, writeTextFile } = require('./files');
+const { readFile, writeTextFile, readImageAsArray } = require('./files');
 const { matchDescription } = require('./match');
 const fs = require('fs');
 
@@ -11,8 +11,7 @@ async function main() {
   const [symbolName, tagsPath, imagePath, outputPath] = args;
 
   const tags = await readFile(tagsPath);
-  const imageBuffer = await fs.promises.readFile(imagePath);
-  const image = new Uint8Array(imageBuffer);
+  const image = await readImageAsArray(imagePath);
 
   const maximumToolCall = 16;
   let toolCallCount = 0;
