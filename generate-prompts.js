@@ -96,7 +96,7 @@ async function main() {
         const svgContent = await response.text();
         const svgPath = path.join(queuedDir, `${symbolKey}.svg`);
         await writeTextFile(svgPath, svgContent);
-        console.log(`SVG successfully downloaded to: ${outputPath}`);
+        console.log(`SVG successfully downloaded to: ${svgPath}`);
       } catch (error) {
         console.error(`Error fetching or saving SVG:`, error);
       }
