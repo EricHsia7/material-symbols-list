@@ -52,23 +52,23 @@ jobs:
         id: restore-cached-python-venv
         uses: actions/cache/restore@v5
         with:
-          path: python_venv_build
-          key: python-venv-build-${{ runner.os }}-${{ hashFiles('./similarity.requirements.txt') }}
+          path: python_venv
+          key: python-venv-${{ runner.os }}-${{ hashFiles('./similarity.requirements.txt') }}
           restore-keys: |
-            python-venv-build-${{ runner.os }}-${{ hashFiles('./similarity.requirements.txt') }}
+            python-venv-${{ runner.os }}-${{ hashFiles('./similarity.requirements.txt') }}
 
       - name: Install Python dependencies
         if: steps.restore-cached-python-venv.outputs.cache-hit != 'true'
         run: |
-          python -m venv python_venv_build
-          python_venv_build/bin/pip install -r similarity.requirements.txt
+          python -m venv python_venv
+          python_venv/bin/pip install -r similarity.requirements.txt
 
       - name: Cache Python virtual environment
         id: cache-python-venv
         uses: actions/cache/save@v5
         if: steps.restore-cached-python-venv.outputs.cache-hit != 'true'
         with:
-          path: python_venv_build
+          path: python_venv
           key: ${{ steps.restore-cached-python-venv.outputs.cache-primary-key }}
 
       - name: Unzip tags
@@ -83,7 +83,7 @@ jobs:
       - name: Build
         run: |
           node build.js
-          source python_venv_build/bin/activate
+          source python_venv/bin/activate
           python similarity.py
           deactivate
           node similarity.js

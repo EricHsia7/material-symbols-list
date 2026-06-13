@@ -66,23 +66,23 @@ jobs:
         uses: actions/cache/restore@v5
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         with:
-          path: python_venv_update
-          key: python-venv-update-${{ runner.os }}-${{ hashFiles('./tag.requirements.txt') }}
+          path: python_venv
+          key: python-venv-${{ runner.os }}-${{ hashFiles('./tag.requirements.txt') }}
           restore-keys: |
-            python-venv-update-${{ runner.os }}-${{ hashFiles('./tag.requirements.txt') }}
+            python-venv-${{ runner.os }}-${{ hashFiles('./tag.requirements.txt') }}
 
       - name: Install Python dependencies
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0 && steps.restore-cached-python-venv.outputs.cache-hit != 'true'
         run: |
-          python -m venv python_venv_update
-          python_venv_update/bin/pip install -r tag.requirements.txt
+          python -m venv python_venv
+          python_venv/bin/pip install -r tag.requirements.txt
 
       - name: Cache Python virtual environment
         id: cache-python-venv
         uses: actions/cache/save@v5
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0 && steps.restore-cached-python-venv.outputs.cache-hit != 'true'
         with:
-          path: python_venv_update
+          path: python_venv
           key: ${{ steps.restore-cached-python-venv.outputs.cache-primary-key }}
 
       - name: Restore cached CLIP model
@@ -109,7 +109,7 @@ jobs:
       - name: Add tags
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         run: |
-          source python_venv_update/bin/activate
+          source python_venv/bin/activate
           python tag.py
           deactivate
 

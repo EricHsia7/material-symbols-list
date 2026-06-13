@@ -67,23 +67,23 @@ jobs:
         uses: actions/cache/restore@v5
         if: steps.generate-prompts.outputs.queued-symbols-count > 0
         with:
-          path: python_venv_synonymy_description
-          key: python-venv-synonymy-description-${{ runner.os }}-${{ hashFiles('./verify.requirements.txt') }}
+          path: python_venv
+          key: python-venv-${{ runner.os }}-${{ hashFiles('./verify.requirements.txt') }}
           restore-keys: |
-            python-venv-synonymy-description-${{ runner.os }}-${{ hashFiles('./verify.requirements.txt') }}
+            python-venv-${{ runner.os }}-${{ hashFiles('./verify.requirements.txt') }}
 
       - name: Install Python dependencies
         if: steps.generate-prompts.outputs.queued-symbols-count > 0 && steps.restore-cached-python-venv.outputs.cache-hit != 'true'
         run: |
-          python -m venv python_venv_synonymy_description
-          python_venv_synonymy_description/bin/pip install -r verify.requirements.txt
+          python -m venv python_venv
+          python_venv/bin/pip install -r verify.requirements.txt
 
       - name: Cache Python virtual environment
         id: cache-python-venv
         uses: actions/cache/save@v5
         if: steps.generate-prompts.outputs.queued-symbols-count > 0 && steps.restore-cached-python-venv.outputs.cache-hit != 'true'
         with:
-          path: python_venv_synonymy_description
+          path: python_venv
           key: ${{ steps.restore-cached-python-venv.outputs.cache-primary-key }}
 
       - name: Restore cached CLIP model

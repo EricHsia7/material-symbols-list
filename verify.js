@@ -17,7 +17,7 @@ async function verifyPropositions(image_path, propositions) {
     validateStructure(propositions);
 
     return await new Promise(function (resolve, reject) {
-      const pythonExecutable = 'python_venv_synonymy_description/bin/python';
+      const pythonExecutable = 'python_venv/bin/python';
 
       // Pass the script name and arguments as an array
       const pythonProcess = spawn(pythonExecutable, ['./verify.py', image_path]);
