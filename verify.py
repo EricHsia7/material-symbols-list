@@ -55,13 +55,13 @@ def main():
     markedDescription = []
     for idx, val in zip(indices, values):
       if val < 1.2 * (0.5 - abs(idx / n - 0.5)):
-        markedDescription.append(f"[{description[idx]}]")
+        markedDescription.append(f"[DELETE][{description[idx]}]")
       else:
         markedDescription.append(f"{description[idx]}")
     result.append(f"- {' '.join(markedDescription)}")
    
   result_text = "\n".join(result) #json.dumps(, ensure_ascii=False, indent=2)
-  report = f"""Bracketed parts might be inaccurate:
+  report = f"""Suggestions:
 {result_text}"""
   print(report)
 

@@ -108,7 +108,7 @@ async function readFile(path) {
 }
 
 async function readImageAsArray(path) {
-  const imageBuffer = await fs.promises.readFile(imagePath);
+  const imageBuffer = await fs.promises.readFile(path);
   const image = new Uint8Array(imageBuffer);
   return image;
 }

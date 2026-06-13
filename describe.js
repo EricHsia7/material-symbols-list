@@ -1,12 +1,9 @@
 const { default: ollama } = require('ollama');
 const { readFile, writeTextFile, readImageAsArray } = require('./files');
-const { matchDescription } = require('./match');
+const { verifyPropositions } = require('./verify');
 const fs = require('fs');
 
 async function main() {
-  const tagsDir = './tags';
-  const rasterized = './tmp/rasterized';
-
   const args = process.argv.slice(2);
   const [symbolName, tagsPath, imagePath, outputPath] = args;
 
@@ -22,23 +19,24 @@ async function main() {
     {
       type: 'function',
       function: {
-        name: 'match_descriptions',
-        description: 'Evaluate descriptions',
+        name: 'verify_propositions',
+        description: 'Verify propositions',
         parameters: {
           type: 'object',
           properties: {
-            descriptions: {
+            propositions: {
               type: 'array',
+              description: 'A 2D array of strings representing rows and columns. Put grouped propositions here.',
               items: {
                 type: 'array',
+                description: 'A single row containing string values. Put propositions here.',
                 items: {
                   type: 'string'
                 }
-              },
-              description: 'A "list of description arrays" means you have a big list, where each item is its own smaller list of words or phrases (so it is a list of lists of string). By breaking down a description into parts, this tool is allowed to diagnose inaccurate word choice.'
+              }
             }
           },
-          required: ['descriptions']
+          required: ['propositions']
         }
       }
     }
@@ -56,13 +54,13 @@ The description consists of two sentences.
 
 Rules:
 - For each turn:
-  - Generate 10 candidate descriptions.
-  - Break down each description into parts before using match_descriptions(). Split them by facts. For example, [['The design is an outline of a simple, modern computer monitor screen.', 'There are 5 grids that represent multi-tasking or windowing.']].
-  - Use match_descriptions to get critics and revise the description.
-- Iterate 3 to 10 times in your thinking process so the description is relevant and accurate.
+  - Generate 10 candidate descriptions. For exmaple, "The design is an outline of a simple, modern computer monitor screen with 5 grids that represent multi-tasking or windowing."
+  - Generate propositions per description, then use verify_propositions() to verify the *details*. Each proposition should correspond to a single detail or point. For example, [['It is a computer monitor screen.', 'There are 5 grids in the illustration.', 'It is an outine of computer monitor.', 'It illustartes multiple apps or programs running on a computer.', ...], ...].
+  - Read the suggestions and revise your description.
+- Iterate 3 to 10 times in your thinking process so the description is eventually relevant and accurate.
 - Return exactly one description in the final output. Just output the plain text, no formatting, no commentary.
-- Do not include the icon name inside the desc text.
-- Keep it under ~160 characters. Warm, plain English.`
+- Do not include the name inside the description so the content is clean and concise.
+- Keep final description under 3 sentences. Warm, plain English.`
     },
     {
       role: 'user',
@@ -84,9 +82,9 @@ Rules:
       let functionResult = '';
 
       // Execute the requested function
-      if (tool.function.name === 'match_descriptions') {
-        const { descriptions } = tool.function.arguments;
-        functionResult = await matchDescription(imagePath, descriptions);
+      if (tool.function.name === 'verify_propositions') {
+        const { propositions } = tool.function.arguments;
+        functionResult = await verifyPropositions(imagePath, propositions);
         toolCallCount++;
       } else {
         functionResult = 'Error: Unknown function';

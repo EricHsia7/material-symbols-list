@@ -102,7 +102,6 @@ async function main() {
       }
 
       // description
-      const promptPath = path.join(outputDir, `${symbolKey}.description.txt`);
       const descriptionPath = path.join(descriptionsDir, `${symbolKey}.txt`);
       const imagePath = path.join(rasterizedDir, `${symbolKey}.png`);
       commands.push(`echo "\n\n\x1b[1m[${count}/${totalCount}] [D]\x1b[0m \x1b[1;4m${symbolKey}\x1b[0m"`, `node describe.js ${symbolKey} ${tagsPath} ${imagePath} ${descriptionPath}`, `echo "\n\n"`);

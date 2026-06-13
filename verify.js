@@ -1,33 +1,30 @@
 const { spawn } = require('node:child_process');
 
-function validateDescriptionsStructure(descriptions) {
-  if (typeof descriptions !== 'object' || !Array.isArray(descriptions)) {
+function validateStructure(propositions) {
+  if (typeof propositions !== 'object' || !Array.isArray(propositions)) {
     throw new Error('Please fix your input. The input should be a list.');
-    return false;
   }
 
-  if (descriptions.some((description) => typeof description !== 'object' || !Array.isArray(description))) {
+  if (propositions.some((propositionGroup) => typeof propositionGroup !== 'object' || !Array.isArray(propositionGroup))) {
     throw new Error('Please fix your input. The input should be a list of arrays.');
-    return false;
   }
 
-  if (descriptions.some((description) => description.some((part) => typeof part !== 'string'))) {
+  if (propositions.some((propositionGroup) => propositionGroup.some((proposition) => typeof proposition !== 'string'))) {
     throw new Error('Please fix your input. The input should be a list of arrays of string.');
-    return false;
   }
 
   return true;
 }
 
-async function matchDescription(image_path, descriptions) {
+async function verifyPropositions(image_path, propositions) {
   try {
-    validateDescriptionsStructure(descriptions);
+    validateStructure(propositions);
 
     return await new Promise(function (resolve, reject) {
       const pythonExecutable = 'python_venv_synonymy_description/bin/python';
 
       // Pass the script name and arguments as an array
-      const pythonProcess = spawn(pythonExecutable, ['./match.py', image_path]);
+      const pythonProcess = spawn(pythonExecutable, ['./verify.py', image_path]);
 
       // Collect output from the Python script
       pythonProcess.stdout.on('data', (data) => {
@@ -44,8 +41,8 @@ async function matchDescription(image_path, descriptions) {
         // console.log(`Child process exited with code ${code}`);
       });
 
-      // Pass descriptions
-      pythonProcess.stdin.write(JSON.stringify({ descriptions }));
+      // Pass propositions
+      pythonProcess.stdin.write(JSON.stringify({ propositions }));
       pythonProcess.stdin.end();
     });
   } catch (err) {
@@ -54,5 +51,5 @@ async function matchDescription(image_path, descriptions) {
 }
 
 module.exports = {
-  matchDescription
+  verifyPropositions
 };
