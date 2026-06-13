@@ -26,7 +26,7 @@ async function main() {
           properties: {
             propositions: {
               type: 'array',
-              description: 'A 2D array of strings representing rows and columns. Put grouped propositions here.',
+              description: 'A 2D array of strings representing rows and columns. Grouped propositions per row.',
               items: {
                 type: 'array',
                 description: 'A single row containing string values. Put propositions here.',
