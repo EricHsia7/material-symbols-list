@@ -19,11 +19,11 @@ device = pick_device()
 model, preprocess = clip.load("ViT-B/16", device=device)
 
 def main():
-  descriptions = []
+  propositions = []
   try:
     raw_input = sys.stdin.read()
     data = json.loads(raw_input)
-    descriptions = data.get('descriptions')
+    propositions = data.get('propositions')
   except Exception as e:
     error_response = {"status": "error", "message": str(e)}
     print(json.dumps(error_response))
@@ -36,15 +36,9 @@ def main():
   image_features = image_features / image_features.norm(dim=-1, keepdim=True)
 
   result = []
-  for description in descriptions:
-    class_descriptions = []
-    sentence = []
-    for phrase in description:
-      sentence.append(phrase)
-      class_descriptions.append(" ".join(sentence))
-    n = len(class_descriptions)
-    
-    text_inputs = torch.cat([clip.tokenize(t) for t in class_descriptions]).to(device)
+  for propositionGroup in propositions:
+    n = len(propositionGroup)
+    text_inputs = torch.cat([clip.tokenize(t) for t in propositionGroup]).to(device)
 
     text_features = model.encode_text(text_inputs)
     text_features = text_features / text_features.norm(dim=-1, keepdim=True)
@@ -55,13 +49,13 @@ def main():
     markedDescription = []
     for idx, val in zip(indices, values):
       if val < 1.2 * (0.5 - abs(idx / n - 0.5)):
-        markedDescription.append(f"[DELETE][{description[idx]}]")
+        markedDescription.append(f"- [Incorrect]: {propositionGroup[idx]}")
       else:
-        markedDescription.append(f"{description[idx]}")
-    result.append(f"- {' '.join(markedDescription)}")
+        markedDescription.append(f"- [Passed]: {propositionGroup[idx]}")
+    result.append('\n'.join(markedDescription))
    
   result_text = "\n".join(result) #json.dumps(, ensure_ascii=False, indent=2)
-  report = f"""Suggestions:
+  report = f"""Results:
 {result_text}"""
   print(report)
 

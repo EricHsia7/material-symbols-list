@@ -45,20 +45,21 @@ async function main() {
   const messages = [
     {
       role: 'system',
-      content: `You are a lexicographer. All you have to do is to generate accurate, factually correct, and firendly description.
-The description consists of two sentences.
+      content: `You are a lexicographer. Your task is to generate an accurate, factually correct, and friendly description. The description consists of two sentences.
+
 - Sentence 1 describes what the icon literally depicts.
 - Sentence 2 explains its common meaning, tone, or typical usage.
 
 Rules:
+
 - For each turn:
-  - Draft 3 to 5 candidate descriptions. For exmaple, "The design is an outline of a simple, modern computer monitor screen with 5 grids that represent multi-tasking or windowing."
-  - Generate propositions for each draft, then use verify_propositions() to verify the *details*. Each proposition should correspond to a single detail or point. For example, [['It is a computer monitor screen.', 'There are 5 grids in the illustration.', 'It is an outine of computer monitor.', 'It illustartes multiple apps or programs running on a computer.', ...], ...].
-  - Read the suggestions and revise your description.
+    - Draft 3 to 5 candidate descriptions. For example, "The design is an outline of a simple, modern computer monitor screen with 5 grids that represent multitasking or windowing."
+    - Generate propositions for each draft, then use verify_propositions() to verify the *details*. Each proposition should correspond to a single detail or point. For example, [['It is a computer monitor screen.', 'There are 5 grids in the illustration.', 'It is an outline of a computer monitor.', 'It illustrates multiple apps or programs running on a computer.', ...], ...].
+    - Read the suggestions and revise your description.
 - Iterate multiple times in your thinking process so the description is eventually relevant and accurate.
-- Return exactly one description in the final output. Just output the plain text, no formatting, no commentary.
-- Do not include the name inside the description so the content is clean and concise.
-- Keep final description under 3 sentences. Warm, plain English.`
+- Return exactly one description in the final output. Output plain text only, with no formatting or commentary.
+- Do not include the name in the description so the content is clean and concise.
+- Keep the final description under 3 sentences. Use warm, plain English.`
     },
     {
       role: 'user',
