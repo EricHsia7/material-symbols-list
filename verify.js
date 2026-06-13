@@ -5,12 +5,8 @@ function validateStructure(propositions) {
     throw new Error('Please fix your input. The input should be a list.');
   }
 
-  if (propositions.some((propositionGroup) => typeof propositionGroup !== 'object' || !Array.isArray(propositionGroup))) {
-    throw new Error('Please fix your input. The input should be a list of arrays.');
-  }
-
-  if (propositions.some((propositionGroup) => propositionGroup.some((proposition) => typeof proposition !== 'string'))) {
-    throw new Error('Please fix your input. The input should be a list of arrays of string.');
+  if (propositions.some((proposition) => typeof proposition !== 'string')) {
+    throw new Error('Please fix your input. The input should be a list of string.');
   }
 
   return true;
@@ -46,7 +42,7 @@ async function verifyPropositions(image_path, propositions) {
       pythonProcess.stdin.end();
     });
   } catch (err) {
-    return `Error: ${err.message}`;
+    return `Error: ${err}`;
   }
 }
 
