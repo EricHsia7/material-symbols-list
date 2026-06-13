@@ -70,7 +70,15 @@ Rules:
   ];
 
   // Initial call to the model
-  let response = await ollama.chat({ model: modelName, messages, tools, think: true });
+  let response = await ollama.chat({
+    model: modelName,
+    messages,
+    tools,
+    think: true,
+    options: {
+      temperature: 0.95
+    }
+  });
   messages.push(response.message);
 
   while (response.message.tool_calls && response.message.tool_calls.length > 0 && toolCallCount < maximumToolCall) {
@@ -100,7 +108,15 @@ Rules:
     }
 
     console.log('\nSending tool results back to the model...');
-    response = await ollama.chat({ model: modelName, messages, tools, think: true });
+    response = await ollama.chat({
+      model: modelName,
+      messages,
+      tools,
+      think: true,
+      options: {
+        temperature: 0.65
+      }
+    });
 
     messages.push(response.message);
   }
