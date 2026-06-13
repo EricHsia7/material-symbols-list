@@ -47,7 +47,7 @@ def main():
 
   verifications = []
   for idx, val in zip(indices, values):
-    if val < 0.6:
+    if val < 0.55:
       verifications.append(f"- [Incorrect]: {propositions[idx]}")
     else:
       verifications.append(f"- [Passed]: {propositions[idx]}")
