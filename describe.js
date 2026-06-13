@@ -82,10 +82,8 @@ Rules:
   messages.push(response.message);
 
   while (response.message.tool_calls && response.message.tool_calls.length > 0 && toolCallCount < maximumToolCall) {
-    console.log(`\nModel wants to call ${response.message.tool_calls.length} tool(s)...`);
-
     for (const tool of response.message.tool_calls) {
-      console.log(`Executing: ${tool.function.name} with`, tool.function.arguments);
+      console.log(`Calling ${tool.function.name} with`, JSON.stringify(tool.function.arguments, null, 2));
 
       let functionResult = '';
 
@@ -107,7 +105,7 @@ Rules:
       });
     }
 
-    console.log('\nSending tool results back to the model...');
+    console.log('Sending tool results back to the model...');
     response = await ollama.chat({
       model: modelName,
       messages,
