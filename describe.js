@@ -108,7 +108,6 @@ Rules:
     messages.push(response.message);
   }
 
-  console.log('\n--- Final ---');
   console.log(response.message.content);
   await writeTextFile(outputPath, response.message.content);
 
