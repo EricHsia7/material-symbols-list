@@ -3,7 +3,7 @@ const path = require('path');
 const { makeDirectory, writeTextFile } = require('./files.js');
 
 async function main() {
-  const outputDir = './tmp/updated/';
+  const queuedDir = './tmp/queued/';
   const versions = require('./versions.json');
   const latestVersions = require('./tmp/versions.json');
   const updated = [];
@@ -18,7 +18,7 @@ async function main() {
     }
   }
 
-  await makeDirectory(outputDir);
+  await makeDirectory(queuedDir);
 
   for (const symbolName of updated) {
     const url = `https://raw.githubusercontent.com/marella/material-symbols/refs/heads/main/svg/400/rounded/${symbolName}.svg`;
@@ -33,7 +33,7 @@ async function main() {
       const svgContent = await response.text();
 
       // Define the full path for the output file
-      const outputPath = path.join(outputDir, `${symbolName}.svg`);
+      const outputPath = path.join(queuedDir, `${symbolName}.svg`);
 
       // Save the SVG content to the file, overwriting if it exists
       await writeTextFile(outputPath, svgContent);

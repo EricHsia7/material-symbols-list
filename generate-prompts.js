@@ -33,11 +33,13 @@ async function main() {
   const synonymiesDir = './synonymies';
   const descriptionsDir = './descriptions';
   const tagsDir = './tags';
+  const queuedDir = './tmp/queued';
   const outputDir = './tmp/prompts';
   const rasterizedDir = './tmp/rasterized';
 
   await makeDirectory(synonymiesDir);
   await makeDirectory(descriptionsDir);
+  await makeDirectory(queuedDir);
   await makeDirectory(outputDir);
 
   const now = new Date().getTime();
@@ -84,6 +86,21 @@ async function main() {
       await writeTextFile(promptPath, getSynonymyPrompt(symbolKey, content));
       commands.push(`echo "\n\n\x1b[1m[${count}/${totalCount}] [S]\x1b[0m \x1b[1;4m${symbolKey}\x1b[0m"`, `jq -Rs '{model: "gemma4:e4b", prompt: ., think: true, stream: true, options: {temperature: 0.95, top_p: 0.95, top_k: 64}}' "${promptPath}" | curl -s http://localhost:11434/api/generate -d @- | jq --unbuffered -j '.response // empty' | tee "${synonymyPath}"`, `echo "\n\n"`);
     } else if (type === 1) {
+      const url = `https://raw.githubusercontent.com/marella/material-symbols/refs/heads/main/svg/400/rounded/${symbolName}.svg`;
+      try {
+        const response = await fetch(url);
+
+        if (!response.ok) {
+          throw new Error(`Failed to fetch SVG: ${response.statusText} (${response.status})`);
+        }
+        const svgContent = await response.text();
+        const svgPath = path.join(queuedDir, `${symbolKey}.svg`);
+        await writeTextFile(svgPath, svgContent);
+        console.log(`SVG successfully downloaded to: ${outputPath}`);
+      } catch (error) {
+        console.error(`Error fetching or saving SVG:`, error);
+      }
+
       // description
       const promptPath = path.join(outputDir, `${symbolKey}.description.txt`);
       const descriptionPath = path.join(descriptionsDir, `${symbolKey}.txt`);

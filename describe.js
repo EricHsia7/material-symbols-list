@@ -1,33 +1,7 @@
 const { default: ollama } = require('ollama');
 const { readFile, writeTextFile } = require('./files');
 const { matchDescription } = require('./match');
-
-function getDescriptionPrompt(symbol, tags) {
-  return `You are an icon lexicographer. Given one or more icons, produce concise,
-accurate, and friendly description for each.
-
-The description consists of two sentences.
-1. Sentence 1 describes what the icon literally depicts.
-2. Sentence 2 (optional) explains its common meaning, tone, or typical usage.
-
-Rules:
-- Be factually correct about what the symbol means; do not invent meanings.
-- Do not fabricate things that don't exist.
-- Neutral, inclusive tone. Avoid slang that may not age well.
-- Do not include the icon name inside the desc text.
-- Keep it under ~160 characters. Warm, plain English.
-- Just output the plain text, no formatting, no commentary.
-
-Steps:
-- Draft 5-10 descriptions based on the context.
-- Use match_descriptions to get critics and revise the description.
-- Return only the final output in plaintext.
-
-Write a description for the icon "${symbol}".
-
-Here're some relevant tags of the icon:
-${tags}`;
-}
+const fs = require('fs');
 
 async function main() {
   const tagsDir = './tags';
@@ -37,6 +11,8 @@ async function main() {
   const [symbolName, tagsPath, imagePath, outputPath] = args;
 
   const tags = await readFile(tagsPath);
+  const imageBuffer = await fs.promises.readFile(imagePath);
+  const image = new Uint8Array(imageBuffer);
 
   const maximumToolCall = 16;
   let toolCallCount = 0;
@@ -48,19 +24,19 @@ async function main() {
       type: 'function',
       function: {
         name: 'match_descriptions',
-        description: 'Match descriptions against the image.',
+        description: 'Evaluate descriptions',
         parameters: {
           type: 'object',
           properties: {
             descriptions: {
               type: 'array',
               items: {
-                type: 'string'
+                type: 'array',
+                items: {
+                  type: 'string'
+                }
               },
-              description: 'A list of descriptions.'
-            },
-            subject: {
-              type: 'string'
+              description: 'A "list of description arrays" means you have a big list, where each item is its own smaller list of words or phrases (so it is a list of lists of string). By breaking down a description into parts, this tool is allowed to diagnose inaccurate word choice.'
             }
           },
           required: ['descriptions']
@@ -71,8 +47,30 @@ async function main() {
 
   const messages = [
     {
+      role: 'system',
+      content: `You are an icon lexicographer. Given one or more icons, produce concise,
+accurate, and friendly description for each.
+
+The description consists of two sentences.
+1. Sentence 1 describes what the icon literally depicts.
+2. Sentence 2 (optional) explains its common meaning, tone, or typical usage.
+
+Rules:
+- For each turn:
+  - Generate 10 candidate descriptions.
+  - Break down each description into parts before using match_descriptions(). Split them by facts. For example, [['The design is an outline of a simple, modern computer monitor screen.', 'There are 5 grids that represent multi-tasking or windowing.']].
+  - Use match_descriptions to get critics and revise the description.
+- Iterate 3 to 10 times so the description is relevant and accurate.
+- Return exactly one description in the final output.
+- Do not include the icon name inside the desc text.
+- Keep it under ~160 characters. Warm, plain English.
+- Just output the plain text, no formatting, no commentary.
+- Return content from irrelevant or off-topic candidates is forbidden.`
+    },
+    {
       role: 'user',
-      content: getDescriptionPrompt(symbolName, tags)
+      content: `Generate a description for "${symbolName}". Here're some tags of the icon: \n ${tags}`,
+      images: [image]
     }
   ];
 
@@ -97,7 +95,7 @@ async function main() {
         functionResult = 'Error: Unknown function';
       }
 
-      console.log(`Result: ${functionResult}`);
+      console.log(functionResult);
 
       // Append the tool result to history
       messages.push({
