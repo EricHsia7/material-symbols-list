@@ -139,7 +139,7 @@ async function buildSearchIndex(tagFiles, synonymyFiles, versions, timestamps, o
 }
 
 async function buildDescription(descriptionFiles, versions, timestamps, outputDir) {
-  const legalDelimiters = [' ', ',', '.', `"`, `'`, '-', '_', '—', '(', ')'];
+  const legalDelimiters = [' ', ',', '.', `"`, `'`, '-', '_', '—', '(', ')', ':'];
   const frequencyMap = {};
   const descriptions = {};
   let descriptionsCount = 0;
