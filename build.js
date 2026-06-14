@@ -139,7 +139,7 @@ async function buildSearchIndex(tagFiles, synonymyFiles, versions, timestamps, o
 }
 
 async function buildDescription(descriptionFiles, versions, timestamps, outputDir) {
-  const legalDelimiters = [' ', ',', '.', `"`, `'`, '-', '_', '(', ')'];
+  const legalDelimiters = [' ', ',', '.', `"`, `'`, '-', '_', '—', '(', ')'];
   const frequencyMap = {};
   const descriptions = {};
   let descriptionsCount = 0;
@@ -148,7 +148,7 @@ async function buildDescription(descriptionFiles, versions, timestamps, outputDi
     const symbolName = path.basename(file.path.name, extension);
 
     if (!versions.hasOwnProperty(symbolName)) continue;
-    
+
     const content = await readFile(file.path.full);
     if (content.trim().length === 0) continue;
     const symbolNameComponents = symbolName.split('_');
