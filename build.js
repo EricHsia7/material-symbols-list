@@ -148,8 +148,10 @@ async function buildDescription(descriptionFiles, versions, timestamps, outputDi
     const symbolName = path.basename(file.path.name, extension);
 
     if (!versions.hasOwnProperty(symbolName)) continue;
-    const symbolNameComponents = symbolName.split('_');
+    
     const content = await readFile(file.path.full);
+    if (content.trim().length === 0) continue;
+    const symbolNameComponents = symbolName.split('_');
     const splitWords = splitByDelimiter(content, legalDelimiters);
     descriptions[symbolName] = { words: splitWords.result, delimiters: splitWords.delimiters };
     for (const word of splitWords.result) {
