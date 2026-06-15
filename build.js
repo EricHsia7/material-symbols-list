@@ -151,6 +151,8 @@ async function buildDescription(descriptionFiles, versions, timestamps, outputDi
 
     const content = await readFile(file.path.full);
     if (content.trim().length === 0) continue;
+    if (/<channel\|>/gm.test(content)) continue;
+
     const symbolNameComponents = symbolName.split('_');
     const splitWords = splitByDelimiter(content, legalDelimiters);
     descriptions[symbolName] = { words: splitWords.result, delimiters: splitWords.delimiters };
