@@ -34,3 +34,7 @@ The repository automatically updates using the following workflow:
 3. Pair icons with semantic tags using CLIP model ([@openai/CLIP](https://github.com/openai/CLIP))
 4. Build and compress search indices
 5. Update distribution files
+
+## Affiliated Repositories
+
+- [@EricHsia7/material-symbols-list-viewer](https://github.com/EricHsia7/material-symbols-list-viewer)
