@@ -3,7 +3,7 @@
     "@resvg/resvg-js": "2.6.2",
     "emoji-regex": "10.6.0",
     "gh-pages": "6.3.0",
-    "jimp": "1.6.0",
+    "jimp": "1.6.1",
     "js-levenshtein": "1.1.6",
     "pako": "3.0.0",
     "ollama": "0.6.3"
