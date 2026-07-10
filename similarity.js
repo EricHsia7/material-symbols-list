@@ -7,7 +7,7 @@ async function main() {
   const outputDir = './dist';
 
   const similarity = await readFile(path.join(outputDir, 'similarity.json'));
-  const compressedData = gzipSync(new TextEncoder().encode(similarity), { level: 9 });
+  const compressedData = gzipSync(new TextEncoder().encode(similarity), { level: 7 });
   await fs.promises.writeFile(path.join(outputDir, 'similarity.gz'), Buffer.from(compressedData));
 
   process.exit(0);
