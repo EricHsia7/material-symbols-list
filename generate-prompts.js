@@ -5,7 +5,7 @@ const { makeDirectory, writeTextFile, readFile } = require('./files.js');
 function getSynonymyPrompt(symbol, tags) {
   return `You are an expert in UI/UX design and iconography.
 I will provide you with a list of visually matched icon tags.
-For each icon, provide 10 to 15 *extra* synonymies, alternative names, or related UI concepts that a user might search for to find this icon.
+For each icon, provide 5 to 10 *extra* synonymies, alternative names, or related UI concepts that a user might search for to find this icon.
 
 Rules:
 - Focus on what the icon *looks like* and its *UI function*.
