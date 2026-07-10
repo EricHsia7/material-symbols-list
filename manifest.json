@@ -2,9 +2,9 @@
   "search_index": {
     "raw": "https://erichsia7.github.io/material-symbols-list/search-index.json",
     "compressed": "https://erichsia7.github.io/material-symbols-list/search-index.gz",
-    "md5": "028efba8c8b19bbfb3fd56e1b7ed405d",
-    "sha256": "105c488b098f35866993d98d751fa9c719c540bfcf613bfb938c77cc29dd5641",
-    "sha512": "4941acafa789dc352486f4fdbde0688becfa3e7ae6c5bded05d3a816079c5935f1d88697c691cc1b49db66213eb23db06d8e32f7a7642da54421d69b23a249fb"
+    "md5": "af40fa4472fe4224f71e8289970f37b5",
+    "sha256": "1f8454586e464a64a858cd9798af0c670103add783d40f0a1a6ee26d6b127741",
+    "sha512": "24c3bc4f5a981fd891d89d94081f0768f296af525471e334d323654fa8c25d822e78e9c9d8f69036e83a7b3de46c1ac1853084261f11eabc82eae26f0a950fdb"
   },
   "index": {
     "raw": "https://erichsia7.github.io/material-symbols-list/index.json",
@@ -16,15 +16,15 @@
   "similarity": {
     "raw": "https://erichsia7.github.io/material-symbols-list/similarity.json",
     "compressed": "https://erichsia7.github.io/material-symbols-list/similarity.gz",
-    "md5": "db7e40e9b585a2f25af47f0dfe6ff102",
-    "sha256": "b4dc7fdb1708b880611d713c142439983a55c66aa5c639a431e314a54397dfca",
-    "sha512": "c8e76d883641bb7537dabb641842532bb1a7742167873d72bfcc9a500bcee62ec4604b092e4a3bf35119e9ea25a738365776e90fc097ef5585892f8557591ee4"
+    "md5": "76d545d2b94934abee91763d79f62d7d",
+    "sha256": "0e3f1f24185fa152fb0f89e84718085f6195278d39c8043ed23c0b7ebde03bf2",
+    "sha512": "2eb32c74c788eba6bac187bd26dfe9956236f14e709f3b48ed46faba75d28e25ccdfdb185c6af8f5d92569d152c05f9acedd567d761b3be08021a539035db44d"
   },
   "description": {
     "raw": "https://erichsia7.github.io/material-symbols-list/description.json",
     "compressed": "https://erichsia7.github.io/material-symbols-list/description.gz",
-    "md5": "4014d58560b2570df43e481fcdff1734",
-    "sha256": "5c2724312b113ff0e374c064338b775817d5363a708ab88b365f15c4eb3ee801",
-    "sha512": "f798e75dc53016bea5adce7d9eb580cddabd99e1188a8ae0b80e883f24a38b0374bb19931d668da7ea13140191572e080b957a2fbfd5ca6b7ee8f40c5f96d6aa"
+    "md5": "b4f47e54ceb5ca0fc8cf0930f5e41009",
+    "sha256": "7636dd8ed21d156033e7c302cb21b73471fe1ad08f59c8e539c9175ef06a48ac",
+    "sha512": "7c0c335e5dc684d4fa2fda5c5e9a3cd8198d8071d58dc2e533751976467625f72de457e2f1bc946ab2b5649e9e0538ff27ad9814643b9fb219c5332eade54faf"
   }
 }
