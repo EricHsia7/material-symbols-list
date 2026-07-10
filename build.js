@@ -27,7 +27,7 @@ async function buildIndex(tagFiles, versions, outputDir) {
   await writeTextFile(path.join(outputDir, 'index.json'), jsonString);
 
   // output index.gz
-  const compressedData = gzipSync(new TextEncoder().encode(jsonString), { level: 8 });
+  const compressedData = gzipSync(new TextEncoder().encode(jsonString), { level: 9 });
   await fs.promises.writeFile(path.join(outputDir, 'index.gz'), Buffer.from(compressedData));
 
   // report stats
@@ -130,7 +130,7 @@ async function buildSearchIndex(tagFiles, synonymyFiles, versions, timestamps, o
   await writeTextFile(path.join(outputDir, 'search-index.json'), jsonString);
 
   // output search-index.gz
-  const compressedData = gzipSync(new TextEncoder().encode(jsonString), { level: 8 });
+  const compressedData = gzipSync(new TextEncoder().encode(jsonString), { level: 9 });
   await fs.promises.writeFile(path.join(outputDir, 'search-index.gz'), Buffer.from(compressedData));
 
   // report stats
@@ -209,7 +209,7 @@ async function buildDescription(descriptionFiles, versions, timestamps, outputDi
   await writeTextFile(path.join(outputDir, 'description.json'), jsonString);
 
   // output description.gz
-  const compressedData = gzipSync(new TextEncoder().encode(jsonString), { level: 8 });
+  const compressedData = gzipSync(new TextEncoder().encode(jsonString), { level: 9 });
   await fs.promises.writeFile(path.join(outputDir, 'description.gz'), Buffer.from(compressedData));
 
   // report stats
