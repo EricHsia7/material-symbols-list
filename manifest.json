@@ -2,9 +2,9 @@
   "search_index": {
     "raw": "https://erichsia7.github.io/material-symbols-list/search-index.json",
     "compressed": "https://erichsia7.github.io/material-symbols-list/search-index.gz",
-    "md5": "af40fa4472fe4224f71e8289970f37b5",
-    "sha256": "1f8454586e464a64a858cd9798af0c670103add783d40f0a1a6ee26d6b127741",
-    "sha512": "24c3bc4f5a981fd891d89d94081f0768f296af525471e334d323654fa8c25d822e78e9c9d8f69036e83a7b3de46c1ac1853084261f11eabc82eae26f0a950fdb"
+    "md5": "e258d65f01338043d15300c2cf4f2fa9",
+    "sha256": "23986e52f61ba210af94f51810743d31e0642e4a91ad0ebdddc593d4b12619dd",
+    "sha512": "b7c3600c709cee99c38b67b9f59b6bef0d9de8e9a0b1e4c0047faedc444e063ded59cdc1f633ea22028625336eb8fb1d92d93815bb02609f5318890ac22e3100"
   },
   "index": {
     "raw": "https://erichsia7.github.io/material-symbols-list/index.json",
@@ -16,9 +16,9 @@
   "similarity": {
     "raw": "https://erichsia7.github.io/material-symbols-list/similarity.json",
     "compressed": "https://erichsia7.github.io/material-symbols-list/similarity.gz",
-    "md5": "76d545d2b94934abee91763d79f62d7d",
-    "sha256": "0e3f1f24185fa152fb0f89e84718085f6195278d39c8043ed23c0b7ebde03bf2",
-    "sha512": "2eb32c74c788eba6bac187bd26dfe9956236f14e709f3b48ed46faba75d28e25ccdfdb185c6af8f5d92569d152c05f9acedd567d761b3be08021a539035db44d"
+    "md5": "f2f045e07fb383d29f162ac9eee01cc4",
+    "sha256": "30915bb9f086b5faf55cbfd2e9239221a05c4e4f4eb61713fc1ea7c9eb87ed71",
+    "sha512": "71b9c027a18d8d4aa165fb56283cdbe4b551f7a155710e060058c7dd6eb3230237808e32d1418b27f870cda1284d90a33ec93d4f3f79be62e8d53dcd6972ef90"
   },
   "description": {
     "raw": "https://erichsia7.github.io/material-symbols-list/description.json",
