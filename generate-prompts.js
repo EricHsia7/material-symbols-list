@@ -10,15 +10,16 @@ For each icon, provide 5 to 15 *extra* synonymies, alternative names, or related
 Rules:
 - Focus on what the icon *looks like* and its *UI function*.
 - Transform them into *different part of speeches and forms*, such as verb, noun, pronoun, proper noun, gerund, adjective, adverb, preposition, conjunction, auxiliary, determiner, and inflections.
+- Enqueue various visual descriptors.
 - Always check if a synonymy *fits the ICON_NAME* in your thinking process.
 - Output ONLY a list of tags concatenated by commas. No markdown formatting, no explanations.
 
 Examples:
-| Input    | Output                                      |
-|----------|---------------------------------------------|
-| settings | gear, cog, preferences, options, components |
-| favorite | heart, like, love, saved item, bookmark     |
-| new      | add, create, fresh, brand-new, freshness    |
+| Input    | Output                                                |
+|----------|-------------------------------------------------------|
+| settings | gear, cog, preferences, options, components           |
+| favorite | heart, like, love, saved item, bookmark, shape        |
+| new      | add, create, fresh, brand-new, freshness, plus, cross |
 
 List synonymies for "${symbol}". (ICON_NAME="${symbol}")
 
