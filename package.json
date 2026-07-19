@@ -1,6 +1,6 @@
 {
   "name": "@erichsia7/material-symbols-list",
-  "version": "2026.07.19.02.37",
+  "version": "2026.07.19.02.45",
   "private": false,
   "description": "Material Symbols List",
   "homepage": "https://github.com/EricHsia7/material-symbols-list",
@@ -12,5 +12,6 @@
     "url": "git+https://github.com/EricHsia7/material-symbols-list.git"
   },
   "author": "EricHsia7",
-  "type": "module"
+  "type": "module",
+  "types": "./type.ts"
 }

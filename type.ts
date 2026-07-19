@@ -1,4 +1,4 @@
-export type MaterialSymbols = '123'
+export type MaterialSymbol = '123'
  | '360'
  | '10k'
  | '10mp'
@@ -3891,4 +3891,4 @@ export type MaterialSymbols = '123'
  | 'zoom_in'
  | 'zoom_in_map'
  | 'zoom_out'
- | 'zoom_out_map'
+ | 'zoom_out_map';
