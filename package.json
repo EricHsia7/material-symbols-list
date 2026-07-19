@@ -1,0 +1,16 @@
+{
+  "name": "@erichsia7/material-symbols-list",
+  "version": "2026.07.19.02.37",
+  "private": false,
+  "description": "Material Symbols List",
+  "homepage": "https://github.com/EricHsia7/material-symbols-list",
+  "bugs": {
+    "url": "https://github.com/EricHsia7/material-symbols-list/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricHsia7/material-symbols-list.git"
+  },
+  "author": "EricHsia7",
+  "type": "module"
+}
