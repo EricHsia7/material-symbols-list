@@ -238,7 +238,7 @@ async function buildDistributionPackageJSON() {
   const now = new Date();
   // output package.json (for distribution)
   await writeTextFile(
-    path.join(outputDir, 'stats.json'),
+    path.join(outputDir, 'package.json'),
     JSON.stringify(
       {
         name: '@erichsia7/material-symbols-list',
