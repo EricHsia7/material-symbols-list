@@ -234,7 +234,7 @@ async function buildTypescriptFile(versions, outputDir) {
   await writeTextFile(path.join(outputDir, 'type.ts'), typeString);
 }
 
-async function buildDistributionPackageJSON() {
+async function buildDistributionPackageJSON(outputDir) {
   const now = new Date();
   // output package.json (for distribution)
   await writeTextFile(
@@ -275,7 +275,7 @@ async function main() {
   await buildDescription(descriptionFiles, versions, timestamps, outputDir);
   await buildTypescriptFile(versions, outputDir);
   await buildStats(versions, timestamps, outputDir);
-  await buildDistributionPackageJSON();
+  await buildDistributionPackageJSON(outputDir);
 
   process.exit(0);
 }
