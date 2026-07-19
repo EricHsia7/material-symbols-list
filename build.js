@@ -228,7 +228,7 @@ async function buildTypescriptFile(versions, outputDir) {
   }
 
   // typescript
-  const typeString = `export type MaterialSymbols = ${list.map((e) => `'${e}'`).join('\n | ')}`;
+  const typeString = `export type MaterialSymbol = ${list.map((e) => `'${e}'`).join('\n | ')};`;
 
   // output type.ts
   await writeTextFile(path.join(outputDir, 'type.ts'), typeString);
@@ -254,7 +254,8 @@ async function buildDistributionPackageJSON(outputDir) {
           url: 'git+https://github.com/EricHsia7/material-symbols-list.git'
         },
         author: 'EricHsia7',
-        type: 'module'
+        type: 'module',
+        types: './type.ts'
       },
       null,
       2
