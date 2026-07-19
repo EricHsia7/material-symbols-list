@@ -14,7 +14,7 @@ This repository provides a complete catalog of Material Symbols with additional 
 
 ## Distribution Files
 
-All files can be found on [dist branch](https://github.com/EricHsia7/material-symbols-list/tree/dist) and accessed via `https://erichsia7.github.io/material-symbols-list/<filename>`. See [mainfest.json](https://erichsia7.github.io/material-symbols-list/mainfest.json) for the catalog.
+All files can be found on [dist branch](https://github.com/EricHsia7/material-symbols-list/tree/dist) and accessed via `https://erichsia7.github.io/material-symbols-list/<filename>`. See [manifest.json](https://erichsia7.github.io/material-symbols-list/manifest.json) for the catalog.
 
 ### index
 
