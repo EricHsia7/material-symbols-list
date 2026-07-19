@@ -18,11 +18,11 @@ All files can be found on [dist branch](https://github.com/EricHsia7/material-sy
 
 ### index
 
-Complete catalog of Material Symbols with metadata
+Complete catalog of Material Symbols with metadata.
 
 ### search-index
 
-AI-enhanced search index for semantic symbol discovery
+AI-enhanced search index for semantic symbol discovery.
 
 ### description
 
