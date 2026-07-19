@@ -234,6 +234,34 @@ async function buildTypescriptFile(versions, outputDir) {
   await writeTextFile(path.join(outputDir, 'type.ts'), typeString);
 }
 
+async function buildDistributionPackageJSON() {
+  const now = new Date();
+  // output package.json (for distribution)
+  await writeTextFile(
+    path.join(outputDir, 'stats.json'),
+    JSON.stringify(
+      {
+        name: '@erichsia7/material-symbols-list',
+        version: `${now.getFullYear()}.${(now.getMonth() + 1).toString().padStart(2, '0')}.${now.getDate().padStart(2, '0')}.${now.getHours().toString().padStart(2, '0')}.${now.getMinutes().toString().padStart(2, '0')}`,
+        private: false,
+        description: 'Material Symbols List',
+        homepage: 'https://github.com/EricHsia7/material-symbols-list',
+        bugs: {
+          url: 'https://github.com/EricHsia7/material-symbols-list/issues'
+        },
+        repository: {
+          type: 'git',
+          url: 'git+https://github.com/EricHsia7/material-symbols-list.git'
+        },
+        author: 'EricHsia7',
+        type: 'module'
+      },
+      null,
+      2
+    )
+  );
+}
+
 async function main() {
   const versions = require('./versions.json');
   const timestamps = require('./timestamps.json');
@@ -247,6 +275,7 @@ async function main() {
   await buildDescription(descriptionFiles, versions, timestamps, outputDir);
   await buildTypescriptFile(versions, outputDir);
   await buildStats(versions, timestamps, outputDir);
+  await buildDistributionPackageJSON();
 
   process.exit(0);
 }
