@@ -242,7 +242,7 @@ async function buildDistributionPackageJSON(outputDir) {
     JSON.stringify(
       {
         name: '@erichsia7/material-symbols-list',
-        version: `${now.getFullYear().toString()}.${(now.getMonth() + 1).toString().padStart(2, '0')}.${now.getDate().toString().padStart(2, '0')}.${now.getHours().toString().padStart(2, '0')}.${now.getMinutes().toString().padStart(2, '0')}`,
+        version: `${now.getFullYear()}.${(now.getMonth() + 1) * 100 + now.getDate()}.${now.getHours() * 100 + now.getMinutes()}`,
         private: false,
         description: 'Material Symbols List',
         homepage: 'https://github.com/EricHsia7/material-symbols-list',
