@@ -3892,3 +3892,7796 @@ export type MaterialSymbol = '123'
  | 'zoom_in_map'
  | 'zoom_out'
  | 'zoom_out_map';
+
+export enum MaterialSymbolList {
+/** It depicts the numerals one, two, and three lined up in a sequence. This commonly indicates a basic set of functions, a progression through steps, or numbered input options. */
+_123 = '123',
+/** It depicts an arrow that traces a path forming a complete circle. This symbol commonly suggests continuity, full rotations, or cycles of completion. */
+_360 = '360',
+/** Depicts the number ten followed by the letter K. This notation commonly signifies large quantities, financial milestones, or rates reaching ten thousand units. */
+_10k = '10k',
+/** Depicts the number ten, often displayed within a gauge or digital read-out face. This marker indicates an exact measurement or specific value point for tracking status, intensity, or level. */
+_10mp = '10mp',
+/** Depicts the measurement value 11 megapixels. This metric indicates the resolution power of a digital image sensor, suggesting detailed quality for photography or videography. */
+_11mp = '11mp',
+/** This label indicates the megapixel count being used for image capture. It helps users understand the resolution or detail level of the photo they are about to take. */
+_12mp = '12mp',
+/** Depicts an adjustable dial or slider control panel component. This indicator is typically used within settings menus to choose the desired vacuum suction level or cleaning speed. */
+_13mp = '13mp',
+/** The text displays the measurement of fourteen megapixels. This setting determines the image's overall resolution and detail captured during a photograph. */
+_14mp = '14mp',
+/** This selection indicator shows fifteen megapixels of resolution detail. This setting specifies the maximum potential image size and level of photographic clarity. */
+_15mp = '15mp',
+/** The indicator displays the numeric value and unit measurement for image capacity. This specifies the resolution of a camera sensor or lens in megapixels, indicating detail level. */
+_16mp = '16mp',
+/** The display shows "17mp," representing seventeen megapixels of image resolution. This measurement indicates the detail capacity and potential size for photos captured by the device's camera sensor. */
+_17mp = '17mp',
+/** Depicts the number 18 followed by an arrow pointing upwards, suggesting increase. It commonly indicates positive progress, improvement, or a high score achievement. */
+_18_up_rating = '18_up_rating',
+/** The symbol shows text indicating an image capture specification. It is commonly used in technology and photography to denote the camera's digital sensor resolution or detail level. */
+_18mp = '18mp',
+/** A representation of advanced photographic specifications. This indicates the high potential for detail and clarity in captured images. */
+_19mp = '19mp',
+/** A small, subtle gray badge is positioned next to the number one thousand. This usually indicates a threshold of success or popularity, such as reaching over one thousand users. */
+_1k = '1k',
+/** This icon displays the number one thousand followed by a plus sign. It indicates an ongoing, substantial total or cumulative metric. */
+_1k_plus = '1k_plus',
+/** Depicts an indicator, often consisting of stylized waves or vertical bars. This confirms that the device is currently connected to cellular mobile internet service. */
+_1x_mobiledata = '1x_mobiledata',
+/** A stylized indicator that represents wireless network connectivity. It commonly signifies that a device has active internet access or data service available. */
+_1x_mobiledata_badge = '1x_mobiledata_badge',
+/** A visual readout showing electrical parameters and metrics. This typically displays vital signs, such as oxygen levels or current readings. */
+_20mp = '20mp',
+/** This selects different operational modes and speeds for recording video content. Users typically utilize this feature to adjust resolution or frame rate based on the desired outcome. */
+_21mp = '21mp',
+/** A display showing "22mp" likely relates to a measurement of megapixels. This indicates the image resolution or quality available for capture. */
+_22mp = '22mp',
+/** The icon displays the numerical value 23 followed by an abbreviation. This commonly signifies a resolution measurement, such as megapixels, concerning image quality or detail. */
+_23mp = '23mp',
+/** Shows a selection indicator displaying 24 frames per second. This common setting represents the standard frame rate typically used in cinema and film production. */
+_24fps_select = '24fps_select',
+/** The depiction represents a camera specification of twenty-four megapixels. This setting allows for highly detailed, professional-grade photography and video capture. */
+_24mp = '24mp',
+/** The design consists of two prominent numerals, '2' and '0', enclosed within a square frame. It is commonly used to denote that content or an object exists in a two-dimensional format. */
+_2d = '2d',
+/** The design literally displays the characters '2' followed by 'D'. This symbol generally indicates something that is flat or planar, meaning it exists in two dimensions of space rather than having physical depth. */
+_2d_2 = '2d_2',
+/** Indicates a video or display resolution standard, typically around 2000 pixels wide. This represents a high level of detail and is often used as an alternative to full HD resolution. */
+_2k = '2k',
+/** This symbol indicates an enhanced quality or resolution setting of 2K clarity. It is typically used in media interfaces to signify high-definition output and superior visual fidelity. */
+_2k_plus = '2k_plus',
+/** The depiction shows the number two alongside specific measurement units. This typically indicates a current or measured level used by specialized medical or technical monitoring equipment. */
+_2mp = '2mp',
+/** It displays the number thirty followed by the abbreviation "fps." This rate indicates that video or animated content is set to display thirty frames every second. */
+_30fps = '30fps',
+/** A display indicating a selection of frame rates, specifically marking 30 frames per second. This is typically used in video or animation applications to control playback speed settings. */
+_30fps_select = '30fps_select',
+/** This icon depicts a representation of depth or three dimensions. It typically indicates content that can be viewed with a sense of spatial reality or stereoscopy. */
+_3d = '3d',
+/** The design consists of the numeral '3' followed by the capital letter 'D'. It is commonly used to indicate content that exists in three dimensions, signifying depth or advanced graphical rendering. */
+_3d_2 = '3d_2',
+/** A circular arrow is displayed with three dimensions, indicating a process of revolving. This typically represents the action or concept of spinning something in space or achieving a full cycle. */
+_3d_rotation = '3d_rotation',
+/** A digital graphic displaying three vertical signal bars alongside the text "3G." This indicates connectivity to a third-generation cellular mobile data network. */
+_3g_mobiledata = '3g_mobiledata',
+/** The image depicts a network indicator badge with the letters "3G" and three adjacent signal bars. This generally signifies that the device is connected to a third-generation cellular data network. */
+_3g_mobiledata_badge = '3g_mobiledata_badge',
+/** Depicts a measure of visual resolution or data standard. This measurement indicates the level of detail available for an image or video stream. */
+_3k = '3k',
+/** This icon displays three followed by "K" and a plus sign symbol, representing an incremental step marker. It commonly denotes advancing to the next major grouping or level of complexity within a system flow. */
+_3k_plus = '3k_plus',
+/** A stylized graphic featuring "3mp" within a container. This measurement typically relates to a device's camera resolution or mobile data transmission capacity. */
+_3mp = '3mp',
+/** Depicts various controls for managing online video chats and message streams. These functions allow users to adjust settings, cancel calls, or interact with communication features. */
+_3p = '3p',
+/** A signal indicator showing four bars of wireless connectivity. This typically signifies that fast, reliable mobile internet access is available to the user. */
+_4g_mobiledata = '4g_mobiledata',
+/** A colored circular emblem displaying "4G" alongside signal indicators. This icon typically indicates that a device has access to fast, high-capacity mobile data connectivity. */
+_4g_mobiledata_badge = '4g_mobiledata_badge',
+/** Depicts a stylized letter '4' with an arrow pointing upwards, suggesting increased signal strength. This typically indicates the availability or performance level of fourth-generation cellular data service. */
+_4g_plus_mobiledata = '4g_plus_mobiledata',
+/** This badge displays the text "4K." It indicates ultra-high definition resolution, suggesting exceptional clarity for video content or display quality. */
+_4k = '4k',
+/** Depicts the characters "4K+" inside a stylized rectangular badge. This indicates high-definition quality or advanced streaming capability. */
+_4k_plus = '4k_plus',
+/** It depicts the numeral four followed by the letters "mp." This indicator commonly signifies strong or high-speed mobile data connectivity. */
+_4mp = '4mp',
+/** It depicts the number 50 accompanied by 'MP' units. Megapixels is a measurement used to indicate the resolution and potential level of detail captured by digital camera sensors. */
+_50mp = '50mp',
+/** It depicts a badge with the letters 5 and G inside it. This indicator is used to signify connection to fifth-generation wireless mobile internet service. */
+_5g = '5g',
+/** This badge shows the letters "5G," indicating a specific type of wireless signal strength. It signifies that the device is connected to or utilizing the fifth generation mobile data network. */
+_5g_mobiledata_badge = '5g_mobiledata_badge',
+/** Please provide the visual icon so I can generate the description using the established format. */
+_5k = '5k',
+/** The icon depicts people downhill skiing on snow. It commonly represents winter sports, resort vacations, or general outdoor activity during colder seasons. */
+_5k_plus = '5k_plus',
+/** This graphic displays the measurement '5mp'. This typically indicates the megapixel resolution or quality of a camera sensor or captured image. */
+_5mp = '5mp',
+/** Displays the numerical sequence "60fps." This indicator signifies a sixty frames per second refresh rate, commonly used to denote smooth motion or high video quality. */
+_60fps = '60fps',
+/** Depicts the numbers sixty and "fps" together in an indicator style. It signifies a framerate of sixty frames per second, indicating high smoothness or performance capability. */
+_60fps_select = '60fps_select',
+/** Two figures are shown separated by a measurable gap. This icon symbolizes recommended physical distance or social distancing between people in public settings. */
+_6_ft_apart = '6_ft_apart',
+/** The icon displays the number six followed by the letter K. This indicator typically denotes a very high capability or resolution, often related to video quality or digital display depth. */
+_6k = '6k',
+/** A badge displaying the numbers 6, 'k', and plus sign is shown. It typically indicates a service tier or data capacity of over six thousand units. */
+_6k_plus = '6k_plus',
+/** The icon depicts a measurement marker labeled with 6 megapixels. This indicator is commonly used to describe the resolution and potential detail captured by a device's camera system. */
+_6mp = '6mp',
+/** This depiction shows an exponential increase in value, typically representing seven thousand units. It commonly signifies a quantitative measure, such as high reach, followers, or sales figures. */
+_7k = '7k',
+/** It depicts the number seven followed by a 'k' and an upward plus sign. This symbol is typically used to indicate an increase or growth in a count, metric, or accumulated value. */
+_7k_plus = '7k_plus',
+/** The icon displays the numbers '7' followed by the letters 'mp' enclosed within a solid square frame. This notation typically indicates an image or sensor resolution of seven megapixels, often used in camera specifications. */
+_7mp = '7mp',
+/** A diagram showing three columns containing interconnected cards.
+This organizational view is typically used in project management to track tasks through various workflow stages. */
+_8k = '8k',
+/** Displays a graphical element signifying advanced performance or resolution enhancement. This generally denotes superior quality, maximum scale, or an upgrade to the standard experience. */
+_8k_plus = '8k_plus',
+/** An indicator showing the value "8 MP." This signifies the megapixel count, suggesting a high-resolution image or video recording quality. */
+_8mp = '8mp',
+/** This symbol represents quantified data, usually in thousands, displayed as fluctuating numbers. It commonly shows metrics such as view counts, followers, or overall engagement statistics. */
+_9k = '9k',
+/** The image displays the number nine thousand alongside an indicator of addition or enhancement. This symbol is commonly used to signify extremely high levels of quality, detail, or resolution. */
+_9k_plus = '9k_plus',
+/** A stylized readout displaying the numbers nine and the acronym MP. This measurement usually denotes the megapixels, indicating the image resolution of a camera or screen. */
+_9mp = '9mp',
+/** The icon displays the sequence of three capital English letters: A, B, and C. It is typically used to signify a basic starting point, such as accessing an alphabetical index or core set of categories within a system. */
+_abc = 'abc',
+/** A boxy external mechanism often found mounted on a building wall. It commonly represents climate control, air conditioning services, or general cooling. */
+_ac_unit = 'ac_unit',
+/** A stylized person seated in a wheelchair. It universally marks areas, transport, or services accessible to individuals with mobility limitations. */
+_accessibility = 'accessibility',
+/** A simple depiction of a stylized human figure or body outline. It commonly indicates features designed to support universal usability for all people, regardless of ability. */
+_accessibility_new = 'accessibility_new',
+/** A stylized figure in a wheelchair, symbolizing physical mobility. This icon generally indicates that an area or feature is available to people with disabilities. */
+_accessible = 'accessible',
+/** A figure in a wheelchair walking toward the right. This icon represents accessibility features or functions available for people with disabilities. */
+_accessible_forward = 'accessible_forward',
+/** It shows three horizontal lines framed by brackets or connectors. This typically indicates an expanded menu containing options related to universal accessibility and user settings. */
+_accessible_menu = 'accessible_menu',
+/** A square display with stacked coins and a dollar sign. This often represents financial accounts, balances, or transaction details. */
+_account_balance = 'account_balance',
+/** A depiction of a wallet showing both inside and outside views. It commonly represents financial status, available funds, or account balance information. */
+_account_balance_wallet = 'account_balance_wallet',
+/** Depicts an error or warning notification over a profile or user status area. This typically signals that an account issue needs attention or that an action cannot be completed. */
+_account_box = 'account_box',
+/** The icon depicts a full-sized human figure standing next to or linked with a smaller, subsidiary profile avatar. It often represents a minor's account or relationship under parental supervision or guardianship. */
+_account_child = 'account_child',
+/** Depicts an individual figure marked with symbols indicating special accommodation needs. It signals that the account holder requires necessary assistance or accessibility features. */
+_account_child_invert = 'account_child_invert',
+/** Depicts a simple silhouette of a person's head and shoulders contained within an outer circle. This icon typically represents a generic profile or account setting in digital interfaces. */
+_account_circle = 'account_circle',
+/** A silhouette of a person is contained within a circular border that has been struck through with a line. This commonly indicates deactivation, cancellation, or removal of an account or profile. */
+_account_circle_off = 'account_circle_off',
+/** It depicts multiple interconnected nodes forming a structured or branching hierarchy. This symbol is commonly used to visualize organizational structures, complex relationships, or data dependency trees. */
+_account_tree = 'account_tree',
+/** Depicts a stylized key or button often used within software interfaces. This icon generally indicates accessing a command menu, help function, or quick action palette. */
+_action_key = 'action_key',
+/** Depicts a stylized, interconnected area with multiple nodes and radiating lines. It commonly signifies network coverage or an active zone for wireless connectivity. */
+_activity_zone = 'activity_zone',
+/** A narrow watercraft is shown traveling across smooth canal waters. It commonly suggests Venetian settings, leisurely trips, or scenic waterway navigation. */
+_acupuncture = 'acupuncture',
+/** A small circle with a diagonal arrow pointing upward. This is often used to indicate that something is increasing or moving forward in time. */
+_acute = 'acute',
+/** A block composed of two letters, A and D. It typically marks content that has been paid promotion or marketing material within a digital interface. */
+_ad = 'ad',
+/** Depicts several connected elements forming a distinct unit or cluster. This icon commonly indicates a collection of items, grouped sections of content, or organizational categories. */
+_ad_group = 'ad_group',
+/** A labeled toggle switch is depicted flipped into the inactive, off position. This signifies the option to disable or turn off related advertising content or group features. */
+_ad_group_off = 'ad_group_off',
+/** A circle with a horizontal line through it, representing cancellation or deactivation. This typically indicates that a feature is disabled or that advertising has been turned off. */
+_ad_off = 'ad_off',
+/** It depicts a microphone symbol accompanied by graphical waves or indicators of sound input. This suggests advanced voice recording features or real-time audio processing capabilities. */
+_adaptive_audio_mic = 'adaptive_audio_mic',
+/** A drawing of a microphone covered by a diagonal slash. This typically means that audio input, voice recording, or speaking functions are currently disabled or restricted. */
+_adaptive_audio_mic_off = 'adaptive_audio_mic_off',
+/** A set of system status symbols depicting variations of power levels and connectivity bars. These icons are used on mobile operating systems to inform users about device health, such as battery charge or network connection quality. */
+_adb = 'adb',
+/** It depicts a cross shape formed by two perpendicular lines. This symbol is commonly used to signify addition, joining items, or expanding content. */
+_add = 'add',
+/** The icon displays a mathematical plus sign centered between two parallel horizontal lines. It typically indicates an operation of adding, calculating, or determining a positive increase in value. */
+_add_2 = 'add_2',
+/** A symbol depicting the action of adding or uploading visual content. It is used to indicate that an image or photo needs to be selected for submission. */
+_add_a_photo = 'add_a_photo',
+/** A rectangular graphic displaying segmented bars that represent a power source. It indicates the current charge level of a device or battery system. */
+_add_ad = 'add_ad',
+/** Shows a stylized graphical indicator of an alert or warning. This feature is typically used to set up critical reminders, notifications, or monitoring functions within an application. */
+_add_alert = 'add_alert',
+/** A small box containing a plus sign sits adjacent to other components. This usually indicates that a new item or measurement can be added to the displayed information. */
+_add_box = 'add_box',
+/** Depicts a plus symbol near an illustration of local commercial storefronts or shops. This indicates the ability to add a new business or point of interest location. */
+_add_business = 'add_business',
+/** This symbol depicts a telephone receiver next to a plus sign. It is typically used to initiate or add a new outgoing phone call. */
+_add_call = 'add_call',
+/** It depicts a rectangle that resembles a payment card or identification chip. This symbol typically indicates the ability to add new information, such as linking an account or entering details. */
+_add_card = 'add_card',
+/** The icon depicts a mathematical chart structure with an indicator suggesting addition or creation. This symbol is typically used in analytics interfaces for generating new visualizations from existing data metrics. */
+_add_chart = 'add_chart',
+/** A circular border containing plus signs or crosses marks is depicted. This symbol commonly indicates the action of adding an item, expanding a menu, or initiating a calculation. */
+_add_circle = 'add_circle',
+/** An icon depicting three vertical lines with a plus sign positioned immediately to their left. This symbol is used in applications and software to insert or add a new column into a data grid or layout structure. */
+_add_column_left = 'add_column_left',
+/** A series of three vertical lines with a right-pointing arrow appended to the structure. This symbol commonly indicates the action of adding a column or field within a table or data view. */
+_add_column_right = 'add_column_right',
+/** A speech bubble paired with a plus sign or an input marker. This icon indicates the option to start a new contribution or reply within a chat thread. */
+_add_comment = 'add_comment',
+/** It depicts a plus symbol combined with an outline of a diamond gemstone. This icon is often used to represent additions, upgrades, or premium status features. */
+_add_diamond = 'add_diamond',
+/** It shows the basic outline of a single-story dwelling with a pitched roof. This icon commonly signifies a primary residence or general household location. */
+_add_home = 'add_home',
+/** A drawing of a small house structure with an attached roof and chimney. This symbol is commonly used to indicate a residential location or home-related service. */
+_add_home_work = 'add_home_work',
+/** The icon features two interconnected ovals forming a symbolic chain link structure. It is commonly used to signify adding a hyperlink or connecting an external reference to content. */
+_add_link = 'add_link',
+/** A map marker pin appears next to an addition indicator. Use this when you need to set a new precise point or destination on the map. */
+_add_location = 'add_location',
+/** A location marker placed over a detailed cardiac monitor graphic. This commonly indicates the ability to pinpoint or add a point of care on a medical map. */
+_add_location_alt = 'add_location_alt',
+/** This icon depicts a plus sign paired with an individual person silhouette. It is used when assigning or adding elevated permissions to a community member. */
+_add_moderator = 'add_moderator',
+/** A sheet of paper is shown alongside an addition marker or note symbol. This icon indicates the ability to write annotations or append explanatory notes to existing content. */
+_add_notes = 'add_notes',
+/** Depicts a graphic combining a picture icon with a plus symbol. This is typically used to indicate the option of attaching, uploading, or adding media content. */
+_add_photo_alternate = 'add_photo_alternate',
+/** Depicts a plus sign next to an emoticon, suggesting the addition of sentiment. It is commonly used in communication interfaces to quickly add an emotional reaction to a message. */
+_add_reaction = 'add_reaction',
+/** Depicts a paved road stretching into an open landscape. This symbol is commonly used to represent navigation, routes, or physical pathways between locations. */
+_add_road = 'add_road',
+/** It depicts a horizontal line with a plus sign positioned just above it. This symbol typically indicates the action of adding or inserting an element immediately into the section preceding this one. */
+_add_row_above = 'add_row_above',
+/** A horizontal line appears beneath a series of objects. This typically indicates the addition of another row or entry in a list or table. */
+_add_row_below = 'add_row_below',
+/** A detailed drawing of a shopping cart. This icon typically indicates the collection of goods selected, often leading to checkout or purchase completion. */
+_add_shopping_cart = 'add_shopping_cart',
+/** A plus sign placed next to a list item indicates the ability to add something. It is commonly used in user interfaces to initiate a new task or checklist entry. */
+_add_task = 'add_task',
+/** A plus sign is shown linking to a depiction of stored data or a container. This commonly signifies adding, saving, or backing up an item to cloud storage or online drive space. */
+_add_to_drive = 'add_to_drive',
+/** This symbol depicts three horizontal lines with a plus sign at the beginning. It usually indicates the ability to add content or items to a list or queue. */
+_add_to_queue = 'add_to_queue',
+/** This graphic shows an outlined equilateral triangle shape. It commonly functions as a visible marker to draw attention to necessary safety warnings, alerts, or required information. */
+_add_triangle = 'add_triangle',
+/** Depicts a specialized unit for automatically scanning or processing physical documents and papers. This symbol typically represents document input, digitization services, or automated feeder capabilities. */
+_adf_scanner = 'adf_scanner',
+/** Depicts a control mechanism or dial meant for gradual change. This symbol indicates that settings can be refined, calibrated, or adjusted precisely. */
+_adjust = 'adjust',
+/** Depicts various items related to drug treatment, such as pills and liquids in containers. This icon is generally used for topics involving the administration or management of prescribed medications. */
+_admin_meds = 'admin_meds',
+/** Depicts a gear icon placed within a segmented panel of controls. This signifies an area for deep, technical customizations and global settings adjustments. */
+_admin_panel_settings = 'admin_panel_settings',
+/** A pointed finger is shown tapping a defined rectangular area. This typically indicates that an element is clickable and requires user interaction. */
+_ads_click = 'ads_click',
+/** This symbol represents the concept of agender. It indicates a gender identity that exists outside of traditional male or female binary categories. */
+_agender = 'agender',
+/** A representation of farm activities or agricultural machinery. It signifies themes related to planting, harvesting, and rural work. */
+_agriculture = 'agriculture',
+/** It depicts open space or an unseen, gaseous element. Conceptually, it often suggests a light tone, room for interpretation, or taking a necessary pause in discussion. */
+_air = 'air',
+/** A canister or dispenser meant to release scents into an enclosed space. It is commonly utilized to mask undesirable smells or add fragrance to a room. */
+_air_freshener = 'air_freshener',
+/** Depicts a modern-day portable appliance designed to improve air quality in an indoor setting. It suggests concerns with clean air, respiratory health, or home environmental care. */
+_air_purifier = 'air_purifier',
+/** Depicts a portable electronic unit designed to filter and improve indoor air quality. It is commonly used to symbolize advanced atmospheric purification or clean air status. */
+_air_purifier_gen = 'air_purifier_gen',
+/** This depicts a row of unoccupied seating units arranged in a line. It is typically used to indicate available or designated passenger seating areas, such as on an airplane. */
+_airline_seat_flat = 'airline_seat_flat',
+/** A representation of a flight's individual passenger seat viewed from the side. This icon is commonly used in travel contexts to indicate available airline seating options. */
+_airline_seat_flat_angled = 'airline_seat_flat_angled',
+/** Depicts a private, enclosed seating arrangement found on commercial aircraft. It is used to mark premium or suite-style accommodations for added privacy and comfort during travel. */
+_airline_seat_individual_suite = 'airline_seat_individual_suite',
+/** Depicts a standardized icon of an airline seat structure with emphasis on extra spacing underneath. This indicates a superior class or section designed for enhanced passenger comfort and greater legroom. */
+_airline_seat_legroom_extra = 'airline_seat_legroom_extra',
+/** A diagram is displayed illustrating the spacing and structure of airline seating. This symbol indicates that the standard level of legroom is available for passengers. */
+_airline_seat_legroom_normal = 'airline_seat_legroom_normal',
+/** Depicts an airplane seat with visible limitations on leg room. This icon typically signifies restricted space or a reduced amount of comfort in seating arrangements. */
+_airline_seat_legroom_reduced = 'airline_seat_legroom_reduced',
+/** Depicts an airline seat fully extended into a wide, relaxed position. This symbol indicates accommodations with extra space or increased recline capability on flights. */
+_airline_seat_recline_extra = 'airline_seat_recline_extra',
+/** Depicts a standard airline seat with an adjustable or reclining backrest. This indicates that the seating provides typical comfort adjustments during travel. */
+_airline_seat_recline_normal = 'airline_seat_recline_normal',
+/** A signpost structure featuring several arrows pointing in various directions. This symbol typically indicates a point of choice, multiple routes, or transferring between destinations. */
+_airline_stops = 'airline_stops',
+/** Depicts an airplane or related air travel symbol. It generally indicates services, directions, or information pertaining to aviation and airports. */
+_airlines = 'airlines',
+/** A rectangular slip of paper labeled like an airline boarding pass or travel itinerary. It is often used to symbolize air travel, journeys, or flight-related documents. */
+_airplane_ticket = 'airplane_ticket',
+/** A graphical representation of signal indicators, often set within a toggle switch. This display signifies that wireless connections are currently enabled and operational. */
+_airplanemode_inactive = 'airplanemode_inactive',
+/** An abstract symbol showing multiple concentric lines emanating outwards. This indicates wirelessly casting media, such as video or audio, from one device to another. */
+_airplay = 'airplay',
+/** Depicts a small bus or van used for transporting passengers between locations. It typically signifies airport transfers or dedicated local shuttle routes. */
+_airport_shuttle = 'airport_shuttle',
+/** A pattern of gentle, curved lines emanates across the surface. It typically represents ripples, wave disturbance, or radiating effects on water or air. */
+_airwave = 'airwave',
+/** A stylized depiction of a classic, ringing alarm clock. This icon often represents reminders, scheduling, or the need to wake up for an event. */
+_alarm = 'alarm',
+/** A warning bell structure with a plus sign attached is visible. This generally indicates the ability to add a new alarm, reminder, or critical monitoring alert. */
+_alarm_add = 'alarm_add',
+/** A warning sign featuring a stylized siren and a diagonal strike-through line. It signifies that an alert, alarm, or active noise signal can be disabled or turned off. */
+_alarm_off = 'alarm_off',
+/** A clock face with a sound wave or radiating lines emanating from it. This generally indicates an activated alarm, scheduled reminder, or warning time. */
+_alarm_on = 'alarm_on',
+/** Shows a clock face combined with the standard pause indicator symbol. This is commonly used to indicate that an alarm, timer, or repeated action has been temporarily suspended. */
+_alarm_pause = 'alarm_pause',
+/** A person appears to be waking up in bed. This represents a smart alarm or gradual wake-up feature that aims for gentle awakening. */
+_alarm_smart_wake = 'alarm_smart_wake',
+/** A stylized stack of papers, often resembling bound photographs or printed pages. This typically indicates a collection, gallery, or organized group of related media items. */
+_album = 'album',
+/** This symbol depicts three stacked lines of varying lengths. It is used in formatting tools to visually center blocks of text between two margins. */
+_align_center = 'align_center',
+/** Depicts formatting guides showing content alignment toward the right edge. It is used in word processors or editors to flush align text to the end of a line or margin. */
+_align_end = 'align_end',
+/** Depicts an icon used to center content vertically within a parent element. It indicates the setting for aligning items along the cross axis in layout frameworks like Flexbox. */
+_align_flex_center = 'align_flex_center',
+/** A line is depicted with an arrowhead and a small cutout at the end. This icon typically indicates alignment or flexible spacing in digital layout design. */
+_align_flex_end = 'align_flex_end',
+/** Draws several lines representing content that aligns with the starting edge. This symbol is used in editing interfaces to align and format content from the left side. */
+_align_flex_start = 'align_flex_start',
+/** Three evenly spaced horizontal lines are depicted side by side. This symbol generally represents an option for centering, formatting, or aligning content within a document. */
+_align_horizontal_center = 'align_horizontal_center',
+/** A set of horizontal lines appears with a marker at the edge. This symbol is used in word processors and formatting tools to ensure content aligns flush with the left margin. */
+_align_horizontal_left = 'align_horizontal_left',
+/** It depicts a set of parallel horizontal lines with their right edges aligned to form a straight vertical line. This tool is used in text editing to ensure that all content within a paragraph or block aligns flush against the right margin. */
+_align_horizontal_right = 'align_horizontal_right',
+/** Depicts multiple vertical sections that expand equally across their designated container space. This setting dictates that all items within a layout should automatically scale to fill the full height of the column or row. */
+_align_items_stretch = 'align_items_stretch',
+/** A set of four parallel horizontal lines are shown inside a box to indicate text formatting settings. It is used to control how paragraphs or blocks of content should be aligned or spaced on a page. */
+_align_justify_center = 'align_justify_center',
+/** Three horizontal lines separated by brackets on both sides. This symbol is used in user interfaces to represent options for horizontally distributing or aligning elements within a confined space. */
+_align_justify_flex_end = 'align_justify_flex_end',
+/** The icon depicts several staggered horizontal lines of varying lengths. This symbol is commonly used in text editors or formatting tools to adjust text alignment and spacing. */
+_align_justify_flex_start = 'align_justify_flex_start',
+/** Shows horizontal lines with arrows and surrounding space indicators. It signifies formatting options used to evenly distribute content or justify alignment in text layout. */
+_align_justify_space_around = 'align_justify_space_around',
+/** Four vertical lines are displayed with equal spacing between them. This symbol indicates uniform alignment that spans the entire width of a document or container. */
+_align_justify_space_between = 'align_justify_space_between',
+/** Depicts layout controls designed for adjusting how lines of text are spaced across a container. This setting distributes space evenly between margins, creating a neat, uniform block of type. */
+_align_justify_space_even = 'align_justify_space_even',
+/** Depicts four horizontal lines of increasing and decreasing length. This is a formatting tool used in word processing to justify text, making lines stretch to match both margins. */
+_align_justify_stretch = 'align_justify_stretch',
+/** Depicts a section of horizontal lines with directional arrows at the end points. This alignment setting forces content elements to stretch and occupy the full width of their containing space. */
+_align_self_stretch = 'align_self_stretch',
+/** Depicts several dots or squares spaced out on a horizontal line, suggesting equal distribution. This controls layout formatting to evenly space items across a defined area for visual balance. */
+_align_space_around = 'align_space_around',
+/** This symbol depicts elements spaced evenly between two fixed points. It indicates a layout function used to distribute content or items with equal horizontal separation. */
+_align_space_between = 'align_space_between',
+/** It illustrates multiple horizontal lines with carefully measured gaps between them. This formatting tool is typically used to align text or space content evenly across a document section. */
+_align_space_even = 'align_space_even',
+/** An icon depicting a vertical bar at the start of several horizontal lines. This marker represents text alignment settings, typically used to ensure content starts flush against the left margin. */
+_align_start = 'align_start',
+/** A visual representation of a horizontal line with dashed ends. It is often used to indicate sections, dividing lines, or continuous content flow on web pages. */
+_align_stretch = 'align_stretch',
+/** A line with a horizontal bar beneath it indicates bottom alignment. This formatting tool ensures that content aligns precisely to the base boundary of its container. */
+_align_vertical_bottom = 'align_vertical_bottom',
+/** A set of three horizontal lines with a short line positioned exactly in the middle. This icon typically represents centering alignment or formatting tools. */
+_align_vertical_center = 'align_vertical_center',
+/** A vertical line with a small triangle pointing downwards is positioned at the top of a block. This icon typically indicates alignment settings or an increase in value/measurement. */
+_align_vertical_top = 'align_vertical_top',
+/** This image displays a mailbox structure with multiple indicators suggesting incoming communications. It typically represents the total collection of all emails or messages waiting for review. */
+_all_inbox = 'all_inbox',
+/** A badge encircles a checkmark, symbolizing completeness and full coverage. It is typically used to indicate that all necessary services or features are included in one single price or package. */
+_all_inclusive = 'all_inclusive',
+/** A collection of interconnected checks or matching elements. This typically indicates a process where multiple conditions have been met or verified successfully. */
+_all_match = 'all_match',
+/** It displays an indicator or burst symbol often used in technical interfaces. This generally suggests maximizing settings, full power, or reaching maximum capacity. */
+_all_out = 'all_out',
+/** A symbol depicting caution regarding physiological sensitivities. It indicates that a subject may contain triggers or substances capable of causing allergic reactions. */
+_allergies = 'allergies',
+/** Depicts various symbols related to language characters and international currency systems. It often indicates global linguistic topics or financial conversion points. */
+_allergy = 'allergy',
+/** A curved arrow splits into two diverging paths, suggesting alternatives. This symbol is used to indicate an alternate route or available detour when navigating a location. */
+_alt_route = 'alt_route',
+/** The image depicts a stylized envelope icon often associated with digital messaging. It is typically used to signify email contact, sending messages, or providing an alternative mailing address. */
+_alternate_email = 'alternate_email',
+/** A cluster of arrows pointing in various directions. This generally represents a diverse range of choices, options, or directional navigation. */
+_altitude = 'altitude',
+/** A white van vehicle featuring flashing lights and markings on its side. It typically represents emergency medical services or urgent assistance in a crisis. */
+_ambulance = 'ambulance',
+/** It depicts a visual indicator, often placed next to text or data fields. This symbol indicates that the associated content has been revised or modified since it was originally saved. */
+_amend = 'amend',
+/** It depicts several layered rectangular panels placed on top of one another. This generally indicates access to short-form multimedia content or sequential visual narratives. */
+_amp_stories = 'amp_stories',
+/** The icon visually depicts a group of varying vertical bars arranged within a square boundary, resembling a bar graph or histogram. It typically represents data analytics, statistical insights, or tracking performance metrics. */
+_analytics = 'analytics',
+/** A ship anchor resting on the seabed. It commonly signifies stability, grounding, or a safe return point. */
+_anchor = 'anchor',
+/** Shows a battery graphic combined with various signal bars for wireless data. This indicates the current power status and available Wi-Fi connection strength of an Android device. */
+_android = 'android',
+/** It depicts four ascending vertical bars used to gauge strength. This typically represents a high or good level of wireless cellular signal availability. */
+_android_cell_4_bar = 'android_cell_4_bar',
+/** It depicts four vertical bars designed to represent a strong cellular network signal strength. This commonly indicates that the mobile device has excellent wireless connectivity. */
+_android_cell_4_bar_alert = 'android_cell_4_bar_alert',
+/** Four vertical bars are shown within a radio signal indicator shape. This typically represents cellular connectivity status, indicating service is available even if no data is currently connected. */
+_android_cell_4_bar_off = 'android_cell_4_bar_off',
+/** The image depicts four vertically oriented bars of varying thickness. This usually confirms the device is connected to a strong and robust mobile network signal. */
+_android_cell_4_bar_plus = 'android_cell_4_bar_plus',
+/** Five vertical bars of varying heights are displayed in a graph format. This typically represents an equalizer or the current sound volume level for media playback. */
+_android_cell_5_bar = 'android_cell_5_bar',
+/** Five vertical lines appear inside a rectangular signal icon. This typically indicates a very strong cellular connection or network signal strength. */
+_android_cell_5_bar_alert = 'android_cell_5_bar_alert',
+/** A smartphone-style display featuring five solid bars with a clear strike-through. This typically indicates that cellular data services have been manually disabled on the device. */
+_android_cell_5_bar_off = 'android_cell_5_bar_off',
+/** Five signal bars radiate outward from a stylized antenna accompanied by a cross symbol. It commonly signifies strong network coverage and robust connectivity status. */
+_android_cell_5_bar_plus = 'android_cell_5_bar_plus',
+/** It shows a status indicator consisting of two colors and four vertical signal bars. This typically signifies a robust cellular network connection, indicating reliable service strength. */
+_android_cell_dual_4_bar = 'android_cell_dual_4_bar',
+/** Depicts a signal strength indicator showing four full bars and an alert symbol. This icon is typically used to indicate strong mobile network connectivity with important information. */
+_android_cell_dual_4_bar_alert = 'android_cell_dual_4_bar_alert',
+/** Depicts a rectangular symbol with four vertical signal bars inside. This typically indicates a strong connection to a mobile network. */
+_android_cell_dual_4_bar_plus = 'android_cell_dual_4_bar_plus',
+/** A graphic displaying five solid vertical bars shows maximum signal capacity. This usually means you have excellent connectivity with your wireless network or carrier. */
+_android_cell_dual_5_bar = 'android_cell_dual_5_bar',
+/** Depicts five solid, radiating vertical bars arranged to represent mobile signal strength. This typically signifies an extremely strong connection to the nearest cellular network tower. */
+_android_cell_dual_5_bar_alert = 'android_cell_dual_5_bar_alert',
+/** It depicts five vertical bars radiating outward from a wireless signal indicator symbol. This usually signifies maximum service strength, indicating optimal cellular connectivity. */
+_android_cell_dual_5_bar_plus = 'android_cell_dual_5_bar_plus',
+/** It depicts three curved, radiating lines indicating a wireless signal strength. This icon is commonly used to show the current connectivity or availability of a Wi-Fi network on a device. */
+_android_wifi_3_bar = 'android_wifi_3_bar',
+/** Three stacked curved lines display moderate wireless signal coverage. This indicator shows that an internet connection is available at a usable strength level. */
+_android_wifi_3_bar_alert = 'android_wifi_3_bar_alert',
+/** Depicts three vertical lines for signal strength secured by a padlock icon. This typically indicates that the local wireless network is password-protected and requires authorization to connect. */
+_android_wifi_3_bar_lock = 'android_wifi_3_bar_lock',
+/** This icon displays a stylized wireless symbol with three indicator bars underneath it. It typically indicates that the Wi-Fi feature is turned off or disabled on the connected device. */
+_android_wifi_3_bar_off = 'android_wifi_3_bar_off',
+/** It depicts three stylized curved bars of increasing height radiating from a center point. This symbol indicates that the device is connected to Wi-Fi with moderate signal strength. */
+_android_wifi_3_bar_plus = 'android_wifi_3_bar_plus',
+/** Depicts a standard wireless signal icon with three bars marked by a question mark. This typically indicates an unknown or unavailable Wi-Fi connection status. */
+_android_wifi_3_bar_question = 'android_wifi_3_bar_question',
+/** A curved symbol with four radiating bars indicates a signal strength level. This commonly signifies that a device is connected to or has access to a strong Wi-Fi network. */
+_android_wifi_4_bar = 'android_wifi_4_bar',
+/** This graphic depicts the recognizable symbol for wireless internet connectivity alongside four solid bars. It indicates that a device is connected to a Wi-Fi network with a strong signal strength. */
+_android_wifi_4_bar_alert = 'android_wifi_4_bar_alert',
+/** It depicts a wireless signal strength indicator showing four bars overlaid with a locked padlock. This typically signifies that the Wi-Fi connection is secure and protected by encryption. */
+_android_wifi_4_bar_lock = 'android_wifi_4_bar_lock',
+/** A wireless signal indicator with four distinct bars shows maximum coverage strength. This typically signifies that Wi-Fi connectivity is currently deactivated or turned off on the device. */
+_android_wifi_4_bar_off = 'android_wifi_4_bar_off',
+/** The image shows a standard graphic depicting Wi-Fi signal strength. This generally indicates strong, reliable wireless internet connectivity. */
+_android_wifi_4_bar_plus = 'android_wifi_4_bar_plus',
+/** Shows four curved lines indicating signal strength next to a question mark symbol. This usually suggests that connectivity is unknown or requires attention regarding network availability. */
+_android_wifi_4_bar_question = 'android_wifi_4_bar_question',
+/** Moving pictures are displayed sequentially to create the illusion of continuous action and movement. This type of media file holds dynamic, time-based content, conveying a narrative or event over duration. */
+_animated_images = 'animated_images',
+/** A revolving or pulsating ring is shown in motion. This typically indicates that content is currently loading, processing, or awaiting an update. */
+_animation = 'animation',
+/** Depicts a force or effect that causes objects to float or rise against gravity. It is often used to symbolize overcoming challenges, spiritual lift, or exponential positive change. */
+_antigravity = 'antigravity',
+/** Depicts a rectangular electronic device screen showing minimal, always-on information. This typically indicates low power mode or that an item is on standby. */
+_aod_tablet = 'aod_tablet',
+/** A depiction of a digital watch face with various readouts and interfaces. This typically represents themes related to timekeeping, schedules, or modern wearable technology. */
+_aod_watch = 'aod_watch',
+/** Depicts a multi-story building structure with visible units or windows. It typically represents housing, residential quarters, or complex living arrangements. */
+_apartment = 'apartment',
+/** It depicts multiple connected hexagonal structures or linked nodes. This typically signifies an Application Programming Interface, representing data flow and system integration. */
+_api = 'api',
+/** A document page icon that signifies a digital application package (APK). It is commonly used to represent Android app files or installation source material. */
+_apk_document = 'apk_document',
+/** A small file resembling a zip archive is shown over an Android device outline. This typically represents the installation or application of software. */
+_apk_install = 'apk_install',
+/** A small circle or badge appears attached to a main icon. This usually indicates a status update, notification count, or achievement label within an application interface. */
+_app_badging = 'app_badging',
+/** A stylized page with input dots and a selection of specialized control keys is displayed. This commonly indicates a process for setup, sign-up, or detailed data enrollment within an application. */
+_app_registration = 'app_registration',
+/** A diagram showing a person wearing an apron is displayed. This icon typically relates to laundry, care, or general retail activities. */
+_apparel = 'apparel',
+/** A distinctive marker or pin icon positioned on a map. This symbol indicates a specific point of interest, destination, or precise location upon navigation. */
+_approval = 'approval',
+/** A hand is shown with fingers extended and slightly cupped, positioned as if passing something or acknowledging completion. This common gesture can signify approval, agreement, or the transfer of responsibility to another person. */
+_approval_delegation = 'approval_delegation',
+/** It depicts a hand making an open gesture of stopping or negation. This sign is typically used to deny permission, reject an action, or switch a feature off. */
+_approval_delegation_off = 'approval_delegation_off',
+/** A collection of small squares arranged in a neat pattern. This typically represents various applications, settings, or available programs on a device. */
+_apps = 'apps',
+/** A screen displays dots and an alert symbol indicating service interruption. This commonly signifies that specific applications or online features are temporarily unavailable. */
+_apps_outage = 'apps_outage',
+/** This depicts an underlined, wavy line structure with a smaller symbol beneath it. It commonly signifies a query function, specialized formatting element, or unresolved input field in technical writing. */
+_aq = 'aq',
+/** A diagram indicating environmental monitoring within a structure. This feature tracks various metrics such as humidity levels and air quality inside a home or building. */
+_aq_indoor = 'aq_indoor',
+/** This depicts a person's head frame with glowing tracking circles around the face. It is used to indicate that an augmented reality filter or visual effect has been activated. */
+_ar_on_you = 'ar_on_you',
+/** A set of animated and static graphical assets designed for digital messages. These elements enrich conversations by adding visual context, emotion, or thematic flair beyond plain text. */
+_ar_stickers = 'ar_stickers',
+/** Depicts various structures and detailed building elements of a city or complex scene. This symbol is commonly used to denote physical locations, urban planning, or design history. */
+_architecture = 'architecture',
+/** A stack of papers contained within a box or container. This typically symbolizes storage, records, or grouped information. */
+_archive = 'archive',
+/** A graph displays a line connected by filled-in areas underneath. It is typically used for tracking performance, visualizing trends, or comparing values over a specific duration. */
+_area_chart = 'area_chart',
+/** This depiction shows a lock mechanism with an active countdown timer visible. It indicates that security protections are being activated or prepared for use shortly. */
+_arming_countdown = 'arming_countdown',
+/** A right-pointing arrow is placed at the corner of a geometric shape. It typically indicates expansion, continuation, or accessing further content within a menu structure. */
+_arrow_and_edge = 'arrow_and_edge',
+/** An arrow shaped like an arrowhead pointing horizontally to the left. This symbol commonly indicates a navigational action, suggesting returning to the previous screen or step. */
+_arrow_back = 'arrow_back',
+/** A curved arrow is depicted pointing to the left. It commonly indicates navigating back or returning to a previous view in an application interface. */
+_arrow_back_2 = 'arrow_back_2',
+/** A curved arrow pointing left, designed with typical iOS interface styling. It generally functions as a navigation indicator, allowing users to return to the previous screen or step in an app. */
+_arrow_back_ios = 'arrow_back_ios',
+/** A chevron pointing to the left is displayed next to a line. This icon typically signifies going back or navigating to a previous screen view. */
+_arrow_back_ios_new = 'arrow_back_ios_new',
+/** A downward pointing arrow enclosed within a circular border. This is commonly used to indicate expansion, reveal more content, or scroll downward. */
+_arrow_circle_down = 'arrow_circle_down',
+/** A curved arrow pointing sharply to the left is contained within a circular border. It often signifies returning, going back, or moving to a previous step. */
+_arrow_circle_left = 'arrow_circle_left',
+/** A rightward pointing arrow is contained within a complete circle. This commonly indicates moving forward, proceeding to the next step, or continuing. */
+_arrow_circle_right = 'arrow_circle_right',
+/** A stylized arrow pointing up is contained inside a perfect circle outline. This design often indicates expansion, scrolling up, or increasing value. */
+_arrow_circle_up = 'arrow_circle_up',
+/** A downward-pointing arrow is depicted. It typically signals that there are more options or a submenu available beneath the current point. */
+_arrow_cool_down = 'arrow_cool_down',
+/** A downward-pointing arrowhead is shown. It often indicates a drop, decrease, or the ability to expand content downward. */
+_arrow_downward = 'arrow_downward',
+/** A triangle-shaped arrow pointing downward appears within a corner bracket. This symbol often suggests viewing additional details, expanding a menu, or moving to lower content sections. */
+_arrow_downward_alt = 'arrow_downward_alt',
+/** A downward-pointing arrow with a short line beneath it. It typically indicates that more options or content are available below this point. */
+_arrow_drop_down = 'arrow_drop_down',
+/** A downward-pointing arrow enclosed within a circle is displayed. This icon typically signifies expansion, collapse, or viewing more options in an interface. */
+_arrow_drop_down_circle = 'arrow_drop_down_circle',
+/** A stylized triangular arrow points vertically toward the top. It frequently signifies upward movement, improvement, or proceeding to the next step. */
+_arrow_drop_up = 'arrow_drop_up',
+/** Depicts an arrow pointing straight to the right. It commonly indicates advancement, proceeding to the next step, or general direction forward. */
+_arrow_forward = 'arrow_forward',
+/** A right-pointing arrow with a rounded, iOS style is displayed. It commonly indicates proceeding to the next step, screen, or section of content. */
+_arrow_forward_ios = 'arrow_forward_ios',
+/** This symbol depicts an arrow pointing downward, often appearing at the end of a line or list item. It typically indicates that there is more content available below, suggesting expansion or deeper navigation. */
+_arrow_insert = 'arrow_insert',
+/** A triangular pointer with a shaft pointing to the left. This symbol typically indicates navigation back, suggesting a previous screen or step in a process. */
+_arrow_left = 'arrow_left',
+/** It depicts a stylized arrow pointing to the left. This symbol commonly indicates moving back, reverting to a previous view, or navigating backward in a sequence. */
+_arrow_left_alt = 'arrow_left_alt',
+/** It depicts an arrow pointing left and sometimes paired with a back-facing chevron. This symbol is commonly used to close an interface element, exit a view, or return to a previous page. */
+_arrow_menu_close = 'arrow_menu_close',
+/** This image displays a downward-pointing triangle composed of three connected arrows. It typically indicates that more options are available or that content can be expanded for viewing. */
+_arrow_menu_open = 'arrow_menu_open',
+/** A directional arrow or an edge divider point is depicted. It commonly signifies movement, progression to a new screen, or expanding content within a user interface. */
+_arrow_or_edge = 'arrow_or_edge',
+/** An arrow pointing diagonally upward and to the right. This typically indicates navigation that moves outside of the current section or view. */
+_arrow_outward = 'arrow_outward',
+/** A horizontal double-sided arrow indicates movement or a connection between two points. It is often used in interfaces to represent a selectable range or expansion option. */
+_arrow_range = 'arrow_range',
+/** A triangular arrowhead pointing to the right. This symbol commonly indicates proceeding, continuation, or moving forward within an interface. */
+_arrow_right = 'arrow_right',
+/** Depicts a stylized arrow that points horizontally to the right. This symbol often indicates proceeding to the next step, navigating forward, or expanding additional content. */
+_arrow_right_alt = 'arrow_right_alt',
+/** An outlined cursor shaped like an arrow pointer. It signals that a selection tool is available for choosing or interacting with elements on the screen. */
+_arrow_selector_tool = 'arrow_selector_tool',
+/** A geometric triangle with an arrow pointing directly above it. This commonly indicates an increase, ascent, or movement to a higher level in digital interfaces. */
+_arrow_shape_up = 'arrow_shape_up',
+/** Depicts a stack of multiple arrows pointing upwards. This often signifies growth, increasing levels, or upward progression through a process or hierarchy. */
+_arrow_shape_up_stack = 'arrow_shape_up_stack',
+/** Multiple stacked arrows are depicted, all pointing upward in succession. This symbol often represents growth, increasing trends, or a rising progression. */
+_arrow_shape_up_stack_2 = 'arrow_shape_up_stack_2',
+/** An arrow that begins at a single point and splits into two separate lines or directions. This frequently indicates options, choices, or divergence from a main path. */
+_arrow_split = 'arrow_split',
+/** A single arrow is depicted pointing in the upper left diagonal direction. This symbol commonly represents a 'back' action or navigating to a previous screen. */
+_arrow_top_left = 'arrow_top_left',
+/** It depicts a directional arrow pointing at a 45-degree angle, moving upward and rightward. This symbol frequently indicates that clicking it will link to new content or open in a separate window. */
+_arrow_top_right = 'arrow_top_right',
+/** An arrow points up while displayed inside a segmented, circular progress ring. This commonly indicates an upload action, data transmission, or the successful submission of information. */
+_arrow_upload_progress = 'arrow_upload_progress',
+/** A curved arrow points upward, indicating movement out of a boundary line. This typically represents uploading data, posting content, or making something available. */
+_arrow_upload_ready = 'arrow_upload_ready',
+/** Depicts a simple arrow pointing straight up. It is commonly used to symbolize upward movement, increases, or progression. */
+_arrow_upward = 'arrow_upward',
+/** A stylized line drawing of an arrow pointing straight upwards. It often signifies growth, expansion, or increasing value in user interfaces. */
+_arrow_upward_alt = 'arrow_upward_alt',
+/** A directional arrow is depicted making a smooth curve at its terminus. This symbol often indicates that something can be refreshed, reset, or looped back around. */
+_arrow_warm_up = 'arrow_warm_up',
+/** It depicts an arrow pointing toward a designated box or input field. This typically indicates that information must be entered or provided here to proceed. */
+_arrows_input = 'arrows_input',
+/** Two opposing arrows pointing left and right are enclosed by a circular boundary. It typically signifies reversal, mirroring, or toggling between two opposite options. */
+_arrows_left_right_circle = 'arrows_left_right_circle',
+/** A small arrow pointing downward is depicted in a chevron shape. It often suggests that there are additional options or detailed information to be viewed below this point. */
+_arrows_more_down = 'arrows_more_down',
+/** A stylized icon showing an arrow pointing upward. It is commonly used to indicate growth, positive trends, or increasing metrics. */
+_arrows_more_up = 'arrows_more_up',
+/** This graphic depicts a process or input mechanism connected to an arrow pointing outwards. It is commonly used to represent results, final actions, or data exiting a system. */
+_arrows_output = 'arrows_output',
+/** Depicts four arrows radiating outwards from a small central point. This symbol usually indicates an external link or that content will expand away from the current view. */
+_arrows_outward = 'arrows_outward',
+/** Four opposing arrowheads point north, south, east, and west within a circle. This icon often indicates bidirectional movement or the ability to select from multiple axes of direction. */
+_arrows_up_down_circle = 'arrows_up_down_circle',
+/** A mountain landscape featuring a funicular train set against peak and valley scenery. This icon often represents travel, scenic routes, or mountainous destinations. */
+_art_track = 'art_track',
+/** Depicts a stack of documents resembling folded newspapers or structured written material. This symbol typically indicates news articles, educational content, or long-form reading material. */
+_article = 'article',
+/** A stick figure standing in front of a piece of paper. This generally represents an individual or person within the context of articles, documents, or information sharing. */
+_article_person = 'article_person',
+/** A page of paper is depicted with a small tag or bookmark icon attached. This usually indicates a quick link to saved content, allowing easy access to an article later. */
+_article_shortcut = 'article_shortcut',
+/** Represents a skilled person or professional creator. It is commonly used in contexts related to creative arts, performances, or specialized craftsmanship. */
+_artist = 'artist',
+/** This icon displays interlocking geometric shapes defining proportional dimensions and boundaries. It signifies the required ratio between an object's width and height when scaling or framing media. */
+_aspect_ratio = 'aspect_ratio',
+/** Depicts a formal document containing structured bullet points and lines of text. This icon typically represents tasks, required projects, or planned steps that need to be completed. */
+_assignment = 'assignment',
+/** It displays a plus sign placed next to or within documents and lists. This commonly indicates the function to add new items, content, or details to an existing structure. */
+_assignment_add = 'assignment_add',
+/** Depicts a document or report structured with various elements overlaid onto a world map. This typically signifies a global scope, international assignment, or widespread educational coverage. */
+_assignment_globe = 'assignment_globe',
+/** A graphic featuring an exclamation point within a triangle, often combined with symbols indicating data storage alerts. This generally signals a system error, failure to complete a process, or required immediate user intervention. */
+_assignment_ind = 'assignment_ind',
+/** It depicts a document or assignment sheet paired with an alert symbol. This commonly signifies that a task or item is overdue or past its required deadline. */
+_assignment_late = 'assignment_late',
+/** The curved arrow signifies a path returning to its origin point. It is typically used in educational or workflow interfaces to indicate submitting completed work or handing it back for review. */
+_assignment_return = 'assignment_return',
+/** A visual representation indicating a completed task or piece of work being brought back to the user. This typically signifies that your grades or instructor feedback are ready for review. */
+_assignment_returned = 'assignment_returned',
+/** A paper with a stylized arrow and a small seal depicts the action of completing or submitting work. This icon is typically used to represent turning in an assignment, finishing a task, or finalizing submission. */
+_assignment_turned_in = 'assignment_turned_in',
+/** A wheeled frame with wheels and handles is depicted. This object is typically used by individuals needing support for mobility or stability. */
+_assist_walker = 'assist_walker',
+/** A cylindrical device sits on a base, representing a voice assistant or smart home hub. This icon indicates advanced connectivity used for controlling household functions through voice command. */
+_assistant_device = 'assistant_device',
+/** A set of arrows pointing in various directions, suggesting pathways and movement. It typically indicates navigation assistance or a choice of routes within a location. */
+_assistant_direction = 'assistant_direction',
+/** A stylized pointer or arrow suggests a guided path toward a destination. This is typically used in apps to initiate hands-free guidance or directions from an assistance feature. */
+_assistant_navigation = 'assistant_navigation',
+/** A figure appears to be operating a central connecting hub or interface screen. It commonly represents access to connected devices, digital assistance, or integrated smart features. */
+_assistant_on_hub = 'assistant_on_hub',
+/** Depicts a list of items to be checked alongside associated financial elements. It commonly represents confirmed transactions, successful verifications, and completed payment processes. */
+_assured_workload = 'assured_workload',
+/** This symbol depicts a star-like figure composed of several points radiating from a center. It is often used in writing to mark footnotes, additional information, or placeholders. */
+_asterisk = 'asterisk',
+/** A picture of an Automated Teller Machine with a card slot. It typically indicates the availability of cash withdrawals and banking services. */
+_atm = 'atm',
+/** A series of small dots are arranged in a horizontal line. This indicator typically shows current signal strength or connectivity status for cellular service. */
+_atr = 'atr',
+/** A paperclip is placed next to a stylized envelope icon. This indicates the function of attaching files or documents when sending an electronic message. */
+_attach_email = 'attach_email',
+/** The image depicts a paperclip attached to a sheet of paper or document. This symbol is typically used to indicate that an additional file, attachment, or piece of information is included with the content. */
+_attach_file = 'attach_file',
+/** This image depicts a file representation with a plus sign attached to it. It is commonly used to indicate the ability to add or attach documents to a message. */
+_attach_file_add = 'attach_file_add',
+/** A paperclip or file icon is shown with a visible cancellation or strikethrough mark. This signifies that the function to attach documents or files is currently disabled or unavailable in this context. */
+_attach_file_off = 'attach_file_off',
+/** A paperclip connects several common global currency symbols like pounds and rupees. This icon often represents financial attachments, transactions, or handling monetary funds. */
+_attach_money = 'attach_money',
+/** A small metallic paperclip is shown connecting two pieces of paper. This typically indicates that additional files or documents are attached to a message or post. */
+_attachment = 'attachment',
+/** A series of connected circles form a patterned network structure. This icon typically represents connections, nodes, or the interconnected nature of information and systems. */
+_attractions = 'attractions',
+/** A symbol representing an external source or citation indicator. It denotes where information originates, helping to provide proper credit and acknowledge authorship for content. */
+_attribution = 'attribution',
+/** The design is a depiction of an omnidirectional microphone element or capsule. It universally signifies recording audio, allowing the user to capture ambient sound or voice input. */
+_audio_capture = 'audio_capture',
+/** Depicts radiating sound waves emanating from a speaker or source. This indicates that an accompanying audio track or verbal explanation is available for better accessibility. */
+_audio_description = 'audio_description',
+/** A vertical rectangle with a curved corner and a small triangle at the top indicates an audio recording. This suggests that sound content is contained within this file. */
+_audio_file = 'audio_file',
+/** A rectangular unit featuring a screen, knobs, and various input/output ports. It represents electronic equipment used for controlling audio and video sources. */
+_audio_video_receiver = 'audio_video_receiver',
+/** The icon depicts multiple small images arranged in an interlocking grid pattern. It commonly represents a gallery or album view containing various related items. */
+_auto_awesome_mosaic = 'auto_awesome_mosaic',
+/** Depicts flowing arrows that suggest movement or transformation from one point to another. This symbol is commonly used in user interfaces to indicate animations, transitions, or a dynamic process. */
+_auto_awesome_motion = 'auto_awesome_motion',
+/** An icon depicting a time mechanism leading to disappearance or deletion. This indicates that content, data, or messages will be removed automatically after a certain period of inactivity. */
+_auto_delete = 'auto_delete',
+/** Two parallel vertical lines are depicted together. This symbol usually indicates the option to pause a running activity, such as automatic playback or continuous reading. */
+_auto_read_pause = 'auto_read_pause',
+/** A sideways triangle pointing right indicates playback or starting an action. It signals that content should begin playing automatically or manually. */
+_auto_read_play = 'auto_read_play',
+/** A stack of books with ribbons tied around them, suggesting multiple stories or sections. This typically indicates a feed of curated content, saved reads, or automatically generated narrative collections. */
+_auto_stories = 'auto_stories',
+/** A stylized open book is visible next to a toggle switch indicating the feature has been disabled. This setting prevents automatic suggestions and content from appearing based on your reading history. */
+_auto_stories_off = 'auto_stories_off',
+/** A service vehicle is shown with an extended hook, pulling another automobile. This icon typically symbolizes roadside assistance, towing services, or vehicle repair. */
+_auto_towing = 'auto_towing',
+/** It shows radiating curved bars, typically representing a wireless connectivity signal strength. This indicates that the connection or transmission is automatically optimized or managed by the system. */
+_auto_transmission = 'auto_transmission',
+/** The icon displays several individual dots connected by thin lines. It indicates functionality related to automatically detecting or highlighting multiple points simultaneously. */
+_autofps_select = 'autofps_select',
+/** A continuous, curved arrow forms a repeating loop shape. It commonly represents cyclical processes or automatic actions that repeat without manual input. */
+_automation = 'automation',
+/** A face with eyes conveying enthusiasm and wide smiles. It is used to express strong happiness, pleasure, or deep satisfaction with a given situation. */
+_autopause = 'autopause',
+/** It depicts a visual switch or symbol signaling automated continuation of content. This setting ensures that videos and other media will begin playing immediately without requiring user input. */
+_autoplay = 'autoplay',
+/** Depicts a circular, continuous arrow formation suggesting a looping action. This typically indicates that content will automatically refresh or update over time. */
+_autorenew = 'autorenew',
+/** A circular blue sign featuring directional arrows and stopping prompts. It typically marks a designated roadside spot where drivers are permitted to temporarily pause or pick up passengers. */
+_autostop = 'autostop',
+/** It depicts multiple colored cables connected to an input port. This sign commonly indicates the availability of connections for transmitting both video and stereo audio signals. */
+_av1 = 'av1',
+/** A hand is pointing at a stopwatch with a curved arrow beside it. This symbol commonly indicates the timing or measurement of elapsed time. */
+_av_timer = 'av_timer',
+/** This symbol depicts combined ports representing both audio and video signals. It typically indicates a connection point used for linking media components or receivers. */
+_avc = 'avc',
+/** A speedometer-like gauge shows a cursor positioned on an adjustable scale. This symbol indicates average pace, speed, or measured rate of progress over time. */
+_avg_pace = 'avg_pace',
+/** Depicts a measurement gauge or pointer indicating an average value. This tool helps track mean rates, speeds, or values over a specific period of time. */
+_avg_time = 'avg_time',
+/** A smiling pregnant woman holds a baby and points to an avocado. This icon is often used in contexts related to pregnancy, motherhood, or nutritional advice. */
+_avocado_bean = 'avocado_bean',
+/** A diagram shows a set table with forks and spoons placed on plates. This icon generally represents a dining experience, often related to meals or formal eating settings. */
+_award_meal = 'award_meal',
+/** A large, five-pointed star surrounded by a circular wreath design. This symbol often represents excellence, achievement, or top recognition. */
+_award_star = 'award_star',
+/** Depicts two opposing arrows connected by a line. It commonly signifies exchange, symmetry, or movement in both directions between points. */
+_azm = 'azm',
+/** It is a small, solid circle shape. It is commonly used as a marker for list items or bullet points in textual information. */
+_b_circle = 'b_circle',
+/** A piece of furniture designed for bathing and dressing infants is shown. This icon indicates a facility equipped for baby care, such as changing services or maternity needs. */
+_baby_changing_station = 'baby_changing_station',
+/** The image shows a human hand extended, displaying the knuckles and the back of the palm. It is commonly used to indicate a casual wave, goodbye, or a dismissive hand gesture. */
+_back_hand = 'back_hand',
+/** An arrow pointing left is displayed on a plain background. This icon generally indicates navigation to the previous screen, history item, or open tab. */
+_back_to_tab = 'back_to_tab',
+/** Depicts a single, large solid circle or dot. This element is typically used in design and interfaces for structural separation, visual markers, or background styling. */
+_background_dot_large = 'background_dot_large',
+/** A small, solid square point. This icon typically represents a navigation marker or a pagination indicator within user interfaces. */
+_background_dot_small = 'background_dot_small',
+/** A small grid pattern composed of dots and lines is shown. It typically represents a tiled background, a structured display area, or an activated grid view. */
+_background_grid_small = 'background_grid_small',
+/** Depicts an element that allows a visual backdrop to be exchanged or customized. This feature is typically used to change the overall look and aesthetic background of an interface. */
+_background_replace = 'background_replace',
+/** A bright, glowing square with a beam shining from the top. It indicates high illumination levels or optimal ambient lighting conditions. */
+_backlight_high = 'backlight_high',
+/** A representation of a toggle switch for device illumination control. This indicates that the backlight feature is currently switched off or deactivated. */
+_backlight_high_off = 'backlight_high_off',
+/** Depicts an illuminated area set to a dim or reduced level of brightness. This generally signifies the option to lower light intensity while preserving adequate functionality. */
+_backlight_low = 'backlight_low',
+/** A rectangular bag designed to be worn on the back by two adjustable straps. This symbol commonly suggests school, travel, carrying belongings, or preparedness for a journey. */
+_backpack = 'backpack',
+/** The icon shows a left-pointing arrow in the shape of an eraser key. This indicates the action used to delete or revert the last character typed while editing text. */
+_backspace = 'backspace',
+/** An image showing data flowing into or being stored within a cloud formation. This signifies that files are being safely backed up or synchronized across multiple devices. */
+_backup = 'backup',
+/** Depicts a clearly delineated grid structure with intersecting rows and columns. This icon typically represents structured data or content, like a spreadsheet or table format. */
+_backup_table = 'backup_table',
+/** Depicts a circular patch or stylized sticker that can be affixed to clothing or an object. This symbol is commonly used to denote special status, membership, or recognized achievement. */
+_badge = 'badge',
+/** Shows a stylized indicator of an energy cell with critically low charge levels. This commonly warns the user that the device needs to be charged immediately for continued use. */
+_badge_critical_battery = 'badge_critical_battery',
+/** A depiction of two racquets and a shuttlecock, the primary equipment for badminton. This icon is used to represent sports activities, athleticism, or recreational physical exercise. */
+_badminton = 'badminton',
+/** A person wearing an apron is seated at a table with a background indicating commercial baking and dining. This icon often signifies establishments related to pastries, baked goods, or casual meals. */
+_bakery_dining = 'bakery_dining',
+/** A set of scales balanced on a central fulcrum with two pans suspended on either side. This universally represents justice, equilibrium, measurement, or weighing opposing factors. */
+_balance = 'balance',
+/** A raised outdoor platform attached to a building's exterior. This icon typically indicates architectural features or property listings related to living spaces. */
+_balcony = 'balcony',
+/** A folded sheet of paper, resembling a voting or selection form. It typically represents a ballot for choosing options or casting a vote in an election. */
+_ballot = 'ballot',
+/** Depicts a graph made up of several vertical rectangular columns of varying heights. It is typically used to visualize data, track statistics, and compare different metrics or trends. */
+_bar_chart = 'bar_chart',
+/** A chart displaying four vertical columns of unequal height. This typically represents analyzed data, metrics, or statistical comparisons. */
+_bar_chart_4_bars = 'bar_chart_4_bars',
+/** A signal indicator composed of vertical bars with an overlaying switch or slash mark. This commonly signifies that a service, connection, or feature is currently turned off or unavailable. */
+_bar_chart_off = 'bar_chart_off',
+/** A series of vertical black lines indicates a standard product identification barcode. This symbol is used for retail scanning and tracking inventory information. */
+_barcode = 'barcode',
+/** A device is depicted scanning a set of vertical lines. This typically represents the process of reading product information or inventory data. */
+_barcode_reader = 'barcode_reader',
+/** A handheld device with a scanning area over stacked lines. It typically represents tracking items or accessing information through codes and identification numbers. */
+_barcode_scanner = 'barcode_scanner',
+/** Depicts a single foot print left on the ground. It is often used to signify walking, hiking trails, or travel directions. */
+_barefoot = 'barefoot',
+/** A graphic showing multiple items or data points being processed toward a single outcome. This indicates calculating forecasts or running large-scale analyses across an entire dataset simultaneously. */
+_batch_prediction = 'batch_prediction',
+/** Depicts a bathing setting with a structure resembling stone or rock surrounding the tub area. This suggests themes of spa life, renovations, or natural indoor wellness features. */
+_bath_bedrock = 'bath_bedrock',
+/** A bathtub setup positioned outdoors, suggesting a backyard spa experience. It is commonly used to indicate relaxation, luxurious bathing, or water activities in an open-air setting. */
+_bath_outdoor = 'bath_outdoor',
+/** A designated bathtub area that appears private and separate from other guests. It typically indicates the location of an available private bathroom or spa amenity. */
+_bath_private = 'bath_private',
+/** A public bath area featuring multiple seats, steam vents, and heating elements. This sign indicates available facilities for bathing or soaking in a communal pool. */
+_bath_public_large = 'bath_public_large',
+/** A bathtub is shown filled with water and emanating steam. This typically signifies relaxation, bathing, or a comforting soak. */
+_bath_soak = 'bath_soak',
+/** It depicts a stylized silhouette of plumbing fixtures commonly found in a washroom. This symbol is typically used to indicate the location of restroom facilities in public areas. */
+_bathroom = 'bathroom',
+/** A porcelain bathtub stands in a room, suggesting relaxation and cleanliness. It is commonly used to depict bathing, self-care, or spa experiences. */
+_bathtub = 'bathtub',
+/** A rectangular outline contains a minus bar, indicating very low power levels. This typically signals that the device requires immediate charging or attention. */
+_battery_0_bar = 'battery_0_bar',
+/** A rectangular outline depicts a power source with minimal charge remaining. This signifies that the device battery is almost depleted and requires immediate recharging. */
+_battery_1_bar = 'battery_1_bar',
+/** Depicts a rectangular power source container with two segmented bars shown as charged. This visual indicates that the device battery charge is low and requires recharging soon. */
+_battery_2_bar = 'battery_2_bar',
+/** The icon displays a rectangular outline representing a rechargeable battery with three segments filled in. It typically signifies that the device has moderate power remaining and may require charging soon. */
+_battery_3_bar = 'battery_3_bar',
+/** Depicts a rectangular battery symbol with four segments filled in. This often signifies that the device has a healthy and moderately charged power level remaining. */
+_battery_4_bar = 'battery_4_bar',
+/** A rectangular shape with five vertical segments drawn inside it. This typically indicates the remaining power level of a device or gadget. */
+_battery_5_bar = 'battery_5_bar',
+/** Shows a segmented bar graphic indicating electrical charge capacity. This icon typically signals the current battery power level remaining on an electronic device. */
+_battery_6_bar = 'battery_6_bar',
+/** A rectangular shape with internal segments and an accompanying warning symbol. This icon typically indicates that the power source is running low or requires immediate attention for charging. */
+_battery_alert = 'battery_alert',
+/** A rectangular frame surrounding a segmented energy cell indicates the capacity of a power source. It commonly signals that a mobile device battery has been fully drained or needs immediate charging. */
+_battery_android_0 = 'battery_android_0',
+/** Depicts the classic outline of an internal rechargeable battery source. This indicator commonly represents the current power level or charge status of an electronic device. */
+_battery_android_1 = 'battery_android_1',
+/** Depicts a rectangular battery indicator with internal segments and a charging level. This visual usually indicates the current power status of a mobile device. */
+_battery_android_2 = 'battery_android_2',
+/** The graphic depicts a rectangular mobile battery meter with a partial fill level. This indicator typically signals that the device is connected to power and actively recharging. */
+_battery_android_3 = 'battery_android_3',
+/** A stylized representation of an Android-style battery level indicator. It commonly signifies the power status and remaining energy of a mobile device. */
+_battery_android_4 = 'battery_android_4',
+/** A rectangular battery graphic is displayed with a fully charged indicator. It represents the device's power level and general connectivity status. */
+_battery_android_5 = 'battery_android_5',
+/** A vertical rectangular shape with terminals on either end depicts the power source indicator for a modern electronic device. It typically represents the current operational charge status of a phone or portable gadget. */
+_battery_android_6 = 'battery_android_6',
+/** Depicts a simplified graphic of an electronic battery that is mostly drained. It typically alerts users to critically low power or remaining charge on a portable device. */
+_battery_android_alert = 'battery_android_alert',
+/** It displays a rectangular battery indicator containing a bright lightning bolt. This signifies that the electronic device is currently connected and rapidly receiving power. */
+_battery_android_bolt = 'battery_android_bolt',
+/** A stylized rectangle resembling a battery is depicted, typically containing internal segments that indicate charge capacity. This icon communicates the current power level or charging status of an electronic device. */
+_battery_android_frame_1 = 'battery_android_frame_1',
+/** It depicts a rectangular framework surrounding an electrical battery symbol. This commonly indicates the current charge level and power status of an Android-compatible device. */
+_battery_android_frame_2 = 'battery_android_frame_2',
+/** Depicts a rectangular battery symbol contained within an Android operating system frame. This commonly indicates the current power level or remaining charge status of a portable electronic device. */
+_battery_android_frame_3 = 'battery_android_frame_3',
+/** A rectangular graphic displaying the charge level of an Android-style smartphone battery. It is commonly used to indicate the current battery power or charging status of a device. */
+_battery_android_frame_4 = 'battery_android_frame_4',
+/** A stylized depiction of a rectangular battery indicator enclosed within a structural frame. This symbol is commonly used to display the current power level or charging status of an electronic device. */
+_battery_android_frame_5 = 'battery_android_frame_5',
+/** A framed graphic depicting a phone's internal power source and charge level. This is used to show the battery status of an electronic device or mobile gadget. */
+_battery_android_frame_6 = 'battery_android_frame_6',
+/** The image depicts a rectangular battery housed in an outlined frame, accompanied by a visible warning sign. This typically alerts users that the device’s power level is critically low and needs charging. */
+_battery_android_frame_alert = 'battery_android_frame_alert',
+/** The icon depicts an Android-style battery outline with a prominent lightning bolt running across it. This graphic usually indicates that the electronic device is actively charging or requires electrical power. */
+_battery_android_frame_bolt = 'battery_android_frame_bolt',
+/** It depicts a stylized, framed representation of a rectangular battery cell at full capacity. This visual indicator confirms that the device's power supply is charged to its maximum level. */
+_battery_android_frame_full = 'battery_android_frame_full',
+/** This graphic depicts a rectangular battery segmented into levels with an added plus symbol indicator. It typically signifies that the device is fully charged, connected to power, or capable of adding more capacity. */
+_battery_android_frame_plus = 'battery_android_frame_plus',
+/** Depicts a rechargeable battery symbol contained within a smartphone frame that is marked with a question mark. This icon typically indicates an unknown, indeterminate, or unreadable status concerning the device's power level. */
+_battery_android_frame_question = 'battery_android_frame_question',
+/** A power cell icon is displayed next to the universal symbol for sharing content. This generally indicates options related to sharing device data, usage metrics, or energy status. */
+_battery_android_frame_share = 'battery_android_frame_share',
+/** A shield symbol overlays a stylized battery charge indicator inside a phone frame. This typically signifies an active safety feature or protective lock safeguarding the device’s power source. */
+_battery_android_frame_shield = 'battery_android_frame_shield',
+/** Depicts a rectangular battery unit with its internal power indicator completely filled up. This typically signifies that the device has a full charge and is ready for use. */
+_battery_android_full = 'battery_android_full',
+/** A rectangular indicator shows a stylized battery charge level inside a frame. It typically represents the current power capacity and charging status of an electronic device. */
+_battery_android_plus = 'battery_android_plus',
+/** A lightning bolt intersects a battery indicator with an accompanying question mark. This typically signals a low-power status and indicates a potential connection or power issue needing attention. */
+_battery_android_question = 'battery_android_question',
+/** A stylized battery indicator is displayed next to the universal sharing symbol. This typically represents the action of sharing device status, battery level, or system information. */
+_battery_android_share = 'battery_android_share',
+/** A stylized battery is paired with a protective shield symbol. This indicates that the device's security features are active and providing strong, encrypted protection. */
+_battery_android_shield = 'battery_android_shield',
+/** A graphic depiction of a power cell, often filled or emptied with segments. It is used universally to show the current charge level and charging status of electronic devices. */
+_battery_change = 'battery_change',
+/** A rectangular battery container shows a percentage fill level and an electrical bolt. This icon typically signifies that the device is currently recharging its power source. */
+_battery_charging_20 = 'battery_charging_20',
+/** A rectangular battery graphic is displayed alongside a lightning bolt indicator. This commonly signifies that the device is plugged in and actively recharging its power level. */
+_battery_charging_20_2 = 'battery_charging_20_2',
+/** A rectangular battery shape is shown with a partial charge level and an electrical bolt. This indicates the device is currently receiving power or needs charging soon. */
+_battery_charging_30 = 'battery_charging_30',
+/** A graphic representation of an electrical battery being recharged via a plug icon. This indicator shows the current charge level, typically around 30%, while power is actively flowing into the device. */
+_battery_charging_30_2 = 'battery_charging_30_2',
+/** Depicts an electrical battery graphic displaying around 50% capacity with visible charging indicators. This generally means a device is actively plugged in and gaining power. */
+_battery_charging_50 = 'battery_charging_50',
+/** Depicts a vertical, rectangular battery symbol with approximately half of its capacity filled and an electrical bolt connecting to it. This indicates that the power source is actively receiving energy or displays a 50% charged level. */
+_battery_charging_50_2 = 'battery_charging_50_2',
+/** A battery icon is displayed alongside a plug and charging indicator. This graphic signifies that an electronic device is actively recharging, reaching approximately sixty percent capacity. */
+_battery_charging_60 = 'battery_charging_60',
+/** A standard phone-style rectangular battery graphic displays a moderate level of charge, accompanied by lightning bolt symbols. This indicates that the device is currently plugged in and actively replenishing its power source. */
+_battery_charging_60_2 = 'battery_charging_60_2',
+/** The image shows a battery icon with electricity flowing into it, filled to an 80% capacity level. This symbol is commonly used to indicate that a device is currently recharging its power source. */
+_battery_charging_80 = 'battery_charging_80',
+/** Depicts a rectangular battery symbol showing a high, partial charge connected to a charging bolt. This indicates that the electronic device is currently plugged in and gaining power. */
+_battery_charging_80_2 = 'battery_charging_80_2',
+/** The image depicts an electric battery symbol showing a high remaining charge and a charging bolt. It commonly indicates that the device power level is nearing a full charge. */
+_battery_charging_90 = 'battery_charging_90',
+/** A vertical rectangular object depicts a full charge level alongside an electrical charging symbol. This indicates that the battery has reached 100% capacity and is fully charged. */
+_battery_charging_full = 'battery_charging_full',
+/** A rectangular container displays a solid fill, indicating a full power reserve. The icon confirms that the associated device is charged to maximum capacity and operational. */
+_battery_charging_full_2 = 'battery_charging_full_2',
+/** A battery icon is shown along with an exclamation point to indicate a power issue. This warns the user that the device's energy source has encountered an error or warning state. */
+_battery_error = 'battery_error',
+/** A rectangular symbol is displayed with a solid fill, indicating maximum power. This signifies that the electronic device has fully charged energy and is ready to use. */
+_battery_full = 'battery_full',
+/** Depicts a stylized battery indicator with its charge level fully filled. This signal typically informs users that the device has sufficient power available to operate normally. */
+_battery_full_alt = 'battery_full_alt',
+/** A horizontal rectangular outline is depicted containing segmented power indicators. This symbol universally communicates the current energy level or battery charge status of an electronic device. */
+_battery_horiz_000 = 'battery_horiz_000',
+/** The icon depicts a rectangular container filled with internal segments and an indicator line. It is typically used to show the current power level or remaining battery life of electronic devices. */
+_battery_horiz_050 = 'battery_horiz_050',
+/** A rectangular block with a small lightning bolt symbol on the right. This indicates the current power level and suggests that charging is possible or in progress. */
+_battery_horiz_075 = 'battery_horiz_075',
+/** It depicts a battery symbol that is nearly empty or critically drained. This common indicator signals that the electronic device's power source needs urgent charging attention. */
+_battery_low = 'battery_low',
+/** Depicts a standard battery graphic with an upward-facing plus symbol next to it. This typically signifies that the item is currently being charged or has received added power. */
+_battery_plus = 'battery_plus',
+/** A stylized graphic of a rectangular power cell with an associated status display or gauge next to it. This icon represents detailed information regarding power health, consumption rates, and management options. */
+_battery_profile = 'battery_profile',
+/** A rectangular battery outline with an internal plug and a radiating bolt. It is used to indicate the ability to share power wirelessly or via connection. */
+_battery_share = 'battery_share',
+/** Depicts a graphical representation of a rechargeable battery that is charged to a high capacity. This indicates that the device has adequate power and sufficient resources remaining. */
+_battery_status_good = 'battery_status_good',
+/** Depicts a rectangular battery container with an unknown charge level indicated by a question mark. It signals that the device's power status is currently undetermined or unavailable. */
+_battery_unknown = 'battery_unknown',
+/** The icon depicts a standard battery shape with only minimal segments illuminated. This indicator means that the device's power is critically low and needs immediate charging. */
+_battery_very_low = 'battery_very_low',
+/** A path leads from sandy ground directly into blue ocean waves. This symbol indicates nearby access to a beach or waterfront area for recreation. */
+_beach_access = 'beach_access',
+/** A representation of a made-up bed with a blanket covering it. It typically suggests topics related to sleep, accommodation, or rest. */
+_bed = 'bed',
+/** A baby resting in a crib or bed is shown within a framed rectangle. This icon typically denotes sleeping areas, childcare, or infant care services. */
+_bedroom_baby = 'bedroom_baby',
+/** This icon depicts a single bed adjacent to a stylized human silhouette representing a child. It commonly suggests accommodation suitable for families, such as hotel rooms with space for both children and parents. */
+_bedroom_child = 'bedroom_child',
+/** A stylized image depicting a parent with one child in a bedroom setting. This icon is often used in travel or hospitality contexts to indicate accommodation suitable for families. */
+_bedroom_parent = 'bedroom_parent',
+/** It depicts a crescent moon above an open book, suggesting quiet activity after sundown. This icon generally signifies winding down, rest time, or preparation for sleep. */
+_bedtime = 'bedtime',
+/** Depicts a crescent moon with several small stars scattered around it. This symbol commonly indicates nighttime themes, restful sleep, or content meant for late viewing. */
+_bedtime_off = 'bedtime_off',
+/** A map pin accompanied by a checkmark is displayed. This indicates that the location has been visited or successfully logged as a point of presence. */
+_beenhere = 'beenhere',
+/** A beer mug next to a plate of food. This pairing often signifies a casual pub experience or the enjoyment of food and drink together. */
+_beer_meal = 'beer_meal',
+/** A structured, segmented layout within a rectangle is depicted. This indicates organizing multiple distinct pieces of content or modules into one cohesive view. */
+_bento = 'bento',
+/** Depicts several abstract items or containers arranged together in a cohesive structure. This typically symbolizes stored resources, comprehensive data sets, or an expanded collection of functions. */
+_bia = 'bia',
+/** A depiction of a letter standing in an open wooden box. This symbolizes the act of receiving or managing correspondence via physical mail. */
+_bid_landscape = 'bid_landscape',
+/** A rectangular control element with an indicator suggesting bidding activity is displayed as inactive. This typically means that bidding is currently suspended or unavailable for this item. */
+_bid_landscape_disabled = 'bid_landscape_disabled',
+/** Depicts a large, rounded canopy structure commonly associated with circuses or fairs. It often signals entertainment, announcements, or new content available within an application. */
+_bigtop_updates = 'bigtop_updates',
+/** A structure designed for securing and storing multiple cycles. This signifies an area or station dedicated to bicycle parking. */
+_bike_dock = 'bike_dock',
+/** A paved area marked specifically for bicycles. This signifies a designated, safe route for cyclists within an urban environment. */
+_bike_lane = 'bike_lane',
+/** A two-wheeled vehicle with a central body and wheels is depicted. This commonly represents alternative or shared mobility options for urban transit. */
+_bike_scooter = 'bike_scooter',
+/** Depicts a double spiral structure commonly used to represent genetic material. This symbol indicates concepts related to life sciences, medicine, and advanced biological research. */
+_biotech = 'biotech',
+/** A soft textile material is shown spread out, often folded or draped. This commonly represents warmth, coziness, comfort, or rest. */
+_blanket = 'blanket',
+/** Depicts an electric counter-top appliance consisting of a motor base and detachable blending pitcher. It is used for blending ingredients, such as making smoothies or purees. */
+_blender = 'blender',
+/** A person equipped with a white cane navigates through an area. This symbol denotes accessibility features for individuals who are visually impaired or blind. */
+_blind = 'blind',
+/** It depicts several stacked, horizontal lines or slats. This is commonly used to indicate a filter, restricted view, or the availability of advanced settings. */
+_blinds = 'blinds',
+/** It depicts horizontal slats covering a window opening. This design typically represents themes of privacy, filtration, or controlled viewing access. */
+_blinds_2 = 'blinds_2',
+/** Shows two sets of closed horizontal blinds covering a window or opening. This symbol typically represents privacy, restricted access, or that an area is currently unavailable. */
+_blinds_2_closed = 'blinds_2_closed',
+/** The image depicts closed window blinds covering a window pane. This usually signifies privacy, restricted access to content, or a section that is hidden from view. */
+_blinds_closed = 'blinds_closed',
+/** It depicts a solid shape composed of multiple joined squares or rectangles. This symbol is commonly used to indicate that an option, feature, or action has been disabled or restricted. */
+_block = 'block',
+/** A cuff wrapped around an arm with gauges and tubing visible. This symbolizes the monitoring of circulatory health or blood pressure readings, often used in medical apps. */
+_blood_pressure = 'blood_pressure',
+/** The image depicts a stylized drop of blood accompanied by classification letters. This symbol is commonly used to indicate human blood typing and compatibility groups, such as A, B, O, and AB. */
+_bloodtype = 'bloodtype',
+/** The symbol shows three curved arcs intersecting over a circle. It signifies the presence or status of short-range wireless connectivity between electronic devices. */
+_bluetooth = 'bluetooth',
+/** Depicts the standard Bluetooth logo surrounding linked elements. This indicates that a peripheral device is currently connected and operational over wireless Bluetooth technology. */
+_bluetooth_connected = 'bluetooth_connected',
+/** The standard symbol for wireless connection is shown crossed out. This indicates that Bluetooth functionality is currently disabled on the device. */
+_bluetooth_disabled = 'bluetooth_disabled',
+/** A stylized automobile is shown alongside a wireless signal icon. This suggests connectivity options for features within or related to a vehicle, such as hands-free calling. */
+_bluetooth_drive = 'bluetooth_drive',
+/** The recognizable Bluetooth symbol appears with radiating waves suggesting an ongoing scan. This indicates that the device is actively searching for nearby compatible devices to connect to. */
+_bluetooth_searching = 'bluetooth_searching',
+/** This depicts a circle with an intentionally blurred or faded texture. It is often used to represent content that is inaccessible, placeholder data, or information being deliberately hidden. */
+_blur_circular = 'blur_circular',
+/** A series of dots connected by flowing lines suggests a gradual blurring effect across space. This symbol commonly indicates data interpolation, signal strength visualization, or smooth transitions in diagrams. */
+_blur_linear = 'blur_linear',
+/** It shows an area with intentionally reduced sharpness and visible focus loss. This effect signals that content is obscured, often used to protect sensitive data or guide attention in a user interface. */
+_blur_medium = 'blur_medium',
+/** This depicts a toggle switch meant to control content clarity or visibility settings. When enabled, it removes any blur applied to data, allowing users to see the complete image or information. */
+_blur_off = 'blur_off',
+/** This icon depicts a toggle switch activated to turn on blur functionality. It is typically used to obscure sensitive information, enhancing user privacy within an application. */
+_blur_on = 'blur_on',
+/** It depicts a section of indistinct visual blurring. This effect is commonly used in user interfaces to mask sensitive or private information. */
+_blur_short = 'blur_short',
+/** A stylized depiction of a vessel with integrated transportation elements. This suggests ferry service or a route linking water and land transit systems. */
+_boat_bus = 'boat_bus',
+/** The image depicts a boat positioned next to railway tracks on land. This symbolizes multimodal transportation or routes connecting water travel with train service. */
+_boat_railway = 'boat_railway',
+/** A silhouette of a human body with shaded areas indicating various fat deposits. This icon is used to visually represent body composition or weight tracking in health contexts. */
+_body_fat = 'body_fat',
+/** It depicts a simplified silhouette of the human upper body with internal physiological markings. This symbol is commonly used in contexts related to anatomy, health monitoring, or biological systems. */
+_body_system = 'body_system',
+/** It depicts a sharp, zigzagging path suggesting intense electricity. It commonly signifies power, high energy levels, charging status, or an immediate burst of speed. */
+_bolt = 'bolt',
+/** A jagged lightning bolt is shown with arrows pointing in both directions. This often indicates rapid energy transfer or maximum capacity. */
+_bolt_boost = 'bolt_boost',
+/** A round explosive device is shown with a lit fuse extending from its surface. This symbol commonly denotes danger, immediate threat, or an explosive element. */
+_bomb = 'bomb',
+/** A rectangular object bound with multiple sheets of paper. It commonly represents knowledge, learning, reading material, or academic content. */
+_book = 'book',
+/** Depicts several closed books stacked one upon the other, suggesting a library or collection. This symbol commonly indicates source material, archives of knowledge, or stored content. */
+_book_2 = 'book_2',
+/** Three bound books are depicted standing together side-by-side. This commonly represents a library, academic resources, or comprehensive knowledge. */
+_book_3 = 'book_3',
+/** A stack of four bound books is depicted in an upright vertical arrangement. This symbolizes knowledge, academic resources, or a collection of published materials. */
+_book_4 = 'book_4',
+/** The icon depicts an elevated stack of several books, suggesting a varied library or academic resource set. This symbol typically represents knowledge, learning materials, reading collections, or published works. */
+_book_5 = 'book_5',
+/** Depicts a set of several books placed together. This icon typically represents learning resources, knowledge bases, or educational material. */
+_book_6 = 'book_6',
+/** An opened book features a decorative ribbon sticking out from its pages. This symbol commonly represents literature, education, or saved reading material. */
+_book_ribbon = 'book_ribbon',
+/** This icon depicts a stylized ribbon or tab, often with a folded corner. It is commonly used to save content or mark a specific spot for viewing later. */
+_bookmark = 'bookmark',
+/** A stylized ribbon symbol with a plus sign attached to its side. This button allows users to save, mark, or add an item to their collection for future reference. */
+_bookmark_add = 'bookmark_add',
+/** Depicts a stylized bookmark ribbon next to a small plus or checkmark symbol. This commonly indicates that an item has been successfully saved, marked for later review, or added to your collection. */
+_bookmark_added = 'bookmark_added',
+/** Depicts a structured piece of travel luggage or a bag. It typically indicates information related to baggage handling, claim status, or personal belongings during travel. */
+_bookmark_bag = 'bookmark_bag',
+/** A ribbon marker is shown with a checkmark beside it. This suggests that content has been successfully saved or marked as completed for later reference. */
+_bookmark_check = 'bookmark_check',
+/** Depicts a flag attached to the end of a stylized bookmark ribbon. It is used to save or mark content for easy retrieval and reference later on. */
+_bookmark_flag = 'bookmark_flag',
+/** A stylized ribbon marker is placed on top of a heart shape. This generally indicates saving an item or flagging content that holds sentimental value. */
+_bookmark_heart = 'bookmark_heart',
+/** Depicts a structured list or folder containing several pinned markers. It indicates the ability to save, organize, and access previously marked links or favorite materials. */
+_bookmark_manager = 'bookmark_manager',
+/** A folded ribbon shape with a notch is positioned next to a small cross mark. It generally indicates the option to remove a previously saved item or unmark content. */
+_bookmark_remove = 'bookmark_remove',
+/** A stack of rectangular cards, each marked with an open ribbon tab. This indicates a collection or library of saved favorites and bookmarks. */
+_bookmark_stacks = 'bookmark_stacks',
+/** This symbol depicts a five-pointed star attached to a bookmark ribbon. It is commonly used to save favorites or mark items of high importance and quality. */
+_bookmark_star = 'bookmark_star',
+/** A stylized ribbon strip is depicted, resembling a page marker. This icon is used to save or mark content so you can easily return to it later. */
+_bookmarks = 'bookmarks',
+/** Depicts books, a film reel or camera, and musical notes clustered together. This symbol commonly represents diverse media content or a comprehensive entertainment library. */
+_books_movies_and_music = 'books_movies_and_music',
+/** It depicts a small, organized grid made up of squares with distinct borders surrounding each section. This feature is used to apply uniform boundaries or outlines across all selected elements in a layout or table. */
+_border_all = 'border_all',
+/** It depicts a single, continuous horizontal line placed along the base of a section. This is commonly used to create visual boundaries or separate distinct blocks of content on a page. */
+_border_bottom = 'border_bottom',
+/** Depicts a box with an "X" drawn across it. This symbol typically means clearing, resetting, or removing existing borders and values from a field. */
+_border_clear = 'border_clear',
+/** A square outline with a visible dial or swatch set within its corners. Use this tool when selecting or adjusting the aesthetic color of borders and frames. */
+_border_color = 'border_color',
+/** It depicts a single straight line drawn across the width of an area. It is commonly used to visually separate distinct sections of content or information on a page. */
+_border_horizontal = 'border_horizontal',
+/** Depicts a short, segmented horizontal line. It is commonly used to visually separate distinct sections of content without fully dividing the information. */
+_border_inner = 'border_inner',
+/** A straight vertical line is depicted along the left side of a content area. It is commonly used to visually segment content or indicate structure within a design layout. */
+_border_left = 'border_left',
+/** A rectangular outline is depicted with no fill. This element is commonly used in user interfaces to frame content or indicate an editable area. */
+_border_outer = 'border_outer',
+/** Depicts a solid vertical line segment placed along the right edge of an area. It is commonly used to visually separate distinct sections or columns of content in a layout. */
+_border_right = 'border_right',
+/** It depicts multiple variations of outlines around a rectangular shape. This controls how boundaries appear for various elements in a design or interface. */
+_border_style = 'border_style',
+/** A solid horizontal line is drawn across the top of an area. This element typically serves as a visual divider, separating distinct sections of content on a page. */
+_border_top = 'border_top',
+/** It depicts a single straight line drawn vertically from top to bottom. This symbol is commonly used to visually separate content, such as organizing columns or distinct sections of information. */
+_border_vertical = 'border_vertical',
+/** Depicts an interlocking series of hexagonal structures that form a complete, stable container. It commonly symbolizes automatic worker tasks, distributed services, or reliable maintenance processes within a system architecture. */
+_borg = 'borg',
+/** A solid horizontal bar located across the bottom of a digital screen, displaying multiple small app icons. It functions as a primary navigation element for quickly accessing core installed applications. */
+_bottom_app_bar = 'bottom_app_bar',
+/** Depicts a rectangular object that has been partially pulled out from underneath its container. This commonly indicates expandable content, hidden settings, or additional options available to view. */
+_bottom_drawer = 'bottom_drawer',
+/** A horizontal row of several distinct icons is positioned along the base of a container. This element typically provides primary, persistent navigation links for moving between core sections of an application. */
+_bottom_navigation = 'bottom_navigation',
+/** A hand is shown pressing a closing "X" button in the corner of a rectangular area. This typically indicates that a panel, window, or modal view can be dismissed or hidden. */
+_bottom_panel_close = 'bottom_panel_close',
+/** The symbol displays a horizontal bar at the bottom of a screen, indicating several quick access points or settings. This signifies that a control panel or expanded contextual menu is currently visible to the user. */
+_bottom_panel_open = 'bottom_panel_open',
+/** It depicts three small, horizontal dots grouped together in the bottom right corner. This generally signals that more options or advanced actions are available when clicked. */
+_bottom_right_click = 'bottom_right_click',
+/** Depicts several nested rectangular panels rising from the base area. This commonly represents supplemental content or options that slide up over existing views for quick access. */
+_bottom_sheets = 'bottom_sheets',
+/** A simple rectangular container or cube is shown. This commonly signifies a bundle, collection, or contained unit of data or assets. */
+_box = 'box',
+/** The icon shows a square box containing an addition symbol. This typically indicates the option to add new items, expand content, or start a fresh entry. */
+_box_add = 'box_add',
+/** It displays a box with a small pen or pencil inside it. This indicates that the content within the area is editable and can be modified by the user. */
+_box_edit = 'box_edit',
+/** It depicts a stylized figure of a young boy. This icon commonly indicates facilities designed for males, such as a restroom or changing area. */
+_boy = 'boy',
+/** Depicts elements radiating outward from a central point or object. It represents the increased visibility, recognition, and widespread knowledge of a brand or concept. */
+_brand_awareness = 'brand_awareness',
+/** A grouping of connected logos or abstract shapes represents interconnected components. This symbol is used to signify various products or entities that belong together within a single brand ecosystem. */
+_brand_family = 'brand_family',
+/** Depicts a faint, semi-transparent pattern placed over an area of content. This mark is commonly used to protect intellectual property or indicate usage rights. */
+_branding_watermark = 'branding_watermark',
+/** It depicts a dining table ready with assorted breakfast-style food items. This symbol is typically used to indicate a location or service for meals, such as brunch or breakfast. */
+_breakfast_dining = 'breakfast_dining',
+/** A stylized paper element with an upward-pointing arrow indicates a significant update or breaking news alert. This commonly signals fresh, important information that requires immediate attention. */
+_breaking_news = 'breaking_news',
+/** A stylized megaphone is displayed alongside a red banner strip. This typically alerts users to urgent, time-sensitive, or newly released information. */
+_breaking_news_alt_1 = 'breaking_news_alt_1',
+/** Depicts an adult nursing a baby while breastfeeding. It commonly indicates resources, rooms, or amenities available for lactating parents and infants. */
+_breastfeeding = 'breastfeeding',
+/** Depicts a square, rectangular block typically used for construction. It often symbolizes foundation, structure, or masonry materials. */
+_brick = 'brick',
+/** A briefcase is paired with various eating utensils like forks and spoons. This represents meal service options or catering provided within a professional or work setting. */
+_briefcase_meal = 'briefcase_meal',
+/** A circle containing three curved lines radiating outward from a central point. It typically symbolizes settings for illumination or adjusting the visual contrast and brightness levels. */
+_brightness_1 = 'brightness_1',
+/** Depicts a lighted bulb with energy rays emanating from it. It indicates illumination levels and is often used for adjusting display brightness or showing visibility settings. */
+_brightness_2 = 'brightness_2',
+/** Depicts three vertical lines of increasing height or intensity. This symbol typically represents varying levels, such as signal strength, volume, or brightness settings. */
+_brightness_3 = 'brightness_3',
+/** A circle composed of four segmented quadrants arranged around a central point. This symbol typically indicates the ability to adjust light levels or image contrast. */
+_brightness_4 = 'brightness_4',
+/** The icon depicts a central circle from which several radiating lines extend outward. It commonly represents light intensity, brightness levels, or visibility settings. */
+_brightness_5 = 'brightness_5',
+/** The icon depicts multiple concentric, radiating curved lines emanating from a central point. This symbol commonly indicates brightness settings, illumination levels, or signal intensity. */
+_brightness_6 = 'brightness_6',
+/** A circle with emanating lines representing radiant energy. This symbol indicates or allows for adjustment of light intensity, visibility, or focus level. */
+_brightness_7 = 'brightness_7',
+/** A glowing circle surrounds an exclamation mark. This typically indicates a warning related to brightness levels or lighting conditions. */
+_brightness_alert = 'brightness_alert',
+/** A stylized sun symbol is placed within a circular adjustment dial. This indicates that the device will automatically adjust brightness to match surrounding ambient light. */
+_brightness_auto = 'brightness_auto',
+/** A graphic element consisting of emanating rays around a central point. It commonly signifies illumination controls, contrast settings, or brightness levels. */
+_brightness_empty = 'brightness_empty',
+/** Depicts four radiating lines emanating from a central point. This icon often signifies a moderate or medium level of intensity for light, sound, or volume settings. */
+_brightness_medium = 'brightness_medium',
+/** Indicates that personalized connection data can be used globally. This allows users to connect using their specific or private network identity rather than default settings. */
+_bring_your_own_ip = 'bring_your_own_ip',
+/** The icon depicts a stylized house with signal waves radiating from its top. It commonly indicates local network access or that a Wi-Fi broadcast is available at this location. */
+_broadcast_on_home = 'broadcast_on_home',
+/** Depicts wireless signal radiating outward from a central point. This indicates localized broadcasting, often used for private networks or home connectivity. */
+_broadcast_on_personal = 'broadcast_on_personal',
+/** Depicts a rectangular frame with jagged edges and a broken appearance inside the boundary. This commonly indicates that an image or picture failed to load or is unavailable for viewing. */
+_broken_image = 'broken_image',
+/** Depicts a stack of papers or multiple documents side-by-side. This suggests viewing available content, exploring options, or reviewing multiple resources. */
+_browse = 'browse',
+/** Shows a collection of stacked pages or documents streaming into an area, representing continuous content. It indicates the ability to track recent user activity or monitor aggregate data feeds. */
+_browse_activity = 'browse_activity',
+/** A grid structure composed of multiple squares or rectangles is displayed. This typically signifies access to an album, collection, or gallery of media items. */
+_browse_gallery = 'browse_gallery',
+/** A depiction of a screen or webpage accompanied by an element suggesting refreshing or cycles. This generally indicates that the software has received important updates and requires installation. */
+_browser_updated = 'browser_updated',
+/** The image depicts a laid out dining table setting with various implements and glassware. It typically signifies services or locations related to daytime meals, such as brunch or cafe visits. */
+_brunch_dining = 'brunch_dining',
+/** A handheld cleaning tool with visible bristles attached to a handle. It commonly represents the action of refreshing content, clearing data, or resetting settings. */
+_brush = 'brush',
+/** A rounded shape with a narrow tail points down from the main body. It commonly indicates speech or thought, representing dialogue in comics or apps. */
+_bubble = 'bubble',
+/** It shows a chart made up of connected circles, resembling an interconnected bubble graph. This symbol is commonly used for visualizing market trends, financial data, or complex relationships between variables. */
+_bubble_chart = 'bubble_chart',
+/** Multiple small circles are shown floating above each other. This icon typically represents communication, messaging, or a chat function. */
+_bubbles = 'bubbles',
+/** The icon depicts an open bucket paired with a prominent checkmark symbol. This generally indicates successful completion, verification, or the confirmation of all tasks within a set scope. */
+_bucket_check = 'bucket_check',
+/** Shows a small insect positioned near a sheet of paper or document. This symbol is typically used to denote the reporting of technical errors or software bugs. */
+_bug_report = 'bug_report',
+/** A stylized wrench is depicted, often associated with mechanical work or repair. It typically signifies a settings menu, maintenance options, or modification functionality. */
+_build = 'build',
+/** Depicts an adjustable wrench enclosed within a circle. This commonly indicates tools, maintenance, or general configuration settings. */
+_build_circle = 'build_circle',
+/** A single-story house with a pitched roof and simple design is depicted. This icon generally suggests a cozy, approachable home or cottage setting. */
+_bungalow = 'bungalow',
+/** It depicts a central point surrounded by radiating lines suggesting an explosion or intense energy. This symbol is typically used to indicate enhanced performance, high speed, or peak functionality. */
+_burst_mode = 'burst_mode',
+/** A stylized bus icon accompanied by an exclamation point in a triangle. This typically indicates an alert, delay, or important update regarding local bus routes or public transit service. */
+_bus_alert = 'bus_alert',
+/** A map pin marker rests on top of an icon representing a bus or street transit line. This symbol is used to pinpoint a location or stop for public transportation routes on maps. */
+_bus_map_pin = 'bus_map_pin',
+/** Depicts a vehicle similar to a bus running along fixed metal tracks. It commonly represents public transit options like trams or trolleys. */
+_bus_railway = 'bus_railway',
+/** Depicts a professional briefcase within an architectural or service context. This symbol often denotes business services, corporate amenities, or travel support areas. */
+_business_center = 'business_center',
+/** A rectangle showing a small square chip inserted into it. This symbol typically indicates modern and secure electronic payment processing. */
+_business_chip = 'business_chip',
+/** A stack of papers is shown alongside communication symbols, such as speech bubbles. This icon usually indicates a dedicated area for work correspondence or message history. */
+_business_messages = 'business_messages',
+/** The icon shows a cluster of rectangular shapes, resembling a group of accessible buttons or switches. This typically indicates interactive elements, controls, or selectable choices within an application interface. */
+_buttons_alt = 'buttons_alt',
+/** A small, stylized house on stilts surrounded by trees. This commonly represents a vacation getaway or rustic retreat location. */
+_cabin = 'cabin',
+/** A looped cord with rectangular connectors at the ends. It typically represents electrical connectivity, power transfer, or data linkage. */
+_cable = 'cable',
+/** A gondola cabin is shown descending on cables between buildings. This typically indicates a method of sightseeing or transporting people across an elevated urban area. */
+_cable_car = 'cable_car',
+/** A cyclical arrow design points back into a starting point. This indicates that information has been temporarily stored for faster access, or it may represent clearing out stored data. */
+_cached = 'cached',
+/** The symbol shows a repetitive wave or dot pattern, indicating structured movement across time. This usually represents the rhythm, timing, or predictable tempo of a process or sequence. */
+_cadence = 'cadence',
+/** A small, layered cake adorned with candles. This frequently signifies celebrations or sweet treats for sharing. */
+_cake = 'cake',
+/** Depicts a decorated cake placed near a visible plus symbol. This generally indicates the option to add a celebration, party element, or special event setting. */
+_cake_add = 'cake_add',
+/** Represents an arithmetic formula or computational process using input values. This is used to derive total outcomes, generate metrics, or perform complex data modeling. */
+_calculate = 'calculate',
+/** Depicts a calendar interface connected to an external plus sign symbol. This indicates the option to add specialized features, integrations, or additional tools to scheduling views. */
+_calendar_add_on = 'calendar_add_on',
+/** A calendar is shown with overlaid scripting or workflow elements. This typically represents advanced scheduling automation, integration, or programmable features within the app. */
+_calendar_apps_script = 'calendar_apps_script',
+/** A grid representing dates has been marked with a prominent checkmark. This usually indicates that an appointment or scheduled event on the calendar is confirmed or completed. */
+_calendar_check = 'calendar_check',
+/** This image depicts a clock overlaid onto a page marked with dates. It typically represents scheduling, appointments, or tracking time-sensitive events on a calendar basis. */
+_calendar_clock = 'calendar_clock',
+/** A calendar featuring a padlock icon is displayed. This typically indicates that access to scheduled dates or events is restricted and requires authorization. */
+_calendar_lock = 'calendar_lock',
+/** This depiction combines a calendar grid with utensils like forks and spoons. It is typically used to indicate scheduled times for meals, dining events, or meal planning. */
+_calendar_meal = 'calendar_meal',
+/** Depicts a calendar page with elements suggesting food or a structured meal plan. This icon typically indicates the scheduling of meals, dietary logging, or reservations. */
+_calendar_meal_2 = 'calendar_meal_2',
+/** Shows a grid layout arranged in rows and columns representing the days of a specific month. This icon is commonly used for date selection or visualizing a schedule's timeline. */
+_calendar_month = 'calendar_month',
+/** A grid layout is displayed, featuring numbered blocks representing months and days. This icon is used to indicate scheduling functions, booking appointments, or viewing today's date. */
+_calendar_today = 'calendar_today',
+/** A square box with the number one inside it and surrounding lines suggesting a monthly format. This is typically used to select or view details specific to a particular day. */
+_calendar_view_day = 'calendar_view_day',
+/** A segmented grid displays the days of a month in a typical calendar format. It is commonly used to navigate and view dates over an extended period. */
+_calendar_view_month = 'calendar_view_month',
+/** Depicts a grid structure divided into seven vertical columns and multiple rows. It is commonly used to indicate weekly schedules, date viewing, or planning time-based events. */
+_calendar_view_week = 'calendar_view_week',
+/** Depicts a stylized graphic of a telephone handset, often enclosed in a circle or bracket. This symbol typically indicates features related to voice communication, making calls, or contacting someone. */
+_call = 'call',
+/** Depicts a telephone handset being placed down or separated from the body. This is used to signify that an active voice call has been ended or disconnected. */
+_call_end = 'call_end',
+/** Depicts a stacked list, typically showing entries for various communications. This panel allows users to view a detailed history of their calls, including missed or completed contacts. */
+_call_log = 'call_log',
+/** A graphic depiction of a vintage telephone receiver is shown. This indicates that communication was successful or that a call has been made. */
+_call_made = 'call_made',
+/** Two phone handset outlines are joined together at a central junction point. This indicates the function of merging two or more separate calls into one session. */
+_call_merge = 'call_merge',
+/** A stylized drawing of a telephone receiver is shown in an inactive or failed state. This typically indicates that a call attempt was made but was unanswered or did not connect. */
+_call_missed = 'call_missed',
+/** The symbol depicts a stylized telephone interface showing varying call indicators. It typically signals communication history, such as a missed call or an outgoing call attempt. */
+_call_missed_outgoing = 'call_missed_outgoing',
+/** Signal waves are displayed radiating outward from a central point. This indicates the perceived quality and stability of the current voice connection. */
+_call_quality = 'call_quality',
+/** A phone handset is shown with a small incoming indicator near the receiver. This typically indicates that a call has arrived and requires attention. */
+_call_received = 'call_received',
+/** A central path visibly divides into multiple directional lines. This typically indicates a point where one process splits into several alternatives or branches out. */
+_call_split = 'call_split',
+/** Depicts a graphical element designed to initiate an immediate response from the user. It is typically used to direct attention and guide users toward completing a desired action. */
+_call_to_action = 'call_to_action',
+/** A device with a lens and viewing window is depicted. This commonly signifies functions related to photography or visual capture. */
+_camera = 'camera',
+/** Depicts a security or video camera mounted inside an occupied space. This symbol typically indicates features related to indoor monitoring, viewing, or recording functions. */
+_camera_indoor = 'camera_indoor',
+/** A camera is mounted on an exterior structure, typically positioned to monitor a surrounding area. This commonly represents security features or external monitoring systems for a property. */
+_camera_outdoor = 'camera_outdoor',
+/** Depicts a stack of overlapping pictures or images. This typically signifies access to your device's complete library of stored media. */
+_camera_roll = 'camera_roll',
+/** This symbol depicts a recording device combined with a film strip or media progress indicator. It is typically used to signify the ability to capture, record, or watch multimedia content. */
+_camera_video = 'camera_video',
+/** Shows two distinct representations of cameras linked by a switching mechanism. This function allows users to easily toggle between the device's front and rear lenses for different capture needs. */
+_cameraswitch = 'cameraswitch',
+/** It depicts a loudspeaker projecting sound waves outward. It usually signals a promotion, an organized event, or general public announcement. */
+_campaign = 'campaign',
+/** Depicts a stylized representation of an outdoor recreational area with tents and natural elements. It typically indicates available sites or services for overnight camping accommodation. */
+_camping = 'camping',
+/** It depicts two intersecting diagonal lines forming an X shape. This symbol typically indicates the ability to close a window, remove content, or cancel an action. */
+_cancel = 'cancel',
+/** Depicts an 'X' or stop symbol commonly placed over content. It signifies the action to immediately abort a presentation or cancel an ongoing workflow. */
+_cancel_presentation = 'cancel_presentation',
+/** Depicts a circular clock element next to an arrow pointing away from the center. This icon is commonly used for canceling or withdrawing a previously scheduled action or communication. */
+_cancel_schedule_send = 'cancel_schedule_send',
+/** A single candle held upright is depicted. It often symbolizes remembrance, commemoration, or a guiding light. */
+_candle = 'candle',
+/** The image shows a chart composed of vertical bars with rectangular bodies and connecting lines. This visualization is commonly used to track the historical movement and volatility of asset prices in financial markets. */
+_candlestick_chart = 'candlestick_chart',
+/** A cluster of distinctly shaped green leaves is depicted in a natural arrangement. This symbol often represents nature, herbal remedies, or a feeling of calm and tranquility. */
+_cannabis = 'cannabis',
+/** It depicts a gateway positioned over a wireless signal graphic. This indicates that network access is restricted and requires authentication or login before proceeding. */
+_captive_portal = 'captive_portal',
+/** A lens and film strip are contained within a square boundary. This typically indicates the function to take a picture, record video, or capture content. */
+_capture = 'capture',
+/** The image depicts multiple vehicles clustered together in a state of impact or damage. It is used to signify a traffic accident, collision site, or road hazard. */
+_car_crash = 'car_crash',
+/** Depicts horizontal lines with a curve on the left side of a windshield icon. This symbol is used to activate the defroster function for that specific section of glass. */
+_car_defrost_left = 'car_defrost_left',
+/** The image depicts a pane of frosted or foggy glass with directional arrows pointing toward clearing it. This sign signals that the car's windows need to be defrosted or cleared due to condensation or frost. */
+_car_defrost_low_left = 'car_defrost_low_left',
+/** A wavy depiction is placed in the lower right corner of a surface. This indicates an activated vent for defrosting or heating that specific area of the vehicle's glass. */
+_car_defrost_low_right = 'car_defrost_low_right',
+/** Depicts an arrow pattern showing airflow across the center-left portion of a windshield. It indicates that the vehicle's heating system will provide defrosting air to this area. */
+_car_defrost_mid_left = 'car_defrost_mid_left',
+/** A fan blowing air pattern is shown across a vertical surface. This indicates the activation of the defrost function to clear condensation or fog from that side of the windshield. */
+_car_defrost_mid_low_left = 'car_defrost_mid_low_left',
+/** The icon shows waves emanating from a directional arrow pointing down and right. This indicator typically means that the vehicle's rear defroster or ventilation system is active. */
+_car_defrost_mid_low_right = 'car_defrost_mid_low_right',
+/** Depicts a car windshield with radiating lines centered on the right side. This usually indicates that the defrost feature is active or available for clear viewing glass. */
+_car_defrost_mid_right = 'car_defrost_mid_right',
+/** Depicts an indication for defrost functionality aimed to the right side of the vehicle. This feature is used to activate heating elements that clear moisture and fog from windshield glass. */
+_car_defrost_right = 'car_defrost_right',
+/** It depicts a stylized representation of air moving from the lower left side. This symbol indicates active ventilation or climate control settings within a vehicle. */
+_car_fan_low_left = 'car_fan_low_left',
+/** The icon shows stylized curved lines representing a stream of air coming from the lower left area. It typically signifies that the vehicle’s climate control or airflow system is active and engaged. */
+_car_fan_low_mid_left = 'car_fan_low_mid_left',
+/** A fan symbol positioned in the lower right corner of a console or dash panel. This indicates that the vehicle's climate control system is active, directing airflow from this side. */
+_car_fan_low_right = 'car_fan_low_right',
+/** It depicts a stylized fan icon positioned within an automotive context. This typically indicates ventilation controls or available fresh air flow settings in a vehicle. */
+_car_fan_mid_left = 'car_fan_mid_left',
+/** The symbol depicts a fan structure positioned near the lower right console of a vehicle. This typically indicates available airflow or climate control settings for that side of the car. */
+_car_fan_mid_low_right = 'car_fan_mid_low_right',
+/** A stylized representation of an oscillating fan mounted in the mid-right section. This icon is commonly used to indicate active air circulation or climate control features in a car. */
+_car_fan_mid_right = 'car_fan_mid_right',
+/** It depicts airflow lines moving back towards the interior of the car. Using this setting circulates cabin air inside the vehicle to maintain temperature and humidity. */
+_car_fan_recirculate = 'car_fan_recirculate',
+/** Shows two arrows forming a closed loop within a windshield fan icon. This setting circulates the existing cabin air and prevents outdoor pollutants from entering the vehicle. */
+_car_fan_recirculate_2 = 'car_fan_recirculate_2',
+/** A cogwheel is displayed next to an automobile silhouette. This typically indicates options related to maintenance, technical settings, or drive mechanics. */
+_car_gear = 'car_gear',
+/** This symbol depicts a padlock over or near an automobile outline. It indicates that the vehicle is secured, suggesting protection or locked status. */
+_car_lock = 'car_lock',
+/** A vehicle's outer side mirror is displayed with an integrated heat symbol. This indicates that the mirror has a defroster function, helpful for clear visibility in cold weather. */
+_car_mirror_heat = 'car_mirror_heat',
+/** A stylized depiction of a passenger car is shown. This suggests the availability of vehicles for rent or temporary transportation booking. */
+_car_rental = 'car_rental',
+/** Depicts a vehicle positioned near specialized equipment suggesting maintenance work. This icon generally indicates auto service, repairs, or mechanic assistance. */
+_car_repair = 'car_repair',
+/** A rectangular plate is depicted on the exterior of a vehicle. This symbol typically relates to vehicle identification, parking status, or local transportation service alerts. */
+_car_tag = 'car_tag',
+/** It depicts a horizontal identification or membership card. This symbol is used to represent customer status, belonging, or accessing member-exclusive features. */
+_card_membership = 'card_membership',
+/** A card is depicted alongside various types of luggage and travel bags. This commonly indicates access to transit services, identification needed for journeys, or baggage policies. */
+_card_travel = 'card_travel',
+/** A heart accompanied by a spinning indicator suggests data retrieval is in progress. This typically indicates that cardiac or health information is currently loading into view. */
+_cardio_load = 'cardio_load',
+/** It depicts a stylized heart with an electrocardiogram wave running across it. This symbol represents cardiovascular health, monitoring vital signs, and cardiac care services. */
+_cardiology = 'cardiology',
+/** Depicts several stacked or grouped rectangular elements. These are typically used to organize tasks, notes, or steps in a visual workflow. */
+_cards = 'cards',
+/** A vertical pile of rectangular items is depicted, resembling stacked index cards. This typically represents a collection, archive, or multiple related sets of information. */
+_cards_stack = 'cards_stack',
+/** A small star is positioned above a stack of playing cards or rectangular items. This symbol often indicates a high rating, premium status, or achievement associated with content. */
+_cards_star = 'cards_star',
+/** The icon depicts various woodworking tools, such as a hammer, saw, or measuring tape. This represents skills related to carpentry, building structures, and crafting wooden objects. */
+_carpenter = 'carpenter',
+/** Depicts a small bag or piece of luggage designed for carrying, suggesting travel readiness. This icon is commonly used to denote carry-on limitations or baggage size guidelines. */
+_carry_on_bag = 'carry_on_bag',
+/** The icon depicts a small piece of luggage accompanied by a confirmation checkmark. This typically signifies that the item has been successfully checked in or verified for transport. */
+_carry_on_bag_checked = 'carry_on_bag_checked',
+/** A small suitcase or piece of luggage is depicted standing upright. It indicates that carry-on baggage rules are currently inactive, disabled, or not applicable. */
+_carry_on_bag_inactive = 'carry_on_bag_inactive',
+/** Depicts a small piece of luggage situated next to an inquiry symbol. This is typically used when seeking clarification about baggage dimensions, rules, or airport policies. */
+_carry_on_bag_question = 'carry_on_bag_question',
+/** The depiction shows various types of bags, luggage, and carrying cases. It generally represents travel, storage capacity, or a collection of personal items. */
+_cases = 'cases',
+/** It depicts various elements related to games of chance and gambling entertainment. This icon is typically used to navigate to or indicate a section for betting, slots, or recreational gaming. */
+_casino = 'casino',
+/** Depicts radiating waves or an arrow pointing from one device to another. This symbol indicates wirelessly streaming content, such as audio or video, to multiple receivers. */
+_cast = 'cast',
+/** Depicts signal radiating lines connecting two points or devices. This indicates that content is actively being cast or mirrored to another screen or device. */
+_cast_connected = 'cast_connected',
+/** Depicts a wireless signal being shared or transmitted. This feature allows content to be displayed on external screens for instructional purposes. */
+_cast_for_education = 'cast_for_education',
+/** A broadcast signal symbol is shown with centered pause lines (||). This indicates that the casting, streaming, or connection function has been temporarily paused. */
+_cast_pause = 'cast_pause',
+/** A triangle with an exclamation point inside it. This symbol typically indicates a warning or potential issue with connectivity. */
+_cast_warning = 'cast_warning',
+/** A fortified structure featuring high walls, multiple towers, and battlements. It commonly represents history, protection, or established royal authority. */
+_castle = 'castle',
+/** The icon shows multiple elements grouped together within a defined boundary. It is commonly used to indicate organization, classification, or a collection of related items. */
+_category = 'category',
+/** It depicts a magnifying glass placed beside filtering or organizational structure lines. This is commonly used to help users refine search queries by selecting specific categories or criteria. */
+_category_search = 'category_search',
+/** Scattered shapes, resembling streamers or confetti, are shown bursting outward from a central point. This symbol is typically used to acknowledge an achievement, holiday, or general happy occasion. */
+_celebration = 'celebration',
+/** It depicts several small, adjacent cells combining into a single, larger rectangle. This tool is used in spreadsheets to group content and create a unified heading over multiple data columns. */
+_cell_merge = 'cell_merge',
+/** Depicts a tall antenna structure on a base, suggesting wireless transmission. This typically represents cellular network coverage and mobile connectivity. */
+_cell_tower = 'cell_tower',
+/** Depicts the combined symbols for both Wi-Fi access and cellular network signal strength. This is used to indicate multiple available wireless connection types simultaneously. */
+_cell_wifi = 'cell_wifi',
+/** Depicts a visible crosshair aimed at the exact center point of an image or scene. This indicator is used to ensure sharp focus and precise centering when taking photographs. */
+_center_focus_strong = 'center_focus_strong',
+/** A small square dot is positioned to indicate a weak or secondary focus point. This visual cue suggests an item that requires attention but is not the primary subject of the current task. */
+_center_focus_weak = 'center_focus_weak',
+/** A piece of furniture consisting of a seat and a backrest. This typically indicates available seating, rest points, or areas for waiting. */
+_chair = 'chair',
+/** The icon depicts a standard piece of furniture with legs, seat, and backrest. This symbol generally indicates available seating or resting spots in various locations. */
+_chair_alt = 'chair_alt',
+/** Depicts chairs set up alongside a long service counter or bar. This symbol usually indicates an area where patrons can sit to eat, work, or wait for service. */
+_chair_counter = 'chair_counter',
+/** A piece of furniture with a seat placed next to an indoor hearth. This typically symbolizes comfort, warmth, and cozy home living. */
+_chair_fireplace = 'chair_fireplace',
+/** A piece of furniture resembling a chair with an attached canopy. This icon typically suggests outdoor seating or a shady rest area. */
+_chair_umbrella = 'chair_umbrella',
+/** A stylized depiction of a rustic, peaked-roof mountain cabin. It typically represents holiday destinations, winter travel, or high elevation accommodations. */
+_chalet = 'chalet',
+/** Depicts two opposing, curved arrows forming a continuous loop within a circular border. This icon typically signifies refreshing content or applying changes to the current view. */
+_change_circle = 'change_circle',
+/** Depicts a clock face with directional arrows pointing backward. It is used to view logs detailing revisions and changes made over time. */
+_change_history = 'change_history',
+/** It depicts a jagged, stylized lightning bolt or electrical spark symbol. This typically indicates that a device is connected to power and actively recharging its battery. */
+_charger = 'charger',
+/** The icon depicts several connected lines and points plotted across an organized graph structure. It is used to visualize complex data sets, analyze trends, or track key metrics over time. */
+_chart_data = 'chart_data',
+/** Two connected speech bubbles are depicted side-by-side. This symbol commonly represents messaging, conversation features, or direct chat functionality. */
+_chat = 'chat',
+/** A graphic depicting a plus sign next to speech bubbles. This indicates the ability to attach external media, such as files or images, into a conversation. */
+_chat_add_on = 'chat_add_on',
+/** It depicts several intersecting chat bubbles organized around a code bracket structure. This symbol typically indicates communication or interaction within an application's scripting environment. */
+_chat_apps_script = 'chat_apps_script',
+/** A simple speech bubble shape is depicted here. It typically indicates communication features, such as direct messaging or general chat functionality in an app. */
+_chat_bubble = 'chat_bubble',
+/** A stylized speech bubble that has been crossed out. This typically indicates that chat notifications are muted or that communication has been paused. */
+_chat_bubble_off = 'chat_bubble_off',
+/** A speech bubble containing dashed horizontal lines. This often indicates that content must be pasted or that messaging is currently unavailable due to connectivity issues. */
+_chat_dashed = 'chat_dashed',
+/** A dialogue bubble containing text next to an exclamation point. This indicates that there was a problem or error with the chat message, connection, or transmission. */
+_chat_error = 'chat_error',
+/** Depicts overlapping speech bubbles alongside a lowercase 'i' icon. This generally indicates access to detailed information, settings, or context about a specific conversation thread. */
+_chat_info = 'chat_info',
+/** A clipboard is positioned inside a speech bubble with a send arrow nearby. This indicates the action of pasting previously copied text or data into a conversation for submission. */
+_chat_paste_go = 'chat_paste_go',
+/** It shows text that has been pasted into a communication bubble, typically accompanied by a sending indicator. Use this when you are ready to finalize and transmit your message within a chat interface. */
+_chat_paste_go_2 = 'chat_paste_go_2',
+/** A mark consisting of two strokes forming a checkmark shape. It typically signifies completion, correctness, or successful verification. */
+_check = 'check',
+/** Depicts a green checkmark alongside an exclamation point or warning symbol. This usually confirms that a necessary check has been successfully completed or verified. */
+_check_alert = 'check_alert',
+/** A square box with a visible border and no internal markings. It indicates an action that can be selected or confirmed as completed. */
+_check_box = 'check_box',
+/** A hollow square outline is displayed. This typically represents an empty selection box, often used in forms or settings. */
+_check_box_outline_blank = 'check_box_outline_blank',
+/** A circle surrounding a bold tick mark. This symbol commonly indicates successful completion, confirmation, or that something is verified. */
+_check_circle = 'check_circle',
+/** A round icon with a prominent check mark inside it. This commonly indicates that an item has been successfully validated, approved, or completed. */
+_check_circle_unread = 'check_circle_unread',
+/** Depicts two directional arrows flanking a central point. This symbol commonly signifies the start and end of a period, such as logging into or out of a service. */
+_check_in_out = 'check_in_out',
+/** It depicts a small square box containing an incomplete or undetermined mark. This symbol typically signifies a pending status, suggesting neither full completion nor complete lack of data. */
+_check_indeterminate_small = 'check_indeterminate_small',
+/** A small tick mark is displayed within a box outline. It generally signifies that an item has been selected, approved, or successfully completed. */
+_check_small = 'check_small',
+/** It depicts an open book with ruled columns designed for recording structured information. This icon typically represents finance, accounting, or general record-keeping. */
+_checkbook = 'checkbook',
+/** A stylized depiction of a bag that has been checked in for travel. This often indicates luggage that is processed and stored by an airline or carrier. */
+_checked_bag = 'checked_bag',
+/** This icon depicts an item of checked luggage overlaid with both a checkmark and a question mark. It usually signifies uncertainty or required clarification regarding baggage guidelines or status. */
+_checked_bag_question = 'checked_bag_question',
+/** A vertical list with a series of empty checkboxes next to each item. It is commonly used to represent a task list or a set of criteria that must be verified. */
+_checklist = 'checklist',
+/** A vertical list depicting empty checkboxes next to sequential lines. This icon indicates a verification process or checklist designed for right-to-left language layouts. */
+_checklist_rtl = 'checklist_rtl',
+/** Depicts a private room or area used for changing clothes or handling items. It commonly indicates a fitting room in retail stores or facilities for privacy. */
+_checkroom = 'checkroom',
+/** Depicts a person raising their hands in an upward, celebratory manner. This gesture typically indicates excitement, enthusiasm, or support for someone else. */
+_cheer = 'cheer',
+/** A tall, pleated white head covering is depicted. This symbol represents culinary professionalism, cooking, or baking skills. */
+_chef_hat = 'chef_hat',
+/** A checkered board featuring various pieces set up for a game. This commonly signifies strategy, intellectual challenge, or turn-based play. */
+_chess = 'chess',
+/** A chess bishop piece is depicted. This icon represents the movement and strategic value of a specific unit in the game of chess. */
+_chess_bishop = 'chess_bishop',
+/** A stylized image of a piece used in the game of chess. It represents a key component of strategy, planning moves, or advancing skills in a structured environment. */
+_chess_bishop_2 = 'chess_bishop_2',
+/** This icon shows a stylized piece used in the game of chess. It represents royalty, leadership, or the central figure in an endeavor. */
+_chess_king = 'chess_king',
+/** A stylized piece representing a chess king stands upright. This symbol indicates the important and central figure in the game of chess. */
+_chess_king_2 = 'chess_king_2',
+/** Depicts a stylized horse figure commonly recognized as one of the pieces in chess. This icon represents the powerful movement piece used to capture opponents on the board. */
+_chess_knight = 'chess_knight',
+/** A small, stylized figure with a pointed top represents one of the pieces used in the game of chess. It signifies movement and strategy within a structured board game environment. */
+_chess_pawn = 'chess_pawn',
+/** A simple figurine resembling a standard chess pawn piece. It is often used to symbolize basic steps, foundational units, or simple progression in games. */
+_chess_pawn_2 = 'chess_pawn_2',
+/** It depicts one of the distinct pieces used in the game of chess. This piece generally symbolizes royalty, power, or strategic authority. */
+_chess_queen = 'chess_queen',
+/** A stylized piece resembling a castle tower is shown here. It represents one of the most straightforward and powerful pieces in the game of chess. */
+_chess_rook = 'chess_rook',
+/** A pointing triangle composed of an arrowhead and a line segment points to the left. It commonly indicates going back, returning to a previous screen, or moving backward. */
+_chevron_backward = 'chevron_backward',
+/** A right-pointing chevron or arrow is depicted. This typically indicates movement forward, continuing a path, or navigating to the next step. */
+_chevron_forward = 'chevron_forward',
+/** A simple V-shaped arrow pointing to the left. It is commonly used to indicate moving backward or navigating to a previous screen. */
+_chevron_left = 'chevron_left',
+/** This symbol depicts an arrowhead pointing directly upward. It commonly indicates ascent, increase, or proceeding to the next level of information. */
+_chevron_line_up = 'chevron_line_up',
+/** It depicts a small arrow pointing toward the right. This symbol typically indicates progression, continuation, or expanding into more information. */
+_chevron_right = 'chevron_right',
+/** Depicts a smiling caregiver looking after children. It is commonly used to represent childcare services, family care, or early education facilities. */
+_child_care = 'child_care',
+/** Depicts a simple graphic of a happy child's face with radiating lines. This symbol indicates that a space, product, or service is safe and suitable for young families. */
+_child_friendly = 'child_friendly',
+/** A depiction of a young person wearing a classic cap. This icon is often used to represent childhood or youth in communication. */
+_child_hat = 'child_hat',
+/** It depicts several distinct, pill-shaped elements being pulled out of a container. Use this icon to indicate the process of extracting structured data or tags from an input field. */
+_chip_extraction = 'chip_extraction',
+/** Several small, distinct squares are clustered together in a row. These elements typically represent editable tags or selectable filters within an interface. */
+_chips = 'chips',
+/** A document with stacked pages and text suggests simplified viewing. This feature strips away distracting elements from web articles for focused reading. */
+_chrome_reader_mode = 'chrome_reader_mode',
+/** This icon depicts a stethoscope positioned next to a stylized arrow. It commonly symbolizes comprehensive health monitoring, detailed medical assessments, or general clinic care. */
+_chromecast_2 = 'chromecast_2',
+/** Depicts a small media streaming device plugged into a power source or port. This symbol indicates smart casting capabilities or home connectivity for multimedia content. */
+_chromecast_device = 'chromecast_device',
+/** Depicts a stylized clock face or time measurement graphic. It commonly signifies an ongoing process, extended duration, or persistent status that requires continued time. */
+_chronic = 'chronic',
+/** Depicts a traditional religious building with characteristic spire and cross. It commonly represents spiritual gathering places or ministry related to faith communities. */
+_church = 'church',
+/** A depiction showing a stylized background that is out of focus behind a subject. This effect mimics professional cinematography by drawing the viewer's attention to the main focal point. */
+_cinematic_blur = 'cinematic_blur',
+/** A perfectly drawn, continuous ring or outline. This shape is often used as a placeholder, selector, or to indicate wholeness when filled. */
+_circle = 'circle',
+/** Two circular shapes are depicted next to each other. This symbol often represents a cycle, connection, or the continuous repetition of elements. */
+_circle_circle = 'circle_circle',
+/** A circular shape contains several small dots or marks. This usually indicates that new alerts, messages, or unread activities are available for viewing. */
+_circle_notifications = 'circle_notifications',
+/** It depicts a simple, closed circular shape. This symbol is often used in user interfaces to denote grouping, selection options, or lists. */
+_circles = 'circles',
+/** Depicts a circle containing a cross marked by an 'X'. It commonly signifies exclusion, invalid data, or the removal of an item. */
+_circles_ext = 'circles_ext',
+/** The icon depicts an action designed to refine or simplify complex textual blocks. It typically strips away unnecessary formatting and emphasizes core content for improved comprehension. */
+_clarify = 'clarify',
+/** Depicts two hands placed together, suggesting an act of washing or rinsing. This symbol commonly indicates hygiene requirements, handwashing stations, or sanitation instructions. */
+_clean_hands = 'clean_hands',
+/** Depicts various household tools used for sanitation and upkeep. It typically marks general maintenance areas or facilities requiring cleanliness. */
+_cleaning = 'cleaning',
+/** It shows a container marked as a cleaning or waste receptacle. This symbol typically represents functions for discarding data, resetting systems, or restoring deleted content. */
+_cleaning_bucket = 'cleaning_bucket',
+/** The icon shows cleaning tools, such as a mop and bucket. It is typically used to represent household cleaning, sanitation, or professional maintenance services. */
+_cleaning_services = 'cleaning_services',
+/** Depicts an 'X' symbol, often contained within a circular boundary. This feature quickly clears all entered data, selections, or applied filters to reset the form or view. */
+_clear_all = 'clear_all',
+/** Depicts a bright yellow sun above a clean, cloudless blue background. This icon commonly signifies beautiful, sunny weather or optimal visibility. */
+_clear_day = 'clear_day',
+/** Depicts a modern indoor wall-mounted mini-split air conditioning unit. It is typically used to represent dedicated home climate control or HVAC systems. */
+_climate_mini_split = 'climate_mini_split',
+/** A document with structured lines and headings suggests medical charting or patient records. This icon is typically used to access, create, or review clinical notes within a healthcare application. */
+_clinical_notes = 'clinical_notes',
+/** It shows a circular clock face with an arrow pointing downwards. This symbol is often used to indicate scheduling, adjusting the time, or viewing time settings. */
+_clock_arrow_down = 'clock_arrow_down',
+/** A timepiece with an upward-pointing arrow indicates a change in the passage of time. This icon is often used to denote moving forward or advancing a schedule. */
+_clock_arrow_up = 'clock_arrow_up',
+/** Depicts a circular loading indicator placed next to a clock face. This commonly signifies that data is actively processing, calculating, or waiting for time to pass. */
+_clock_loader_10 = 'clock_loader_10',
+/** Depicts a circular clock face with an arrow pointing downwards. It typically indicates that content is loading, processing data, or waiting for a scheduled event. */
+_clock_loader_20 = 'clock_loader_20',
+/** A clock face surrounded by a spinning arrow indicates time in transit. This symbol typically signals that content is being loaded or processed and requires patience. */
+_clock_loader_40 = 'clock_loader_40',
+/** Depicts a circular timer face with hands moving in a continuous loop. This icon signifies that content is loading or that the system is processing a request and requires waiting time. */
+_clock_loader_60 = 'clock_loader_60',
+/** A circular arrow pattern, typically resembling hands on a clock face, is displayed. This universally indicates that content is loading or processing and the user should wait for completion. */
+_clock_loader_80 = 'clock_loader_80',
+/** A clock face surrounded by a loading circle. This typically indicates that content is currently being retrieved or loaded on the screen. */
+_clock_loader_90 = 'clock_loader_90',
+/** A prominent "X" shape is displayed, typically positioned in a corner. This symbol commonly indicates closing a window, dismissing an alert, or canceling an action. */
+_close = 'close',
+/** Depicts two intersecting directional arrows forming an X shape, often enclosed by bounding box lines. This symbol typically indicates the option to close or revert from a full-screen view. */
+_close_fullscreen = 'close_fullscreen',
+/** A small 'X' mark is shown within a circle. This typically signifies closing, dismissing, or cancelling an item. */
+_close_small = 'close_small',
+/** A rectangle contains several lines of stylized text. This symbol indicates the availability or control of subtitles and closed captions for video content. */
+_closed_caption = 'closed_caption',
+/** It depicts a plus sign next to lines of dialogue or text. This symbol indicates the option to add closed captions or subtitles for enhanced accessibility during video playback. */
+_closed_caption_add = 'closed_caption_add',
+/** Depicts a standard closed caption icon with a diagonal line crossing through it. This signals that subtitle viewing is disabled or turned off. */
+_closed_caption_disabled = 'closed_caption_disabled',
+/** A group of vaporous, white masses floating in the sky. It frequently represents atmospheric weather conditions or remote data storage and syncing capabilities. */
+_cloud = 'cloud',
+/** A stylized depiction of a cloud with an exclamation mark inside. This icon typically alerts the user to an issue or warning related to cloud services and synchronization. */
+_cloud_alert = 'cloud_alert',
+/** A cloud graphic is enclosed within a circular border. This symbol typically represents cloud computing, synchronization, or data storage services. */
+_cloud_circle = 'cloud_circle',
+/** A depiction of a stylized cloud accompanied by a completion checkmark or circle. This typically confirms that data has been successfully synced, backed up, or uploaded to the cloud. */
+_cloud_done = 'cloud_done',
+/** A cloud shape is shown with a downward-pointing arrow exiting it. This icon typically represents retrieving or saving data from an external cloud source. */
+_cloud_download = 'cloud_download',
+/** A padlock is depicted attached to or surrounding a cloud graphic. This indicates that data stored or accessed in the cloud is encrypted and protected by enhanced security measures. */
+_cloud_lock = 'cloud_lock',
+/** A stylized cloud icon paired with a visible switch or line suggests that a service has been turned off. This typically indicates that synchronization, alerts, or cloud backup functionality is currently disabled. */
+_cloud_off = 'cloud_off',
+/** A stylized cloud connects various endpoints with syncing lines. This typically indicates that local files are being synchronized or backed up to the cloud service. */
+_cloud_sync = 'cloud_sync',
+/** The image shows a stylized cloud formation with an upward-pointing arrow emerging from it. This commonly represents transferring data or files from a local device to the cloud service. */
+_cloud_upload = 'cloud_upload',
+/** The icon displays the chemical formula for carbon dioxide gas ($\text{CO}_2$). It is used to indicate atmospheric gases and measurements related to climate and air quality. */
+_co2 = 'co2',
+/** Depicts two stylized figures positioned close together. This generally indicates collaboration, shared viewing, or simultaneous presence with another user. */
+_co_present = 'co_present',
+/** Displays angle brackets used in writing and programming languages. It often denotes technical code blocks, markdown syntax, or structured data formats. */
+_code = 'code',
+/** Multiple stacked rectangles represent structured data or program code blocks. This symbol indicates technical information, programming examples, or formatted text content. */
+_code_blocks = 'code_blocks',
+/** It shows a diagonal slash placed across lines of text or symbols. This typically indicates that an advanced, coding, or specialized function has been turned off or is inactive. */
+_code_off = 'code_off',
+/** It depicts the letters "XML" displayed within a code block format. This commonly signifies data structured using eXtensible Markup Language, often used in web development. */
+_code_xml = 'code_xml',
+/** A cup emitting steam rises from a container, suggesting heat and aroma. This icon typically represents cafes, breakfast dining, or any beverage break. */
+_coffee = 'coffee',
+/** A kitchen appliance with a visible carafe and heating element. This typically represents the act of making or dispensing coffee. */
+_coffee_maker = 'coffee_maker',
+/** Depicts a stylized human head containing internal wavy lines or patterns. This symbol represents thought processes, learning, intelligence, and overall psychological function. */
+_cognition = 'cognition',
+/** Depicts the profile of a head containing abstract representations of neural pathways. It is used to indicate topics related to cognitive ability, intellectual testing, or neurology. */
+_cognition_2 = 'cognition_2',
+/** Shows an indicator of multiple sections being closed or condensed. It allows a user to collapse all open details and collapsible groups simultaneously for a cleaner view. */
+_collapse_all = 'collapse_all',
+/** An upward-pointing chevron is displayed beneath a horizontal line. This symbol typically denotes an action to minimize or collapse detailed information. */
+_collapse_content = 'collapse_content',
+/** A stack of bookmarks symbolizes saved items or categorized notes. It indicates a collection of resources you have gathered for later review. */
+_collections_bookmark = 'collections_bookmark',
+/** A palette or set of colored tools is depicted. This option allows users to select, change, or add color when drawing or annotating media. */
+_colorize = 'colorize',
+/** A grouping of different colored swatches or gradients is shown. This commonly indicates variable composition, spectrum analysis, or diverse qualitative data measurements. */
+_colors = 'colors',
+/** Three vertical structures are shown with arrows pointing inward, converging them into a single column. This typically signifies merging or combining multiple data sets or categories. */
+_combine_columns = 'combine_columns',
+/** A smiling theatrical comedy face is depicted. This commonly represents humor, lightheartedness, or jesting in general communication. */
+_comedy_mask = 'comedy_mask',
+/** A stylized oval shape with a connected tail indicates speech or thought. It is commonly used to represent dialogue between characters in comics and graphic narratives. */
+_comic_bubble = 'comic_bubble',
+/** A simple speech bubble shape, often depicted with a pointer at the bottom corner. This symbol indicates discussion, user feedback, or the ability to leave replies on content. */
+_comment = 'comment',
+/** A grouping of speech bubbles or text boxes suggests a repository for discussions. This indicates a centralized place where comments and user feedback are archived. */
+_comment_bank = 'comment_bank',
+/** The icon depicts a speech bubble with a diagonal line crossing through it. This indicates that the ability to comment or discuss content has been disabled or restricted. */
+_comments_disabled = 'comments_disabled',
+/** A button labeled "Commit" that signals the finalization of changes. It submits the current work, saving the progress permanently to the system. */
+_commit = 'commit',
+/** Depicts radiating signal bars extending outward from an originating source. This symbol indicates connectivity and the ability to transfer information wirelessly. */
+_communication = 'communication',
+/** Multiple stylized figures are depicted standing closely together. It commonly represents user groups, social networking, or a shared collective space. */
+_communities = 'communities',
+/** The icon depicts several distinct modes of transportation moving along a shared path or route. It represents general travel options and daily journeys between locations. */
+_commute = 'commute',
+/** Two rectangular documents are displayed side-by-side, often with an arrow or connecting line in between them. This function allows users to evaluate similarities or differences between two chosen items simultaneously. */
+_compare = 'compare',
+/** It depicts two distinct arrows facing opposing directions. This symbol is typically used to indicate a comparison feature or the ability to view differences between items. */
+_compare_arrows = 'compare_arrows',
+/** A directional arrow points to a stylized crosshair or target, suggesting alignment. This icon typically represents the calibration or precise adjustment of location or navigation settings. */
+_compass_calibration = 'compass_calibration',
+/** Depicts a wrench alongside interconnected modular parts or components. This usually indicates the ability to modify, swap out, or manage internal system configuration and dependencies. */
+_component_exchange = 'component_exchange',
+/** A small mound or pile of organic materials is shown, representing decomposed matter. This symbolizes recycling waste into nutrient-rich soil for gardening and environmental sustainability. */
+_compost = 'compost',
+/** Two opposing arrows are depicted pointing inward toward a central point. This symbol indicates reducing file size or condensing information to save storage space. */
+_compress = 'compress',
+/** A representation of a portable electronic computing device with a screen and keyboard. It typically signifies technology, computing services, or general web-related functions. */
+_computer = 'computer',
+/** A screen or monitor displaying an arrow pointing upwards. This typically represents uploading content or moving information to a higher level. */
+_computer_arrow_up = 'computer_arrow_up',
+/** Depicts a monitor screen with a large X mark in the upper right corner. This symbol indicates that an action can be canceled, closed, or aborted. */
+_computer_cancel = 'computer_cancel',
+/** Depicts audio output coming from a device's speaker. This icon is used to manage volume levels and overall sound settings. */
+_computer_sound = 'computer_sound',
+/** A person is shown interacting with guests or travelers in a professional setting. This suggests specialized help, guidance, or curated services like hotel assistance and recommendations. */
+_concierge = 'concierge',
+/** The icon depicts diverse sports and athletic activities involving various people and equipment. It signifies that facilities and engagements are accessible to all abilities and mobility devices. */
+_conditions = 'conditions',
+/** A series of numbers is displayed, forming a distinct code. It signifies a verification ID or a numeric confirmation required to complete an action. */
+_confirmation_number = 'confirmation_number',
+/** It depicts the written English word "congenital." This term relates to any trait or condition that is present at or since birth. */
+_congenital = 'congenital',
+/** Curved radiating lines emerge from a central point. This symbol indicates wireless connectivity or a remote signal link. */
+_connect_without_contact = 'connect_without_contact',
+/** Depicts a television set receiving external lines that suggest connectivity or streaming signals. This indicates the unit is connected to a network, allowing for online viewing or content access. */
+_connected_tv = 'connected_tv',
+/** Depicts an airplane flying between multiple segmented airport markers. It indicates travel involving transfers, connecting flights, or reaching several different locations. */
+_connecting_airports = 'connecting_airports',
+/** A picture shows various household items like a toolbox, wrench, and drills. It typically suggests home improvement projects, DIY work, or technical services. */
+_construction = 'construction',
+/** A depiction of a telephone handset placed next to an exclamation point symbol. This icon indicates the availability of urgent assistance or emergency contact information. */
+_contact_emergency = 'contact_emergency',
+/** A stylized envelope suggests correspondence or messaging. It indicates a method for contacting someone via electronic mail or written message. */
+_contact_mail = 'contact_mail',
+/** A document page layout featuring standard contact symbols, such as a phone or envelope. This indicates where users can find information to get in touch with the service or individual. */
+_contact_page = 'contact_page',
+/** A classic representation of a telephone handset and dialing keypad is shown. It is typically used to indicate direct phone contact information or calling services. */
+_contact_phone = 'contact_phone',
+/** A graphic featuring a speech bubble with an exclamation point and a headset. This commonly indicates access to customer service or help support options. */
+_contact_support = 'contact_support',
+/** It depicts concentric rings or radiating arcs of signal energy. This signifies technology that operates without physical touch, commonly used for tap-to-pay payments or proximity access. */
+_contactless = 'contactless',
+/** Depicts a common symbol for wireless signals paired with an 'off' indicator. This setting disables near-field communication functions, such as contactless payments. */
+_contactless_off = 'contactless_off',
+/** Three connected figures represent a group of people or personal profiles. It is used to access saved addresses, directories, or communication contacts. */
+_contacts = 'contacts',
+/** Depicts multiple simplified human figures clustered together. This icon typically signifies contacts, social networks, or a list of people. */
+_contacts_product = 'contacts_product',
+/** The depiction consists of two sheets of paper overlapping one another. This symbol typically indicates the function to duplicate or copy selected content within a digital environment. */
+_content_copy = 'content_copy',
+/** It shows a stylized cutting tool or pair of scissors. This symbol is used to remove selected text or content from the current document or project. */
+_content_cut = 'content_cut',
+/** Depicts a notepad and a small cursor placed over the area. It signifies pasting information or transferring cop ed content into a new location. */
+_content_paste = 'content_paste',
+/** The image shows stacked elements entering a destination point, symbolizing transfer. This action is used to paste copied content, such as text or images, into the current document. */
+_content_paste_go = 'content_paste_go',
+/** A document outline is shown with a diagonal prohibition symbol placed over it. This indicates that pasting content into this field or area is disallowed or will fail. */
+_content_paste_off = 'content_paste_off',
+/** A magnifying glass is positioned over an area representing typed or pasted text content. This symbol indicates the ability to perform a search using data that has been copied from another source. */
+_content_paste_search = 'content_paste_search',
+/** The icon depicts an abstract marker resembling a chip or tag. This symbol indicates specific information that is relevant to the user's current context within the application. */
+_contextual_token = 'contextual_token',
+/** A plus sign enclosed in a circle is positioned between two elements. This indicates an available option to add more data or supplementary context to the current information flow. */
+_contextual_token_add = 'contextual_token_add',
+/** A sheet of paper is depicted with formal text lines and sometimes a visible signature area. This represents legal agreements, official documents, or terms that require authorization. */
+_contract = 'contract',
+/** It depicts a formal document placed next to a trash receptacle symbol. This indicates the action of permanently removing or deleting an agreement from the system. */
+_contract_delete = 'contract_delete',
+/** A stylized depiction of a formal contract document with an editing tool overlayed. This indicates the ability to modify or make changes to existing agreements or legal files. */
+_contract_edit = 'contract_edit',
+/** It depicts two interlocking or offset circles within a defined boundary. This function is used to highlight differences or adjust the distinction between elements in an image or dataset. */
+_contrast = 'contrast',
+/** A circle containing alternating light and dark segments. It is used to adjust the visual contrast, clarity, or dynamic range of an image. */
+_contrast_circle = 'contrast_circle',
+/** The symbol depicts an indicator suggesting that advanced text styling features are disabled. This setting controls whether enhanced contrast or right-to-left text rendering is actively applied. */
+_contrast_rtl_off = 'contrast_rtl_off',
+/** A square frame containing contrasting colored sections depicts visual adjustment. This setting enhances screen readability by changing color levels, improving accessibility for users with visual needs. */
+_contrast_square = 'contrast_square',
+/** A viewfinder is shown within a square border, often featuring internal alignment guides. It typically represents the ability to adjust focus, composition, or advanced camera settings. */
+_control_camera = 'control_camera',
+/** Two overlapping circles are connected by a line segment, forming a linked nodal point. This often indicates an anchor or control point that can be duplicated for symmetry or added flexibility in graphic design. */
+_control_point_duplicate = 'control_point_duplicate',
+/** It shows several nested circles and buttons arranged on a grid pattern. This symbol generally indicates advanced controls or the ability to modify multiple operational settings at once. */
+_controller_gen = 'controller_gen',
+/** Depicts two overlapping speech bubbles adjacent to one another. This generally signifies a dialogue or conversation between people. */
+_conversation = 'conversation',
+/** Depicts a winding line connecting two distinct points or stages. This symbol commonly illustrates complex flow paths, transformations, or sequential processes within a system. */
+_conversion_path = 'conversion_path',
+/** Depicts a pathway between two points marked with a definitive crossout symbol. This typically signifies that a conversion route or necessary step has been deactivated or removed. */
+_conversion_path_off = 'conversion_path_off',
+/** It shows a document being processed or transformed into lines of plain text. This function is typically used to extract readable characters from images, scans, or other non-editable file types. */
+_convert_to_text = 'convert_to_text',
+/** Depicts an industrial belt passing over rollers or pulleys. This commonly indicates workflow, progression, or automated movement of items. */
+_conveyor_belt = 'conveyor_belt',
+/** A round, golden-brown baked treat is depicted. This symbol commonly represents comfort food, sweet snacks, or a small indulgence. */
+_cookie = 'cookie',
+/** The image displays a cookie with a diagonal line drawn through it. This symbol indicates that cookies, baked goods, or similar sweet items are not allowed or prohibited. */
+_cookie_off = 'cookie_off',
+/** Depicts a cooking process, typically shown with cookware or steam rising from food. It usually indicates recipes, culinary content, or meal preparation. */
+_cooking = 'cooking',
+/** Depicts a cycle of water moving from a cooling stage until it reaches dry conditions. This suggests an object or substance requires airflow and time to fully restore its usability. */
+_cool_to_dry = 'cool_to_dry',
+/** Two overlapping sheets represent duplication or a full selection set. This function is used to quickly duplicate all content within a selected area. */
+_copy_all = 'copy_all',
+/** Depicts the letter C enclosed within a circle. This indicates that the material is legally protected under copyright law. */
+_copyright = 'copyright',
+/** Depicts a sphere covered in multiple protruding spikes or surface structures. This symbol commonly represents the coronavirus, signaling public health concerns or caution. */
+_coronavirus = 'coronavirus',
+/** The icon depicts a structured stack of money, including bills and coins. This usually represents financial transactions, expenses, or corporate reimbursement costs. */
+_corporate_fare = 'corporate_fare',
+/** Depicts a quaint, small-sized residential dwelling structure. It is typically used to represent a cozy home or a rural getaway setting. */
+_cottage = 'cottage',
+/** A numerical display usually enclosed in a circular or rectangular boundary is shown. It tracks progress, counts items, or indicates a current value within an interface. */
+_counter_0 = 'counter_0',
+/** The icon depicts the numeral one within a counting or numerical display format. It commonly indicates the starting number, sequence order, or current step in a list or process. */
+_counter_1 = 'counter_1',
+/** This icon depicts an adjustable numerical readout or gauge display. It is used to track a second parameter or measure a key statistic within a health profile. */
+_counter_2 = 'counter_2',
+/** A numerical counter displays the figure three. This is commonly used to track a count of people, items, or repetitions. */
+_counter_3 = 'counter_3',
+/** A marker displaying the numeral four in a structured layout. This element typically denotes a specific subsection or level of content hierarchy within documentation. */
+_counter_4 = 'counter_4',
+/** The icon shows the number five displayed as part of a sequential count. This typically signifies that five units, levels, or attempts remain or have been completed. */
+_counter_5 = 'counter_5',
+/** Depicts the Arabic numeral six. It is commonly used to indicate a sequence number, level, or specific count. */
+_counter_6 = 'counter_6',
+/** It shows the numeral seven displayed on a digital counter screen. This typically indicates a specific count, step number, or remaining quantity in a sequence. */
+_counter_7 = 'counter_7',
+/** The icon depicts the single numeral eight. It indicates a current count, score, or step number within an interface. */
+_counter_8 = 'counter_8',
+/** Depicts the numeral nine. It is commonly used to indicate a position or count at nine within a sequence. */
+_counter_9 = 'counter_9',
+/** This depicts a solid, flat surface structure commonly found in kitchens or bathrooms. It is generally used to represent workspaces, domestic preparation areas, or architectural details. */
+_countertops = 'countertops',
+/** A stylized manila folder is shown next to a plus symbol, indicating addition. This icon typically signals the ability to create a new directory or category for organization. */
+_create_new_folder = 'create_new_folder',
+/** A stylized rectangular card represents a typical plastic debit or credit payment card. It commonly indicates financial payments, transaction options, or saved card details. */
+_credit_card = 'credit_card',
+/** Depicts a credit card alongside an analog clock face. This typically indicates a financial deadline, billing cycle, or time limit related to payments. */
+_credit_card_clock = 'credit_card_clock',
+/** Shows a credit card overlaid with a small gear mechanism. This typically indicates settings or customization related to payment methods or financial services. */
+_credit_card_gear = 'credit_card_gear',
+/** A representation of a financial credit card overlaid with a stylized heart shape. This icon typically indicates saved payment methods or preferred financial accounts. */
+_credit_card_heart = 'credit_card_heart',
+/** A depiction of a standard credit card crossed out by a diagonal slash. This commonly indicates that payment methods are disabled, restricted, or unavailable. */
+_credit_card_off = 'credit_card_off',
+/** Represents a graph or number that indicates financial reliability. This metric helps lenders and services assess an individual's trustworthiness for loans or accounts. */
+_credit_score = 'credit_score',
+/** Depicts a small, enclosed bed designed for an infant. This symbol typically represents items related to babies, childcare, or nurseries. */
+_crib = 'crib',
+/** It shows a stylized alarm signal or warning beacon. This symbol is used to indicate an immediate and critical alert requiring attention. */
+_crisis_alert = 'crisis_alert',
+/** A defined rectangle is shown with corner markers, suggesting a bounded area. It indicates the ability to trim unwanted edges or focus only on a specific section of content. */
+_crop = 'crop',
+/** Depicts a rectangular frame with visible corners and internal guidelines. This indicates a standard widescreen aspect ratio, commonly used for videos or presentations. */
+_crop_16_9 = 'crop_16_9',
+/** The design is a simple, unfilled black rectangle outline. It typically serves as a foundational element in user interfaces to represent the container or frame for monitoring device battery capacity. */
+_crop_21_9 = 'crop_21_9',
+/** The design is a plain, upright rectangular outline. It commonly indicates a defined boundary or designated area for content, such as when cropping an image or viewing a specific screen section. */
+_crop_2_3 = 'crop_2_3',
+/** A rectangle with two intersecting lines is displayed over a visible area. This is used to adjust the aspect ratio or select a specific portion of an image during editing. */
+_crop_3_2 = 'crop_3_2',
+/** It depicts a rectangular frame with adjustable corner guides. This tool is typically used in photo editing to select and crop an image to a specific aspect ratio or area. */
+_crop_5_4 = 'crop_5_4',
+/** A frame drawn over a visual area indicates selection boundaries. This feature allows users to crop an image or content section by adjusting the desired visible dimensions. */
+_crop_7_5 = 'crop_7_5',
+/** A vertically oriented rectangular frame is depicted. It indicates an ideal cropping dimension for content designed specifically for portrait viewing, such as mobile stories. */
+_crop_9_16 = 'crop_9_16',
+/** Depicts a square frame with an open boundary across the top edge. This often signifies that cropping restrictions are removed or content can be fully viewed. */
+_crop_free = 'crop_free',
+/** Depicts a horizontal rectangle with guiding corners, indicating an area for visual framing. This tool is used to adjust the composition and aspect ratio when editing images. */
+_crop_landscape = 'crop_landscape',
+/** It displays a photographic image cropped into a vertical rectangle shape. This guides users to select or adjust content designed specifically for portrait orientation. */
+_crop_portrait = 'crop_portrait',
+/** A picture frame is depicted with curved arrows surrounding its edges. This indicates the ability to adjust or rotate the orientation of cropped content. */
+_crop_rotate = 'crop_rotate',
+/** A visible frame or box is drawn over an image, defining the boundaries for content selection. This indicates that the media will be cropped into a perfect square ratio. */
+_crop_square = 'crop_square',
+/** The symbol depicts a square grid structure formed by intersecting lines. This typically indicates an activity or game involving solving word puzzles. */
+_crossword = 'crossword',
+/** Multiple human figures and raised hands are depicted gathering together in unison. This generally represents drawing resources, ideas, or services from a large collective community. */
+_crowdsource = 'crowdsource',
+/** A decorative piece of headwear symbolizing regal authority. It commonly signifies supreme status, importance, or the highest level of achievement. */
+_crown = 'crown',
+/** It depicts an animal motif with a prohibition sign overlaid. This signifies that the associated products are never tested on animals. */
+_cruelty_free = 'cruelty_free',
+/** This depicts a language used for defining the presentation of documents. It controls styling, layout, and visual properties applied to web page elements. */
+_css = 'css',
+/** A simple representation of data arranged in rows and columns. This format is commonly used to exchange plain text tables between different software applications. */
+_csv = 'csv',
+/** This symbol depicts the stylized letter B with two vertical lines intersecting a circle. It represents Bitcoin, one of the most well-known decentralized cryptocurrencies used globally. */
+_currency_bitcoin = 'currency_bitcoin',
+/** It depicts multiple money symbols or coins moving from one state to another. This icon typically represents converting funds or exchanging value between different currencies. */
+_currency_exchange = 'currency_exchange',
+/** The depiction shows a stylized 'F' followed by three dots. This symbol is used to denote amounts of money measured in francs. */
+_currency_franc = 'currency_franc',
+/** This symbol depicts the currency sign for the Turkish Lira. It is used to represent money and financial transactions within Turkey. */
+_currency_lira = 'currency_lira',
+/** This icon displays the pound sterling currency symbol (£). It is typically used to indicate pricing or monetary value in British Pounds. */
+_currency_pound = 'currency_pound',
+/** A graphic representation of the Russian Ruble currency symbol. It is used globally to denote payments or values denominated in rubles. */
+_currency_ruble = 'currency_ruble',
+/** This image depicts the official symbol for Indian Rupees. It is used to represent financial transactions involving that currency. */
+_currency_rupee = 'currency_rupee',
+/** Depicts a circular coin featuring the Indian Rupee symbol. It commonly indicates pricing, payment options, or financial transactions related to India. */
+_currency_rupee_circle = 'currency_rupee_circle',
+/** The three-bar symbol depicts the currency of Japan. It represents the Japanese Yen, a common indicator used in financial and e-commerce contexts. */
+_currency_yen = 'currency_yen',
+/** Depicts a stylized representation of the official unit of Chinese currency, the Yuan. It is commonly used when discussing finances, transactions, or pricing amounts involving China's money. */
+_currency_yuan = 'currency_yuan',
+/** The icon depicts flowing, gathered fabric used for covering a window or passage. This symbol generally indicates options related to privacy, blocking views, or minimizing sections of information. */
+_curtains = 'curtains',
+/** Two draped curtains are depicted, completely covering a window or viewing area. This commonly suggests privacy, unavailability, or that the content is hidden from view. */
+_curtains_closed = 'curtains_closed',
+/** Shows varying styled characters and structural elements for specialized textual layout. This indicates the ability to customize typography beyond default options, enabling advanced text formatting. */
+_custom_typography = 'custom_typography',
+/** The icon depicts directional arrows arranged in a cohesive, looping pattern. It often represents continuity, repetition, or a process that repeats indefinitely. */
+_cycle = 'cycle',
+/** It depicts a massive, rotating weather pattern with swirling winds. This symbol suggests intense energy, powerful change, or significant upheaval. */
+_cyclone = 'cyclone',
+/** A warning symbol featuring an exclamation point enclosed within a geometric shape. It is used to alert users to potential hazards, risks, or important information requiring caution. */
+_dangerous = 'dangerous',
+/** A circle surrounding crescent moons indicates the ability to switch viewing modes. This option is typically used to reduce eye strain in low light conditions. */
+_dark_mode = 'dark_mode',
+/** A structured panel displaying multiple sections and information widgets. This represents an overview designed to show essential metrics and operational summaries in one place. */
+_dashboard = 'dashboard',
+/** It depicts a structured grid layout consisting of multiple individual framed sections or widgets. This pattern is used to present an organized overview of key metrics and data points at a glance. */
+_dashboard_2 = 'dashboard_2',
+/** The design features three rectangular shapes grouped together in a horizontal arrangement. It typically indicates the ability to expand or add new elements, widgets, or sections within an existing dashboard layout. */
+_dashboard_2_add = 'dashboard_2_add',
+/** A structured panel featuring multiple data widgets and controls, marked with an edit icon. This indicates a section of content that can be modified or customized by the user. */
+_dashboard_2_edit = 'dashboard_2_edit',
+/** It displays a panel or screen connected to a cogwheel symbol. This typically indicates settings, configuration options, or tools for the entire system view. */
+_dashboard_2_gear = 'dashboard_2_gear',
+/** A layout diagram showing horizontal alignment guides and a visible content grid structure. This indicates options for refining the visual arrangement or underlying format of displayed data elements. */
+_dashboard_customize = 'dashboard_customize',
+/** An exclamation point is displayed within a circle, often suggesting an immediate notice. This indicates that crucial data has been detected or that an important system alert needs user attention. */
+_data_alert = 'data_alert',
+/** A grid of small squares arranged in rows and columns. This commonly represents data, matrices, or structured datasets. */
+_data_array = 'data_array',
+/** Depicts a list with an item marked as verified or completed. It indicates that the entered information has been reviewed and is confirmed to be accurate. */
+_data_check = 'data_check',
+/** This icon shows an upward trending chart surrounded by various directional symbols. It represents the process of analyzing metrics to identify insights and understand complex information. */
+_data_exploration = 'data_exploration',
+/** A circular information bubble containing the letter 'i' is paired with an alert indicator. This signals important details, caveats, or metadata that should be noted about the displayed data. */
+_data_info_alert = 'data_info_alert',
+/** A stylized graphic of a database cylinder protected by a shield icon. This symbol indicates measures are in place to safeguard information and prevent data loss. */
+_data_loss_prevention = 'data_loss_prevention',
+/** A structured cube with internal lines represents organized information. This icon typically signifies a collection of data, record storage, or database entries. */
+_data_object = 'data_object',
+/** A circle with a diagonal line through it sits atop a small battery icon and an arrow. This indicates that bandwidth saving mode is active to conserve mobile data while browsing. */
+_data_saver_on = 'data_saver_on',
+/** It displays a grid structure composed of intersecting rows and labeled columns. This design element is used to organize, view, or sort large amounts of structured information. */
+_data_table = 'data_table',
+/** A fluctuating line is shown contained between two parallel horizontal bounds. This indicates that data is being monitored against predefined minimum and maximum acceptable ranges. */
+_data_thresholding = 'data_thresholding',
+/** A graph line connects to an input point and then shows a fluctuating path of measured data. This typically indicates monitoring metrics, transfer limits, or overall usage statistics for a connected service. */
+_data_usage = 'data_usage',
+/** A stack of cylinders represents structured containers for information. This typically indicates a repository or system used to store and manage large amounts of data. */
+_database = 'database',
+/** A stylized cylinder represents a database structure alongside an indicator of disconnection. This typically signifies that the application cannot access required data or is temporarily offline. */
+_database_off = 'database_off',
+/** It depicts three stacked columns next to a magnifying glass. This commonly symbolizes querying or retrieving specific information from structured data sources. */
+_database_search = 'database_search',
+/** A depiction of a stacked cylinder with an upward pointing arrow indicates data movement. This generally signifies uploading data from a client device to a server or cloud database. */
+_database_upload = 'database_upload',
+/** It depicts multiple blocks arranged in a structured, rectangular grid pattern. This symbolizes an organized collection of data used for analysis, research, or training models. */
+_dataset = 'dataset',
+/** Depicts two overlapping nodes connected by a straight line segment. This commonly illustrates the establishment of a relationship or connection between multiple distinct datasets. */
+_dataset_linked = 'dataset_linked',
+/** It depicts a calendar view marked by a starting point and an ending point. This symbol is commonly used to define a specific selection of dates or time period. */
+_date_range = 'date_range',
+/** Depicts a visual filter or function intended to enhance picture clarity. This is typically used in photography apps to sharpen images and reduce motion blur. */
+_deblur = 'deblur',
+/** A marker or stone engraved with symbolic figures. It is used to indicate a burial site or serve as a memorial for someone who has passed away. */
+_deceased = 'deceased',
+/** It depicts a line with a down-pointing arrow adjacent to a decimal indicator. This is commonly used to reduce values or decrease the displayed precision of numerical data. */
+_decimal_decrease = 'decimal_decrease',
+/** Depicts a number with a decimal point followed by an upward-pointing arrow. This indicates increasing precision or the ability to add more digits after the decimal marker. */
+_decimal_increase = 'decimal_increase',
+/** A raised wooden platform structure is depicted by the design. This space commonly serves as an outdoor veranda, patio, or resting area for scenic views. */
+_deck = 'deck',
+/** Depicts a cloud of mist dissipating or being cleared away. It typically signifies clarification, removing obscurity, or refreshing information to reveal truth. */
+_dehaze = 'dehaze',
+/** It depicts a receptacle, often styled as a wastebasket or trash bin. This symbol indicates that selected content or data should be permanently removed. */
+_delete = 'delete',
+/** The symbol depicts a garbage bin with a diagonal line or slash through it. This indicates permanent deletion or irreversible removal of data or content. */
+_delete_forever = 'delete_forever',
+/** Depicts a trash can or wastebasket icon, signifying the removal of data. This symbol typically indicates the ability to clear stored records or history logs. */
+_delete_history = 'delete_history',
+/** The icon shows an erase or sweep motion passing over represented waste material. This signifies permanently deleting or clearing unwanted data from the system. */
+_delete_sweep = 'delete_sweep',
+/** It depicts a delivery vehicle accompanied by a prominent lightning bolt icon. This suggests quick shipping or an extremely rapid delivery service. */
+_delivery_truck_bolt = 'delivery_truck_bolt',
+/** A small cargo truck is moving quickly on the road. This commonly indicates a speedy delivery or express shipping service. */
+_delivery_truck_speed = 'delivery_truck_speed',
+/** Depicts human figures or structured charts related to population counts. It is used to represent statistical data about populations, such as age distribution, growth, or composition. */
+_demography = 'demography',
+/** It depicts a concentrated cluster of multiple dots or points grouped together in an area. This symbol typically indicates high concentration, density, or coverage within data visualization tools. */
+_density_large = 'density_large',
+/** Depicts a vertical line segment with moderate thickness, suggesting intermediate spacing or density. This controls the physical compactness and amount of white space between lines of formatted text. */
+_density_medium = 'density_medium',
+/** It depicts multiple horizontal lines stacked closely together, varying in density and weight. This typically indicates options for managing data complexity or viewing detail levels within a document structure. */
+_density_small = 'density_small',
+/** Depicts a partial arrangement of teeth forming a natural smile curve. This symbol typically represents general dentistry, oral hygiene, or dental care services. */
+_dentistry = 'dentistry',
+/** A list displayed on a board showing departure information for various services. This symbol typically indicates the schedule or next arrival times at a transportation hub. */
+_departure_board = 'departure_board',
+/** The symbol displays multiple nested angle brackets with lines of structured code inside. This typically indicates that content or code has been successfully published and deployed to a live environment. */
+_deployed_code = 'deployed_code',
+/** Depicts programming brackets and lines contained within an organized box structure. It signifies that code has been successfully published or activated for use in a live environment. */
+_deployed_code_account = 'deployed_code_account',
+/** Depicts a warning triangle next to symbols suggesting source code or deployment processes. This indicates that the recently deployed code requires review or contains an operational error. */
+_deployed_code_alert = 'deployed_code_alert',
+/** The icon depicts stacked files or documents next to an arrow, symbolizing version control. It is typically used to view the complete chronological record of deployed software changes. */
+_deployed_code_history = 'deployed_code_history',
+/** A document or code block is shown moving forward, often accompanied by an arrow or directional symbol. This indicates that new software has been successfully deployed or updated to a live environment. */
+_deployed_code_update = 'deployed_code_update',
+/** It depicts a stylized representation of human skin with associated layers or textures. This icon relates to dermatology, skincare health, and various conditions affecting the skin. */
+_dermatology = 'dermatology',
+/** It depicts several lines of text arranged on a blank surface. This symbol indicates that more details or supplementary information are available about the item shown. */
+_description = 'description',
+/** Depicts the reversal of a selection or active state on an item. This function is used to clear a highlight or choice, returning the element to its default unselected status. */
+_deselect = 'deselect',
+/** This symbol depicts a combination of creative drawing tools and structured elements, often forming an abstract plan. It generally represents professional planning, creativity, or comprehensive design services. */
+_design_services = 'design_services',
+/** It depicts a rectangular surface supported by legs, commonly representing working furniture. This generally symbolizes an office workspace, studying, or general area for tasks. */
+_desk = 'desk',
+/** A classic landline telephone unit is shown resting on a desk surface. It generally represents phone services, calling, or professional contact methods. */
+_deskphone = 'deskphone',
+/** A computer monitor graphic displays an alert warning of restricted functionality. This indicates that remote connection or access to a specific system environment is currently unavailable. */
+_desktop_access_disabled = 'desktop_access_disabled',
+/** A stylized cloud hovers over a flat surface that resembles a desktop monitor. It generally represents remote storage, syncing data, or connectivity to online services. */
+_desktop_cloud = 'desktop_cloud',
+/** A stack of clouds rests on top of a flat surface. This typically represents cloud synchronization, backup services, or accessing stored data remotely. */
+_desktop_cloud_stack = 'desktop_cloud_stack',
+/** A stylized computer monitor is depicted in a horizontal, landscape orientation. This typically suggests content optimized for wide-screen viewing or multi-monitor layouts. */
+_desktop_landscape = 'desktop_landscape',
+/** A plus sign is displayed inside a stylized square frame suggesting a workspace. It typically indicates the function to add new content, element, or page to the current view. */
+_desktop_landscape_add = 'desktop_landscape_add',
+/** A desktop-style computer set up with an integrated monitor is depicted. It typically represents Apple hardware or the use of the macOS operating system. */
+_desktop_mac = 'desktop_mac',
+/** It depicts an object or frame with vertical dimensions. This indicates that the content should be viewed in portrait mode, which is optimal for many mobile displays. */
+_desktop_portrait = 'desktop_portrait',
+/** The icon is a minimalist outline drawing of a simple computer monitor screen. It typically signifies access to a workspace that can display several distinct applications, suggesting multi-tasking capabilities on a desktop operating system. */
+_desktop_windows = 'desktop_windows',
+/** It depicts shattered or broken elements flying away from a central point. This symbol often signifies breakage, decay, or the complete loss of function. */
+_destruction = 'destruction',
+/** The design is a simple, outlined equilateral triangle pointing upward. It typically functions as a universal symbol used to indicate caution, warning, or important directional information. */
+_details = 'details',
+/** A graphic illustrating an enclosed, bounded area within a larger space. This symbol is typically used to indicate a monitored activity section or designated operational zone. */
+_detection_and_zone = 'detection_and_zone',
+/** A caution sign shows a pedestrian figure and an exclusion zone with a diagonal line. This suggests restricted access or that the area is temporarily unsafe for general passage. */
+_detection_and_zone_off = 'detection_and_zone_off',
+/** A piece of equipment is depicted that appears to scan or sense an area. It typically indicates a function related to checking, searching for content, or verifying data. */
+_detector = 'detector',
+/** A flashing siren paired with a detector symbol is shown. This indicates that an immediate alert or monitored event has been detected, requiring attention. */
+_detector_alarm = 'detector_alarm',
+/** A rectangular shape is shown with internal bars representing a power cell's current charge level. This indicator communicates the remaining energy or operational status of an electronic device. */
+_detector_battery = 'detector_battery',
+/** The icon depicts a device installed within piping or at an intersection point. It commonly represents leak detection monitoring or water flow measurement capabilities. */
+_detector_co = 'detector_co',
+/** It depicts a signal detector or antenna symbol crossed out by a line. This commonly indicates that the connection is unavailable, meaning the device is offline. */
+_detector_offline = 'detector_offline',
+/** This icon depicts a round device resembling an installed alarm unit. It commonly signifies smoke detectors, indicating fire safety precautions or alerts. */
+_detector_smoke = 'detector_smoke',
+/** Depicts a circular ring with an internal indicator that suggests movement or progress. It typically signals that a system is actively running, such as scanning or detecting data status. */
+_detector_status = 'detector_status',
+/** Depicts a rectangular circuit board containing interconnected lines and component shapes. This symbol typically represents development architecture, underlying technical structure, or engineering concepts. */
+_developer_board = 'developer_board',
+/** Shows a rectangular circuit board with an indicator switch positioned in the off state. This commonly signifies that a piece of hardware or device is powered down and inactive. */
+_developer_board_off = 'developer_board_off',
+/** It depicts an open book with structured text and organizational elements on the pages. This suggests accessing documentation, guidelines, or learning resources for a topic. */
+_developer_guide = 'developer_guide',
+/** The icon depicts a television screen displaying technical or diagnostic information. It commonly indicates access to advanced settings, hidden developer options, or engineering modes on hardware devices. */
+_developer_mode_tv = 'developer_mode_tv',
+/** It shows a flexible band designed to secure an electronic gadget. This typically indicates that the device should be worn or carried on a strap. */
+_device_band = 'device_band',
+/** Depicts a central node connected to multiple radiating points or smaller shapes. This symbolizes integration and the management of several different devices or services in one location. */
+_device_hub = 'device_hub',
+/** A stylized device with a digital display and dials indicates control over temperature. It suggests smart home capabilities or HVAC system management. */
+_device_thermostat = 'device_thermostat',
+/** Depicts a cluster of various portable electronic devices, such as phones and tablets. This typically indicates settings used to view or manage linked hardware across different platforms. */
+_devices = 'devices',
+/** It depicts multiple layered rectangular devices, suggesting a stacked or folded form. This symbol usually relates to device settings, views, or managing multi-screen content. */
+_devices_fold = 'devices_fold',
+/** It depicts an electronic handheld device that is shown closed or folded over. This commonly symbolizes portability or a versatile, folding piece of technology. */
+_devices_fold_2 = 'devices_fold_2',
+/** A circular power symbol with a line through it indicates the turning off of functionality. This is typically used to signify that connected services or device features are disabled. */
+_devices_off = 'devices_off',
+/** Depicts a collection of modern electronic gadgets, such as smartphones and tablets. It symbolizes miscellaneous or diverse technological devices that do not fit into specific categories. */
+_devices_other = 'devices_other',
+/** Shows multiple electronic gadgets styled as if they are being worn on the body. This usually indicates settings, information, or functionality related to smartwatches and fitness trackers. */
+_devices_wearables = 'devices_wearables',
+/** A thermometer gauge is displayed with an indicator suggesting condensation or saturation. This measures the temperature at which air must cool to reach 100% humidity and form dew. */
+_dew_point = 'dew_point',
+/** It depicts a fluctuating line graph on a screen monitor, representing tracked vital signs or data analysis. This symbol typically signifies monitoring status, checking symptoms, or determining overall health conditions. */
+_diagnosis = 'diagnosis',
+/** A single, straight line drawn at an angle across a surface. It often signifies directional movement, advancement, or indicates a required sequence of steps. */
+_diagonal_line = 'diagonal_line',
+/** Depicts a standard phone dial pad along with signaling indicators. It signifies the ability to make or manage voice calls using Internet Protocol (VoIP) services. */
+_dialer_sip = 'dialer_sip',
+/** Depicts two overlapping speech bubbles. This commonly indicates a conversation, chat history, or dialogue function within an application. */
+_dialogs = 'dialogs',
+/** Depicts a rectangular arrangement of numbered buttons, forming a traditional keypad layout. This icon typically represents calling features or the process of entering phone numbers. */
+_dialpad = 'dialpad',
+/** A stylized geometric shape with four triangular facets. It commonly represents value, prestige, or a high quality rating. */
+_diamond = 'diamond',
+/** A stylized representation of brilliant sparkles or radiating light. This is commonly used to signify something premium, special, or high quality. */
+_diamond_shine = 'diamond_shine',
+/** Depicts a book format with the word dictionary visible on its cover or pages. It signifies resources for definitions, vocabulary lookups, and general reference material. */
+_dictionary = 'dictionary',
+/** Depicts two files or stacks of items positioned next to each other. It represents a comparison, showing what changes or discrepancies exist between two versions or states. */
+_difference = 'difference',
+/** A rectangular screen display is shown mounted in a public space. This suggests digital information regarding directions or exits outside of the current location. */
+_digital_out_of_home = 'digital_out_of_home',
+/** Depicts a smartphone screen accompanied by symbols representing self-care and balance. This feature helps users manage their digital time and maintain healthy usage habits. */
+_digital_wellbeing = 'digital_wellbeing',
+/** A heart icon is placed adjacent to elements related to eating and seating. It generally signifies a favored location or highly recommended dining experience. */
+_dine_heart = 'dine_heart',
+/** A table is set with chairs, indicating a full dining space. This suggests that meals can be enjoyed on site at the establishment. */
+_dine_in = 'dine_in',
+/** A decorative lamp is positioned above a table designed for eating. This icon typically indicates a suitable location within a restaurant or dining establishment. */
+_dine_lamp = 'dine_lamp',
+/** Cutlery and plates are arranged together in a typical place setting. This icon represents meals, formal settings, or the act of having dinner or lunch. */
+_dining = 'dining',
+/** Depicts a table set with dishes, cutlery, and glassware for a meal. This symbol is used to indicate dining services or restaurant locations. */
+_dinner_dining = 'dinner_dining',
+/** Depicts various signage pointing toward distinct destinations and routes. This icon indicates navigational help, guiding users through different modes of travel. */
+_directions = 'directions',
+/** Several arrows of varying types and sizes are arranged in a cluster. This symbol commonly indicates generalized navigation, options, or an alternative path. */
+_directions_alt = 'directions_alt',
+/** A directional sign is displayed with a diagonal slash crossing through it. This indicates that directions are unavailable, disabled, or should be ignored. */
+_directions_alt_off = 'directions_alt_off',
+/** The icon displays a bicycle with an arrow graphic overlaying it. This symbol directs attention to routes suitable for bicycles and cyclists navigating a specific area. */
+_directions_bike = 'directions_bike',
+/** Shows a stylized boat positioned next to navigational arrows. It indicates routes or directions for travel via watercraft. */
+_directions_boat = 'directions_boat',
+/** A bus symbol combined with a directional arrow or marker. This indicates directions or availability for public transit routes, specifically buses. */
+_directions_bus = 'directions_bus',
+/** This icon depicts an automobile alongside a set of directional signs. It is commonly used to indicate navigation routes or local car service directions. */
+_directions_car = 'directions_car',
+/** Depicts crossed arrows or a navigation path being disabled. This indicates that direction assistance, location tracking, or routing services are unavailable or turned off. */
+_directions_off = 'directions_off',
+/** A depiction of a tram traveling along tracks. This icon is commonly used to indicate directions or services related to railway and public transit travel. */
+_directions_railway = 'directions_railway',
+/** A stylized depiction of a modern train traveling along rails. It commonly indicates directions or routes related to public transit, such as a subway or tram stop. */
+_directions_railway_2 = 'directions_railway_2',
+/** A person is shown actively running, often accompanied by navigational arrows. This symbol typically indicates routes or distances associated with aerobic activity and fitness trails. */
+_directions_run = 'directions_run',
+/** This symbol shows an indicator pointing toward a subway entrance or station platform. It indicates navigational information related to underground rail travel systems. */
+_directions_subway = 'directions_subway',
+/** A stylized human figure is shown taking steps forward. This icon usually directs users to walking directions, suggesting a pedestrian route or path. */
+_directions_walk = 'directions_walk',
+/** Two opposing arrows form a circular loop, typically around an object or directory symbol. This indicates that information is being updated and matched across multiple locations or devices. */
+_directory_sync = 'directory_sync',
+/** This depicts a photographic lens with noticeable streaks of dirt and smudges. It indicates that the camera optics need cleaning to ensure clear images and video recordings. */
+_dirty_lens = 'dirty_lens',
+/** A selection box with a diagonal line passing through it. This indicates that an option or control is currently inactive and unavailable for interaction. */
+_disabled_by_default = 'disabled_by_default',
+/** A stylized drawing of a human eye that is visible or highlighted. This often represents themes related to vision disability, sight loss, or assistive technology. */
+_disabled_visible = 'disabled_visible',
+/** A fully colored circle shape. This often indicates an active state, completion of a process, or that a setting is turned on. */
+_disc_full = 'disc_full',
+/** A quarter note is depicted next to a curved arrow that points forward. This icon usually signals the function for discovering new songs or exploring musical content. */
+_discover_tune = 'discover_tune',
+/** Depicts a standard appliance used for washing dishes in a home kitchen. It represents cleanliness, sanitation, or the chore of doing dishes. */
+_dishwasher = 'dishwasher',
+/** A depiction of a standard household appliance used for washing dishes. This symbol represents routine kitchen tasks or overall domestic cleanliness. */
+_dishwasher_gen = 'dishwasher_gen',
+/** The image shows an arrow entering a box shape representing a system or display area. This indicates that data or information is being imported from an outside source. */
+_display_external_input = 'display_external_input',
+/** Depicts an angled computer monitor showing adjustment sliders or controls. This icon is used for managing visual preferences like resolution, color space, and screen brightness. */
+_display_settings = 'display_settings',
+/** The design is a simplified marker shaped like an inverted teardrop with a distinct pointer at its base. This symbol universally indicates a specific geographical location or point of interest on a map. */
+_distance = 'distance',
+/** Depicts several stylized human figures grouped together. This symbol represents community, inclusion, and the breadth of human experience. */
+_diversity_1 = 'diversity_1',
+/** The depiction features multiple stylized people gathered in a group setting. It symbolizes inclusion, varied identities, and the celebration of diversity within a community. */
+_diversity_2 = 'diversity_2',
+/** Three stylized figures are depicted standing together. This icon commonly represents the concept of inclusion, variety, or the coming together of diverse groups within a community. */
+_diversity_3 = 'diversity_3',
+/** Multiple stylized human figures are standing together. This symbolizes inclusion, variety, and the celebration of different identities or backgrounds. */
+_diversity_4 = 'diversity_4',
+/** A stylized depiction of interconnected nodes or a globe structure. This symbol relates to network name resolution, allowing devices to locate websites using names rather than numerical addresses. */
+_dns = 'dns',
+/** A symbol depicting the removal of a privacy or silence restriction. It signals that notifications and calls are now allowed through normally. */
+_do_not_disturb_off = 'do_not_disturb_off',
+/** Depicts a stylized symbol that indicates silence, privacy, or temporary unavailability. Activating this feature mutes notifications and alerts, helping the user minimize interruptions while focusing on work or sleep. */
+_do_not_disturb_on = 'do_not_disturb_on',
+/** A symbol consisting of a solid circle containing diagonal bars over sound waves. It signifies that interruptions are not desired, indicating requested silence or deep focus mode. */
+_do_not_disturb_on_total_silence = 'do_not_disturb_on_total_silence',
+/** A foot crossing over a stylized warning sign. This indicates an area that should not be walked on or entered. */
+_do_not_step = 'do_not_step',
+/** A hand is held up with the palm facing outward in a stop gesture. It indicates that an area or item should not be touched or accessed. */
+_do_not_touch = 'do_not_touch',
+/** A panel of icons displayed across the bottom edge of a screen. This area provides quick access to frequently used applications and system functions. */
+_dock_to_bottom = 'dock_to_bottom',
+/** Depicts a rectangular docking port structure with an arrow pointing to the left. This is used to indicate directional movement or where a device connects on the left side. */
+_dock_to_left = 'dock_to_left',
+/** Depicts a rectangular object with a connector extending horizontally to the right. This icon typically signifies connectivity, data transfer, or linking two separate elements together. */
+_dock_to_right = 'dock_to_right',
+/** A stack of papers with multiple sheets visible at different heights. This commonly represents a collection of files or organized written materials. */
+_docs = 'docs',
+/** A page document is shown with a plus sign positioned over it. This indicates that additional features, modules, or complementary content can be incorporated into documentation. */
+_docs_add_on = 'docs_add_on',
+/** Depicts a stylized document with adjacent symbols that represent programmable code segments. It indicates the ability to write custom scripts or automated functions within the workspace environment. */
+_docs_apps_script = 'docs_apps_script',
+/** A sheet of paper is depicted moving through a scanning apparatus. This usually indicates the process of converting physical documents or photos into digital files. */
+_document_scanner = 'document_scanner',
+/** Depicts stacked papers near a magnifying glass, symbolizing research. This icon indicates the function of searching or filtering content within stored files. */
+_document_search = 'document_search',
+/** Depicts a web address or network root symbol, often containing letters or slashes. This is typically used to identify the main location or domain name for a website or service. */
+_domain = 'domain',
+/** It shows the word "domain" connected to a plus sign. This is typically used when registering or linking an additional website address or subdomain. */
+_domain_add = 'domain_add',
+/** The image shows a standard internet domain symbol with a diagonal line crossing through it. This typically indicates that the domain name or website is currently unavailable or inaccessible. */
+_domain_disabled = 'domain_disabled',
+/** A stylized checkmark appears next to lines representing connected information or a web address. This signifies that an identity or property has been successfully verified and confirmed. */
+_domain_verification = 'domain_verification',
+/** A checked circle crossed out by a diagonal line. This indicates that verification is disabled or has not been completed for the associated domain. */
+_domain_verification_off = 'domain_verification_off',
+/** A patterned face covering is displayed in a stylized format. It often represents disguise, anonymity, or adopting a persona for performance. */
+_domino_mask = 'domino_mask',
+/** A series of checked items arranged like a list confirms completion across multiple points. This commonly indicates that all necessary steps, approvals, or tasks have been successfully finished. */
+_done_all = 'done_all',
+/** A square with a dashed line and an outline of a checkmark inside. This usually signifies completion or that an item has been checked but not yet confirmed. */
+_done_outline = 'done_outline',
+/** A large ring-shaped pastry with a hole in the center. It typically represents a sweet treat or dessert item. */
+_donut_large = 'donut_large',
+/** Depicts a small, circular pastry with a central hole. This icon commonly represents sweets, treat items, or playful concepts in design interfaces. */
+_donut_small = 'donut_small',
+/** A depiction of a closed door accompanied by an outward-curving arrow pointing backward. It typically signifies returning to a previous step, view, or area within an application. */
+_door_back = 'door_back',
+/** A depiction of an exterior door accompanied by a visible doorbell or chime mechanism. This generally indicates an entrance point or an alert for visitors arriving at a residence. */
+_door_front = 'door_front',
+/** A stylized depiction of a door that is swung wide open. It commonly indicates entry, accessibility, or that a location is available to enter. */
+_door_open = 'door_open',
+/** A rectangular door with a small sensor element attached to the bottom corner. It typically indicates monitoring of entry or exit status. */
+_door_sensor = 'door_sensor',
+/** Depicts a door that moves by gliding horizontally on a set of tracks. This icon typically represents access points or automatic sliding barriers in security and automation contexts. */
+_door_sliding = 'door_sliding',
+/** It depicts a small electronic unit mounted next to an entranceway. This commonly symbolizes the notification of an arrival or visitor at a home. */
+_doorbell = 'doorbell',
+/** Depicts a classic, wall-mounted doorbell unit with its associated button and bell. This symbol is often used to indicate arrival notifications or the need for attention. */
+_doorbell_3p = 'doorbell_3p',
+/** A small bell mounted on a mechanism suggests the ringing of a doorbell. This icon commonly indicates an incoming visitor or an audible notification. */
+_doorbell_chime = 'doorbell_chime',
+/** Two opposing arrows are depicted pointing horizontally away from each other. This frequently signifies synchronization, refresh functions, or a bidirectional exchange of data. */
+_double_arrow = 'double_arrow',
+/** Depicts figures descending a snowy hill on skis. This icon represents the activity and sports associated with downhill skiing. */
+_downhill_skiing = 'downhill_skiing',
+/** An arrow points downwards into a horizontal bar or line. This commonly indicates retrieving data from the internet onto your local device. */
+_download = 'download',
+/** A downward-pointing arrow enters a horizontal bar or tray shape. This symbol generally indicates the process of retrieving content, such as downloading files or saving data. */
+_download_2 = 'download_2',
+/** A downward-pointing arrow rests within a container marked with a checkmark. This commonly signifies that content has been downloaded or retrieved successfully. */
+_download_done = 'download_done',
+/** A downward pointing arrow suggests the acquisition of content into local storage. This feature allows you to save materials for viewing or use when offline. */
+_download_for_offline = 'download_for_offline',
+/** Depicts an arrow pointing downward, often indicating material entering a receptacle or device. It signifies that data or content is being retrieved from the internet and saved locally. */
+_downloading = 'downloading',
+/** Depicts an open document or sheet of paper with a specific indicator mark. This signifies content that is still a work-in-progress and has not been finalized for publication. */
+_draft = 'draft',
+/** Depicts a list of pending medical prescriptions or orders. This signifies items, such as medication details, that have been requested but are not yet approved or ready for use. */
+_draft_orders = 'draft_orders',
+/** It depicts several layered sheets of paper or documents, symbolizing unfinished correspondence. This area stores emails that you have started writing but are not yet ready to send out. */
+_drafts = 'drafts',
+/** A cursor is shown grabbing and moving an item from one point to another. This action typically signifies the ability to drag content or elements between different areas of the screen. */
+_drag_click = 'drag_click',
+/** Depicts a small, movable grip usually placed on the corner or edge of a container. This handle allows users to resize or reposition elements by dragging the cursor. */
+_drag_handle = 'drag_handle',
+/** A sequence of small dots are shown evenly spaced along a horizontal line. This typically signals an interactive zone, suggesting the user can drag content into or across this specific location. */
+_drag_indicator = 'drag_indicator',
+/** A set of directional arrows pointing outward from a center point on a path. It indicates the freedom to pan or move across a wide-ranging surface, such as a map. */
+_drag_pan = 'drag_pan',
+/** A hand is holding various writing implements like pens, pencils, and styluses. This indicates actions related to drawing, editing, or creating handwritten notes. */
+_draw = 'draw',
+/** The symbol depicts a freeform, undulating squiggle line. It commonly indicates the ability to draw, sketch, or record abstract handwriting input. */
+_draw_abstract = 'draw_abstract',
+/** Several images are layered and assembled together in a creative arrangement. This suggests the ability to combine multiple elements into one unified visual piece. */
+_draw_collage = 'draw_collage',
+/** A piece of furniture consisting of a main body and several stacked drawers. It is used to represent household storage, often for clothing or personal items. */
+_dresser = 'dresser',
+/** An arrow points outward from a cloud-like storage container. This symbol indicates transferring or backing up local data to an external location. */
+_drive_export = 'drive_export',
+/** It depicts a container moving across an arrow path from one location to another. This signifies the action of transferring or relocating files and folders within a storage drive. */
+_drive_file_move = 'drive_file_move',
+/** It depicts a writing instrument, such as a pencil or stylus, drawn in a diagonal line across a surface. This universally symbolizes the ability to edit, annotate, or rename files and data. */
+_drive_file_rename = 'drive_file_rename',
+/** A folder symbol with an upward pointing arrow positioned above it. This signifies the action of transferring local content or files up to cloud storage or a network drive. */
+_drive_folder_upload = 'drive_folder_upload',
+/** A flying unmanned vehicle with visible propellers and a main body structure. It commonly symbolizes advanced aerial technology, often used for photography or surveillance. */
+_drone = 'drone',
+/** A small quadcopter-style drone is shown flying in the air. It commonly represents advanced aerial technology or remote monitoring services. */
+_drone_2 = 'drone_2',
+/** A box with an adjacent downward-pointing triangle or arrow is depicted. This indicates that clicking the element will reveal a menu or list of additional options. */
+_dropdown = 'dropdown',
+/** The design features a downward-pointing arrow enclosed within a smooth, rounded oval shape. It typically indicates that clicking or tapping will reveal a list of additional options or choices. */
+_dropdown_menu = 'dropdown_menu',
+/** A medical dropper is shown positioned near a simplified representation of the eye. It typically signifies vision care, ophthalmic treatment, or applying prescribed drops. */
+_dropper_eye = 'dropper_eye',
+/** A depiction of an open palm with the thumb pointed down away from the fingers. It commonly serves as a gesture to express disapproval, disagreement, or that something is poor quality. */
+_dry = 'dry',
+/** A stylized depiction of hanging garments and cleaning equipment. This typically indicates a facility or service point for professional dry cleaning. */
+_dry_cleaning = 'dry_cleaning',
+/** Depicts two separate computer monitors arranged horizontally. It often signifies split-screen view or multi-display functionality within an application. */
+_dual_screen = 'dual_screen',
+/** Depicts two distinct figures or symbols standing side-by-side. This icon is used to indicate a feature designed for pairing, collaboration, or activity involving two people. */
+_duo = 'duo',
+/** It depicts a recording device or digital tape mechanism. This symbol represents the function of saving, reviewing, and managing video content. */
+_dvr = 'dvr',
+/** Depicts a continuously streaming series of stacked items. This commonly represents real-time, automatically updated content like an RSS feed or activity timeline. */
+_dynamic_feed = 'dynamic_feed',
+/** Depicts a customizable template or structured form field. This indicates that the input area is adaptive and changes based on user selections or context. */
+_dynamic_form = 'dynamic_form',
+/** It depicts a generalized human silhouette used to represent a user's online profile. This icon is typically employed when designating an emergency contact or personal avatar. */
+_e911_avatar = 'e911_avatar',
+/** A symbol depicting a distress signal marker and an alert icon. This indicates a fast access point for critical assistance or emergency services. */
+_e911_emergency = 'e911_emergency',
+/** Depicts signal bars and associated data indicators, signifying wireless connection capability. It shows that the device has access to mobile internet service via a cellular network. */
+_e_mobiledata = 'e_mobiledata',
+/** This badge depicts an 'e' symbol typically associated with signal strength or connectivity status. It indicates that mobile data is available and enabled for use on the device. */
+_e_mobiledata_badge = 'e_mobiledata_badge',
+/** An ear depicted next to radiating sound waves. This indicates that audio is playing or being heard, often used for listening modes and sound output features. */
+_ear_sound = 'ear_sound',
+/** A small, closed case with an earbud on one side. It represents wireless audio devices or connections to music and calls. */
+_earbud_case = 'earbud_case',
+/** Depicts a standalone earpiece connected by a wire. It typically indicates audio settings, sound output, or connection options for media devices. */
+_earbud_left = 'earbud_left',
+/** Depicts an audio connector or earbud jack positioned to the right. It commonly indicates sound settings, connectivity controls, or audio input/output options. */
+_earbud_right = 'earbud_right',
+/** A pair of small audio listening devices, typically shown connected by a wire or headband. This commonly indicates access to music, podcasts, or any type of multimedia sound content. */
+_earbuds = 'earbuds',
+/** The image depicts a pair of small, connected earbuds designed for listening. This symbol generally indicates audio settings, sound functionality, or music playback options. */
+_earbuds_2 = 'earbuds_2',
+/** A pair of wireless earbuds is shown next to a battery life indicator. This symbol indicates the current power level or charging status of audio headphones. */
+_earbuds_battery = 'earbuds_battery',
+/** Depicts a stylized sun rising above the horizon line. This commonly suggests dawn, sunrise, or the beginning of a new period or activity. */
+_early_on = 'early_on',
+/** It depicts a dramatically jagged and uncontrolled wave pattern. This reading is commonly used to signify a severe, unstable, or critical disruption in vitals signs. */
+_earthquake = 'earthquake',
+/** A straight line with an arrowhead pointing to the right. It often indicates forward progress, direction, or continuation. */
+_east = 'east',
+/** The icon displays a fluctuating line graph spanning across the silhouette of a heart. It represents medical monitoring, typically used to check heart rhythm and overall cardiovascular health. */
+_ecg = 'ecg',
+/** The symbol depicts a stylized heart outline with a fluctuating electrical wave drawn inside. It is commonly used to represent cardiac health, vital signs monitoring, or cardiology services. */
+_ecg_heart = 'ecg_heart',
+/** It depicts a stylized leaf structure, symbolizing nature and growth. This symbol is commonly used to indicate eco-friendliness or sustainable practices. */
+_eco = 'eco',
+/** A depiction of a hand waving or gesturing. This commonly signifies greeting, acknowledgment, or saying goodbye. */
+_eda = 'eda',
+/** The icon shows a stylized pencil drawing or writing across an area of text. This symbol is used to indicate that content can be modified, revised, or edited. */
+_edit = 'edit',
+/** A pencil is positioned above an arrow pointing downwards. This typically suggests expanding detailed information or having options available beneath the current section. */
+_edit_arrow_down = 'edit_arrow_down',
+/** An upward pointing arrow appears alongside an editing symbol. This typically signifies expanding content or revising details on a higher level. */
+_edit_arrow_up = 'edit_arrow_up',
+/** Depicts a writing instrument next to data fields, suggesting modification. This indicates that specific properties or underlying details of an item can be edited or adjusted. */
+_edit_attributes = 'edit_attributes',
+/** A pencil is positioned next to a visual representation of sound waves or an audio waveform. This indicates that the associated content can be modified, trimmed, recorded, or otherwise edited. */
+_edit_audio = 'edit_audio',
+/** The icon depicts a sheet of paper or calendar page paired with an editing pen or stylus. It commonly represents the ability to schedule events, revise dates, or make necessary modifications to plans. */
+_edit_calendar = 'edit_calendar',
+/** The design features a simple rectangular document accompanied by a stylized pencil or pen. This icon is commonly used in user interfaces to indicate that content can be edited, modified, or revised. */
+_edit_document = 'edit_document',
+/** This icon depicts a standard map location pin containing a writing instrument like a stylus or pencil. It is used to indicate the action of editing, modifying, or updating specific geographic locations or points on a map. */
+_edit_location = 'edit_location',
+/** The icon depicts a stylized teardrop-shaped marker, commonly recognized as a geographical map pin. It generally signifies the ability to select, adjust, or define a precise point of interest within a mapping feature. */
+_edit_location_alt = 'edit_location_alt',
+/** The illustration features several horizontal lines suggesting text or content, accompanied by a stylized writing instrument that looks like a pencil or stylus. This icon typically signals an action related to modifying existing material, such as editing notes, annotating documents, or making revisions. */
+_edit_note = 'edit_note',
+/** The design features a notification bell marked by an adjacent or superimposed editing symbol. It is typically used to access and manage editable settings related to alerts or notifications. */
+_edit_notifications = 'edit_notifications',
+/** The illustration shows a stylized writing utensil crossed out with an 'X'. This symbol typically indicates the ability to disable editing features or revert content to its original state. */
+_edit_off = 'edit_off',
+/** The design depicts a segmented pathway being marked or adjusted by a stylized drawing tool. This icon commonly signifies the ability to edit, modify, or customize a route on a map. */
+_edit_road = 'edit_road',
+/** The design shows a square outline with a pencil, positioned as if making an edit inside it. This icon is widely used to symbolize the action of revising content, editing documents, or modifying information. */
+_edit_square = 'edit_square',
+/** The icon depicts a prominent checkmark enclosed within a stylized, six-sided hexagonal boundary. It is generally used to indicate that an item has been selected, verified, or approved by an editor or system administrator. */
+_editor_choice = 'editor_choice',
+/** The illustration is a smooth, symmetrical oval shape that clearly resembles an egg. Conceptually, it often symbolizes life cycles, potential, or simple natural forms in various contexts. */
+_egg = 'egg',
+/** The design consists of an outer oval shape containing a solid circular spot near its center. This icon commonly symbolizes natural ingredients, such as avocado or beans, or can represent concepts like beginnings or sustenance. */
+_egg_alt = 'egg_alt',
+/** The icon depicts a stylized arrow or triangular shape pointing outward away from an implied source. It universally represents an action of removal or dismissal, indicating that something—such as media, data, or a module—should be ejected or exited. */
+_eject = 'eject',
+/** The design illustrates a simplified human figure depicted in motion while utilizing a supportive mobility aid, such as a cane or walker. It commonly indicates accessibility routes or services designed for individuals with limited mobility or those requiring age-related assistance. */
+_elderly = 'elderly',
+/** A black silhouette depicts an older woman walking forward while using a cane. This symbol is commonly used to represent caregiving services, home health visits, or general support for seniors with mobility challenges. */
+_elderly_woman = 'elderly_woman',
+/** The icon depicts a stylized, two-wheeled vehicle built for cycling. It generally signifies modern, sustainable mobility or the use of electrically assisted bicycles for local travel and commuting. */
+_electric_bike = 'electric_bike',
+/** The design is a sharp, zig-zagging line that resembles a lightning bolt. It typically symbolizes electrical power, energy levels, charging status, or high intensity. */
+_electric_bolt = 'electric_bolt',
+/** The design depicts a streamlined side profile of a modern passenger car. This icon signifies electric or battery-powered vehicles, representing sustainable and eco-friendly transportation options. */
+_electric_car = 'electric_car',
+/** The icon shows a circular meter face containing an internal lightning bolt symbol. It is typically used to symbolize electrical power monitoring or general energy usage measurement. */
+_electric_meter = 'electric_meter',
+/** The design depicts a small, two-wheeled personal vehicle with a body suitable for electric power. It is commonly used in maps or transit apps to indicate available e-scooter or moped rental services. */
+_electric_moped = 'electric_moped',
+/** The icon shows the side view of a compact, motorized three-wheeled vehicle accompanied by an electrical lightning bolt symbol beneath it. This typically represents local electric transportation services, such as e-rickshaws or battery-powered delivery vehicles. */
+_electric_rickshaw = 'electric_rickshaw',
+/** It features a simplified outline of a standing scooter, including wheels and steering controls. Functionally, it denotes options for e-scooter rental or sustainable short-distance commuting. */
+_electric_scooter = 'electric_scooter',
+/** The icon depicts a stylized electrical plug attached to an accompanying cable or wire. It generally symbolizes connectivity, representing essential utilities such as charging, power supply, or data services. */
+_electrical_services = 'electrical_services',
+/** The design features a line graph plotted against an implied horizontal axis. This generally rising curve symbolizes upward movement, indicating growth or increasing levels over time. */
+_elevation = 'elevation',
+/** The design shows a simple, contained rectangle representing an elevator lift. This icon signifies that mechanical vertical transport is available, ensuring the location is accessible to everyone, including those with limited mobility or carrying large items. */
+_elevator = 'elevator',
+/** The design is a simple, four-pointed star shape composed of intersecting lines. This symbol is commonly used in writing to mark footnotes or indicate that multiple options are available. */
+_emergency = 'emergency',
+/** The design depicts a single, stylized flame rising from a solid base point. It is commonly used to represent active heat, general warmth, or the availability of heating services. */
+_emergency_heat = 'emergency_heat',
+/** The design consists of wavy vertical lines followed by an exclamation mark. This symbol is used as a warning sign for extreme or emergency levels of heat. */
+_emergency_heat_2 = 'emergency_heat_2',
+/** An alert graphic featuring an exclamation mark set inside a rhombus shape. It signals that immediate attention is needed for critical information or emergency procedures. */
+_emergency_home = 'emergency_home',
+/** The design shows an outline of a video camera, featuring a central body with radiating elements and a protruding lens section on the right. This icon generally signifies recording functionality, often implying the ability to capture critical footage or save essential moments. */
+_emergency_recording = 'emergency_recording',
+/** A stylized map marker is shown with signal strength waves emanating from above it. This indicates the ability to share your current geographical location, typically used as a safety feature or in emergency situations. */
+_emergency_share = 'emergency_share',
+/** The design features radiating curved lines that are crossed out by a diagonal prohibition slash. This symbol indicates that wireless connectivity, like Wi-Fi or network sharing, has been deactivated or is currently unavailable. */
+_emergency_share_off = 'emergency_share_off',
+/** The illustration depicts various items associated with preparing and serving hot beverages, such as cups or brewing apparatus. This icon is used to indicate the presence of refreshment services, drink stations, or cafes in a physical location. */
+_emoji_food_beverage = 'emoji_food_beverage',
+/** The image shows a smiling face attached to a stylized gondola or boat structure. It is typically used to represent the exchange of emotional messages or communication being transported through chat. */
+_emoji_language = 'emoji_language',
+/** The design features a simple, symmetrical five-pointed star outline. It is commonly used to indicate favorites, importance, or something highly rated. */
+_emoji_nature = 'emoji_nature',
+/** The design is a simple, stylized drawing of an incandescent lightbulb. It is commonly used to represent inspiration, a brilliant idea, or knowledge gained. */
+_emoji_objects = 'emoji_objects',
+/** The icon depicts a simple black silhouette of a standing human figure with one arm raised in an open gesture. It typically represents a person making a greeting, waving hello, or indicating participation in a group activity. */
+_emoji_people = 'emoji_people',
+/** The icon displays an assortment of popular graphical elements like music notes, plus signs, percentages, and thermometers. These symbols are used to represent various concepts such as progress, volume levels, discounts, or general measurements in digital communication. */
+_emoji_symbols = 'emoji_symbols',
+/** The illustration depicts a vehicle, such as a bus or car, positioned against a backdrop of buildings and urban streets. It commonly signifies local transportation services, public transit routes, or general directions for ground travel within a city setting. */
+_emoji_transportation = 'emoji_transportation',
+/** The design is a symbolic arrangement of characters meant to represent human facial expressions. These symbols are used in digital text to quickly convey emotion, tone, or sentiment that would otherwise be ambiguous. */
+_emoticon = 'emoticon',
+/** The icon depicts a rectangular frame containing four empty squares arranged neatly in a two-by-two grid. It typically symbolizes an empty dashboard or customizable area where widgets and modules can be added. */
+_empty_dashboard = 'empty_dashboard',
+/** The design features a circular border containing an arrow that sweeps down from the top center. When used for functionality, this symbol typically indicates refreshing content or enabling a setting by returning it to its active state. */
+_enable = 'enable',
+/** The design consists of a protective shield shape surrounding a closed padlock symbol. This universally indicates that content or data is secured, encrypted, and private from unauthorized viewing. */
+_encrypted = 'encrypted',
+/** The icon depicts a plus sign positioned near or integrated with a stylized padlock symbol. It generally signifies the process of securely adding new information, features, or connections that require encryption or enhanced security measures. */
+_encrypted_add = 'encrypted_add',
+/** The design features a plus sign centered within a stylized hexagonal or shield-like boundary. This typically indicates the action of adding, creating, or initiating something that requires strong security protection or encryption. */
+_encrypted_add_circle = 'encrypted_add_circle',
+/** The icon displays a minus sign centrally enclosed within a circular border. It typically indicates that the represented data point or result is unavailable, restricted, or intentionally obscured for privacy reasons. */
+_encrypted_minus_circle = 'encrypted_minus_circle',
+/** The design features a protective symbol, resembling a shield or padlock, overlaid with a diagonal slash mark. This typically indicates that security protocols are disabled, meaning data transmission or storage is not encrypted or protected. */
+_encrypted_off = 'encrypted_off',
+/** The icon depicts two parallel, symmetrical vertical strokes connected overhead by a graceful, inverted U-shaped curve. This design is commonly used to symbolize symmetry or to represent natural forms such as horns, ears, or architectural brackets. */
+_endocrinology = 'endocrinology',
+/** The design shows a stylized wind turbine structure mounted on an upright pole with rotating blades. It is commonly used to symbolize renewable energy, clean power generation, and environmental sustainability. */
+_energy = 'energy',
+/** The design features an elegant leaf placed centrally within a radiating, star-like outline. This icon typically represents environmental initiatives, energy conservation programs, or efforts toward sustainability. */
+_energy_program_saving = 'energy_program_saving',
+/** The icon depicts a bar graph structure adjacent to an overlying stylized leaf shape. It is used to track resource consumption and measure environmental impact, specifically quantifying energy usage over time. */
+_energy_program_time_used = 'energy_program_time_used',
+/** The icon literally depicts a stylized leaf silhouette containing an electric lightning bolt drawn inside it. It is commonly used to symbolize energy efficiency, green power sources, or environmentally friendly sustainability initiatives. */
+_energy_savings_leaf = 'energy_savings_leaf',
+/** The design features a stylized bust wearing a hard hat alongside several floating gears of varying sizes. This icon is commonly used to represent technical expertise, mechanical engineering, or comprehensive troubleshooting services. */
+_engineering = 'engineering',
+/** The design is a simple, stylized representation of a locked padlock with a solid body and a secured top shackle. It typically signifies strong digital protection, such as high-level security, privacy, or enhanced encryption. */
+_enhanced_encryption = 'enhanced_encryption',
+/** It depicts a simple outline of a stylized human head in profile view. This icon commonly represents personal identity or user accounts, but it can also be used to symbolize cognitive ability or complex thought processes. */
+_ent = 'ent',
+/** The icon depicts the simple outline of a classic, rectangular briefcase. It typically symbolizes business ventures, professional work, or corporate services. */
+_enterprise = 'enterprise',
+/** The icon visually depicts a closed, structured container, such as a folder or briefcase, which is crossed out by a diagonal cancellation slash. It commonly indicates the cancellation of business features, the removal of professional services, or the deactivation of associated workload capacity. */
+_enterprise_off = 'enterprise_off',
+/** The symbol consists of two parallel horizontal lines stacked one above the other. In mathematics, it is used to indicate that the values or expressions on either side are equal. */
+_equal = 'equal',
+/** The image depicts a series of adjacent vertical bars with varying heights. This symbol represents an equalizer display, visually illustrating the amplitude and frequency changes in audio signals for music or media playback. */
+_equalizer = 'equalizer',
+/** The icon depicts a simple, solid black shape that resembles an eraser or marking tool tip. It signifies the function of erasing or correcting drawings and handwritten notes within a digital workspace. */
+_eraser_size_1 = 'eraser_size_1',
+/** The design is a solid, simple oblong black shape that clearly resembles an ink eraser. It typically symbolizes the function of removing or correcting mistakes made in any form of digital text or drawing. */
+_eraser_size_2 = 'eraser_size_2',
+/** The icon depicts a solid, black, oblong shape that strongly resembles an eraser tool. This symbol typically indicates the ability to remove or clear selected content within a digital interface. */
+_eraser_size_3 = 'eraser_size_3',
+/** The icon is a solid black, smoothly rounded oblong shape. It typically indicates a function used to erase, clear selections, or undo entered input data. */
+_eraser_size_4 = 'eraser_size_4',
+/** The icon literally depicts a small, rectangular object resembling a physical eraser used for correcting marks. Functionally, it indicates the ability to clear text, remove formatting, or delete selected content within a document or interface. */
+_eraser_size_5 = 'eraser_size_5',
+/** It depicts a bold exclamation mark centered within a circular border. This universally recognized symbol is used to alert users to warnings, errors, or any condition requiring immediate attention. */
+_error = 'error',
+/** The design shows a wavy, zigzag line contained within a circular border. This symbol commonly indicates an electrical fault, system error, or malfunction that requires attention. */
+_error_med = 'error_med',
+/** The design shows two angled, parallel lines forming a diagonal path within a square frame. It is used as a universal sign directing travelers to a mechanized passage for changing vertical levels. */
+_escalator = 'escalator',
+/** The design visually depicts a caution symbol near a stairway or moving escalator structure. This icon is used to warn people about potential dangers and necessary precautions while navigating public transit areas. */
+_escalator_warning = 'escalator_warning',
+/** The symbol is the internationally recognized graphic representation for a major European currency unit. It is used worldwide to denote monetary value and facilitate financial transactions across the Eurozone. */
+_euro = 'euro',
+/** The symbol is composed of curved strokes forming a base structure with two distinct internal vertical lines. It serves as the official sign for the European Euro currency, representing money within the Eurozone economy. */
+_euro_symbol = 'euro_symbol',
+/** The icon displays the capitalized letters E and V within a defined badge shape. It universally serves as a symbol for Electric Vehicles, indicating that the vehicle runs on electrical power rather than traditional fossil fuels. */
+_ev_mobiledata_badge = 'ev_mobiledata_badge',
+/** It depicts a circular boundary that is visually divided into sections by overlapping curved lines. This icon commonly represents restricted access, a disabled feature, or adjusting private settings to limit visibility. */
+_ev_shadow = 'ev_shadow',
+/** The icon depicts a partial, segmented arc shape that includes visible internal lines and shading. It is typically used to symbolize an additive process, such as combining data points or merging content into an existing structure. */
+_ev_shadow_add = 'ev_shadow_add',
+/** The design consists of an encompassing curved arc paired with internal diagonal lines and an attached horizontal line segment. This symbol commonly indicates deletion, cancellation, or the removal of marked content within a digital interface. */
+_ev_shadow_minus = 'ev_shadow_minus',
+/** The icon depicts a stylized battery symbol featuring an internal lightning bolt, connected by a cord to an external charging receptacle. It universally represents the process of recharging power, specifically indicating electric vehicle (EV) fueling or portable battery replenishment. */
+_ev_station = 'ev_station',
+/** The icon depicts a stylized representation of a calendar with a clearly marked circular spot in one quadrant. This design is commonly used to symbolize an appointment, scheduled event, or important date on a planner. */
+_event = 'event',
+/** The icon depicts a simple, rectangular calendar page containing a prominent checkmark symbol. It is typically used to confirm that an event has been scheduled or that a date is available on your personal timeline. */
+_event_available = 'event_available',
+/** The design shows a standard calendar grid marked with a prominent cross, indicating a specific date or period. This symbol generally means that the time slot is already booked, unavailable, or has been canceled from the schedule. */
+_event_busy = 'event_busy',
+/** The design depicts two separate horizontal line segments, with a solid square block attached to the end of each line. This icon typically represents a list, sequence, or collection of recorded events, such as entries in an event log or timeline history. */
+_event_list = 'event_list',
+/** The icon depicts a stylized clipboard containing ruled paper with segmented areas for writing. It is commonly used to represent scheduling, planning, and viewing an agenda or meeting notes. */
+_event_note = 'event_note',
+/** The design depicts a date-related symbol accompanied by an arrow forming a cycle. This icon is used to indicate that an event or meeting recurs over time, allowing users to set up repeating schedules within planning applications. */
+_event_repeat = 'event_repeat',
+/** The design is a simple, abstract representation of structured seating furniture, featuring a rectangular backrest over a solid base. It commonly indicates the presence of an assigned seat or general seating availability at events, theaters, or waiting areas. */
+_event_seat = 'event_seat',
+/** The illustration depicts a calendar or document paired with an arrow pointing to the right. It signifies movement forward in time, indicating that an event is approaching or scheduled for the future. */
+_event_upcoming = 'event_upcoming',
+/** The design is a punctuation mark composed of a vertical line topped with a dot. It is used to denote strong emotion, sudden surprise, or important warnings in written and digital communication. */
+_exclamation = 'exclamation',
+/** The icon depicts a pair of weights joined by a central bar, resembling traditional dumbbells or barbells. It is commonly used to symbolize physical activity, strength training, and a commitment to improving one's overall fitness. */
+_exercise = 'exercise',
+/** The icon depicts a solid arrow pointing right enclosed within a square border. This symbol typically indicates an exit action or moving from one view to another application. */
+_exit_to_app = 'exit_to_app',
+/** The icon depicts two opposing arrowheads placed between parallel horizontal lines. It commonly signals that a section of content can be expanded or collapsed to show more detail. */
+_expand = 'expand',
+/** The icon displays two vertically stacked chevron arrow shapes that point in opposing directions. It is used to indicate the function of expanding or revealing all available sections of collapsed content simultaneously. */
+_expand_all = 'expand_all',
+/** The design features a circular outline enclosing a downward-pointing chevron or arrow. It is commonly used in user interfaces to signify collapsible content or that more information can be expanded and viewed below. */
+_expand_circle_down = 'expand_circle_down',
+/** The icon features a large circle containing a simple arrow pointing directly to the right. This symbol is widely used in user interfaces to indicate that more information is available, prompting the user to expand content or proceed to the next step. */
+_expand_circle_right = 'expand_circle_right',
+/** The icon features a simple upward-pointing arrow centered inside a circular border. It commonly signifies expansion, increasing size, or scrolling to reveal more content above the current view. */
+_expand_circle_up = 'expand_circle_up',
+/** The icon consists of four corner arrows forming an open square shape. It is commonly used to signal that content can be expanded, revealing hidden information or displaying further details. */
+_expand_content = 'expand_content',
+/** The icon depicts two chevrons—one pointing upward and one pointing downward—stacked vertically. This symbol is commonly used in user interfaces to indicate that a section or panel can be expanded or collapsed to reveal more information. */
+_expansion_panels = 'expansion_panels',
+/** The icon depicts a laboratory flask or beaker connected to associated equipment used for measurement or mixing. It is typically used to symbolize science, chemistry experiments, or any process involving research, testing, and liquid analysis. */
+_experiment = 'experiment',
+/** The design consists of a universal alert or caution sign, often incorporating an exclamation point within a triangle. It is used to warn users that the material presented may contain sensitive, mature, or unfiltered content. */
+_explicit = 'explicit',
+/** The design features a stylized pointed shape centered within a complete circular border. It commonly indicates functionality for discovery, navigation, or viewing related content within an application. */
+_explore = 'explore',
+/** The design consists of a location marker—a common map pin shape—set against a solid circle. This icon is generally used to signify functionality for discovering points of interest, mapping nearby areas, or viewing the current geographical location. */
+_explore_nearby = 'explore_nearby',
+/** The design features a circular motif crossed out by a diagonal line. This universally recognized symbol indicates that a function, such as exploration mode or location tracking, has been deactivated or turned off. */
+_explore_off = 'explore_off',
+/** The design is a highly symmetrical and multi-layered geometric motif resembling an ornate rosette or stylized flower. It typically represents concepts of harmony, wholeness, and spiritual unity in decorative arts and sacred geometry. */
+_explosion = 'explosion',
+/** The icon depicts a stylized document marked with multiple horizontal lines and is paired with an arrow pointing outward. It signifies the process of exporting or sharing notes by saving their contents to another location or file format. */
+_export_notes = 'export_notes',
+/** The design typically uses a scale, meter, or abstract graphic to represent the amount of incoming light. This indicator helps users balance brightness levels to achieve optimally exposed images or readings. */
+_exposure = 'exposure',
+/** The icon literally depicts the mathematical negative number one (-1). It typically signifies a decrement, representing a reduction of one unit from a current total or count. */
+_exposure_neg_1 = 'exposure_neg_1',
+/** The icon literally shows a negative sign followed by the numeral two, representing a quantifiable value. It is used primarily to indicate a reduced level or a lower setting in measurements such as exposure or signal strength. */
+_exposure_neg_2 = 'exposure_neg_2',
+/** The icon literally displays a plus sign immediately followed by the number one. It generally indicates a positive adjustment or increase in a measurable setting, such as increasing photographic exposure or value. */
+_exposure_plus_1 = 'exposure_plus_1',
+/** The icon literally displays a plus sign followed by the number two. It is commonly used to represent an increment or addition of two units across various measurements or settings. */
+_exposure_plus_2 = 'exposure_plus_2',
+/** The icon is a solid circle that visually represents the numeral zero. It typically indicates a reset state, null value, or baseline measurement across scientific and data reporting systems. */
+_exposure_zero = 'exposure_zero',
+/** The design is an outline of a single jigsaw puzzle piece. This symbol typically represents an extension, add-on, or module that connects to and completes a larger system. */
+_extension = 'extension',
+/** The icon depicts a single jigsaw puzzle piece crossed out with a bold diagonal slash. This symbol universally indicates that a specific function, feature, or capability is currently disabled, restricted, or unavailable. */
+_extension_off = 'extension_off',
+/** The icon depicts a stylized representation of an open human eye centered within the design. The surrounding corner markers emphasize themes related to monitoring, detailed observation, or tracking specific vision data. */
+_eye_tracking = 'eye_tracking',
+/** The design is a smooth, curved line forming an arch shape. It commonly symbolizes matters of personal aesthetics, beauty, and overall style. */
+_eyebrow = 'eyebrow',
+/** The design depicts a simple pair of round-lensed spectacles with basic frames. This icon is commonly used to represent vision correction, scholarly pursuits, or general intelligence. */
+_eyeglasses = 'eyeglasses',
+/** The icon depicts a pair of eyeglasses viewed straight on. It commonly symbolizes vision, eyesight, or optical settings within an application interface. */
+_eyeglasses_2 = 'eyeglasses_2',
+/** The design illustrates a pair of eyeglasses with wavy lines positioned near the frame, which resemble radiating sound waves or an indicator. This icon typically signifies audio input, hearing assistance, or monitoring sensory data provided through visual aids. */
+_eyeglasses_2_sound = 'eyeglasses_2_sound',
+/** The icon depicts a simple pair of round eyeglasses with two circular lenses and a connecting bridge. It is commonly used to symbolize enhanced vision, intellectual pursuits, or close observation. */
+_eyeglasses_3 = 'eyeglasses_3',
+/** The icon depicts a minimalist, circular outline representing a human face with two simple dots for eyes. It is commonly used in digital communication as an emoji or placeholder to identify a person or convey general emotion. */
+_face = 'face',
+/** The icon depicts a circular or spherical shape constructed from several overlapping rounded elements. It commonly represents a user profile, account ownership, or personal presence within an application interface. */
+_face_2 = 'face_2',
+/** The illustration depicts a simple, round face with stylized hair covering the upper portion of the head. This icon is commonly used in digital communication to represent women or female personas within an emoji set. */
+_face_3 = 'face_3',
+/** The icon displays a simplified, graphic representation of a human face. This design is commonly used to communicate emotional states, acknowledge presence, or indicate a general mood in digital communication. */
+_face_4 = 'face_4',
+/** The design depicts a circular face composed entirely of five solid black dots, featuring two primary dots for eyes and three smaller dots arranged in an arc above them. This icon typically represents abstract concepts like emotion, communication status, or language input methods involving character selection. */
+_face_5 = 'face_5',
+/** The design is a simple outline of a face enclosed within a circular boundary. It serves as a universal placeholder for a user profile, general person icon, or generic emoji character. */
+_face_6 = 'face_6',
+/** The design features a simplified outline of a head paired with a downward-pointing arrow. This icon is typically used to indicate that an account or user is unavailable, offline, or requires privacy at the moment. */
+_face_down = 'face_down',
+/** The icon features a simple, cartoon-like head outline with an attached pointer directed sharply to the left. It is commonly used in user interfaces and guides to show direction or draw focus to content located on the left side. */
+_face_left = 'face_left',
+/** The design shows a simple drawing of a head and face. It is typically used to indicate agreement, understanding, or acknowledgement of information. */
+_face_nod = 'face_nod',
+/** The illustration shows an open eye with a diagonal strike-through line crossing it out. This icon signals that any applied beauty filters, smoothing, or retouching effects are deactivated. */
+_face_retouching_off = 'face_retouching_off',
+/** The design features a simplified outline of a person's head and shoulders with a directional arrow attached. This symbol is commonly used in user interfaces to indicate moving forward through content, progressing to the next item, or advancing through steps in a process. */
+_face_right = 'face_right',
+/** The icon depicts a stylized human face with arms positioned as if performing a side-to-side shaking gesture. It commonly indicates disagreement, disapproval, or that an action cannot be completed or accepted. */
+_face_shake = 'face_shake',
+/** The icon depicts a stylized outline of a head or face with an upward-pointing chevron beneath it. This symbol typically indicates an active, visible, or "online" status, suggesting something is currently functioning or available. */
+_face_up = 'face_up',
+/** The icon illustrates a structured checklist or grading sheet featuring multiple item slots across a page layout. It commonly signifies that an item, task, or piece of information has been successfully reviewed and verified as correct. */
+_fact_check = 'fact_check',
+/** The icon depicts a simplified, blocky drawing of an industrial facility or plant building. It is commonly used to represent manufacturing processes, production sites, or general concepts related to industry and goods creation. */
+_factory = 'factory',
+/** A stylized silhouette depicts a person caught in mid-air with outstretched limbs and an unbalanced posture. This icon represents the physical action of falling or losing one's footing rapidly from any height. */
+_falling = 'falling',
+/** The design shows a stylized face centered inside a square frame marked by corner brackets. It typically indicates features for recognizing, tagging, or drawing attention to specific people within photos or video streams. */
+_familiar_face_and_zone = 'familiar_face_and_zone',
+/** The icon depicts a stylized house shape positioned above three connected dots representing people. It generally signifies a family unit, household group, or community belonging together. */
+_family_group = 'family_group',
+/** The design shows several nodes connected by lines that branch outward from a central point. This structure is used to symbolize lineage, ancestry, or the complex flow of relationships over time. */
+_family_history = 'family_history',
+/** The design depicts a simple house outline containing a heart symbol centered within its walls. This combination typically signifies concepts like domestic warmth, belonging, or family life. */
+_family_home = 'family_home',
+/** The design typically features several overlapping or grouped figures to represent individuals. It signifies a shared relationship, connectivity, and management within a single household unit or network. */
+_family_link = 'family_link',
+/** The design symbolizes a specific type of washroom facility built for inclusive use. It indicates that the restroom is equipped with amenities suitable for families or individuals needing extra care accommodations. */
+_family_restroom = 'family_restroom',
+/** The icon is a bright five-pointed star that has been customized with simple facial features, giving it a cheerful and smiling appearance. This design is commonly used to represent happiness, family togetherness, or positive achievements. */
+_family_star = 'family_star',
+/** The design shows a single point leading outward into multiple, diverging arrows or paths. It typically represents branching logic, multiple possible outcomes, or an expanding set of options from one source. */
+_fan_focus = 'fan_focus',
+/** The icon displays multiple directional arrows spreading out from a single central point. It typically represents divergence, indicating that a single source leads to several different outcomes or paths. */
+_fan_indirect = 'fan_indirect',
+/** The icon displays a combination of digits and circular clock markings within a digital frame. It is typically used to show elapsed time, countdowns, or scores in games and timed activities. */
+_farsight_digital = 'farsight_digital',
+/** The icon consists of two identical triangles placed side-by-side, both pointing toward the right. It universally indicates that content should advance quickly, such as skipping ahead in a video or audio track. */
+_fast_forward = 'fast_forward',
+/** The icon depicts two adjacent arrowheads forming a directional pointer that points sharply to the left. This symbol is universally used in digital interfaces and media players to signify fast backward movement or rapid rewinding of content. */
+_fast_rewind = 'fast_rewind',
+/** The icon depicts a stylized sandwich or burger resting on a rectangular serving plate outline. It generally symbolizes quick, ready-to-eat meals associated with convenience dining or takeout food. */
+_fastfood = 'fastfood',
+/** The icon literally depicts a stylized water faucet mounted atop a rectangular basin or sink. It is commonly used to symbolize running water, plumbing fixtures, or any context involving washing and liquid dispensing. */
+_faucet = 'faucet',
+/** The design is a clean outline of a classic heart shape. It is typically used to indicate that an item has been liked, saved, or marked as a favorite. */
+_favorite = 'favorite',
+/** The design depicts an illustration resembling an older, physical facsimile machine or a document being sent via fax. It is used to symbolize the process of digitally transmitting a copy of a document from one location to another. */
+_fax = 'fax',
+/** The icon depicts a magnifying glass positioned next to or partially overlaying a stylized sheet of paper or document outline. It is used universally to symbolize searching for specific information, filtering content, or looking up data within files and databases. */
+_feature_search = 'feature_search',
+/** The icon depicts a clean, outlined rectangle containing three short horizontal lines arranged inside. It generally represents an organized collection of content, such as featured selections or grouped media items. */
+_featured_play_list = 'featured_play_list',
+/** The icon literally depicts a stylized gift box wrapped and adorned with a ribbon and bow. It is commonly used in e-commerce to draw attention to holiday collections, seasonal deals, or special featured products. */
+_featured_seasonal_and_gifts = 'featured_seasonal_and_gifts',
+/** The design is a pronounced rectangular border framing a solid, internal square area. This iconography typically marks content that is highlighted or premium, such as a featured video on a platform. */
+_featured_video = 'featured_video',
+/** The icon combines an exclamation point with the shape of a speech bubble. It is used to signal an important message, general alert, or warning that needs user attention. */
+_feedback = 'feedback',
+/** The symbol features a circular head combined with a downward-pointing cross. It is widely recognized both historically as the alchemical symbol for Venus and today as a universal marker for female gender or womanhood. */
+_female = 'female',
+/** The design is a stylized illustration of a prominent, long bone structure that forms part of the upper leg. This icon typically signals content related to human anatomy, skeletal health, or orthopedic medicine. */
+_femur = 'femur',
+/** The icon depicts two parallel, curved lines resembling the bones of the upper leg. It typically represents a simplified or alternative view used for analyzing alignment, stretching, or mobility issues in the thigh region. */
+_femur_alt = 'femur_alt',
+/** The design illustrates a stylized picket-style barrier composed of multiple vertical sections. It is typically used to symbolize boundaries, property lines, or the definition of an enclosed space. */
+_fence = 'fence',
+/** The design illustrates a stylized plant sprout emerging from a crown-like base. It commonly represents concepts like abundance, life force, potential, or creative growth. */
+_fertile = 'fertile',
+/** The design depicts a pavilion featuring multiple supporting columns beneath a peaked awning or roof canopy. This icon typically represents a public space intended for festivals, markets, or large community gatherings. */
+_festival = 'festival',
+/** The icon depicts a stylized input port or connection bracket. It signifies a direct, high-definition link used for connecting advanced external media sources like digital video recorders and receivers. */
+_fiber_dvr = 'fiber_dvr',
+/** The design depicts a simple, open circular outline or ring shape. This symbol generally serves to indicate the initiation of a process or the logging of new information within an interface. */
+_fiber_manual_record = 'fiber_manual_record',
+/** The design shows the capitalized word "NEW" centered inside a simple, bordered rectangle. This symbol is widely used to highlight content that is fresh, recently added, or represents an update. */
+_fiber_new = 'fiber_new',
+/** The icon literally displays the capital letters P, I, and N inside a square boundary. It generally functions as an indicator or marker used in digital interfaces to denote a specific point of interest or location. */
+_fiber_pin = 'fiber_pin',
+/** The design features an open ring connected smoothly to a trailing semi-circular curve. It generally indicates data logging or tracking, suggesting that information has been collected or recorded within a system. */
+_fiber_smart_record = 'fiber_smart_record',
+/** The design shows two overlapping document icons, positioned closely together as if one has been copied from the other. This symbol indicates the action of duplicating a digital file or folder within an operating system context. */
+_file_copy = 'file_copy',
+/** The icon depicts a stylized file or document sheet crossed out by a prominent diagonal slash. This universally communicates that the content cannot be duplicated, signifying that copying or reproduction of the file is prohibited. */
+_file_copy_off = 'file_copy_off',
+/** The design features an arrow pointing downward that is crossed out by a diagonal strikethrough mark. This icon indicates that the download function is currently disabled or unavailable for the file. */
+_file_download_off = 'file_download_off',
+/** The illustration depicts a document or file shape connected to an arrow pointing outward from its corner. This icon is commonly used to indicate that content is being exported, saved in a different format, or moved outside of the current application. */
+_file_export = 'file_export',
+/** The design features the capitalized acronym J S O N enclosed within a simple rectangular border. It indicates data that adheres to the JSON format, which is a widely used standard for transmitting structured information. */
+_file_json = 'file_json',
+/** The design features a stylized map marker—a teardrop-shaped pin with a circular top—centered within a solid square frame. This icon generally signifies geographical location, helping users identify or pinpoint specific points of interest or their current whereabouts on a digital map. */
+_file_map = 'file_map',
+/** The icon displays several layered squares stacked vertically, resembling a stack of papers or documents. It commonly symbolizes a collection of stored geographical information, such as saved locations, directories, or multiple map files. */
+_file_map_stack = 'file_map_stack',
+/** The design shows a rectangular sheet of paper with an angled section that appears open. This icon is used to indicate the function of opening a file, allowing users to access and view its contents. */
+_file_open = 'file_open',
+/** The icon features the letters PNG displayed prominently inside a solid square border. This stands for Portable Network Graphics, indicating an image file format often used because it supports transparency and high-quality compression. */
+_file_png = 'file_png',
+/** The icon depicts a stylized sheet of paper with lines, visually representing a digital document or record. It commonly indicates that an attachment, file, or necessary piece of data is present or available within the system. */
+_file_present = 'file_present',
+/** The icon depicts a rectangular document page paired with a prominent downward-pointing arrow. It signifies the action of saving or storing current data so that it can be accessed later. */
+_file_save = 'file_save',
+/** The icon depicts a stylized document or file shape crossed out by a diagonal prohibition line. It generally indicates that the action of saving, storing, or accessing the file is currently disabled or otherwise restricted. */
+_file_save_off = 'file_save_off',
+/** The design features an upward-pointing arrow that is marked with a diagonal prohibition slash. This symbol indicates that uploading files or content to the system is restricted or disabled. */
+_file_upload_off = 'file_upload_off',
+/** The icon depicts an open file folder with visible inner edges. It serves to symbolize a collection or grouping of related documents and digital content. */
+_files = 'files',
+/** The icon depicts a classic funnel shape, suggesting a mechanism for refinement or selection. It is universally used in digital interfaces to indicate filtering options, allowing users to narrow down large amounts of data or content based on specific criteria. */
+_filter = 'filter',
+/** The icon typically represents a mechanism for refining data or search results, often depicted as a funnel or set of sliders. It is used to narrow down large amounts of information by allowing users to apply specific criteria and filter out unwanted entries. */
+_filter_1 = 'filter_1',
+/** The design depicts the numeral two enclosed within a clear rectangular border. This icon typically signifies selecting a secondary option, indicating a pair of items, or representing a second level within a filtering process. */
+_filter_2 = 'filter_2',
+/** The illustration depicts the number three contained within a stylized, segmented box design. This icon commonly indicates that content or options are being filtered, grouped, or limited to exactly three selections. */
+_filter_3 = 'filter_3',
+/** The design is a clear outline of the numeral four centered within a simple square frame. It commonly indicates the selection or application of a specific set of four filters, steps, or criteria within an interface. */
+_filter_4 = 'filter_4',
+/** The icon depicts the numeral five enclosed within a structured border that suggests an adjustable setting or frame. This symbol typically represents a specific level of adjustment or intensity when applying filters, effects, or measuring values in media tools. */
+_filter_5 = 'filter_5',
+/** The icon displays the prominent numeral six enclosed within a distinct, bordered square container. It commonly signifies selecting a particular count, setting, or level that corresponds numerically to six. */
+_filter_6 = 'filter_6',
+/** A numeral seven is centered within a clean, square border frame. It typically indicates a specific setting level or selection count used when applying digital filters or photo adjustments. */
+_filter_7 = 'filter_7',
+/** The icon depicts the number eight centered within a distinct rectangular border or selection area. It generally indicates that a specific setting, level, or option designated by the numeral 8 is active or available for filtering. */
+_filter_8 = 'filter_8',
+/** The icon visually depicts a selection mechanism, often overlaid with the numeral nine to signify quantity or specific parameters. It is used in digital interfaces to refine content, narrow down possibilities, or adjust various criteria within an application's view. */
+_filter_9 = 'filter_9',
+/** The icon visually displays the numeral nine followed by a plus sign, all contained within a square frame. It generally indicates an adjustable setting or a quantitative increase related to measurements, such as resolution or count. */
+_filter_9_plus = 'filter_9_plus',
+/** The design is an inverted cone shape that gradually narrows from a wide opening to a distinct spout at the base. It commonly signifies the act of filtering, suggesting that you can refine or restrict a large amount of information or results. */
+_filter_alt = 'filter_alt',
+/** The icon depicts an open-top structure resembling a stylized letter A or a truncated triangle that has been crossed by a diagonal slash. This symbol typically indicates that advanced filtering options, search filters, or specific features have been deactivated or turned off. */
+_filter_alt_off = 'filter_alt_off',
+/** The icon depicts a funnel shape connected directly to an arrow pointing right. This symbol commonly illustrates the process of filtering, refining, or narrowing down data and search results. */
+_filter_arrow_right = 'filter_arrow_right',
+/** The design is enclosed within a square frame and features internal angular shapes created by intersecting lines. This icon signifies applying a black and white filter effect to media or photos, desaturating the image entirely for monochrome viewing. */
+_filter_b_and_w = 'filter_b_and_w',
+/** The design illustrates a square frame defined by corner brackets surrounding a central point. This symbol typically indicates a precise focus point or guide used for alignment and positioning in graphic design. */
+_filter_center_focus = 'filter_center_focus',
+/** The icon is a simple, solid silhouette of a puffy cloud formation. It commonly symbolizes cloud computing services, representing remote data storage, synchronization, or connectivity in a digital context. */
+_filter_drama = 'filter_drama',
+/** The design is a square border featuring a distinctive pointed element at its top center, resembling a stylized picture frame. It typically indicates tools for adjusting media content, such as applying filters, cropping images, or managing visual frames. */
+_filter_frames = 'filter_frames',
+/** The design features several stacked, parallel horizontal lines that resemble an adjustable bar or menu indicator. It is typically used to represent filtering options, allowing users to narrow down content or view a list of criteria. */
+_filter_list = 'filter_list',
+/** The design shows visual representations of filtering controls overlaid with a diagonal line through them. This symbol indicates that all active filtering criteria can be cleared, returning the full list of unfiltered results. */
+_filter_list_off = 'filter_list_off',
+/** The icon depicts three distinct rectangular outlines aligned vertically, suggesting multiple potential viewing panes or display areas. It generally signifies that no filters are currently active, allowing the user to view all available content by returning to a default state. */
+_filter_none = 'filter_none',
+/** The icon depicts a stylized, geometric rhombus shape connected to a vertical pointer at its base. It typically indicates the availability of advanced options for narrowing results, applying complex filters, or refining displayed content. */
+_filter_retrolux = 'filter_retrolux',
+/** The icon literally depicts a solid inner circle surrounded by multiple dashed concentric rings. It generally symbolizes filters or controls used to adjust focus, suggesting photographic effects like tilt-shift or simulating shallow depth of field. */
+_filter_tilt_shift = 'filter_tilt_shift',
+/** The design illustrates a photographic element characterized by distressed edges or sepia tones. This is used to apply an antique quality, mimicking the look of historical photography. */
+_filter_vintage = 'filter_vintage',
+/** The icon depicts four vertical bars of varying heights arranged in a bar chart format. It is commonly used to represent comparative data, showing metrics or trends over distinct categories in fields like finance or analytics. */
+_finance = 'finance',
+/** It depicts a stylized, rectangular payment chip or card format containing a large currency symbol. This design is commonly used to symbolize financial transactions, saving money, or accessing paid resources in an application or game context. */
+_finance_chip = 'finance_chip',
+/** The icon depicts three stylized arrows arranged sequentially, ascending sharply from the bottom left toward the top right. It is commonly used in finance to indicate positive growth, rising metrics, or overall upward market momentum. */
+_finance_mode = 'finance_mode',
+/** The icon depicts a stylized sheet of paper with a magnifying glass placed over its surface. It commonly indicates the ability to search for specific information or text contained within a document. */
+_find_in_page = 'find_in_page',
+/** The icon depicts two opposing curved arrows forming a continuous cycle. It is typically used in software interfaces to represent the action of searching for specific content and replacing it throughout a text or data set. */
+_find_replace = 'find_replace',
+/** The design features several curved, looping lines that create a distinct spiral pattern. It is typically used to denote personal identification or access requiring unique biological data. */
+_fingerprint = 'fingerprint',
+/** The design depicts a clear outline of a human fingerprint crossed out by a diagonal line. This symbol indicates that biometric authentication is disabled or that the feature is currently unavailable for use. */
+_fingerprint_off = 'fingerprint_off',
+/** The design is a curved arrow forming an open loop that appears to cycle back upon itself. It typically indicates a process of checking status, refreshing data, or reverting to a previous state. */
+_fire_check = 'fire_check',
+/** The design depicts a portable fire extinguisher unit, characterized by its main canister body and attached head assembly. It is used to symbolize safety measures, emergency response, or hazard prevention in digital interfaces. */
+_fire_extinguisher = 'fire_extinguisher',
+/** The design illustrates a robust, stationary water connection point typically found in public areas. It is commonly used to indicate access to firefighting resources or emergency water services in an area. */
+_fire_hydrant = 'fire_hydrant',
+/** The icon depicts a classic emergency vehicle characterized by an enclosed cab, ladders, and assumed equipment storage racks. It universally symbolizes immediate assistance, fire safety, and crucial emergency services in any community setting. */
+_fire_truck = 'fire_truck',
+/** A stylized hearth forms the base structure from which wavy flames are drawn. This icon generally suggests ambient warmth, coziness, or an available heat source. */
+_fireplace = 'fireplace',
+/** The design is a single angle bracket shape pointing to the left. It commonly represents the mathematical symbol for "less than" or signifies an opening element in programming and markup languages. */
+_first_page = 'first_page',
+/** The design features a series of five equidistant dots centered between two parallel vertical bars. This symbol typically indicates layout adjustment, suggesting that the content should scale or compress to perfectly fit the defined width of a page or container. */
+_fit_page = 'fit_page',
+/** The icon depicts a vertical rectangle containing opposing arrows—one pointing upward at the top and one pointing downward at the bottom. This symbol is typically used to indicate scaling or adjusting content height so that it fits perfectly within the available page boundaries. */
+_fit_page_height = 'fit_page_height',
+/** The icon depicts a simple, rectangular power receptacle or electrical switch panel. Metaphorically, it is used to represent boundaries or constraints, suggesting that content should fit within defined limits or optimize available space. */
+_fit_page_width = 'fit_page_width',
+/** The design is a simple rectangular outline enclosed by corner brackets. It indicates that content should be scaled or adjusted to fit perfectly within the viewing area. */
+_fit_screen = 'fit_screen',
+/** The design features a rectangular shape bracketed by horizontal expansion arrows at both ends. This icon indicates that content or elements should automatically scale to fit perfectly within the available container width. */
+_fit_width = 'fit_width',
+/** The illustration shows a set of weights connected by a bar, forming the shape of traditional dumbbells. This icon is commonly used to symbolize physical activity, general wellness, or access to a fitness center. */
+_fitness_center = 'fitness_center',
+/** The icon depicts a sleek, rectangular electronic wrist device with rounded corners, resembling a modern smartwatch or wearable health monitor. It typically represents personal fitness tracking, monitoring vital signs, and general wellness data management. */
+_fitness_tracker = 'fitness_tracker',
+/** The design features two stylized, rounded wearable electronic devices positioned next to each other. This typically represents the concept of personal health tracking or fitness monitoring technology. */
+_fitness_trackers = 'fitness_trackers',
+/** The icon depicts a stylized document corner attached to an angular pointer resembling a flag or ribbon marker. This symbol typically indicates a bookmark feature, allowing users to save or mark important sections of content for easy retrieval later. */
+_flag = 'flag',
+/** The design depicts a stylized rectangular banner that appears to be fluttering or waving in the wind. It is commonly used to symbolize national identity, belonging, or geopolitical regions. */
+_flag_2 = 'flag_2',
+/** The icon features a prominent checkmark within a circle, positioned near a corner or flag-like marker attached to an initial letter shape. It generally signifies that an item has been successfully validated, completed, or passed a necessary safety check. */
+_flag_check = 'flag_check',
+/** It depicts a stylized flag contained within a circular border. This icon generally suggests saving, bookmarking, or marking content that should be reviewed or remembered later. */
+_flag_circle = 'flag_circle',
+/** The design consists of fragmented or jagged lines that break a continuous signal path. It is commonly used in digital interfaces to signify an unstable connection, unreliable status, or intermittent service failure. */
+_flaky = 'flaky',
+/** The icon is a starburst design featuring a central point from which several rays of light radiate outwards. It commonly indicates sunshine, bright conditions, or the availability of solar energy. */
+_flare = 'flare',
+/** The design is a stylized representation of a bright flash, often depicted as a lightning bolt or burst of light. It signifies that the camera's flash function is operating automatically to ensure optimal lighting for captured photos. */
+_flash_auto = 'flash_auto',
+/** The icon depicts a stylized signal wave pattern intersected by a single diagonal strikeout line. This universally indicates that the device's flash function has been disabled or turned off. */
+_flash_off = 'flash_off',
+/** The icon is a stylized, jagged shape that clearly resembles an electric bolt or lightning strike. It is commonly used in user interfaces to denote electrical power, high energy levels, or a sudden activation feature. */
+_flash_on = 'flash_on',
+/** The icon depicts a simple outline of a flashlight, typically accompanied by an indication that it is powered down. This symbol generally means that the illumination function or light source feature is currently inactive or unavailable. */
+_flashlight_off = 'flashlight_off',
+/** The design shows the outline of a compact, handheld light source. This icon indicates that the device is powered up and emitting light, signaling immediate illumination or function availability. */
+_flashlight_on = 'flashlight_on',
+/** The design illustrates a standard set of eating utensils—a fork, a spoon, and a knife—arranged side by side in a typical place setting. This symbol is commonly used to denote general dining contexts, meal preparation, or restaurant service. */
+_flatware = 'flatware',
+/** The design shows several aligned arrows indicating various potential directions of movement or arrangement. It signifies the primary axis along which content elements will stack or flow within a flexible layout container. */
+_flex_direction = 'flex_direction',
+/** The design illustrates multiple uniform containers placed next to each other on a single line. This visual suggests that the contained items must remain grouped together and cannot break or wrap onto a new line. */
+_flex_no_wrap = 'flex_no_wrap',
+/** The icon displays multiple blocks arranged sequentially across several rows inside a defined container. This design illustrates the concept of flexible layout, showing how content automatically wraps and adjusts to fit within available space. */
+_flex_wrap = 'flex_wrap',
+/** The design shows a simplified, side-profile silhouette of a commercial airliner in flight. It is typically used to symbolize air travel, indicating connections, journeys, or general transportation between different locations. */
+_flight = 'flight',
+/** The icon depicts the side profile of a wheeled shopping cart or trolley, showing its main body and handle structure. This symbol commonly indicates that an item has been selected for purchase or is waiting in the virtual container during online checkout. */
+_flight_class = 'flight_class',
+/** The icon depicts an aircraft flying low above a horizontal plane representing the ground or runway. It is commonly used in travel contexts to signal arrival or the completion of an aerial journey at a specific destination. */
+_flight_land = 'flight_land',
+/** The icon shows a stylized airplane ascending in flight. It commonly signifies departure or the beginning of a journey. */
+_flight_takeoff = 'flight_takeoff',
+/** The icon depicts an airplane flying over two separate bed symbols. This universally signifies the ability to book combined travel packages that include both air transportation and accommodation. */
+_flights_and_hotels = 'flights_and_hotels',
+/** The design illustrates an action of turning something over, like flipping through pages or cards. This icon typically indicates toggling settings, reversing content, or revealing previously hidden details. */
+_flip = 'flip',
+/** The design features a central circular motif surrounded by curved arrow segments pointing in opposing directions. This icon indicates the function of toggling between the device's primary and secondary cameras, such as switching from the front to the back camera. */
+_flip_camera_android = 'flip_camera_android',
+/** The icon depicts a stylized view of a camera lens or body undergoing a clear flipping motion. This symbol indicates the ability to switch between different camera perspectives, such as switching from the front-facing to the rear-facing camera. */
+_flip_camera_ios = 'flip_camera_ios',
+/** The design features a clean, angled arrow pointing directly to the left. This universally indicates navigating back to a previous screen, section, or step in a sequence. */
+_flip_to_back = 'flip_to_back',
+/** The design shows a central square surrounded by several small dots that appear to trail outward. This icon typically suggests flipping through content or navigating directly to the beginning of a document, such as opening an e-book. */
+_flip_to_front = 'flip_to_front',
+/** The icon depicts a wide, horizontal rectangle containing a distinct, smaller cutout area positioned towards one end. It commonly represents a physical slot for connecting external devices, such as memory cards, batteries, or other peripherals. */
+_float_landscape_2 = 'float_landscape_2',
+/** The design is a solid vertical rectangle featuring a smaller, rectangular block positioned in the upper section. This style of icon typically serves as a widget placeholder used to display general system status or key information within a mobile operating system interface. */
+_float_portrait_2 = 'float_portrait_2',
+/** The icon depicts a house partially submerged in surrounding wavy water. It is used to represent the threat or aftermath of flooding, signifying areas affected by rising water levels or potential flood damage. */
+_flood = 'flood',
+/** The icon shows several distinct, segmented lines arranged like steps going downward. It typically represents descent, passage through multiple stages, or navigation between different levels. */
+_floor = 'floor',
+/** The icon depicts a stylized standing lamp with a rectangular shade supported by a pedestal base. This design typically represents general indoor illumination or a decorative lighting source in an interior setting. */
+_floor_lamp = 'floor_lamp',
+/** The design illustrates several distinct nodes that are interconnected through branching lines and paths. This symbol is commonly used to represent overall connectivity, system architecture, or the relationship between various connected elements. */
+_flowchart = 'flowchart',
+/** The icon depicts several distinct nodes connected by directional lines, illustrating a clear path from one point to the next. It symbolizes a workflow or process flow chart, showing the logical sequence of steps that must be followed in order. */
+_flowsheet = 'flowsheet',
+/** The design is an outline of a stemmed glass with wavy lines visible within the bowl. It typically symbolizes wine or other beverages, indicating themes related to liquids or celebratory drinks. */
+_fluid = 'fluid',
+/** The icon depicts a diagram of liquid containers with visible measurement markers, indicating different levels within them. It is commonly used to symbolize the maintenance of equilibrium, fluid status monitoring, or overall systemic balance. */
+_fluid_balance = 'fluid_balance',
+/** The design shows a medical syringe placed next to a glass containing liquid. This combination generally represents medication, fluid treatment, or general healthcare services. */
+_fluid_med = 'fluid_med',
+/** The icon depicts a central horizontal bar surrounded by radiating lines suggesting an emission of light or energy. It commonly signifies artificial illumination, such as fluorescent lighting, or indicates that a sensor is monitoring ambient brightness levels. */
+_fluorescent = 'fluorescent',
+/** The design is a thick, geometric chevron or arrow pointing clearly toward the right. It commonly indicates forward progression, moving to the next section, or expanding into additional content. */
+_flutter = 'flutter',
+/** The design depicts a sequence of short dashes or dots connected by dashed lines, giving the visual impression of rapid movement across a path. It typically indicates that content is loading, animating, or undergoing a quick transition between screens or states. */
+_flutter_dash = 'flutter_dash',
+/** A curved or straight structure supported by pillars spans across an invisible space below it. It commonly represents a point of transition, connection, or overcoming a barrier between two points. */
+_flyover = 'flyover',
+/** The icon depicts a standard map location pin with an exclamation point inside its body. It universally signifies that there is an important alert, warning, or error occurring at a specific geographical spot. */
+_fmd_bad = 'fmd_bad',
+/** The design features a simple, stylized cloud shape from which multiple horizontal lines descend. This icon is commonly used in weather reporting to indicate foggy or misty conditions, suggesting limited outdoor visibility. */
+_foggy = 'foggy',
+/** The design depicts a pair of cupped hands folded together at chest level. This gesture is commonly used to symbolize prayer, gratitude, humility, or deep respect. */
+_folded_hands = 'folded_hands',
+/** The icon depicts a stylized representation of a manila folder with a tab protruding from the top edge. It is commonly used in computing interfaces to symbolize collections of digital files or documents stored together within an operating system. */
+_folder = 'folder',
+/** The design features a stylized folder shape containing a prominent checkmark mark. This icon commonly signifies that the contents within the designated files or category have been successfully verified, completed, or organized. */
+_folder_check = 'folder_check',
+/** The icon depicts a stylized folder shape overlaid or accompanied by a checkmark graphic. It signifies that files, documents, or an entire directory have been successfully verified, completed, or saved correctly. */
+_folder_check_2 = 'folder_check_2',
+/** The design features a stylized folder silhouette accompanied by internal angle brackets representing code syntax. It is used to symbolize source code files or structured data contained within a programming project or documentation directory. */
+_folder_code = 'folder_code',
+/** A stylized folder container is shown paired with an indicator of duplication. This symbol signifies that data—such as documents or entire folders—is being copied. */
+_folder_copy = 'folder_copy',
+/** The design depicts a stylized folder symbol integrated with connecting nodes and directional arrows. It signifies advanced data handling, such as exporting, organizing, or managing structured information sets within a project. */
+_folder_data = 'folder_data',
+/** The design depicts a clean outline of a document file folder container. It serves as a standard symbol in user interfaces to indicate the removal or deletion of stored items. */
+_folder_delete = 'folder_delete',
+/** The design combines a stylized file folder shape with an open eye illustration. It is typically used to signify inspection, visibility, or reviewing specific details within data records. */
+_folder_eye = 'folder_eye',
+/** The icon is composed of a filing folder outline combined with a circular information mark. It generally indicates that more details about the file or directory are available upon viewing its properties. */
+_folder_info = 'folder_info',
+/** The icon depicts a file folder containing a prohibited or restricted symbol. It commonly indicates that storage capacity is limited, suggesting files cannot be saved or added due to insufficient space. */
+_folder_limited = 'folder_limited',
+/** The design combines an outline of a file folder with a mechanical gear symbol placed beside it. This icon typically indicates administrative settings, configuration options, or tools used to manage the contents and structure of data. */
+_folder_managed = 'folder_managed',
+/** The icon graphically portrays a traditional folder outline paired with an adjacent element suggesting connection or correspondence. This symbol is typically used in file management to indicate searching for matches, identifying related content, or confirming that items meet specific criteria within a directory structure. */
+_folder_match = 'folder_match',
+/** The design shows an outline of a folder with a diagonal line drawn across it. This symbol is used to indicate that content, access, or functionality related to this item has been removed, archived, or deactivated. */
+_folder_off = 'folder_off',
+/** The icon depicts a stylized, rectangular file folder shape with an open flap. This symbol universally indicates the storage or management of files and directories within a computer system. */
+_folder_open = 'folder_open',
+/** The icon depicts the simple outline of a file folder, representing stored documents or files. It is used in user interfaces to signify that the enclosed content is shared and accessible by multiple users. */
+_folder_shared = 'folder_shared',
+/** The design depicts a standard file folder shape containing a prominent five-pointed star. It is commonly used to denote files or content that are special, important, top-rated, or bookmarked for later reference. */
+_folder_special = 'folder_special',
+/** The design is a stylized outline of an open file folder with a visible top tab. This icon typically signifies that the contents within the directory are being monitored, reviewed, or managed by an administrator or guardian. */
+_folder_supervised = 'folder_supervised',
+/** The icon depicts a stylized folder shape with visible markings suggesting compression. This symbol is used to represent an archive file that bundles multiple separate documents and assets into one compressed container. */
+_folder_zip = 'folder_zip',
+/** The illustration features a silhouette of a person walking toward a directional signpost that displays an arrow pointing to the right. It is used to guide users by indicating that they must follow posted instructions or proceed in a specific direction. */
+_follow_the_signs = 'follow_the_signs',
+/** The icon depicts a stylized font character paired with an arrow pointing downward to symbolize downloading. It indicates the availability or process of obtaining custom typefaces or fonts for use within the application. */
+_font_download = 'font_download',
+/** The icon literally depicts a stylized representation of typography combined with a download arrow pointing downward, which is crossed out by a diagonal slash. This universally indicates that downloading fonts or typeface resources is prohibited, unavailable, or restricted in this context. */
+_font_download_off = 'font_download_off',
+/** A simple drawing depicts cutlery, including forks and spoons, housed within the outline of a house. This icon typically represents food banks, community feeding programs, or general household meal services. */
+_food_bank = 'food_bank',
+/** The illustration depicts stylized bones forming the skeletal structure of a human foot. It is commonly used in contexts related to podiatry, foot health, or general anatomy. */
+_foot_bones = 'foot_bones',
+/** The design depicts a pair of stylized human footprints. This icon is commonly used to symbolize travel, passage, or the evidence of movement and journeying. */
+_footprint = 'footprint',
+/** The design is a simple, stylized silhouette of a human figure. It commonly signifies content that has been algorithmically organized and tailored specifically for the current user's tastes and viewing history. */
+_for_you = 'for_you',
+/** The design shows three stylized coniferous trees grouped closely together. This icon is typically used to represent woodland areas, nature, or an outdoor forest environment. */
+_forest = 'forest',
+/** The icon depicts a dining fork positioned next to a segmented circular chart. This combination typically symbolizes tracking dietary habits, managing schedules, or visualizing meal plans over time. */
+_fork_chart = 'fork_chart',
+/** It depicts two lines that diverge from a common starting point, forming an open V shape. This icon is typically used to indicate a branching path or a choice between multiple possible directions or options. */
+_fork_left = 'fork_left',
+/** The icon depicts a single path that splits into two separate arrows diverging from one point. This symbol is used to show multiple options, alternative routes, or decision points where a choice must be made. */
+_fork_right = 'fork_right',
+/** The icon depicts a fork positioned alongside a spoon. It is commonly used to signify dining services, meal times, or the general availability of food options. */
+_fork_spoon = 'fork_spoon',
+/** The icon shows a stylized industrial vehicle with large wheels, forks, and an elevated carriage designed for lifting heavy loads. It typically symbolizes warehouse operations, moving goods, or managing inventory within retail and storage environments. */
+_forklift = 'forklift',
+/** Three stacked horizontal lines are depicted running parallel to one another. This icon indicates that text or content should be centered on the page for proper formatting alignment. */
+_format_align_center = 'format_align_center',
+/** The icon depicts several stacked, parallel horizontal lines of varying lengths. It represents formatting controls used to evenly align text across designated margins or columns. */
+_format_align_justify = 'format_align_justify',
+/** The icon depicts several short, stacked, parallel horizontal lines. This symbol is used to indicate that text content should be aligned flush with the left margin. */
+_format_align_left = 'format_align_left',
+/** The design depicts several parallel, stacked horizontal lines suggesting a block of structured text. This icon is commonly used in editing software to align paragraphs or content flush against the right side of a document. */
+_format_align_right = 'format_align_right',
+/** The icon depicts a solid, uppercase letter B. This symbol indicates that you can apply bold formatting to emphasized text, making it appear heavier and more prominent on the page. */
+_format_bold = 'format_bold',
+/** The icon displays a diagonal strikethrough line passing across an implied area of text or content. It is used to remove any specific formatting, such as bolding or italicizing, allowing the content to revert to its plain, original style. */
+_format_clear = 'format_clear',
+/** The design features a stylized square containing gradient lines and small dots, indicating a color selection area. This icon represents formatting controls used to choose or modify colors, such as setting background fills, text shades, or general aesthetic properties in an application. */
+_format_color_fill = 'format_color_fill',
+/** The icon depicts a diagonal line crossing out a wavy underline mark. This symbol indicates the function to remove applied formatting, returning selected text to its default style. */
+_format_color_reset = 'format_color_reset',
+/** The icon depicts a large uppercase letter A positioned above a solid horizontal bar. This symbol is commonly used in word processing software to indicate controls for adjusting typographic settings, such as font style or character spacing. */
+_format_color_text = 'format_color_text',
+/** The icon literally displays the characters 'H' and '1'. This universally signifies applying an H1 heading format, designating the text as the primary title or most important section header. */
+_format_h1 = 'format_h1',
+/** The design consists of the characters 'H' and '2' placed side by side. This icon indicates functionality for formatting text as a secondary heading level, structuring content to appear subordinate to a primary title. */
+_format_h2 = 'format_h2',
+/** The icon visually displays the characters H followed by 3. It is used in document creation tools to signify a third-level heading, helping users establish a clear and structured hierarchy within their written content. */
+_format_h3 = 'format_h3',
+/** The design shows the capital letters H and 4 placed side-by-side. Generally, this symbol indicates a Level 4 heading, which helps organize text by creating a specific subtopic within a document's main structure. */
+_format_h4 = 'format_h4',
+/** The design consists of the capital letters H and S displayed prominently side-by-side. This indicator typically signifies compliance with a specific technical standard or format, often designating a fifth version or level of support. */
+_format_h5 = 'format_h5',
+/** The design features stylized lines that collectively represent different structural levels in a written document. This control indicates formatting options used to establish the hierarchy and relative importance of headings within content. */
+_format_h6 = 'format_h6',
+/** The icon depicts several parallel stacked lines with an internal divider visible on one of the middle sections. Functionally, it is commonly used to signify structured data, suggesting tools for managing lists, arrays, or overall content layout. */
+_format_image_back = 'format_image_back',
+/** The design features a straight line segment paired with an open square shape. It indicates a formatting command used in word processing software to force separation or manage content flow around images and text blocks. */
+_format_image_break_left = 'format_image_break_left',
+/** The icon depicts two horizontal lines connected by an outlined square frame, suggesting a segmented layout area. This symbol is typically used to indicate a forced break or section divider within document formatting. */
+_format_image_break_right = 'format_image_break_right',
+/** The icon depicts a framed, rectangular area that contains internal guidelines surrounding a prominent central square. It represents formatting controls for aligning content and emphasizing the center point of an image or document layout. */
+_format_image_front = 'format_image_front',
+/** The design shows parallel horizontal lines with squares placed at the beginning and end. This symbol represents formatting controls, typically used in word processors to adjust how images are aligned inline with the body text. */
+_format_image_inline_left = 'format_image_inline_left',
+/** The design features several horizontal lines accompanied by a distinct rectangular structure with notched elements positioned on the right side. This icon is used to adjust how an element interacts with surrounding text, controlling its specific layout or alignment within the document flow. */
+_format_image_inline_right = 'format_image_inline_right',
+/** The icon illustrates a placeholder image positioned alongside horizontal lines representing text flow. It signifies an alignment tool used in documents to ensure that embedded images begin flush with the left margin. */
+_format_image_left = 'format_image_left',
+/** The icon depicts structured horizontal lines alongside a square outline, representing defined content boundaries in a digital format. It indicates functionality used to adjust the precise layout and alignment of images or other media elements within a document. */
+_format_image_right = 'format_image_right',
+/** The icon depicts three stacked horizontal lines, with an arrow pointing left on the top line. This button is used in document editing software to reduce the structural indentation level of a selected paragraph or code block. */
+_format_indent_decrease = 'format_indent_decrease',
+/** The icon depicts a horizontal line structure followed by an arrow pointing to the right. It is used in document editors to increase the indentation level, pushing selected text or list items further away from the left margin. */
+_format_indent_increase = 'format_indent_increase',
+/** The icon depicts a classic highlighter pen ready for use. It is commonly used to symbolize the act of marking or emphasizing key information within written documents. */
+_format_ink_highlighter = 'format_ink_highlighter',
+/** The design shows a letter displayed in a slanted or italicized font style. This icon indicates the function used to format selected text, typically adding visual emphasis or indicating foreign language words. */
+_format_italic = 'format_italic',
+/** The icon displays three parallel vertical lines with an adjustable indicator positioned between them. It is used to symbolize the ability to adjust the uniform spacing, or tracking, between letters or words in a document. */
+_format_letter_spacing = 'format_letter_spacing',
+/** The design features a capital letter A situated between opposing double-headed arrows. This icon is used in text formatting to adjust the horizontal spacing, allowing users to increase or decrease the tracking distance between characters. */
+_format_letter_spacing_2 = 'format_letter_spacing_2',
+/** The design shows a capital letter enclosed by vertical selection markers. This icon is used in word processing to adjust the overall spacing between characters, allowing users to refine the visual consistency of text. */
+_format_letter_spacing_standard = 'format_letter_spacing_standard',
+/** The icon depicts a capital letter bracketed by two vertical lines. This symbol indicates the formatting option used to increase the horizontal distance between characters in typed text. */
+_format_letter_spacing_wide = 'format_letter_spacing_wide',
+/** The design displays letter examples that are visibly spread out with increased gaps between them. This feature increases the horizontal spacing of characters in a selected text to make the word appear wider and more deliberate. */
+_format_letter_spacing_wider = 'format_letter_spacing_wider',
+/** The icon features a vertical double arrow positioned next to several parallel horizontal lines. It is used in word processing and document creation tools to symbolize the ability to adjust line spacing or leading between text blocks. */
+_format_line_spacing = 'format_line_spacing',
+/** The design depicts three stacked black circles followed by horizontal lines. It indicates the ability to format text into an unordered bulleted list, commonly used for presenting points or features. */
+_format_list_bulleted = 'format_list_bulleted',
+/** The icon depicts a set of three bulleted rows with accompanying horizontal lines, and a distinct addition symbol appended below the structure. This typically indicates the ability to add or append a new item while maintaining proper formatting within a list or outline. */
+_format_list_bulleted_add = 'format_list_bulleted_add',
+/** The design displays the numbers one, two, and three arranged vertically in a traditional list format. It indicates that the associated text or items are meant to be read in a specific, sequential order. */
+_format_list_numbered = 'format_list_numbered',
+/** The icon depicts the numbers one, two, and three stacked vertically next to corresponding placeholder lines. It indicates that content should be formatted as an ordered sequence or enumerated list. */
+_format_list_numbered_rtl = 'format_list_numbered_rtl',
+/** The icon literally depicts a circle topped with a straight horizontal line segment. This symbol is used in various linguistic contexts to denote specific phonetic markings, such as extended vowel sounds or particular pronunciation rules. */
+_format_overline = 'format_overline',
+/** The icon literally depicts a paintbrush, often shown coated in paint or color, ready for application. It signifies formatting tools, allowing users to apply specific styles or colors to selected text or objects within a document. */
+_format_paint = 'format_paint',
+/** The design depicts a paint or brush tool overlaid with a diagonal prohibition symbol. It indicates that formatting, painting, or any applied visual style should be cleared or disabled. */
+_format_paint_off = 'format_paint_off',
+/** The icon depicts a hook-like shape attached to a straight vertical line segment. This symbol represents tools used for formatting and adjusting the overall structure of text paragraphs. */
+_format_paragraph = 'format_paragraph',
+/** The icon depicts two large double quotation marks positioned next to each other. It indicates that the associated text should be formatted as direct speech, a citation, or any type of quoted passage. */
+_format_quote = 'format_quote',
+/** The design illustrates a pair of quotation marks overlaid with a diagonal line through them. This icon is used to indicate that quoted text formatting has been turned off, allowing users to write plain prose without formal citations. */
+_format_quote_off = 'format_quote_off',
+/** The icon depicts a square frame that includes distinct corner markers around a central element. It signifies controls for defining boundaries and adjusting the overall structure, dimensions, or alignment of content. */
+_format_shapes = 'format_shapes',
+/** The icon depicts two vertical bars positioned next to each other, resembling a stylized double 'T'. It signifies options for adjusting text size, allowing users to scale content up or down within an editor. */
+_format_size = 'format_size',
+/** This icon depicts an example of placeholder text with a prominent line running straight across it. Its common meaning is applying the strikethrough format, which is used to visually indicate that text has been deleted or revised in documents. */
+_format_strikethrough = 'format_strikethrough',
+/** The icon depicts a short passage of stylized text alongside indicator marks. It represents the function for accessing formatting tools, which allows users to adjust the structure and visual appearance of written content. */
+_format_text_clip = 'format_text_clip',
+/** The icon depicts a solid vertical line segment transitioning into an arrow pointing horizontally to the right. This symbol is commonly used in text formatting and user interfaces to indicate that content continues or flows beyond the current visible boundary. */
+_format_text_overflow = 'format_text_overflow',
+/** The icon depicts a stylized arrow path that changes direction abruptly, creating an open loop shape. This symbol is used in writing tools to indicate text wrapping, allowing long lines of content to continue automatically when they reach the end of a defined space. */
+_format_text_wrap = 'format_text_wrap',
+/** The icon features stylized glyphs followed by a clear arrow pointing toward the right. This symbol indicates that the text directionality is set for standard reading flow, meaning content should be read from left to right. */
+_format_textdirection_l_to_r = 'format_textdirection_l_to_r',
+/** The icon shows a stylized glyph, resembling an Indian script character ('र'), with a prominent arrow curving beneath and pointing leftward. This symbol is used to indicate or control text formatting for languages that read and are written from right to left. */
+_format_textdirection_r_to_l = 'format_textdirection_r_to_l',
+/** The design is a simple arrow pointing straight downward. It signifies that associated text or content should adopt a vertical reading direction, changing the established flow from horizontal lines into columns. */
+_format_textdirection_vertical = 'format_textdirection_vertical',
+/** The design features an uppercase letter U positioned above a short, continuous horizontal line. This icon is used in digital editors and word processors to apply or remove underlining formatting from selected text. */
+_format_underlined = 'format_underlined',
+/** The design features an uppercase U shape positioned above two parallel, wavy lines. This icon typically represents a text formatting feature, indicating the ability to underline content or add a decorative wave style to writing. */
+_format_underlined_squiggle = 'format_underlined_squiggle',
+/** The illustration depicts a simple plus sign positioned near structured elements, suggesting an area for expansion or attachment. It commonly indicates that additional content, modules, or fields can be added to the current form or document. */
+_forms_add_on = 'forms_add_on',
+/** The design shows a series of connected, flowing curved elements that suggest an organized path or process. It is typically used to indicate advanced functionality, such as automating workflows or adding custom scripts to forms. */
+_forms_apps_script = 'forms_apps_script',
+/** The design depicts a symmetrical fortress structure featuring two connected towers flanking a central gateway. It is commonly used to symbolize strength, protection, or a secure, stable location within an interface. */
+_fort = 'fort',
+/** The icon depicts a stylized speech bubble with rounded corners and an integrated tail, typical of conversational graphics. It generally signifies a forum or discussion area where users can share thoughts, ask questions, and participate in group conversations. */
+_forum = 'forum',
+/** The icon depicts a solid, stylized arrow pointing diagonally to the right. It is commonly used to indicate forward progression, continuing to the next screen, or moving ahead in a sequence. */
+_forward = 'forward',
+/** The icon literally depicts the number 10 enclosed within a curved arrow that suggests movement. It commonly indicates a small increment of progress, a limited forward step, or a short time interval. */
+_forward_10 = 'forward_10',
+/** The design consists of a circular path that wraps around an arrow pointing forward, with the number 30 centered inside the loop. This symbol is typically used to denote a specific rate or frequency, such as thirty frames per second or thirty beats per minute. */
+_forward_30 = 'forward_30',
+/** The illustration depicts an arrow curving into a semi-circle while enclosing the digit five. This icon generally signifies moving forward, indicating progress through a sequence of five steps or units of time. */
+_forward_5 = 'forward_5',
+/** The icon depicts a curved arrow that completes a loop inside a circular boundary. It is commonly used across digital interfaces to indicate refreshing data or repeating an action cycle. */
+_forward_circle = 'forward_circle',
+/** The icon depicts a curved arrow that traces an open, partial circle shape. This symbol is commonly used in digital interfaces to indicate advancing media content or fast-forwarding through material. */
+_forward_media = 'forward_media',
+/** The icon shows an envelope paired with a right-pointing arrow. It signifies the action of forwarding or transferring an email message into another inbox. */
+_forward_to_inbox = 'forward_to_inbox',
+/** The icon is a highly simplified, stylized drawing of a house or cottage structure. It commonly represents fundamental support, structural roots, or establishing a stable beginning in one's life or project. */
+_foundation = 'foundation',
+/** The illustration depicts a closed container from which wispy particles are visibly dispersing. This symbolizes the release of fragrance or aroma, commonly used for perfumes, air fresheners, or scented products. */
+_fragrance = 'fragrance',
+/** The icon depicts a stylized insect contained within a geometric boundary. It commonly signals an error, malfunction, or unintended technical issue within software or systems. */
+_frame_bug = 'frame_bug',
+/** The design features an exclamation point centered within a square, corner-bracketed border. This symbol is commonly used to highlight critical information, warnings, or points that require immediate attention. */
+_frame_exclamation = 'frame_exclamation',
+/** The icon shows a magnifying glass centered inside a square frame defined by corner brackets. It is typically used to symbolize detailed inspection, suggesting the ability to examine specific elements, source code, or nested data structures within content. */
+_frame_inspect = 'frame_inspect',
+/** The design features a person's bust silhouette enclosed within a distinct square outline. It is typically used to represent adding or modifying an avatar, profile photo, or identifying user details. */
+_frame_person = 'frame_person',
+/** The design features a stylized person positioned within a square frame next to a visible microphone graphic. This icon typically indicates participation in a live audio conversation, such as joining a voice chat or video call. */
+_frame_person_mic = 'frame_person_mic',
+/** The design features a simple silhouette of a person crossed out by a thick, diagonal line. This symbol is used to indicate that human presence is forbidden, disallowed, or excluded from an area or function. */
+_frame_person_off = 'frame_person_off',
+/** The design depicts a square boundary formed by corner brackets enclosing a circular arrow. This symbol is commonly used to indicate refreshing content, reloading data, or restarting a process. */
+_frame_reload = 'frame_reload',
+/** The design consists of two pairs of corner brackets placed symmetrically, forming an open, rectangular boundary. This symbol is used to indicate structured data or source code blocks, such as JSON, XML, or JavaScript segments that need attention or extraction. */
+_frame_source = 'frame_source',
+/** The icon depicts a calendar or checklist page overlaid with symbols indicating cancellation or removal. This generally assures users that bookings, appointments, or services can be canceled or modified without any penalty or fee. */
+_free_cancellation = 'free_cancellation',
+/** The design is a simple outline of an open human hand that appears to be raised. It commonly signifies actions like waving hello, acknowledging something, or requesting attention within a digital interface. */
+_front_hand = 'front_hand',
+/** The design illustrates a simplified side view of a wheeled shopping trolley or cart. It commonly represents items selected for purchase, indicating general shopping functions within an online store. */
+_front_loader = 'front_loader',
+/** A simple rectangular border completely encloses an internal space. It indicates that a function or setting applies across the entire screen area, providing full visibility or comprehensive capture of content. */
+_full_coverage = 'full_coverage',
+/** The icon depicts a simple, solid rectangle containing the capitalized letters "FHD". It is commonly used to indicate that media content or display resolution meets Full High Definition standards. */
+_full_hd = 'full_hd',
+/** The design features a series of vertically stacked bars, where each bar is visibly composed of smaller colored segments. This icon typically represents comparative data analysis, illustrating how different components contribute to a total amount across various categories. */
+_full_stacked_bar_chart = 'full_stacked_bar_chart',
+/** The icon features four distinct corner brackets arranged into a perfect square outline. This symbol is used across digital interfaces to expand content or views, maximizing them to fill the entire screen display. */
+_fullscreen = 'fullscreen',
+/** The design depicts two opposing angular corner brackets forming an open, bracketed shape. This icon is used in user interfaces to exit full-screen mode or return from a maximized viewing state. */
+_fullscreen_exit = 'fullscreen_exit',
+/** The icon is a solid black rectangle featuring slightly rounded corners. It commonly indicates that content will be displayed in full-screen mode, utilizing the entire available viewport. */
+_fullscreen_portrait = 'fullscreen_portrait',
+/** The symbol consists of an italicized letter 'f' followed by the variables $x$ enclosed in parentheses. This notation is used in mathematics to define a function that establishes a relationship between an input value and its corresponding output value. */
+_function = 'function',
+/** The icon depicts an angular, symmetrical structure formed by two diverging lines. It commonly signifies the concept of functions, representing either mathematical summation ($\Sigma$) or defined operations within programming code. */
+_functions = 'functions',
+/** The design shows a compact cabin situated on tracks meant for traveling along an incline. This icon typically symbolizes funicular railway service, indicating specific uphill or downhill transit routes. */
+_funicular = 'funicular',
+/** The icon typically depicts several curved bars or waves radiating from an origin point, often indicating signal strength. It signifies the device's active connection to a cellular network for internet access. */
+_g_mobiledata = 'g_mobiledata',
+/** The icon is presented within a distinct, contained badge or square format that often features stylized letters or signal bars. It serves to indicate the connection status, specifically confirming the availability of mobile data service for the user. */
+_g_mobiledata_badge = 'g_mobiledata_badge',
+/** The icon displays a stylized combination of letters and symbols representing multiple global languages. It signifies built-in translation capabilities, indicating that the application can convert text or speech between different languages. */
+_g_translate = 'g_translate',
+/** The icon depicts a square border containing an abstract representation of a landscape scene. It is commonly used to symbolize a photo album or gallery, indicating that visual media can be viewed in this location. */
+_gallery_thumbnail = 'gallery_thumbnail',
+/** The design depicts a stylized rectangular button located on the left side of a controller or gaming peripheral. It indicates an action bumper used for specific inputs when playing video games. */
+_game_bumper_left = 'game_bumper_left',
+/** The design features two capitalized letters, 'R' and 'B', enclosed within a distinct button shape. This symbol typically indicates a specific action or control input, often used in gaming interfaces to represent bumper buttons or directional commands. */
+_game_bumper_right = 'game_bumper_right',
+/** The icon is a simple, outlined square container holding a capital letter L. This design typically serves as a navigation button or marker pointing to a specific segment, level, or leftward action within an application. */
+_game_button_l = 'game_button_l',
+/** A stylized rectangular button containing the characters L and 1. It typically represents an action or input mapped to the left trigger (L1) on a video game controller. */
+_game_button_l1 = 'game_button_l1',
+/** The icon depicts a rectangular button containing the characters 'L' and '2'. It typically represents a shoulder trigger or auxiliary control input found on gaming controllers, signaling an alternate action or secondary function within an application. */
+_game_button_l2 = 'game_button_l2',
+/** The design is a solid, rounded rectangular button featuring the capital letter R centered within it. This icon typically denotes an action trigger or function associated with the letter 'R' in video game controls. */
+_game_button_r = 'game_button_r',
+/** The icon features a rounded rectangular button containing the characters R1. This symbol represents an action or command mapped to the right side of a video game controller's input mechanism. */
+_game_button_r1 = 'game_button_r1',
+/** The icon is depicted as a solid, rectangular game button displaying the characters "R2." This commonly represents a primary action or secondary trigger function found on video game controllers. */
+_game_button_r2 = 'game_button_r2',
+/** The icon is presented within a simple, solid button shape featuring the characters ZL side by side. This design usually represents an action button or command prompt used for gameplay controls in virtual environments. */
+_game_button_zl = 'game_button_zl',
+/** The icon depicts the letters ZR enclosed within a stylized rectangular button shape. It is designed to represent a specific, selectable action or command point within a digital interface, such as a video game console. */
+_game_button_zr = 'game_button_zr',
+/** The design depicts a circular dial, resembling a gauge or clock face, featuring prominent arrows for movement. It generally signifies the ability to adjust, track, or modify the flow and duration of time or progress within an application. */
+_game_stick_l3 = 'game_stick_l3',
+/** The design displays a stylized analog clock face featuring prominent hour and minute hands. It is generally used to represent concepts related to time, such as scheduling, deadlines, or tracking elapsed duration within an application. */
+_game_stick_left = 'game_stick_left',
+/** The icon depicts a rounded button shape containing the capital letter R, positioned beneath a downward-pointing arrow. This symbol commonly represents actions or controls associated with the right side of a gaming controller or interface element. */
+_game_stick_r3 = 'game_stick_r3',
+/** It depicts a stylized directional input control, suggesting movement along a horizontal axis to the right. This icon is typically used in digital interfaces and video games to guide or move a character laterally across the screen. */
+_game_stick_right = 'game_stick_right',
+/** The design shows an outlined, rectangular control button that resembles a gaming controller's trigger mechanism. This icon is used to indicate the left action trigger input, signaling directional movement or firing capabilities within video game interfaces. */
+_game_trigger_left = 'game_trigger_left',
+/** The icon depicts a stylized, rectangular button positioned on the right side of an interface layout. It typically signifies directional movement to the right or serves as an action trigger for advancing through content in games and applications. */
+_game_trigger_right = 'game_trigger_right',
+/** The design features four symmetrically arranged segments extending outward from a central nexus point. This symbol typically indicates alignment, the center of an interface, or a universal cross-functional connection. */
+_gamepad = 'gamepad',
+/** The icon depicts five distinct, solid circular shapes arranged with four forming an upper cluster and one larger circle centered beneath them. This arrangement commonly represents directional control or primary focus points used for selection and navigation within a user interface. */
+_gamepad_circle_down = 'gamepad_circle_down',
+/** The icon depicts a solid circular shape designed to resemble a controller button or directional input element. It is typically used to indicate navigation or action moving toward the left side of an interface, often within gaming or control applications. */
+_gamepad_circle_left = 'gamepad_circle_left',
+/** The icon is composed of several circles arranged to indicate a directional movement. It typically signifies moving right, often used in interfaces for navigation or controlling character movement in games. */
+_gamepad_circle_right = 'gamepad_circle_right',
+/** The icon is composed of four solid circles clustered together in an interconnected formation. It commonly symbolizes connectivity, representing related elements, network nodes, or progression through distinct stages. */
+_gamepad_circle_up = 'gamepad_circle_up',
+/** The design features a cross shape composed of four arms, with a prominent downward-pointing element centered within it. It commonly signifies directional control or selecting the lowest option in menus and gaming interfaces. */
+_gamepad_down = 'gamepad_down',
+/** The icon depicts a simple directional arrow pointing clearly to the left. It typically signifies moving backward, navigating to the previous screen, or controlling movement in a leftward direction within an interface. */
+_gamepad_left = 'gamepad_left',
+/** The design depicts a symmetrical cross shape formed by four equal arms extending from the center point. This icon is commonly used in user interfaces to represent centering, alignment options, or general expansion/connection points. */
+_gamepad_right = 'gamepad_right',
+/** The icon depicts a symmetrical cross formation that strongly resembles a directional pad used in gaming controls. It commonly functions as an indicator for upward movement, selecting a primary 'up' direction, or executing an ascend command within digital interfaces. */
+_gamepad_up = 'gamepad_up',
+/** The icon depicts a stylized car enclosed within a structure suggesting an entry point or shelter for vehicles. It is commonly used in navigation and transportation contexts to mark the location of parking garages or vehicle storage facilities. */
+_garage = 'garage',
+/** The design features an outline of a garage bay paired with a prominent confirmation checkmark. This symbol generally signifies that access, availability, or a required service related to parking or storage has been successfully verified and completed. */
+_garage_check = 'garage_check',
+/** The icon depicts a stylized building with a prominent pitched roof and an attached overhead garage door. It generally symbolizes residential property, home storage, or general real estate themes. */
+_garage_door = 'garage_door',
+/** The design depicts a stylized outbuilding or house facade featuring an open rectangular space where a garage door would typically be located. This symbol commonly indicates vehicle access, storage availability, or easy entry into the ancillary parts of a property. */
+_garage_door_open = 'garage_door_open',
+/** The design illustrates a basic dwelling structure that includes an attached garage bay. It is commonly used in mapping applications to denote general property location, residential housing, or storage facilities. */
+_garage_home = 'garage_home',
+/** The icon shows an automobile parked within a structured area resembling a garage bay. It typically represents financial transactions related to vehicle services, such as parking fees or maintenance payments. */
+_garage_money = 'garage_money',
+/** The design is a stylized representation of a wheeled utility cart featuring an open basket area. It commonly symbolizes commerce and the act of gathering supplies, whether for shopping trips, grocery runs, or gardening activities. */
+_garden_cart = 'garden_cart',
+/** A stylized unit housed within a square casing suggests an exterior utility connection point. This icon commonly represents the meter that measures and tracks natural gas usage for a residence or facility. */
+_gas_meter = 'gas_meter',
+/** The design is a stylized illustration of a winding, curved pathway. It commonly represents medical services related to digestive health and gut care. */
+_gastroenterology = 'gastroenterology',
+/** The icon displays the outline of a closed double gate structure. It is commonly used to indicate an entrance, boundary, or point of access. */
+_gate = 'gate',
+/** The design shows a ceremonial mallet or judge's hammer resting on a sounding block. It universally symbolizes legal authority, judicial power, or the formal conclusion of proceedings. */
+_gavel = 'gavel',
+/** The icon depicts the general, rectangular outline of an electronic gadget, suggesting a mobile device form factor. It is used as a universal indicator to represent the overall status and connectivity of a portable piece of technology. */
+_general_device = 'general_device',
+/** The icon depicts a stylized double helix structure, which resembles a twisted spiral staircase or ladder. It is commonly used to symbolize genetics, biological information, and the fundamental building blocks of life. */
+_genetics = 'genetics',
+/** The design features a stylized musical note placed centrally within a circular border. This icon is used to access and browse various categories, allowing users to discover different styles or moods of music. */
+_genres = 'genres',
+/** The icon depicts a single, continuous wavy line flowing across the space. It is commonly used to represent spontaneous drawing, a signature placeholder, or an abstract decorative marker. */
+_gesture = 'gesture',
+/** The icon depicts a stylized human hand with fingers extended and pointed downward. It represents the action of selecting or tapping an item, indicating interaction within a digital interface. */
+_gesture_select = 'gesture_select',
+/** The graphic displays three capitalized block letters spelling G-I-F. It represents a popular file type used to display short, looping animations on websites or digital media. */
+_gif = 'gif',
+/** The design depicts two distinct, adjacent rectangular placeholders arranged side-by-side. This typically signifies a sequence of animated images or multiple related media items displayed together. */
+_gif_2 = 'gif_2',
+/** The icon depicts capitalized letters spelling "GIF" centered within a distinct square frame. It is commonly used to signify that the associated media is an animated image format or a short, looping video clip. */
+_gif_box = 'gif_box',
+/** The icon shows a solid black silhouette of an upright human figure. This widely recognized symbol is used in public signage to indicate facilities designated for women or females. */
+_girl = 'girl',
+/** The icon depicts a simple, stylized rendering of a cottage or small dwelling. It is typically used to represent temporary accommodations, general housing rentals, or real estate properties. */
+_gite = 'gite',
+/** The design shows a clean, simple outline of an upright cup or glass container. It is commonly used in user interfaces to symbolize beverages, refreshment, or general liquid capacity. */
+_glass_cup = 'glass_cup',
+/** The design is a stylized depiction of the Earth within a solid circle, featuring curved lines suggesting global coordinates. It commonly signifies worldwide reach, international scope, or connection to the internet. */
+_globe = 'globe',
+/** The icon depicts a stylized globe marked with lines of latitude and longitude that is overlaid with a prominent 'X'. It typically indicates the ability to cancel, reset, or remove global settings, language preferences, or international features. */
+_globe_2_cancel = 'globe_2_cancel',
+/** The icon depicts a stylized representation of Earth or a globe overlaid with a large question mark symbol. It generally suggests an unknown element, mystery, or unanswered query related to international topics or global scale. */
+_globe_2_question = 'globe_2_question',
+/** The design is a stylized black silhouette of a globe showing large continental landmasses. It typically represents geographical information or focus related to the Asian region. */
+_globe_asia = 'globe_asia',
+/** The design features a book-like shape that incorporates stylized lines suggestive of a globe or world map. It is typically used to symbolize global knowledge, learning resources, or international education. */
+_globe_book = 'globe_book',
+/** The icon displays a stylized globe featuring curved lines of latitude and longitude, with a distinct map pin marker placed over it. It typically signifies global location services, mapping features, or the ability to pinpoint an address anywhere in the world. */
+_globe_location_pin = 'globe_location_pin',
+/** This icon shows a stylized representation of the world contained within a circle, patterned after the British national flag. It indicates content or settings specifically tailored to the United Kingdom locale, language selection, or regional resources for Great Britain. */
+_globe_uk = 'globe_uk',
+/** The illustration shows a human hand making an open, precise gesture with slightly curved and spread fingers. This symbol is commonly used in medical contexts to represent the measurement, monitoring, or management of blood sugar levels. */
+_glucose = 'glucose',
+/** The design displays various glyphs drawn from different writing systems, including Latin letters, Chinese ideograms, ampersands, and percentage signs. It represents the breadth and complexity of global communication or multilingual capabilities. */
+_glyphs = 'glyphs',
+/** The icon illustrates a mechanism for navigating within text or code content by jumping to a designated point. It is commonly used in editors and documents to allow quick access to specific line numbers without scrolling through all material. */
+_go_to_line = 'go_to_line',
+/** The icon depicts a small triangular flag mounted atop a vertical pole or stake. It is typically used to mark the location of a destination, such as the final hole on a golf course. */
+_golf_course = 'golf_course',
+/** The icon depicts a passenger cabin suspended beneath two intersecting cables. It symbolizes aerial transportation methods, such as cable cars or gondolas, used for moving people across distance. */
+_gondola_lift = 'gondola_lift',
+/** It depicts a large rectangular screen unit positioned alongside an attached audio speaker. This composite design generally represents connected media systems or various integrated smart home devices. */
+_google_home_devices = 'google_home_devices',
+/** The design depicts an elongated handheld electronic device with multiple buttons arrayed across its front face. It universally signifies the control mechanism for smart televisions, streaming players, or other connected entertainment systems. */
+_google_tv_remote = 'google_tv_remote',
+/** The design shows concentric, curved lines radiating outward from a central point. It indicates that a wireless internet connection or signal strength is available in the area. */
+_google_wifi = 'google_wifi',
+/** The design features a solid, protective shield with a prominent cross marked across its center. This symbol typically warns the user that security measures are absent, protection is inactive, or data is not currently secured. */
+_gpp_bad = 'gpp_bad',
+/** The design features a classic shield shape encompassing a centralized exclamation point. It typically serves as an alert icon, indicating that a secure function has detected a warning or potential issue requiring attention. */
+_gpp_maybe = 'gpp_maybe',
+/** The icon depicts a perfect square filled with tones that shift smoothly from one color to another. This visual pattern is used to represent continuous change or a seamless blend between two distinct values in graphic design and digital media. */
+_gradient = 'gradient',
+/** The design features several stacked horizontal lines, resembling text from a document, capped off by a large checkbox element. This icon is commonly used to indicate that a list of items has been reviewed, evaluated, or marked as complete. */
+_grading = 'grading',
+/** A grouping of small, distinct circular shapes is clustered together in the design. This icon commonly represents seeds, agricultural harvests, or natural abundance. */
+_grain = 'grain',
+/** The icon depicts a path structure that curves downward from a single point before splitting into two diverging branches. It commonly represents multiple choices, decision points in a flowchart, or parallel paths of connection. */
+_graph_1 = 'graph_1',
+/** The icon depicts multiple interconnected points that form a visible graph-like structure. It is generally used to illustrate abstract concepts such as data flow, network architectures, or complex systemic relationships. */
+_graph_2 = 'graph_2',
+/** The illustration shows multiple circular nodes connected by lines in an asymmetrical, branching pattern. It typically represents a network structure, signifying the interconnectedness of datasets, systems, or complex relationships. */
+_graph_3 = 'graph_3',
+/** The icon depicts a central node radiating outwards through connecting lines to three distinct peripheral nodes. This structure is typically used to symbolize network distribution, interconnected systems, or pathways involving multiple branches. */
+_graph_4 = 'graph_4',
+/** The design depicts five symmetrical nodes radiating outwards and connecting to a single central point. This icon is typically used to symbolize connectivity hubs, network distribution, or multiple signals originating from one central source. */
+_graph_5 = 'graph_5',
+/** The icon depicts six distinct dots positioned around an imaginary central point. This pattern commonly represents connectivity, networking nodes, or a cyclical process involving multiple connected components. */
+_graph_6 = 'graph_6',
+/** The design shows several distinct nodes connected together by various lines, forming an irregular web pattern. This icon commonly symbolizes a complex network map or graph structure, used to illustrate the connections and relationships within a system. */
+_graph_7 = 'graph_7',
+/** It depicts three distinct circular nodes joined by lines that form a clear fork or 'Y' junction structure. This symbol is commonly used in diagrams and flowcharts to represent divergence, multiple possible paths, or branching logic. */
+_graph_8 = 'graph_8',
+/** The icon displays three parallel vertical bars of varying heights. It is used to represent an equalizer, indicating that advanced audio features are available to adjust sound frequencies like bass and treble. */
+_graphic_eq = 'graphic_eq',
+/** The design illustrates a stylized graphical representation typically used for audio frequencies or equalization settings. It indicates that the advanced sound effects feature is currently disabled and not affecting the output audio. */
+_graphic_eq_off = 'graphic_eq_off',
+/** The image shows a cluster of stylized blades of grass growing upward from a common base. It is typically used to represent natural settings, gardens, or general themes of greenery and outdoor life. */
+_grass = 'grass',
+/** The design visually depicts a square framework divided into several smaller, uniform sections. It typically functions as a symbol for organization, indicating a menu that contains various settings, applications, or viewing options. */
+_grid_3x3 = 'grid_3x3',
+/** The design consists of a structured three-by-three grid pattern marked by a prominent diagonal crossout. This symbol commonly indicates that connectivity, data access, or service functionality is currently disabled, unavailable, or offline. */
+_grid_3x3_off = 'grid_3x3_off',
+/** The design is composed of intersecting lines forming a clear, uniform square lattice pattern. It generally signifies structured views for displaying detailed content, such as graphs, matrix data, or puzzle layouts. */
+_grid_4x4 = 'grid_4x4',
+/** The icon depicts a simple cross formed by two intersecting straight lines. It represents fundamental structural guides used to achieve balanced and aesthetically pleasing proportions in design and art. */
+_grid_goldenratio = 'grid_goldenratio',
+/** The illustration depicts a structured grid within a square frame, marked by intersecting lines that create visible guide points. This icon represents alignment guides or formatting controls, indicating precise control over element placement in a design or layout space. */
+_grid_guides = 'grid_guides',
+/** The design is a simple, solid rectangular frame that is bisected by a vertical line down the center. This icon typically represents side-by-side layout options, dual viewing modes, or items meant to be displayed in two adjacent sections. */
+_grid_layout_side = 'grid_layout_side',
+/** The icon depicts a square structure segmented into smaller squares, forming a visible grid pattern. A diagonal line is superimposed across this entire grid, indicating that the structured layout is deactivated or removed. This symbol commonly signifies toggling off structural elements, such as guiding lines, boundaries, or organizational overlays in a user interface. */
+_grid_off = 'grid_off',
+/** The image depicts a perfect square composed of nine smaller squares arranged in three neat rows and columns. It typically signifies organized content, structured layouts, or the ability to toggle on a grid-based view within an application. */
+_grid_on = 'grid_on',
+/** The icon depicts nine empty squares precisely organized into three rows and three columns. This design typically indicates the option to switch content or applications into a comprehensive, tiled, or gallery-style layout. */
+_grid_view = 'grid_view',
+/** The illustration depicts two distinct, stylized containers: one with angular sides resembling a bottle, and another squat, round vessel like a jar or bucket. This icon generally represents provisions, household supplies, or various daily necessities purchased in bulk. */
+_grocery = 'grocery',
+/** The design displays two overlapping, stylized silhouettes of human figures. It typically signifies a collective unit, such as a community, team, or multiple users within an application. */
+_group = 'group',
+/** The icon visually depicts several simplified human figures positioned together, accompanied by a prominent plus sign. It generally signifies the function of adding new members to an existing group or connecting people in a collective setting. */
+_group_add = 'group_add',
+/** The icon depicts multiple stylized human figures connected together, all crossed out by a single diagonal line. It indicates that grouping or association features have been disabled or removed from use. */
+_group_off = 'group_off',
+/** The icon depicts a symbol representing multiple items or people that is crossed out or followed by an action of removal. It indicates the function to dissolve, clear, or remove selected elements from a group or collection. */
+_group_remove = 'group_remove',
+/** The design features a stylized silhouette representing a group of people placed next to a magnifying glass icon. It typically signifies the process of searching through content shared by, or relevant to, an entire community or collection of users. */
+_group_search = 'group_search',
+/** The icon consists of three small dots arranged in a horizontal line inside a larger circle. This design typically represents a group selection or multiple connected elements, suggesting collaboration or shared tasks. */
+_group_work = 'group_work',
+/** The icon depicts multiple clusters of rectangular bars with varying heights. This visualization is used to compare different metrics or track changes in datasets across related categories. */
+_grouped_bar_chart = 'grouped_bar_chart',
+/** The design features three stylized human figures positioned side-by-side in a row. This symbol is generally used to represent a collection of individuals, such as members of a group, family, or social network. */
+_groups = 'groups',
+/** The icon depicts three stylized figures standing together in a cohesive formation. It commonly represents groups of people, community size, or social networking features within an application. */
+_groups_2 = 'groups_2',
+/** The design depicts three highly stylized human figures positioned side-by-side in a unified group formation. This icon commonly represents community, family units, or any general association of people together. */
+_groups_3 = 'groups_3',
+/** The design features a stylized human figure placed within the universally recognized circular symbol for disability access. It indicates that an area or facility is accessible and suitable for people with reduced mobility, including those using wheelchairs. */
+_guardian = 'guardian',
+/** The icon is a stylized, symmetrical drawing representing the lower female pelvic region. It is widely used to denote services related to women's health, gynecology, or general reproductive care. */
+_gynecology = 'gynecology',
+/** The graphic consists of a minimalist capital letter H shape. This icon functions as a status indicator used to communicate settings or operational modes related specifically to mobile data connectivity. */
+_h_mobiledata = 'h_mobiledata',
+/** The design is a solid square featuring a large, centered capital letter H. This icon typically functions as a status badge indicating availability or connection quality for digital features, such as streaming or mobile connectivity. */
+_h_mobiledata_badge = 'h_mobiledata_badge',
+/** The design features a capital letter H immediately followed by a positive charge indicator plus sign. This symbol represents the hydrogen ion ($\text{H}^{+}$), which is fundamental in chemistry for measuring acidity or concentration levels. */
+_h_plus_mobiledata = 'h_plus_mobiledata',
+/** The design features a capital letter H positioned beside a plus sign, all contained within a solid rectangular shape. This symbol is commonly used to denote enhanced or premium service levels, often indicating superior mobile data connectivity. */
+_h_plus_mobiledata_badge = 'h_plus_mobiledata_badge',
+/** The icon illustrates a stylized person carrying objects that resemble household supplies alongside luggage or bags. It typically signifies tasks related to moving goods, transporting materials, or general hauling of belongings. */
+_hail = 'hail',
+/** The icon depicts a simple, straight path framed by solid vertical structures on either side. This symbol generally indicates a transitional space, suggesting movement from one location to another. */
+_hallway = 'hallway',
+/** The design depicts a row of four uniform circles connected by stylized squiggly lines. This icon typically represents traditional Japanese sweets, often associated with spring festivals and celebratory occasions. */
+_hanami_dango = 'hanami_dango',
+/** The icon depicts an open, stylized human hand in a slightly cupped position. It is commonly used to represent topics related to human anatomy, structural details, or general physical health information. */
+_hand_bones = 'hand_bones',
+/** The icon depicts a stylized outline drawing of an open human hand with fingers slightly separated. It generally represents actions like waving hello, acknowledging something, or indicating a specific gesture. */
+_hand_gesture = 'hand_gesture',
+/** The icon depicts a stylized human hand making a clear gesture of stopping or negation. It generally signifies the cancellation, dismissal, or deactivation of a feature or process. */
+_hand_gesture_off = 'hand_gesture_off',
+/** The illustration depicts an open hand holding or presenting a dish of food, suggesting careful handling and serving. It is typically used to symbolize dining out, catering services, or the act of receiving a prepared meal. */
+_hand_meal = 'hand_meal',
+/** The icon depicts an open hand gently cradling a stack of rectangular objects. It generally represents handling, collecting, or receiving a bundle of items such as documents, files, or resources. */
+_hand_package = 'hand_package',
+/** A stylized outline depicts an electronic device designed to be held by hand, resembling a standard video game controller or joystick. This icon typically signifies control inputs, suggesting interaction with gaming, simulation, or directional movement systems. */
+_handheld_controller = 'handheld_controller',
+/** Two stylized hands are depicted meeting and interlocking fingers in a firm grasp. This universally signifies agreement, successful collaboration, or establishing a new partnership. */
+_handshake = 'handshake',
+/** The illustration shows several mechanical tools crossed together, including implements resembling a wrench and pliers. This icon symbolizes general home repair, maintenance services, or skilled handyman work. */
+_handyman = 'handyman',
+/** The design illustrates a simplified, blocky representation of a video camera or camcorder unit. It typically indicates functions related to media content, such as video playback, recording status, or accessing video libraries. */
+_hangout_video = 'hangout_video',
+/** The design depicts a video camera graphic marked with a diagonal slash. It is used to indicate that video features are disabled or turned off for the current session. */
+_hangout_video_off = 'hangout_video_off',
+/** The icon shows a solid, rectangular unit that contains a central circular element positioned above a horizontal dividing line. It is commonly used to represent electronic storage media or audio processing equipment. */
+_hard_disk = 'hard_disk',
+/** The icon depicts a simple rectangular enclosure with gently rounded corners. It is used to symbolize the storage of information, representing saved data, backups, or system memory within digital contexts. */
+_hard_drive = 'hard_drive',
+/** The icon depicts a stylized, rectangular external storage unit with visible indicator lights near its bottom edge. This symbol is commonly used to represent saved data, backup capabilities, or the transfer of large files between devices. */
+_hard_drive_2 = 'hard_drive_2',
+/** The icon consists of a straight vertical line connected to an angled, flared element at the top right. It is generally used to symbolize hearing aids or adaptive audio technology designed to assist individuals with hearing difficulties. */
+_hardware = 'hardware',
+/** The design features the capitalized letters "HD" set within a simple rectangular frame. This symbol is widely used to represent High Definition, indicating that media or connections support high resolution video quality. */
+_hd = 'hd',
+/** It depicts an uppercase letter A centered within a circular frame. It generally signifies approval, premium quality status, or that a function is operating in its optimal or advanced mode. */
+_hdr_auto = 'hdr_auto',
+/** The icon visually combines an encircled capital letter A with the accompanying text HDR+. This symbol indicates High Dynamic Range display capabilities that automatically optimize picture quality for optimal viewing experience. */
+_hdr_auto_select = 'hdr_auto_select',
+/** The icon depicts a stylized circle enclosing a plus sign, followed by the acronym HDR and an additional plus symbol. This indicator signifies that the content supports High Dynamic Range technology, suggesting superior visual quality with broader color depth and contrast. */
+_hdr_enhanced_select = 'hdr_enhanced_select',
+/** The image displays the acronym HDR crossed out by a diagonal line. This common icon indicates that High Dynamic Range (HDR) mode is currently disabled or inactive. */
+_hdr_off = 'hdr_off',
+/** It depicts a circle with a diagonal slash through it, placed next to the letters HDR+. This symbol indicates that High Dynamic Range content or settings are currently disabled, allowing users to manage this display feature. */
+_hdr_off_select = 'hdr_off_select',
+/** The design consists of the capitalized letters H, D, and R placed side-by-side in a block format. This indicator means High Dynamic Range mode is active, signifying optimized colors and deeper contrast for improved viewing quality. */
+_hdr_on = 'hdr_on',
+/** The icon displays the letters HDR followed by a plus sign, presented in a modern typeface. This symbol indicates that High Dynamic Range content or display features are currently enabled or selected for use. */
+_hdr_on_select = 'hdr_on_select',
+/** The illustration features the capitalized letters H, D, and R stacked vertically within a circular boundary, followed by a plus sign. This symbol indicates that an enhanced High Dynamic Range (HDR) mode is active, optimizing the image for richer colors and greater detail. */
+_hdr_plus = 'hdr_plus',
+/** The design depicts a circle containing internal symbols that are crossed out by a prominent diagonal line. This symbol is universally understood to indicate that a specific feature or setting has been disabled, inactive, or switched off. */
+_hdr_plus_off = 'hdr_plus_off',
+/** The design features two distinct circles placed side-by-side; specifically, one is an unfilled outline and the other is completely filled in black. This arrangement typically denotes a robust or maximum level of intensity, such as strong signal strength or high connection quality. */
+_hdr_strong = 'hdr_strong',
+/** The design features a solid filled circle immediately followed by an outlined hollow circle. This symbol typically indicates a reduced status level, suggesting that the function or signal strength is diminished or operating below peak capacity. */
+_hdr_weak = 'hdr_weak',
+/** The icon is a simple line drawing of a pair of goggles or glasses. It typically represents virtual reality (VR) or augmented reality (AR) technology used for immersive digital experiences. */
+_head_mounted_device = 'head_mounted_device',
+/** The icon is an outline drawing of over-ear headphones, showing a band connecting two cups. It is used across digital interfaces to signify audio playback, suggesting music listening or sound output. */
+_headphones = 'headphones',
+/** The illustration features a pair of over-ear headphones positioned next to a distinct battery icon. This symbol is commonly used in apps to indicate the current power level or remaining charge for wireless audio devices. */
+_headphones_battery = 'headphones_battery',
+/** The illustration depicts a listening device attached to a visible microphone component. This symbol is commonly used to indicate audio communication or voice input, suggesting readiness for calls or virtual meetings. */
+_headset_mic = 'headset_mic',
+/** The icon shows a pair of headphones crossed out by a diagonal line. It commonly indicates that audio output should be muted, disabled, or turned off. */
+_headset_off = 'headset_off',
+/** The icon is formed by two solid, intersecting diagonal lines creating a prominent 'X' shape. It is commonly used in digital interfaces to represent cancellation, dismissal, or the function of closing a window or item. */
+_healing = 'healing',
+/** The icon depicts a container attached to segmented vertical lines, symbolizing analysis or monitoring. It is commonly used to represent health assessments, specialized treatments, or personal care routines related to wellness. */
+_health_and_beauty = 'health_and_beauty',
+/** The icon depicts a protective shield surrounding a medical cross symbol. It is commonly used to signify general health safety, first aid availability, or secure well-being features within an application. */
+_health_and_safety = 'health_and_safety',
+/** The design consists of a simple, symmetrical cross shape drawn with thick lines. It is widely used as an international symbol for first aid, medical assistance, or general healthcare services. */
+_health_cross = 'health_cross',
+/** The icon depicts a medical cross overlaid with a prominent wavy line, evoking the look of vital signs or a stethoscope monitor. It commonly signifies general healthcare services, clinical information, and health metrics tracking. */
+_health_metrics = 'health_metrics',
+/** The design illustrates a stylized document sheet with a visible folded corner and a large percent sign placed prominently on the surface. This symbol typically indicates financial data, statistical reports, or any content that involves calculating rates, proportions, or discounts. */
+_heap_snapshot_large = 'heap_snapshot_large',
+/** The icon depicts a stylized document outline featuring folded corners. It commonly symbolizes managing a collection or set of multiple associated files, system snapshots, or exported data records. */
+_heap_snapshot_multiple = 'heap_snapshot_multiple',
+/** The design features a primary square container with a percentage symbol inside, next to two smaller rectangular placeholders. It is commonly used to indicate proportional measurements, discounts, or relative data ratios. */
+_heap_snapshot_thumbnail = 'heap_snapshot_thumbnail',
+/** The icon shows a simple, side-view outline of a human ear. It generally represents auditory function or themes related to listening and sound perception. */
+_hearing = 'hearing',
+/** The design features a profile outline of an outer ear with an attached component that resembles an electronic hearing aid. This icon is used to indicate settings or status related to auditory accessibility, such as using a hearing device. */
+_hearing_aid = 'hearing_aid',
+/** The design depicts a stylized earpiece, commonly used to represent an assistive listening device like a hearing aid. The diagonal slash indicates that this device is disabled, unavailable, or not applicable for the user. */
+_hearing_aid_disabled = 'hearing_aid_disabled',
+/** The icon depicts a side view silhouette of a person's head overlaid with a thick, sweeping diagonal line or slash. This symbol is commonly used to represent hearing impairment or disability. */
+_hearing_aid_disabled_left = 'hearing_aid_disabled_left',
+/** The design features a curved outline resembling an ear structure, with an internal element suggesting an inserted aid. This icon is used to indicate that one individual has difficulty hearing or uses specialized audio assistance devices. */
+_hearing_aid_left = 'hearing_aid_left',
+/** The design features several concentric, curved lines that represent sound waves, all overlaid with a distinct diagonal slash. This symbol is commonly used to indicate hearing impairment or deafness status within accessibility indicators. */
+_hearing_disabled = 'hearing_disabled',
+/** It depicts a heart shape that has been visibly fractured down the middle. This symbol typically conveys feelings of sadness, loss, or broken relationships. */
+_heart_broken = 'heart_broken',
+/** The icon depicts a stylized outline of a heart with a clear checkmark mark placed within its lower curve. This combination typically indicates that something related to love, emotional health, or physical well-being has been verified or confirmed. */
+_heart_check = 'heart_check',
+/** The illustration shows a stylized heart shape with a prominent minus sign attached to its right side. This symbol generally suggests withdrawing affection, canceling a connection, or indicating that an item has been removed from favorites. */
+_heart_minus = 'heart_minus',
+/** The icon depicts a simple outline of a heart shape combined with an attached plus sign. It is commonly used in user interfaces to suggest adding value, boosting metrics, or marking a new positive feature. */
+_heart_plus = 'heart_plus',
+/** The design shows a stylized heart shape with a smiling face drawn inside its center. It is typically used to express deep affection, happiness, or warm emotional sentiment. */
+_heart_smile = 'heart_smile',
+/** The icon depicts three parallel, undulating wavy lines. It is a universal symbol used to indicate rising vapor, high temperatures, or intense heat. */
+_heat = 'heat',
+/** The design is an outline of a stylized spoked wheel contained within a clear square border. It commonly symbolizes circulation or continuous flow, suggesting processes related to energy exchange and climate control systems. */
+_heat_pump = 'heat_pump',
+/** The icon depicts a structured block containing internal wavy patterns, with an upward-angled arrow exiting from its right side. This illustrates the efficient transfer or regulated flow of energy, representing that a system is operating in balance. */
+_heat_pump_balance = 'heat_pump_balance',
+/** It features a simple, symmetrical vertical line with arrows pointing both above and below. This symbol commonly indicates the measurable range of something, such as height, depth, or maximum variation in magnitude. */
+_height = 'height',
+/** A simplified drawing shows an object resembling industrial machinery, featuring a curved head attached to a segmented, boxy body. This icon generally represents utility equipment or general mechanical apparatus used for services and functions. */
+_helicopter = 'helicopter',
+/** The design shows a prominent question mark centered within a circular outline. This icon generally signifies help, indicates that more information is available, or prompts the user to seek assistance. */
+_help = 'help',
+/** The design features a distinct question mark centered inside a defined square outline. This icon is commonly used to guide users toward help resources, FAQs, or general support documentation. */
+_help_center = 'help_center',
+/** The icon depicts an outline drawing of a house with a gable roof shape, featuring a centered exclamation point inside its structure. This design typically serves as a warning sign or indicator for required help related to home services, property issues, or emergency housing assistance. */
+_help_clinic = 'help_clinic',
+/** The design shows clustered circular forms, representing various biological components like cells and blood samples. It is used to symbolize medical topics concerning the composition and study of blood, known as hematology. */
+_hematology = 'hematology',
+/** The design literally displays the capitalized acronym H-E-V-C. This stands for High Efficiency Video Coding, which is a modern compression standard used to deliver high-quality digital video streams while maintaining smaller file sizes. */
+_hevc = 'hevc',
+/** The icon depicts the outline of a regular hexagon with six equal sides. It commonly symbolizes natural structures, stability, or organized groupings in various contexts. */
+_hexagon = 'hexagon',
+/** The design features a pair of opposing directional arrows, one pointing upward and the other pointing downward. This icon typically indicates a toggle function used in user interfaces to collapse or expand sections of content, allowing users to hide or reveal details. */
+_hide = 'hide',
+/** The design shows a bracket-like corner folded over an inner element contained within a square frame. This symbol is commonly used to indicate the action of minimizing, hiding, or collapsing visible content. */
+_hide_image = 'hide_image',
+/** The icon is an outlined circle with a diagonal line drawn across it. This universally recognized mark indicates cancellation, prohibition, or the removal of visible content. */
+_hide_source = 'hide_source',
+/** The icon depicts a sturdy, supportive armchair with an elevated backrest. It represents furniture designed for infants or small children, typically used in settings related to dining or play. */
+_high_chair = 'high_chair',
+/** The icon depicts an outer square boundary containing multiple small dots arranged both inside and surrounding it. This visual arrangement typically symbolizes high information density, detailed input capabilities, or advanced responsiveness in digital interfaces. */
+_high_density = 'high_density',
+/** The design features two capital letters, 'H' and 'Q', enclosed within a prominent square box. This icon is commonly used to indicate that content or media is available in high quality or superior resolution. */
+_high_quality = 'high_quality',
+/** The icon displays the capitalized text "HI RES" contained within a simple rectangular border. This acronym stands for High Resolution, indicating that the associated digital content possesses superior clarity and detailed visual quality. */
+_high_res = 'high_res',
+/** The design features a stylized lightbulb with visible rays emanating from it, suggesting illumination. It is widely used in user interfaces to symbolize inspiration, knowledge, or the sudden appearance of an idea. */
+_highlight = 'highlight',
+/** The icon consists of a circular border surrounding a central vertical line segment. It is used in user interfaces to indicate that an element, such as a button or input field, currently has active keyboard focus or selection. */
+_highlight_keyboard_focus = 'highlight_keyboard_focus',
+/** The design features an arrow that completes a curved, open loop forming a circular shape. It is universally used to indicate refreshing content or restarting a process by repeating the current action. */
+_highlight_mouse_cursor = 'highlight_mouse_cursor',
+/** The design features an uppercase letter 'I' centered within a circular border. This icon typically signifies text input or focus, indicating the active area where users can type or select content. */
+_highlight_text_cursor = 'highlight_text_cursor',
+/** The icon literally depicts a solid black, diagonally oriented rectangular shape. It is used to symbolize a highlighter or marker tool for emphasizing text in digital notes or documents. */
+_highlighter_size_1 = 'highlighter_size_1',
+/** The icon depicts a solid, angular block shape resembling an eraser or highlighting stick. It typically signifies the function of marking, emphasizing, or correcting text within digital documents. */
+_highlighter_size_2 = 'highlighter_size_2',
+/** The design is a solid black rectangle rendered at an oblique angle. It generally symbolizes the action of selecting, annotating, or emphasizing key information within digital content. */
+_highlighter_size_3 = 'highlighter_size_3',
+/** The icon is depicted as a solid black, parallelogram shape that appears slanted. This design commonly functions as a visual label or tag to categorize and group associated information within an application interface. */
+_highlighter_size_4 = 'highlighter_size_4',
+/** The icon depicts a simple, solid black geometric shape that resembles a diamond or rhombus. It is typically used to indicate selection, highlighting content, or drawing attention to a specific area of interest. */
+_highlighter_size_5 = 'highlighter_size_5',
+/** A stylized human figure is shown taking a step while wearing a bag on their back. This icon commonly represents outdoor activities such as hiking, trekking, or general travel requiring gear. */
+_hiking = 'hiking',
+/** The design features a single curved arrow forming a complete circular loop with an arrowhead. This symbol generally indicates refreshing content or viewing the history of previously accessed data. */
+_history = 'history',
+/** The image shows an arrow that forms a complete loop, curving back toward its starting point. This symbol is widely used to indicate reviewing history, refreshing content, or returning to a previous state or view within an application. */
+_history_2 = 'history_2',
+/** The icon depicts a stylized piece of documentation or an unrolled scroll suggesting historical records. It is typically used to represent archives, academic knowledge, or educational materials related to history and research. */
+_history_edu = 'history_edu',
+/** The icon combines a stylized eye symbol with a prominent diagonal strike-through line. This design is used to indicate that viewing history or personal tracking has been disabled, often enhancing user privacy settings. */
+_history_off = 'history_off',
+/** The design is a circular analog clock face with visible hands. This icon commonly indicates that history tracking or time logging has been disabled, allowing users to pause the recording of past activity. */
+_history_toggle_off = 'history_toggle_off',
+/** The illustration shows several adjacent hexagonal cells forming a compact cluster. This pattern commonly symbolizes interconnectedness, community structures, or complex networks. */
+_hive = 'hive',
+/** The design consists of three large, black, capitalized letters forming the acronym HLS. This designation typically represents a specific technical standard or feature related to digital streaming content or connectivity. */
+_hls = 'hls',
+/** The capital letters H L S are marked with a thick diagonal strikethrough line. This visual pattern commonly signifies that the feature or setting it represents is currently disabled or turned off. */
+_hls_off = 'hls_off',
+/** The icon depicts multiple interconnected house outlines of varying sizes. It generally represents a community setting, such as a village or residential area, often used in contexts like real estate or vacation rentals. */
+_holiday_village = 'holiday_village',
+/** The image is a minimalist outline of a house structure with a peaked roof and rectangular base. It symbolizes a sense of belonging or serves as the primary starting point on an application dashboard. */
+_home = 'home',
+/** The design features a simple house outline positioned next to a stylized four-petal flower motif. It is commonly used to represent topics related to domestic life, real estate, gardening, or general household services. */
+_home_and_garden = 'home_and_garden',
+/** The icon depicts a basic silhouette of a house constructed from simple geometric lines. It is widely used in user interfaces to symbolize the main starting page or dashboard of an application. */
+_home_app_logo = 'home_app_logo',
+/** The design features a simple outline of a house with a prominent medical cross centered within its walls. This symbol generally represents healthcare and medical assistance provided in a home or residential setting, such as home health care. */
+_home_health = 'home_health',
+/** The icon is an outline of a spanner wrench, a common mechanical tool used for gripping and turning fasteners. It typically symbolizes construction, repairs, DIY projects, or general home improvement activities. */
+_home_improvement_and_tools = 'home_improvement_and_tools',
+/** The design shows a temperature gauge adjacent to an illuminated lightbulb symbol. This icon generally signifies connected household devices, representing overall smart home control and environment management. */
+_home_iot_device = 'home_iot_device',
+/** The design is a simple outline of a rectangle with gently rounded corners, resembling a generic electronic screen or display panel. This icon typically signifies accessing the main home view or maximizing content visibility within an application interface. */
+_home_max = 'home_max',
+/** The icon depicts a rounded rectangular container that holds three small dots arranged horizontally. It commonly serves as a visual indicator for an ellipsis, suggesting that there are additional options or more information available to view. */
+_home_max_dots = 'home_max_dots',
+/** The design represents a simplified indicator pointing toward a primary starting point. It is commonly used in user interfaces to allow quick navigation back to the main screen or dashboard of an application. */
+_home_mini = 'home_mini',
+/** The icon depicts a stylized location pin marker that incorporates the simple silhouette of a house into its upper section. This symbol is widely used to designate a user's primary residence or designated home location within digital maps and applications. */
+_home_pin = 'home_pin',
+/** It is stylized as a solid, rectangular case resembling a professional briefcase or tool kit. This icon generally represents hands-on services, such as general home repairs, maintenance work, or technical support. */
+_home_repair_service = 'home_repair_service',
+/** The design illustrates a simple rectangular enclosure with an internal circular element. This symbol is commonly used across digital interfaces to indicate the presence of sound or audio playback. */
+_home_speaker = 'home_speaker',
+/** The design is a simple, stylized outline of a container or bucket with a flat base. It commonly represents general storage, organization, or the accumulation of household items within a domestic setting. */
+_home_storage = 'home_storage',
+/** The design combines a simple outline of a house with visible mechanical gears attached nearby. It typically indicates accessing advanced settings or configuring a specific aspect of your local or home-based system setup. */
+_home_storage_gear = 'home_storage_gear',
+/** The icon depicts a stylized outline of a house with a prominent pitched roof and solid base. It is widely used in digital interfaces to represent the "Home" section, signaling the application's primary page or root directory. */
+_home_work = 'home_work',
+/** The design depicts a left-pointing arrow and a right-pointing arrow flanking a central vertical line. This icon is used to indicate that content should be horizontally centered within its container or space. */
+_horizontal_align_center = 'horizontal_align_center',
+/** The design shows an arrow forming a perpendicular line segment pointing horizontally to the left. This icon typically instructs software to align all content flush against the left margin when formatting text or columns. */
+_horizontal_align_left = 'horizontal_align_left',
+/** The icon depicts an arrow drawn as a straight line with a triangular head pointing horizontally to the right. It typically signifies movement toward the right, indicating continuation or proceeding to the next step within sequential digital layouts. */
+_horizontal_align_right = 'horizontal_align_right',
+/** The design features three parallel vertical bars separated by consistent spacing. It is used in document formatting to adjust the gaps between content, ensuring that multiple items or columns are perfectly and evenly distributed across a designated space. */
+_horizontal_distribute = 'horizontal_distribute',
+/** The design depicts a single, straight, solid horizontal line segment. Typographically, it serves as a visual divider used to separate distinct sections of text or information on a page. */
+_horizontal_rule = 'horizontal_rule',
+/** The design depicts three distinct, stacked horizontal bars separated by white space. It is commonly used to represent segmented information, such as multiple sections within a document or various items in an organized feed. */
+_horizontal_split = 'horizontal_split',
+/** The design depicts two adjacent, vertically aligned panels that resemble paired data containers. This icon is typically used to represent comparison views, parallel data streams, or the ability to host and display related information side-by-side. */
+_host = 'host',
+/** The design shows a rectangular container with vertical slats, containing a stylized person and wavy lines above it. It generally indicates facilities for relaxation, such as a jacuzzi, sauna, or onsen bath. */
+_hot_tub = 'hot_tub',
+/** The icon depicts a simple, side-view illustration of a comfortable bed setup. It is used to symbolize overnight stays or general hotel accommodations during travel planning. */
+_hotel = 'hotel',
+/** The design is a clear, symmetrical five-pointed star outline. It typically indicates the level of quality, prestige, or service class, commonly used for rating accommodations like hotels. */
+_hotel_class = 'hotel_class',
+/** The design is a symmetrical illustration depicting the classic shape of an hourglass sand timer. It generally symbolizes the passage of time, elapsed duration, or approaching deadlines. */
+_hourglass = 'hourglass',
+/** The design features an illustration of an hourglass connected to a large, downward-pointing arrow. This icon commonly symbolizes the passage of time, declining values, or a decrease in quantity over a period. */
+_hourglass_arrow_down = 'hourglass_arrow_down',
+/** It features a drawing of an hourglass paired with an arrow pointing upward. This combination commonly suggests rapid improvement, increased efficiency, or positive growth achieved over time. */
+_hourglass_arrow_up = 'hourglass_arrow_up',
+/** The icon illustrates the solid, receiving base section of a traditional hourglass structure. Contextually, it is used to signify that a time-based task has reached completion, is currently paused, or is in an empty/disabled state. */
+_hourglass_bottom = 'hourglass_bottom',
+/** The icon shows an hourglass next to a prominent checkmark. It is commonly used to indicate that a time-sensitive process or required verification step has been successfully completed or confirmed. */
+_hourglass_check = 'hourglass_check',
+/** It depicts an hourglass containing sand that flows between two interconnected chambers. The diagonal line drawn across it indicates that a function related to time tracking, waiting, or elapsed time is currently disabled or unavailable. */
+_hourglass_disabled = 'hourglass_disabled',
+/** The icon depicts an empty hourglass, showing two bulbous chambers connected by a narrow waist. It is commonly used to symbolize elapsed time, indicating that a process or waiting period must expire. */
+_hourglass_empty = 'hourglass_empty',
+/** The illustration combines the shape of an hourglass with a vertical double bar, which is commonly recognized as a pause symbol. This icon generally indicates that a process or action has been temporarily suspended or is waiting to resume. */
+_hourglass_pause = 'hourglass_pause',
+/** The design depicts the upper chamber and narrow neck of an hourglass structure. It is commonly used in user interfaces to indicate a time delay, processing period, or temporary waiting state. */
+_hourglass_top = 'hourglass_top',
+/** The design is a simple, stylized outline of a dwelling, featuring a pitched roof over a rectangular base. It is widely used to represent 'home' or a specific physical location within digital maps and interfaces. */
+_house = 'house',
+/** The design illustrates a basic dwelling with a pitched roof and several horizontal divisions on the main structure. It is commonly used to represent general housing, residential property, or domestic life services. */
+_house_siding = 'house_siding',
+/** The design depicts a stylized house structure that is overlaid or merged with the shape of a protective shield. It generally symbolizes residential security, protection services, or insurance guarantees for property and family safety. */
+_house_with_shield = 'house_with_shield',
+/** The design depicts a simple dwelling with a pitched roof resting upon undulating lines that represent water. This icon is used to symbolize a floating accommodation, suggesting a vacation stay or residence on a body of water. */
+_houseboat = 'houseboat',
+/** The design is a simple outline depicting a container attached to a spray nozzle. It generally represents various cleaning supplies and other liquid items used for household maintenance and upkeep. */
+_household_supplies = 'household_supplies',
+/** The design shows an outlined diamond shape, symmetrical along its vertical axis. This symbol commonly indicates angular measurements or alignment points within a creative workspace. */
+_hov = 'hov',
+/** The icon features a simplified human figure alongside a checkmark. This generally signifies that the user account or profile has been successfully verified or approved. */
+_how_to_reg = 'how_to_reg',
+/** The icon features an abstract rhombus shape placed atop a solid rectangular base. It is typically used to symbolize the process of selecting an option or finalizing a decision, such as casting a vote. */
+_how_to_vote = 'how_to_vote',
+/** The design features an outline of a stylized heart positioned above a solid horizontal line. This symbol typically indicates baseline vital signs or the monitoring of resting heart rate. */
+_hr_resting = 'hr_resting',
+/** The design features angle brackets surrounding letters, which mimics the syntax used in markup languages. This icon is commonly used to denote web development, coding ability, or structured data formats. */
+_html = 'html',
+/** The image displays the capitalized letters H T T P. This acronym stands for Hypertext Transfer Protocol and refers to the standard set of rules used for transferring data across the World Wide Web. */
+_http = 'http',
+/** The design features a central circle linked by straight lines to several surrounding circles, forming a radial pattern. It is used to symbolize a core point of connection where multiple paths or elements converge and radiate outwards. */
+_hub = 'hub',
+/** This graphic depicts a stylized long bone, characteristic of those found in the arm. It is commonly used to represent anatomical components or biological diagrams. */
+_humerus = 'humerus',
+/** The icon is a simple, stylized mark resembling a checkmark or tick. It generally indicates confirmation, signifying that a task has been successfully completed or an item has been approved. */
+_humerus_alt = 'humerus_alt',
+/** The icon depicts a single, solid droplet silhouette. It is used to indicate that the surrounding air has high humidity or moisture content. */
+_humidity_high = 'humidity_high',
+/** The design features a simplified drawing of a home's roofline and walls. This icon typically represents indoor environmental monitoring, specifically the measurement or level of household humidity. */
+_humidity_indoor = 'humidity_indoor',
+/** The icon depicts a simple, outlined teardrop shape representing a drop of water. Generally, this symbol relates to hydration or liquid levels, and when used with "low," it signifies reduced moisture content in the air. */
+_humidity_low = 'humidity_low',
+/** The icon is a solid black depiction shaped like a water droplet. It is used to indicate a moderate or medium level of humidity or moisture content. */
+_humidity_mid = 'humidity_mid',
+/** The symbol combines a stylized water droplet shape with an embedded percentage sign. It is used to measure or indicate the relative concentration of moisture within a fluid or atmosphere. */
+_humidity_percentage = 'humidity_percentage',
+/** The design depicts stacked, curved lines often contained within a square border to symbolize ventilation or air circulation components. This iconography generally indicates climate control systems, such as heating, ventilation, and air conditioning services. */
+_hvac = 'hvac',
+/** The icon depicts dynamic wavy lines contained within an encompassing arch structure. It is commonly used in service tools or appliance interfaces to indicate the initiation of a maximum defrost cycle or comprehensive HVAC system maintenance. */
+_hvac_max_defrost = 'hvac_max_defrost',
+/** The design illustrates a pair of stylized skates, showing a boot attached to a curved blade structure. It is typically used to represent ice skating or general recreational activities involving gliding on hard surfaces. */
+_ice_skating = 'ice_skating',
+/** The icon depicts a stylized ice cream cone with a single mound of treat at the top. It typically symbolizes sweet enjoyment, celebration, or a refreshing summer treat. */
+_icecream = 'icecream',
+/** The design is a rectangular card featuring a space for an individual's photograph and accompanying lines that represent personal data fields. This icon typically symbolizes credentials or proof of identity, indicating access to registered information. */
+_id_card = 'id_card',
+/** The icon depicts a rectangular panel featuring both a checked box and a stylized human silhouette within its boundaries. It is commonly used to signify successful identity verification, confirmed user status, or the completion of profile information. */
+_id_card_2 = 'id_card_2',
+/** The design features a central rectangular block flanked by horizontal indicator lines, resembling a status gauge or battery level. This icon indicates that access has been successfully authenticated and authorized through a secure identity proxy layer. */
+_identity_aware_proxy = 'identity_aware_proxy',
+/** The design depicts a simplified human profile bust contained within an enclosing hexagon badge. This symbol commonly represents personal identification, user accounts, or overall access to a digital platform. */
+_identity_platform = 'identity_platform',
+/** The design is a simple black square featuring four evenly spaced white dots, which are organized into two rows of two. This icon generally functions as a scoreboard element, indicating a score or point total of four within various gaming interfaces. */
+_ifl = 'ifl',
+/** The icon is composed of two distinct rectangles, with a smaller rectangle nested inside a larger outer boundary. This design typically indicates that the material shown is contained within or linked from an external source. */
+_iframe = 'iframe',
+/** The icon displays a rectangular window or content frame crossed out by a thick diagonal line. This symbol generally indicates that embedded media, external viewing frames, or inline content previews are disabled or unavailable. */
+_iframe_off = 'iframe_off',
+/** The design features a simplified natural landscape, characterized by stylized mountain peaks rising from a flat base. This icon is typically used to indicate geographical locations, points of interest, or browsing scenic photo collections. */
+_image = 'image',
+/** The icon depicts an image placeholder containing a landscape, with a large upward-pointing arrow emerging from its corner. It is used to symbolize the action of uploading, saving, or transferring photo and media content online. */
+_image_arrow_up = 'image_arrow_up',
+/** The icon displays a square outline containing four circular dots arranged symmetrically in a two-by-two grid pattern. This design is commonly used to represent an input device, such as a trackpad, control surface, or sensor array. */
+_image_aspect_ratio = 'image_aspect_ratio',
+/** The design depicts a framed square containing a stylized silhouette of mountains and hills. It serves as a placeholder for visual media, indicating where an image or photograph should be inserted into the content. */
+_image_inset = 'image_inset',
+/** A rectangular frame containing an image of mountains is paired with a magnifying glass. This icon indicates the functionality to search for specific items or details contained within photographs and visual media. */
+_image_search = 'image_search',
+/** This icon illustrates a stylized roller device connected by a line segment. It signifies the functionality of selecting, dragging, or inspecting details across content, commonly used within image search tools. */
+_imagesearch_roller = 'imagesearch_roller',
+/** The design features a stylized mountain range set within a defined square frame. This icon generally indicates that the associated content consists of visual media, such as photo galleries or image albums. */
+_imagesmode = 'imagesmode',
+/** The design depicts two abstract, curved shapes interlocking at specific points. This universally symbolizes recognition and bonding, representing how the body's defenses detect and respond to foreign materials or invaders. */
+_immunology = 'immunology',
+/** The icon depicts an open book with visible pages spread out. It generally symbolizes access to stored knowledge, records, or a directory, making it suitable for managing contacts or reference information. */
+_import_contacts = 'import_contacts',
+/** The icon depicts a desktop computer monitor placed next to a smaller, standalone tablet or mobile device. This pairing usually symbolizes connectivity across various platforms or support for a complete digital ecosystem. */
+_important_devices = 'important_devices',
+/** The design features an outlined house shape accented by a corner checkmark. This symbol is used to indicate successful activation, confirmed connection status, or operational mode within a private residential environment. */
+_in_home_mode = 'in_home_mode',
+/** The design is a stylized sheet of paper containing multiple horizontal lines, representing formatted text or structured data. This symbol typically indicates documentation regarding an order or report that has been archived, completed, or is no longer active. */
+_inactive_order = 'inactive_order',
+/** The design shows a simple, solid rectangular box with an opened flap visible at the bottom center. This icon generally signifies a central repository for incoming messages or accumulated correspondence, such as an inbox. */
+_inbox = 'inbox',
+/** The illustration shows a stylized document housed within a container, paired with a distinct gear icon. This combination signifies that users can customize the settings, appearance, or functionality associated with their inbox or dashboard. */
+_inbox_customize = 'inbox_customize',
+/** The icon depicts a stylized rectangular document featuring several horizontal lines suggesting textual content. This symbol generally indicates an inbox, representing newly arrived messages or documents awaiting review. */
+_inbox_text = 'inbox_text',
+/** The design shows a rectangular outline of a formatted document featuring horizontal lines of text and a distinct asterisk symbol placed near the bottom corner. It typically indicates supplementary information, editable content, or notes that require special attention regarding an existing message or report. */
+_inbox_text_asterisk = 'inbox_text_asterisk',
+/** The illustration depicts a document containing lines of text alongside a small user profile silhouette. This icon commonly represents viewing personalized communications, such as direct messages or user reports received within an inbox. */
+_inbox_text_person = 'inbox_text_person',
+/** The design features a document outline placed next to the universal branching share symbol. This indicates that the text or data within the document can be easily shared, exported, or distributed from an inbox source. */
+_inbox_text_share = 'inbox_text_share',
+/** The icon is a solid black arc depicting a segment of a circle. It is commonly used to visualize percentages, track completion rates, or show a partial amount remaining. */
+_incomplete_circle = 'incomplete_circle',
+/** The icon shows a square box outline with a horizontal dash drawn across its center. It is used in user interfaces to indicate an indeterminate state, meaning that some but not all items within a group have been selected or are applicable. */
+_indeterminate_check_box = 'indeterminate_check_box',
+/** The icon shows a stylized square bracket surrounding a clear question mark symbol. It generally signifies that information is unknown, optional, or requires further input to be resolved. */
+_indeterminate_question_box = 'indeterminate_question_box',
+/** The design consists of a lowercase letter 'i' centered within a circular border. This symbol is universally used to denote that further information, details, or explanations are available regarding the topic at hand. */
+_info = 'info',
+/** The design is a simple depiction of a solid, vertical lowercase Latin letter 'i'. This symbol commonly serves in user interfaces to indicate supplementary details, help topics, or general information. */
+_info_i = 'info_i',
+/** The design shows a vertical bar adjacent to three concentric arcs that radiate outward like sound waves. It is used in interfaces to indicate that audio output or a speaker function is active and ready for use. */
+_infrared = 'infrared',
+/** The icon depicts a stylized rectangular object resembling an eraser, positioned at an angle. It typically symbolizes the ability to correct, revise, or remove unwanted marks from content or drawings. */
+_ink_eraser = 'ink_eraser',
+/** The icon depicts an eraser crossed out by a diagonal slash. It commonly signifies that the ability to edit, erase, or delete content has been disabled or locked. */
+_ink_eraser_off = 'ink_eraser_off',
+/** The icon depicts a stylized highlighter pen, shown in profile view. This type of writing tool is typically used to mark or emphasize important passages of text. */
+_ink_highlighter = 'ink_highlighter',
+/** The design shows a writing instrument depicted in motion with multiple lines trailing behind it. It commonly symbolizes the action of highlighting, emphasizing important details, or adding marks to written content. */
+_ink_highlighter_move = 'ink_highlighter_move',
+/** The illustration shows a marker pen with a diagonal slash crossing through it. This icon indicates that an emphasis or marking function has been deactivated or removed. */
+_ink_highlighter_off = 'ink_highlighter_off',
+/** The icon depicts a solid black silhouette of a standard marker pen or felt-tip marker. It commonly signifies general writing, editing, or highlighting functions within an application interface. */
+_ink_marker = 'ink_marker',
+/** The design shows two outlined writing tools, resembling pens or styluses, positioned together in a layered fashion. This symbol is commonly used to represent the act of writing, drawing, or making edits and notes. */
+_ink_pen = 'ink_pen',
+/** The icon depicts a left-pointing arrow enclosed within a dotted, square boundary. It is commonly used to indicate moving backward, returning to a previous step, or navigating up a directory hierarchy. */
+_ink_selection = 'ink_selection',
+/** The design consists of two distinct, rectangular blocks placed vertically on top of each other. This symbol generally represents tracking multiple statuses or individuals, commonly used to signify patient count or general capacity within a healthcare facility. */
+_inpatient = 'inpatient',
+/** The icon depicts a solid rectangular container enclosing a clear arrow that points toward the right. This symbol universally indicates continuation, progress, or moving forward to the next screen or step in a digital workflow. */
+_input = 'input',
+/** The icon depicts an upward-pointing arrow enclosed within a circular border. It commonly symbolizes initiating data input, uploading information, or moving something into a process. */
+_input_circle = 'input_circle',
+/** The design depicts three vertical bars of varying heights arranged side by side. It is commonly used to represent data visualization, performance metrics, or statistical growth. */
+_insert_chart = 'insert_chart',
+/** The design features two distinct rectangular blocks separated by a solid dashed line segment. This symbol is used in word processing software to manually insert a page break, ensuring that content following the current section starts cleanly on the next physical page. */
+_insert_page_break = 'insert_page_break',
+/** The design features a prominent, simple capital letter T enclosed within a geometrically defined square frame. This icon typically indicates an editable space or a required placeholder for inserting textual information. */
+_insert_text = 'insert_text',
+/** The design features an outline of a desktop computer monitor next to a prominent downward-pointing arrow. It generally indicates downloading, installing, or initializing content onto the primary system or desktop environment. */
+_install_desktop = 'install_desktop',
+/** The design features three distinct vertical bars arranged in a close cluster. This icon typically represents a combination of multiple elements or a process involving several sequential steps. */
+_instant_mix = 'instant_mix',
+/** The design shows a clipboard shape containing two distinct angle brackets. This icon is widely used to represent code syntax, markup language tags, or structured data elements in programming and development. */
+_integration_instructions = 'integration_instructions',
+/** The design features a simplified profile figure positioned below an overhead panel structure. It symbolizes a central command or interactive space, representing comprehensive user control across diverse digital inputs and outputs. */
+_interactive_space = 'interactive_space',
+/** The design features a prominent heart shape positioned above two empty geometric shapes, one circular and one square. This icon typically indicates the selection of personal preferences, likes, or specific areas of interest within an application or profile. */
+_interests = 'interests',
+/** The icon depicts a simplified human profile combined with elements symbolizing voice and auditory processing. This mode activates interpretation services, providing assistance for users communicating in different languages or requiring accessibility support. */
+_interpreter_mode = 'interpreter_mode',
+/** The design depicts a clipboard paired with a large checkmark next to it. This icon generally signifies that tasks have been successfully completed, items are verified, or inventory lists are finalized. */
+_inventory = 'inventory',
+/** The icon is a minimalist drawing of a closed, rectangular box. It symbolizes general storage and organization, indicating management of inventory, physical supplies, or digital data records. */
+_inventory_2 = 'inventory_2',
+/** The icon is rendered as a single, smooth, stylized droplet shape. It universally symbolizes natural fluids or liquid elements, often used to denote concepts of balance, purity, or environmental resources. */
+_invert_colors = 'invert_colors',
+/** The design shows an open arc crossed by a diagonal line. It signifies that the feature allowing color inversion is currently disabled or switched off. */
+_invert_colors_off = 'invert_colors_off',
+/** The characters 'i', 'O', and 'S' are displayed in a stylized arrangement. This marker universally represents Apple's operating system, signifying access to mobile applications, device functions, and the entire iOS ecosystem. */
+_ios = 'ios',
+/** The icon depicts an upward-pointing arrow extending from a contained square outline. This symbol universally signifies the function of sharing data, allowing users to easily distribute content or connect it to external services. */
+_ios_share = 'ios_share',
+/** The design shows a stylized shape resembling an uppercase letter A connected to a sweeping curve on its right side. This icon is commonly used to symbolize growth, upward trends, or general positive progression. */
+_iron = 'iron',
+/** The icon depicts a basic outline of a flat-screen monitor or television set. It typically signifies an interactive display station used for displaying shared content or accessing information in a public setting. */
+_jamboard_kiosk = 'jamboard_kiosk',
+/** The icon consists of nested circles with internal dividers creating a contained, segmented pattern. It typically indicates adjustable settings or status related to media controls or device functionality. */
+_japanese_curry = 'japanese_curry',
+/** The design depicts a rectangular banner featuring a large solid red disc centered on a plain white background. This symbol represents the nation of Japan and is used to convey Japanese national identity or affiliation. */
+_japanese_flag = 'japanese_flag',
+/** The icon features the two capital characters, J and S, displayed prominently together. It functions as a widely recognized abbreviation for JavaScript, signifying the core programming language used to build interactive elements on websites. */
+_javascript = 'javascript',
+/** It depicts a stylized water droplet shape centered among surrounding small circular dots. This icon is used to symbolize concepts related to moisture, hydration, fluid balance, or natural liquid sources. */
+_jewelry = 'jewelry',
+/** The icon depicts two separate circular rings overlapping at their center. This visual overlap commonly symbolizes a connection, union, or the act of joining two elements together. */
+_join = 'join',
+/** The icon depicts two symmetrical ovals that overlap slightly in the center. It generally symbolizes joining, connection, or the merging of two distinct elements or ideas. */
+_join_inner = 'join_inner',
+/** The icon literally depicts two adjacent circular shapes positioned side-by-side. It commonly represents joining, connecting, or linking elements sequentially in a process or workflow. */
+_join_left = 'join_left',
+/** The icon depicts two solid black circles that overlap slightly in the center. It typically signifies a connection, indicating that two elements are being combined or joined together sequentially. */
+_join_right = 'join_right',
+/** The icon depicts a solid base supporting a central post that culminates in a movable circular knob. It commonly represents directional control, aim, or movement input, frequently used in gaming and navigational interfaces. */
+_joystick = 'joystick',
+/** The design uses directional arrows to suggest a rapid change in location or focus. It indicates the ability to quickly jump directly from the current view to another specific element within content. */
+_jump_to_element = 'jump_to_element',
+/** The icon displays an East Asian character known as Kanji or Hanzi. It signifies "alcohol" or "liquor," making it commonly used in contexts related to drinks, pubs, or dining experiences. */
+_kanji_alcohol = 'kanji_alcohol',
+/** The icon depicts a stylized human figure seated in a vessel, actively using a paddle to move across water. It generally represents recreational boating or various types of water-based sporting activities. */
+_kayaking = 'kayaking',
+/** The design illustrates two parallel groupings of connected, rounded shapes on vertical lines. This commonly represents appetizers or skewers of various grilled foods offered at a restaurant. */
+_kebab_dining = 'kebab_dining',
+/** The icon depicts a stylized marker with a solid, vertical rectangular head and an attached pointer tail. It generally serves as a navigational aid, guiding the viewer's attention to content that follows immediately below. */
+_keep = 'keep',
+/** A thick diagonal line slashes across the visual space. This symbol is universally used to signify that an action, entry, or item is forbidden or restricted. */
+_keep_off = 'keep_off',
+/** The design features an abstract status marker paired with a recognizable symbol for identity or viewing rights. This icon universally signifies that content is publicly accessible, indicating that information should be shared widely without any private restrictions. */
+_keep_public = 'keep_public',
+/** The icon shows the silhouette of a traditional kettle-like vessel. It is commonly used to represent boiling water or preparing hot beverages such as tea and coffee. */
+_kettle = 'kettle',
+/** The design is a simple, stylized illustration of an antique or modern physical key. It commonly symbolizes access, functionality, or unlocking content within digital interfaces. */
+_key = 'key',
+/** The icon shows a stylized cursor or drawing tool crossed out by a diagonal strike-through line. It is commonly used to indicate that an action, feature, or function has been deactivated or canceled. */
+_key_off = 'key_off',
+/** The design is a stylized image of a traditional key. It typically symbolizes access control, representing the ability to unlock content, validate identity, or grant entry to restricted areas. */
+_key_vertical = 'key_vertical',
+/** The icon depicts multiple sets of closely spaced horizontal lines arranged in distinct groups. It represents organized or structured information, such as code syntax, data fields, or patterns within a dataset. */
+_key_visualizer = 'key_visualizer',
+/** The design is a rectangular panel featuring multiple key sections arranged in organized rows. It universally symbolizes digital input, representing text entry or system command execution used in computing. */
+_keyboard = 'keyboard',
+/** The design depicts a standard arrangement of keys within a single rectangular frame, resembling a computer keyboard layout. This icon is used to indicate that text input or typing functionality is available in the current view. */
+_keyboard_alt = 'keyboard_alt',
+/** This design depicts a simple arrow shape angled sharply downwards. In user interfaces, it typically means there is more content below or that a section can be expanded to reveal details. */
+_keyboard_arrow_down = 'keyboard_arrow_down',
+/** The design depicts a simple, angular arrow or chevron pointing horizontally to the left. It commonly functions as a navigational cue, indicating "back," returning to a previous screen, or moving backward through content. */
+_keyboard_arrow_left = 'keyboard_arrow_left',
+/** The design is a simple, chevron-shaped arrow pointing to the right. It is commonly used to signify proceeding forward, continuing to the next step, or navigating deeper into content. */
+_keyboard_arrow_right = 'keyboard_arrow_right',
+/** The design is a simple, upward-pointing chevron or arrow symbol. This icon commonly indicates navigation upwards, such as scrolling to the top of a page, increasing values, or expanding content. */
+_keyboard_arrow_up = 'keyboard_arrow_up',
+/** The icon depicts a solid arrow pointing horizontally toward the left. This symbol is commonly used in digital interfaces to indicate moving back, undoing an action, or navigating to a previous step. */
+_keyboard_backspace = 'keyboard_backspace',
+/** It depicts a specialized key located among the modifier keys on a standard computer keyboard. When activated, this switch locks all subsequent typing into continuous capital letters until it is manually toggled off. */
+_keyboard_capslock = 'keyboard_capslock',
+/** The design features a prominent capital letter 'A' centered within a squared, rectangular badge shape. This icon indicates the Caps Lock function on a keyboard, signifying that all subsequent typed characters will be capitalized. */
+_keyboard_capslock_badge = 'keyboard_capslock_badge',
+/** The design features four rounded loops positioned in a symmetrical arrangement, connected at their outer corners to form an overall square pattern. This distinctive interlocking structure is commonly used to symbolize connections, frameworks, or the modular linking of different components. */
+_keyboard_command_key = 'keyboard_command_key',
+/** The design depicts a single, rectangular button that resembles a key from a computer keyboard. It is typically used to symbolize a function or command that controls how software operates or flows through different sections. */
+_keyboard_control_key = 'keyboard_control_key',
+/** The icon is depicted by two stacked, downward-pointing chevron arrows. It commonly indicates that there are additional options, content, or information available below to view. */
+_keyboard_double_arrow_down = 'keyboard_double_arrow_down',
+/** The image consists of two parallel chevrons pointing to the left. It is commonly used in user interfaces to indicate navigation back to a previous screen, step, or item. */
+_keyboard_double_arrow_left = 'keyboard_double_arrow_left',
+/** The icon literally depicts a pair of parallel chevrons forming a double arrow pointing to the right. It is commonly used in digital interfaces to indicate advancing, moving to the next screen, or skipping ahead through content. */
+_keyboard_double_arrow_right = 'keyboard_double_arrow_right',
+/** The icon consists of two parallel chevron-style arrows stacked vertically. It is typically used in digital interfaces to signify an upward movement, such as returning to the top of a document or indicating a substantial increase. */
+_keyboard_double_arrow_up = 'keyboard_double_arrow_up',
+/** The design shows a keyboard outline positioned before an arrow pointing horizontally to the right. It indicates that information, controls, or data originate from an external physical input device. */
+_keyboard_external_input = 'keyboard_external_input',
+/** The icon depicts a simple, solid rectangular block shape that resembles a full-sized physical keyboard. It indicates functionality related to data entry or the ability to type text into an application. */
+_keyboard_full = 'keyboard_full',
+/** The illustration shows a stylized rectangle resembling a virtual keypad, positioned above a downward arrow icon. This design indicates that a displayed element, such as a virtual keyboard, can be minimized or hidden from the screen. */
+_keyboard_hide = 'keyboard_hide',
+/** The illustration depicts a structured grid composed of multiple rows of equally spaced dots. This pattern typically represents various input controls, such as a simplified numeric keypad or multiple settings toggles for device management. */
+_keyboard_keys = 'keyboard_keys',
+/** The design depicts a keyboard structure paired with a visible padlock icon near the input area. It is commonly used to assure users that data entry or network communication is secured through encryption and robust privacy measures. */
+_keyboard_lock = 'keyboard_lock',
+/** The design depicts a stylized representation of a keyboard area with an indicator pointing to or crossing out a locking mechanism. This generally signifies that the input method is currently disabled, such as when a computer's keyboard lock is activated. */
+_keyboard_lock_off = 'keyboard_lock_off',
+/** The image displays a stylized keyboard layout with a diagonal slash drawn across it. This icon signifies that typing or text input functionality is currently unavailable or deactivated. */
+_keyboard_off = 'keyboard_off',
+/** The icon depicts a rectangular grid pattern arranged to resemble a standard virtual keyboard, showing multiple key spaces in ordered rows. It indicates that an on-screen input method is available and ready to receive text or data entry from the user. */
+_keyboard_onscreen = 'keyboard_onscreen',
+/** The icon literally depicts two parallel lines forming a downward-pointing chevron structure. This symbol typically represents advanced formatting options or an access point for specialized characters on a virtual keyboard. */
+_keyboard_option_key = 'keyboard_option_key',
+/** The icon features an outline of a keyboard with a curved arrow positioned above it. This symbol is used to cycle back or switch to a previously selected language for typing input. */
+_keyboard_previous_language = 'keyboard_previous_language',
+/** The icon depicts a simple arrow pointing to the left. It commonly symbolizes moving backward, returning to a previous screen, or undoing an action in navigation. */
+_keyboard_return = 'keyboard_return',
+/** The icon depicts a bold, solid arrow pointing directly to the right. It is used in interfaces to indicate movement, signifying advancement from one section, field, or tab to the next. */
+_keyboard_tab = 'keyboard_tab',
+/** The icon depicts a simple, solid arrow pointing sharply toward the left. This symbol commonly indicates navigating back or moving focus to the previous field when interacting with text input or forms. */
+_keyboard_tab_rtl = 'keyboard_tab_rtl',
+/** The design is a simple outline of a classic five-pointed star. It commonly symbolizes achievement, excellence, or the designation of something highly rated or favored. */
+_kid_star = 'kid_star',
+/** The icon is a stylized illustration of a large bed, complete with pillows and a visible headboard area. It typically indicates lodging options, such as available sleeping accommodations in a hotel room. */
+_king_bed = 'king_bed',
+/** The icon depicts a pair of stacked rectangular units that resemble cabinet doors or drawers. It is typically used to symbolize home storage areas or the general functionality of a kitchen. */
+_kitchen = 'kitchen',
+/** The design illustrates a person riding a board over waves in open water. This symbol generally represents exciting, high-adrenaline watersports involving movement across the ocean surface. */
+_kitesurfing = 'kitesurfing',
+/** The illustration depicts three distinct vertical components mounted upon a foundational, rectangular base. This icon is commonly used to symbolize a comprehensive control unit, such as an electrical board or gas utility panel. */
+_lab_panel = 'lab_panel',
+/** The icon displays a stylized outline of a vertical document featuring multiple horizontal lines that suggest structured text and content. This symbol is generally used to represent a personal profile, detailed record, or any form of comprehensive documentation. */
+_lab_profile = 'lab_profile',
+/** The design features a stylized scientific container alongside a magnifying glass element. This symbol is used to indicate deep research, laboratory analysis, or the process of querying complex data sets. */
+_lab_research = 'lab_research',
+/** The icon depicts a square border that transitions into a sharp arrow pointing to the right. It is typically used in digital interfaces to indicate that there are more details, options, or subsequent levels of content available. */
+_label = 'label',
+/** The design depicts a thick, geometric chevron shape pointing clearly to the right. This symbol commonly indicates progression, continuation, or navigating further into related content. */
+_label_important = 'label_important',
+/** The icon shows a diagonal line crossed by a perpendicular slash mark. It is used in user interfaces to indicate that an attached label or identifier can be toggled off or made invisible. */
+_label_off = 'label_off',
+/** The icon depicts a laboratory vial resembling a graduated test tube. It is commonly used to symbolize themes related to chemistry, biological research, or scientific measurement. */
+_labs = 'labs',
+/** The icon depicts a central node connected to several nodes below, forming a distinct tree-like pattern. It is typically used to represent hierarchical relationships such as account structures, folder directories, or organizational groupings within data systems. */
+_lan = 'lan',
+/** A stylized depiction of a continuous range of multiple peaks or mountains. It typically signifies outdoor activities, such as hiking, camping, or general wilderness landscapes. */
+_landscape = 'landscape',
+/** The image depicts a single, flowing line that curves and changes height unevenly throughout its length. This symbol is commonly used to denote general outdoor movement or fitness paths, such as hiking, jogging, or various athletic routes. */
+_landscape_2 = 'landscape_2',
+/** The design features an abstract silhouette of a person running across a winding path beneath them. It generally symbolizes physical activity, health tracking, or engaging in any sport or outdoor recreation. */
+_landscape_2_edit = 'landscape_2_edit',
+/** The design shows a diagonal line that is overlaid and intersected by wavy, flowing squiggles. It generally symbolizes passage or flow, representing movement along any kind of path or journey. */
+_landscape_2_off = 'landscape_2_off',
+/** The design shows a large, layered mound at the base with smaller, angular chunks piled above it. It is used to represent a natural disaster or rapid downward movement of earth and rock, such as a landslide. */
+_landslide = 'landslide',
+/** The icon is a stylized depiction of Earth shown as a globe. It typically signifies international scope, making it commonly used to indicate worldwide availability or language selection options. */
+_language = 'language',
+/** The design features three separate components—two Chinese characters followed by the Latin letter a. It symbolizes the flexibility of modern input methods, allowing users to convert between various writing systems when entering Chinese text. */
+_language_chinese_array = 'language_chinese_array',
+/** The design depicts a single Chinese logogram composed of several distinct structural components. This character functions as a fundamental unit in written Mandarin, typically representing concepts related to storage or a secure place. */
+_language_chinese_cangjie = 'language_chinese_cangjie',
+/** The illustration consists of two separate, distinct Chinese characters displayed side-by-side. It indicates that the application supports Chinese language input, allowing users to select or activate various typing methods like Pinyin or Dayi. */
+_language_chinese_dayi = 'language_chinese_dayi',
+/** The illustration combines Mandarin symbols with a Latin script letter to represent phonetic sounds. It is used to indicate Pinyin, which is the standardized method for writing out Chinese pronunciations using the Roman alphabet. */
+_language_chinese_pinyin = 'language_chinese_pinyin',
+/** The design features a single complex Hanzi character rendered in solid black ink. This symbol typically represents concepts of rapid action or speed when used within digital tools for the Chinese language. */
+_language_chinese_quick = 'language_chinese_quick',
+/** The illustration features three distinct character groupings presented sequentially from left to right. This icon signifies educational materials or resources related to learning Chinese characters, script, or pronunciation. */
+_language_chinese_wubi = 'language_chinese_wubi',
+/** The design consists of the capitalized letters "F" followed by "R" rendered in a simple, bold typeface. This symbol is typically used to indicate content that is associated with the French language or France itself. */
+_language_french = 'language_french',
+/** The icon displays the capitalized letters G and B. It is used to specify content or services tailored for Great Britain, most often indicating the English language regional setting. */
+_language_gb_english = 'language_gb_english',
+/** The icon displays the capitalized initials "INTL." This abbreviation typically signifies a setting related to language or services that are applicable internationally or globally. */
+_language_international = 'language_international',
+/** The illustration features the Hiragana character 'あ', displayed twice in succession. This represents general topics related to the Japanese language and its unique phonetic script. */
+_language_japanese_kana = 'language_japanese_kana',
+/** The icon literally depicts two distinct Korean Hangul syllables side-by-side. This design generally signifies a function related to languages, such as translation or language selection within an application. */
+_language_korean_latin = 'language_korean_latin',
+/** The icon depicts a single, intricate Chinese character composed of various connected strokes. It fundamentally means to assemble or combine things, and is often associated with the process of creating phonetic transcriptions for languages like Mandarin. */
+_language_pinyin = 'language_pinyin',
+/** The design consists of two easily recognizable capital letters, E followed by S. These initials are used as a universal code to indicate content or settings related to the Spanish language. */
+_language_spanish = 'language_spanish',
+/** The design features the prominent display of the uppercase initials 'U' and 'S'. This symbol is used to designate US-specific language settings or regional content. */
+_language_us = 'language_us',
+/** The design typically features an abstract representation of letters or keys within a settings menu. It indicates the ability to switch the typing input method to the Colemak layout, an ergonomic alternative keyboard arrangement. */
+_language_us_colemak = 'language_us_colemak',
+/** This symbol indicates a selection for an alternative keyboard layout or language input method. It signifies that the system is using the Dvorak arrangement, which optimizes key placement for faster and more comfortable typing than standard layouts. */
+_language_us_dvorak = 'language_us_dvorak',
+/** The graphic depicts a curved line forming an open loop that includes a distinct arrowhead. This icon universally indicates refreshing information, reloading content, or repeating a continuous cycle of actions. */
+_laps = 'laps',
+/** The design shows an automobile placed near an open laptop computer. It typically suggests the ability to work or manage tasks using digital devices while utilizing transportation services. */
+_laptop_car = 'laptop_car',
+/** A simple black silhouette depicts an open laptop computer. It is commonly used to symbolize general computing tasks, portability, or mobile technological solutions. */
+_laptop_chromebook = 'laptop_chromebook',
+/** The design is a simplified outline of an open laptop, showing both the screen portion and the base keyboard section. It commonly symbolizes modern computing devices, particularly those associated with Apple's macOS ecosystem. */
+_laptop_mac = 'laptop_mac',
+/** The icon depicts a simplified side view of an open laptop computer. It commonly represents general digital work, online tasks, or access to technological resources. */
+_laptop_windows = 'laptop_windows',
+/** The design shows an open, continuous loop that does not form a complete circle. It signifies a freehand selection tool used in digital art and graphic design to draw irregular boundaries around desired objects. */
+_lasso_select = 'lasso_select',
+/** The design features a right-pointing angle bracket followed by a vertical bar. It typically functions as an active cursor or prompt marker, indicating where text input is expected or where a command will continue. */
+_last_page = 'last_page',
+/** The icon depicts a simplified outline of a t-shirt or top with wavy lines at the base. It is typically used to represent washing clothes or household laundry tasks. */
+_laundry = 'laundry',
+/** The icon depicts multiple overlapping, diamond-shaped squares stacked upon one another. It typically symbolizes layers, suggesting underlying structure or the ability to group and organize elements within a system. */
+_layers = 'layers',
+/** The design shows multiple overlapping elements crossed out by a bold, diagonal mark. It signifies the action of clearing or resetting all current layers in an editing or creative workspace. */
+_layers_clear = 'layers_clear',
+/** The icon depicts a stylized drawing of a nautical anchor or mooring point, featuring vertical and horizontal lines connected by two downward-pointing prongs. It commonly signifies directions or services related to boats, harbors, docks, or general water transport. */
+_lda = 'lda',
+/** The design shows three distinct rectangular columns that increase gradually in height from left to right. It is used to represent a leaderboard, visually displaying relative scores or rankings among various users or items. */
+_leaderboard = 'leaderboard',
+/** The design depicts three curved lines emanating outwards in decreasing size and intensity. It universally indicates the strength of a wireless signal, such as current Wi-Fi or cellular connectivity. */
+_leak_add = 'leak_add',
+/** The design consists of a wavy or curved line that is crossed out by multiple perpendicular dashes. It typically serves as an indicator for removing, canceling, or undoing content and data within a digital interface. */
+_leak_remove = 'leak_remove',
+/** The design is a stylized, curved arrow pointing down and to the left. It typically signifies a "back" action or reversing the current state in digital interfaces. */
+_left_click = 'left_click',
+/** The icon depicts a chevron or arrow pointing toward the left boundary. It functions as a control element used to collapse or dismiss side panels, returning focus to the main content area of the application. */
+_left_panel_close = 'left_panel_close',
+/** The design illustrates a rectangular frame split vertically, showing an open side panel revealing an action area. This typically signifies opening a detailed view, accessing settings, or viewing companion controls relevant to the main media content. */
+_left_panel_open = 'left_panel_open',
+/** The icon depicts a wavy line placed above two distinct, parallel horizontal bars. It is typically used in user interfaces to indicate that a section of content, such as filters or a data legend, can be expanded or collapsed by the user. */
+_legend_toggle = 'legend_toggle',
+/** The design features scattered circles of varying sizes arranged in a non-uniform cluster. This symbol typically indicates that an image or area has been artificially softened or obscured, often representing a blur filter or privacy setting. */
+_lens_blur = 'lens_blur',
+/** The illustration depicts a selection of Japanese phonetic characters and kanji, which are used for writing in Japan. It represents the ability to switch between different input methods or scripts, allowing users to type text using various character sets like kana, pinyin, or wubi. */
+_letter_switch = 'letter_switch',
+/** The design features a prominent plus sign enclosed within a square border. This symbol universally indicates the action of adding new items, expanding content, or creating an entry within a collection or library. */
+_library_add = 'library_add',
+/** No description. */
+_library_add_check = 'library_add_check',
+/** The design shows a stylized stack of several books or documents. It generally symbolizes knowledge, academic learning, or a large collection of stored information. */
+_library_books = 'library_books',
+/** An eighth note is presented inside a defined, bordered box. This icon commonly indicates the management or browsing of saved music content within a personal library. */
+_library_music = 'library_music',
+/** The design is a circular emblem attached to a decorative banner ribbon at its base. It commonly indicates that an item or user has received official recognition, authorization, or professional accreditation. */
+_license = 'license',
+/** The icon depicts a hand held near the screen of a mobile device. It represents an accessibility function that allows users to activate voice commands simply by raising or lifting the phone. */
+_lift_to_talk = 'lift_to_talk',
+/** The icon shows a stylized, curved lampshade suspended below a visible support point. It commonly represents warm ambient lighting, suggesting an inviting atmosphere often associated with dining or home environments. */
+_light = 'light',
+/** The icon depicts a stylized standing lamp placed next to a cleaning bucket or pail. It typically represents general household supplies, domestic themes, or home maintenance items. */
+_light_group = 'light_group',
+/** The icon depicts a cluster of various lighting fixtures, including different styles of lamps and lanterns. This symbol typically represents illumination, general household lighting, or an assortment of light sources. */
+_light_group_2 = 'light_group_2',
+/** The icon is a simplified representation of a stylized sun with outward radiating rays. It commonly symbolizes bright conditions, such as sunny weather, high illumination levels, or the activation of a day-themed mode. */
+_light_mode = 'light_mode',
+/** The design features an abstract representation of illumination combined with directional indicators suggesting automatic adjustment. It signifies that the system will automatically optimize its visual theme or brightness levels based on ambient conditions for optimal viewing comfort. */
+_light_mode_auto = 'light_mode_auto',
+/** The illustration depicts a stylized lightbulb outline with a prominent diagonal strike-through slash crossing it. This icon commonly indicates that the light source is switched off, disabled, or unavailable. */
+_light_off = 'light_off',
+/** The illustration depicts a classic incandescent lightbulb, featuring a large circular glass globe attached to a visible threaded base. This icon is widely used to represent inspiration, new ideas, or moments of sudden realization. */
+_lightbulb = 'lightbulb',
+/** The icon depicts a classic, stylized lightbulb shape attached to its visible base. It is commonly used as a visual metaphor for an idea, inspiration, or moment of realization. */
+_lightbulb_2 = 'lightbulb_2',
+/** The illustration shows a stylized lightbulb contained within a clean circular border. This symbol is widely used to represent an idea, breakthrough moment, or creative insight. */
+_lightbulb_circle = 'lightbulb_circle',
+/** A stylized lightning bolt is positioned over a solid, circular base, visually representing an electrical connection or charging stand. This icon signifies that power is available, indicating that the device can be charged or is currently connected to a power source. */
+_lightning_stand = 'lightning_stand',
+/** The icon displays three stacked horizontal bars; the outer two are straight while the middle bar contains a segmented, wavy pattern. This typically represents signal strength visualization, frequency levels, or an equalizer reading. */
+_lightstrip = 'lightstrip',
+/** The icon consists of two diagonal line segments that meet at a point, forming an inverted 'V' shape. It is commonly used to represent alignment guides, measurement axes, or indicators of relative position change in user interfaces. */
+_line_axis = 'line_axis',
+/** The design is a simple, smooth curved line segment that resembles an arc or squiggle. It typically suggests decorative flourish, stylistic emphasis, or the appearance of handwriting like an underline or signature. */
+_line_curve = 'line_curve',
+/** The design is a horizontal line segment culminating in a solid circular marker at one end. It generally serves to visually indicate a clear termination point, limit, or conclusion of a drawn element. */
+_line_end = 'line_end',
+/** A simple, bold arrow pointing directly to the right marks the endpoint of a line. This symbol typically indicates continuation, progression, or moving to the next screen in an application interface. */
+_line_end_arrow = 'line_end_arrow',
+/** It depicts a solid arrow pointing to the right whose terminal end features an inward-pointing notch or cut. This design element typically indicates that clicking or tapping will navigate the user into expanded content, such as a subdirectory or sublist. */
+_line_end_arrow_notch = 'line_end_arrow_notch',
+/** The icon depicts a straight horizontal line connecting to an open circular shape at one end. It typically serves to indicate a measurable endpoint or the termination of a signal path in technical diagrams. */
+_line_end_circle = 'line_end_circle',
+/** The icon shows a short horizontal line terminating with an open diamond marker. This symbol functions as a precise pointer often used to mark endpoints, indicate measurements, or show the current location of a graphical cursor. */
+_line_end_diamond = 'line_end_diamond',
+/** The design consists of a straight horizontal line segment meeting a solid square block. This symbol typically indicates an electrical connection point or the need for power input to charge a device. */
+_line_end_square = 'line_end_square',
+/** A solid filled circle connects directly to a straight horizontal line segment. It commonly serves as an indicator or marker showing the precise starting point of a drawing, measurement, or continuous path in digital interfaces. */
+_line_start = 'line_start',
+/** The icon depicts a simple, solid arrow pointing sharply to the right. It is commonly used in user interfaces to indicate proceeding forward, expanding content, or moving to the next step in a sequence. */
+_line_start_arrow = 'line_start_arrow',
+/** The design is a solid arrow pointing sharply to the left, featuring an angled cut or notch at its tail end. It commonly signifies moving backward through history, returning to a previous step, or indicating a directional reversal in an interface. */
+_line_start_arrow_notch = 'line_start_arrow_notch',
+/** The icon depicts a circle connected by an extending straight horizontal line segment. In technical fields involving sensors and connectivity, this symbol often represents the start of a data feed or indicates that a reading or signal is currently paused or unavailable. */
+_line_start_circle = 'line_start_circle',
+/** The icon depicts a geometric diamond quadrilateral with a single straight line segment extending outward from its right corner. This design functions as a versatile symbol, commonly indicating direction, location, or a starting point in visual interfaces. */
+_line_start_diamond = 'line_start_diamond',
+/** The design depicts a solid square block attached at its side to a straight, horizontal line segment. This shape is commonly used in diagrams to indicate an attachment point or the starting connection for a physical element like a plug or cable. */
+_line_start_square = 'line_start_square',
+/** The icon consists of multiple horizontal segments arranged into neat, parallel rows. It commonly represents options for adjusting textual structure, such as adding underlines or defining document rules. */
+_line_style = 'line_style',
+/** The icon depicts three parallel horizontal lines stacked vertically. It generally represents a compilation of saved items, reading lists, or structured collections of data. */
+_line_weight = 'line_weight',
+/** The design features two distinct circular elements joined by a straight connecting line. It is typically used to symbolize an adjustable level, measurement range, or the activation state of a key security feature. */
+_linear_scale = 'linear_scale',
+/** The icon is formed by two curved ovals linked together, creating a continuous, chain-like shape. This symbol is widely used to indicate a hyperlink, suggesting a connection or link to another page or resource online. */
+_link = 'link',
+/** The icon depicts two rounded ovals that are smoothly joined together in a continuous, curved line. This universally recognized symbol indicates a link or connection, suggesting that clicking it will navigate the user to related content or another webpage. */
+_link_2 = 'link_2',
+/** The icon depicts two curved segments joined together, forming a stylized representation of a hyperlink that is marked with a diagonal strike-through line. It indicates the action of removing, canceling, or disconnecting an existing link or connection. */
+_link_off = 'link_off',
+/** The icon depicts a simple, solid outline of a digital camera body. It represents the integration or linkage between multiple cameras, devices, or sources for comprehensive photo management and export. */
+_linked_camera = 'linked_camera',
+/** The icon displays several distinct circular nodes that are interconnected by lines into a complex graph arrangement. This structure typically represents the integration of multiple independent services or components into one cohesive system. */
+_linked_services = 'linked_services',
+/** The design is a simple, curved outline depicting the natural shape of closed human lips. It is commonly used in digital communication to represent speech, kissing, or general vocal gestures in emojis. */
+_lips = 'lips',
+/** The illustration shows two stylized bottles of liquid standing side-by-side. It commonly represents alcoholic drinks, beverages, or general supplies related to a bar setting. */
+_liquor = 'liquor',
+/** The icon is depicted by three short, stacked horizontal lines of equal length. It commonly represents a list, menu, or set of multiple items that can be viewed sequentially. */
+_list = 'list',
+/** The design shows multiple stacked, parallel lines contained within a defined area. It commonly represents an itemized list or checklist of items that must be reviewed or completed. */
+_list_alt = 'list_alt',
+/** The icon literally depicts a structured document format, characterized by multiple placeholder lines representing entries or items. It is commonly used to indicate adding new content, creating a checklist item, or appending data to an existing list or form. */
+_list_alt_add = 'list_alt_add',
+/** The icon depicts an outline of a structured document or checklist containing multiple lines and fields. It signifies that all listed items have been successfully verified, completed, or approved. */
+_list_alt_check = 'list_alt_check',
+/** The icon literally depicts three stacked horizontal lines alongside a prominent downward-pointing arrow. It is typically used in user interfaces to indicate that more content or options are available upon expanding the list or selecting an item. */
+_list_arrow = 'list_arrow',
+/** The icon displays three distinct, stacked horizontal bars. It is commonly used to represent a list of options or menu items that can be viewed or selected. */
+_lists = 'lists',
+/** The icon features a large, prominent question mark centered within a distinct speech or chat bubble shape. It is commonly used in digital interfaces to signal available help, general support, or further information. */
+_live_help = 'live_help',
+/** The design is a stylized television screen containing a prominent play symbol in its center. This icon typically indicates access to live, real-time video broadcasts or streaming content. */
+_live_tv = 'live_tv',
+/** The icon shows a stylized piece of lounge seating, resembling an armchair or sofa. It indicates a general resting spot, such as in a lounge, waiting room, or comfortable gathering area. */
+_living = 'living',
+/** The design features a ribbon or banner shape containing a single, prominent five-pointed star. This symbol is typically used to signify a highly rated location, an award, or recognized local excellence. */
+_local_activity = 'local_activity',
+/** The design shows a stylized dollar sign enclosed within a simple, solid border. This icon is universally used to indicate costs, pricing information, or general financial transactions involving money. */
+_local_atm = 'local_atm',
+/** The image is an outline of stemmed glassware, similar to a cocktail or wine glass. It generally signifies a local neighborhood bar or pub where one can find casual drinks and dining options. */
+_local_bar = 'local_bar',
+/** The illustration shows a simple outline of a mug placed upon a flat surface line. This commonly signifies the presence of a local coffee shop, café, or place to enjoy drinks. */
+_local_cafe = 'local_cafe',
+/** The design shows the simple outline of an automobile positioned beneath stylized elements suggesting water or steam wash. This icon is used to guide travelers to local facilities where vehicles can be washed and cleaned. */
+_local_car_wash = 'local_car_wash',
+/** The design features a stylized shopfront with an awning, centered around a sign displaying the digits "24." This icon is commonly used to indicate a local convenience store or service that operates twenty-four hours a day. */
+_local_convenience_store = 'local_convenience_store',
+/** The design shows a stylized fork crossed with a spoon, representing standard eating utensils. It is generally used to symbolize dining services, mealtime, or culinary experiences. */
+_local_dining = 'local_dining',
+/** The icon displays a simple line drawing of a glass cup that is partially filled with liquid. It commonly symbolizes any type of beverage, fluid sample, or general measure of liquid content. */
+_local_drink = 'local_drink',
+/** The icon depicts a simplified, curved shape that represents an open, rising flame. This symbol typically conveys general concepts of warmth, heat, energy, or the presence of a fire source. */
+_local_fire_department = 'local_fire_department',
+/** A stylized bloom with multiple petals is depicted, accompanied by supporting leaves underneath the blossom. This icon typically signifies themes related to flowers, gardening, or local floral arrangements. */
+_local_florist = 'local_florist',
+/** The design shows a writing instrument assembly composed of a rectangular body and an attached piece with a rounded tip. It commonly represents digital note-taking tools, drawing implements, or general office supplies. */
+_local_gas_station = 'local_gas_station',
+/** The illustration depicts a simple cross-shaped plus sign contained entirely within a defined square border. This universally recognized symbol typically denotes health services, first aid points, or local hospitals. */
+_local_hospital = 'local_hospital',
+/** The design is a simple, front-facing outline of an automated washing machine drum. It is commonly used to indicate nearby facilities for local laundromats, dry cleaning pick-up points, or laundry services. */
+_local_laundry_service = 'local_laundry_service',
+/** The icon features a stylized person figure positioned above an open book illustration. This symbol is commonly used to represent learning, general knowledge, or access to local library resources. */
+_local_library = 'local_library',
+/** The icon depicts an outline drawing of a shopping tote bag with handles. It is used to symbolize general retail activity or visiting a local commercial area for goods. */
+_local_mall = 'local_mall',
+/** The design is a solid, black uppercase letter P. It is commonly used in signage to indicate the presence of designated vehicle parking areas. */
+_local_parking = 'local_parking',
+/** The design shows a stylized cross mark centered within a defined, pouch-like shape. This symbol is conventionally used to indicate the location of a local pharmacy or medical aid service. */
+_local_pharmacy = 'local_pharmacy',
+/** A triangular shape with dots arranged across it depicts a classic slice of pizza. This icon is typically used to denote food options, suggesting local pizzerias or dining opportunities. */
+_local_pizza = 'local_pizza',
+/** The icon depicts a stylized shield emblem containing a single five-pointed star centered within its field. This symbol generally represents official community protection, reliable local services, or established governmental authority. */
+_local_police = 'local_police',
+/** The design depicts a freestanding mailbox or post box, typically used for collecting physical mail. It commonly signifies local postal services, correspondence, or general points of contact for outgoing and incoming letters. */
+_local_post_office = 'local_post_office',
+/** The icon literally depicts a stylized map marker with an integrated star next to an adjacent graphic element that resembles an image collection or photo album. This design is commonly used in mapping applications to help users discover specific, curated local points of interest or saved locations. */
+_local_see = 'local_see',
+/** The design features a simple, solid side profile of a boxy delivery truck or cargo van. It commonly symbolizes local shipping services and the transportation of goods directly to a customer's location. */
+_local_shipping = 'local_shipping',
+/** The icon shows a side view of a standard passenger car, characteristic of local taxis. It typically indicates the option for hired transport, useful for finding a nearby taxi or taking a short ride within a city. */
+_local_taxi = 'local_taxi',
+/** The design combines a stylized house outline with an integrated location marker pin. This symbol generally indicates a designated physical address or primary residence. */
+_location_away = 'location_away',
+/** The illustration depicts a teardrop-shaped map pin contained within a smooth, rounded oblong shape. This symbol is universally used in navigation and mapping to mark specific coordinates, saved locations, or points of interest. */
+_location_chip = 'location_chip',
+/** The design depicts multiple stacked rectangular blocks arranged side-by-side, forming the recognizable profile of a skyline. It is typically used to signify an urban location, major city center, or densely populated municipal area. */
+_location_city = 'location_city',
+/** The design is a circle overlaid with a diagonal line, forming a universal prohibition symbol. It typically indicates that a feature or service, such as location tracking, is unavailable, switched off, or currently disabled. */
+_location_disabled = 'location_disabled',
+/** The design depicts a simplified silhouette of a house with a prominent roofline. It commonly functions as a location marker, indicating a home address or primary starting point within digital mapping interfaces. */
+_location_home = 'location_home',
+/** The icon depicts a map pointer, commonly used to mark coordinates, crossed out by a diagonal line. This symbol indicates that location services are turned off, unavailable, or intentionally restricted on the device. */
+_location_off = 'location_off',
+/** The design is a classic map marker, featuring an inverted teardrop shape with a distinct circular center point. It is universally used to pinpoint a specific geographical location, indicating points of interest or current coordinates on a map. */
+_location_on = 'location_on',
+/** The design consists of a simple circular outline intersected by directional lines that meet at the center. It typically symbolizes navigation, location services, or initiating a search for coordinates on a map. */
+_location_searching = 'location_searching',
+/** The design is a stylized representation of a traditional padlock. It commonly indicates that content or a feature is private, secure, or restricted from unauthorized viewing. */
+_lock = 'lock',
+/** The design combines a classic padlock with an adjacent clock face. This icon generally signifies time-sensitive protection, indicating that access to data or features is restricted for a specific duration. */
+_lock_clock = 'lock_clock',
+/** The icon depicts a traditional padlock structure with its shackle visibly open and lifted away from the body. It is used to indicate that content, features, or information are accessible or unlocked for viewing. */
+_lock_open = 'lock_open',
+/** The icon depicts a padlock with an open shackle, centrally placed within a circular border. It commonly signifies that access is granted or that restrictions have been lifted, indicating an unlocked state of availability. */
+_lock_open_circle = 'lock_open_circle',
+/** The design illustrates a simple, stylized padlock with its shackle swung open to the right. This icon typically signifies that something is unlocked or accessible, indicating that restrictions have been removed and entry is granted. */
+_lock_open_right = 'lock_open_right',
+/** The icon depicts a traditional padlock situated next to a standard human profile silhouette. It typically indicates that an account, user data, or specific information is private and requires authentication for access. */
+_lock_person = 'lock_person',
+/** The icon depicts a closed padlock situated inside a circular arrow graphic that suggests continuous motion or renewal. This symbol is typically used to indicate the ability to reset security settings, re-establish credentials, or refresh an authentication lock. */
+_lock_reset = 'lock_reset',
+/** The design features an arrow pointing to the right, enclosed within distinct rectangular brackets. This symbol is widely used in digital interfaces to indicate forward movement, such as proceeding past a form or successfully entering a system. */
+_login = 'login',
+/** The icon depicts a simple square outline containing the capital letters D, E, and V. It is used to symbolize development work, indicating involvement in software engineering or technical processes. */
+_logo_dev = 'logo_dev',
+/** The icon depicts a simple bracket enclosing an arrow that points horizontally to the right. In computing interfaces, this symbol commonly indicates movement away from the current view or the action of logging out. */
+_logout = 'logout',
+/** The icon depicts two parallel, smoothly curving lines forming an arch shape. It is commonly used to symbolize decoration, emphasis, or general artistic input like handwriting or signatures. */
+_looks = 'looks',
+/** The icon depicts the numeral three centered inside a square outline. It is generally used to signify a quantity of three, such as representing groups, steps in a process, or items counted together. */
+_looks_3 = 'looks_3',
+/** The design is a clear representation of the numeral four. This symbol is commonly used to denote a specific level, format, or version within a series of features or content. */
+_looks_4 = 'looks_4',
+/** The illustration is a simple, bold representation of the numeral five contained within a square border. It is typically used to denote a specific count, quantity, or level value of five units. */
+_looks_5 = 'looks_5',
+/** The icon literally depicts the numeral six enclosed within a solid square border. This symbol is typically used to denote quantities or counts of six items, often indicating progress or a selected amount. */
+_looks_6 = 'looks_6',
+/** The icon depicts a numeral '1' centered within a simple square boundary. It commonly indicates the first item in a list, the starting point of a sequence, or a primary action button in software and games. */
+_looks_one = 'looks_one',
+/** The design is a bold representation of the number two enclosed within a simple square border. This icon typically signals a quantity of two items or indicates that a function is on its second iteration or step. */
+_looks_two = 'looks_two',
+/** The icon depicts a plus symbol centered within a circular border. It is typically used in user interfaces to indicate the ability to zoom in, enlarge an image, or add new content. */
+_loupe = 'loupe',
+/** The icon depicts a square boundary containing several small dots arranged with noticeable spacing. It typically signifies sparse data, low sampling rates, or reduced information density within a graphical user interface. */
+_low_density = 'low_density',
+/** The symbol depicts an arrow pointing downward next to a horizontal line or squiggle. It is commonly used in user interfaces to signal that something is non-urgent, has minimal importance, or requires low attention. */
+_low_priority = 'low_priority',
+/** The image features the lowercase letter 'a' followed by a downward-pointing arrow. This combination is typically used in user interfaces to indicate that selecting the element will reveal additional options, choices, or expanded content below it. */
+_lowercase = 'lowercase',
+/** The design is a badge or shield shape that encloses a heart symbol at its center. It typically indicates membership status, protection, or deep emotional commitment within an application or service. */
+_loyalty = 'loyalty',
+/** The icon displays the capitalized acronym "LTE." This typically indicates that a device supports or is currently connected via Long Term Evolution, signifying modern, high-speed cellular internet connectivity. */
+_lte_mobiledata = 'lte_mobiledata',
+/** The design is a rectangular badge containing the capitalized letters L, T, and E. It indicates that the associated device or service supports LTE mobile data connectivity. */
+_lte_mobiledata_badge = 'lte_mobiledata_badge',
+/** The icon displays the block letters L-T-E followed by a plus sign, creating an acronym. This symbol indicates access to enhanced cellular coverage and fast mobile internet data speeds. */
+_lte_plus_mobiledata = 'lte_plus_mobiledata',
+/** The design features bold capital letters spelling "LTE" followed by a plus sign, enclosed within a rectangular indicator or badge. This symbol indicates that the device is connected to an enhanced mobile broadband service, signifying high-speed wireless internet access. */
+_lte_plus_mobiledata_badge = 'lte_plus_mobiledata_badge',
+/** It depicts a classic, upright piece of rolling luggage or suitcase. This icon is generally used to represent travel, baggage handling, or airport services. */
+_luggage = 'luggage',
+/** The design is an outline of stacked components that resemble a classic sandwich or meal. It generally indicates dining options, lunch services, or fast-casual eating experiences. */
+_lunch_dining = 'lunch_dining',
+/** The design features a stylized speech bubble containing several lines of text positioned alongside a distinct musical eighth note. This icon is commonly used to represent lyrics or song words that accompany a piece of audio or music. */
+_lyrics = 'lyrics',
+/** The icon depicts stylized foliage arranged around blossoming elements. It commonly represents systematic growth, automated nurturing, or large-scale care within gardening or agricultural contexts. */
+_macro_auto = 'macro_auto',
+/** The icon depicts a stylized illustration of an open rose flower crossed out by a thick diagonal slash. This typically indicates that a specific feature or function related to the subject matter has been disabled or turned off. */
+_macro_off = 'macro_off',
+/** The icon shows a circular magnifying lens mounted on a straight handle. It is used to indicate search functionality or the action of zooming in on details within an image or document. */
+_magnification_large = 'magnification_large',
+/** The icon depicts a solid rectangle containing a smaller filled circle in its upper left quadrant. This design is typically used to represent zoom or magnification functionality within digital interfaces. */
+_magnification_small = 'magnification_small',
+/** The design shows an outline of a device docked into a connection port or station. This typically indicates the ability to inspect detailed information about the connection, status, or compatibility. */
+_magnify_docked = 'magnify_docked',
+/** The icon depicts an outlined rectangle containing a cross-plus symbol placed centrally within its boundaries. This design generally symbolizes the addition of energy, which is commonly used to indicate battery charging or full capacity potential. */
+_magnify_fullscreen = 'magnify_fullscreen',
+/** The icon depicts the clean, simple outline of a standard envelope. It is commonly used to symbolize electronic mail and any form of correspondence or messaging. */
+_mail = 'mail',
+/** The icon depicts an open envelope shape paired with a prominent asterisk symbol. This combination typically indicates supplementary details, footnotes, or special notes regarding a message or email communication. */
+_mail_asterisk = 'mail_asterisk',
+/** The design features an outline of an open envelope paired with a closed padlock icon. This combination is used to indicate that communications are confidential, protected, or encrypted. */
+_mail_lock = 'mail_lock',
+/** The icon depicts a simple outline of an open envelope overlaid with a strong diagonal slash. It is commonly used to signify sending messages or outgoing communication that leaves the current system. */
+_mail_off = 'mail_off',
+/** The design features an open envelope paired with a protective shield icon. This combination is commonly used to signify secure email communication, data privacy, or encrypted messaging services. */
+_mail_shield = 'mail_shield',
+/** The design is composed of a circle connected to an arrow pointing diagonally upwards and to the right. This symbol is widely used to represent the male gender or general masculinity. */
+_male = 'male',
+/** This icon depicts a basic, solid silhouette of a standing human figure. It is widely used as a universal signifier for the male gender or facilities intended for men, such as restrooms. */
+_man = 'man',
+/** The design features a simple, solid black silhouette representing an adult male figure. This standardized pictogram is commonly used on public signage to indicate facilities designated for men, such as restrooms or changing rooms. */
+_man_2 = 'man_2',
+/** The icon depicts a solid black pictogram of an adult male figure. It is commonly used in public signs to indicate access to men's restrooms or facilities for males. */
+_man_3 = 'man_3',
+/** The design is a black pictogram showing an upright human male figure. It serves as a universal sign to indicate facilities or areas designated for men. */
+_man_4 = 'man_4',
+/** The icon visually depicts a simple person silhouette standing next to an interlocking gear symbol. This combination typically signifies the ability to manage user profiles, adjust personal settings, or administer system accounts within an application. */
+_manage_accounts = 'manage_accounts',
+/** The icon depicts a clock face surrounded by circular arrows and mechanical gears. It typically indicates accessing or modifying historical records, allowing users to review their past activity logs within an application. */
+_manage_history = 'manage_history',
+/** The icon shows three parallel horizontal lines positioned to the left of a circular magnifying glass outline. This combination typically represents advanced search functionality or the ability to manage detailed query parameters for information retrieval. */
+_manage_search = 'manage_search',
+/** The icon depicts a square frame containing an irregular, zig-zagging line segment that traverses the interior space. This symbol is typically used to indicate tracking movement, recording a specific route, or viewing historical progress within an application. */
+_manga = 'manga',
+/** The design displays two stylized interlocking gear mechanisms. This symbol typically represents mechanics, industrial operations, or the systemic process of manufacturing and production. */
+_manufacturing = 'manufacturing',
+/** The icon depicts an open object composed of several segmented pages, resembling a folded booklet or manual. It generally represents stored information, documentation, or access to comprehensive content that needs to be read through. */
+_map = 'map',
+/** The design is formed by a classic location map marker containing a prominent heart shape at its center. It typically signifies a saved favorite spot, a romantic destination, or a location associated with emotional importance. */
+_map_pin_heart = 'map_pin_heart',
+/** The design features a stylized map pin positioned near a speech bubble that incorporates a star symbol. This combination is used to signify user reviews, ratings, and feedback associated with a specific location on a map. */
+_map_pin_review = 'map_pin_review',
+/** The design depicts a stylized map outline paired with a magnifying glass icon. This combination is used to indicate the action of searching for specific locations, points of interest, or details within an area or collection. */
+_map_search = 'map_search',
+/** The design features a rounded speech balloon containing a centered plus sign. This icon typically indicates the action of starting a new conversation or adding content within a messaging interface. */
+_maps_ugc = 'maps_ugc',
+/** The design is composed of nine equally spaced dots arranged in a clear 3x3 square grid pattern. This symbol typically signifies view options related to structure and data arrays, such as adjusting table rows or controlling surrounding spacing like margins. */
+_margin = 'margin',
+/** The design is an outline of a simple, closed envelope shape. It is used to signify that an email or message has been flagged or designated as requiring attention because it remains unread. */
+_mark_as_unread = 'mark_as_unread',
+/** The design depicts a stylized speech bubble accompanied by a checkmark placed within its structure. This icon is commonly used in messaging apps to confirm that messages or conversations have been read or viewed successfully. */
+_mark_chat_read = 'mark_chat_read',
+/** The design depicts an outline of a speech bubble, which contains a small solid dot near its top edge. This icon commonly indicates new or unread messages, serving as a notification marker within messaging applications. */
+_mark_chat_unread = 'mark_chat_unread',
+/** The design features a stylized open envelope paired with a checkmark symbol. This icon is commonly used in digital interfaces to confirm that an email's status has been updated, signifying that the message has been successfully marked as read. */
+_mark_email_read = 'mark_email_read',
+/** The design features a stylized open envelope with an indicator placed near its center. It commonly signifies that there are new or unread messages waiting for the user in their digital mailbox. */
+_mark_email_unread = 'mark_email_unread',
+/** The design depicts a rounded speech bubble containing multiple horizontal lines of text representation and featuring a solid circle in the upper right corner. This icon commonly signals that there are new or unread messages waiting for the user to view within an inbox or chat application. */
+_mark_unread_chat_alt = 'mark_unread_chat_alt',
+/** The icon is displayed within a contained rectangle showing stylized characters next to a prominent downward-pointing arrow. It typically represents the action of pasting structured content or formatted code into a document or text field. */
+_markdown = 'markdown',
+/** The illustration shows a stylized document containing lines of structured text. It is used to indicate copying content that utilizes Markdown formatting rules. */
+_markdown_copy = 'markdown_copy',
+/** The design depicts a symbol representing the action of inserting content into a document or text field. It is used to paste structured data, such as plain text formatted using Markdown syntax, while preserving its intended layout and features. */
+_markdown_paste = 'markdown_paste',
+/** The design depicts a stylized folder or mailbox shape with a small banner attached to its upper corner. It commonly indicates that there are unread emails, new messages, or notifications waiting in the system. */
+_markunread_mailbox = 'markunread_mailbox',
+/** The icon depicts two distinct circular shapes that overlap partially. It typically symbolizes a smooth visual transition, blending effect, or masking action between two different digital states or components. */
+_masked_transitions = 'masked_transitions',
+/** The design consists of a prominent plus sign centered within a solid circular boundary. This icon is universally used in user interfaces to signify the action of adding new content or initiating a creation process. */
+_masked_transitions_add = 'masked_transitions_add',
+/** The design illustrates a contoured facial covering drawn to fit over the nose and mouth area. It typically symbolizes public health awareness, safety precautions, or the need for personal protective equipment. */
+_masks = 'masks',
+/** The design shows two cupped hands interacting, with one hand resting upon the back of the other's wrist area. This gesture is commonly used to represent therapeutic touch, care services, or professional body massage treatments. */
+_massage = 'massage',
+/** The design displays an uppercase letter followed immediately by its corresponding lowercase version. This symbol is used to ensure that selected text maintains uniform capitalization throughout the document. */
+_match_case = 'match_case',
+/** The icon depicts a diagonal line drawn across a horizontal stroke. It indicates that a specific rule or feature, such as case-sensitive matching, has been deactivated or turned off. */
+_match_case_off = 'match_case_off',
+/** The icon depicts stylized text or characters suggesting selection and comparison. It commonly indicates a search or "Find" function, allowing users to efficiently locate specific keywords within a document. */
+_match_word = 'match_word',
+/** The icon shows three separate, stylized downward-pointing angular shapes arranged horizontally below a central axis. It commonly represents the convergence of multiple ideas, pathways, or supporting elements coming down to one point. */
+_matter = 'matter',
+/** The design shows an arrangement of lines forming a square shape with outwardly pointing extensions. This icon indicates the function used to maximize a window or viewing area, allowing it to occupy the full display space. */
+_maximize = 'maximize',
+/** The icon literally depicts a plate or set of dishes along with other items suggesting beverages and eating implements. It generally signifies dining services, indicating that a meal is available or that a location serves dinner. */
+_meal_dinner = 'meal_dinner',
+/** The icon depicts a grouping of stacked plates and bowls ready for use. It is commonly used in digital interfaces to denote meal times, food-related features, or dining menus. */
+_meal_lunch = 'meal_lunch',
+/** The design depicts a stylized, curved strip that resembles an opened or partially unrolled measuring tape. It is commonly used to symbolize measurement, dimensioning, or establishing physical distance. */
+_measuring_tape = 'measuring_tape',
+/** The icon depicts a musical note symbol that has been crossed out by a thick diagonal line. It indicates that media audio or connected Bluetooth devices are turned off or disconnected. */
+_media_bluetooth_off = 'media_bluetooth_off',
+/** It displays a combination of a musical eighth note next to a standard wireless Bluetooth signal icon. This indicates that media playback, such as streaming music or audio content, is currently connected and active through Bluetooth. */
+_media_bluetooth_on = 'media_bluetooth_on',
+/** This icon combines a universal play symbol with an interconnected link indicator, suggesting multimedia connectivity. It is typically used to initiate playback or stream content connected from external sources or libraries. */
+_media_link = 'media_link',
+/** The design depicts a pair of over-ear style headphones ready for use. This icon typically signifies audio output or the ability to connect an external device for streaming multimedia content. */
+_media_output = 'media_output',
+/** The icon depicts a stylized speaker emitting sound waves that are crossed out by a diagonal slash. This symbol indicates that audio output is turned off or muted, preventing any media playback from the device. */
+_media_output_off = 'media_output_off',
+/** The icon displays multiple connected circles linked by directional arrows that suggest a branching or outgoing flow. It commonly represents mediation, illustrating a connection or process that links distinct parties or ideas together. */
+_mediation = 'mediation',
+/** The icon depicts a stylized clipboard containing basic mathematical symbols such as plus and minus. It commonly signifies tracking quantitative data, such as logging vital signs or recording objective health measurements in a medical record. */
+_medical_information = 'medical_information',
+/** It depicts a simple outline of a surgical-style face covering with visible ear loops. This icon generally symbolizes public health safety measures or general precautions related to respiratory illness prevention. */
+_medical_mask = 'medical_mask',
+/** The design is a square container, similar to a toolbox or briefcase, featuring a prominent cross symbol centered within it. It commonly symbolizes medical services, first aid, or general healthcare assistance. */
+_medical_services = 'medical_services',
+/** The symbol consists of a plus sign centered inside a defined square frame. This graphic is widely used to represent general medicine, first aid, or healthcare services. */
+_medication = 'medication',
+/** The design shows a simple plus sign (+) centered within an outlined square box. This symbol is widely used to indicate medical aid, first aid services, or general assistance. */
+_medication_liquid = 'medication_liquid',
+/** The design depicts two simple, vertical rectangular blocks placed side-by-side, separated by a noticeable gap. This icon is commonly used to represent meeting rooms or corporate conference facilities designed for group gatherings. */
+_meeting_room = 'meeting_room',
+/** The design illustrates a square component, resembling an integrated circuit chip with connection pins surrounding it. This icon typically represents electronic memory storage, processing capacity, or system hardware in a technical context. */
+_memory = 'memory',
+/** The design shows a stylized rectangular casing representing a rechargeable battery containing segmented indicators. This symbol is used to communicate the current power level or remaining charge of an electronic device. */
+_memory_alt = 'memory_alt',
+/** The icon depicts a minimalist drawing of an open blossom or leaf structure with clean, curved lines. It is widely used to symbolize natural growth, femininity, and themes related to menstrual health and reproductive cycles. */
+_menstrual_health = 'menstrual_health',
+/** The design features three solid, equally spaced horizontal lines stacked vertically. This icon commonly serves as a universal indicator for an expandable navigation menu or list of settings. */
+_menu = 'menu',
+/** The icon depicts a stylized representation of an open book lying flat. It typically signifies resources, documentation, or a menu containing detailed information within an application interface. */
+_menu_book = 'menu_book',
+/** The icon depicts an open, rectangular booklet containing illustrations of dining utensils such as forks and knives. It generally symbolizes a printed menu or guidebook, representing available food options or dining information. */
+_menu_book_2 = 'menu_book_2',
+/** The design features three short, stacked horizontal lines. This symbol typically indicates a hidden menu structure, allowing access to various settings or content categories within an application. */
+_menu_open = 'menu_open',
+/** The design features two arrows that meet at a base point and continue together in a single upward flow. This symbol typically indicates the action of merging separate paths, datasets, or processes into one unified whole. */
+_merge = 'merge',
+/** The design depicts two distinct lines meeting at a point before continuing upward in a single unified path. It commonly signifies the process of consolidating separate types of data, sources, or information into one combined stream. */
+_merge_type = 'merge_type',
+/** The icon features a stylized human figure situated within a continuous, circular arrow design. This symbol typically represents ongoing cycles of change, renewal, or biological processes such as metabolism and energy conversion. */
+_metabolism = 'metabolism',
+/** The icon depicts the standalone character of the capital letter M. In technical writing interfaces, this symbol often serves as a simple visual marker or initialism for document formatting sections or features. */
+_metro = 'metro',
+/** The design is a keypad presented within a rounded rectangle containing several circular buttons. This icon symbolizes a digital lock mechanism used for entering codes to gain access or control security systems. */
+_mfg_nest_yale_lock = 'mfg_nest_yale_lock',
+/** The symbol portrays a stylized, head-like microphone shape. It generally signifies functions related to speaking, voice input, or activating speech features within an application. */
+_mic = 'mic',
+/** The design combines a microphone graphic with an exclamation mark placed nearby. It generally signals that there is an important warning or required action concerning audio input or recording status. */
+_mic_alert = 'mic_alert',
+/** The icon features two upright microphone symbols connected by a curved, continuous line at their bottom points. This symbol is used to indicate advanced or improved audio quality, often signifying dual-microphone support for better voice capture during communication. */
+_mic_double = 'mic_double',
+/** The icon shows a stylized drawing of a microphone that is crossed out by a line. This signifies that audio input from an external or connected microphone has been deactivated or muted. */
+_mic_external_off = 'mic_external_off',
+/** The design depicts a stylized microphone connected by a curved cord extending downwards. This icon commonly indicates that an external audio input device is currently connected and active. */
+_mic_external_on = 'mic_external_on',
+/** The icon combines a stylized microphone symbol with an adjustable wrench mechanism. This design is used to indicate configuration options for audio input, recording features, or voice communication settings. */
+_mic_gear = 'mic_gear',
+/** The icon displays a stylized drawing of a microphone with a diagonal line crossing through its center. It is used to indicate that sound recording or voice input has been muted or turned off. */
+_mic_off = 'mic_off',
+/** The icon depicts a stylized microbe or bacterial cell with an irregular, curved body. It is commonly used in digital interfaces to represent concepts related to microbiology, germs, or pathogens. */
+_microbiology = 'microbiology',
+/** The design features a stylized representation, showing wavy lines adjacent to indicator dots within a rectangular frame. It is used to symbolize the process of scanning physical records or capturing structured data from forms. */
+_microwave = 'microwave',
+/** The design illustrates the front view of a boxy kitchen machine with a visible digital control panel. This icon is commonly used to represent a microwave oven or general cooking appliance functions. */
+_microwave_gen = 'microwave_gen',
+/** The emblem is styled like a traditional military badge or award ribbon. It signifies recognition for accomplished service, especially related to technological achievement or excellence in the field of defense. */
+_military_tech = 'military_tech',
+/** The design is a straightforward, black silhouette of an external computer monitor with a screen and base stand. It generally symbolizes display output, viewing information, or general computing functions. */
+_mimo = 'mimo',
+/** The design illustrates a simple outline of a computer monitor with a diagonal slash crossing through it. This icon typically indicates that the device or network access is disabled, unavailable, or disconnected. */
+_mimo_disconnect = 'mimo_disconnect',
+/** The illustration depicts a clean, stylized side profile view of a human head. This icon represents inner focus and mental calm, symbolizing the practice of mindfulness and present awareness. */
+_mindfulness = 'mindfulness',
+/** The icon literally depicts a short, horizontal dash or minus sign. In digital contexts, this symbol indicates the action of minimizing an application window, which keeps the program running while removing it from the main view. */
+_minimize = 'minimize',
+/** The image depicts a side profile of a shuttle-style vehicle with radiating lines positioned above it. This icon is typically used to signify an accident report, traffic alert, or general caution regarding transportation incidents. */
+_minor_crash = 'minor_crash',
+/** The icon depicts a stylized letter S with a horizontal line through it, accompanied by a right-pointing arrow. This symbol typically represents the action of deleting, crossing out, or making revisions to written material. */
+_mintmark = 'mintmark',
+/** The design shows a recognizable symbol for a video camera alongside indicators suggesting an interrupted or past event. This icon is used to alert the user that a video call was scheduled but was unfortunately missed or did not connect. */
+_missed_video_call = 'missed_video_call',
+/** The icon features curved radiating lines above a distinct informational dot containing an "i." It commonly serves as an alert that specific details or settings regarding the current Wi-Fi connection status are available for review. */
+_missing_controller = 'missing_controller',
+/** The icon depicts several horizontal black lines stacked on top of one another. This design commonly represents structured textual content, such as a document block or an ongoing data feed. */
+_mist = 'mist',
+/** The design shows several connected rectangular terminals arranged in pairs or groups. It typically symbolizes a junction point where various connection types or standardized access methods meet. */
+_mitre = 'mitre',
+/** The design shows two distinct hypodermic syringes depicted side by side. This symbol commonly refers to vaccinations, injectable treatments, or a mixture of medicinal products. */
+_mixture_med = 'mixture_med',
+/** The design features a chat message bubble containing an illustration of stylized hills or mountains. It typically signifies sending messages that include multimedia content, such as pictures or videos, beyond simple text. */
+_mms = 'mms',
+/** The design is an outline of a vertical rectangle with rounded corners, mimicking the appearance of a modern smartphone. This icon generally signifies mobility, connectivity, or access to cellular service features. */
+_mobile = 'mobile',
+/** The icon depicts a simple, vertical outline of a portable electronic device with rounded corners. It is commonly used to represent mobile technology or any general handheld gadgetry like a smartphone or tablet. */
+_mobile_2 = 'mobile_2',
+/** The design is a simple outline of a modern mobile rectangular frame with smooth, rounded corners. It generally signifies any function related to portable electronic devices or connectivity status. */
+_mobile_3 = 'mobile_3',
+/** The icon depicts a rectangular frame representing a mobile device screen with a large exclamation point centered within it. It signifies that the portable device is experiencing a critical warning or operational alert, often related to battery status or connectivity issues. */
+_mobile_alert = 'mobile_alert',
+/** The icon depicts a simple arrowhead pointing vertically downward. It commonly indicates scrolling down through content or expanding a hidden menu section within an application interface. */
+_mobile_arrow_down = 'mobile_arrow_down',
+/** The icon illustrates a rectangular outline, suggesting a mobile phone or application window, from which a large arrow points sharply toward the right. This symbol is commonly used in user interfaces to indicate progression, continuation, or moving forward into a new section. */
+_mobile_arrow_right = 'mobile_arrow_right',
+/** The icon depicts a rectangular device screen outline with an arrow positioned within it, pointing diagonally up and to the right. It typically indicates exiting an application or progressing forward from a specific view back into a broader context. */
+_mobile_arrow_up_right = 'mobile_arrow_up_right',
+/** The icon depicts a rectangular outline representing a smartphone screen with a prohibition symbol centered inside. This commonly signifies that a feature, function, or service on the mobile device has been disabled, suspended, or blocked. */
+_mobile_block = 'mobile_block',
+/** The illustration depicts a simple outline of a smartphone with a distinct camera lens module visible on its back surface. It signifies the ability to capture photos or record videos using a mobile device. */
+_mobile_camera = 'mobile_camera',
+/** The icon depicts an outline of a smartphone or rectangular electronic device featuring a visible camera module at the top. This signifies using the device's front-facing camera, which is commonly employed for taking selfies or video recording. */
+_mobile_camera_front = 'mobile_camera_front',
+/** The design shows the outline of a vertical smartphone or mobile device. It is commonly used to indicate functions related to photography, capturing pictures, or accessing the device's camera hardware. */
+_mobile_camera_rear = 'mobile_camera_rear',
+/** The image depicts a simple outline of a mobile device overlaid with a large 'X' mark. This symbol typically indicates that phone services or mobile connectivity are unavailable, disabled, or canceled. */
+_mobile_cancel = 'mobile_cancel',
+/** The design features a stylized outline of a mobile device with radiating curved arcs displayed beneath it. This icon indicates that the phone is actively broadcasting its wireless connection, typically signifying that it is being used as a hotspot or signal caster for other gadgets to connect to. */
+_mobile_cast = 'mobile_cast',
+/** The design features a stylized rectangular outline representing a mobile battery, across which a distinct lightning bolt symbol is drawn. This universally recognized icon indicates that the device is charging or has an active power source available. */
+_mobile_charge = 'mobile_charge',
+/** The design depicts a simplified, rectangular silhouette of a mobile device with a speech bubble attached to its side. It is commonly used to signify messaging functionality, online chats, or any form of remote communication feature in software. */
+_mobile_chat = 'mobile_chat',
+/** The illustration portrays the clean outline of a smartphone or mobile device screen. This icon is commonly used to signal success, successful completion, or confirmed verification related to a portable service or task. */
+_mobile_check = 'mobile_check',
+/** The design features a stylized outline of a mobile device paired with visible programming angle brackets. It is commonly used to represent software development or coding that takes place on a smartphone or tablet. */
+_mobile_code = 'mobile_code',
+/** The illustration depicts a simple outline of a mobile device resting upon a connecting dock or base. This symbol generally represents connectivity, docking stations, power management, or the integration of a phone with an external accessory. */
+_mobile_dock = 'mobile_dock',
+/** The icon depicts a simple rectangular housing containing five small, equally spaced dots arranged horizontally. This indicator is commonly used across technology interfaces to show various operational statuses or levels of connectivity. */
+_mobile_dots = 'mobile_dots',
+/** The design features a stylized rectangle containing a gear or cogwheel icon placed within it. This symbol commonly indicates access to the device's settings, options, or overall configuration menu. */
+_mobile_gear = 'mobile_gear',
+/** The design shows a stylized open hand positioned next to a vertical rectangular phone shape. It typically represents the action of saving, accessing, or managing content directly on a mobile device, such as bookmarking an article or adding material to a collection. */
+_mobile_hand = 'mobile_hand',
+/** A stylized left hand reaches out toward a vertical rectangle that resembles a smartphone or portable device. This icon typically indicates actions related to interacting with mobile content, such as viewing records or adding digital information. */
+_mobile_hand_left = 'mobile_hand_left',
+/** The design features an outline of a mobile device crossed out by a diagonal slash. This symbol indicates that mobile functionality or a specific feature related to calling or messaging has been disabled or cancelled. */
+_mobile_hand_left_off = 'mobile_hand_left_off',
+/** The icon generally depicts a mobile device alongside abstract elements suggesting data flow or connectivity. It signifies the ability to seamlessly hand off active tasks, files, or conversations from one connected device to another without interruption. */
+_mobile_hand_off = 'mobile_hand_off',
+/** This icon features the silhouette of a modern, rectangular mobile device. The alert exclamation point inside suggests crucial information, a warning, or necessary attention regarding the device’s status or function. */
+_mobile_info = 'mobile_info',
+/** The icon depicts a simple, solid rectangular shape resembling a file folder container. It is commonly used to signify organized data, stored files, or the ability to group related items within an application interface. */
+_mobile_landscape = 'mobile_landscape',
+/** The icon is composed of three distinct rectangular shapes arranged together in a unified layout. It typically represents the structure or arrangement of content designed to adapt across various mobile devices or screens. */
+_mobile_layout = 'mobile_layout',
+/** The icon depicts a closed padlock symbol centered within a solid rectangular border. It is used universally to symbolize digital security, indicating that data or connections are protected by encryption or strong passwords. */
+_mobile_lock_landscape = 'mobile_lock_landscape',
+/** The image shows a vertical cellphone display featuring a solid padlock symbol placed in the center. It commonly signifies data privacy, secure access, or that the device itself is locked and encrypted. */
+_mobile_lock_portrait = 'mobile_lock_portrait',
+/** The design depicts the outline of a modern smartphone coupled with an overlaid circular element that suggests magnification or detailed inspection. This icon is used to indicate access to comprehensive diagnostics, such as checking in-depth power management settings or battery health details. */
+_mobile_loupe = 'mobile_loupe',
+/** The design shows an outline of a modern mobile device with three small dots centered beneath its bottom edge. It commonly functions as a universal symbol indicating access to main navigation menus or hidden settings on mobile platforms. */
+_mobile_menu = 'mobile_menu',
+/** The design shows a simple outline of a smartphone or tablet crossed out by a diagonal line. This symbol typically indicates that mobile features or connectivity are disabled, turned off, or unavailable. */
+_mobile_off = 'mobile_off',
+/** The design depicts the outline of a smartphone screen featuring a prominent, central question mark. This symbol typically indicates unknown status, missing data, or that further information is required on a mobile interface. */
+_mobile_question = 'mobile_question',
+/** The design features a simplified outline of a mobile smartphone surrounded by two curved arrows forming a circle. This icon is typically used to indicate that data or content is refreshing, reloading, or updating within a mobile application. */
+_mobile_rotate = 'mobile_rotate',
+/** The icon features a smartphone outline paired with a padlock symbol and surrounded by curved rotational arrows. It signifies that the mobile device or its connection is secured by encryption, indicating enhanced privacy and protection. */
+_mobile_rotate_lock = 'mobile_rotate_lock',
+/** The icon depicts a rectangular outline of a mobile phone displaying a stylized mountain range within its screen area. It generally represents personalized background images, custom wallpapers, or the screensaver function of a portable device. */
+_mobile_screensaver = 'mobile_screensaver',
+/** The design shows an outline of a smartphone device with indicator waves flanking its sides. This icon generally signifies active connectivity or the detection of wireless signals from a mobile sensor. */
+_mobile_sensor_hi = 'mobile_sensor_hi',
+/** The design is a simple, rectangular outline representing a portable electronic device like a smartphone or tablet. This icon typically indicates the status or availability of mobile hardware sensors or connectivity features. */
+_mobile_sensor_lo = 'mobile_sensor_lo',
+/** The icon depicts a rectangular outline representing a mobile device with an arrow exiting the frame to the right. It commonly signifies the action of sharing, exporting, or sending content from a phone's current context to another location or application. */
+_mobile_share = 'mobile_share',
+/** The icon features a simplified silhouette of a mobile device paired with an attached arrow symbol. This design generally indicates linking or providing content originating from a smartphone. */
+_mobile_share_stack = 'mobile_share_stack',
+/** The design is an outline of a rectangular portable device. It typically signifies that audio or sound is actively playing or being emitted from a mobile speaker source. */
+_mobile_sound = 'mobile_sound',
+/** The design features a smartphone outline emitting curved, radiating waves around it. This symbol is commonly used to indicate that the device is playing audio or that its speakerphone function is active. */
+_mobile_sound_2 = 'mobile_sound_2',
+/** The design features a loudspeaker graphic that is crossed out by a diagonal slash mark. It signifies that the sound output has been muted or that audio notifications are currently disabled. */
+_mobile_sound_off = 'mobile_sound_off',
+/** The design pairs a rectangular device representation with an accompanying audio speaker symbol. This icon commonly indicates the capability to play media or stream sound from a portable mobile source. */
+_mobile_speaker = 'mobile_speaker',
+/** The icon depicts a clean, vertical outline representing a modern smartphone or mobile device screen. It commonly signifies functions related to texting, messaging services, or general connectivity for a mobile user. */
+_mobile_text = 'mobile_text',
+/** The icon is a simple black outline of a vertical rectangle containing two horizontal lines near the center. It commonly represents viewing content, such as an e-book, article, or document reader mode. */
+_mobile_text_2 = 'mobile_text_2',
+/** The design illustrates an outline of a mobile phone with an arrow separating it from its location. This icon is used to signify issues related to lost devices, reported theft, or general mobile security concerns. */
+_mobile_theft = 'mobile_theft',
+/** The design is a stylized rectangular shape that resembles a physical ticket stub or pass. It commonly signifies entry credentials, confirmation tickets for specific events, or access passes for various services. */
+_mobile_ticket = 'mobile_ticket',
+/** A design showing an outlined smartphone screen featuring a prominent lock graphic. It is commonly used to represent mobile security, indicating that the device is protected by passwords or biometrics. */
+_mobile_unlock = 'mobile_unlock',
+/** The design depicts the simple silhouette of a modern mobile phone flanked by indicator lines. This icon is used to signal that the device is vibrating—typically when receiving an alert or notification while on silent mode. */
+_mobile_vibrate = 'mobile_vibrate',
+/** The design shows a simplified outline of a mobile phone or tablet with a wrench symbol attached to the bottom right corner. This combination typically represents technical support, maintenance options, or settings related to the device's functionality. */
+_mobile_wrench = 'mobile_wrench',
+/** The icon consists of two vertical arrows pointing in opposite directions—one up and one down. It typically signifies a fluctuation, change, or bidirectional flow of data, such as signal strength or connectivity status. */
+_mobiledata_arrows = 'mobiledata_arrows',
+/** The icon depicts a downward-pointing arrow crossed by a diagonal strike line. This symbol is commonly used in user interfaces to indicate that mobile data service has been disabled or turned off. */
+_mobiledata_off = 'mobiledata_off',
+/** The icon displays a simple, outlined speech bubble with an attached pointer tail. It generally indicates functionality for leaving comments, providing feedback, or engaging in a discussion thread within an application. */
+_mode_comment = 'mode_comment',
+/** The icon is a symmetrical and intricate depiction of a stylized crystal flake. It commonly represents snowy conditions, cold weather, or general cooling status in various contexts. */
+_mode_cool = 'mode_cool',
+/** The design is a symmetrical, geometric symbol resembling a stylized snowflake. This icon typically indicates that the device has entered a "cool off" mode due to conserving energy or managing restricted connectivity. */
+_mode_cool_off = 'mode_cool_off',
+/** The icon depicts two distinct groupings of parallel curves that are wavy and resemble squiggles. It generally signifies a dual function, echoing effect, or an alternative pairing of settings within an application. */
+_mode_dual = 'mode_dual',
+/** The design is a stylized propeller featuring four curved blades radiating from a central hub. This icon commonly symbolizes movement, airflow, refreshing content, or cooling mechanisms. */
+_mode_fan = 'mode_fan',
+/** The design consists of multiple interconnected lines that form a swirling, abstract pattern. It is commonly used to indicate cyclical action, motion, or the refreshing of data content. */
+_mode_fan_2 = 'mode_fan_2',
+/** The icon depicts a flowing, wavy shape marked with a prominent diagonal slash crossing through it. It universally symbolizes the deactivation or termination of an active function or operational mode. */
+_mode_fan_off = 'mode_fan_off',
+/** The icon depicts a stylized, upward-curving graphic resembling a flame. It is used to indicate warmth, heat settings, or that an appliance or mode is currently generating thermal energy. */
+_mode_heat = 'mode_heat',
+/** The design combines a flame symbol with directional arrows, symbolizing opposing forces of heat and cool air movement. It is typically used to indicate adjustable temperature settings or climate control features within a living space. */
+_mode_heat_cool = 'mode_heat_cool',
+/** The design shows an abstract, flowing squiggly shape marked with a distinct diagonal strikethrough line. This symbol generally indicates that a specific setting or functional mode has been deactivated or turned off. */
+_mode_heat_off = 'mode_heat_off',
+/** The design features a simple outline of a crescent moon shape. It is commonly used in digital interfaces to signify "Night Mode," suggesting reduced brightness for comfortable viewing in low light. */
+_mode_night = 'mode_night',
+/** The design forms an open loop using a curved arrow, creating a continuous cyclical path. This symbol is typically used to indicate refreshing content or repeating a process back to its starting point. */
+_mode_of_travel = 'mode_of_travel',
+/** The design is a simple circular loop with a vertical line segment passing through it. This universally recognized symbol indicates the power function for electronic devices, used both to turn them on and off. */
+_mode_off_on = 'mode_off_on',
+/** The icon depicts two concentric rings forming a circular target-like design. It is typically used to indicate that a system or device is in a standby or idle operational mode. */
+_mode_standby = 'mode_standby',
+/** The illustration shows a lightbulb situated at the base of curved, directional arrows forming an open loop. It signifies an ongoing cycle of improvement and iteration, commonly used to represent processes like machine learning or continuous refinement. */
+_model_training = 'model_training',
+/** The design features several interconnected arrows pointing in various directions around distinct rectangular sections. This symbol generally represents a structured process, illustrating relationships, data flows, or comparative steps within a model or workflow. */
+_modeling = 'modeling',
+/** The design is a simple rectangle containing three equally sized and spaced vertical bars. It is typically used to represent currency or monetary value in user interfaces. */
+_money = 'money',
+/** The icon depicts a simple, stylized sack shape with an open mouth at the top. It is commonly used to symbolize wealth, financial assets, or monetary value. */
+_money_bag = 'money_bag',
+/** The design features a diagonal line overlaid with a decorative, curving slash mark. This symbol is commonly used in user interfaces and commerce to signify that an item has been discounted, sold, or marked down from its original price. */
+_money_off = 'money_off',
+/** The icon depicts a stylized representation of currency positioned above two opposing double-headed arrows. It is commonly used to indicate a price range or variable cost associated with an item or service. */
+_money_range = 'money_range',
+/** The icon depicts a simplified side-view of a desktop computer monitor displaying a rectangular screen on a base stand. It generally represents the ability to view digital content, processed data, or general visual output from a computing system. */
+_monitor = 'monitor',
+/** The icon depicts a wavy line graph contained within a simple rectangular border. This visual indicates the monitoring of vital signs or other critical life functions. */
+_monitor_heart = 'monitor_heart',
+/** The design is housed within a square border and features a central circle containing three horizontally aligned dots, forming an ellipsis. This symbol typically indicates that there are additional options or settings available beyond what is currently displayed on the screen. */
+_monitor_weight = 'monitor_weight',
+/** The design illustrates an abstract meter or gauge showing upward movement within a contained border. This symbol is used to indicate positive growth, rising metrics, or the continuous accumulation of data or resource weight over time. */
+_monitor_weight_gain = 'monitor_weight_gain',
+/** It depicts an outline of a rectangular screen shape containing three small dots centered within it. This symbol is generally used to indicate that additional settings, choices, or options are available for viewing. */
+_monitor_weight_loss = 'monitor_weight_loss',
+/** The icon displays a fluctuating line graph plotting data points across a continuous axis. It is used to represent trend analysis, monitoring performance metrics, or showing changes and growth rates over time. */
+_monitoring = 'monitoring',
+/** The design is a solid, stylized depiction of a classic camera body and lens assembly. It typically symbolizes photography collections or image files that are rendered entirely in black and white tones. */
+_monochrome_photos = 'monochrome_photos',
+/** The design depicts a streamlined rail vehicle that appears to be suspended or traveling along an elevated track. This icon generally symbolizes dedicated public transit routes, specifically referring to a monorail system or modern light railway service. */
+_monorail = 'monorail',
+/** The design is a universally recognized smiley face icon within a circle. It serves to visually communicate a person's current emotional state or overall sentiment in conversation. */
+_mood = 'mood',
+/** The icon features a simple circular face with visibly downturned eyebrows and mouth. It is commonly used to communicate negative emotions such as sadness, frustration, or general unhappiness. */
+_mood_bad = 'mood_bad',
+/** The icon depicts a cheerful face inside a circle that has a small heart positioned near its head. It is used to express feelings of deep affection, joy, or being deeply loved by someone. */
+_mood_heart = 'mood_heart',
+/** The icon features a stylized crescent moon accompanied by several scattered stars. It is commonly used as an emoticon or symbol representing nighttime, sleep cycles, or celestial themes. */
+_moon_stars = 'moon_stars',
+/** The icon depicts a rectangular mop head connected to a straight handle. It symbolizes items related to general cleaning, floor care, and routine household upkeep. */
+_mop = 'mop',
+/** The icon depicts a motorized two-wheeled vehicle structure, including wheels, handlebars, and a body frame typical of a moped or scooter. It is commonly used to symbolize short-distance personal transportation or auxiliary mobility. */
+_moped = 'moped',
+/** The icon depicts a moped or scooter with a visible package secured to its back. It is typically used in online shopping interfaces to symbolize fast delivery, fulfillment, or moving purchased goods. */
+_moped_package = 'moped_package',
+/** The icon consists of three equally sized solid circles arranged in a neat row. It commonly serves as an ellipsis, indicating that there are more choices, options, or content available to view. */
+_more = 'more',
+/** The icon is composed of two connected lines forming a downward-pointing chevron shape. It generally indicates that there is additional content available or that the user should scroll down to continue viewing information. */
+_more_down = 'more_down',
+/** Three dots are depicted aligned along a straight horizontal line. This symbol represents an ellipsis, typically signaling omitted information or that additional content continues beyond the visible area. */
+_more_horiz = 'more_horiz',
+/** The design depicts a classic clock face accompanied by an upward-pointing arrow or plus sign. This icon is commonly used in user interfaces to signify adding time, extending a deadline, or requesting more duration. */
+_more_time = 'more_time',
+/** The design consists of a simple caret symbol formed by converging lines that point upward. This icon is commonly used in user interfaces to indicate that content can be expanded or that more details are available for viewing. */
+_more_up = 'more_up',
+/** The icon depicts three small, solid circles stacked one above the other in a vertical column. This symbol is commonly used to represent an ellipsis or menu trigger for additional options and settings that are not displayed upfront. */
+_more_vert = 'more_vert',
+/** The design outlines a large, symmetrical building structure featuring a central peaked roofline. This symbol typically represents an Islamic place of worship or mosque. */
+_mosque = 'mosque',
+/** The icon visually depicts several parallel horizontal lines spreading outwards to form a tapered, blurred shape. This symbol is widely used in interfaces to indicate high velocity, intense speed, or the effect of motion blur. */
+_motion_blur = 'motion_blur',
+/** The design features three thick, parallel vertical bars contained within a solid circular shape. This icon typically indicates that a device or application is currently active, tracking motion, or entering a live/recording mode. */
+_motion_mode = 'motion_mode',
+/** The design shows a large, bold capital letter A contained within an open circular path, with a smaller accent dot positioned nearby. This icon indicates that motion effects are automatically applied to media content, enhancing static pictures into dynamic memories. */
+_motion_photos_auto = 'motion_photos_auto',
+/** The design is a simple, continuous circular outline. This symbol indicates that motion capture or dynamic recording features are currently enabled for photos within the application. */
+_motion_photos_on = 'motion_photos_on',
+/** The design features two parallel vertical bars enclosed within a circular outline, forming the universal pause symbol. This icon indicates that dynamic visual content, such as a motion photo or video clip, has been temporarily paused and is ready to resume playback. */
+_motion_photos_paused = 'motion_photos_paused',
+/** The icon depicts a right-pointing triangle set inside a partial circular arc. It is widely used to indicate that media content, such as videos or audio files, can be played or started. */
+_motion_play = 'motion_play',
+/** The icon depicts a solid central dot surrounded by multiple nested circular rings. This design commonly indicates that an active sensor is engaged or that the device is currently focusing on a specific area. */
+_motion_sensor_active = 'motion_sensor_active',
+/** The icon depicts concentric, radiating waves emanating from a central point, contained within corner brackets and accompanied by an alert exclamation mark. This symbol indicates that movement has been detected or sensed by a security system, triggering an immediate warning. */
+_motion_sensor_alert = 'motion_sensor_alert',
+/** The icon features an angular, cross-like pattern contained within corner brackets. It typically signifies that the motion sensor is currently powered on and ready to detect activity, but zero movement has been registered in the immediate area. */
+_motion_sensor_idle = 'motion_sensor_idle',
+/** A central circle surrounded by radiating lines represents a monitoring sensor, positioned above a standard emergency warning sign. It is used to communicate that activity or movement has been detected, signaling an immediate and critical safety concern. */
+_motion_sensor_urgent = 'motion_sensor_urgent',
+/** The design depicts a motorized vehicle with handlebars and two prominent wheels connected by an engine body. It is commonly used to represent personal transportation, mobility, or methods of travel. */
+_motorcycle = 'motorcycle',
+/** The design shows a solid, stylized peak with a small pennant flag placed at its summit. This icon usually represents a high standard, optimal measurement, or the achievement of maximum performance within technical fields. */
+_mountain_flag = 'mountain_flag',
+/** The design shows a stylized mountain peak emerging from wavy water, with steam rising from its summit. It typically symbolizes natural hot springs or areas dedicated to spa relaxation near water. */
+_mountain_steam = 'mountain_steam',
+/** The icon shows a streamlined, ovular object with an elongated top section. This universally recognized shape represents a computer mouse, used to control the cursor and interact with digital elements on a screen. */
+_mouse = 'mouse',
+/** The design features a computer mouse paired with an attached padlock icon. This symbolizes that the input device or associated actions are protected by high-level security measures, encryption, or privacy controls. */
+_mouse_lock = 'mouse_lock',
+/** The illustration depicts a standard hand-pointer cursor marked with a prominent diagonal slash. This signifies that mouse functionality is disabled, locked, or otherwise unavailable for use. */
+_mouse_lock_off = 'mouse_lock_off',
+/** A stylized location marker is shown with an encircling arrow that suggests continuous motion. This symbol represents the action of moving, updating coordinates, or viewing historical paths within a mapping service. */
+_move = 'move',
+/** The icon depicts a directional arrow pointing straight down, often with curved lines indicating movement. It suggests that there are additional sections of content below the current view or that an option can be expanded by moving downward. */
+_move_down = 'move_down',
+/** The design features two outlined frames connected by directional arrows. It is used in file management interfaces to signify the process of grouping and moving multiple selected items from one location to another. */
+_move_group = 'move_group',
+/** The design features a container shape connected to an arrow pointing straight to the right. This icon is used to indicate the action of moving, transferring, or exporting content from one location to another. */
+_move_item = 'move_item',
+/** The design features an indicator suggesting travel or displacement from one point to another. It is commonly used in user interfaces to signify movement between locations, pages, or sections of content. */
+_move_location = 'move_location',
+/** The design illustrates a pointer, typically an arrow or chevron, pointing straight down. This symbol indicates that there are more options available or that the selection can be moved to subsequent items in a list. */
+_move_selection_down = 'move_selection_down',
+/** The icon depicts an empty square outline followed by two dots separated by a horizontal dash or gap. This symbol is used to indicate navigation or movement that shifts content or selection back toward the left side. */
+_move_selection_left = 'move_selection_left',
+/** The icon depicts a sequence of dots arranged in steps that progress horizontally from left to right. It is commonly used to indicate forward movement, advancing through options, or shifting focus to the next item in a series. */
+_move_selection_right = 'move_selection_right',
+/** The design features a solid, filled square block situated above three small dotted markers. This icon signifies moving or advancing the current selection upward within a list or sequence of items. */
+_move_selection_up = 'move_selection_up',
+/** The graphic illustrates an item being directed into a designated folder or container icon. This symbol is used to move content into the inbox, suggesting archiving or filing messages away for future reference. */
+_move_to_inbox = 'move_to_inbox',
+/** The illustration features a curved, cyclical arrow positioned next to two adjacent rectangular blocks. It is used to indicate advancing an item upward or promoting its position within a list or sequence. */
+_move_up = 'move_up',
+/** The design features a single curved arrow that sweeps from an implied starting point toward an endpoint. This symbol is typically used in user interfaces to indicate that content, data, or resources have been relocated or moved to a new position. */
+_moved_location = 'moved_location',
+/** The icon depicts a solid, stylized rectangle that resembles a page or a marked calendar entry. This symbol is typically used to represent time management, scheduling appointments, or viewing a specific month's dates. */
+_movie = 'movie',
+/** The icon depicts a stylized filmstrip or movie reel with an area suggestive of trimming or cutting. It commonly symbolizes video editing, post-production work, or adjusting media content. */
+_movie_edit = 'movie_edit',
+/** The illustration features a cursor pointing element marked by a strong diagonal strikethrough line. This symbol is used to indicate that content cannot be edited, modified, or changed at this time. */
+_movie_edit_off = 'movie_edit_off',
+/** The design resembles a stylized rectangular film strip or media cassette container. This icon is typically used to denote general metadata or information concerning movies, videos, or other recorded media content. */
+_movie_info = 'movie_info',
+/** The icon depicts a stylized film strip with a prominent diagonal line crossing across it. This design typically signifies that movie content, video playback, or related media features are unavailable or disabled. */
+_movie_off = 'movie_off',
+/** The icon depicts a stylized loudspeaker cone accompanied by radiating lines to symbolize emitted sound waves. It is generally used to indicate audio output or volume, particularly when referring to cinematic or media playback features. */
+_movie_speaker = 'movie_speaker',
+/** A smooth, curved line rises from a lower point on the left to a higher endpoint on the right. It generally indicates positive trends, growth, or an increasing value over time. */
+_moving = 'moving',
+/** The design features a stylized rectangular battery graphic positioned next to a directional arrow. It typically indicates that power, data, or status is being transferred from one source to another. */
+_moving_beds = 'moving_beds',
+/** The design depicts several interconnected elements including directional arrows, containers, and various action key representations. It commonly signifies a structured process flow, indicating movement between stages or transitions across different operational states. */
+_moving_ministry = 'moving_ministry',
+/** The icon visually displays the capitalized letters M and P enclosed within a square boundary. It is most commonly used as an abbreviation to denote megapixels, indicating the resolution of digital images or cameras. */
+_mp = 'mp',
+/** The design shows a structured case with handles and a visible closure flap. It commonly represents professional readiness, comprehensive services, or a complete set of tools and resources. */
+_multicooker = 'multicooker',
+/** The icon depicts multiple connected lines that move across an implied horizontal axis. It is typically used to visualize progress, showing how performance or metrics have changed over time. */
+_multiline_chart = 'multiline_chart',
+/** The icon depicts a hand positioned in proximity to an open eye. It indicates multimodal input or control that combines physical gestures with visual observation for interaction. */
+_multimodal_hand_eye = 'multimodal_hand_eye',
+/** The design resembles a map marker pin containing two stylized airplanes. It is used to indicate travel connections involving multiple airports, routes, or diverse destination options. */
+_multiple_airports = 'multiple_airports',
+/** The icon literally depicts two opposing double-headed arrows, one pointing left and the other pointing right. It commonly signifies the ability to navigate back and forth between multiple points or levels within a structured process. */
+_multiple_stop = 'multiple_stop',
+/** The design depicts the simple outline of a gabled building facade containing a prominent initial 'M'. This icon typically symbolizes cultural landmarks or educational establishments, most commonly used to denote a museum. */
+_museum = 'museum',
+/** The icon displays a solid musical note accompanied by several concentric, radiating waves. This symbol typically represents the ability to stream, broadcast, or cast audio content wirelessly. */
+_music_cast = 'music_cast',
+/** The icon depicts an eighth musical note placed inside the path of a curved, circular arrow. This generally signifies repeating music or looping content, indicating that playback will cycle back to the beginning or refresh suggestions. */
+_music_history = 'music_history',
+/** The design is a solid black silhouette depicting a recognizable musical note from standard sheet music. This universal symbol indicates any feature related to audio content, music playback, or managing sound settings within an application. */
+_music_note = 'music_note',
+/** The icon depicts a solid, stylized musical note symbol resembling an eighth note (quaver). This universally recognized symbol indicates features related to audio content, music playback, or the general management of media libraries. */
+_music_note_2 = 'music_note_2',
+/** The icon displays a musical note symbol positioned next to a plus sign. This combination typically signifies the action of adding, discovering, or creating new music content within an application. */
+_music_note_add = 'music_note_add',
+/** The icon depicts a musical note symbol crossed out by a large diagonal slash. It is typically used to indicate that audio, background music, or sound effects have been turned off or muted. */
+_music_off = 'music_off',
+/** The icon depicts a simple musical note centered within a clean, square frame. It commonly signifies media content related to music, such as audio tracks, song libraries, or video playlists. */
+_music_video = 'music_video',
+/** The design features a circular marker with an inner point surrounded by concentric rings. This symbol is universally used to denote current geographical coordinates or the user's precise physical position on a map. */
+_my_location = 'my_location',
+/** The icon depicts a magnifying glass centered over an illustration of an eye. It commonly symbolizes deep investigation, intense scrutiny, or searching for hidden details and secrets. */
+_mystery = 'mystery',
+/** The design features a curved line originating near a central point and terminating with a right-pointing arrowhead. This icon typically represents directional flow, indicating the process of expanding into a new section or navigating to an output state. */
+_nat = 'nat',
+/** The icon depicts a stylized cloud shape resting on top of a small base, resembling a mini tree structure. It typically symbolizes natural elements, growth, or a peaceful connection between the sky and the earth. */
+_nature = 'nature',
+/** A stylized person is depicted standing near natural elements such as trees or foliage. It typically symbolizes environmentalism, sustainability, or a deep connection with the outdoors. */
+_nature_people = 'nature_people',
+/** The design is a solid, upward-pointing arrowhead shape, forming a clean triangular chevron. It commonly signifies moving forward, advancing content, or returning to the top of a page in digital interfaces. */
+_navigation = 'navigation',
+/** The design resembles a stylized teardrop shape with a sharp point at the bottom. It is widely used as a universal marker to denote a specific place, indicating proximity or current position on a map. */
+_near_me = 'near_me',
+/** The design shows an asterisk or star shape with radiating arrows that are crossed out by a diagonal line. This commonly indicates that location services, proximity features, or nearby suggestions are currently disabled or unavailable. */
+_near_me_disabled = 'near_me_disabled',
+/** The design is a solid, black geometric rhombus shape. It commonly serves as a pointer to indicate a specific location or the nearest point of interest on a map. */
+_nearby = 'nearby',
+/** The icon is composed of a stylized diamond shape with an internal solid element, accompanied by an exclamation mark. It indicates that location-based data or nearby information could not be found or retrieved accurately. */
+_nearby_error = 'nearby_error',
+/** The icon shows a standard wireless signal graphic crossed by a diagonal line. It indicates that connectivity or proximity detection is currently disabled or unavailable. */
+_nearby_off = 'nearby_off',
+/** The design features two symmetrical, curved lobes that are connected at a central point. This symbol is commonly used to represent nephrology, relating specifically to kidney function and health. */
+_nephrology = 'nephrology',
+/** The design shows a rounded outline containing three vertically aligned dots. This icon commonly indicates audio functionality, such as sound output controls or recording features. */
+_nest_audio = 'nest_audio',
+/** It depicts a camera unit mounted on an arm, with distinct emanating rays of light visible from the lens. It typically signifies security monitoring, surveillance capabilities, or comprehensive area illumination. */
+_nest_cam_floodlight = 'nest_cam_floodlight',
+/** The icon depicts a stylized electronic sensor unit mounted on a small pedestal stand. It typically represents a fixed indoor camera or monitoring device used for surveillance and environmental detection. */
+_nest_cam_indoor = 'nest_cam_indoor',
+/** The design shows a camera lens mounted atop a pedestal or stand. It typically indicates monitoring capabilities, detection status, or remote surveillance features. */
+_nest_cam_iq = 'nest_cam_iq',
+/** The image depicts a stethoscope attached to an abstract shape that suggests a human chest or torso area. This icon is generally used in contexts related to cardiology, physical examinations, and general health monitoring. */
+_nest_cam_iq_outdoor = 'nest_cam_iq_outdoor',
+/** The icon depicts a stylized camera lens positioned next to an integrated magnetic mounting system. It signifies the ease of attaching accessories or lenses quickly and securely using magnetic components. */
+_nest_cam_magnet_mount = 'nest_cam_magnet_mount',
+/** The design depicts the side profile of a small, housed electronic device. It commonly signifies equipment used for capturing images outdoors, such as nest cams or wildlife monitoring units. */
+_nest_cam_outdoor = 'nest_cam_outdoor',
+/** The icon is a minimalist, symmetrical outline depicting an open pouch or bag viewed directly from above. It generally signifies items related to personal carrying goods, luggage, or storage containers. */
+_nest_cam_stand = 'nest_cam_stand',
+/** The design depicts a stylized camera unit attached to a base, suggesting it is meant for mounting on a wall. This icon commonly signifies features related to home security systems or video surveillance. */
+_nest_cam_wall_mount = 'nest_cam_wall_mount',
+/** The icon depicts a simple, abstract shape suggesting an object mounted upon a supportive stand. It is typically used to symbolize surveillance, video recording, or remote monitoring equipment. */
+_nest_cam_wired_stand = 'nest_cam_wired_stand',
+/** This design depicts a traditional analog clock face marked with hour and minute pointers on a circular dial. It typically represents general scheduling, the passage of time, or viewing time-based history. */
+_nest_clock_farsight_analog = 'nest_clock_farsight_analog',
+/** The icon features a simple circular frame containing large digits that display the hours and minutes. It is commonly used to indicate the current time or track elapsed duration within an application. */
+_nest_clock_farsight_digital = 'nest_clock_farsight_digital',
+/** The illustration shows a stylized, modern doorbell button mounted within a square housing plate. It typically indicates features related to home access control or connected smart security systems. */
+_nest_connect = 'nest_connect',
+/** The design is a vertical gauge structure resembling a thermometer scale with clear measurement segments. It indicates the ability to detect and monitor ambient environmental conditions, such as changes in temperature or humidity levels. */
+_nest_detect = 'nest_detect',
+/** The design shows a simple outline of a modern computer monitor screen. It typically indicates the capability to connect and extend a workspace using an external or secondary display output. */
+_nest_display = 'nest_display',
+/** The icon depicts a stylized outline of a modern computer monitor screen. It generally signifies the ability to connect multiple displays or maximize your computing workspace for enhanced productivity. */
+_nest_display_max = 'nest_display_max',
+/** The icon visually combines a stylized doorbell with two small human figures standing nearby. It typically signifies smart home features that alert residents when a visitor approaches or rings the entry point. */
+_nest_doorbell_visitor = 'nest_doorbell_visitor',
+/** The icon depicts a clean outline of a stylized leaf. It is commonly used to represent nature, ecology, and commitment to environmental sustainability. */
+_nest_eco_leaf = 'nest_eco_leaf',
+/** The icon depicts a geometric snowflake pattern enclosed within a circular border. It is used to represent warnings or forecasts for cold temperatures and snowfall. */
+_nest_farsight_cool = 'nest_farsight_cool',
+/** The design consists of two thick, curved strokes contained within a circular frame. These opposing curves are stylized and arranged to suggest duality or mirroring elements. */
+_nest_farsight_dual = 'nest_farsight_dual',
+/** The icon depicts a stylized leaf enclosed within a perfect circle. It typically symbolizes environmental themes, sustainability, or eco-friendly content. */
+_nest_farsight_eco = 'nest_farsight_eco',
+/** The icon depicts three parallel wavy lines enclosed within a circular border. It typically indicates an activated heating function, suggesting warmth or the operation of a defogger system. */
+_nest_farsight_heat = 'nest_farsight_heat',
+/** The design features a symmetrical, stylized four-lobed motif contained within an outer circular border. This icon is typically used to represent cyclical themes, such as the passing of seasons, recurring events, or observing future natural cycles. */
+_nest_farsight_seasonal = 'nest_farsight_seasonal',
+/** The design features a stylized cloud shape contained within a clean circular border. It commonly symbolizes weather-related functions or general meteorological information. */
+_nest_farsight_weather = 'nest_farsight_weather',
+/** The design features a single, vibrant sprout enclosed within a distinctive, pointed badge shape. This icon commonly represents finding savings, personal financial growth, or the successful accumulation of valuable resources. */
+_nest_found_savings = 'nest_found_savings',
+/** The icon literally depicts two solid, nested concentric circles forming a target or bullseye pattern. It typically symbolizes focused attention, precision tracking, or depth of vision when related to eye-related themes. */
+_nest_heat_link_e = 'nest_heat_link_e',
+/** The icon is composed of a prominent circular element neatly framed within a solid square outline. It generally indicates functionality related to photography, serving as an access point for the device's camera or photo library. */
+_nest_heat_link_gen_3 = 'nest_heat_link_gen_3',
+/** The design depicts a vertically oriented unit featuring two distinct circular elements, resembling a modern doorbell mechanism. It is commonly used to represent an entry chime or the ability to send notifications that someone has arrived at a doorway. */
+_nest_hello_doorbell = 'nest_hello_doorbell',
+/** The icon depicts three equally spaced dots arranged horizontally within a solid circle. It typically functions as an ellipsis, indicating that there are more options or actions available to the user. */
+_nest_mini = 'nest_mini',
+/** The icon shows a basic house outline composed of several adjacent rectangular blocks. It is generally used to represent multi-unit housing, complex residential arrangements, or larger developments containing multiple living spaces. */
+_nest_multi_room = 'nest_multi_room',
+/** The icon depicts a simple camera lens structure enclosed within a rounded square border. It commonly represents the function of securely managing photos, signifying privacy, protected memories, or confidential content within a library. */
+_nest_protect = 'nest_protect',
+/** Curved arcs are depicted radiating outward over a single central point, forming the universally recognized symbol for radio signals. This icon typically indicates that an electronic device, such as a comfort sensor, is connected to or transmitting data wirelessly via Wi-Fi. */
+_nest_remote_comfort_sensor = 'nest_remote_comfort_sensor',
+/** The design is contained within a solid circular boundary and features nine small dots arranged in a precise three-by-three grid pattern. This symbol typically represents security systems or alarm monitoring functions, suggesting tracking status, multiple connection points, or system readiness settings. */
+_nest_secure_alarm = 'nest_secure_alarm',
+/** The icon visually combines stylized elements suggesting both natural imagery and sophisticated textual formatting symbols. It is used in document editors to apply a strikethrough effect, indicating that selected text should be marked out or rendered as deleted content. */
+_nest_sunblock = 'nest_sunblock',
+/** The icon depicts a large circular outline connected at its top center to a short, vertical rectangular stem. It typically symbolizes a status marker or an attached tag used for grouping items or indicating a specific state of connection. */
+_nest_tag = 'nest_tag',
+/** The icon depicts a circular gauge or dial face typical of a home climate control unit. It represents adjusting and monitoring the desired indoor temperature for comfort and energy efficiency. */
+_nest_thermostat = 'nest_thermostat',
+/** The design features the number 20 centered within a circular border. This icon commonly functions as a gauge to indicate a specific measured level, such as battery charge percentage or remaining capacity. */
+_nest_thermostat_e_eu = 'nest_thermostat_e_eu',
+/** The design consists of several nested, concentric circles forming the appearance of a control dial or gauge. It typically signifies adjustable settings, such as regulating temperature or controlling various parameters within a smart device system. */
+_nest_thermostat_gen_3 = 'nest_thermostat_gen_3',
+/** The design depicts a smooth, circular unit that resembles a modern digital thermostat or environmental sensor display. It is used to indicate the monitoring of ambient conditions and the control mechanisms for a smart home climate system. */
+_nest_thermostat_sensor = 'nest_thermostat_sensor',
+/** The design features a prominent circular gauge displaying the numeral 20, complemented by an adjacent smaller circle. This icon is used to illustrate current environmental readings or setpoints from a smart thermostat sensor. */
+_nest_thermostat_sensor_eu = 'nest_thermostat_sensor_eu',
+/** The design is a circular gauge featuring large digits displayed prominently within its border. It typically indicates the current temperature reading or desired settings for climate control, such as from a smart thermostat. */
+_nest_thermostat_zirconium_eu = 'nest_thermostat_zirconium_eu',
+/** The icon depicts a smooth, continuous, undulating wave pattern. It typically symbolizes abstract transmissions, such as wireless data flow, connection stability, or the presence of an active signal. */
+_nest_true_radiant = 'nest_true_radiant',
+/** The design typically features a central point surrounded by radiating lines or an expanding circular pattern. This indicates an automated feature that is triggered upon approaching a specific location or entering a designated zone. */
+_nest_wake_on_approach = 'nest_wake_on_approach',
+/** The design illustrates a hand making a gentle pressing or tapping motion toward a surface. This icon typically indicates an activation action that wakes up or engages a secondary or nested feature upon interaction. */
+_nest_wake_on_press = 'nest_wake_on_press',
+/** The icon is contained within a simple, rounded square shape. It indicates the presence of available wireless internet access or a specific connectivity point. */
+_nest_wifi_point = 'nest_wifi_point',
+/** The icon depicts a thick-lined outline of a rounded shape that contains a solid dot centered within its boundaries. This symbol generally represents a simple selection point, an activation button, or basic input control. */
+_nest_wifi_pro = 'nest_wifi_pro',
+/** The design is a simple, bold outline forming a plump, curved ovoid shape. Given the context of network services, this icon typically symbolizes enhanced connectivity or professional-grade home networking features. */
+_nest_wifi_pro_2 = 'nest_wifi_pro_2',
+/** The design is a simple, rounded square outline that suggests a piece of modern electronic hardware. It commonly symbolizes wireless internet connectivity or home Wi-Fi networking equipment. */
+_nest_wifi_router = 'nest_wifi_router',
+/** The icon depicts a solid black shape forming a right-angle corner or an incomplete triangle segment. It generally symbolizes segmentation, connectivity points, or distinct modules within a larger network structure. */
+_network_cell = 'network_cell',
+/** The icon depicts three curved lines that radiate downwards from a central point. It is used to indicate the general strength or current status of a wireless signal, such as Wi-Fi or cellular connectivity. */
+_network_check = 'network_check',
+/** The icon depicts a stylized, segmented shape resembling the letter E. It is commonly used to symbolize connectivity, data pathways, or central nodes within a larger network system. */
+_network_intel_node = 'network_intel_node',
+/** The design features a symmetrical hexagonal shape created by multiple interlocking, curved lines. This structure commonly symbolizes complex connectivity, system knowledge, or the integration of various data sources. */
+_network_intelligence = 'network_intelligence',
+/** The icon combines a stylized clock face with interconnected nodes and lines, merging timekeeping elements with network connectivity symbols. It is typically used to indicate the viewing of system history, tracking changes over time, or auditing past data performance within a connected intelligence system. */
+_network_intelligence_history = 'network_intelligence_history',
+/** The design combines a complex, patterned graphic that suggests interconnected intelligence with a prominent downward-pointing circular arrow. It commonly indicates that new data or updated knowledge is being downloaded or integrated into a system. */
+_network_intelligence_update = 'network_intelligence_update',
+/** The icon graphically combines a padlock element with angular lines suggesting an active connection point. It signifies that access to the network or resource is secure, typically requiring authentication, strong encryption, or a specific key. */
+_network_locked = 'network_locked',
+/** The icon shows signal waves radiating outwards alongside an adjacent gear graphic. It is used to access or configure settings for managing the device's wireless network connection. */
+_network_manage = 'network_manage',
+/** The icon depicts three connected circles arranged in a branching pattern. It commonly symbolizes connectivity, illustrating multiple interconnected points or nodes within a larger network system. */
+_network_node = 'network_node',
+/** The icon visually represents a connection or transmission path between two points. It is used to test the stability and responsiveness of a network link, confirming if a device is reachable online. */
+_network_ping = 'network_ping',
+/** The design consists of several curved lines forming a semi-circular shape radiating from an unseen source. This universally recognized symbol indicates wireless connectivity and access to Wi-Fi networks. */
+_network_wifi = 'network_wifi',
+/** The design shows the standard curved Wi-Fi symbol with only one segment filled in. This icon is used to alert users when their wireless internet connection strength is low or weak. */
+_network_wifi_1_bar = 'network_wifi_1_bar',
+/** The design combines the curved lines of a wireless internet signal indicator with a padlock symbol. This icon usually indicates that the connected or available network is secure, protected by encryption, or requires authentication to access. */
+_network_wifi_1_bar_locked = 'network_wifi_1_bar_locked',
+/** The design is a stylized signal strength indicator composed of curved arcs stacked vertically. This icon typically shows the status of wireless internet connectivity or other radio signals. */
+_network_wifi_2_bar = 'network_wifi_2_bar',
+/** The design depicts the standard curved Wi-Fi signal icon showing two strength bars, paired with a prominent padlock graphic. This commonly indicates that the connected network is secured, protected by encryption, or requires credentials for access. */
+_network_wifi_2_bar_locked = 'network_wifi_2_bar_locked',
+/** The icon is composed of three progressively smaller, connected arcs stacked vertically to form a signal strength indicator. It measures the current quality or availability of a wireless internet connection, specifically indicating Wi-Fi service strength. */
+_network_wifi_3_bar = 'network_wifi_3_bar',
+/** The icon depicts three curved bars symbolizing wireless signal strength, accompanied by a closed padlock graphic. This combination indicates that a network is available but secured, requiring authentication or a password to connect. */
+_network_wifi_3_bar_locked = 'network_wifi_3_bar_locked',
+/** The design shows several curved arcs representing a Wi-Fi signal strength, combined with a padlock icon. This symbol indicates that the wireless network is secured and requires authentication or password access to connect. */
+_network_wifi_locked = 'network_wifi_locked',
+/** The design is a stylized outline of a human brain. It is commonly used to symbolize cognition, intelligence, or overall mental function. */
+_neurology = 'neurology',
+/** The design is an angular directional pointer aimed toward the right side. It typically indicates progression, signaling a move forward, accessing the next page, or expanding into related content. */
+_new_label = 'new_label',
+/** The design features a simple, unadorned square frame with a prominent plus sign placed within its upper right corner. This icon universally signifies adding content or creating something new, such as opening an empty document or a separate window in software. */
+_new_window = 'new_window',
+/** The design depicts a stylized sheet of paper with corner folds and multiple horizontal lines representing text content. It is typically used to signify articles, reports, or general updates containing written information. */
+_news = 'news',
+/** The design is a simplified representation of a textual document with distinct sections and lines. It commonly indicates an optimized, distraction-free view designed for focused consumption, such as reading articles in reader mode or browsing news feeds. */
+_newsmode = 'newsmode',
+/** The design depicts a rectangular space divided into several distinct sections or columns. This icon commonly represents news feeds, articles, or any form of aggregated content that requires viewing and browsing. */
+_newspaper = 'newspaper',
+/** The design depicts several stacks of rolled and bound printed materials arranged on a display rack. This symbol is commonly used to indicate browsing various types of content, such as news articles, magazines, or different publications. */
+_newsstand = 'newsstand',
+/** The design depicts an internal arrow that curves smoothly within a circular boundary. It generally signifies continuous progression, indicating movement toward the next step or phase in a process. */
+_next_plan = 'next_plan',
+/** It is a simple outline drawing of a classic rectangular briefcase. This icon generally represents professional work, business endeavors, or important career materials. */
+_next_week = 'next_week',
+/** The design is enclosed within a square frame and features an internal pattern composed of vertical lines and a small circle. It commonly indicates Near Field Communication (NFC) capability, signifying proximity-based wireless data exchange. */
+_nfc = 'nfc',
+/** The icon displays radiating curved lines accompanied by a prominent diagonal slash. This symbol indicates that the device’s proximity or wireless connectivity feature has been manually turned off. */
+_nfc_off = 'nfc_off',
+/** The design is a simplified representation of a house structure that contains an illustrated bed within its walls. This icon typically signifies basic, temporary accommodation or emergency lodging services. */
+_night_shelter = 'night_shelter',
+/** This design combines a nighttime symbol with stylized letters. It signifies activating an automated "Night Sight" feature to reduce screen glare and optimize settings, making content easier on your eyes before sleep. */
+_night_sight_auto = 'night_sight_auto',
+/** The design typically features a visual indicator or toggle switch related to camera enhancement settings. It signifies that the night sight feature will automatically deactivate when adequate ambient light is available. */
+_night_sight_auto_off = 'night_sight_auto_off',
+/** The design literally depicts a crescent moon paired with a simple plus symbol. It is commonly used in digital interfaces to indicate night mode activation, low light viewing, or features related to sleep and bedtime routines. */
+_night_sight_max = 'night_sight_max',
+/** The icon depicts a cocktail glass positioned next to a musical note. It is typically used to indicate a fun, lively atmosphere associated with parties, clubs, or general nightlife entertainment. */
+_nightlife = 'nightlife',
+/** The icon depicts a smooth, curving crescent moon shape. It typically symbolizes nighttime, gentle light, or themes related to sleep and rest. */
+_nightlight = 'nightlight',
+/** The design features a simple circle intersected by a thick, diagonal slash. This universal symbol is used to indicate that accessing or creating user accounts is forbidden or restricted. */
+_no_accounts = 'no_accounts',
+/** The design features intersecting symbols contained within a distinct circular border. This motif is commonly used to signify that content is restricted or prohibited for certain audiences due to mature themes. */
+_no_adult_content = 'no_adult_content',
+/** The icon illustrates a simple, outlined object crossed by a prominent diagonal strike-through line. This symbol generally indicates that the function, item, or action is prohibited, disallowed, or unavailable. */
+_no_backpack = 'no_backpack',
+/** The design is a simple, stylized illustration of a passenger bus viewed from the front. It typically represents public transportation routes, navigation options, or local travel alerts. */
+_no_crash = 'no_crash',
+/** The icon illustrates a stemmed drinking glass marked with a prominent diagonal line crossing through it. It serves as a universal sign indicating that beverages, especially alcohol, are prohibited or forbidden in that area. */
+_no_drinks = 'no_drinks',
+/** The icon depicts an open padlock struck through by a diagonal line. This symbol warns users that connected information is unencrypted and may pose privacy or security risks. */
+_no_encryption = 'no_encryption',
+/** The design shows a camera frame with a diagonal prohibition line drawn through it, specifically crossing out an electric lightning bolt symbol. This icon is used to indicate that taking photographs with a flash is prohibited or disabled in the current area. */
+_no_flash = 'no_flash',
+/** The icon displays a set of dining utensils, such as a fork and knife, which are crossed out by a prominent diagonal slash. This sign typically indicates that food service is unavailable or that eating is not permitted in this area. */
+_no_food = 'no_food',
+/** The design features an illustration of a suitcase or piece of baggage marked by a large diagonal prohibition line. It signifies that bringing luggage or personal bags is not permitted in this location or context. */
+_no_luggage = 'no_luggage',
+/** The design shows a fork and a knife positioned together, crossed by bold diagonal strike-through lines. This symbol is used universally to indicate that meals, dining, or food consumption are prohibited in this area. */
+_no_meals = 'no_meals',
+/** The design features a prominent diagonal prohibition slash placed across an illustration of gathered figures or a group setting. It indicates that meetings, collaboration, or gatherings are not permitted in this specific area. */
+_no_meeting_room = 'no_meeting_room',
+/** The design features a camera icon marked with a clear prohibitive slash across it. It signifies that taking photographs or recording videos is not allowed in this location or situation. */
+_no_photography = 'no_photography',
+/** The icon depicts a rectangular document overlayed with a prominent diagonal line crossing through it. This symbol is commonly used to indicate that an item, option, or process has been cancelled, deleted, or revoked. */
+_no_sim = 'no_sim',
+/** The icon depicts a speaker symbol that is crossed out by an 'X'. It universally signifies the muting of audio or turning off volume, indicating silence. */
+_no_sound = 'no_sound',
+/** The illustration depicts an outline of a wheeled baby stroller crossed out by a prominent diagonal line. This symbol universally signals that the use or presence of strollers is prohibited in this location. */
+_no_stroller = 'no_stroller',
+/** The icon shows a side view of a bus or large vehicle crossed out by a diagonal prohibition slash. It generally indicates that public transport routes are unavailable, prohibited, or not applicable at this location. */
+_no_transfer = 'no_transfer',
+/** The design features a contained, circular frame surrounding a central symbol related to sound or hearing status. It indicates that the device is actively using advanced processing to suppress background noise, ensuring crystal-clear audio during calls or recordings. */
+_noise_aware = 'noise_aware',
+/** The design shows an outline of a human ear surrounded by partial concentric arcs. This icon signifies noise control or active hearing protection, indicating that the function is currently switched off. */
+_noise_control_off = 'noise_control_off',
+/** The icon depicts a stylized profile of a human ear enclosed within a circular border. This symbol commonly indicates that noise cancellation or sound isolation features are currently activated and operational. */
+_noise_control_on = 'noise_control_on',
+/** The design depicts a stylized human figure in mid-stride, utilizing two parallel poles held to assist movement. This icon typically signifies Nordic walking or trekking activities that involve hiking with supportive poles. */
+_nordic_walking = 'nordic_walking',
+/** The icon depicts a solid arrow pointing straight up from a vertical shaft. It commonly represents upward direction, indicating an increase, or signifying the northern cardinal point. */
+_north = 'north',
+/** The design is a clean, diagonal arrow shape pointing sharply upward and to the right. This icon commonly indicates movement in a northeastern direction, symbolizing progress or reaching the upper-right section of an interface or map. */
+_north_east = 'north_east',
+/** The icon displays an arrow pointing diagonally up and to the left. It is commonly used in navigation systems or user interfaces to indicate movement or passage toward a specific quadrant or previous section. */
+_north_west = 'north_west',
+/** The icon shows a stylized figure in a wheelchair that is crossed out by a diagonal slash. It commonly signals that an area, service, or feature is not accessible to people using wheelchairs or those with mobility impairments. */
+_not_accessible = 'not_accessible',
+/** The design depicts a stylized person seated in a wheelchair crossed out by a diagonal line. This common symbol indicates that an area, path, or function is not accessible to individuals using mobility devices. */
+_not_accessible_forward = 'not_accessible_forward',
+/** The design is a standard map location marker containing a large question mark at its center. This symbol indicates that an exact or known location cannot be determined, suggesting the information is missing or requires further search efforts. */
+_not_listed_location = 'not_listed_location',
+/** The icon depicts a right-pointing triangle, commonly known as the play button, enclosed within a circle. It is used across digital media to indicate that content is ready to start playback, whether it is video or audio. */
+_not_started = 'not_started',
+/** The icon shows a rectangular document outline with a large plus sign centered on the page. This universally signifies the action of creating something new, such as adding a note or generating a fresh entry into a system. */
+_note_add = 'note_add',
+/** The icon displays a clipboard outline upon which a writing utensil, resembling a pencil or stylus, rests diagonally. It is typically used to symbolize note-taking, drafting content, or performing general documentation tasks. */
+_note_alt = 'note_alt',
+/** The icon depicts several rectangular sheets of paper layered over one another. It commonly represents a collection or stack of notes, drafts, or documents that need to be reviewed or managed together. */
+_note_stack = 'note_stack',
+/** The icon shows multiple layered rectangles representing a stack of important files or notes. It is used to indicate the function of adding new records or expanding an existing collection of documents. */
+_note_stack_add = 'note_stack_add',
+/** The icon shows a group of three distinct, parallel horizontal lines stacked vertically. This symbol is commonly used to represent written notes, a list of items, or multiple sections of text. */
+_notes = 'notes',
+/** The design features a stylized ringing bell coupled with an adjacent plus symbol. This icon typically signifies the ability to add new alerts, subscribe to updates, or set up custom notifications. */
+_notification_add = 'notification_add',
+/** The design is a stylized depiction of a bell hanging from a hook. It represents an audible alert or chime used to signal new information, such as incoming messages or activity. */
+_notification_audio = 'notification_audio',
+/** The icon depicts a bell symbol with a diagonal line crossing through it, accompanied by vertical lines suggesting sound waves. It indicates that audible alerts or notification sounds have been muted or turned off. */
+_notification_audio_off = 'notification_audio_off',
+/** The design depicts a stylized bell shape containing an exclamation point. This icon is used to signal that there is important information, a critical warning, or a notification requiring immediate attention. */
+_notification_important = 'notification_important',
+/** The design shows an open envelope accompanied by a tick mark. This generally signifies that multiple emails or notifications have been successfully received, read, or confirmed. */
+_notification_multiple = 'notification_multiple',
+/** The design combines a classic bell shape, representing alerts or notifications, with an attached gear icon symbolizing settings. This combination is commonly used to indicate where a user can customize or manage their notification preferences and alert controls. */
+_notification_settings = 'notification_settings',
+/** The design is a stylized bell featuring radiating curved lines around its perimeter. This icon commonly signifies that an important alert or new notification has been received. */
+_notification_sound = 'notification_sound',
+/** The icon depicts a stylized drawing of an upright bell with clapper space inside. This symbol is universally used across digital platforms to signal alerts or new notifications that require user attention. */
+_notifications = 'notifications',
+/** The design features a classic hanging bell accompanied by curved lines above it. This icon signals that there are new alerts or active messages requiring attention. */
+_notifications_active = 'notifications_active',
+/** The graphic depicts a classic bell shape marked with a diagonal line crossing through it. This symbol is used to indicate that all alerts, sounds, or notifications are disabled. */
+_notifications_off = 'notifications_off',
+/** The icon depicts a classic bell shape with a line drawn across its face. It typically indicates that alerts, sounds, or notifications have been paused or muted. */
+_notifications_paused = 'notifications_paused',
+/** The design features the outline of a stylized ringing bell, often accompanied by a small indicator point. This symbol is used to alert users that there are new or unread notifications waiting for their attention within an application. */
+_notifications_unread = 'notifications_unread',
+/** The icon displays two sets of parallel lines crossing each other to form the standard hash symbol. It is commonly used on social media and websites as a tag to categorize content or group discussions around a specific topic. */
+_numbers = 'numbers',
+/** The design depicts a whole, stylized avocado fruit. It is commonly used to symbolize healthy eating, natural nourishment, and overall well-being. */
+_nutrition = 'nutrition',
+/** The design features the three capital letters O, D, and S arranged horizontally within a solid rectangular frame. This symbol typically represents an acronym or a specific system setting that needs to be viewed as a status indicator. */
+_ods = 'ods',
+/** The design is a stylized outline depicting three large, capitalized letters—O, D, and T—contained within a solid rectangular box. It generally serves as an indicator for specific acronyms, functional modes, or defined settings within a digital interface. */
+_odt = 'odt',
+/** The design features a stylized location pin marker, often supplemented with an indicator suggesting disconnection or absence of service. It is used to inform the user that content or services cannot be loaded because the device is currently offline or disconnected from the network. */
+_offline_pin = 'offline_pin',
+/** The symbol depicts a circle crossed out by a diagonal line. It is used to indicate that a feature, connection, or service has been deactivated or is currently unavailable offline. */
+_offline_pin_off = 'offline_pin_off',
+/** The design is a simple, structured representation of an industrial storage barrel or cask. It typically symbolizes fuel storage, oil handling, or general bulk fluid containment within an industrial context. */
+_oil_barrel = 'oil_barrel',
+/** It is a savory Japanese pancake cooked on a griddle, typically featuring a mix of shredded cabbage bound by a batter base. The dish is customized with various ingredients like pork belly or seafood, then finished with rich sauces, mayonnaise, and bonito flakes for flavor and presentation. */
+_okonomiyaki = 'okonomiyaki',
+/** The graphic depicts a smartphone screen featuring a lit lightbulb encircled by curved arrows. This symbolizes that intelligence or processing is handled locally on the device, without needing external cloud connectivity. */
+_on_device_training = 'on_device_training',
+/** The design is a simple, stylized depiction of an empty drinking glass or cup. It generally indicates the availability of beverages, dining options involving drinks, or establishments related to refreshments and alcohol. */
+_on_hub_device = 'on_hub_device',
+/** The design depicts an abstract, meandering line that curves and terminates in a magnifying glass symbol. This generally symbolizes the process of investigating complex or hidden information paths. */
+_oncology = 'oncology',
+/** The design features a stylized lightbulb surrounded by concentric signal waves radiating outward. This combination suggests the generation of ideas or accessing valuable insights through an online or connected network source. */
+_online_prediction = 'online_prediction',
+/** The design illustrates stylized wavy lines of vapor rising from a solid, curved base. It is commonly used to symbolize warm water sources, such as a hot spring bath or spa experience. */
+_onsen = 'onsen',
+/** The design is a simple, closed silhouette of a water drop. This symbol typically represents liquid samples and is used to measure fluid properties like density, salinity, or opacity. */
+_opacity = 'opacity',
+/** The design features an outward-pointing arrow breaking the boundary of a box. This symbol indicates that clicking a link will open external content, typically within a separate browser tab or window. */
+_open_in_browser = 'open_in_browser',
+/** The design consists of two arrowheads pointing outwards, forming an outward-pointing corner angle. This icon typically signals that the content will open or expand into a separate, larger viewing area or new window. */
+_open_in_full = 'open_in_full',
+/** The design features a square outline with an arrow emerging from one of the corners. This symbol commonly indicates that content will open in a new browser tab or separate viewing window. */
+_open_in_new = 'open_in_new',
+/** The design depicts a square enclosure with an arrow exiting its corner, pointing downward and outward. This commonly signals that the content or link will open in a separate window or context rather than replacing the current view. */
+_open_in_new_down = 'open_in_new_down',
+/** The design features an outline of a square with directional arrows extending from its corners to suggest expansion. This icon is used in user interfaces to indicate that clicking it will open content in a separate browser tab or window. */
+_open_in_new_off = 'open_in_new_off',
+/** The design illustrates multiple pathways or sources converging into a single point. It is used to signify combining different data streams, merging inputs, or accessing various connected media types. */
+_open_jam = 'open_jam',
+/** The icon features several arrows aligned symmetrically, pointing outward from a central empty space. It typically indicates the start of a run, the initiation of a sequence, or the ability to expand and continue a process. */
+_open_run = 'open_run',
+/** The icon displays four arrowheads arranged symmetrically around a central point, pointing outwards towards the diagonals. This symbol commonly suggests multiple options or alternative methods for accessing a file or piece of content. */
+_open_with = 'open_with',
+/** The design illustrates a simple, stylized outline of the human eye. It typically symbolizes topics related to vision, eyesight, or medical care associated with eye health. */
+_ophthalmology = 'ophthalmology',
+/** The design shows two stylized instruments resembling dental probes or picks. It is commonly used to symbolize oral healthcare, dentistry, and checking for gum or tooth diseases. */
+_oral_disease = 'oral_disease',
+/** The icon consists of a solid central circle connected by two contrasting curved arcs. This design typically represents cyclical processes, relationships, or points of connection that revolve around a core theme or subject. */
+_orbit = 'orbit',
+/** The design features a rectangular document containing horizontal lines alongside a prominent circular checkmark. This symbol is used to indicate that an order, request, or document has been successfully reviewed and officially approved. */
+_order_approve = 'order_approve',
+/** The icon depicts a stylized sheet of paper with multiple horizontal lines next to a large triangular play button. It indicates the ability to play back structured media content, such as recorded notes or exported video/audio files. */
+_order_play = 'order_play',
+/** The icon depicts a stylized, open container with handles on both sides, resembling a shopping basket or tote bag. It universally represents an online shopping cart, signifying the items collected before checkout for placing an order. */
+_orders = 'orders',
+/** The design consists of several distinct parallel lines stacked neatly on top of one another. It generally symbolizes structured information, such as grouped data arrays or multiple record sets within a database environment. */
+_orthopedics = 'orthopedics',
+/** The design shows a standard document with multiple lines of text paired with a circular ellipsis symbol. This indicates the ability to add supplemental material, allowing users to admit or attach any kind of related content that falls outside predefined categories. */
+_other_admission = 'other_admission',
+/** The icon depicts a simple, stylized silhouette of a peaked-roof house. It is generally used as a generic location marker to indicate secondary or supplementary residential properties. */
+_other_houses = 'other_houses',
+/** The design depicts an arrow pointing diagonally upward and to the right, contained within a circle. It generally represents forward progress or movement in a distinct direction, often signifying "outbound" status or continuation. */
+_outbound = 'outbound',
+/** The design depicts a stylized container, such as a folder, paired with an arrow pointing outward. This universally signifies data or items that have been composed and are waiting to be transmitted outside of the current system. */
+_outbox = 'outbox',
+/** The icon depicts a right-pointing triangle contained within a square border. It typically symbolizes the initiation of an outgoing action, such as beginning a broadcast or transmitting data from an outbox. */
+_outbox_alt = 'outbox_alt',
+/** The design shows five upright slats with pointed tops, arranged to resemble a traditional picket fence. It generally symbolizes an enclosed outdoor space, such as a garden or defined property boundary. */
+_outdoor_garden = 'outdoor_garden',
+/** The design depicts a simple, portable grill unit from which smoke or heat rises. It is commonly used to represent outdoor cooking, barbecues, or grilling food at picnics. */
+_outdoor_grill = 'outdoor_grill',
+/** The design shows an open envelope accompanied by a prominent arrow pointing to the right. It typically represents the action of sending, forwarding, or transmitting a message outside of the current system. */
+_outgoing_mail = 'outgoing_mail',
+/** The icon depicts a circular symbol containing multiple slots, representing an electrical wall socket. It is used to signify the source of power for connecting appliances and devices that require electricity. */
+_outlet = 'outlet',
+/** The design illustrates a simple, stylized building or office setting used for medical consultations. It indicates healthcare services available on an outpatient basis, meaning patients do not require admission to a hospital overnight. */
+_outpatient = 'outpatient',
+/** The icon depicts a generalized symbol representing wellness and healthcare services. It is commonly used to signify care that can be accessed through a local clinic or office, rather than requiring an overnight hospital stay. */
+_outpatient_med = 'outpatient_med',
+/** The design features a prominent arrow pointing to the right, enclosed within a defined rectangular border. This symbol commonly indicates the completion of a process, representing an output action like exporting data or moving forward. */
+_output = 'output',
+/** The icon depicts a clear arrow pointing straight down inside an incomplete circle. It is commonly used in digital interfaces to symbolize downward movement, often indicating the transfer of files or the display of results. */
+_output_circle = 'output_circle',
+/** A simple, solid rectangular shape depicts a common kitchen appliance. It generally symbolizes the function of baking or cooking food using heat. */
+_oven = 'oven',
+/** The icon depicts the front facade of a large household appliance, such as a washing machine or dryer. It is commonly used to symbolize laundry care functions or utility services related to cleaning. */
+_oven_gen = 'oven_gen',
+/** The design depicts a stack of documents with lined checklists positioned next to an analog clock face. It commonly indicates a general overview or a comprehensive status report related to schedules and progress tracking. */
+_overview = 'overview',
+/** The icon graphically depicts a filled square positioned immediately next to two parallel vertical bars. It is commonly used in user interfaces to symbolize access to key information or a comprehensive overview of a section. */
+_overview_key = 'overview_key',
+/** The icon depicts a simplified profile of an owl's head with prominent eyes. It is widely used to symbolize wisdom, knowledge, or perception. */
+_owl = 'owl',
+/** The design depicts a nasal cannula setup connected to an apparatus that monitors vital signs. This equipment is used in medical settings to measure and indicate the level of oxygen saturation in the blood. */
+_oxygen_saturation = 'oxygen_saturation',
+/** The icon depicts two separate square blocks connected by a central junction of dots. This design symbolizes peer-to-peer connectivity, illustrating that devices are directly linked to share data or resources without needing a single central hub. */
+_p2p = 'p2p',
+/** The icon shows a simple circular design with visible hour and minute hands. It generally represents time passing, duration tracking, or scheduling-related actions within an application. */
+_pace = 'pace',
+/** The design features the recognizable curved tubing of a stethoscope used in medical examinations. This symbol generally represents cardiac care, heart monitoring, or services related to pacemakers. */
+_pacemaker = 'pacemaker',
+/** The design depicts an outlined, square-shaped box that suggests a parcel or package. This symbol is commonly used to indicate physical goods, shipping information, or items ready for delivery. */
+_package = 'package',
+/** The design is a solid, three-dimensional cube rendered in a simple, geometric style. It generally represents packaging, storage containers, or the act of grouping related items or data together. */
+_package_2 = 'package_2',
+/** The design is a square outline containing three small dots arranged horizontally across the top edge. It typically illustrates placeholder spacing or minimum clearance required between elements in user interface layout design. */
+_padding = 'padding',
+/** The design depicts an overhead view of a skillet with a handle attached, typically used for stovetop cooking. It is commonly used to represent general kitchenware, culinary skills, or the act of frying and meal preparation. */
+_padel = 'padel',
+/** The icon consists of five solid, equally spaced black circles arranged in a horizontal line. It is typically used to indicate the current position within a series of content or slides, such as on a carousel or multi-page view. */
+_page_control = 'page_control',
+/** The icon illustrates a distinct horizontal bar placed at the very bottom edge of a content block. It signifies the page footer area, which typically contains secondary information or structural details about the document or website. */
+_page_footer = 'page_footer',
+/** The icon depicts a simple, outlined horizontal rectangle. It is commonly used to visually demarcate a content section, such as indicating the presence of a page header or title bar within a digital application. */
+_page_header = 'page_header',
+/** The illustration features two horizontal lines running parallel to one another, with circles marking the start of each line. It typically indicates supplementary details or additional background information related to a topic or page. */
+_page_info = 'page_info',
+/** The design features a large rectangular block positioned above two stacked horizontal lines. This icon typically represents an application's main menu, settings, or a segmented navigation panel in a mobile interface. */
+_page_menu_ios = 'page_menu_ios',
+/** The icon literally depicts a simple outline of an empty square or rectangle. It generally signifies a placeholder for text input, suggesting content that is flexible or unbound by traditional page limits. */
+_pageless = 'pageless',
+/** The image depicts a bold, five-pointed star graphic contained within a square field. This icon is commonly used in digital interfaces to indicate quality ratings, awards, or the ability to mark content as a favorite. */
+_pages = 'pages',
+/** The icon depicts a magnifying glass placed within a simple rectangular frame. It generally indicates viewing detailed content, performing a search, or accessing specific page views. */
+_pageview = 'pageview',
+/** The icon literally depicts a dollar sign ($) centered inside a circular border. It is commonly used to signify monetary value, completed payments, or general financial transactions. */
+_paid = 'paid',
+/** The design is an irregularly shaped, rounded container featuring several internal circular dots. It commonly represents a menu for selecting various graphical options, such as stickers or emojis, within a chat conversation. */
+_palette = 'palette',
+/** The icon depicts a main rectangular display element positioned above a supporting base marked by three distinct points. It generally symbolizes portable computing technology, often representing devices like modern laptops or tablets. */
+_pallet = 'pallet',
+/** The icon is drawn as a simple, stylized outline of an open human hand. It commonly functions as a universal pointer used in digital interfaces to indicate selection, point to elements, or navigate across a larger viewing area. */
+_pan_tool = 'pan_tool',
+/** The icon is a minimalist outline of an open human hand in a neutral pose. It commonly symbolizes selection tools or the action of navigating across large visual spaces, such as panning through maps or images. */
+_pan_tool_alt = 'pan_tool_alt',
+/** The icon depicts two mirrored, opposing directional arrows positioned diagonally across a space. These contrasting indicators illustrate the full range of movement available within a viewable area, typically signifying panning and zooming capabilities. */
+_pan_zoom = 'pan_zoom',
+/** The icon depicts a stylized scene featuring two overlapping mountain ranges enclosed within a simple rectangular frame. It commonly indicates the availability of panorama mode or the ability to browse expansive scenic views. */
+_panorama = 'panorama',
+/** The design is an open, horizontally oriented banner shape with gently curved ends. It typically indicates a panoramic view or content that spans a wide scope of visuals. */
+_panorama_horizontal = 'panorama_horizontal',
+/** The design shows a horizontal, layered shape suggesting a view taken across a wide area. It is commonly used to represent panoramic photography, 360-degree images, or an expansive field of view. */
+_panorama_photosphere = 'panorama_photosphere',
+/** The design depicts a smooth, vertically oriented container with gracefully rounded edges. It is commonly used to symbolize a comprehensive scope or an expansive, panoramic view. */
+_panorama_vertical = 'panorama_vertical',
+/** The icon depicts a wide, horizontally elongated rectangle with smoothly rounded corners. It is used in digital interfaces to represent an expanded or panoramic view of content, suggesting a maximized field of vision. */
+_panorama_wide_angle = 'panorama_wide_angle',
+/** The illustration depicts a person suspended beneath a large canopy wing, simulating free flight through the air. It commonly signifies outdoor adventure, recreational flying, or sport activities involving unpowered gliding. */
+_paragliding = 'paragliding',
+/** Two stylized figures are depicted sitting together at a table with place settings. This icon commonly represents family dining, shared mealtime activities, or any setting involving communal eating in a local cafe or restaurant. */
+_parent_child_dining = 'parent_child_dining',
+/** The design features a solid silhouette of a stylized evergreen tree with a clear triangular shape. It typically represents nature, green spaces, or outdoor recreational areas like parks and forests. */
+_park = 'park',
+/** The design shows a vertical pole topped with a housing unit that resembles a payment or time display mechanism. It signifies essential urban infrastructure used for regulated parking enforcement in public areas. */
+_parking_meter = 'parking_meter',
+/** The design shows a simple, rectangular traffic sign mounted on a pole. It features a prominent capital letter P displayed clearly across its face. This icon is used to indicate that vehicles are permitted to stop and park in the immediate area. */
+_parking_sign = 'parking_sign',
+/** The image depicts a stylized human silhouette positioned alongside an abstract representation of vehicle bodywork or a door handle mechanism. This icon is commonly used to indicate professional assistance with vehicles, such as valet parking service or general transportation help. */
+_parking_valet = 'parking_valet',
+/** The design illustrates a radiant sun partially obscured by stylized clouds. It is commonly used to indicate mixed weather conditions where periods of sunshine are expected alongside cloudy intervals. */
+_partly_cloudy_day = 'partly_cloudy_day',
+/** The design illustrates a crescent moon that is partially obscured by a stylized cloud formation. This icon is typically used as a weather indicator for partly cloudy skies or an evening sky. */
+_partly_cloudy_night = 'partly_cloudy_night',
+/** The icon depicts two stylized human figures linked together by a curved baseline. It commonly represents connection, partnership, or the bonding of family and friends within a social group. */
+_partner_exchange = 'partner_exchange',
+/** The design features two simplified human silhouettes positioned facing inward, connected by a shared structure beneath them and topped with a heart symbol. This icon is commonly used to symbolize partnership, deep emotional connection, or the joining of two individuals or families. */
+_partner_heart = 'partner_heart',
+/** The symbol is a downward-pointing arrow anchored by a horizontal line base. It universally signifies downloading content, meaning you can retrieve and save files from an online source. */
+_partner_reports = 'partner_reports',
+/** The design is a simple outline depicting the front view of a digital camera body. This icon generally indicates features for creative photo capture, such as filters, burst mode, or taking pictures during a social celebration. */
+_party_mode = 'party_mode',
+/** The icon depicts a stylized silhouette of a person paired with an ornate, solid key. It represents modern, highly secure authentication methods that allow users to access accounts without needing traditional passwords. */
+_passkey = 'passkey',
+/** The design illustrates a stylized, rectangular document or booklet shape. It is used to symbolize international travel credentials and identification required for crossing borders. */
+_passport = 'passport',
+/** The design consists of four asterisks aligned horizontally, placed above a solid underline. It is universally used in digital interfaces to indicate that input characters are masked for security or privacy reasons. */
+_password = 'password',
+/** The icon depicts three solid circles arranged horizontally, positioned above a short continuous line segment. It functions as a common ellipsis or loading indicator in user interfaces, signifying that content is being retrieved or an action is pending. */
+_password_2 = 'password_2',
+/** The icon depicts an open eye symbol crossed out by a prominent diagonal line. It commonly indicates that the visibility of input, such as a password, is currently disabled or masked for enhanced privacy and security. */
+_password_2_off = 'password_2_off',
+/** The design shows three parallel lines positioned next to two simplified human figures. This icon typically indicates a roster or database view, used for accessing a compiled list of contacts, records, or patients. */
+_patient_list = 'patient_list',
+/** The icon depicts several dots connected by lines, forming an abstract network or graph structure. It commonly symbolizes connectivity, data flow paths, or the relationship between different nodes in a system. */
+_pattern = 'pattern',
+/** The icon depicts two thick, parallel vertical bars placed side by side. It serves as a universal indicator that an action or media playback can be temporarily paused without being stopped completely. */
+_pause = 'pause',
+/** The design features two vertical parallel lines centered within a solid circle outline. This symbol is used across digital interfaces to pause or stop media playback, such as music or video. */
+_pause_circle = 'pause_circle',
+/** The icon literally depicts two parallel vertical bars separated by a gap inside a container shape. It is universally recognized as a pause symbol used to temporarily halt ongoing media playback or presentations. */
+_pause_presentation = 'pause_presentation',
+/** The icon depicts a stylized payment card paired with a prominent downward-pointing arrow. It is commonly used in digital interfaces to represent withdrawing funds, completing payments, or showing a financial balance decrease. */
+_payment_arrow_down = 'payment_arrow_down',
+/** The icon is a solid black rectangle with dimensions resembling a standard financial card. It commonly signifies payment acceptance, indicating that point-of-sale transactions are available at the location. */
+_payment_card = 'payment_card',
+/** A stylized stack of rectangular banknotes is depicted, suggesting multiple forms of currency. This icon commonly signifies financial transactions, payment options, or monetary value in digital interfaces. */
+_payments = 'payments',
+/** The illustration depicts a standard bicycle with two wheels and a frame designed for pedaling. It commonly signifies cycling, fitness activity, or environmentally friendly forms of transportation. */
+_pedal_bike = 'pedal_bike',
+/** The design is a stylized glyph consisting of a main vertical body topped with a horizontal segment, which also contains two internal parallel bars. It often symbolizes structure, completion, or an abstract status within various cultural or technical contexts. */
+_pediatrics = 'pediatrics',
+/** The icon displays a simple, thin diagonal slash across an implied space. It is used in digital editing contexts to create a strikethrough effect, marking text as deleted or obsolete. */
+_pen_size_1 = 'pen_size_1',
+/** The design is a simple, angled line segment representing a short stroke. It typically indicates that the drawing or writing tool has been set to a specific medium size within an application. */
+_pen_size_2 = 'pen_size_2',
+/** The icon depicts a single diagonal line segment drawn across an implied space. It is used in text editing tools to apply strikethrough formatting, visually indicating that selected content should be crossed out or marked for removal. */
+_pen_size_3 = 'pen_size_3',
+/** A simple, solid black rectangle depicts a stylized writing tool or mark. This icon is used in digital interfaces to indicate or select a specific thickness for drawing, writing, or annotation tools. */
+_pen_size_4 = 'pen_size_4',
+/** The icon is depicted as a solid black, elongated rectangular bar. It represents an eraser tool used for correcting mistakes in digital drawing or writing applications. */
+_pen_size_5 = 'pen_size_5',
+/** The design consists of three small dots arranged horizontally within a circular frame. This icon generally signifies that content is pending, loading, or that an action is currently processing in the background. */
+_pending = 'pending',
+/** The illustration shows a standard clipboard combined with a visible clock dial. This icon typically signifies tasks that are pending completion or actions requiring attention before an approaching deadline. */
+_pending_actions = 'pending_actions',
+/** The design depicts a simple polygon with exactly five straight sides. This basic geometric form is commonly used in graphics to symbolize structure, balance, or foundational elements in design layouts. */
+_pentagon = 'pentagon',
+/** The symbol is composed of a partial ring crossed by two intersecting line segments. It universally represents ratios or proportions expressed as parts per hundred, such as discounts, rates, or percentages. */
+_percent = 'percent',
+/** The icon depicts the standard percentage glyph symbol (%). It is commonly used to mark sales, discounts, or any reduction in price or quantity. */
+_percent_discount = 'percent_discount',
+/** The icon depicts a rectangular, open framework supported by vertical posts and topped with horizontal beams. It commonly represents a garden feature designed to provide partial shade and define an outdoor living space. */
+_pergola = 'pergola',
+/** The icon combines a camera graphic with a microphone element integrated within its frame. This symbol signifies the capability to capture both video and audio simultaneously, typically indicating streaming or recording functionality. */
+_perm_camera_mic = 'perm_camera_mic',
+/** The icon depicts a calendar page featuring a central circle or marker, suggesting a specific date or scheduled event. It is used for viewing important appointments or contacts and often indicates potential scheduling conflicts or necessary follow-ups regarding personal plans. */
+_perm_contact_calendar = 'perm_contact_calendar',
+/** The design consists of an open, upward-pointing angular shape paired with a small gear symbol in the lower corner. This combination commonly indicates the calibration or adjustment of directional parameters within advanced system settings. */
+_perm_data_setting = 'perm_data_setting',
+/** The icon depicts a stylized folder shape containing an illustrative image of a natural scene. It represents saved or stored media files, such as pictures and other graphical assets. */
+_perm_media = 'perm_media',
+/** The image depicts a stylized representation of a classic telephone handset or receiver in profile view. It is generally used to signify general communication capabilities, such as initiating calls or managing messaging services. */
+_perm_phone_msg = 'perm_phone_msg',
+/** The icon depicts an open, stylized eye that contains the lowercase letter i. This symbol is commonly used to indicate information, details, or a status check within an application. */
+_perm_scan_wifi = 'perm_scan_wifi',
+/** The design is a stylized silhouette of a standing person, composed of simple geometric shapes. This icon typically represents an individual user, profile account, or contact within a digital interface. */
+_person = 'person',
+/** It depicts a simple silhouette composed of stacked rounded shapes representing a person's head and shoulders. This icon is generally used across digital platforms to signify an individual user, personal profile, or contact point. */
+_person_2 = 'person_2',
+/** The design is a simple, stylized silhouette depicting the head and shoulders of a person. It typically functions as a universal icon to represent a generic user profile or account holder in digital contexts. */
+_person_3 = 'person_3',
+/** The design shows a simplified silhouette of a person's head and upper torso. It is typically used to denote user profiles, account information, or any general reference to an individual within a digital interface. */
+_person_4 = 'person_4',
+/** The icon consists of a stylized bust silhouette positioned next to an adjacent plus symbol. It is widely used in digital interfaces to signal the action of creating a new entry, connecting a member, or initiating an addition. */
+_person_add = 'person_add',
+/** The design combines an outline of a person with an addition sign that appears restricted or crossed out. This typically indicates that the function to add a new user, contact, or profile is currently disabled or unavailable. */
+_person_add_disabled = 'person_add_disabled',
+/** The design features a simple figure's bust alongside an exclamation mark. This combination typically signals a critical alert, warning, or mandatory action related to a user profile or personal status. */
+_person_alert = 'person_alert',
+/** The icon depicts a stylized human figure with a solid rectangular shape placed across the lap area of the torso. This feature typically signifies an adjustable lap rest or expanded personal space designed for enhanced comfort while seated in transport environments. */
+_person_apron = 'person_apron',
+/** The icon depicts a stylized human figure positioned near stacked books or an open document. It commonly represents access to knowledge, reading resources, library services, or publishing functions within an application. */
+_person_book = 'person_book',
+/** The icon features a standard silhouette of a person alongside a prominent cross or 'X' mark. It is commonly used to represent the action of deleting an account, removing a user profile, or canceling an identity within a system. */
+_person_cancel = 'person_cancel',
+/** A stylized silhouette depicts a standing figure with both arms raised high above its head. This icon is commonly used to represent celebration, achievement, success, or general joy. */
+_person_celebrate = 'person_celebrate',
+/** The design features a stylized outline of a person paired with a prominent checkmark. This icon is commonly used in user interfaces to indicate that an account or profile has been successfully verified or confirmed. */
+_person_check = 'person_check',
+/** The design depicts a simple silhouette of a person alongside an angled writing tool like a pencil or pen. This icon typically indicates the function of modifying content or updating personal details within an application. */
+_person_edit = 'person_edit',
+/** The icon depicts a stylized human silhouette paired with an adjacent heart symbol. This combination is generally used to symbolize emotional connection, deep affection, or important personal relationships. */
+_person_heart = 'person_heart',
+/** The icon depicts a simplified human silhouette marked by a prominent diagonal line crossing through it. This universally recognized symbol indicates prohibition, suggesting that an action, feature, or item is not allowed or unavailable. */
+_person_off = 'person_off',
+/** The design shows a stylized profile portrait enclosed in a rectangular frame, with a small pointer pin positioned at its base. This icon is commonly used to mark a specific user or individual location while also conveying their current emotional status or sentiment. */
+_person_pin = 'person_pin',
+/** The design features a traditional map pointer shape containing an icon of a human bust. This symbol is commonly used to mark or pinpoint a specific person's location, such as a user's current position or a saved address for an individual. */
+_person_pin_circle = 'person_pin_circle',
+/** The icon depicts a stylized human figure standing centered beneath several surrounding geometric shapes, including circles and diamonds. It commonly represents general physical activity, fitness training, or participation in various types of sport. */
+_person_play = 'person_play',
+/** The design shows a pictogram of a standing figure raising one arm in a wave gesture. This icon is commonly used to represent greetings, acknowledging someone's presence, or calling attention. */
+_person_raised_hand = 'person_raised_hand',
+/** The icon depicts a simple silhouette of a person's head and shoulders alongside a horizontal dash mark. It is commonly used to indicate the removal, deletion, or disconnection of a user profile or account. */
+_person_remove = 'person_remove',
+/** The icon depicts a simplified human silhouette positioned beside a magnifying glass. It is used to indicate the function of searching for an individual contact or person within a directory or system. */
+_person_search = 'person_search',
+/** The icon depicts a stylized human bust positioned adjacent to a protective shield. It generally symbolizes personal security, account safety, or overall privacy within an application. */
+_person_shield = 'person_shield',
+/** The icon shows a stylized figure next to multiple short horizontal lines. It is generally used in user interfaces to represent messaging, chat history, or contact-related textual information. */
+_person_text = 'person_text',
+/** The icon depicts a simple, rounded silhouette resembling a backpack or small daypack. This representation is commonly used to symbolize personal luggage, travel gear, or carrying essentials. */
+_personal_bag = 'personal_bag',
+/** The design features an outline of a shoulder bag crossed by a thick, diagonal prohibition slash. This symbol indicates that carrying personal luggage or bags into this area is not permitted. */
+_personal_bag_off = 'personal_bag_off',
+/** The design shows an outline of a personal handbag paired with a large question mark. It typically indicates that there is an unspecified query or an unknown status regarding belongings, luggage requirements, or personal items. */
+_personal_bag_question = 'personal_bag_question',
+/** The icon depicts a stylized human figure seated in a manner suggesting mobility assistance. It universally signifies accessibility services available for people using wheelchairs or other mobility aids. */
+_personal_injury = 'personal_injury',
+/** The icon shows a stylized marker shaped like an inverted teardrop pointing downwards. This symbol is universally recognized to designate a specific, saved, or important geographical location on a map. */
+_personal_places = 'personal_places',
+/** The icon depicts an oversized insect or bug, rendered in a stylized manner. It generally represents pest control concepts, such as detection, prevention, or removal of unwanted nuisances. */
+_pest_control = 'pest_control',
+/** The icon is a simplified line drawing depicting a rodent's body and tail. It generally serves to indicate issues with pests or the need for pest control services. */
+_pest_control_rodent = 'pest_control_rodent',
+/** The design shows a clear illustration of an anatomical bone structure, resembling a dog's chew toy. Because of its common association with canine health and play, it is used to mark sections dedicated to pet supplies and accessories. */
+_pet_supplies = 'pet_supplies',
+/** The design is a solid black silhouette of an animal paw print. It typically symbolizes pets, especially dogs, and is used to indicate pet services or ownership. */
+_pets = 'pets',
+/** The icon depicts a stylized nautical anchor shape. It serves as a warning sign, symbolizing potential danger or being trapped by deceptive online schemes such as phishing. */
+_phishing = 'phishing',
+/** The design merges the classic silhouette of a telephone handset with the recognizable Bluetooth connectivity symbol. This indicates that calling or streaming audio functions are available through wireless connection to compatible external devices. */
+_phone_bluetooth_speaker = 'phone_bluetooth_speaker',
+/** The design features a stylized phone receiver alongside an accompanying curved arrow. This icon commonly represents the action of making a callback or initiating follow-up communication with someone. */
+_phone_callback = 'phone_callback',
+/** The icon displays a stylized telephone handset with a large cancellation mark across it. It generally signifies that phone calling is prohibited, service is restricted, or that contact via phone is unavailable. */
+_phone_cancel = 'phone_cancel',
+/** The icon depicts a stylized telephone handset marked with a diagonal line crossing over it. This symbol generally indicates that the phone service is unavailable, unreachable, or temporarily disabled. */
+_phone_disabled = 'phone_disabled',
+/** The icon shows a stylized outline of a curved phone handset with several small attached circles. This symbol indicates that telephone functionality is enabled or available for use. */
+_phone_enabled = 'phone_enabled',
+/** The icon depicts a curved telephone receiver connected to an angled arrow pointing forward and to the side. It generally signifies that a phone call, message, or piece of communication is being forwarded or redirected. */
+_phone_forwarded = 'phone_forwarded',
+/** The icon depicts a stylized illustration of a traditional telephone receiver handset. It universally represents voice communication services or the act of making and receiving phone calls. */
+_phone_in_talk = 'phone_in_talk',
+/** The icon depicts a stylized telephone handset alongside a padlock symbol. This combination usually indicates that phone calls or communication features are temporarily locked or disabled. */
+_phone_locked = 'phone_locked',
+/** The design features an arrow pointing downward that curves sharply back upward over a connecting swoosh line. This symbol typically indicates reversal or backtracking, suggesting the user should undo an action or return to a previous location in a process flow. */
+_phone_missed = 'phone_missed',
+/** The icon depicts a telephone handset receiver in profile view. It indicates that communication is temporarily paused, muted, or currently on hold. */
+_phone_paused = 'phone_paused',
+/** The design depicts a basic picture frame that contains a stylized graphic of mountainous peaks. This icon is universally used in digital interfaces to represent photography, saved images, or photo galleries. */
+_photo = 'photo',
+/** The design features an outline of a square, booklet-like item that appears to contain several images. This icon is commonly used to signify photo collections, memory albums, or stored visual media archives. */
+_photo_album = 'photo_album',
+/** The icon depicts two distinct placeholder frames side-by-side; one is designed like a photograph and the other includes a large letter 'A'. This generally represents the automatic merging or combining of multiple media elements, such as images and documents, into a single file. */
+_photo_auto_merge = 'photo_auto_merge',
+/** The illustration depicts a highly simplified camera shape with a prominent lens circle set within a rectangular body. This icon generally represents photography functions, allowing users to capture images or access photo libraries. */
+_photo_camera = 'photo_camera',
+/** The icon is depicted as a stylized camera or photo frame containing an internal graphic of a mountain range. It generally signifies visual media, photographs, or features related to imagery storage and viewing. */
+_photo_camera_back = 'photo_camera_back',
+/** The icon depicts a simple outline of a photo placeholder or picture frame with rounded corners. It is commonly used in applications to symbolize photography, personal images, or access to stored memories. */
+_photo_camera_front = 'photo_camera_front',
+/** The icon displays a stylized photograph featuring multiple overlapping mountain peaks under a clear sky. It generally represents accessing stored photos, viewing image galleries, or managing personal memories. */
+_photo_frame = 'photo_frame',
+/** The icon depicts three stacked rectangles, reminiscent of a photo album or gallery view. It is used to symbolize access to an organized archive or library of visual memories and collected photographs. */
+_photo_library = 'photo_library',
+/** The design depicts a stack of several rectangular elements resembling photographs or picture prints. This icon is generally used to represent cherished memories, photo collections, or services related to visual documentation. */
+_photo_prints = 'photo_prints',
+/** The icon depicts a simple square outline, which serves as a generic placeholder for a photograph. It is used in user interfaces to indicate the selection of a larger or full-sized view for an image. */
+_photo_size_select_large = 'photo_size_select_large',
+/** The icon shows a small, framed picture area with a simple landscape design inside it. It typically signifies selecting or adjusting the size or dimensions for an uploaded photograph. */
+_photo_size_select_small = 'photo_size_select_small',
+/** The icon literally depicts the acronym P H P in large, bold letters. It stands for PHP, which is a popular open-source scripting language used primarily for developing dynamic web applications. */
+_php = 'php',
+/** The design shows a stylized human figure with one arm extended forward. It is typically used to symbolize physical activity, support, and services related to rehabilitation or recovery. */
+_physical_therapy = 'physical_therapy',
+/** The icon features three stylized black bars set within a solid block, clearly representing keys from a piano keyboard. It generally signifies music functionality, sound input controls, or features related to playing musical instruments in software. */
+_piano = 'piano',
+/** The icon depicts stylized piano keys overlaid with a prominent diagonal line. This symbol generally indicates that sound or audio functions have been deactivated. */
+_piano_off = 'piano_off',
+/** The design shows a stylized paddle attached to an extended handle. This icon generally represents recreational sports or activities involving hitting a ball back and forth. */
+_pickleball = 'pickleball',
+/** The design features the acronym PDF enclosed in a simple, contained box. Generally, this icon signifies the process of converting an image or picture into a portable document format, ensuring that your visual content remains consistent when shared digitally. */
+_picture_as_pdf = 'picture_as_pdf',
+/** The design depicts a main rectangular frame with a smaller inset square positioned within the corner. This commonly signifies that media content, such as video or live streams, can continue playing in a small window while you interact with other applications. */
+_picture_in_picture = 'picture_in_picture',
+/** The design features a large outline of a rectangle containing a distinct, solid square placed in one corner. This symbol indicates that media content is being viewed in a persistent, reduced window so it remains accessible while the user interacts with other applications. */
+_picture_in_picture_alt = 'picture_in_picture_alt',
+/** The icon depicts a large square frame containing a smaller, centered inner rectangle. This visual arrangement typically signifies picture-in-picture mode, allowing users to view supplementary content while main media playback continues in full screen. */
+_picture_in_picture_center = 'picture_in_picture_center',
+/** The design shows a large outer frame containing a smaller, nested rectangle positioned in one corner. This typically indicates that supplemental media or secondary streams are playing simultaneously with the primary viewing content. */
+_picture_in_picture_large = 'picture_in_picture_large',
+/** The icon illustrates a larger viewing area containing a smaller, distinct inner rectangle. This design typically signals secondary or continuous media content that remains displayed while the user interacts with the primary application interface. */
+_picture_in_picture_medium = 'picture_in_picture_medium',
+/** The illustration depicts a large outer screen area with a smaller, separate rectangular window positioned inside it. This symbol indicates that media content can be viewed continuously while the user interacts with other parts of an application. */
+_picture_in_picture_mobile = 'picture_in_picture_mobile',
+/** The icon depicts a rectangular frame partially obscured by a thick diagonal line drawn across its corner. This design indicates that a feature, such as an overlay window or minimized view, has been disabled or turned off. */
+_picture_in_picture_off = 'picture_in_picture_off',
+/** The design depicts a small, solid rectangle positioned adjacent to a horizontal line. This symbol indicates that video content can be viewed in a minimized window while the user interacts with other parts of the application or device. */
+_picture_in_picture_small = 'picture_in_picture_small',
+/** The design depicts a circle that has been cut vertically into two distinct areas of unequal size. This icon generally signifies proportions or how different elements relate to a total quantity within a dataset. */
+_pie_chart = 'pie_chart',
+/** The design displays a simple, symmetrical outline of a pharmaceutical capsule. It commonly represents medication, prescriptions, or general health remedies. */
+_pill = 'pill',
+/** The design shows a wavy squiggle that is crossed out by a diagonal strike-through line. This typically indicates the cancellation or removal of applied formatting, such as underlining, signatures, or decorative marks. */
+_pill_off = 'pill_off',
+/** The icon displays the digits 1, 2, and 3 arranged side-by-side in sequence. It typically indicates numbering, marking an ordered list, or representing multiple steps in a process. */
+_pin = 'pin',
+/** The design depicts a classic map pin icon, characterized by its inverted teardrop shape and base marker. This universal symbol indicates the precise location of a place, acting as a visual pinpoint for destinations or points of interest on a map. */
+_pin_drop = 'pin_drop',
+/** The illustration depicts a square boundary containing a directional arrow pointing right. It is typically used to indicate progress, continuation, or reaching the end of a sequence. */
+_pin_end = 'pin_end',
+/** The design is an outline of a standard map location pin with curved arrows wrapping around its upper section. It typically signifies the tracking or viewing of past locations, indicating a history of movement or visited points. */
+_pin_history = 'pin_history',
+/** The design features a rectangular container with an arrow pointing outward from its interior. This symbol is commonly used to indicate expanding content, invoking a feature, or navigating to a related section or application. */
+_pin_invoke = 'pin_invoke',
+/** The icon visually combines a segmented line, which represents a road or defined travel route, with a distinct map location marker pin. This combination is typically used to indicate setting a specific destination point or tracking a precise spot along an established journey. */
+_pin_road = 'pin_road',
+/** The icon depicts a map pin positioned near a winding road line. This symbol is commonly used to indicate a specific point of interest or final destination along a defined route. */
+_pin_road_2 = 'pin_road_2',
+/** The icon depicts a rectangular surface resembling a cork or bulletin board. It is typically used to symbolize a central place for organizing thoughts, remembering details, or displaying shared information. */
+_pinboard = 'pinboard',
+/** An illustration of a notice board is displayed, complete with visible pinned elements. This icon generally signifies that there are new activities or unread messages waiting for the user's attention. */
+_pinboard_unread = 'pinboard_unread',
+/** The illustration combines a stylized hand pointing downwards with two opposed arrows that diverge from a central point. This combined symbol represents the common "pinch" gesture used in digital interfaces to zoom or scale content. */
+_pinch = 'pinch',
+/** The illustration shows an open hand with two fingers positioned apart in a spreading motion. This universally recognized gesture is used in digital interfaces to signify zooming in or enlarging displayed content. */
+_pinch_zoom_in = 'pinch_zoom_in',
+/** The icon illustrates an open hand gesture accompanied by outward-curving arrows. It signifies the action of zooming out, enabling the user to view a wider or less magnified area of content. */
+_pinch_zoom_out = 'pinch_zoom_out',
+/** The icon depicts two opposing arrows forming an open square or rectangular shape. It typically indicates that there is more content available within a section, allowing the user to expand or navigate into subcategories. */
+_pip = 'pip',
+/** The design features a prominent arrow pointing sharply to the left, enclosed within a distinct rectangular border. This symbol indicates exiting a secondary viewing mode, such as closing a picture-in-picture feed or minimizing an active window. */
+_pip_exit = 'pip_exit',
+/** The icon depicts a structured grid format that incorporates arrows suggesting movement across its boundaries. It is commonly used to symbolize advanced data analysis, reporting, or summarizing large datasets into key insights. */
+_pivot_table_chart = 'pivot_table_chart',
+/** The icon depicts a down arrow pointing into a rectangular container shape. It is widely used to signify downloading data or saving information from an online source to a local device. */
+_place_item = 'place_item',
+/** The icon combines the shape of a document with an overlaid magnifying glass tool. This symbol typically represents the action of searching, scanning, or reviewing information contained within a file or text. */
+_plagiarism = 'plagiarism',
+/** A stylized airplane is depicted flying across a blank space, accompanied by curved lines trailing behind its path. It commonly symbolizes air travel, flight routes, or connections between various airports. */
+_plane_contrails = 'plane_contrails',
+/** The design features a central sphere encircled by distinct orbital rings. It is commonly used to represent Earth or any global scope of activity, symbolizing worldwide reach and connection. */
+_planet = 'planet',
+/** The illustration depicts a clean rectangular placeholder area containing a stylized silhouette of mountains. This icon typically designates a promotional banner ad space or a section for featured content within a planning interface. */
+_planner_banner_ad_pt = 'planner_banner_ad_pt',
+/** The icon depicts a fluctuating waveform drawn in sharp peaks and valleys against an invisible axis. It commonly represents vital signs or biological rhythms, such as readings from an electrocardiogram (ECG). */
+_planner_review = 'planner_review',
+/** The icon depicts a solid, right-pointing triangle formed by two converging lines. It universally serves as a play button, signaling the start of streaming media or video content. */
+_play_arrow = 'play_arrow',
+/** The icon depicts a right-pointing equilateral triangle set inside a circular boundary. It is the universal symbol used across digital interfaces to initiate or resume streaming media playback, such as videos or audio files. */
+_play_circle = 'play_circle',
+/** The icon features a right-pointing arrow, commonly used as a play symbol, that has been marked inactive or disabled. It indicates that the function of playing media is currently unavailable or cannot be initiated at this time. */
+_play_disabled = 'play_disabled',
+/** The design combines symbols associated with play, such as game controllers or stars, alongside professional tools like laptops or graphs. It typically signifies a healthy work-life balance, representing how leisure activities can enhance one's professional development. */
+_play_for_work = 'play_for_work',
+/** The icon depicts a stylized document or file folder with a prominent play button attached to its corner. This generally means that clicking the item will begin playback of contained media or structured lessons. */
+_play_lesson = 'play_lesson',
+/** The icon visually combines a right-pointing triangle followed by two parallel vertical bars. It serves as a universal control to start or temporarily suspend media playback, such as audio or video content. */
+_play_pause = 'play_pause',
+/** The design features a stylized climbing or sliding apparatus adjacent to a simple depiction of foliage. It is used to represent recreational areas and equipment for children's outdoor play. */
+_playground = 'playground',
+/** The design features a curved, inclined structure resembling a playground slide. This icon generally indicates a location with recreational amenities or opportunities for family fun. */
+_playground_2 = 'playground_2',
+/** The icon illustrates a small fan of playing cards with one card prominently displaying a diamond suit symbol. It is typically used to symbolize gambling activities, poker games, or general membership access related to casinos. */
+_playing_cards = 'playing_cards',
+/** The design features two stacked horizontal lines next to a prominent plus sign. This icon generally indicates the ability to add new items or expand a list within a collection. */
+_playlist_add = 'playlist_add',
+/** The icon features three stacked horizontal bars aligned next to a prominent checkmark. It typically signifies that an item has been successfully added or included in a collection, such as a playlist or saved list. */
+_playlist_add_check = 'playlist_add_check',
+/** The design features a checkmark enclosed within a circle overlaying several horizontal lines that represent grouped items or lists. This icon generally signifies the successful addition of an item, confirming that content has been included in a collection or playlist. */
+_playlist_add_check_circle = 'playlist_add_check_circle',
+/** The design features stacked horizontal lines combined with a visible plus symbol, all enclosed within a circular boundary. This icon is used to indicate the function of adding content or tracks to an existing playlist or collection. */
+_playlist_add_circle = 'playlist_add_circle',
+/** The design features three parallel horizontal bars followed by a solid triangular play button shape. This icon indicates that media content, such as music or videos, is ready to start playing from an organized list of items. */
+_playlist_play = 'playlist_play',
+/** The symbol consists of three parallel horizontal lines alongside a large 'X' mark. It indicates the action of deleting or removing an item from a list, such as taking a track off a playlist. */
+_playlist_remove = 'playlist_remove',
+/** The icon depicts two vertically oriented, stylized connectors that are aligned as if they were about to meet or link up. This symbol generally represents the idea of physical connectivity, pairing devices, or establishing a reliable data link between two points. */
+_plug_connect = 'plug_connect',
+/** The icon depicts a stylized open-ended wrench or spanner tool. It is commonly used to represent mechanical repairs, construction work, or plumbing services. */
+_plumbing = 'plumbing',
+/** The design features multiple concentric arcs expanding outward from a central point. This symbol is the universal representation of radio signal strength, typically indicating the availability of Wi-Fi or other wireless network connectivity. */
+_podcasts = 'podcasts',
+/** The icon depicts the side profile silhouette of a shoe or foot structure. This symbol typically represents themes related to podiatry, foot health, or shoe care services. */
+_podiatry = 'podiatry',
+/** The icon illustrates a sturdy, rectangular stand with an attached microphone placed on its front edge. This symbol typically represents giving a formal speech or making a presentation to an audience. */
+_podium = 'podium',
+/** The design is a solid black pictogram resembling a checkout counter, like a cash register or point-of-sale terminal. It represents locations or functions where payments are processed, facilitating retail sales and financial transactions. */
+_point_of_sale = 'point_of_sale',
+/** The icon depicts a cross shape marked by small dots at the ends of its horizontal and vertical arms. It generally functions as an indicator for centering, alignment, or focusing attention on a specific point. */
+_point_scan = 'point_scan',
+/** The icon depicts a circular object featuring patterned segments around its edge and a central diamond shape. This design is commonly used in user interfaces to represent themes of gaming, betting, or chance. */
+_poker_chip = 'poker_chip',
+/** The icon depicts a classic heraldic shield shape that serves as a container for protective symbols. It is used to represent comprehensive security features, allowing users to manage privacy policies, encryption settings, and overall data protection rules. */
+_policy = 'policy',
+/** The design features a shield surrounding a magnifying glass and an exclamation point. This composite image typically serves as a visual alert, drawing attention to critical policy matters or necessary security reviews. */
+_policy_alert = 'policy_alert',
+/** The icon shows a branching line structure connecting multiple square nodes. It commonly represents pathways, connections, or routes within a network or system diagram. */
+_polyline = 'polyline',
+/** The icon is formed by a thick, continuous line that curves sharply into a stylized 'S' shape. This symbol commonly represents molecular chains, structural connections, or the process of polymerization in scientific fields. */
+_polymer = 'polymer',
+/** The design features a dynamic human figure swimming above stylized wavy lines of water. This icon typically signifies aquatic recreational areas, such as pools or general swimming facilities. */
+_pool = 'pool',
+/** The graphic shows several curved lines, mimicking a radio frequency signal, all crossed out by a diagonal line. This symbol means that the device's wireless connection is inactive or deliberately turned off. */
+_portable_wifi_off = 'portable_wifi_off',
+/** The design features a solid rectangular shape with an internal segment positioned in the lower-left quadrant. This icon is commonly used to represent physical input controls, such as a touchpad or navigational area on portable electronic devices. */
+_position_bottom_left = 'position_bottom_left',
+/** The design features a main rectangular container that is accented by a smaller, horizontal marker located toward its lower right quadrant. This icon generally serves to indicate position, anchoring functionality, or settings specific to the bottom-right area of an application screen. */
+_position_bottom_right = 'position_bottom_right',
+/** The icon depicts an outlined square containing a single horizontal line segment positioned in its upper half. This general design often signifies completion, confirmation of a status update, or a dedicated area for submitting information within a digital interface. */
+_position_top_right = 'position_top_right',
+/** The icon depicts a square frame containing three stacked horizontal lines inside it. It generally represents a piece of content or an entry in a feed, suggesting updates or items meant to be viewed sequentially. */
+_post = 'post',
+/** The icon depicts a stylized document with placeholder lines of text positioned next to an addition symbol. It is used to indicate that new content can be added, appended, or attached to an existing file, report, or record. */
+_post_add = 'post_add',
+/** The design illustrates a small plant with leaves emerging from a contained planter pot. It is commonly used to symbolize growth, new beginnings, nature, or sustainability concepts. */
+_potted_plant = 'potted_plant',
+/** The design is a simple, stylized representation of an electrical plug or outlet receptacle. It indicates the availability of power, charging status, or connectivity to an electrical source. */
+_power = 'power',
+/** The design is a circle with a vertical line segment passing through it, forming the universal symbol for electricity. This icon indicates power status or input, signaling functionality related to turning devices on and off. */
+_power_input = 'power_input',
+/** The icon shows an electrical plug crossed out by a diagonal line. It is used to indicate that power is disconnected, unavailable, or that a device should be powered down. */
+_power_off = 'power_off',
+/** The design consists of a circular border surrounding the universally recognized electrical power symbol, which is formed by a vertical line and an adjacent semi-circle. This icon generally indicates power functionality or provides access to primary system menus and operating settings. */
+_power_settings_circle = 'power_settings_circle',
+/** The icon is composed of an open circle intersected by a perpendicular vertical line segment. It represents the universal concept of electrical power, indicating whether a device should be turned on or off, or accessing system power settings. */
+_power_settings_new = 'power_settings_new',
+/** The icon features a stylized crescent moon paired with stars in a combined motif. It represents Islamic faith and is commonly used to indicate religious observances or scheduled prayer times. */
+_prayer_times = 'prayer_times',
+/** The illustration depicts a highly stylized open-ended spanner wrench angled in space. This icon generally represents tools, repairs, maintenance services, or any type of specialized mechanical engineering work requiring precision adjustment. */
+_precision_manufacturing = 'precision_manufacturing',
+/** The design is a simple human figure showing an exaggeratedly rounded abdomen. This symbol indicates that the nearby facility or service is intended for expectant mothers or pregnant people. */
+_pregnancy = 'pregnancy',
+/** The design depicts a stylized human figure with an enlarged abdomen. This symbol typically indicates facilities or services designed to accommodate expectant mothers, such as family restrooms or private changing areas. */
+_pregnant_woman = 'pregnant_woman',
+/** The design consists of a thick checkmark positioned centrally within a clean circular outline. This symbol is widely used across various platforms to confirm success, indicate validation, or signify that a task has been completed. */
+_preliminary = 'preliminary',
+/** The design shows a clipboard with multiple lines of text paired with a stylized pharmaceutical capsule. It is used to represent medical orders, documentation, or prescriptions for medication. */
+_prescriptions = 'prescriptions',
+/** The icon depicts an upward-pointing arrow centered within a solid rectangular container. It generally suggests expanding content, maximizing the display area, or showing information to all viewers. */
+_present_to_all = 'present_to_all',
+/** The icon depicts a stylized human eye centered within a simple, defined square border. It is typically used to signify viewing details, examining content closely, or accessing an overall preview of media. */
+_preview = 'preview',
+/** The icon depicts a diagonal strike-through line placed across an enclosed area. This symbol indicates that a feature or viewing mode has been deactivated, meaning previewing or related functionality is switched off. */
+_preview_off = 'preview_off',
+/** The icon displays a dollar sign followed by a downward-pointing arrow enclosed within a rectangular boundary. It is commonly used to indicate that something has decreased in value or price. */
+_price_change = 'price_change',
+/** The design features a dollar sign positioned above a checkmark. This icon is typically used to indicate that a price has been successfully checked, verified, or approved. */
+_price_check = 'price_check',
+/** The icon shows the recognizable outline of a standard desktop printer device. It is used universally to indicate the function of sending digital content to be printed as physical hard copies. */
+_print = 'print',
+/** The icon shows the outline of a standard printer paired with a noticeable addition symbol. It is typically used to indicate the ability to add extra jobs, items, or functionality related to printing documents. */
+_print_add = 'print_add',
+/** The design features a stylized printer graphic paired with an affirmative checkmark symbol. This icon typically denotes the successful completion of a printable task or the confirmed output of validated data. */
+_print_connect = 'print_connect',
+/** A graphic showing a printer symbol crossed out by a diagonal prohibition slash. This icon indicates that printing functionality is disabled, meaning the content cannot be physically printed from this location or device. */
+_print_disabled = 'print_disabled',
+/** The design depicts a stylized representation of a printer body combined with an alert symbol. It typically indicates that there was an error or problem encountered during the printing process. */
+_print_error = 'print_error',
+/** The icon displays a stylized representation of a printer paired with a visible padlock. This signifies that printing functionality or the content itself is secured, indicating restricted access or encrypted output for enhanced safety. */
+_print_lock = 'print_lock',
+/** The design features a checkmark placed inside a rounded square box outline. This symbol is universally used to indicate confirmation, successful completion, or that an item has been verified and marked as done. */
+_priority = 'priority',
+/** The icon depicts a standard exclamation point. It is widely used to signal that immediate attention is needed, indicating an alert, warning, or matter of high priority. */
+_priority_high = 'priority_high',
+/** The icon literally shows the silhouette of a video camera overlaid with a diagonal prohibition slash. It is used to signify that recording functions are disabled, representing privacy protection or "do not record." */
+_privacy = 'privacy',
+/** The icon is shaped like a stylized shield with a lowercase 'i' centered within it. It typically indicates valuable advice or guidance related to protecting personal information and maintaining online security. */
+_privacy_tip = 'privacy_tip',
+/** The design features a closed padlock centered within an encompassing circular symbol, suggesting both protection and connectivity. It indicates that the current connection is secure and private, meaning your online activity is protected by encryption, such as when using a VPN. */
+_private_connectivity = 'private_connectivity',
+/** The design is a rectangular panel containing placeholder text fields and featuring an exclamation point marker on the left side. This icon commonly represents structured documents, data entry forms, or important alerts within content viewing modes. */
+_problem = 'problem',
+/** The design uses lines and simple geometric shapes arranged sequentially from one point to the next. It commonly signifies a workflow or set of instructions that must be followed in an ordered procedure. */
+_procedure = 'procedure',
+/** The icon consists of three vertical parallel slashes arranged horizontally. It is commonly used to illustrate a sequence of steps, suggesting movement and progression through a defined workflow or process. */
+_process_chart = 'process_chart',
+/** The design shows the side view of a wheeled shopping cart, rendered as a simple black outline. This symbol universally indicates online purchasing functionality, such as adding goods to your virtual basket before checkout. */
+_production_quantity_limits = 'production_quantity_limits',
+/** The icon displays two overlapping profile silhouettes situated above a large, checked circle. This generally represents the successful completion of goals, efficient task management, or overall productivity achieved by a group. */
+_productivity = 'productivity',
+/** The icon depicts an open, curved line forming a partial circular arc. It is commonly used in user interfaces to signify that an action or process is ongoing and requires time to complete. */
+_progress_activity = 'progress_activity',
+/** The design shows a smooth, gracefully curved arrow that points toward the right. It is typically used to indicate continuation, suggestion, or moving forward within an application's workflow. */
+_prompt_suggestion = 'prompt_suggestion',
+/** The design depicts a smooth, oblong shape resembling a classic piece of suitcase luggage. This icon commonly signifies travel, baggage services, or general items that need to be carried or stored. */
+_propane = 'propane',
+/** A stylized outline of a large, rectangular storage tank with a lid and cap structure. This symbol typically represents a source of bottled or stored fuel, such as propane gas used for outdoor cooking or heating. */
+_propane_tank = 'propane_tank',
+/** The icon depicts two symmetrical leaves sprouting gracefully from a single, shared base. It is commonly used symbolically to represent natural growth, vitality, and the concept of rejuvenation. This imagery often suggests tranquility, healing, and fostering holistic well-being. */
+_psychiatry = 'psychiatry',
+/** A stylized outline depicts the side view of a human head containing visible internal mechanisms. This icon commonly symbolizes the workings of the mind, representing intelligence, thought processes, and complex cognition. */
+_psychology = 'psychology',
+/** The icon is an outline of a human head profile containing a large question mark inside. It commonly represents mystery, unanswered questions, or deep self-reflection related to knowledge and identity. */
+_psychology_alt = 'psychology_alt',
+/** The icon shows a simplified circular design containing abstract, disconnected shapes resembling continents. It is typically used to signify public broadcast, widespread sharing of information, or open access to content feeds. */
+_public = 'public',
+/** The design is a circle crossed out by a thick diagonal line, creating a standard prohibition symbol. This icon universally signals that an activity, item, or behavior is forbidden or restricted within a shared public space. */
+_public_off = 'public_off',
+/** The icon is a clean, solid directional arrow pointing straight upward. It typically signifies an action of uploading content or sending information out to be viewed publicly. */
+_publish = 'publish',
+/** The icon depicts arrows forming a continuous circular loop around a central point. It signifies that the published material has undergone revisions and incorporates changes from its original version. */
+_published_with_changes = 'published_with_changes',
+/** The icon depicts the simplified outline of a pair of human lungs connected centrally. It is commonly used in medical contexts to represent pulmonology, respiratory care, or general lung health. */
+_pulmonology = 'pulmonology',
+/** The icon literally depicts a stylized heart shape containing a jagged line representing a pulse or electrocardiogram (ECG) reading, alongside an alarm symbol. It is used to signal a critical alert status, indicating that vital signs or cardiac monitoring requires immediate attention. */
+_pulse_alert = 'pulse_alert',
+/** The icon depicts a structured, rectangular device featuring a prominent circular clock face, resembling a traditional time punch machine. This symbol generally represents tracking work shifts or managing employee attendance records in an employment setting. */
+_punch_clock = 'punch_clock',
+/** The icon shows a highly structured pattern of alternating black and white squares arranged in a grid. This format is designed to store encoded data that can be quickly accessed or translated using a scanner. */
+_qr_code = 'qr_code',
+/** This pattern consists of distinct, high-contrast squares forming a recognizable code structure. It is used to encode various types of information, such as website links or contact details, making it easily readable by modern scanners. */
+_qr_code_2 = 'qr_code_2',
+/** The image displays a section of a square matrix barcode pattern next to an addition sign. This combination is used to indicate the ability to create, generate, or add new QR codes for scanning or connectivity purposes. */
+_qr_code_2_add = 'qr_code_2_add',
+/** The design features a prominent square pattern of intersecting lines and points. This symbol indicates the capability to scan and read information embedded within various digital identifiers, such as QR codes or barcodes. */
+_qr_code_scanner = 'qr_code_scanner',
+/** The design combines a magnifying glass with an adjacent wavy line that fluctuates across the space. This icon generally indicates detailed analysis or statistical monitoring of search results or data trends. */
+_query_stats = 'query_stats',
+/** The design features a central question mark encircled by two opposing curved arrows suggesting cyclical movement. This icon generally represents an ongoing process of inquiry, feedback exchange, or continuous questioning. */
+_question_exchange = 'question_exchange',
+/** It illustrates the universal punctuation symbol used to ask questions and denote a query. This icon commonly represents curiosity, an unknown piece of information, or a need for further clarification in any context. */
+_question_mark = 'question_mark',
+/** The design features a stylized music note paired with three parallel horizontal lines of varying length. This icon typically indicates a collection of songs ready for play, representing an active music queue or playlist. */
+_queue_music = 'queue_music',
+/** The icon visually combines a standard play symbol with an arrow pointing forward, indicating progression. It is typically used in media players or playlists to skip ahead and begin playing the next sequential item waiting in the queue. */
+_queue_play_next = 'queue_play_next',
+/** The design depicts a stylized chat bubble encompassing an arrow pointing toward its center. This symbol typically indicates the ability to quickly insert pre-set phrases or suggestions into a conversation. */
+_quick_phrases = 'quick_phrases',
+/** It depicts a stylized file document paired with an information symbol in the corner. This icon signifies accessing help, reference material, or metadata quickly regarding the document it represents. */
+_quick_reference = 'quick_reference',
+/** The design features a stylized document alongside an open magnifying glass. This icon signifies a comprehensive search function, allowing users to quickly find information across multiple documents or reference sources. */
+_quick_reference_all = 'quick_reference_all',
+/** The design shows a simple rectangular body, symbolizing an electronic device or battery unit. The three parallel markings visible on the left side suggest multiple indicators for power level or status capacity. */
+_quick_reorder = 'quick_reorder',
+/** The icon depicts a speech bubble shape with an integrated lightning bolt symbol emerging from the bottom corner. It is commonly used to signify quick replies, instant messaging, or sending messages that require fast action. */
+_quickreply = 'quickreply',
+/** The design depicts a simple square outline box with a large question mark centered inside. This icon typically signifies an assessment, a quiz section, or a prompt requiring the user to provide input or answer a question. */
+_quiz = 'quiz',
+/** The design features a simple, solid uppercase capital letter R. This type of icon is typically used to represent content that begins with this letter or serves as an alphabetical placeholder. */
+_r_mobiledata = 'r_mobiledata',
+/** The icon depicts multiple concentric circles surrounding a central point, often with an internal element suggesting motion or scanning. It typically indicates that content is actively loading, refreshing data, or continuously monitoring a process in real time. */
+_radar = 'radar',
+/** The icon depicts an old-fashioned radio set, showing a rectangular unit with broadcast elements. It symbolizes broadcasting or audio content, often used to represent music, podcasting, or general sound waves. */
+_radio = 'radio',
+/** The design features an outer ring surrounding a solid, filled inner circle. This symbol is commonly used in forms and menus to show that one specific choice has been selected from a group of mutually exclusive options. */
+_radio_button_checked = 'radio_button_checked',
+/** The icon depicts a thick outer ring surrounding an inner area that is partially filled, resembling a crescent shape or half-circle segment. This symbol generally indicates an incomplete selection status or a pending choice within user interface controls. */
+_radio_button_partial = 'radio_button_partial',
+/** The icon is depicted as a simple, hollow circular outline. It indicates that no specific option has been selected from a group of choices, such as when filling out a form or making a selection in a user interface. */
+_radio_button_unchecked = 'radio_button_unchecked',
+/** The image depicts a solid rectangular panel that contains multiple distinct internal segments. This icon generally represents advanced diagnostic technology, specifically portable systems or detectors used in medical radiography and X-ray imaging. */
+_radiology = 'radiology',
+/** The design combines a stylized representation of public transportation, such as a train or tram, with an explicit warning symbol. It is used to signal important alerts, necessary service updates, or potential disruptions related to railway or transit travel. */
+_railway_alert = 'railway_alert',
+/** The illustration shows the profile of a railway car, marked by a visible alert symbol containing an exclamation point. This typically indicates a service disruption, delay, or necessary caution regarding rail travel. */
+_railway_alert_2 = 'railway_alert_2',
+/** The design features a stylized cloud positioned above several falling raindrops. This icon is used to indicate current or expected rainy weather conditions. */
+_rainy = 'rainy',
+/** The illustration shows three parallel vertical bars that vary slightly in length. It is used to indicate the current strength or quality of a wireless connection, such as Wi-Fi or cellular service. */
+_rainy_heavy = 'rainy_heavy',
+/** The design shows multiple parallel, falling streaks of varying length. This symbol is commonly used to represent rainy weather or general precipitation. */
+_rainy_light = 'rainy_light',
+/** The design features several sets of short, parallel vertical dashes arranged in a falling pattern. It is commonly used to symbolize general inclement weather conditions, such as rain or snow. */
+_rainy_snow = 'rainy_snow',
+/** The illustration depicts a deep bowl designed to hold noodles and broth, typical of ramen or udon soup. It is commonly used to represent dining experiences involving Japanese noodle dishes or general Asian cuisine. */
+_ramen_dining = 'ramen_dining',
+/** The design is an arrow pointing generally upward before making a pronounced curve to the left. This symbol typically indicates a directional path or movement that turns sharply to the left, such as in a map or navigation system. */
+_ramp_left = 'ramp_left',
+/** The graphic element depicts a thick, stylized line that rises sharply and terminates in an arrowhead shape. It is commonly used to signify ascent, growth, increased values, or moving forward through a structured process. */
+_ramp_right = 'ramp_right',
+/** The design outlines the physical shape of a kitchen range hood or extractor fan. It is commonly used to symbolize cooking vents, ventilation systems, or general kitchen appliances. */
+_range_hood = 'range_hood',
+/** The design features a speech bubble containing an illustration of a stylus making writing marks across a line. This icon typically signifies the ability to provide feedback, write reviews, or add comments to content. */
+_rate_review = 'rate_review',
+/** The icon depicts a highly stylized silhouette of a bird resembling a raven or crow. It typically symbolizes intelligence, mystery, and deep knowledge across various cultures and mythologies. */
+_raven = 'raven',
+/** The icon shows the acronym RAW written with a diagonal line crossing through it. It indicates that the associated function or setting is deactivated or switched off. */
+_raw_off = 'raw_off',
+/** The icon visually depicts a segment of structured data, specifically showing multiple horizontal lines representing database rows. It signifies the ability to view underlying raw data or suggests options for adding new rows within a table structure. */
+_raw_on = 'raw_on',
+/** The icon literally depicts a right-pointing arrow placed next to three short, horizontal parallel lines. This design is commonly used in user interfaces to signal that there is more information or text available to view. */
+_read_more = 'read_more',
+/** The design shows a semi-circular meter with an indicator needle pointing towards a specific point on the scale. This icon typically represents a measured status or "readiness score," indicating how prepared or operational a system is. */
+_readiness_score = 'readiness_score',
+/** A stylized house graphic is presented resting within an open hand. This design symbolizes assistance and care provided throughout real estate transactions or property searches. */
+_real_estate_agent = 'real_estate_agent',
+/** The icon depicts a visual representation of a camera lens, often suggesting the perspective from the back of a device. It is used to indicate that media capture, such as photography or videography, is being performed using the primary rear-facing camera system. */
+_rear_camera = 'rear_camera',
+/** The icon uses connected directional arrows between nodes to illustrate a structured flow path or sequence of steps. This typically represents moving a set of changes by applying them cleanly onto a different base point in history. */
+_rebase = 'rebase',
+/** The icon depicts a branching structure formed by connected lines and directional arrows. This symbol commonly represents revising or restructuring an existing sequence of actions, paths, or information flows. */
+_rebase_edit = 'rebase_edit',
+/** The design depicts a stylized piece of paper featuring several horizontal lines and a slightly irregular border. This icon typically signifies an official document, such as a receipt or statement, indicating a record of transactions or exported notes. */
+_receipt = 'receipt',
+/** The design illustrates multiple stacked sheets of paper, with lines of text visible on the upper document. This icon generally represents comprehensive documentation, financial records, or historical data such as long-form receipts. */
+_receipt_long = 'receipt_long',
+/** The icon illustrates a long, rectangular paper document that resembles a financial receipt crossed by a bold diagonal slash. This common symbol signifies that the item listed, transaction, or agreement is canceled, voided, or invalid. */
+_receipt_long_off = 'receipt_long_off',
+/** The icon illustrates a framed picture or stylized document containing a central image placeholder. It is commonly used to indicate access to recent photos, viewing history, or a personal image gallery. */
+_recent_actors = 'recent_actors',
+/** The design shows a simplified human silhouette positioned near a distinct lightning bolt symbol. This combination typically indicates that the user account or associated device has power, is actively connected, or is in an operational status. */
+_recent_patient = 'recent_patient',
+/** Four opposing arrows—up, down, left, and right—are arranged in a symmetrical cross pattern around a central point. It commonly suggests calibration, resetting, or returning to a balanced starting position in various applications. */
+_recenter = 'recenter',
+/** The design depicts an open hand making the classic "thumbs up" gesture. It serves as a simple visual indicator of positive sentiment, suggesting that something is good, approved, or worth recommending. */
+_recommend = 'recommend',
+/** The design features a stylized outline of a person's upper body with radiating curved lines next to the head. This icon indicates the function for recording audio, allowing the user to speak notes or provide voice-over commentary. */
+_record_voice_over = 'record_voice_over',
+/** The icon depicts a simple, thick black outline forming a basic geometric shape resembling a rectangle or square. It typically serves as a visual placeholder, often used in user interfaces to denote a container, section, or boundary box for content. */
+_rectangle = 'rectangle',
+/** The icon shows a simple, bordered square containing a large plus sign in the center. This symbol universally represents the action of addition, indicating that the user can create new content, add an item, or expand a feature. */
+_rectangle_add = 'rectangle_add',
+/** The icon is composed of three curved arrows arranged in a continuous, triangular loop. It universally represents recycling, signifying environmental responsibility and the cyclical process of reusing materials. */
+_recycling = 'recycling',
+/** The icon depicts a square gift package with a ribbon tied across the top. It generally represents receiving a special benefit, such as a discount code, reward points, or coupon that can be applied to a purchase. */
+_redeem = 'redeem',
+/** The icon is depicted as a curved arrow that sweeps back and points toward the right. It represents reapplying a change or repeating an action previously undone, allowing users to move forward in their editing history. */
+_redo = 'redo',
+/** The icon shows three stylized human figures arranged horizontally in an upper row. Below this group, two distinct smaller groups of people are depicted, suggesting a transition from a larger set to a smaller one. This typically signifies reducing capacity or limiting the number of members within a system or family unit. */
+_reduce_capacity = 'reduce_capacity',
+/** The design shows an arrow forming a continuous loop within a circle. This symbol is used to indicate that content needs to be refreshed or reloaded to display the most current information. */
+_refresh = 'refresh',
+/** The icon literally shows parentheses enclosing an asterisk followed by a period. This pattern is a fundamental element of regular expressions, which are used in computing to define complex search rules or validate text formats. */
+_regular_expression = 'regular_expression',
+/** The design is a stylized heart outline that contains an internal swooping line resembling a pulse or wave. This icon typically signifies health, vitality, emotional care, or overall well-being. */
+_relax = 'relax',
+/** The design features an exclamation point centered within a stylized, jagged burst shape. It is used to draw attention to important notifications, critical warnings, or updates that users should be aware of. */
+_release_alert = 'release_alert',
+/** The design depicts a vertically oriented rectangle resembling a modern payment card or transit ticket. It generally signifies financial transactions, contactless payments, or mobile ticketing for money transfer services. */
+_remember_me = 'remember_me',
+/** An open hand points towards a stylized alarm or bell symbol. This icon typically indicates alerts, scheduled tasks, or general reminders to the user. */
+_reminder = 'reminder',
+/** The icon depicts a generic, rectangular electronic device resembling a universal remote control. It generally signifies the ability to operate and control multimedia equipment or various interconnected home devices. */
+_remote_gen = 'remote_gen',
+/** The icon is depicted as a simple, unbroken horizontal line segment. This symbol typically functions in user interfaces to signify deletion, cancellation, or the removal of selected content or data. */
+_remove = 'remove',
+/** The design features two crossed diagonal lines that create a clear strikethrough effect. This icon is typically used to signify the removal, deletion, or undoing of previously entered information. */
+_remove_done = 'remove_done',
+/** The design features a simple outline of a computer monitor screen containing a single, short horizontal line near the center. This icon generally indicates the action of deleting, dismissing, or removing an item from a displayed list or queue. */
+_remove_from_queue = 'remove_from_queue',
+/** The icon depicts an emblem-like shield crossed by a diagonal slash mark. This symbol universally indicates prohibition, cancellation, or the removal of status and permissions. */
+_remove_moderator = 'remove_moderator',
+/** The design features multiple vertical lines of varying styles crossed by a prominent 'X'. This symbol generally indicates the deletion or removal of an entire path, track, or segment from the view. */
+_remove_road = 'remove_road',
+/** The design shows a dotted square grid pattern overlaid with a prominent cross mark in one quadrant. It is used to indicate the action of removing selected content or clearing user focus from an input field. */
+_remove_selection = 'remove_selection',
+/** A simplified outline depicts a standard shopping trolley or cart structure. It is commonly used to indicate the dismissal of items, clearing a shopping basket, or exiting the purchase process entirely. */
+_remove_shopping_cart = 'remove_shopping_cart',
+/** The icon features a solid rectangle paired with a curved arrow pointing back into its lower right corner. This symbol typically indicates the action of reopening a window or returning to a previously viewed state within an application. */
+_reopen_window = 'reopen_window',
+/** The icon features three solid, horizontal parallel lines stacked vertically. It commonly represents a structured list view or menu capable of being sorted, managed, or reordered. */
+_reorder = 'reorder',
+/** Paths are illustrated diverging from a single source using clear directional lines and arrows. This symbol commonly indicates branching options, suggesting multiple related paths or a division into different sections of content. */
+_repartition = 'repartition',
+/** The design consists of two opposing arrows forming a continuous, bracket-like shape. It indicates that content or an action should be repeated, refreshed, or cycled back to the beginning. */
+_repeat = 'repeat',
+/** Two opposing curved arrows form a continuous, looping path that turns back on itself. This icon is used to indicate that a process will repeat automatically or cycle indefinitely through content. */
+_repeat_on = 'repeat_on',
+/** The icon literally depicts two opposing arrows arranged in a continuous loop shape. It commonly signifies repeating an action, refreshing content, or cycling back to a previous state. */
+_repeat_one = 'repeat_one',
+/** The icon depicts two opposing arrows forming an open square or looping path. It commonly signifies repeating an action, cycling back to a previous step, or restarting a process. */
+_repeat_one_on = 'repeat_one_on',
+/** The icon depicts a musical note positioned below an overhead arc with a right-pointing arrow. It typically signifies that the currently playing audio can be replaced or swapped out for different content. */
+_replace_audio = 'replace_audio',
+/** The design features a circular, curved arrow encompassing an image placeholder that displays mountains. This icon typically signifies the function of replacing or updating media assets, allowing users to swap out existing pictures with new ones. */
+_replace_image = 'replace_image',
+/** The design features an illustration of a video camera graphic accompanied by a surrounding, curved arrow. This icon is used to indicate that existing media content should be replaced, updated, or refreshed with new input. */
+_replace_video = 'replace_video',
+/** The icon depicts an arrow forming a continuous circular loop. It commonly signifies repeating an action, such as restarting media playback or looping content. */
+_replay = 'replay',
+/** The design features a looping arrow encircling the number 10. It commonly indicates a specific short duration or a repeating cycle of ten units. */
+_replay_10 = 'replay_10',
+/** The icon features a curved, looping arrow that encircles the number 30. This symbol generally indicates a repeat function or selecting a specific rate of movement, such as thirty frames per second. */
+_replay_30 = 'replay_30',
+/** The icon features a curved arrow forming a complete loop with the numeral five visible in its center. It indicates repetition, commonly used for replaying content or setting a time interval of five units. */
+_replay_5 = 'replay_5',
+/** This curved arrow depicts a path that turns back upon itself and points toward the left. It is commonly used in digital interfaces to indicate moving backward or sending a reply message. */
+_reply = 'reply',
+/** The design features a pronounced, curved arrow that angles sharply to the left. This symbol is used in messaging interfaces to indicate sending a response that ensures all original participants receive the message simultaneously. */
+_reply_all = 'reply_all',
+/** The design features an exclamation point centered within a distinct octagonal border. This symbol is used to signal an urgent warning, an important alert, or that information needs immediate reporting. */
+_report = 'report',
+/** The design features a prominent diagonal slash crossing through an abstract outline suggesting a communication device or status indicator. It is used to signify that tracking, reporting, or service transmission has been disabled or turned off. */
+_report_off = 'report_off',
+/** This icon depicts a rectangular sheet of paper bearing a dollar sign. It is commonly used to represent financial documents, transactions, or requests for money. */
+_request_page = 'request_page',
+/** This icon visually depicts a piece of paper featuring a large currency symbol. It is used to represent obtaining a cost breakdown, such as when soliciting a formal quote for services or goods. */
+_request_quote = 'request_quote',
+/** The design features a continuous circular arrow surrounding an internal, stylized aperture or dial. This icon is used to reset brightness levels or restore visual settings to their default intensity. */
+_reset_brightness = 'reset_brightness',
+/** The design features a circular arrow forming a continuous loop around an integrated color element. This icon is used to reset all chosen colors and formatting options back to their original default state. */
+_reset_colors = 'reset_colors',
+/** The design consists of a circular arrow that curves back into itself, forming a closed loop. This symbol generally indicates resetting parameters or returning a system state to its original default setting. */
+_reset_exposure = 'reset_exposure',
+/** The design shows an arrow completing a continuous, circular path. This symbol is commonly used in user interfaces to indicate refreshing content or resetting the current state. */
+_reset_focus = 'reset_focus',
+/** The icon depicts a stylized mountain landscape contained within a picture frame, overlaid with a curved arrow suggesting renewal. This symbol is used to signify reverting an image to its original state or clearing any applied edits. */
+_reset_image = 'reset_image',
+/** The illustration depicts an arrow curving back into a circular structure, with the base of the arrow filled with parallel lines. It typically indicates a reset or formatting action, reverting data or settings to their original state. */
+_reset_iso = 'reset_iso',
+/** The design features an open circle with a curved arrow forming a continuous loop. This symbol is generally used to indicate actions such as refreshing content or reverting settings back to their original default state. */
+_reset_settings = 'reset_settings',
+/** A curved arrow is shown forming a continuous, looping circle with an arrowhead pointing back toward the start. This symbol typically indicates that content or data will be refreshed or returned to its original, default state. */
+_reset_shadow = 'reset_shadow',
+/** The design features a curved arrow forming an open loop, suggesting cyclical movement or return. This common icon indicates that a setting or process should be reset back to its original or default state. */
+_reset_shutter_speed = 'reset_shutter_speed',
+/** The design features a stylized television screen outline accompanied by an internal, curved arrow pointing backward. This symbol is used to initiate a full system reset or restore the device's parameters to factory default settings. */
+_reset_tv = 'reset_tv',
+/** The icon depicts a looping circular arrow accompanied by a visible graphic shaped like a thermometer. This symbol typically signifies a function that resets a system or measurement back to its original or default calibrated state. */
+_reset_white_balance = 'reset_white_balance',
+/** The design depicts a cyclical arrow that encircles an adjustable spanner or wrench symbol. It is used in user interfaces to indicate the process of resetting parameters or restoring a device to its original default state. */
+_reset_wrench = 'reset_wrench',
+/** The illustration depicts a dotted square boundary with opposing arrow notches positioned along the sides. This icon generally signifies that an element, such as a window or image, can be adjusted or resized to fit different dimensions. */
+_resize = 'resize',
+/** The icon depicts two distinct diagonal dashes placed close together, forming an angular shape. It is used in digital interfaces to indicate that a user can click and drag the boundary to resize or adjust an element's dimensions. */
+_resize_window = 'resize_window',
+/** The design illustrates a simplified anatomical drawing of human lungs. This icon typically signifies monitoring vital signs related to respiration or tracking one's breathing rate. */
+_respiratory_rate = 'respiratory_rate',
+/** The icon depicts three adjacent rectangular blocks of varying widths. Their increasing size visually represents scalability or adaptable layouts for different screen sizes. */
+_responsive_layout = 'responsive_layout',
+/** The icon depicts a stylized structure with an undulating roofline situated above various ground-level amenities. It commonly represents a dedicated area for relaxation or rest, such as a resort, spa facility, or viewing point. */
+_rest_area = 'rest_area',
+/** The design consists of two opposing arrow curves that meet to form an open circular loop. This symbol typically indicates refreshing content, restarting a cycle, or repeating an ongoing action. */
+_restart_alt = 'restart_alt',
+/** The design features a fork and a knife placed side-by-side, forming a classic set of eating utensils. It is commonly used to indicate dining services, restaurants, or any location where meals are served. */
+_restaurant = 'restaurant',
+/** The icon depicts an upward-pointing arrow emerging from within a contained shape. It universally signifies the process of recovering data, indicating that something has been restored or undone. */
+_restore_from_trash = 'restore_from_trash',
+/** The icon shows a document sheet overlaid with a circular, curved arrow graphic. This symbol typically indicates returning to a previous state or restoring the viewing history of content on a page. */
+_restore_page = 'restore_page',
+/** The icon depicts a short vertical bar immediately followed by an arrowhead pointing right. This symbol typically indicates that media playback, activity, or a process can be continued from where it was previously paused. */
+_resume = 'resume',
+/** The design features a speech bubble surrounding a five-pointed star. This icon typically signifies feedback, ratings, or quality assessment within a conversational or informational context. */
+_reviews = 'reviews',
+/** A stylized cup mounted on a pedestal represents an achievement or prize. It typically signifies that something valuable or beneficial has been earned through effort or engagement. */
+_rewarded_ads = 'rewarded_ads',
+/** The image depicts a stylized representation of a human knee joint or general articulation point. It typically signifies medical care related to joints, inflammation, arthritis, or musculoskeletal health. */
+_rheumatology = 'rheumatology',
+/** The icon depicts a pair of stylized, curved lines that form an open cage shape. It is generally used to symbolize fundamental biological structures or anatomy. */
+_rib_cage = 'rib_cage',
+/** The design is a symmetrical, shallow bowl shape with an open top. This icon commonly represents food, meals, or Asian cuisine in general applications. */
+_rice_bowl = 'rice_bowl',
+/** The design features an arrow pointing outwards, paired with a distinct curved arc element. This symbol is commonly used in user interfaces to indicate the activation of secondary options or the display of a context menu. */
+_right_click = 'right_click',
+/** The icon depicts a rectangular outline containing a forward-pointing triangle adjacent to a vertical divider line. It is commonly used in user interfaces to indicate the action of closing, dismissing, or collapsing content displayed in a side panel. */
+_right_panel_close = 'right_panel_close',
+/** The icon depicts a rectangular frame divided into two distinct vertical sections, suggesting one panel has been opened outward. It typically indicates access to a side menu, settings drawer, or additional controls that are currently hidden but available for viewing. */
+_right_panel_open = 'right_panel_open',
+/** The design depicts a stylized phone receiver outline with small radiating lines above the curve. This icon typically signifies a communication failure, service outage, or poor connection quality. */
+_ring_volume = 'ring_volume',
+/** The design features a square frame with a prominent dot in one corner and a partial curve suggesting outward expansion. This icon generally indicates an action that ripples through content, such as applying formatting changes or affecting multiple selected areas at once. */
+_ripples = 'ripples',
+/** The illustration features two parallel lines that appear to converge into a single point in the distance, creating depth. It generally signifies movement, travel, or finding a route between two points. */
+_road = 'road',
+/** This symbol depicts the head of a futuristic, machine-like character using simplified geometric forms. It generally represents technology, automation, or AI functions within an application interface. */
+_robot = 'robot',
+/** The icon depicts a stylized, blocky figure resembling a robot's head and torso. It commonly signifies artificial intelligence, automated assistance, or general chatbot functionality within an application. */
+_robot_2 = 'robot_2',
+/** The design depicts a stylized, upward-pointing rocket ship with flared fins and a pointed nose cone. It is commonly used to symbolize rapid progress, launching new features, or achieving significant growth. */
+_rocket = 'rocket',
+/** The design features a stylized rocket angled upwards, suggesting upward motion or launch. It is commonly used to symbolize rapid growth, momentum, or the successful initiation of an idea or project. */
+_rocket_launch = 'rocket_launch',
+/** The icon depicts a rectangular object representing a window covered by drawn roller shades or blinds. It commonly symbolizes privacy settings or the ability to adjust light levels in an application interface. */
+_roller_shades = 'roller_shades',
+/** The icon depicts a roller shade completely pulled down over a rectangular window frame. It generally suggests that something is private, restricted, or intentionally hidden from view. */
+_roller_shades_closed = 'roller_shades_closed',
+/** The design is a stylized representation of an empty shopping cart on wheels. It generally symbolizes the act of collecting items or completing purchases during a retail trip. */
+_roller_skating = 'roller_skating',
+/** The icon is a simple, stylized rendering of a house structure featuring a peaked roof over a square base. It generally indicates concepts related to home, residency, or general location in mapping and directories. */
+_roofing = 'roofing',
+/** The icon combines a structured outline, suggesting an enclosed space or room, with mechanical tools like gears and wrenches. This typically signifies that the user can customize or adjust specific preferences related to an environment or area. */
+_room_preferences = 'room_preferences',
+/** The icon depicts a stylized serving cover, resembling a dome used to protect or present food. It indicates meal service provided privately, suggesting convenience like in-room dining or personal catering. */
+_room_service = 'room_service',
+/** The icon depicts an arrow forming a partial circular arc, suggesting movement around a central point. This symbol is commonly used to indicate that content or an object needs to be rotated or turned in sequence. */
+_rotate_90_degrees_ccw = 'rotate_90_degrees_ccw',
+/** The design features an arrowhead curving back towards its start, creating the appearance of an incomplete circle. This symbol is commonly used to represent turning content, cycling through steps, or moving something in a clockwise direction. */
+_rotate_90_degrees_cw = 'rotate_90_degrees_cw',
+/** The design features a large letter A enclosed by a looping, directional arrow. This icon typically signifies automatic processes, ongoing cycles, or continuous rotation of content or settings. */
+_rotate_auto = 'rotate_auto',
+/** The design shows a curved arrow tracing a counter-clockwise circular path. This icon commonly signifies refreshing content, reversing an action, or cycling back to a previous state. */
+_rotate_left = 'rotate_left',
+/** The design features a curved arrow that sweeps along an arc, forming an open circle shape. This symbol typically indicates advancement through steps, repeating actions, or moving forward within a sequence of content. */
+_rotate_right = 'rotate_right',
+/** The icon depicts a thick arrow that curves in a sweeping arc before pointing leftward. It is typically used to indicate turning left, changing direction, or navigating around an obstruction at a junction. */
+_roundabout_left = 'roundabout_left',
+/** The design shows a winding path that curves back on itself before continuing outward with an arrow pointing sharply to the right. It is used in traffic signage to indicate the required exit or turn when navigating a roundabout in a rightward direction. */
+_roundabout_right = 'roundabout_right',
+/** The design illustrates the outline of a simple, angular shape where one corner has been smoothly curved. It commonly signifies updated or soft aesthetics, suggesting modern usability within user interfaces. */
+_rounded_corner = 'rounded_corner',
+/** The design is a simple, curving line that connects two distinct endpoints. It commonly represents a planned route, navigational path, or connection between two locations. */
+_route = 'route',
+/** The icon depicts a rectangular base with curved lines radiating above it to symbolize signals being broadcast. It commonly represents Wi-Fi connectivity or the general availability of an internet signal in a location. */
+_router = 'router',
+/** The design features standard curved lines representing a Wi-Fi signal, which are overlaid by a clear diagonal strikeout. This symbol indicates that wireless connectivity is currently turned off, unavailable, or disconnected from any network. */
+_router_off = 'router_off',
+/** The design features a central circle surrounded by radiating rays of light, with a distinct crescent shape visible within the inner area. This symbol generally indicates clear, bright weather or the reliable daily cycle of solar activity. */
+_routine = 'routine',
+/** The icon depicts a person in silhouette using an oar or paddle, illustrating a figure engaged in water sport activity. It commonly signifies the action of rowing, suggesting fitness, endurance, or activities on a body of water. */
+_rowing = 'rowing',
+/** The illustration consists of three diminishing, concentric arcs radiating outward from a source point. This symbol indicates a broadcast signal or content feed, commonly representing a steady stream of updated information like news headlines or blog posts. */
+_rss_feed = 'rss_feed',
+/** The icon displays the letters R-S-V-P in a clear, capitalized format. It is an acronym commonly used on invitations to politely request that the recipient confirm their attendance or reply by a specific date. */
+_rsvp = 'rsvp',
+/** The design features three stacked horizontal lines placed immediately adjacent to a large, capitalized 'T'. It typically serves as an indicator showing the strength and availability of cellular signals or network connectivity. */
+_rtt = 'rtt',
+/** The design combines a ruled form with multiple checkboxes, indicating an organized list or assessment tool. It represents structured criteria used for grading or evaluating performance against specific standards. */
+_rubric = 'rubric',
+/** The design features an equals symbol followed by a large 'X' mark. This combination generally signifies comparison or contrast, indicating that two items are either equivalent or mutually exclusive in a logical sense. */
+_rule = 'rule',
+/** The object visually resembles a folder icon containing both a checkmark and an 'X'. This pairing commonly indicates that a document or set of data has been reviewed, graded, or marked as incomplete during a checklist process. */
+_rule_folder = 'rule_folder',
+/** The icon depicts interlocking gears combined with curved arrows suggesting cyclical movement. It represents advanced system settings used for defining automated rules and managing operational workflows. */
+_rule_settings = 'rule_settings',
+/** The design features an outlined figure depicted in motion inside a perfect circular boundary. This icon is widely used to indicate physical activity, such as directional walking paths or jogging routes. */
+_run_circle = 'run_circle',
+/** The icon literally depicts an exclamation mark that is partially encircled by a curved line. It typically serves as a warning indicator, signifying that content or a process contains detected issues or errors. */
+_running_with_errors = 'running_with_errors',
+/** The design depicts a side profile view of a recreational vehicle or bus with an attached towing hookup indicator pointing forward. This icon commonly signifies establishing a temporary stopover, making a connection, or setting up utility hookups during travel. */
+_rv_hookup = 'rv_hookup',
+/** The icon depicts a stylized shield shape enclosing a clock face. It generally symbolizes verifying security or confirming that a process is safe and completed within an expected timeframe. */
+_safety_check = 'safety_check',
+/** The design depicts a hexagonal shield with a thick diagonal line crossing through its center. It commonly indicates that a safety feature, protection level, or system check has been disabled or cancelled. */
+_safety_check_off = 'safety_check_off',
+/** The design features three stylized human figures arranged side-by-side, separated by vertical divider lines. It typically symbolizes allocated spaces, indicating distinct slots or sections intended for multiple individuals within a larger system, such as seating arrangements. */
+_safety_divider = 'safety_divider',
+/** The design depicts a classic sailboat with multiple sails riding atop stylized waves. This icon is commonly used to signify sailing, maritime travel, or general activities related to the open water. */
+_sailing = 'sailing',
+/** The design features a curved shape at the bottom, resembling a liquid droplet dotted with several small circles above it. It is commonly used to illustrate concentrations or measurements associated with natural bodies of water or dissolved substances. */
+_salinity = 'salinity',
+/** The illustration depicts a portable, pump-dispensing bottle designed to hold liquids. This item typically represents disinfectant solutions used for maintaining cleanliness and personal hygiene. */
+_sanitizer = 'sanitizer',
+/** The design depicts an artificial object suspended in orbit around a larger celestial body. This symbol typically represents global communication, remote data transmission, or wide-area coverage. */
+_satellite = 'satellite',
+/** The icon depicts a sequence of connected rectangular segments followed by an arc of radiating lines. It is used to indicate the current estimated strength or availability of a wireless signal, such as cellular or satellite connectivity. */
+_satellite_alt = 'satellite_alt',
+/** The design illustrates an enclosed interior space with rising wavy lines within it. It indicates the presence of a sauna or steam room, designed for therapeutic heat treatments and relaxation. */
+_sauna = 'sauna',
+/** The icon is a simplified, stylized rectangle that resembles an old magnetic diskette or digital file container. It commonly signifies the action of saving current work or making changes permanent within a program. */
+_save = 'save',
+/** The icon depicts a file being moved or duplicated into a designated folder area. This represents the function of saving a copy of a document, allowing you to keep the original file while working on a new version. */
+_save_as = 'save_as',
+/** The design features a stylized file icon placed adjacent to a circular clock face. It typically indicates the process of saving, exporting, or scheduling time-based information. */
+_save_clock = 'save_clock',
+/** The icon depicts a stylized magnifying glass encompassing a five-pointed star. This design typically represents the action of bookmarking, saving, or managing an important search query. */
+_saved_search = 'saved_search',
+/** The icon depicts a simple, outline drawing of an animal resembling a pig. It is widely recognized as a symbol for saving money or accumulating financial wealth. */
+_savings = 'savings',
+/** The design illustrates a classic weighing scale with an arm connecting to two pans on either side. It is commonly used to symbolize equilibrium, justice, or the accurate comparison of weights. */
+_scale = 'scale',
+/** The icon depicts an upper rectangular shape resting upon a wider, supportive base rectangle. This design is universally used to symbolize document scanning or digitization, representing the process of converting physical paper into digital files. */
+_scan = 'scan',
+/** A stylized piece of paper or digital document is depicted with a clear 'X' mark overlaid on it. It signifies the process of discarding, rejecting, or deleting a file after it has been scanned or digitized. */
+_scan_delete = 'scan_delete',
+/** The icon depicts a horizontal, rectangular device with a diagonal arm extending from one side. It commonly represents technology used for processing and reading information from payment cards or identification credentials. */
+_scanner = 'scanner',
+/** The illustration depicts several small circles scattered across the space, positioned independently of one another. It is used to visualize data points and help identify patterns or correlations within a larger dataset. */
+_scatter_plot = 'scatter_plot',
+/** The design is an outline depiction of comfortable seating, resembling an armchair or small sofa. This icon typically indicates a rest area, domestic space, or designated spot for relaxation within a scene. */
+_scene = 'scene',
+/** The design is a circular face featuring indicators that resemble a classic timepiece. This icon is commonly used to represent time-related features, including scheduling, appointments, or general time management within an application. */
+_schedule = 'schedule',
+/** The design features a clock face integrated with an upward-moving arrow, symbolizing motion over time. It is commonly used to indicate that content or an action has been scheduled to send or occur at a specified point in the future. */
+_schedule_send = 'schedule_send',
+/** The design consists of multiple interconnected square nodes arranged in a graph pattern. It represents the structural relationships between various elements, such as data fields or system architecture schemas. */
+_schema = 'schema',
+/** The icon depicts a stylized mortarboard or graduation cap with its characteristic flat top and tassel area. It universally symbolizes academia, educational achievement, graduation, and scholarly pursuits. */
+_school = 'school',
+/** This illustration depicts the distinctive shape of an Erlenmeyer flask, a common piece of laboratory glassware used for holding and mixing liquids. It serves as a universal symbol for scientific inquiry, academic research, or chemical and biological analysis. */
+_science = 'science',
+/** The design features a thick diagonal slash placed across a stylized angular measurement symbol. It generally signifies that associated scientific data, graphical measurements, or complex calculations are currently inactive or unavailable. */
+_science_off = 'science_off',
+/** It depicts the side profile of a personal mobility device featuring a steering column, deck, and two wheels. This icon typically signifies rapid, agile transportation options suitable for navigating urban or campus environments. */
+_scooter = 'scooter',
+/** The design features the letters "2K" alongside a dynamic, jagged line graph contained within a square border. It is commonly used to indicate high resolution, premium video quality, or advanced data measurement capabilities. */
+_score = 'score',
+/** The icon depicts a simple, rectangular digital readout displaying large numbers separated by colons. It commonly indicates the current score in games or tracks elapsed time in various competitive settings. */
+_scoreboard = 'scoreboard',
+/** The icon is depicted as a set of concentric circles surrounding a solid center point, resembling a target or radar display. It commonly signifies the function to start recording or capturing the content displayed on the screen. */
+_screen_record = 'screen_record',
+/** The design features two angled arrows pointing toward each other from opposite corners of an implied square. This icon typically indicates a function to rotate content or change the display screen's orientation. */
+_screen_rotation_alt = 'screen_rotation_alt',
+/** The icon is composed of two curved arrows that face away from each other in a diagonal pattern. It universally suggests an action of rotating or changing the orientation of content or a view. */
+_screen_rotation_up = 'screen_rotation_up',
+/** The icon depicts an outline of a computer monitor screen with a prominent magnifying glass centered on its surface. It commonly signifies the ability to perform searches across all content visible within a comprehensive desktop or application view. */
+_screen_search_desktop = 'screen_search_desktop',
+/** The icon depicts a rectangular shape representing a computer screen with an arrow drawn across its surface. This symbol universally indicates the action of sharing or broadcasting content displayed on that screen to another user or device. */
+_screen_share = 'screen_share',
+/** It shows a square frame structure that suggests a display monitor. This icon is typically used to represent taking a screenshot or framing specific content for review. */
+_screenshot_frame = 'screenshot_frame',
+/** The icon literally depicts two symmetrical, open rectangular frames placed horizontally next to each other. It commonly represents a boundary or container used for previewing, framing, or captioning captured screen content. */
+_screenshot_frame_2 = 'screenshot_frame_2',
+/** The illustration depicts a basic rectangular frame containing a centered circular element. This icon is commonly used in user interfaces to indicate screen capture capability or visual recording functionality. */
+_screenshot_keyboard = 'screenshot_keyboard',
+/** The icon depicts a simplified outline of a computer monitor screen, featuring corner indicators suggesting content selection. It is typically used to represent the action of taking a screenshot or capturing displayed digital information. */
+_screenshot_monitor = 'screenshot_monitor',
+/** The design features an outline formed by corner brackets creating a bounding box. It indicates the action of selecting or defining a specific region within content for cropping or focused viewing. */
+_screenshot_region = 'screenshot_region',
+/** The design is an outline of a generic portable tablet or e-reader screen. It typically represents the functionality of taking a screenshot or capturing content displayed on such a mobile device. */
+_screenshot_tablet = 'screenshot_tablet',
+/** It is a simple graphic featuring an uppercase letter A centered within a square border. This symbol commonly indicates access to assignments, articles, or foundational academic content. */
+_script = 'script',
+/** The icon depicts a simple rectangle that is divided horizontally into two distinct sections. This structure represents an interface component, such as a persistent or scrollable header visible while navigating through content. */
+_scrollable_header = 'scrollable_header',
+/** The illustration shows a figure suspended beneath the surface of water, equipped for underwater exploration. This icon typically represents scuba diving or any form of deep-sea recreational activity. */
+_scuba_diving = 'scuba_diving',
+/** The design consists of two large, block capital letters—S and D—enclosed within a thick square frame. It most commonly indicates compatibility with an SD (Secure Digital) memory card or relates to digital storage media. */
+_sd = 'sd',
+/** The icon depicts the recognizable outline of a standard memory or SD card. It commonly symbolizes external, removable storage used for saving or accessing digital files and data. */
+_sd_card = 'sd_card',
+/** The icon depicts a singular exclamation point placed within an angular, bordered square frame. It is universally used to draw attention to a critical warning, potential error, or necessary system notification. */
+_sd_card_alert = 'sd_card_alert',
+/** The design uses stylized angle brackets enclosed in a block shape, representing code syntax or structured data fields. This icon is commonly used to symbolize Software Development Kits (SDKs) or general programming tools required for application development. */
+_sdk = 'sdk',
+/** The design features a classic magnifying glass with a prominent circular lens and an attached handle. This icon universally symbolizes searching, indicating that users can look up information or explore content within a system. */
+_search = 'search',
+/** The illustration depicts a single, curved arrow forming an open circle. This symbol generally indicates that a system process is active, signifying ongoing work such as loading content or completing a search query. */
+_search_activity = 'search_activity',
+/** The design shows a magnifying glass with a clear checkmark positioned within its circular viewing area. This symbol generally indicates that an item, record, or process has been successfully verified or approved after being checked. */
+_search_check = 'search_check',
+/** The icon depicts a magnifying glass containing a checkmark mark within its center. It signifies that a search or inspection process has been successfully completed and verified. */
+_search_check_2 = 'search_check_2',
+/** The icon depicts a magnifying glass with an integrated gear symbol near its body. It is commonly used to symbolize advanced search features or the ability to manage system settings related to finding information. */
+_search_gear = 'search_gear',
+/** The design depicts a circular reticle with a central crosshair and outer rings, resembling a targeting scope or aiming sight. It typically represents guided assistance, automated searching, or hands-free focusing capabilities in technology or navigation systems. */
+_search_hands_free = 'search_hands_free',
+/** This icon literally depicts a magnifying glass framing a set of stylized data bars. It signifies the process of investigating trends, analyzing metrics, or viewing deep insights derived from search functionality. */
+_search_insights = 'search_insights',
+/** The design depicts a magnified circle attached to a handle, which is overlaid with a prominent cross mark. This icon generally signifies that searching, inspecting, or detection features are deactivated or turned off. */
+_search_off = 'search_off',
+/** The image shows a simple geometric shape suggesting seating, with a snowflake pattern attached near its left corner. It indicates that the climate control system is active for delivering cooling or fresh air specifically to the left side passenger area. */
+_seat_cool_left = 'seat_cool_left',
+/** The icon depicts a stylized drawing of a car seat next to an arrow indicating directional air flow from the right. It is used in vehicle dashboards to show that the cooling ventilation is directed specifically toward the right-hand side seating area. */
+_seat_cool_right = 'seat_cool_right',
+/** The design depicts a section of seating with wavy lines emanating specifically from the left side. This icon is used to indicate that a heating function or warming element is available on one side of the seat. */
+_seat_heat_left = 'seat_heat_left',
+/** The image displays a stylized representation of a cushion or seat base with wavy lines emanating from its right side. This icon indicates that the seating surface includes an active heating function for warmth and comfort. */
+_seat_heat_right = 'seat_heat_right',
+/** A stylized person is depicted sitting in a seat while focused on reading material held up to their face. This icon typically signifies that the area allows for personal leisure time, such as reading or quiet reflection. */
+_seat_read = 'seat_read',
+/** The illustration shows a stylized section of seating furniture paired with an attached vent outlet on the left side. This symbol is used to indicate that the seat provides active cooling or ventilation features for enhanced comfort. */
+_seat_vent_left = 'seat_vent_left',
+/** The icon depicts an open slot cut into a solid horizontal surface. It signifies that there is a vent or air circulation outlet installed, commonly found on benches or fixed seating furniture. */
+_seat_vent_right = 'seat_vent_right',
+/** The icon depicts a stylized person seated next to an adjacent rectangular shape, representing a window. It indicates a window seat location, suggesting direct access to natural light and outdoor views in transportation seating arrangements. */
+_seat_window = 'seat_window',
+/** A solid, stylized shield is depicted with internal lines that visually quarter its surface. This icon represents protection and security, indicating that an item or system is safe, private, or protected against threats. */
+_security = 'security',
+/** The icon illustrates a compact, rectangular electronic device that resembles a modern key fob or access key. This symbol typically represents digital access control or smart security functions, such as unlocking doors or managing system credentials. */
+_security_key = 'security_key',
+/** The icon depicts three horizontal lines stacked vertically, often with varying lengths to suggest diminishing content. It commonly functions as a menu indicator for additional actions or "more options" related to an item or screen. */
+_segment = 'segment',
+/** The design depicts a symmetrical pattern of nine small, uniformly spaced dots arranged in a three-by-three grid formation. This icon typically signifies the capability to select multiple discrete points, options, or elements within an interface. */
+_select = 'select',
+/** The design conceptually suggests an enclosure, representing all contained elements as a single unit. This action allows users to highlight and manipulate every piece of data or item in a selection with one click. */
+_select_all = 'select_all',
+/** The icon depicts an empty square box containing a distinct checkmark mark inside it. This symbol is commonly used in user interfaces to indicate that an option has been selected or that a task has been successfully completed. */
+_select_check_box = 'select_check_box',
+/** The icon displays a stylized representation of a speaker cone with surrounding arcs suggesting emitted sound waves. It signifies the activation of voice command features, indicating that speech input is available for dictating text or controlling device functions. */
+_select_to_speak = 'select_to_speak',
+/** The icon depicts two rectangular shapes layered so that they partially overlap each other. This design typically represents the ability to manage multiple active windows, documents, or viewing panes simultaneously. */
+_select_window = 'select_window',
+/** The icon depicts two solid squares that overlap partially in the foreground. This commonly represents managing or viewing multiple documents, windows, or items simultaneously. */
+_select_window_2 = 'select_window_2',
+/** The design depicts two adjacent rectangular shapes, resembling overlapping documents or windows, marked by a diagonal strikethrough line. This icon is used to indicate that multiple view selections or window grouping functionality has been disabled or turned off. */
+_select_window_off = 'select_window_off',
+/** The icon depicts a magnifying glass next to an object styled like a roller or comb applicator. It commonly represents personal grooming, detailed skincare routines, or general acts of self-care and beauty examination. */
+_self_care = 'self_care',
+/** A stylized figure is shown seated with crossed legs, adopting the classic lotus meditation position. It typically signifies wellbeing, relaxation, and dedication to self-improvement practices. */
+_self_improvement = 'self_improvement',
+/** The design is a clean, stylized outline of a price or informational tag. It commonly indicates that an item is discounted, part of a special promotion, or available for sale. */
+_sell = 'sell',
+/** The icon visually combines a simple house silhouette with an adjacent cloud shape. It generally signifies connecting or adding internet-enabled services and smart technology to a residential setting. */
+_sell_cloud = 'sell_cloud',
+/** A simple, bold triangle shape that points directly to the right. This symbol is commonly used in digital interfaces to indicate action, such as sending a message or starting media playback. */
+_send = 'send',
+/** The icon visually suggests an item moving away from a source and into a defined container. This symbolizes successfully dispatching content while automatically filing it away for future reference or permanent record-keeping. */
+_send_and_archive = 'send_and_archive',
+/** The illustration depicts a right-pointing arrow enclosed within a curved, open circular path. This icon generally signifies the action of transferring or sending money from one party to another. */
+_send_money = 'send_money',
+/** The design shows two stacked, puzzle-piece shaped tabs that connect to a prominent right-pointing arrow. This icon generally represents sending data or completing a sequence of steps over an extended period of time. */
+_send_time_extension = 'send_time_extension',
+/** The icon literally depicts a simple rectangular shape representing a closed door, marked by a small dot near its edge. This symbol is commonly used to indicate an automated entrance that relies on sensors for opening or closing. */
+_sensor_door = 'sensor_door',
+/** The icon depicts a simplified human figure centered within an encompassing circular ring. It indicates that a sensor has successfully detected the presence of a user or object in that area. */
+_sensor_occupied = 'sensor_occupied',
+/** The icon depicts a bordered square outline segmented horizontally into two distinct panels. It generally symbolizes an integrated sensor window or tracking area on electronic input devices. */
+_sensor_window = 'sensor_window',
+/** The illustration features concentric curved lines radiating outward from a central point. It is commonly used to symbolize signal strength or the detection of various types of wireless transmissions, such as connectivity or sensor data. */
+_sensors = 'sensors',
+/** The icon depicts a circular symbol containing internal radiating lines or concentric arcs. This generally indicates that the system is actively sensing data, monitoring environmental conditions, or detecting input signals. */
+_sensors_krx = 'sensors_krx',
+/** The icon features a graphic of radiating curved lines, which are intersected by a diagonal slash mark. This universally indicates that wireless connectivity, such as Wi-Fi or Bluetooth, is currently disabled or unavailable. */
+_sensors_krx_off = 'sensors_krx_off',
+/** The icon depicts a diagonal line crossed by three curved radiating arcs, resembling a disabled signal strength symbol. It indicates that wireless connectivity, such as Wi-Fi or cellular data, is currently unavailable or intentionally turned off. */
+_sensors_off = 'sensors_off',
+/** The design is a simple circular outline of a face featuring closed eyes and a gentle smile. It typically signifies a state of peacefulness, contentment, or deep relaxation without intense emotion. */
+_sentiment_calm = 'sentiment_calm',
+/** The design is a simple line-art depiction of a person's face. It functions as a versatile symbol for communicating varied emotional states or general sentiment within digital conversations. */
+_sentiment_content = 'sentiment_content',
+/** The icon depicts a simple circular face outline with distinctly downturned eyebrows and a curved frown mouth. It is used to communicate feelings of disappointment, unhappiness, or general dissatisfaction. */
+_sentiment_dissatisfied = 'sentiment_dissatisfied',
+/** The design shows a simple circular face with wide eyes and an expansive smile. It is used in digital communication to express strong excitement, joy, or enthusiasm. */
+_sentiment_excited = 'sentiment_excited',
+/** The icon depicts a stylized face within a circle with deeply furrowed brows and a pronounced frown. It is used to convey feelings of intense displeasure, deep frustration, or extreme dissatisfaction. */
+_sentiment_extremely_dissatisfied = 'sentiment_extremely_dissatisfied',
+/** The design depicts a simple, circular face with features conveying distress or disappointment. This emoji is used to communicate feelings of frustration, stress, or being highly dissatisfied with a situation. */
+_sentiment_frustrated = 'sentiment_frustrated',
+/** The design depicts a basic circular face outline with simple dots for eyes and a straight line for the mouth. This emoticon represents emotional neutrality or indifference, suggesting that nothing has caused strong feelings of happiness or sadness. */
+_sentiment_neutral = 'sentiment_neutral',
+/** The drawing shows a basic face outline with a downturned mouth. This icon is used to indicate feelings of sadness, disappointment, or general unhappiness. */
+_sentiment_sad = 'sentiment_sad',
+/** The design depicts a simple outline of a face enclosed within a perfect circle, featuring two eyes and a pronounced smile. It is commonly used as an emoticon or symbol to indicate positive sentiment, contentment, or satisfaction with something. */
+_sentiment_satisfied = 'sentiment_satisfied',
+/** The design features a stylized circular face with distinctly furrowed eyebrows and a visibly distressed, downturned mouth. This icon is commonly used in digital communication to express feelings of stress, worry, or general discomfort. */
+_sentiment_stressed = 'sentiment_stressed',
+/** The icon depicts a round face with drooping eyebrows, squinched-up eyes, and a noticeably sad or unhappy mouth. It is used to express feelings of being extremely disappointed, miserable, or highly frustrated. */
+_sentiment_very_dissatisfied = 'sentiment_very_dissatisfied',
+/** The illustration depicts a simple, round face with a wide smile and upturned eyes. This symbol is used to convey strong emotions of great happiness or high satisfaction. */
+_sentiment_very_satisfied = 'sentiment_very_satisfied',
+/** The design shows a simplified face with drooping eyebrows and an open mouth that conveys distress. It is used to communicate feelings of worry, anxiety, or deep concern about a situation. */
+_sentiment_worried = 'sentiment_worried',
+/** The design features a large, bold capital letter A centered inside a square frame. In typography and formatting tools, this icon signifies the use of serif fonts, characterized by the small decorative lines attached to the ends of letters. */
+_serif = 'serif',
+/** The icon displays a simplified silhouette of a head and shoulders contained within a distinct, stylized shape. This symbol is generally used to represent an individual user profile, identifying the owner or specific account holder in a system. */
+_server_person = 'server_person',
+/** The design shows a compact, rectangular box resembling a portable toolbox or utility kit. It generally represents assistance, support services, or a comprehensive collection of necessary resources. */
+_service_toolbox = 'service_toolbox',
+/** The icon depicts stylized food items arranged on a rectangular plate or serving tray. It typically suggests the action of designing, configuring, or setting up all necessary elements for a complete meal. */
+_set_meal = 'set_meal',
+/** The icon literally depicts a mechanical gear or cogwheel with distinct teeth around its outer circumference. It is widely used across digital interfaces to indicate access to settings, options, and overall customization menus. */
+_settings = 'settings',
+/** A stylized pictogram of a person stands above three dots, suggesting additional options are available. It typically indicates settings that allow users to adjust the interface or functionality for enhanced accessibility. */
+_settings_accessibility = 'settings_accessibility',
+/** The illustration depicts a gear mechanism overlapping a rectangular box containing a stylized human silhouette. This combined symbol universally represents accessing personalized settings or managing account configuration within an application or system. */
+_settings_account_box = 'settings_account_box',
+/** The icon depicts a stylized gear shape surrounding an exclamation mark at its core. It generally signals that there is a system warning or important notification concerning configuration or operating settings. */
+_settings_alert = 'settings_alert',
+/** The icon is a simple, bold outline of a cogwheel centered within a solid square container. This symbol commonly indicates access to system configuration options or application management panels. */
+_settings_applications = 'settings_applications',
+/** The design features interlocking gears paired with a spanner wrench, symbolizing mechanical adjustment and functionality. It is commonly used to denote system settings, configuration menus, or tools for customization and troubleshooting. */
+_settings_b_roll = 'settings_b_roll',
+/** The icon depicts an arrow forming a continuous loop around a central point. This symbol generally indicates that an action is cycling, such as restoring saved information or refreshing content entirely. */
+_settings_backup_restore = 'settings_backup_restore',
+/** The design features a stylized, curved shape that represents Bluetooth signal transmission. This icon is used in settings menus to manage the status and connection of nearby wireless devices. */
+_settings_bluetooth = 'settings_bluetooth',
+/** The icon visually depicts an aperture or iris mechanism inside a square frame. It is used to indicate controls for adjusting brightness or camera exposure within settings menus. */
+_settings_brightness = 'settings_brightness',
+/** The design illustrates a mechanical gear combined with an adjacent adjusting tool or wrench component. This icon is used to signify system settings, configuration menus, or access points for technical adjustments. */
+_settings_cinematic_blur = 'settings_cinematic_blur',
+/** The design features symmetrical angled delimiters surrounding internal ellipses. This symbol is commonly used to indicate a generic code snippet, a data field, or a placeholder for structured variables. */
+_settings_ethernet = 'settings_ethernet',
+/** The icon literally depicts a gear or cogwheel structure surrounding a central heart symbol. It is commonly used to represent personalized settings, emotional configurations, or relationship preferences within an application. */
+_settings_heart = 'settings_heart',
+/** The icon depicts several curved lines radiating outward from a central point, symbolizing an active transmission signal. It is used to represent wireless connectivity and typically indicates the ability to manage network or Wi-Fi settings within an application. */
+_settings_input_antenna = 'settings_input_antenna',
+/** The icon depicts three simple, identical vertical shapes arranged side by side that resemble generic data plugs or electrical connectors. This symbol is typically used within software interfaces to represent connection settings, input options, or general hardware configuration menus. */
+_settings_input_component = 'settings_input_component',
+/** The icon depicts a rectangular, standardized digital video or audio plug connector. It is used to represent the connection of an external source device, such as a monitor or projector, within system settings. */
+_settings_input_hdmi = 'settings_input_hdmi',
+/** The design shows a main circle containing several smaller, symmetrically arranged dots. This icon generally indicates accessing various physical inputs or general device control settings. */
+_settings_input_svideo = 'settings_input_svideo',
+/** The design depicts a complex cogwheel mechanism with visible teeth. It is generally used to signify technical settings, configuration options, or the adjustment of underlying system parameters. */
+_settings_motion_mode = 'settings_motion_mode',
+/** The design features a standard gear combined with a crescent shape that suggests darkness or nighttime viewing. It is used to indicate access to specific adjustments for low-light photography or general system themes. */
+_settings_night_sight = 'settings_night_sight',
+/** The icon depicts a large outer rectangle surrounding a smaller, centered inner frame with adjustment markers at its corners. It typically represents the ability to adjust visible boundaries or screen scaling, such as controlling overscan settings for video playback or media viewing. */
+_settings_overscan = 'settings_overscan',
+/** The icon depicts a cogwheel mechanism integrated with an adjustable tool element, resembling a large wrench or caliper. It typically represents access to deep system settings, comprehensive tools, or advanced maintenance configurations for the entire application. */
+_settings_panorama = 'settings_panorama',
+/** The icon depicts a classic telephone handset receiver used for making calls. It generally indicates telephony functions such as accessing contacts, dialing numbers, or viewing call settings. */
+_settings_phone = 'settings_phone',
+/** The icon depicts a mechanical gear overlaid on top of a camera graphic. It signifies that you can access or adjust the operational settings and controls for photography features. */
+_settings_photo_camera = 'settings_photo_camera',
+/** The icon depicts a circle with a vertical line segment extending from the top right, forming the universally recognized power symbol. This symbol indicates general power functions, such as turning a device on or off, or accessing settings related to electrical operation. */
+_settings_power = 'settings_power',
+/** The design consists of a vertical rectangular shape topped with several curved lines. It is commonly used in user interfaces to represent signal strength or wireless network settings, such as Wi-Fi connectivity status. */
+_settings_remote = 'settings_remote',
+/** The image depicts a mechanical cogwheel alongside an adjustable wrench element. This combination is commonly used across digital interfaces to signify system settings, tools, or customization options. */
+_settings_screen = 'settings_screen',
+/** The design shows a simple outline of a standard chair. It is typically used in settings menus or interfaces to represent accommodations, seating availability, or related options within a service environment. */
+_settings_seating = 'settings_seating',
+/** The icon features a gear mechanism integrated with a circular loading indicator. This combination typically signifies that settings are being loaded, adjusted, or processed in a slow or delayed manner. */
+_settings_slow_motion = 'settings_slow_motion',
+/** The design shows a stylized cloud shape centered within a solid square border. It commonly signifies system synchronization, connectivity status, or background processes running while the device is idle. */
+_settings_system_daydream = 'settings_system_daydream',
+/** The icon features a gear mechanism combined with circular arrows suggesting continuous motion. It is generally used to indicate active processing, loading states, or systematic background maintenance within settings. */
+_settings_timelapse = 'settings_timelapse',
+/** The icon depicts a video camera combined with a gear mechanism, suggesting tools and settings. It is commonly used to access configuration options for managing the device's camera functions. */
+_settings_video_camera = 'settings_video_camera',
+/** The icon is a stylized depiction of a classic directional microphone. It indicates options related to recording voice or managing overall audio settings within an application. */
+_settings_voice = 'settings_voice',
+/** The design is a simple, solid rectangular module representing a connected component. This typically indicates power availability, such as charging status or an integrated source for electronic devices. */
+_settop_component = 'settop_component',
+/** The design depicts a large, stylized crystalline snowflake with multiple radiating points. It is used to warn users about cold weather conditions or potential freezing temperatures. */
+_severe_cold = 'severe_cold',
+/** The design shows two stylized vertical panels resembling drawn curtains or window shades. This icon typically suggests the concept of privacy, indicating that content or information is currently hidden or restricted from viewing. */
+_shades = 'shades',
+/** The design features three parallel vertical strips with a decorative, scalloped base. This icon commonly indicates that content is private, restricted, or covered up like drawn curtains. */
+_shades_closed = 'shades_closed',
+/** The design features two overlapping, solid black rectangles stacked vertically and offset from each other. This common graphical motif is used to visually suggest a shadow effect, thereby creating a sense of depth or indicating a duplicate copy of an object. */
+_shadow = 'shadow',
+/** The icon depicts two partially overlapped rectangular blocks, with the upper block featuring a large plus sign positioned centrally within it. It is a common user interface symbol used to denote the ability to add new items, create records, or append data to a collection. */
+_shadow_add = 'shadow_add',
+/** The icon depicts a stack of overlapping rectangular shapes, suggesting multiple files or documents layered together. It generally indicates reducing the number of items in a set, decrementing a count, or removing an element from a group. */
+_shadow_minus = 'shadow_minus',
+/** The icon illustrates a path tracing from an initial large circle, moving diagonally through connected dots to terminate at a solid square. It typically signifies monitoring status, signal strength detection, or the transmission of data across a network connection. */
+_shape_line = 'shape_line',
+/** The design features a large circle connected to a smaller, adjacent geometric shape. This symbol generally indicates formatting controls or editing functions within a text document, typically representing the ability to strike through text. */
+_shapes = 'shapes',
+/** The design shows three interconnected circles forming a branching, open 'V' shape. This icon is used to symbolize the process of distributing content or connecting information to multiple people or platforms simultaneously. */
+_share = 'share',
+/** The design depicts a stylized circular clock face surrounded by curved arcs that suggest movement or broadcast. It is commonly used to indicate when an estimated time of arrival will be shared with others. */
+_share_eta = 'share_eta',
+/** The design features a stylized teardrop-shaped marker centered within several radiating, concentric rings. It is used universally to indicate precise geographical positioning, typically signifying the sharing of one's current location on a map. */
+_share_location = 'share_location',
+/** The icon depicts a curved pathway connecting to several circular nodes, symbolizing an outgoing connection or broadcast signal. The prominent cross mark indicates that the function of sharing or distributing content is currently disabled or canceled. */
+_share_off = 'share_off',
+/** The design features a speech bubble containing a standard sharing graphic made of three connected nodes. This combination symbolizes distributing conversational content, making it ideal for sharing reviews or testimonials with others. */
+_share_reviews = 'share_reviews',
+/** The design shows an arrow pointing right emerging from a bordered square shape. This icon commonly indicates the action of sharing content or exporting data outside of its current location. */
+_share_windows = 'share_windows',
+/** The design depicts a dessert composition with visible layers and mounds of topping served in a simple bowl. It is typically used to represent sweet, cold treats like ice cream, parfaits, or other refreshing desserts. */
+_shaved_ice = 'shaved_ice',
+/** The icon visually combines a structured grid pattern with directional cues, suggesting data or tabular content. This symbol indicates that the associated document or display should be viewed using a right-to-left orientation, which is necessary for languages like Arabic or Hebrew. */
+_sheets_rtl = 'sheets_rtl',
+/** The design illustrates a partially visible bar or dock with an indicator showing its potential collapse. This feature controls whether the system taskbar automatically hides itself to maximize screen real estate while still being easily accessible when needed. */
+_shelf_auto_hide = 'shelf_auto_hide',
+/** The design is a large rectangular shape segmented horizontally into three distinct, stacked bars or shelves. This symbolizes organized content management, representing multiple sections of information or items placed in sequence or categories. */
+_shelf_position = 'shelf_position',
+/** The icon depicts a simple, vertical shelving unit with multiple stacked horizontal levels. It is commonly used to represent general storage capacity or organized inventory display. */
+_shelves = 'shelves',
+/** The design is a simple, symmetrical shield shape. It is widely used across digital interfaces to symbolize overall security, protection, or the safeguarding of private information. */
+_shield = 'shield',
+/** The icon depicts a stylized shield partially overlapping a rectangular shape that resembles a card. It is used to signify that data, membership details, or payment information are secured by encryption or strong protection. */
+_shield_card = 'shield_card',
+/** The design features a protective shield shape surrounding a closed padlock graphic. This symbol is universally understood to signify strong security, indicating that content or information is private and safely protected by encryption. */
+_shield_lock = 'shield_lock',
+/** The design combines a stylized shield with a padlock symbol attached to it. This icon commonly signifies that information, connections, or systems are secure, private, and protected by encryption. */
+_shield_locked = 'shield_locked',
+/** The design shows a stylized shield encompassing a crescent moon. This icon commonly indicates "Do Not Disturb" settings, symbolizing privacy and protection while the user is sleeping or resting. */
+_shield_moon = 'shield_moon',
+/** The icon depicts a shield surrounding a stylized human figure. It symbolizes personal safety and privacy, indicating that an individual user or piece of data is protected by security measures. */
+_shield_person = 'shield_person',
+/** The design features a stylized shield shape containing a large question mark symbol at its center. This icon generally indicates an unresolved security concern, prompting the user to review potential privacy issues or required verification steps. */
+_shield_question = 'shield_question',
+/** The icon is composed of a shield shape enclosing a circular radar sweep graphic. It typically signifies secure detection or active protection that monitors for threats and signals. */
+_shield_radar = 'shield_radar',
+/** The design shows a shield containing two stacked switch controls. This icon typically indicates that multiple security features can be independently activated or deactivated by the user. */
+_shield_toggle = 'shield_toggle',
+/** The design depicts a protective shield encompassing a circular element resembling a timepiece or keyhole lock. This icon symbolizes comprehensive security, suggesting that data or physical assets are protected by advanced safeguards and encryption methods. */
+_shield_watch = 'shield_watch',
+/** The icon depicts a strong, protective shield surrounding an open heart symbol. This graphic commonly represents secure emotional connections, safeguarding personal data, or overall trustworthy protection. */
+_shield_with_heart = 'shield_with_heart',
+/** The icon features a protective shield that encloses a simple outline of a house or roof structure. It is commonly used to symbolize security, protection, or safety related to a home or residential property. */
+_shield_with_house = 'shield_with_house',
+/** The icon is a solid, thick arrow pointing vertically upward. It commonly serves as a directional indicator showing upward movement or advancing to higher sections of content. */
+_shift = 'shift',
+/** The icon depicts a prominent upward-pointing arrow situated atop a solid horizontal base line. It typically indicates an action of increasing, moving up, or activating a locked state by shifting focus upwards. */
+_shift_lock = 'shift_lock',
+/** The design features a diagonal slash striking across an angular triangular shape. This symbol is generally used to indicate that a feature, lock, or setting has been disabled or turned off. */
+_shift_lock_off = 'shift_lock_off',
+/** The design illustrates a side profile of athletic footwear, showing the structured sole where traction is needed most. It signifies superior grip and performance required when playing sports on fields or turf. */
+_shoe_cleats = 'shoe_cleats',
+/** The icon depicts a solid square container with a centered, forward-pointing triangle within it. It universally signifies "play," indicating that the associated item is playable media, such as a video file or stream. */
+_shop = 'shop',
+/** The icon depicts an outline of a briefcase containing a prominent triangular play button in its center. It typically signifies accessing, managing, or exporting video content related to professional projects or business portfolios. */
+_shop_two = 'shop_two',
+/** The icon is a simple, stylized representation of a paper or cloth shopping bag with handles. It commonly signifies commerce, purchases, or the completion of an online transaction. */
+_shopping_bag = 'shopping_bag',
+/** The icon depicts a stylized shopping bag emitting several rapid horizontal lines from its side. This generally signifies quick checkout, speedy transactions, or efficient movement of goods during the shopping process. */
+_shopping_bag_speed = 'shopping_bag_speed',
+/** The illustration depicts an open, curved container with implied handles and a single solid circle placed within its base. This icon commonly represents items added to a virtual shopping cart or checkout list. */
+_shopping_basket = 'shopping_basket',
+/** The design depicts an outline of a classic wheeled shopping cart or trolley. This symbol is commonly used in digital contexts to represent the process of collecting items for purchase or proceeding to checkout. */
+_shopping_cart = 'shopping_cart',
+/** The design is a simple illustration of an empty shopping cart or trolley. It indicates that the user has finished selecting items and is ready to proceed with checkout or payment. */
+_shopping_cart_checkout = 'shopping_cart_checkout',
+/** The design depicts a stylized outline of a shopping cart with a diagonal line crossing through it. This icon typically signifies the ability to remove an item, cancel a purchase, or indicate that a shopping function is disabled. */
+_shopping_cart_off = 'shopping_cart_off',
+/** The icon depicts a stylized shape resembling a shopping bag with an added marker point. It is commonly used in e-commerce interfaces to signify purchasing options, special deals, or items that are available for purchase. */
+_shoppingmode = 'shoppingmode',
+/** The icon depicts a rectangular card placed next to an analog clock face. This combination is used to symbolize a limited timeframe, such as a brief visit or temporary access period. */
+_short_stay = 'short_stay',
+/** The icon displays a short horizontal squiggle that visually resembles an equals sign. It is commonly used to denote mathematical equality, or alternatively, to function as a separator rule when formatting text. */
+_short_text = 'short_text',
+/** The icon shows a continuous, wavy line that moves generally upward from left to right. It typically represents positive growth or an overall improvement in metrics over time. */
+_show_chart = 'show_chart',
+/** The icon depicts a smoothly curved dome suspended over several stylized falling water drops. This symbol is commonly used to represent bathing, cleansing rituals, or general refreshment like rain. */
+_shower = 'shower',
+/** The design features two crossed arrows pointing outward at an angle. It typically indicates a shuffle function, meaning that items or content will be played or displayed in a randomized order. */
+_shuffle = 'shuffle',
+/** Two diagonal arrows cross in an 'X' pattern, pointing outward from each other. This symbol indicates a randomizing function or mixing action, typically used to shuffle content like songs or data unpredictably. */
+_shuffle_on = 'shuffle_on',
+/** The icon is a circular mechanism constructed of overlapping segments that resemble an aperture or camera shutter. It represents the timing controls used in photography to determine how long the camera sensor is exposed to light. */
+_shutter_speed = 'shutter_speed',
+/** The design features a segmented circular element, reminiscent of an aperture or gauge, with a prominent plus sign placed beneath it. This icon is used to increase time-based settings, such as extending the shutter speed in camera controls. */
+_shutter_speed_add = 'shutter_speed_add',
+/** The design shows a circular dial indicator paired with a minus sign. This control is used in photography settings to decrease the shutter speed, allowing for longer or shorter photo exposures. */
+_shutter_speed_minus = 'shutter_speed_minus',
+/** The illustration shows a simple, rounded head outline with drooping facial features. It is commonly used to indicate sickness, general malaise, or a feeling of deep dissatisfaction. */
+_sick = 'sick',
+/** The illustration features a square that is vertically divided into two distinct panels, with one section being solid black and the other being solid white. This pattern typically indicates a sidebar or persistent menu that users can navigate to within an application interface. */
+_side_navigation = 'side_navigation',
+/** The design features several stylized hands clustered together in a dynamic gesturing pose. This icon is typically used to represent sign language or any form of hand communication and gesture. */
+_sign_language = 'sign_language',
+/** The icon depicts two stylized hands making a gesture that is crossed out by a diagonal line. This symbol indicates the option to disable or turn off integrated sign language features within an application. */
+_sign_language_off = 'sign_language_off',
+/** The design is a solid, upward-pointing triangular graphic. It commonly indicates that there is no cellular service or detectable wireless signal in the current area. */
+_signal_cellular_0_bar = 'signal_cellular_0_bar',
+/** The icon is depicted as a solid, angular triangular segment pointing upwards and to the right. This symbol commonly indicates that the cellular connection has reached a limited or moderate level of strength. */
+_signal_cellular_1_bar = 'signal_cellular_1_bar',
+/** The icon is designed as a triangle containing two distinct vertical signal bars. It universally indicates the current level of wireless connectivity or signal strength available in an area. */
+_signal_cellular_2_bar = 'signal_cellular_2_bar',
+/** The design features three vertical segments of increasing height to represent signal intensity. This icon indicates the current cellular or wireless connection strength, suggesting a moderate but stable service level. */
+_signal_cellular_3_bar = 'signal_cellular_3_bar',
+/** It depicts four distinct, curved vertical bars arranged in ascending size. This symbol is commonly used across technology interfaces to measure the strength of a wireless connection, such as cellular service or Wi-Fi signal quality. */
+_signal_cellular_4_bar = 'signal_cellular_4_bar',
+/** The icon depicts a plus sign combined with an upward-pointing arrow or triangle. It generally signifies an additive increase, growth, or positive movement in value or quantity. */
+_signal_cellular_add = 'signal_cellular_add',
+/** The icon displays a set of vertically arranged bars. It is typically used to measure and display the current strength or quality level of a cellular network connection. */
+_signal_cellular_alt = 'signal_cellular_alt',
+/** The design features the conventional indicator used for mobile phone signal strength, showing one solid bar within the typical series of slots. It signifies that the device has an active connection to a cellular network at a reduced or partial level. */
+_signal_cellular_alt_1_bar = 'signal_cellular_alt_1_bar',
+/** The image displays two short, stacked vertical lines of varying heights. It is commonly used to indicate that the device has an average or moderate level of cellular signal strength. */
+_signal_cellular_alt_2_bar = 'signal_cellular_alt_2_bar',
+/** The design features signal strength bars overlaid with a diagonal strike-through line. This indicates that network connectivity, such as cellular or Wi-Fi service, has been manually disabled or is currently unavailable. */
+_signal_cellular_alt_off = 'signal_cellular_alt_off',
+/** The icon visually presents several ascending vertical bars, representing available cellular reception strength. It signals that while the device is connected to a mobile network, full internet data service or connectivity is currently unavailable. */
+_signal_cellular_connected_no_internet_0_bar = 'signal_cellular_connected_no_internet_0_bar',
+/** The icon depicts a warning triangle positioned next to elements that represent cellular signal strength. This commonly indicates that the device has enough basic service for phone calls or texting, but data connectivity and internet access are not available. */
+_signal_cellular_connected_no_internet_4_bar = 'signal_cellular_connected_no_internet_4_bar',
+/** The design depicts standard signal strength indicator bars overlaid with a prominent 'X'. This symbol is commonly used in applications to communicate that no cellular service, network connection, or data signal is available. */
+_signal_cellular_nodata = 'signal_cellular_nodata',
+/** The icon is rendered as an empty or incomplete triangle pointing upward. It typically indicates the status of a cellular connection when no active signal or service is available. */
+_signal_cellular_null = 'signal_cellular_null',
+/** It features the standard graphic used to represent mobile network signals overlaid with a prohibitive cross mark. This icon signifies that the device's cellular radio connection has been disabled or is currently unavailable. */
+_signal_cellular_off = 'signal_cellular_off',
+/** The design illustrates partial vertical bars, commonly used to represent cellular network signal strength. This icon typically indicates that mobile connectivity is temporarily paused, unavailable, or experiencing a service interruption. */
+_signal_cellular_pause = 'signal_cellular_pause',
+/** The design features multiple curved arcs, typical of wireless signals, which are prominently intersected by a diagonal cross. This visual element is universally used to denote that the device has no cellular or Wi-Fi connection available. */
+_signal_disconnected = 'signal_disconnected',
+/** The design is a simple, unfilled diamond outline shape. It indicates that the current wireless signal strength is at zero bars or cannot be detected. */
+_signal_wifi_0_bar = 'signal_wifi_0_bar',
+/** The design shows four curved bars arranged vertically, which is the universally recognized symbol for wireless internet signals. It indicates the current strength and quality of a Wi-Fi connection, helping users assess their overall network availability. */
+_signal_wifi_4_bar = 'signal_wifi_4_bar',
+/** The image depicts a partially formed, curved signal wave with a distinct 'X' crossing through it. This symbol is commonly used to indicate that wireless connectivity is either unavailable or critically weak. */
+_signal_wifi_bad = 'signal_wifi_bad',
+/** The icon depicts a stylized signal wave shape, which is marked with a prominent diagonal line crossing through it. This symbol universally indicates that wireless connectivity or signals are currently turned off or unavailable. */
+_signal_wifi_off = 'signal_wifi_off',
+/** The design combines the curved arc of a signal icon with a prominent question mark. This typically signifies that a connection is unavailable, unknown, or cannot be determined at this time. */
+_signal_wifi_statusbar_not_connected = 'signal_wifi_statusbar_not_connected',
+/** The design is a simple outline of an inverted triangle shape. This icon generally indicates a status related to wireless connectivity, such as Wi-Fi strength or network availability. */
+_signal_wifi_statusbar_null = 'signal_wifi_statusbar_null',
+/** The icon depicts a sweeping, curved line that mimics personalized handwriting or calligraphy. It functions as a visual marker to indicate an authorized signature, suggesting agreement, validation, or final approval. */
+_signature = 'signature',
+/** The icon depicts a vertical post supporting two stacked directional arrows of varying lengths. It generally symbolizes decision points, multiple paths, or various directions one might need to consider while navigating. */
+_signpost = 'signpost',
+/** The design depicts a rectangular chip featuring specific internal slots or cutouts. It symbolizes mobile connectivity and personal device identification. */
+_sim_card = 'sim_card',
+/** The icon is a stylized document container with a prominent downward-pointing arrow positioned beneath it. This design typically indicates that content is being downloaded, retrieved, or transferred into the system. */
+_sim_card_download = 'sim_card_download',
+/** The design depicts a stylized silhouette of a person enclosed between two clean, vertical rectangular bars. This icon typically signifies the controlled modeling of a user role or persona within an environment, suggesting that a simulation is running with defined boundaries and variables. */
+_simulation = 'simulation',
+/** The icon depicts a simple, stylized outline of a rectangular piece of furniture that represents a bed. It is commonly used in contexts related to hotels, lodging, or general accommodation services. */
+_single_bed = 'single_bed',
+/** The icon shows the capitalized letters S-I-P displayed prominently within a defined rectangular frame. This acronym refers to the Session Initiation Protocol, which is widely used for setting up and managing real-time communication sessions, such as Voice over IP (VoIP) calls. */
+_sip = 'sip',
+/** The icon depicts a smooth, rounded dome mounted on a solid rectangular base. It commonly represents an emergency warning, alert, or urgent notification sound. */
+_siren = 'siren',
+/** The design features a stylized padlock outline combined with a prominent checkmark enclosed in a circle. It generally signifies that a connection, setting, or process has been successfully verified and is secure. */
+_siren_check = 'siren_check',
+/** A stylized padlock is depicted in an open position, often accompanied by a directional arrow suggesting release. It commonly indicates that protective measures have been disabled or that restricted access has been granted. */
+_siren_open = 'siren_open',
+/** The design features a stylized padlock symbol coupled with a prominent question mark icon. This generally indicates uncertainty or a required clarification concerning security protocols, access rights, or data encryption status. */
+_siren_question = 'siren_question',
+/** The icon depicts a simplified human figure standing atop a horizontal board. Its limbs are extended in a stride, suggesting active motion while riding the plank. This symbol typically represents skateboarding or engaging in general recreational board sports. */
+_skateboarding = 'skateboarding',
+/** The design shows a stylized drawing of the torso and skeletal framework, including the spine and rib cage. It generally symbolizes human anatomy or biological structure. */
+_skeleton = 'skeleton',
+/** A simple drawing illustrates a frying pan with wavy lines rising above it, suggesting freshly cooked food or steam. This icon is used to represent general cooking activities, hot meals, or stovetop meal preparation. */
+_skillet = 'skillet',
+/** The design shows a cooking skillet placed upon a stylized stovetop burner element. This icon typically symbolizes culinary themes, kitchen functions, or general food preparation activities in an app. */
+_skillet_cooktop = 'skillet_cooktop',
+/** The icon visually depicts a right-pointing play symbol adjacent to a vertical separator line. It is universally recognized as a control used in media players to skip forward to the next song, video segment, or piece of content. */
+_skip_next = 'skip_next',
+/** The icon visually depicts an arrow pointing to the left, separated by a vertical line. This symbol is used in audio or video players to quickly skip back to the previous track or segment of media content. */
+_skip_previous = 'skip_previous',
+/** A stylized outline depicts the cranium, eye sockets, and jaw structure of a human skull. This icon is commonly used to represent skeletal remains, biological specimens, or themes related to mortality and ancestry. */
+_skull = 'skull',
+/** The design consists of a simple silhouette of a human skull positioned next to three parallel horizontal lines. It typically signals critical warnings, hazardous materials, or lists containing highly restricted information. */
+_skull_list = 'skull_list',
+/** The icon depicts a prominent uppercase letter A set within a contained square frame. This symbol is used in digital interfaces to indicate access to typography or typeface selection settings. */
+_slab_serif = 'slab_serif',
+/** The illustration depicts a stylized figure seated on an accessible, sled-like mobility platform. This symbolizes inclusive outdoor recreation and the enjoyment of downhill sliding activities for all abilities. */
+_sledding = 'sledding',
+/** The illustration depicts a stylized crescent moon paired with an attached curved indicator line. This iconography is typically used to represent monitoring rest patterns, such as scoring overall sleep quality or measuring progress over time. */
+_sleep_score = 'sleep_score',
+/** The design features a series of nested or adjacent rectangular elements contained within a single frame. It typically represents a comprehensive collection of visual content, such as slides or presentations stored in a digital library. */
+_slide_library = 'slide_library',
+/** The design is a smooth, solid horizontal band shaped like a rounded rectangle. It commonly serves as a visual toggle switch or status indicator in user interfaces. */
+_sliders = 'sliders',
+/** The icon displays a right-pointing triangle enclosed within a solid square frame. This common symbol universally indicates playback, signaling the user to start viewing a sequence of images or videos in a slideshow format. */
+_slideshow = 'slideshow',
+/** The design features a right-pointing triangle enclosed within an incomplete circular ring. It signifies that video content can be viewed or recorded at a reduced speed, allowing for detailed analysis of action. */
+_slow_motion_video = 'slow_motion_video',
+/** The icon depicts a solid base structure that incorporates an integrated card slot mechanism. It signifies the system's ability to read and process identification or access credentials from physical smart cards or chips. */
+_smart_card_reader = 'smart_card_reader',
+/** The design shows a rectangular area, symbolizing where a smart card or chip would be inserted or scanned. This universal crossed-out symbol indicates that the reader function is currently disabled or unavailable. */
+_smart_card_reader_off = 'smart_card_reader_off',
+/** The design depicts a simple, squared frame containing an internal triangle pointing to the right. This symbol universally indicates the ability to initiate or resume media playback, such as starting a video on a smart display system. */
+_smart_display = 'smart_display',
+/** The icon is drawn within a circle, depicting two parallel vertical slots that represent an electrical wall outlet. It commonly signifies a smart or connected power source integrated into modern, automated home systems. */
+_smart_outlet = 'smart_outlet',
+/** This design is a minimalist, blocky profile of a face or character's bust. It typically denotes smart devices, automation capabilities, or intelligent interaction through play. */
+_smart_toy = 'smart_toy',
+/** The icon features a file directory symbol that encloses a clean cloud graphic. This signifies that the files contained within can be synced, shared, or accessed remotely through cloud services. */
+_smb_share = 'smb_share',
+/** The icon features a stylized plume of smoke that is crossed out by a thick diagonal line. This symbol universally indicates that the area or location is strictly designated as smoke-free for health and safety compliance. */
+_smoke_free = 'smoke_free',
+/** The design shows a thick horizontal line with wavy lines of smoke visibly rising from its end. While literally depicting smoke and potential smoking activity, this icon is commonly used in signage or interfaces to indicate the presence of smoke or related air quality status. */
+_smoking_rooms = 'smoking_rooms',
+/** The design is a simple, rounded speech bubble with a pointed tail extending from the bottom left corner. This universally recognized symbol represents text-based communication, such as sending or receiving short messages. */
+_sms = 'sms',
+/** This illustration depicts a creature with a prominent coiled shell structure attached to a trailing body shape. It is commonly used metaphorically to symbolize slowness, patience, or steady, gradual progress over time. */
+_snail = 'snail',
+/** The design is an outline of a stylized digital folder icon. It typically symbolizes a repository for smaller, related pieces of information, such as notes or code snippets. */
+_snippet_folder = 'snippet_folder',
+/** The design features a prominent letter Z centered within a circular outline. It is commonly used to represent the act of pausing, resting briefly, or delaying an alert or scheduled activity. */
+_snooze = 'snooze',
+/** A simplified figure is shown gliding across a curved base in a dynamic stance. This icon represents participation in snowboarding or other downhill winter recreational sports. */
+_snowboarding = 'snowboarding',
+/** The design depicts a symmetrical, crystalline shape with multiple radiating arms. This symbol is commonly used to represent snowfall, cold temperatures, or general winter weather conditions. */
+_snowflake = 'snowflake',
+/** The design consists of multiple small black dots scattered over the surface in a loose pattern. This icon typically symbolizes snowfall, indicating cold weather or precipitation. */
+_snowing = 'snowing',
+/** The design consists of numerous small, randomly scattered dots covering the entire area. This icon typically symbolizes heavy snowfall or severe signal interference, indicating a loss of clarity or connection. */
+_snowing_heavy = 'snowing_heavy',
+/** The illustration depicts a streamlined, motorized recreational vehicle equipped with skis at both ends. This symbol is typically used to represent activities associated with winter sports or travel over deep snow. */
+_snowmobile = 'snowmobile',
+/** The design depicts a simplified human figure in motion, wearing large, wide foot attachments suitable for traversing deep or snowy ground. This icon generally indicates winter recreational activity or movement through snow-covered wilderness areas. */
+_snowshoeing = 'snowshoeing',
+/** The image shows a stylized representation of an open hand, often depicted in a washing gesture. This icon is generally used to symbolize cleanliness, personal care, or the act of washing hands with soap. */
+_soap = 'soap',
+/** The design shows a wide bowl filled with coiled strands, typically representing noodles. It is commonly used to categorize Japanese soba noodle dishes or other types of Asian meals served in a restaurant setting. */
+_soba = 'soba',
+/** The design features two simple stick figures separated by a horizontal double-headed arrow. It commonly indicates required personal space or physical separation between people in public settings. */
+_social_distance = 'social_distance',
+/** The image is an emblem formed by a V-shaped structure connecting to a central circular badge that contains a prominent star. It is used to indicate status, high achievement, or superior ranking within a social group or competition. */
+_social_leaderboard = 'social_leaderboard',
+/** The image shows a segmented rectangular array beneath radiating lines that symbolize sunlight or energy capture. This icon is widely used to represent solar power, clean energy sources, and sustainable technology. */
+_solar_power = 'solar_power',
+/** A simplified figure sits at a surface with an accompanying bowl or dish placed before them. This symbol commonly indicates the act of dining alone, representing solo meals like breakfast, cafe visits, or quiet moments enjoying a cup of soup. */
+_solo_dining = 'solo_dining',
+/** The design consists of multiple parallel horizontal lines stacked together in varying lengths. This icon typically signifies the ability to sort, arrange, or organize content within a list or dataset by various criteria. */
+_sort = 'sort',
+/** The design displays the capital letters A and Z arranged horizontally with directional markers between them. This symbol is used to indicate that a list of items can be sorted or filtered in alphabetical order. */
+_sort_by_alpha = 'sort_by_alpha',
+/** The illustration features three distinct, large capitalized block letters arranged side by side. This sequence of characters serves as a universally recognized signal used to communicate urgent help or distress during an emergency. */
+_sos = 'sos',
+/** A stylized dog figure is shown accompanied by graphic elements suggesting barking or a loud noise. This icon generally signifies features related to audio detection, noise monitoring, or sound alerts within an application. */
+_sound_detection_dog_barking = 'sound_detection_dog_barking',
+/** The design shows a sharp, angular line segment contained within a square frame that rises steeply and then curves downwards. It is commonly used to indicate active monitoring, event detection, or alerts regarding environmental changes like breakage. */
+_sound_detection_glass_break = 'sound_detection_glass_break',
+/** The icon depicts a megaphone emitting concentric curved lines that symbolize radiating sound waves. It is typically used to indicate a loud announcement, an alert, or the detection of significant noise. */
+_sound_detection_loud_sound = 'sound_detection_loud_sound',
+/** The icon visually depicts a right-pointing triangle nestled inside a complete circle. It generally signifies starting playback or initiating an audio capture process, such as sampling sound. */
+_sound_sampler = 'sound_sampler',
+/** This design is a horizontal block featuring multiple circular connection points arranged along its length. It typically signifies an integrated external unit used to enhance audio output for home entertainment systems. */
+_soundbar = 'soundbar',
+/** The icon depicts a stylized cooking pot from which wavy steam plumes are visibly rising. It is commonly used to symbolize soup, hot meals, or general culinary activities. */
+_soup_kitchen = 'soup_kitchen',
+/** The design features a vertical stack of modules positioned next to a large, organized rectangular panel. This structure typically represents different data sources or environments that are being managed, connected, or integrated within a system. */
+_source_environment = 'source_environment',
+/** The icon displays a sheet of paper with placeholder lines next to a circular refresh arrow symbol. It generally signifies accessing, reviewing, or refreshing source notes, allowing users to revisit original documentation or associated data. */
+_source_notes = 'source_notes',
+/** A simple, solid geometric shape depicts a single arrow pointing directly downward. This symbol typically indicates scrolling to lower content, an expansion of details, or a directional decline. */
+_south = 'south',
+/** The icon depicts a solid black silhouette of the continent of South America enclosed within a circular border. This symbol is used to designate content, services, or information that pertains specifically to this vast geographical region. */
+_south_america = 'south_america',
+/** The icon depicts an arrowhead angled diagonally from top-left towards bottom-right. It is commonly used in user interfaces or flowcharts to indicate forward movement, progression, or direction toward the southeast. */
+_south_east = 'south_east',
+/** The icon is an arrowhead pointing diagonally upward and to the left, indicating a northwest direction. It typically suggests returning to a previous page or moving backward within a sequence of information. */
+_south_west = 'south_west',
+/** The icon depicts a stylized cluster of overlapping leaves arranged together. It commonly symbolizes themes related to nature, growth, sustainability, or natural wellness. */
+_spa = 'spa',
+/** The icon depicts a wide, horizontally elongated bar with distinct open ends. This symbol represents the space character or "space bar" key used to separate words when typing text. */
+_space_bar = 'space_bar',
+/** The design literally shows a large outer square that has been bisected by a vertical line, creating two distinct internal rectangles. It typically symbolizes a dashboard, split-screen view, or the presence of multiple interconnected panels within an application interface. */
+_space_dashboard = 'space_dashboard',
+/** The icon depicts a solid, rectangular shape divided vertically into two distinct sections. This structure is commonly used to visually represent the status or level of a resource, such as battery charge or connectivity strength. */
+_space_dashboard_2 = 'space_dashboard_2',
+/** The icon depicts a simplified human figure with curved lines extending outward from its side. It typically indicates advanced auditory features, such as spatial audio or directional sound perception. */
+_spatial_audio = 'spatial_audio',
+/** The design features an abstract depiction of radiating sound waves. It signifies that the system's specialized spatial audio effects are disabled, reverting the sound output to a standard format. */
+_spatial_audio_off = 'spatial_audio_off',
+/** The icon depicts a stylized rectangular speaker shape from which multiple curved lines radiate outward. This symbol indicates advanced audio output, typically representing immersive or spatial sound technology. */
+_spatial_speaker = 'spatial_speaker',
+/** The icon depicts a stylized human figure with radiating wavy lines emanating from its head area. It commonly symbolizes feelings of stress, sensory overload, or worry due to excessive input. */
+_spatial_tracking = 'spatial_tracking',
+/** The design features a simple rectangle containing two stacked circles of different sizes. This icon is used to represent sound, audio output, or volume settings. */
+_speaker = 'speaker',
+/** The design is a straightforward representation of a loudspeaker with a visible cone inside its casing. It generally signifies that sound is playing, an alert is sounding, or that the device has integrated audio capabilities. */
+_speaker_2 = 'speaker_2',
+/** The design shows a vertical grouping of speaker units stacked together. It commonly indicates active audio alerts, announcements, or crucial warnings provided by the system while operating. */
+_speaker_group = 'speaker_group',
+/** The design depicts a speech bubble outline containing several horizontal lines of text content. It is commonly used to indicate written notes, transcripts, or detailed message information related to conversation. */
+_speaker_notes = 'speaker_notes',
+/** The icon depicts a document with a strong diagonal line drawn across its surface. This symbol is used to indicate that accompanying notes or supplementary details are excluded or turned off from the current view. */
+_speaker_notes_off = 'speaker_notes_off',
+/** The design features curved radiating lines above a solid rectangular shape. This icon commonly indicates that audio will be played through the device’s external loudspeaker, signifying a hands-free speakerphone call. */
+_speaker_phone = 'speaker_phone',
+/** The icon features a stylized, open squiggle loop shape. It is typically used in digital interfaces to symbolize flow, connection, or abstract signaling. */
+_special_character = 'special_character',
+/** The icon is a simple line drawing depicting a container similar to a glass cup or beaker. It typically symbolizes the measurement of liquids, often relating to density, volume, or specific gravity. */
+_specific_gravity = 'specific_gravity',
+/** The icon depicts a stylized document containing text lines placed next to an adjacent microphone symbol. It represents the function of speech-to-text, indicating that spoken audio can be captured and converted into editable written notes or documents. */
+_speech_to_text = 'speech_to_text',
+/** The icon displays an arc-shaped dial face with a visible indicator needle pointing along its curve. This symbol is widely used to represent concepts like speed, momentum, or the rate at which something is progressing. */
+_speed = 'speed',
+/** The icon displays the decimal value .25. This setting indicates a significant reduction in speed, commonly used to slow down video playback or time progression for detailed viewing. */
+_speed_0_25 = 'speed_0_25',
+/** The icon literally displays the characters '2' followed by 'X'. This symbol is commonly used in user interfaces to indicate an increase, often signifying that a value, rate, or performance has been doubled. */
+_speed_0_2x = 'speed_0_2x',
+/** The icon displays a decimal point followed by the numeral five. This symbol generally indicates a fractional value or a minor step used to adjust precise settings in speed, timing, or progress metrics. */
+_speed_0_5 = 'speed_0_5',
+/** The icon visually displays the characters ".5X" in a bold, clear typeface. This indicator is commonly used to show that content or action is proceeding at half of its normal speed or rate. */
+_speed_0_5x = 'speed_0_5x',
+/** The icon literally displays the decimal value ".75". It commonly represents a proportion or ratio used to quantify metrics like speed adjustments, average pace, or percentage discounts. */
+_speed_0_75 = 'speed_0_75',
+/** The design visually depicts a decimal point followed by the sequence '7' and 'X'. This symbol commonly represents a ratio or multiplier, typically used to indicate a reduction factor, discount percentage, or a value less than one. */
+_speed_0_7x = 'speed_0_7x',
+/** The icon displays the characters '1', '.', and '2'. This format typically indicates a minor revision or incremental level, suggesting an update or slight enhancement in speed or status. */
+_speed_1_2 = 'speed_1_2',
+/** The icon literally depicts the decimal numeral 1.25. This value typically functions as a media control, indicating a slight adjustment to playback speed, such as slowing down video by one quarter of its original pace. */
+_speed_1_25 = 'speed_1_25',
+/** The design displays the characters "1.2X". This multiplier indicates a moderate boost, representing an increase of 20% over the original rate or baseline speed. */
+_speed_1_2x = 'speed_1_2x',
+/** The design literally displays the decimal figure "1.5". This value is typically used in user interfaces to indicate a moderate multiplier for rates, speeds, or time progression. */
+_speed_1_5 = 'speed_1_5',
+/** The icon literally shows the characters 1.5 followed by an 'X'. It is used to indicate a quantifiable boost or enhancement in performance, representing one and a half times the normal speed or rate. */
+_speed_1_5x = 'speed_1_5x',
+/** The design displays the numerical sequence "1.75". This value typically represents a measured factor, average rate, or scaling multiplier used for comparison purposes. */
+_speed_1_75 = 'speed_1_75',
+/** The icon displays the numerical reading of one point seven followed by an 'X'. This symbol indicates a multiplication factor, typically showing that something like playback speed or zoom level has been increased relative to the original rate. */
+_speed_1_7x = 'speed_1_7x',
+/** The design features a semicircular gauge face with a needle pointer pointing to a specific level. This icon is commonly used in user interfaces to represent speed, intensity, or the progress of an action. */
+_speed_2 = 'speed_2',
+/** The icon displays the characters "2" followed by an "X". This symbol is commonly used to indicate a doubling factor, suggesting increased speed, intensity, or quantity. */
+_speed_2x = 'speed_2x',
+/** The icon depicts a half-circle dial or meter face. This type of gauge typically represents a measurable level, such as speed, intensity, or progress status. */
+_speed_3 = 'speed_3',
+/** The icon depicts a semi-circular gauge or dial with an arrow needle positioned on its face. This symbol is typically used to indicate measurable rates, such as speed, performance level, or intensity of a given status. */
+_speed_4 = 'speed_4',
+/** The design shows a surveillance camera mounted on an adjustable arm pointing outward. It is typically used to denote areas where excessive speeding is prohibited or actively monitored by traffic authorities. */
+_speed_camera = 'speed_camera',
+/** The icon features a stylized alphabetical character paired with a prominent approval checkmark. It commonly indicates that written material has been proofread, confirming accuracy and resolving spelling or grammatical errors. */
+_spellcheck = 'spellcheck',
+/** The icon depicts two distinct rectangular panels placed side-by-side, separated by a clear vertical dividing line. It typically indicates that content can be viewed simultaneously in two separate sections or scenes for comparison. */
+_split_scene = 'split_scene',
+/** The icon depicts a simple rectangle visually divided by a horizontal line into two distinct sections. This symbolizes split-screen mode or multitasking capability, indicating that multiple applications or content sources can be viewed side-by-side on one display. */
+_split_scene_2 = 'split_scene_2',
+/** The icon depicts a solid, geometric container shape divided clearly into an upper and lower compartment. This design typically indicates the management of split views, signifying that two related pieces of content are being viewed or compared simultaneously. */
+_split_scene_down = 'split_scene_down',
+/** The icon depicts two adjacent, solid black rectangular bars placed next to each other. It typically signifies the ability to split content into two viewable sections or compare two different scenes side-by-side. */
+_split_scene_left = 'split_scene_left',
+/** The icon depicts two solid, adjacent rectangular blocks that are separated by a distinct vertical boundary. It is commonly used in software interfaces to indicate the ability to divide a single screen or workspace into multiple side-by-side sections for viewing or editing. */
+_split_scene_right = 'split_scene_right',
+/** The icon depicts a container shape divided horizontally into two distinct sections. It commonly signifies a split view or dual panel layout used to display and compare related content simultaneously. */
+_split_scene_up = 'split_scene_up',
+/** The icon depicts two solid, equal-sized horizontal bars stacked vertically on top of each other. It is commonly used in user interfaces to symbolize splitting a screen or displaying two pieces of information side-by-side simultaneously. */
+_splitscreen = 'splitscreen',
+/** The icon depicts two stacked rectangular bars that are visually separated by a dividing line. This symbol is used to indicate the capability of adding or viewing content across multiple panes simultaneously. */
+_splitscreen_add = 'splitscreen_add',
+/** The design depicts two solid rectangular bars stacked one directly above the other. This icon commonly symbolizes a split-screen view, showing that content or applications are separated into two distinct areas simultaneously. */
+_splitscreen_bottom = 'splitscreen_bottom',
+/** The design depicts a single rectangular frame cleanly divided into two adjacent vertical sections. This icon commonly signifies splitting content or viewing information side-by-side, suggesting multitasking or comparison mode. */
+_splitscreen_landscape = 'splitscreen_landscape',
+/** The design depicts a rectangular area segmented into multiple panels, accompanied by an addition indicator. It typically signifies the ability to view or manage content in a split-screen format or combine multiple applications simultaneously. */
+_splitscreen_landscape_add = 'splitscreen_landscape_add',
+/** The design features two adjacent, solid vertical bars of equal height. This symbol typically indicates a split-screen view, allowing users to display or compare content across two simultaneous panes. */
+_splitscreen_left = 'splitscreen_left',
+/** The design portrays a single portrait rectangle that is equally divided into two stacked sections. It commonly suggests functionality allowing users to view or compare information in two separate panes simultaneously. */
+_splitscreen_portrait = 'splitscreen_portrait',
+/** The design depicts two solid, adjacent vertical rectangles standing side-by-side. This icon commonly indicates a split-screen function, allowing the user to compare or display multiple pieces of information simultaneously. */
+_splitscreen_right = 'splitscreen_right',
+/** The design shows two solid horizontal rectangles stacked vertically, separated by empty space. This symbol generally indicates a split-screen view used to display two distinct pieces of content side-by-side for comparison or simultaneous viewing. */
+_splitscreen_top = 'splitscreen_top',
+/** The design features two separate vertical bars placed adjacent to each other. This icon typically represents an accumulation or addition function, such as calculating a total score or combining measured values. */
+_splitscreen_vertical_add = 'splitscreen_vertical_add',
+/** The icon visually represents the chemical formula for diatomic oxygen ($\text{O}_2$) contained within a stylized droplet shape. It is commonly used to denote blood oxygen saturation levels or general gas availability in health and medical contexts. */
+_spo2 = 'spo2',
+/** The icon literally depicts three solid circles arranged in a small, upward-pointing triangular grouping. It commonly signifies connectivity, indicating that multiple related elements or sources are available within range. */
+_spoke = 'spoke',
+/** The design depicts a stylized toggle mechanism featuring a main circular body and an attached horizontal indicator line. It is commonly used to signify that a feature, mode, or setting has been activated or switched on. */
+_sports = 'sports',
+/** The design is an illustration of a classic black and white soccer ball. It symbolizes physical activity, organized sports, or general athleticism in an outdoor setting. */
+_sports_and_outdoors = 'sports_and_outdoors',
+/** The design features an arrangement of stylized mugs and containers commonly used for alcoholic beverages. It typically signifies a local pub or casual gathering place where friends can socialize and enjoy drinks. */
+_sports_bar = 'sports_bar',
+/** The design is a simple outline of an object that resembles a baseball, contained within a circular border. It generally symbolizes sports activity, especially those involving hitting or throwing a ball like baseball or softball. */
+_sports_baseball = 'sports_baseball',
+/** The design is a clear outline drawing of a ball, marked with seams that distinctly represent a basketball. It is commonly used to symbolize sports, athletics, or activities involving basketball gameplay. */
+_sports_basketball = 'sports_basketball',
+/** The icon depicts a stylized drawing instrument that resembles a modern stylus or marker pen. It typically represents the action of inputting data, allowing users to write notes, select elements, or make precise edits digitally. */
+_sports_cricket = 'sports_cricket',
+/** The icon is an outline drawing of a modern video game controller, featuring standard inputs and buttons. It symbolizes participation in competitive gaming, electronic sports, or any form of digital play. */
+_sports_esports = 'sports_esports',
+/** The icon depicts the recognizable shape of a football, characterized by its tapered ends and curved body. It is commonly used to categorize content related to sports, particularly American football or similar athletic events. */
+_sports_football = 'sports_football',
+/** The design shows a small round object resting near a flag or pin structure, often accompanied by a stylized club head. It is used to represent activities related to golfing or sports tournaments involving clubs and balls. */
+_sports_golf = 'sports_golf',
+/** The icon shows a stylized human figure in the middle of a high athletic split. It typically symbolizes physical fitness and activities like gymnastics or dynamic stretching. */
+_sports_gymnastics = 'sports_gymnastics',
+/** The design shows two stylized human figures in an athletic, dynamic pose. This icon represents various team sports involving physical action, such as handball or volleyball. */
+_sports_handball = 'sports_handball',
+/** The icon depicts two stylized game sticks crossed over each other in an 'X' shape. It is commonly used to symbolize the sport of hockey, skating, or general athletic games. */
+_sports_hockey = 'sports_hockey',
+/** The design depicts two stylized human figures engaged in an active, dynamic struggle. It symbolizes the high energy and intense physical competition associated with sports such as Kabaddi. */
+_sports_kabaddi = 'sports_kabaddi',
+/** The icon depicts a stylized human figure captured mid-movement, performing a high, extended leg kick. This pose symbolizes athleticism and physical prowess, commonly representing activities such as martial arts, gymnastics, or general sports training. */
+_sports_martial_arts = 'sports_martial_arts',
+/** The icon visually depicts elements associated with fighting sports or athletic competition. It is used to represent mixed martial arts, boxing, and other combat-related activities. */
+_sports_mma = 'sports_mma',
+/** The design depicts a stylized rendering of a race car speeding around a corner on a track. This icon typically represents themes of speed, high-octane competition, and general athletic pursuits in motorsports. */
+_sports_motorsports = 'sports_motorsports',
+/** The icon depicts an elongated, rounded oval shape, characteristic of a professional rugby ball. It is used to represent the sport of rugby or general athletic competition involving this specific type of equipment. */
+_sports_rugby = 'sports_rugby',
+/** The icon is a checkered flag featuring a distinct pattern of alternating black and white squares. It commonly symbolizes completion, signaling the end of an event or the achievement of victory in competitive sports. */
+_sports_score = 'sports_score',
+/** The image shows a standard soccer ball pattern, composed of black and white geometric panels. It is commonly used to represent the sport of football or general athletic competition. */
+_sports_soccer = 'sports_soccer',
+/** The design depicts the head and handle of a stylized athletic racket, characteristic of those used in racquet sports. It is commonly used to represent activities related to tennis or general sporting competition involving rackets. */
+_sports_tennis = 'sports_tennis',
+/** The design features a stylized, segmented spherical object made of distinct curved lines. This icon is commonly used to denote content related to the sport of volleyball or beach/net activities. */
+_sports_volleyball = 'sports_volleyball',
+/** The icon displays several discrete dots arranged above a solid, stylized base, suggesting radiating points of light or energy. This design typically symbolizes wireless signal strength, connectivity range, or broadcast coverage emanating from a central source. */
+_sprinkler = 'sprinkler',
+/** The design features a highly stylized silhouette of a person in a full stride, leaning forward as if moving at high speed. It is typically used to symbolize athletic activity, rapid movement, or the act of sprinting. */
+_sprint = 'sprint',
+/** The design consists of the three capitalized letters S, Q, and L. This acronym represents Structured Query Language, which is the industry standard for creating queries and managing data within relational database systems. */
+_sql = 'sql',
+/** The design is a clean, four-sided geometric shape represented by a simple square outline. Because of its simplicity, it commonly serves as a generic placeholder, an empty box for text input, or a universal symbol for selection areas within user interfaces. */
+_square = 'square',
+/** The icon depicts a perfect square centered within a circular border. It typically symbolizes an area of focus, containment, or selection that has been visually framed. */
+_square_circle = 'square_circle',
+/** The icon depicts an outer square shape containing a solid circle perfectly centered within its boundaries. It commonly represents centering, alignment to the middle, or selecting a compact view option in user interfaces. */
+_square_dot = 'square_dot',
+/** The design is a right-angled triangle shape with two perpendicular sides forming one corner. This icon typically signifies dimensional measurements or units of area, such as square feet. */
+_square_foot = 'square_foot',
+/** The design consists of two parallel, wavy squiggly lines running horizontally across the frame. It is typically used to symbolize a fluctuating transmission signal or general radio frequency strength, such as Wi-Fi connectivity. */
+_ssid_chart = 'ssid_chart',
+/** The design features two slightly offset, rectangular shapes layered one over the other. This is commonly used to represent a collection of grouped items or multiple layers of saved digital content. */
+_stack = 'stack',
+/** The icon depicts two adjacent squares connected at a corner, forming an L-shaped or stepped rectangle. It is used to visually represent that multiple individual items or components are grouped together into a single collection. */
+_stack_group = 'stack_group',
+/** The icon illustrates several layered or nested geometric squares, with a prominent hexagonal shape visible in the uppermost layer. This symbol typically represents structured collections of items, such as grouping files, tracking versions, or indicating advanced layered functionality. */
+_stack_hexagon = 'stack_hexagon',
+/** The icon depicts two overlapping rectangular shapes that resemble stacked documents or files. This design commonly signifies canceling or removing multiple selected items at once. */
+_stack_off = 'stack_off',
+/** The illustration depicts two or more star shapes grouped together in a stacked fashion. This icon is commonly used to signify a cumulative rating, recognition, or the achievement of multiple levels of quality. */
+_stack_star = 'stack_star',
+/** Three solid vertical bars of varying heights are depicted standing side-by-side. This icon is used to compare various data sets or visualize how different categories contribute to an overall total. */
+_stacked_bar_chart = 'stacked_bar_chart',
+/** The icon depicts two outlined envelopes stacked vertically upon each other. This design typically symbolizes an accumulation of received emails or a full inbox requiring attention. */
+_stacked_email = 'stacked_email',
+/** The icon depicts several overlapping boxes stacked on top of one another. It is typically used to symbolize a large volume or accumulation of incoming messages in a user's mailbox or digital inbox. */
+_stacked_inbox = 'stacked_inbox',
+/** The icon depicts multiple curved lines rising together in an upward trajectory, forming a representation of data points on a graph. It commonly signifies positive growth, improvement over time, or the comparative analysis of metrics. */
+_stacked_line_chart = 'stacked_line_chart',
+/** The icon displays several horizontal layers of progressively varying size, suggesting stacked items. It generally represents grouping, collections, or version control stacks for data, libraries, or content feeds. */
+_stacks = 'stacks',
+/** The icon is an outline drawing of a modern gamepad controller featuring joysticks and various action buttons. It commonly signifies input mechanisms, control functionality, or the ability to interact with digital content. */
+_stadia_controller = 'stadia_controller',
+/** The design shows a large, semi-circular platform with an open front entrance. This icon is commonly used to represent a major venue for sporting events or public gatherings. */
+_stadium = 'stadium',
+/** The illustration shows a series of stylized steps moving upward diagonally. This symbol is commonly used in public signage to indicate the location of stairs for vertical travel. */
+_stairs = 'stairs',
+/** The icon depicts a series of solid steps arranged in an ascending zigzag pattern. This symbol is commonly used to represent progress through stages, advancement, or increasing levels toward a goal. */
+_stairs_2 = 'stairs_2',
+/** This is a simple, solid shape formed by connecting five symmetrical points. It is commonly used in digital interfaces to indicate high quality, achievement, or that an item has been favorited. */
+_star = 'star',
+/** This icon depicts a solid five-pointed star shape that appears slightly truncated at its base point. It is typically used to signify a half rating, partial achievement, or an item that has been partially selected or highlighted. */
+_star_half = 'star_half',
+/** The icon depicts a simple, outlined five-pointed star shape. It is typically used to indicate quality, value, or satisfaction when rating items or services. */
+_star_rate = 'star_rate',
+/** The icon is depicted as a symmetrical, five-pointed star outline. It commonly signifies a moderate or partial score used in rating systems, indicating that an item has received less than full praise. */
+_star_rate_half = 'star_rate_half',
+/** The design depicts a central five-pointed star surrounded by radiating lines or rays. It is typically used to symbolize excellence, high ratings, achievement, or brilliant quality. */
+_star_shine = 'star_shine',
+/** The design features a solid five-pointed star centered within a circular outline. This symbol is widely used to indicate quality ratings, high achievement, or items marked as favorites. */
+_stars = 'stars',
+/** The icon depicts two stylized five-pointed stars of varying sizes. They are commonly used to represent ratings, scores, or levels of achievement. */
+_stars_2 = 'stars_2',
+/** The design consists of a horizontal line segment ending in an arrowhead pointing directly to the right. It universally signifies forward movement, continuation, or proceeding to the next item in a sequence or process. */
+_start = 'start',
+/** The design is an outline of a simple diamond shape. This geometric element is commonly used in user interfaces to mark important spots, provide visual emphasis, or denote selection areas. */
+_stat_0 = 'stat_0',
+/** The icon depicts a simple chevron shape formed by two lines meeting at an apex. It commonly signifies growth, increase, or the ability to expand content upwards. */
+_stat_1 = 'stat_1',
+/** The icon depicts two parallel diagonal lines forming a distinct upward V-shape. It is commonly used to signify progression, growth, or any movement in an ascending direction. */
+_stat_2 = 'stat_2',
+/** The design features three stacked chevron arrows aligned vertically. This icon typically indicates that there is more content available or that a section can be expanded to show details. */
+_stat_3 = 'stat_3',
+/** The icon depicts a simple, downward-pointing chevron shape. It generally indicates that there is more information available, often signaling the ability to expand a section or view options in a dropdown menu. */
+_stat_minus_1 = 'stat_minus_1',
+/** The icon depicts a chevron formed by two nested, downward-pointing arrows. It is commonly used to indicate that content can be expanded or revealed downwards, and it may also signify a decrease in status or value. */
+_stat_minus_2 = 'stat_minus_2',
+/** The design consists of three chevrons stacked vertically in a column. This symbol generally indicates a deeply nested list structure or an expanded, multi-level hierarchy within content outlines. */
+_stat_minus_3 = 'stat_minus_3',
+/** The design depicts a circular steering wheel outline with stylized wavy lines radiating from its center top. This icon generally indicates a localized heating function or warmth, suggesting features such as heated seats, windshield warming, or overall cabin heat. */
+_steering_wheel_heat = 'steering_wheel_heat',
+/** The icon depicts an arrowhead pointing right, which stops right before a solid circular dot. This symbol typically indicates progression, suggesting that there is more content available or that you should move to the next step in a process. */
+_step = 'step',
+/** The design features an arrow pointing downwards placed above a solid circular dot. This icon is commonly used to indicate that you can expand content, enter a deeper section, or navigate into sub-levels of information. */
+_step_into = 'step_into',
+/** The icon literally depicts an upward-pointing arrow positioned above a solid circular marker. It is used conceptually to indicate that one should exit a primary path, take a detour, or step away from the main flow of travel. */
+_step_out = 'step_out',
+/** The icon depicts a curved arrow pointing forward and slightly upward. It typically suggests advancing past the current element or proceeding with an action while bypassing intermediate details. */
+_step_over = 'step_over',
+/** The illustration depicts three equally spaced, solid circles aligned in a horizontal row. This icon serves as an ellipsis and commonly indicates that there are additional actions, settings, or content available. */
+_steppers = 'steppers',
+/** The design shows an outline of a shoe sole with deep, pronounced grooves and patterns across the bottom. It is used to represent traction, grip, or the necessity for stable footing during activity. */
+_steps = 'steps',
+/** The design shows a stethoscope, consisting of earpieces attached by tubing leading down to a listening chestpiece. This symbol is widely understood to represent general healthcare, medicine, and medical consultation services. */
+_stethoscope = 'stethoscope',
+/** The icon depicts a stethoscope attached to an arrow that points toward the right. This combination typically symbolizes progressing through stages of healthcare, accessing next steps in treatment, or viewing continued patient records. */
+_stethoscope_arrow = 'stethoscope_arrow',
+/** The icon literally depicts a stethoscope connected near a checkmark. This combination is used to indicate a positive result, confirming good health status or the completion of a successful medical examination. */
+_stethoscope_check = 'stethoscope_check',
+/** The icon depicts a square-shaped, stylized sticker with rounded corners bearing a simple smiling face. It commonly represents the ability to enhance communication by adding expressive graphics or playful decorative stickers within messaging apps. */
+_sticker = 'sticker',
+/** The icon literally depicts a square document resembling an adhesive sticker with a folded corner edge. A plus sign symbol is attached to or placed near this sticker in the upper right area.
+It commonly signifies the action of adding new content, attaching materials, or expanding elements on a digital canvas. */
+_sticker_add = 'sticker_add',
+/** The icon depicts a simple, rectangular memo pad commonly associated with sticky notes. It is typically used to symbolize temporary reminders or quick thoughts that need to be jotted down. */
+_sticky_note = 'sticky_note',
+/** The icon depicts a square piece of paper with rounded corners, stylized to look like a sticky note containing placeholder lines and featuring a folded corner detail. It is commonly used to represent quick notes, reminders, drafts, or general pieces of captured information. */
+_sticky_note_2 = 'sticky_note_2',
+/** The design features an abstract square graphic containing stylized mountain peaks alongside a standalone musical note symbol. This combination commonly indicates access to diverse multimedia resources or general stock sound libraries for creative use. */
+_stock_media = 'stock_media',
+/** The design illustrates a deep cooking pot with a visible handle attached to the top rim. This icon is commonly used in kitchen applications or recipes to symbolize slow cooking, stewing, or preparing large batches of food. */
+_stockpot = 'stockpot',
+/** The design is a simple, solid black square. It commonly serves as a universal icon in digital interfaces to denote termination, pause, or cancellation of an ongoing process. */
+_stop = 'stop',
+/** The design features a solid black square centered within a thick circular outline. This symbol is commonly used in digital interfaces to indicate cancellation, pausing an action, or turning off a specific function. */
+_stop_circle = 'stop_circle',
+/** The design features a rectangular frame that is overlaid by a diagonal prohibition line, which contains an internal rightward arrow. This symbol universally represents stopping or canceling an ongoing digital activity, such as ending a screen share or presentation. */
+_stop_screen_share = 'stop_screen_share',
+/** The icon depicts three solid, parallel horizontal bars stacked vertically. It is commonly used in user interfaces to signify a menu, list of options, or that more content is available. */
+_storage = 'storage',
+/** The icon depicts a simplified outline of a single-story commercial building facade with prominent entrance areas. It is used to represent general retail establishments, local shops, or any type of community business. */
+_store = 'store',
+/** The icon depicts an outline drawing of a building facade with a prominent, scalloped awning across the top. It is used to signify general retail locations or sections dedicated to shopping and commerce within an application. */
+_storefront = 'storefront',
+/** The icon depicts a single, continuous line forming a classic spiral or vortex pattern. It commonly symbolizes intense movement, energy, or powerful natural phenomena such as wind and storms. */
+_storm = 'storm',
+/** The icon is a solid arrow pointing directly upward. It commonly indicates upward movement, such as returning to the top of a page or navigating upwards through a list. */
+_straight = 'straight',
+/** The icon depicts a stylized outline of a rectangular battery meter with segmented divisions. This symbol is used to indicate the current remaining power or energy capacity of an electronic device. */
+_straighten = 'straighten',
+/** The image depicts two interconnected geometric forms composed of segments and hexagons. This symbol typically signifies advanced configuration options, tools, or the ability to plan and execute a complex strategy within an application interface. */
+_strategy = 'strategy',
+/** The design features multiple equally spaced nodes arranged in a symmetrical, radiating pattern. This symbol typically represents connectivity strength, signal quality, or wireless data transmission. */
+_stream = 'stream',
+/** The design consists of a solid black graphic showing a simplified human figure alongside a large, angular directional marker. This icon typically represents exploring real-world locations or viewing panoramic street scenes from your current position. */
+_streetview = 'streetview',
+/** The icon depicts a simplified, stylized outline of a human figure positioned horizontally as if resting or taking a bath. It generally symbolizes feelings of comfort and tranquility, often used to indicate services related to wellness, self-care, or stress management. */
+_stress_management = 'stress_management',
+/** The design shows a single, continuous squiggly line segment that traverses horizontally across an imaginary space. It is commonly used in writing and digital formatting to indicate that text has been crossed out, suggesting deletion or invalidation. */
+_strikethrough_s = 'strikethrough_s',
+/** This icon features a circular shape crossed out by distinct diagonal strokes. It serves as a universal symbol for prohibition, negation, or exclusion. */
+_stroke_full = 'stroke_full',
+/** The icon depicts a circular outline that is crossed by several parallel, diagonal strokes. This symbol typically indicates an incomplete status, signifying that content is only partially loaded or data transmission is limited. */
+_stroke_partial = 'stroke_partial',
+/** The icon depicts an outline of a traditional wheeled shopping trolley viewed from the side. It is widely used to represent commerce, retail goods, or the ability to shop online. */
+_stroller = 'stroller',
+/** The design is a simple outline of a modern smartphone or tablet device. It commonly symbolizes connectivity, digital services, or the handling of portable media cards and data storage. */
+_style = 'style',
+/** The icon depicts the outline of a clothes hanger with distinct hooks and bars. It is generally used to indicate categories or sections related to apparel, fashion items, or general wardrobe goods in an application interface. */
+_styler = 'styler',
+/** The design depicts a streamlined, pointed writing instrument angled diagonally across the frame. It commonly represents digital input, suggesting interaction with touchscreens for drawing, annotating, or navigating technology. */
+_stylus = 'stylus',
+/** The icon depicts a stylized droplet shape resting upon a solid base line. It commonly represents liquids, water sources, or various types of fluid measurements. */
+_stylus_brush = 'stylus_brush',
+/** The icon depicts a stylized fountain pen with an ornate nib resting atop its body. It commonly symbolizes writing, education, correspondence, or the act of creativity. */
+_stylus_fountain_pen = 'stylus_fountain_pen',
+/** The icon features a slanted marker tip positioned above a flat surface resembling a document. This symbol typically indicates functionality for highlighting text, saving content for later reading, or annotating articles online. */
+_stylus_highlighter = 'stylus_highlighter',
+/** The design features two connected, stylized strokes forming an abstract, wavy shape. This symbol is typically used to indicate repeating actions, cycles, or a continuous flow of data within digital interfaces. */
+_stylus_laser_pointer = 'stylus_laser_pointer',
+/** A stylized drawing of a pen or stylus is depicted making a wavy mark on an implied surface. This icon generally indicates functionality related to annotation, handwriting input, or adding personal notes. */
+_stylus_note = 'stylus_note',
+/** The icon depicts a sleek writing utensil that resembles a digital stylus pen. It is typically used to symbolize functions related to drawing, annotating documents, or interacting with touchscreen interfaces. */
+_stylus_pen = 'stylus_pen',
+/** The design features a stylized pencil or stylus angled over a solid base. It typically signifies the ability to edit, create, or annotate content within an application. */
+_stylus_pencil = 'stylus_pencil',
+/** The icon depicts a solid arrow pointing horizontally to the left. It is commonly used to signify returning to a previous screen or navigating up one level in a directory or file hierarchy. */
+_subdirectory_arrow_left = 'subdirectory_arrow_left',
+/** The design is an arrow pointing to the right with a small perpendicular line segment attached near its starting point. This icon commonly signifies navigating into a subfolder or expanding a directory structure. */
+_subdirectory_arrow_right = 'subdirectory_arrow_right',
+/** The design represents a simple, contained area or section marker. It generally functions in digital layouts to indicate a secondary subheading, helping organize and categorize content below a primary topic. */
+_subheader = 'subheader',
+/** The design is composed of three parallel horizontal lines stacked vertically. This symbol generally indicates structured content, such as an outline, a list, or options for adjusting document columns. */
+_subject = 'subject',
+/** The icon shows a large variable X with a smaller subscript 2 positioned underneath it. This notation is used in mathematics and science to denote an index, dimension, or specific value within a sequence of variables. */
+_subscript = 'subscript',
+/** The design depicts a rectangular frame containing a prominent play triangle centered inside it. This symbol universally represents video media or streamed content, suggesting access to dedicated or subscribed viewing libraries. */
+_subscriptions = 'subscriptions',
+/** This icon depicts a simple text placeholder contained within a rectangular frame. It commonly signifies that closed captions or subtitling are available, enhancing accessibility for video content. */
+_subtitles = 'subtitles',
+/** The design features lines of text accompanied by a cogwheel icon. This symbol typically indicates controls for adjusting captioning or subtitle settings within media viewing applications. */
+_subtitles_gear = 'subtitles_gear',
+/** The illustration shows a squared-off content area marked by a bold diagonal slash crossing through it. This icon typically indicates that subtitles, captions, or closed captions are disabled in media viewing settings. */
+_subtitles_off = 'subtitles_off',
+/** A solid black graphic depicts the front view of a stylized commuter train or subway car. This symbol signifies access to public rail transit options, commonly used to indicate routes for mass commuting within an area. */
+_subway = 'subway',
+/** The illustration depicts a stylized human figure walking past an open door structure, resembling subway or underground train exits. It is used to guide users navigating within major public transportation stations or transit hubs. */
+_subway_walk = 'subway_walk',
+/** The icon depicts a box-like speaker unit featuring a prominent circle centered within its face. This symbol indicates functionality related to generating powerful, deep bass or low-frequency sound output in an audio system. */
+_subwoofer = 'subwoofer',
+/** The design shows a clean, rectangular shape representing a single page or sheet of paper. It generally signifies accessing or editing written material, and in this context, it relates to condensing lengthy information into its core points. */
+_summarize = 'summarize',
+/** The icon depicts a central circle from which straight, radiating rays extend outward. It is typically used to signify clear skies and sunny weather conditions. */
+_sunny = 'sunny',
+/** The icon depicts a sun radiating light beams above scattered falling dots or specks. It is used to represent mixed weather conditions where sunshine coincides with snowfall or patchy precipitation. */
+_sunny_snowing = 'sunny_snowing',
+/** The design shows a large letter X with a smaller '2' raised above its upper right corner. This notation is used to illustrate an exponent, indicating that the base value has been squared or raised to the second power. */
+_superscript = 'superscript',
+/** The design shows a simplified representation of a person's head contained within a circular frame. It typically signifies that the associated account or content is currently being monitored, moderated, or reviewed for official oversight. */
+_supervised_user_circle = 'supervised_user_circle',
+/** The design shows a human figure contained within a circular boundary, which is marked by a crossing diagonal line. This universally communicates the disabling of surveillance, parental controls, or any form of active user monitoring. */
+_supervised_user_circle_off = 'supervised_user_circle_off',
+/** The icon depicts two simplified human silhouettes standing side-by-side. It typically symbolizes a relationship of supervision, management, or an administrative role overseeing other users. */
+_supervisor_account = 'supervisor_account',
+/** The icon depicts a circular object divided into multiple segments by spokes radiating outward from a central point. It commonly symbolizes ongoing processes, cyclical activity, or general support and assistance. */
+_support = 'support',
+/** The illustration depicts a simplified silhouette of a person's head wearing headphones or earbuds. This symbol is typically used to indicate technical assistance, customer service, or general audio support. */
+_support_agent = 'support_agent',
+/** The design features a figure balanced on a board as it rides over cresting waves. It typically indicates activities like surfing, bodyboarding, or general wave riding. */
+_surfing = 'surfing',
+/** The icon illustrates a stylized writing utensil, resembling a slanted pen or digital stylus. It represents actions like note-taking, editing content, drawing diagrams, or adding signatures within an application. */
+_surgical = 'surgical',
+/** The design depicts three curved lines radiating outward from a central point within a square frame. It signifies surround sound capabilities or an immersive audio experience that projects sound in multiple directions. */
+_surround_sound = 'surround_sound',
+/** The design depicts a smooth, curved line that makes a distinct U-turn or open loop shape. This icon is commonly used to symbolize swapping values, exchanging data, or reversing the order of operations. */
+_swap_calls = 'swap_calls',
+/** The icon depicts a side view of a vehicle overlaid by two opposing horizontal arrows. It commonly signifies the ability to switch between different modes, applications, or directions while navigating or driving. */
+_swap_driving_apps = 'swap_driving_apps',
+/** The design features a simplified face contained within a circular outline. It generally signifies feelings of stress, worry, or deep dissatisfaction. */
+_swap_driving_apps_wheel = 'swap_driving_apps_wheel',
+/** Two horizontal arrows are depicted, with one pointing left and the other pointing right. This icon typically indicates the action of swapping or reversing the order of two corresponding elements. */
+_swap_horiz = 'swap_horiz',
+/** The illustration depicts two chevron arrows pointing in opposite horizontal directions within an encompassing circular shape. This icon is widely used to signify the swapping or reversal of items, such as exchanging columns or mirroring content. */
+_swap_horizontal_circle = 'swap_horizontal_circle',
+/** The icon visually depicts two vertical arrows arranged in opposition, one pointing up and one pointing down. It commonly signifies a swap, exchange, or reversal of elements between two positions. */
+_swap_vert = 'swap_vert',
+/** The design is enclosed in a circle and features two distinct arrows facing opposite directions: one pointing up and one pointing down. This icon typically suggests an action related to swapping or reversing the vertical order of elements, such as changing sort direction. */
+_swap_vertical_circle = 'swap_vertical_circle',
+/** The icon is a simple, stylized checkmark or tick mark. It commonly indicates successful completion, approval, or confirmation that something is correct. */
+_sweep = 'sweep',
+/** It depicts a curved arrow positioned above and next to a stylized hand cursor making a downward stroke. This symbol indicates a swiping motion, commonly used in digital interfaces for navigating through content or dismissing items. */
+_swipe = 'swipe',
+/** The design depicts a stylized open hand making a sweeping gesture downwards. This symbol is typically used to indicate the action of scrolling down, dismissing an element, or deleting content within a digital interface. */
+_swipe_down = 'swipe_down',
+/** The icon is an arrow pointing straight down, often depicted with a slight tail or point at the bottom. It generally indicates that there is more content available below the current screen view or section to explore. */
+_swipe_down_alt = 'swipe_down_alt',
+/** The icon depicts a stylized hand making a sweeping motion from right to left. This directional gesture commonly represents the action of swiping or moving content across a screen interface. */
+_swipe_left = 'swipe_left',
+/** The design illustrates a stylized hand making a sweeping motion in the direction of the left. This universally represents swiping backward, often used for navigation or dismissing content within an interface. */
+_swipe_left_2 = 'swipe_left_2',
+/** The design features an arrow pointing left that is contained within a circular boundary. This symbol commonly signifies moving back, going to the previous screen, or reversing direction in digital interfaces. */
+_swipe_left_alt = 'swipe_left_alt',
+/** The icon illustrates a stylized hand making a sweeping motion across the page from left to right. It indicates a horizontal swiping action, typically used in user interfaces for navigation or advancing content. */
+_swipe_right = 'swipe_right',
+/** The illustration depicts an open hand making a sweeping gesture that curves horizontally from left to right. This motion universally signifies advancing through content, moving forward, or executing a swipe action. */
+_swipe_right_2 = 'swipe_right_2',
+/** The design consists of a circle connected to an arrow that points horizontally to the right. This symbol is widely used in user interfaces to indicate progression, advancing to the next step, or performing a "swipe right" action. */
+_swipe_right_alt = 'swipe_right_alt',
+/** The design illustrates a stylized open palm making a sweeping motion accompanied by a curved arrow pointing up. It is typically used in user interfaces to indicate the action of swiping, advancing through content, or scrolling up to reveal more information. */
+_swipe_up = 'swipe_up',
+/** The icon is composed of an arrow pointing upward combined with a circular shape. It typically indicates actions such as scrolling back to the top or expanding content in an upward direction. */
+_swipe_up_alt = 'swipe_up_alt',
+/** The illustration depicts an open hand making a downward or upward swiping motion. This universal gesture is used to indicate actions like scrolling, moving between pages, or dismissing content within digital interfaces. */
+_swipe_vertical = 'swipe_vertical',
+/** The illustration shows a simple, modern electrical switch plate containing a movable toggle lever. This icon indicates the ability to activate or deactivate a feature, commonly used for controlling settings like connectivity or power status. */
+_switch = 'switch',
+/** The icon features a solid central square element surrounded symmetrically by several smaller dots. It typically indicates an accessibility function designed to help users focus on or magnify specific areas of the screen. */
+_switch_access = 'switch_access',
+/** The icon literally depicts a horizontal arrow pointing right, framed by squared brackets or corner outlines on both ends. This symbol typically indicates switching between different modes, accessing alternative views, or initiating a transition between settings. */
+_switch_access_2 = 'switch_access_2',
+/** The illustration consists of two small squares connected sequentially by a prominent arrow pointing to the right. This symbol typically represents navigating through multiple steps, managing a sequential flow, or activating specialized directional inputs in a digital interface. */
+_switch_access_3 = 'switch_access_3',
+/** The icon depicts an open loop formed by a curved arrow that almost completes a circle. It commonly signifies switching between different modes or toggling functionality to access alternative settings. */
+_switch_access_shortcut = 'switch_access_shortcut',
+/** The design shows curved, looping arrows alongside a clear additive marker. It typically signifies the action of adding a shortcut, expanding accessibility options, or modifying system functions related to switching access. */
+_switch_access_shortcut_add = 'switch_access_shortcut_add',
+/** The icon depicts a profile portrait contained within a square frame, with accompanying segmented lines suggesting movement or selection. It is used in digital interfaces to represent the action of switching between different user accounts or profiles. */
+_switch_account = 'switch_account',
+/** The icon features two opposing horizontal arrows placed within a square frame. It is used to indicate the ability to toggle or switch between different camera views, such as front and rear cameras. */
+_switch_camera = 'switch_camera',
+/** The icon consists of two adjacent, chevron shapes pointing in a leftward direction. This symbol is commonly used in media players and navigation systems to signify moving back or returning to a previous item or track. */
+_switch_left = 'switch_left',
+/** The icon depicts a contained, rectangular structure resembling an electrical power switch or button. It is used to indicate that a device has been powered down, deactivated, or disconnected from its source. */
+_switch_off = 'switch_off',
+/** The design features two solid, opposing arrowheads forming a distinct pair. This symbol commonly indicates a direction change, suggesting movement between states or toggling functionality within an application interface. */
+_switch_right = 'switch_right',
+/** The icon depicts a stylized camera unit with visible opposing arrows mounted on its face. It is used to indicate the functionality of switching between different video views or recording modes. */
+_switch_video = 'switch_video',
+/** It depicts a stylized mechanism resembling an electrical toggle switch or slider control. This icon is used to indicate a binary setting that can be activated or deactivated, representing any on/off state change within software settings. */
+_switches = 'switches',
+/** The icon shows two overlapping, stylized forms—one curved and organic, the other straight and pointed. It commonly symbolizes the powerful blend of natural beauty with sharp determination or protection. */
+_sword_rose = 'sword_rose',
+/** Two stylized blades are shown crossed diagonally in an 'X' formation. This symbol commonly represents opposition, intense rivalry, or a serious contest between two parties. */
+_swords = 'swords',
+/** The icon depicts a stylized open eye with a prominent droplet falling from it. This is commonly used to represent symptoms related to vision issues, allergies, irritation, or general ophthalmological conditions. */
+_symptoms = 'symptoms',
+/** The design is a highly stylized, symmetrical outline of a building featuring a prominent gabled roof and a centered main entranceway. This symbol commonly indicates a place of worship or sacred community gathering spot. */
+_synagogue = 'synagogue',
+/** The design features two curved arrows forming a closed loop while pointing in opposite directions. It indicates that information is being updated or matched across multiple sources to ensure consistency. */
+_sync = 'sync',
+/** The design consists of two opposing arrows forming a symmetrical double arrow shape. This icon commonly signifies an exchange, connection, or mirroring of data between two different sources. */
+_sync_alt = 'sync_alt',
+/** The icon depicts two curved arrows arranged in a circular pattern, suggesting an exchange or cycle. It is typically used to indicate that information is being synchronized, updated, or refreshed between different locations or devices. */
+_sync_arrow_down = 'sync_arrow_down',
+/** The design shows a curved arrow completing a circular motion while incorporating an additional upward pointing element. It commonly symbolizes that data is being synchronized, refreshed, or successfully uploaded between systems. */
+_sync_arrow_up = 'sync_arrow_up',
+/** The design features two large, curved arrows positioned opposite each other in a cyclical pattern. This commonly indicates synchronization, meaning information is being updated and kept consistent across different connected devices or platforms. */
+_sync_desktop = 'sync_desktop',
+/** The design features two opposing curved arrows that are crossed by a diagonal line, creating an 'X' shape. This symbol universally indicates that data synchronization is currently disabled, meaning information cannot be exchanged between connected devices. */
+_sync_disabled = 'sync_disabled',
+/** The icon combines a padlock symbol with a curved, circular arrow showing movement. It typically signifies that data is syncing or updating while maintaining a secure, encrypted connection. */
+_sync_lock = 'sync_lock',
+/** The design depicts a curved arrow following a continuous, cyclical path. This symbol usually indicates that data synchronization has either failed or encountered an error during connection. */
+_sync_problem = 'sync_problem',
+/** The design depicts a rectangular screen or surface containing a prominent checkmark inside. This icon typically indicates that content has been successfully saved, completed, or synchronized locally without needing an internet connection. */
+_sync_saved_locally = 'sync_saved_locally',
+/** The design depicts a diagonal slash crossing through a contained rectangular area, visually signaling cancellation or deactivation. This icon indicates that automatic synchronization is disabled, ensuring all saved data remains locally stored on the device. */
+_sync_saved_locally_off = 'sync_saved_locally_off',
+/** The design depicts a classic medical instrument featuring a barrel and an attached needle mechanism. It is commonly used to symbolize vaccinations, administering medication, or general pharmaceutical care. */
+_syringe = 'syringe',
+/** The icon depicts an arrow pointing downwards, enclosed within a square frame. This symbol typically represents downloading information or initiating a system update process. */
+_system_update_alt = 'system_update_alt',
+/** The design is a solid black rectangle with one corner distinctly removed from the upper right side. It typically symbolizes an interface tab, panel, or section used for switching between different views within a digital application. */
+_tab = 'tab',
+/** The design features a distinct cross or 'X' mark positioned within a contained box outline. This universally recognized symbol indicates the action of closing, dismissing, or removing an item, such as a document or chat tab. */
+_tab_close = 'tab_close',
+/** The design features an 'X' mark centered inside a defined square boundary. This symbol typically denotes a closing function, and its specific inactive appearance suggests that the corresponding action cannot be performed at this time. */
+_tab_close_inactive = 'tab_close_inactive',
+/** The icon is composed of an outlined square containing an X mark, followed by a right-pointing arrow. It indicates dismissing or closing a current view while simultaneously advancing to the next screen or step in a workflow. */
+_tab_close_right = 'tab_close_right',
+/** The design shows several adjacent rectangular elements, visually mimicking an open browser window interface with multiple tabs. It is used to quickly create a duplicate of the current tab, allowing users to work on similar content or compare information simultaneously. */
+_tab_duplicate = 'tab_duplicate',
+/** Three adjacent rectangles are depicted, stacked closely together to form a cohesive unit. This icon typically signifies a group of multiple related elements, such as open browser tabs or associated files managed within a single view. */
+_tab_group = 'tab_group',
+/** The icon depicts a stylized rectangular outline, commonly used to represent an energy source or power cell. It is typically utilized in device interfaces to visually communicate the current battery charge level or power status. */
+_tab_inactive = 'tab_inactive',
+/** The design features a rightward-pointing arrow enclosed within a square border. It typically signifies advancing to the next sequential item or navigating forward between adjacent views or tabs in an application interface. */
+_tab_move = 'tab_move',
+/** The icon depicts a square container that holds a central plus sign. It commonly indicates the option to add or open a new adjacent element, such as creating a new tab or section. */
+_tab_new_right = 'tab_new_right',
+/** The design shows a solid rectangle resembling a document or file card, with a clock face integrated into its lower right corner. This icon typically signifies recent history, suggesting quick access to content that has been recently viewed or saved. */
+_tab_recent = 'tab_recent',
+/** The icon depicts a magnifying glass positioned beside a highlighted rectangular panel, resembling an active browser tab. This indicates the ability to perform searches or queries that are confined specifically to the content of the currently viewed section or document. */
+_tab_search = 'tab_search',
+/** The icon depicts several adjacent, empty rectangular slots arranged horizontally. This element signifies that multiple document views or sections are available within an application interface. */
+_tab_unselected = 'tab_unselected',
+/** The design shows a perfect grid composed of four equally sized squares arranged in two rows and two columns. It typically signifies multiple viewing modes or the ability to divide content into separate, structured sections. */
+_table = 'table',
+/** The design features a round surface supported by a central pedestal stand. This icon is commonly used to represent a high bar counter or seating table in dining establishments. */
+_table_bar = 'table_bar',
+/** The design is a rectangular outline divided into four equally sized vertical sections. This icon typically signifies structured information, such as database records, charts, or tabular data views. */
+_table_chart = 'table_chart',
+/** The design features structured horizontal lines at the top, combined with a fluctuating line graph beneath them. This icon is used to represent data visualization, typically indicating access to detailed reports or financial analytics over time. */
+_table_chart_view = 'table_chart_view',
+/** The icon depicts a rectangular grid divided into cells next to a curved directional indicator. It signifies the process of converting or transforming data, allowing information to move between different formats or structures. */
+_table_convert = 'table_convert',
+/** The design illustrates a rectangular area composed of visible rows and columns, with a distinct editing pencil laid across its lower corner. This icon signifies the function to modify, edit, or manage structured data within a table format. */
+_table_edit = 'table_edit',
+/** The icon depicts a stylized eye positioned over a rectangular surface resembling a document or data panel. It commonly represents scanning information, reading sensitive details, or performing detailed visual analysis on records. */
+_table_eye = 'table_eye',
+/** The icon literally depicts a modern, stylized desk lamp featuring a base, curved arm, and shade. It is often used to symbolize enlightenment, helpful suggestions, or the arrival of new ideas. */
+_table_lamp = 'table_lamp',
+/** The design features a prominent horizontal rectangular bar accompanied by multiple smaller indicator points arranged above it. This gauge is typically used to illustrate overall system status or the capacity of various metrics, such as battery life or signal strength. */
+_table_large = 'table_large',
+/** The image depicts a straightforward, rectangular table supported by visible legs. It serves as an indicator for general restaurant seating or a designated dining area within an establishment. */
+_table_restaurant = 'table_restaurant',
+/** The design features four distinct horizontal lines contained within a square border. This icon generally signifies structured data, such as tables, lists of items, or sequential activity logs. */
+_table_rows = 'table_rows',
+/** The design consists of several equally spaced, parallel horizontal lines. It is commonly used to represent a structured list of entries, search results, or stacked records within an application interface. */
+_table_rows_narrow = 'table_rows_narrow',
+/** The icon depicts a rectangular area containing multiple horizontal lines arranged in structured rows and columns. It is used to signify content that is organized into a table format or spreadsheet structure. */
+_table_sign = 'table_sign',
+/** The icon displays a rectangular grid composed of multiple segmented squares. It is typically used to indicate that content or information can be viewed in an organized, structured table or card-based gallery format. */
+_table_view = 'table_view',
+/** The design depicts a simple, solid black outline of a rectangular electronic device. This icon typically symbolizes a general computing tablet or mobile display screen. */
+_tablet = 'tablet',
+/** The design is a simple black outline of a modern electronic tablet, shown in portrait orientation. This icon typically represents general mobile functionality, indicating access to core features within the Android operating system. */
+_tablet_android = 'tablet_android',
+/** The design features a prominent camera lens and flash unit set within a surrounding rectangular border. This icon is used to indicate that the device has integrated imaging capabilities for capturing photos or recording videos. */
+_tablet_camera = 'tablet_camera',
+/** The icon depicts a simple outline of a rectangular electronic device with rounded corners and minimal bezels. It typically represents mobile computing capabilities, digital media consumption, or responsive design elements for portable screens. */
+_tablet_mac = 'tablet_mac',
+/** The design illustrates a single container divided horizontally into two distinct, segmented areas. This typically signifies that there are multiple related sections or viewpoints available within one application window. */
+_tabs = 'tabs',
+/** A curved trajectory connects two points, beginning at a node and arcing toward an angled arrowhead. It commonly represents process flow, development paths, or the strategic steps taken toward achieving a goal. */
+_tactic = 'tactic',
+/** The icon depicts the universally recognized hash or pound symbol. In digital contexts, it functions as a metadata tag used to categorize content and make topics easily searchable on social media platforms. */
+_tag = 'tag',
+/** The icon depicts a simple, open-topped container that resembles a cooking pot or pail. It commonly symbolizes prepared meals, bulk ingredients, or general supplies associated with takeout dining services. */
+_takeout_dining = 'takeout_dining',
+/** The design depicts a stylized fork positioned next to an adjacent vertical element, resembling a container or piece of cardstock. It is commonly used to indicate options for takeout or off-site dining services. */
+_takeout_dining_2 = 'takeout_dining_2',
+/** The design features a stylized depiction of a camera lens crossed out by a prominent diagonal slash. This icon signifies that monitoring or tamper detection has been disabled, allowing for privacy or indicating system control override. */
+_tamper_detection_off = 'tamper_detection_off',
+/** The icon shows a hand making an open, raised gesture positioned next to a rectangular device outline. This signifies that protective mechanisms are active, indicating system-wide detection of any potential tampering or intrusion. */
+_tamper_detection_on = 'tamper_detection_on',
+/** The image displays two stylized drinking vessels positioned next to each other. It commonly indicates the availability of alcoholic beverages in a restaurant or bar environment. */
+_tapas = 'tapas',
+/** The design is composed of several nested, circular rings arranged in a concentric bullseye pattern. This symbol commonly signifies targets, objectives, precision, or achieving a specific goal. */
+_target = 'target',
+/** The icon depicts a stylized document outline with a prominent checkmark placed inside it. It is typically used to signify that a task has been completed or an item has been successfully checked off a list. */
+_task = 'task',
+/** The image shows a checkmark positioned inside a distinct circular boundary. This universally recognized icon signifies successful confirmation, validation, or that an item has been completed correctly. */
+_task_alt = 'task_alt',
+/** The illustration depicts a low, stylized bench or cushion with an attached backrest. This type of seating suggests informal comfort, often used in traditional or accessible environments. */
+_tatami_seat = 'tatami_seat',
+/** The solid silhouette depicts a figure making a distinct hand gesture with one arm outstretched from the body. This symbol is typically used to convey disdain, challenge, or a sense of mocking amusement toward another party. */
+_taunt = 'taunt',
+/** The design features a simplified outline of a passenger vehicle, typically representing a taxi or car service. It signals an alert or notification regarding important updates related to ride availability or travel arrangements. */
+_taxi_alert = 'taxi_alert',
+/** The icon depicts a large, outer square that is clearly subdivided into four smaller, equal quadrants. This structure commonly represents an organized overview or dashboard where various interconnected widgets are displayed simultaneously. */
+_team_dashboard = 'team_dashboard',
+/** The icon depicts a composition featuring a group of solid dots alongside a detailed illustration of a natural leaf. It is commonly used in user interfaces to signify "eco mode" or preferences related to environmental sustainability. */
+_temp_preferences_eco = 'temp_preferences_eco',
+/** The design shows a symmetrical, stylized building featuring traditional Asian architectural elements. This symbol commonly represents Buddhist temples, spirituality, or cultural landmarks across Asia. */
+_temple_buddhist = 'temple_buddhist',
+/** The design shows a multi-tiered structure resembling traditional Hindu temple architecture. It is commonly used to symbolize spirituality, cultural heritage, or religious devotion related to Hinduism. */
+_temple_hindu = 'temple_hindu',
+/** The icon depicts three peripheral nodes connected by lines to a central hub node. It is commonly used to represent a network architecture or shared infrastructure, particularly illustrating multiple distinct tenants operating within a unified system. */
+_tenancy = 'tenancy',
+/** The design illustrates a console window containing text and symbols commonly associated with programming prompts. It generally represents a command-line interface used for executing system commands or interacting directly with code. */
+_terminal = 'terminal',
+/** The design shows a right-pointing arrow next to a dash or completion symbol, mimicking a terminal prompt structure. This icon typically represents deleting text, clearing an input field, or managing variables within a code or command line interface. */
+_terminal_2 = 'terminal_2',
+/** The icon shows three stacked horizontal lines enclosed within a clean rectangular shape. It indicates generic text content, often signaling that something can be copied or viewed as a summary document. */
+_text_ad = 'text_ad',
+/** The icon depicts structured horizontal lines, resembling a piece of written text or a document section. It is crossed by a diagonal line, indicating that advertising content has been disabled or successfully blocked. */
+_text_ad_off = 'text_ad_off',
+/** The icon depicts an open book structure with two distinct vertical sections for displaying content. It generally signifies the process of comparing two documents or pieces of text to review similarities and differences. */
+_text_compare = 'text_compare',
+/** The design shows an alphabet character accompanied by a subtraction indicator. It is typically used in user interfaces to signify a decrease in font size or scale of displayed text. */
+_text_decrease = 'text_decrease',
+/** The icon shows two distinct, block-letter shapes standing side by side. It indicates a requirement for entering data into separate sections or managing multiple text inputs within an interface. */
+_text_fields = 'text_fields',
+/** The design shows the uppercase letter A next to a vertical line with an underline beneath it. This symbol is used to access formatting controls that allow users to adjust how text content is positioned or aligned on a page. */
+_text_fields_alt = 'text_fields_alt',
+/** The design shows an uppercase letter A placed above a solid, underlined base. This icon typically indicates the ability to format selected text by adding an underline, emphasizing key information within a document. */
+_text_format = 'text_format',
+/** The icon displays a capital letter A immediately followed by a plus sign. It commonly symbolizes achieving a high standard, excellent performance, or a notable improvement in status. */
+_text_increase = 'text_increase',
+/** The icon depicts a solid, directional arrow pointing straight up. It commonly signifies an increase, growth, or movement toward a higher value or level. */
+_text_rotate_up = 'text_rotate_up',
+/** The icon is a graphical symbol found within text formatting settings. It indicates the ability to change the orientation of selected text by rotating it vertically for specialized document layouts. */
+_text_rotate_vertical = 'text_rotate_vertical',
+/** The design is a stylized, angled arrow pointing steeply downward. This symbol is commonly used in user interfaces to indicate content expansion, descent through a menu, or moving to a lower section of information. */
+_text_rotation_angledown = 'text_rotation_angledown',
+/** The design is an angled line forming an arrowhead that points diagonally upward and to the right. This symbol typically indicates an increase in angle, expansion of content, or moving to a higher level within a system structure. */
+_text_rotation_angleup = 'text_rotation_angleup',
+/** The design is a simple arrow pointing directly downward. It indicates functionality related to changing the vertical orientation or rotation of text content. */
+_text_rotation_down = 'text_rotation_down',
+/** The design combines a capital letter A with an accompanying horizontal directional arrow pointing right. It indicates that the associated text should remain in its normal reading orientation, without any rotation applied. */
+_text_rotation_none = 'text_rotation_none',
+/** The design visually depicts a series of three small dots followed by a thick, continuous vertical line segment. It is used in digital interfaces to signify the precise ending boundary or termination point when selecting a range of text. */
+_text_select_end = 'text_select_end',
+/** The icon depicts a vertical line segment followed by an arrow pointing sharply to the left. It commonly indicates a function that moves the selection or cursor instantly back to the beginning of a text line or field. */
+_text_select_jump_to_beginning = 'text_select_jump_to_beginning',
+/** The design shows a simple directional arrow pointing horizontally to the right. It signifies the ability to instantly move the text cursor or pointer all the way to the conclusion of a selected line or input field. */
+_text_select_jump_to_end = 'text_select_jump_to_end',
+/** The icon shows a prominent arrow pointing to the left across a baseline. It typically signifies moving backward, such as deleting or selecting text character by character. */
+_text_select_move_back_character = 'text_select_move_back_character',
+/** The design is a clear directional arrow positioned to point sharply toward the left. This symbol indicates moving backward within selected text or content, typically used when navigating through words in an editor. */
+_text_select_move_back_word = 'text_select_move_back_word',
+/** The design features a downward-pointing arrow positioned between two parallel horizontal lines. This icon is used to indicate moving content, a cursor, or selections down to the next line or paragraph. */
+_text_select_move_down = 'text_select_move_down',
+/** The illustration consists of a distinct vertical line adjacent to an arrowhead that points right. This symbol is typically used in digital interfaces to signify advancing the cursor or selection position one character at a time within a text field. */
+_text_select_move_forward_character = 'text_select_move_forward_character',
+/** The icon depicts a solid vertical line segment adjacent to an arrow pointing right. It is used in text editing interfaces to move the cursor or selection forward exactly one word at a time. */
+_text_select_move_forward_word = 'text_select_move_forward_word',
+/** The icon depicts a stylized upward arrow positioned between two horizontal lines. It signifies the action of moving selected text or content upwards within an editing field or document. */
+_text_select_move_up = 'text_select_move_up',
+/** The icon depicts multiple distinct vertical line segments arranged in groups, suggesting structured or editable text content. It commonly represents tools for managing text layout and formatting, allowing users to control details like paragraph indentation or character spacing. */
+_text_select_start = 'text_select_start',
+/** The icon shows a stylized sheet of paper that contains multiple stacked horizontal lines. It is typically used to represent a small amount of typed content, such as quick notes, an informational excerpt, or textual data. */
+_text_snippet = 'text_snippet',
+/** The icon shows a sheet of paper overlaid with a distinct loudspeaker symbol. This design indicates the functionality of converting written text into spoken audio format. */
+_text_to_speech = 'text_to_speech',
+/** The design shows a capital letter A followed by an upward-pointing arrow resting on a solid horizontal line. This icon generally signifies increasing the size, emphasis, or capitalization of surrounding textual content. */
+_text_up = 'text_up',
+/** The icon depicts an intricate, overlapping pattern of lines that creates visual complexity and density. It is commonly used in design to suggest physical textures, such as aged paper, fabric weave, or raw surface grain. */
+_texture = 'texture',
+/** Visually, it features diagonal strokes combined with symbols like the percentage sign and a plus sign. It usually signals an option for applying detailed textures or structural enhancements to media content. */
+_texture_add = 'texture_add',
+/** The design consists of several overlapping diagonal lines that create a scribbled or crossed-out effect. It is used in text formatting to indicate that content has been deleted or should be ignored. */
+_texture_minus = 'texture_minus',
+/** The design features two distinct, stylized faces presented side by side. It is typically used to represent the contrast between opposing human moods or emotional reactions. */
+_theater_comedy = 'theater_comedy',
+/** The icon depicts three distinct rectangular segments arranged horizontally with connecting lines. It typically represents a media library or cinematic content, suggesting access to films, slides, and video archives. */
+_theaters = 'theaters',
+/** The design features a simple graphic representation of a thermometer tube with an indicator bulb at the base. It is used to monitor and indicate environmental temperature levels, helping users understand if conditions are hot or cold. */
+_thermometer = 'thermometer',
+/** The design features a stylized thermometer coupled with a plus sign symbol. It typically signifies raising a temperature level or indicating an overall increase in measurement. */
+_thermometer_add = 'thermometer_add',
+/** The icon literally depicts a thermometer alongside an exclamation point. This combination generally signifies that the measured temperature has reached an important or concerning level, indicating an immediate warning or alert status. */
+_thermometer_alert = 'thermometer_alert',
+/** The icon visually combines a thermometer graphic with an addition or plus symbol. It is typically used to indicate that the temperature is rising, signaling heat gain or the need for increased warmth. */
+_thermometer_gain = 'thermometer_gain',
+/** The design features a vertical, bulbous element resembling a thermometer positioned above a prominent horizontal minus sign. This indicator is used to signify a drop or reduction in temperature, heat level, or overall measurement. */
+_thermometer_loss = 'thermometer_loss',
+/** The icon depicts a vertical thermometer gauge positioned next to a horizontal minus sign. It indicates the function used to decrease the set point temperature or lower the desired internal climate setting. */
+_thermometer_minus = 'thermometer_minus',
+/** The illustration depicts a classic gauge design resembling a temperature measurement device. It is commonly used to indicate or adjust the desired ambient temperature for heating and cooling systems. */
+_thermostat = 'thermostat',
+/** The design depicts an indicator symbol paired with a downward-pointing arrow. It signifies the action of lowering temperature or reducing heat settings on a thermostat or climate control system. */
+_thermostat_arrow_down = 'thermostat_arrow_down',
+/** The icon depicts a vertical measuring device with liquid inside and features a distinct upward-pointing arrow. It is used to signal that the desired temperature setting must be raised, indicating an increase in heat or warming capability. */
+_thermostat_arrow_up = 'thermostat_arrow_up',
+/** The icon depicts a thermometer gauge showing an active temperature setting in an automatic mode. It indicates that the climate control system is managing heating or cooling levels automatically to maintain comfort. */
+_thermostat_auto = 'thermostat_auto',
+/** The icon depicts a simple, outlined rhombus or diamond shape. It is typically used as a generic marker or indicator in user interfaces for focus areas, selected points, or specific data containers. */
+_thermostat_carbon = 'thermostat_carbon',
+/** The design depicts a stylized architectural monument featuring pillars and a protective, peaked roof canopy. This icon is typically used to mark general points of interest, attractions, or fun activities on an interactive map. */
+_things_to_do = 'things_to_do',
+/** The icon shows an abstract, single-stroke design that resembles a stylized signature or loop. It is used to draw attention to a conversational thread containing unread messages or notifications. */
+_thread_unread = 'thread_unread',
+/** The design features abstract, interconnected pathways resembling a digital circuit board, combined with an integrated alert symbol. This icon represents continuous monitoring and detection of potential vulnerabilities or security threats within complex systems. */
+_threat_intelligence = 'threat_intelligence',
+/** It is an illustration of a hand making the universally recognized "thumbs down" gesture. This symbol is widely used to express disapproval, dislike, or rejection of content. */
+_thumb_down = 'thumb_down',
+/** A stylized representation of a closed fist with one extended thumb reaching upward. This universally recognized gesture is used to indicate approval, agreement, or positive sentiment regarding content or activity. */
+_thumb_up = 'thumb_up',
+/** The design is an outline of a horizontal rectangle segmented into multiple vertical sections. This symbol typically indicates a measured resource capacity, such as battery charge level or overall progress completion. */
+_thumbnail_bar = 'thumbnail_bar',
+/** The design features two separate hands making the thumbs-up gesture simultaneously. This strongly signifies heightened approval, enthusiasm, or maximum satisfaction with something viewed. */
+_thumbs_up_double = 'thumbs_up_double',
+/** The design depicts a hand gesture with opposing thumbs—one pointing up and one pointing down. This symbol is used to gather comprehensive feedback, allowing users to express both positive and negative sentiment. */
+_thumbs_up_down = 'thumbs_up_down',
+/** The design features a stylized cloud accompanied by sharp, jagged lightning bolts underneath. This symbol typically signifies an active thunderstorm or other forms of severe electrical weather. */
+_thunderstorm = 'thunderstorm',
+/** The design is a highly stylized illustration of a long bone segment, featuring a symmetrical and waisted hourglass shape. This icon typically represents skeletal structure or indicates topics related to anatomy and physical health. */
+_tibia = 'tibia',
+/** The drawing consists of two stylized, curved segments connected to a straight vertical bar. This symbol is commonly used in medical or anatomical contexts to represent the bones of the lower leg, such as the tibia and fibula. */
+_tibia_alt = 'tibia_alt',
+/** The design depicts a large, solid black rectangle that is visibly segmented into three distinct areas—a wide upper panel and two smaller squares below it. This icon typically symbolizes an input trackpad or control surface, indicating touch-sensitive controls on electronic devices. */
+_tile_large = 'tile_large',
+/** The design consists of three solid black rectangles arranged in a vertical stack. This icon generally represents an input device like a trackpad or touch surface used for cursor movement and general navigation control. */
+_tile_medium = 'tile_medium',
+/** The design shows four empty squares organized into a precise two-by-two grid pattern. This icon is commonly used in user interfaces to suggest switching the display layout, allowing content to be viewed in discrete tiles instead of a continuous list. */
+_tile_small = 'tile_small',
+/** The icon is an abstract representation of a downward-pointing arrow, featuring subtle angular lines. It generally serves to indicate descent, continuation, or accessing information located lower down on a page or screen. */
+_tilt_arrow_down = 'tilt_arrow_down',
+/** The icon depicts an upward-pointing arrow enclosed within a defined trapezoidal shape. This design is commonly used in interfaces to signify positive growth, increasing values, or advancement. */
+_tilt_arrow_up = 'tilt_arrow_up',
+/** The icon displays an uppercase letter A centered within a clean circular outline. It typically signifies automatic functions, indicating that a setting or timer will adjust itself without requiring manual input. */
+_time_auto = 'time_auto',
+/** The design features a circular shape with a curved, solid segment inside the ring. This icon signifies the passage or progression of time, typically used to indicate accelerated sequences like time-lapse photography or video edits. */
+_timelapse = 'timelapse',
+/** It depicts a multi-point line graph showing fluctuating movement across an implied axis. This icon commonly symbolizes data trends, growth over time, or the tracking of overall performance metrics in analytics dashboards. */
+_timeline = 'timeline',
+/** The design depicts a circular dial face, resembling a stopwatch or clock gauge. It is commonly used to indicate time measurement, signaling countdowns, intervals, or how long an action will take. */
+_timer = 'timer',
+/** The design consists of a single, simple vertical line segment forming the numeral one. It is commonly used to mark the first item in a sequence or to denote the quantity of one unit. */
+_timer_1 = 'timer_1',
+/** The design shows the numeral 10 in a clear, bold style. It is commonly used to represent a quantity of ten, such as a step count or a timer duration. */
+_timer_10 = 'timer_10',
+/** The design depicts a circular dial or gauge commonly associated with time measurement. It is used to indicate a specific, limited countdown duration, such as ten units of time remaining. */
+_timer_10_alt_1 = 'timer_10_alt_1',
+/** The design features the characters "10s" rendered in large, simple digital numerals. This icon is typically used to indicate the selection or adjustment of a short, ten-unit time interval for a timer function. */
+_timer_10_select = 'timer_10_select',
+/** The icon literally depicts the numeral two. In user interface design, this symbol typically indicates a pair of units, a second step in a process, or a count of two remaining items. */
+_timer_2 = 'timer_2',
+/** The icon is a solid representation of the numeral three. It is typically used to denote a count of three items, or potentially marks the third stage in a sequence or process. */
+_timer_3 = 'timer_3',
+/** The icon depicts a circular dial that resembles a clock face or measurement gauge. It typically represents a specific count, elapsed time of three units, or a selection of three items. */
+_timer_3_alt_1 = 'timer_3_alt_1',
+/** The design literally displays the numeral three next to the lowercase letter s. This symbol generally indicates a setting that involves a group size of three or refers to selecting from three distinct options. */
+_timer_3_select = 'timer_3_select',
+/** It depicts the numeral five centered within a thick, solid circular border. This design is typically used in user interfaces to represent a short time duration or a countdown timer set for five units. */
+_timer_5 = 'timer_5',
+/** The icon is a clear depiction of the numeral five. It generally serves to denote a quantity or a specific position within a sequence of steps. */
+_timer_5_shutter = 'timer_5_shutter',
+/** The design features a circular clock face paired with a prominent arrow pointing downward. This icon typically signifies decreasing, shortening, or resetting a set time limit or countdown. */
+_timer_arrow_down = 'timer_arrow_down',
+/** The icon depicts a circular clock face positioned next to an arrow that points straight up. It typically signifies starting a timer, extending a time limit, or resetting a countdown. */
+_timer_arrow_up = 'timer_arrow_up',
+/** The design features a circular element that visually represents passage of time or measurement. This symbol universally indicates the cessation, deactivation, or cancellation of any timed function or alarm. */
+_timer_off = 'timer_off',
+/** The design features three distinct vertical bars arranged within a standard glyph shape. This symbol is used to indicate that an ongoing process, such as media playback or a countdown timer, has been temporarily paused. */
+_timer_pause = 'timer_pause',
+/** The icon literally depicts a right-pointing triangle enclosed within a surrounding circle. This universally recognized design serves as an indicator to begin an action, commonly used for starting media playback or initiating a timed process. */
+_timer_play = 'timer_play',
+/** The icon literally depicts a cross-section of a car tire connected to an attached gauge or measurement device. It typically symbolizes vehicle maintenance, such as checking tire pressure or performing general tire repairs. */
+_tire_repair = 'tire_repair',
+/** The design is a simple, bold representation of an uppercase letter T. It typically signifies a title or header, indicating that the text following should be treated as a main heading. */
+_title = 'title',
+/** The icon displays an uppercase letter followed by its corresponding lowercase version. This pairing illustrates Title Case, which is the formatting rule requiring major words in a title or heading to be capitalized. */
+_titlecase = 'titlecase',
+/** The design consists of a simple rectangular shape containing a single horizontal line positioned near its base. It is used to symbolize temporary status messages or non-intrusive alerts within an application interface. */
+_toast = 'toast',
+/** The design features three distinct, stacked horizontal lines which are positioned parallel to one another. This symbol is widely used in user interfaces to signify an expandable menu or a comprehensive list of contents. */
+_toc = 'toc',
+/** The icon depicts a stylized calendar widget with clear rectangular sections, suggesting organized date tracking. It is commonly used to indicate the current day, access scheduling information, or view today's appointments. */
+_today = 'today',
+/** The design is represented by an elongated horizontal oval containing a filled circle near one end. This icon universally indicates that a feature or device has been deactivated or turned off. */
+_toggle_off = 'toggle_off',
+/** The design illustrates a simple, oblong toggle switch that resembles an electronic power button. This icon is universally used in user interfaces to activate, enable, or turn a specific feature on or off. */
+_toggle_on = 'toggle_on',
+/** The icon is depicted as a stylized, geometric hexagon containing nested cubes or blocks. It typically represents a discrete digital asset, data unit, or credential, commonly used in contexts involving blockchain technology or code components. */
+_token = 'token',
+/** The design consists of two connected semi-circular shapes that form an open, looping pathway. This symbol generally represents a necessary fee or charge required to pass through a specific point, such as a bridge or gate. */
+_toll = 'toll',
+/** The design is contained within a circle and divided vertically into two contrasting halves: one section is solid while the other features parallel vertical lines. This pattern often illustrates concepts of contrast or balance, making it suitable for representing tonal shifts or different states. */
+_tonality = 'tonality',
+/** The illustration shows a circle divided vertically, where one segment contains several stacked parallel lines and the other half remains blank. It typically indicates a lack of cellular signal or data connection, meaning no service is currently available. */
+_tonality_2 = 'tonality_2',
+/** The icon depicts a solid rectangle that is horizontally split into two distinct segments. It commonly represents an application toolbar or control panel where various functions and navigational options are grouped together. */
+_toolbar = 'toolbar',
+/** The design depicts an upright, stylized container resembling a generic beverage bottle or flask. This icon is typically used to represent various types of liquids, such as alcohol, beer, or other consumable drinks. */
+_tools_flat_head = 'tools_flat_head',
+/** The icon depicts a circular outline containing internal segments and points. It indicates that special tools or assembly steps are required to set up or complete an installation process. */
+_tools_installation_kit = 'tools_installation_kit',
+/** The design depicts a simple, open-frame ladder with multiple visible rungs connecting the parallel vertical sides. This icon commonly represents upward mobility, suggesting steady progress, achievement, or the journey toward reaching new goals. */
+_tools_ladder = 'tools_ladder',
+/** The icon depicts a stylized horizontal rectangle with internal markings suggesting a payment card or checkbook format. It is commonly used to symbolize financial transactions, currency access, or general payment methods. */
+_tools_level = 'tools_level',
+/** The design depicts a simplified cross-section of a fastener or screwdriver bit tip. It is used to symbolize any service related to tools, repairs, maintenance, or construction projects. */
+_tools_phillips = 'tools_phillips',
+/** The design shows a pair of adjustable gripping pliers used for various tasks. It typically represents general repair, mechanical work, or electrical DIY projects. */
+_tools_pliers_wire_stripper = 'tools_pliers_wire_stripper',
+/** The image shows a handheld electric power drill complete with a visible chuck and trigger mechanism. It is commonly used to represent construction work, repair tasks, or general tools needed for home improvement projects. */
+_tools_power_drill = 'tools_power_drill',
+/** The design is an outline of a classic speech bubble shape with a pointed tail at the bottom right corner. It commonly represents general communication, such as chat messages, comments, or spoken dialogue in digital applications. */
+_tooltip = 'tooltip',
+/** The icon is designed in the shape of a speech bubble or chat box outline and contains three short, stacked horizontal bars within its body. It generally represents messaging functionality, textual content, or an informational summary related to communication threads. */
+_tooltip_2 = 'tooltip_2',
+/** The icon depicts an 'X' mark, often contained within a square boundary. This symbol is universally used in digital interfaces to signify the action of closing, dismissing, or exiting the currently viewed section of content. */
+_top_panel_close = 'top_panel_close',
+/** The icon depicts two stacked rectangular panels separated by a horizontal dividing line. It is used to indicate an open or expanded view, typically signifying access to content feeds, inboxes, or browsing activity logs. */
+_top_panel_open = 'top_panel_open',
+/** The design depicts a stylized rectangular folder or document with clean internal lines suggesting contained information. It is commonly used to represent organized content, grouping related files, or defining a specific category or topic area. */
+_topic = 'topic',
+/** The design is a solid, inverted triangle forming a conical or funnel-like shape. It commonly symbolizes severe weather events, specifically indicating a tornado or strong vortex of wind. */
+_tornado = 'tornado',
+/** The icon depicts a stylized, upward-pointing chevron shape that contains two internal parallel lines near its base. This visual element is commonly used to signify growth, improvement, or an increase in value or quantity. */
+_total_dissolved_solids = 'total_dissolved_solids',
+/** The icon shows a simplified outline of an index finger pointing downward, suggesting contact with a surface. It is used to denote actions such as tapping, selecting items, or generally interacting with a digital interface. */
+_touch_app = 'touch_app',
+/** The design shows a stylized hand pointing downward with two curved lines positioned near the fingertips. This gesture is commonly used to indicate an action that requires performing a quick repetition of a touch or tap. */
+_touch_double = 'touch_double',
+/** The design is an outline of a hand making two separate, quick tapping motions near a surface. This gesture typically represents a double-tap command used in mobile interfaces for specific functions like zooming or selecting. */
+_touch_double_2 = 'touch_double_2',
+/** The icon depicts a stylized finger making contact with radiating arcs of signal waves. It typically signifies user interaction or settings adjustments related to wireless connectivity, such as turning Wi-Fi on or off. */
+_touch_long = 'touch_long',
+/** The icon depicts a stylized hand pointing downward with three curved lines radiating from the wrist area. It typically signifies broadcasting a signal, initiating a search function, or completing an advanced action sequence. */
+_touch_triple = 'touch_triple',
+/** The design shows a rectangular touchpad area paired with an adjacent curved mouse body. This combined icon represents general pointing or input devices used for controlling a cursor within software interfaces. */
+_touchpad_mouse = 'touchpad_mouse',
+/** The design shows an outline of a rectangular pad, resembling a touchpad, crossed out by a diagonal line. This universally indicates that the associated mouse or pointing device functionality is disabled or unavailable. */
+_touchpad_mouse_off = 'touchpad_mouse_off',
+/** The icon depicts a sign mounted on a pole with a rectangular flag banner attached to it. It is generally used in public locations to guide visitors and mark the beginning or conclusion of a sightseeing journey or tour. */
+_tour = 'tour',
+/** The image depicts a simple, stylized side view of an automobile or related transport vehicle. It is generally used to represent comprehensive automotive services, such as local taxi options, car rentals, or roadside assistance. */
+_toys = 'toys',
+/** The design is a stylized depiction of an interlocking jigsaw puzzle piece. It represents themes associated with toys, learning, or any activity that requires assembling various parts together. */
+_toys_and_games = 'toys_and_games',
+/** The design features four curved blades symmetrically radiating outward from a central point. This symbol is commonly used in user interfaces to indicate refresh actions, continuous movement, or circulation. */
+_toys_fan = 'toys_fan',
+/** The design is composed of multiple nested and concentric circular lines forming a continuous pattern. It commonly indicates the function used for tracking edits or monitoring revisions within a document. */
+_track_changes = 'track_changes',
+/** The design features a stylized hand making contact with a rectangular panel. This commonly signifies physical interaction with a touchpad or trackpad for digital navigation and input commands. */
+_trackpad_input = 'trackpad_input',
+/** The icon depicts a hand making contact with a rectangular surface. It is commonly used to represent general touch inputs, suggesting actions like clicking, scrolling, or cursor movement on an integrated pad. */
+_trackpad_input_2 = 'trackpad_input_2',
+/** The design features a stylized hand gesturing near an input panel or surface. It is commonly used to indicate that touch, trackpad, or cursor input functionality has been disabled or paused. */
+_trackpad_input_3 = 'trackpad_input_3',
+/** The design features three stacked, circular elements arranged vertically. It is commonly used as a general indicator for traffic signals, helping to symbolize controlled flow of vehicle movement. */
+_traffic = 'traffic',
+/** The icon displays multiple car shapes grouped closely together in a line. It is used to indicate heavy traffic congestion or delays while traveling by road. */
+_traffic_jam = 'traffic_jam',
+/** The design shows a stylized gauge reading that progresses from parallel lines into an open circle. This symbol is commonly used to indicate measured environmental conditions, such as temperature levels or changes in humidity. */
+_trail_length = 'trail_length',
+/** The icon depicts a solid horizontal line segment of medium length. It typically symbolizes an intermediate progress level or a moderate distance remaining in a journey. */
+_trail_length_medium = 'trail_length_medium',
+/** The graphic consists of a straight, brief line ending with a directional arrowhead pointing right. It is used to signify progression or movement over a limited path length in navigation or data visualization. */
+_trail_length_short = 'trail_length_short',
+/** The icon depicts the side view of a railway vehicle, resembling a train car or locomotive. It is commonly used to symbolize rail transport or public transit via tracks. */
+_train = 'train',
+/** The design depicts a stylized front view of a railway carriage or tram car mounted on wheels. It is commonly used to symbolize public transportation within an urban setting, suggesting reliable local city travel. */
+_tram = 'tram',
+/** The image depicts a stylized figure walking next to directional arrows that suggest movement across an area. This symbol is used in transit maps to indicate that a transfer or change can be made simply by moving through the current location, such as shifting platforms within the same station. */
+_transfer_within_a_station = 'transfer_within_a_station',
+/** The design prominently features opposing vertical arrows that transition into a segmented, downward-pointing structure. This symbol generally signifies transformation, dimension changes, or the ability to resize content within an interface. */
+_transform = 'transform',
+/** The icon depicts a central circle intersected by two opposing diagonal arrows that cross over each other. This symbol is widely used to represent transgender, non-binary, or gender diverse identities, signifying inclusivity and fluidity of gender. */
+_transgender = 'transgender',
+/** The icon depicts a solid arrow shape that points sharply to the left. It is used in signage and maps to indicate an exit route or a clear turn in a specific direction. */
+_transit_enterexit = 'transit_enterexit',
+/** The design resembles a physical transit ticket or boarding pass, featuring an abstracted image of a public transport vehicle within its frame. It generally indicates entry to or usage of mass transit systems, such as buses, trams, or trains. */
+_transit_ticket = 'transit_ticket',
+/** The icon depicts an overlap or fold in one corner of a square frame. This symbol is typically used to represent transitions between pages, sections, or the action of cropping and editing media content. */
+_transition_chop = 'transition_chop',
+/** The icon displays a grid arrangement formed by uniformly spaced dots. It typically represents data samples, transitions between discrete states, or the visualization of structured information in an array. */
+_transition_dissolve = 'transition_dissolve',
+/** The icon depicts a solid black rectangle placed next to an array of small, scattered dots. This pattern typically indicates a smooth visual change or transition, suggesting that content is fading out or moving gracefully from one state to another. */
+_transition_fade = 'transition_fade',
+/** The design features an arrow pointing right that leads directly into a rectangular enclosure. This icon is typically used to symbolize progressing deeper into content, navigating to a new section, or moving forward through a workflow. */
+_transition_push = 'transition_push',
+/** A horizontal bar with a marker moving along its length illustrates progression from one point to another. This icon typically indicates that content is loading, that a process is underway, or that time is passing through defined stages. */
+_transition_slide = 'transition_slide',
+/** The icon depicts a complex Chinese logogram structure. It is commonly used in user interfaces to signify language translation, conversion, or multilingual support. */
+_translate = 'translate',
+/** The design displays a grouping of characters featuring numerals and letters arranged with superscripts and subscripts. This symbol is commonly used to represent concepts related to indication, translation, or structured data within technical documentation. */
+_translate_indic = 'translate_indic',
+/** The image displays a diverse collection of personal vehicles, including bicycles, motorized scooters, and cars. It is commonly used to symbolize various options for local travel or urban transit methods. */
+_transportation = 'transportation',
+/** The icon depicts a stylized silhouette of an airplane flying through the sky. It is commonly used to symbolize general air travel, flight booking services, or moving between distant destinations. */
+_travel = 'travel',
+/** The icon literally depicts a stylized globe overlaid with a magnifying glass. It is typically used to indicate global exploration or searching for information about places on a map. */
+_travel_explore = 'travel_explore',
+/** The icon depicts a stylized representation of a piece of upright travel luggage or suitcase. It is commonly used to represent general concepts related to travel needs, such as airport logistics, checked bags, or overall baggage services. */
+_travel_luggage_and_bags = 'travel_luggage_and_bags',
+/** The icon depicts an arrow that curves sharply downward in a jagged pattern. It is commonly used to indicate a decline, falling trend, or negative movement over time. */
+_trending_down = 'trending_down',
+/** The icon is a thick, solid black arrow pointing clearly to the right. This symbol typically indicates advancement, progression, or moving forward to the next item in a sequence. */
+_trending_flat = 'trending_flat',
+/** The design shows a line graph rising steadily from left to right, culminating in an arrowhead marker. This symbol is commonly used to represent positive growth or increasing trends over time. */
+_trending_up = 'trending_up',
+/** A solid triangle is geometrically placed within a surrounding circular frame. This icon typically represents centering tools in software interfaces, signifying that an element should be aligned precisely to the middle point of its container. */
+_triangle_circle = 'triangle_circle',
+/** It portrays a generic piece of carry-on luggage rendered as a clean outline. This symbol suggests themes of travel readiness, destinations, or associated services like shipping. */
+_trip = 'trip',
+/** The icon depicts a simple, thick black ring forming an empty circle. It is used to designate a clear starting point, marking the origin or initial location for a journey or sequence. */
+_trip_origin = 'trip_origin',
+/** The icon depicts a simplified outline of a wheeled shopping trolley or cart. It commonly signifies the collection of goods a user intends to buy while shopping online. */
+_trolley = 'trolley',
+/** The design shows an enclosed, boxy vehicle supported by visible wheels beneath its main body. It typically represents public transportation, a historic streetcar, or local guided community tours. */
+_trolley_cable_car = 'trolley_cable_car',
+/** The design depicts a stylized, symmetrical cup with handles supporting a wide body. This icon commonly signifies success, victory, or high levels of achievement and accomplishment. */
+_trophy = 'trophy',
+/** The icon shows a magnifying glass encompassing a stylized waveform or squiggle line. It typically indicates an action to search for problems, check signals, or diagnose technical issues within a system. */
+_troubleshoot = 'troubleshoot',
+/** The illustration depicts large, powerful cresting ocean waves that appear significantly larger than typical surf. This icon is commonly used to warn viewers about an impending tsunami or dangerous coastal flooding event. */
+_tsunami = 'tsunami',
+/** The design consists of the three capitalized letters T, S, and V placed inside a solid rectangle. It commonly signifies a data format known as Tab-Separated Values, which stores information using tabs instead of commas. */
+_tsv = 'tsv',
+/** The design shows a classic telephone receiver positioned next to a square grid representing a numeric dial pad. It is commonly used to symbolize making a call, initiating a connection, or general phone dialing functionality. */
+_tty = 'tty',
+/** It is a graphic depiction of multiple intersected horizontal and vertical lines forming a distinct array or matrix pattern. This layout typically symbolizes structured data, indexing systems, or specialized character input methods. */
+_tune = 'tune',
+/** The icon depicts an arrow shaped like an 'L' that makes a distinct ninety-degree angle turn pointing toward the left. It is commonly used to indicate a directional change or navigation instruction requiring a left turn. */
+_turn_left = 'turn_left',
+/** The icon depicts a simple arrow that makes a distinct right-angle turn to the right. It commonly indicates forward progress, moving to the next step, or continuing in a rightward direction. */
+_turn_right = 'turn_right',
+/** The design illustrates a path that travels in an initial direction before making a tight turn to the left. It is commonly used in maps or instructions to show a sharp change of route or direction. */
+_turn_sharp_left = 'turn_sharp_left',
+/** The icon depicts a line path that makes an abrupt, ninety-degree turn sharply to the right before continuing in a new direction marked by an arrow. This symbol is used primarily for navigation instructions or diagrams to indicate where a sharp right turn must be made. */
+_turn_sharp_right = 'turn_sharp_right',
+/** The icon is shaped like an arrow that curves to point toward the left. It indicates a slight directional shift, typically used in navigation or flowcharts when moving marginally left. */
+_turn_slight_left = 'turn_slight_left',
+/** A curved arrow bent gently toward the right indicates a slight change in direction. It is typically used to guide users or viewers toward proceeding with a minor adjustment or continuation to the right. */
+_turn_slight_right = 'turn_slight_right',
+/** The icon depicts a stylized television or monitor screen resting on a stable base stand. It generally represents visual media content, such as video streaming services or general display output options. */
+_tv = 'tv',
+/** The image depicts a classic representation of a flat-screen television monitor screen. It commonly signifies any type of external display, video playback, or general multimedia viewing capabilities. */
+_tv_displays = 'tv_displays',
+/** The icon shows the simple silhouette of a flat-screen television set resting on a stand. It is used to represent broader concepts related to modern media consumption, connectivity, or various home entertainment systems. */
+_tv_gen = 'tv_gen',
+/** The icon depicts the letters "TV" enclosed within a simple square graphic. It generally indicates access to channel guides or viewing schedules, allowing users to check program listings and broadcast information. */
+_tv_guide = 'tv_guide',
+/** The design shows a rectangular screen monitor paired with a right-pointing chevron arrow. This icon typically indicates moving forward or advancing to the next page, item, or step in a sequence. */
+_tv_next = 'tv_next',
+/** The icon depicts a stylized television monitor outlined with a thick diagonal slash across its face. This symbol is commonly used to indicate that the TV display is turned off or that there is no active video signal. */
+_tv_off = 'tv_off',
+/** The design depicts a vertical arrangement of lines, which creates the visual structure of a checklist or options list. This icon typically indicates the ability to select, edit, or manage settings such as television channels within a user interface. */
+_tv_options_edit_channels = 'tv_options_edit_channels',
+/** The icon literally depicts a stylized cogwheel enclosed within a solid rectangular frame. It is commonly used across digital interfaces to represent system settings, options, or configuration menus that require user adjustments. */
+_tv_options_input_settings = 'tv_options_input_settings',
+/** The icon depicts an elongated electronic device with various button sections typical of a modern remote control. It represents the ability to wirelessly operate or manage media equipment like TVs, stereos, or sound systems. */
+_tv_remote = 'tv_remote',
+/** The design displays a rectangular screen featuring a generic human silhouette portrait centered within its frame. It is commonly used to represent user account access, profile settings, or initiating a sign-in process for an application or service. */
+_tv_signin = 'tv_signin',
+/** The design is a simplified rectangular outline representing a television screen. It typically signifies smart home features, media consumption hubs, or integrated voice assistants. */
+_tv_with_assistant = 'tv_with_assistant',
+/** The design shows two distinct, rectangular panels placed side by side, with each panel filled with multiple horizontal lines simulating structured text. It typically indicates a dual-pane view or the comparison of two related documents, such as viewing files in split-screen mode or comparing data stacks. */
+_two_pager = 'two_pager',
+/** The design illustrates two separate document panels placed side-by-side, both containing placeholder lines for text content. It typically signifies the ability to compare different versions of a file or manage related source and output documents. */
+_two_pager_store = 'two_pager_store',
+/** The icon depicts a stylized two-wheeled vehicle that includes a main frame and handlebars. It generally represents modes of personal transportation, such as cycling or scootering for commuting and local travel. */
+_two_wheeler = 'two_wheeler',
+/** The icon shows a capital letter A centered within a simple square border. This symbol generally indicates functions related to drafting, writing, or editing textual content. */
+_type_specimen = 'type_specimen',
+/** The design is an arrow that curves sharply downward before sweeping back up to point horizontally to the left. It commonly indicates a return action, signaling that the user should go back to a previous screen or undo the last step. */
+_u_turn_left = 'u_turn_left',
+/** The design forms an arrow that curves sharply downward and then points horizontally to the right, creating a clear U-turn shape. This icon commonly indicates reversing direction or making a sharp turn back around while continuing movement past a starting point. */
+_u_turn_right = 'u_turn_right',
+/** The design depicts a shallow, wide bowl filled with visible strands of thick noodles. This common icon symbolizes traditional Japanese cuisine, specifically the noodle dish called udon. */
+_udon = 'udon',
+/** The design shows two distinct, curved segments placed side-by-side. It is used in anatomy to represent the ulna and radius, which are the paired bones of the human forearm. */
+_ulna_radius = 'ulna_radius',
+/** The design features stylized angular arms with internal markers that point toward completion. This symbol indicates that an item has been successfully checked off, approved, or cast as a ballot. */
+_ulna_radius_alt = 'ulna_radius_alt',
+/** The design depicts the simple, recognizable shape of an open umbrella with its curved canopy and supporting frame. It is commonly used to symbolize shelter or protection from adverse conditions, such as rain. */
+_umbrella = 'umbrella',
+/** The icon depicts an open box structure containing a prominent upward-pointing arrow. It signifies the process of restoring data or expanding archived files to make their contents accessible again. */
+_unarchive = 'unarchive',
+/** The illustration depicts a stylized eye, often accompanied by markings or symbols below it. It is typically used to represent vision care, ophthalmology services, or detailed medical examinations. */
+_undereye = 'undereye',
+/** The design is a single, thick arrow that curves back upon itself in a sweeping motion. It universally signifies the action of reversal, indicating that an application or process should return to its previous state. */
+_undo = 'undo',
+/** The design features two stacked chevron symbols pointing in opposite directions. This icon typically indicates that an expanded section of information can be collapsed or minimized by the user. */
+_unfold_less = 'unfold_less',
+/** The icon consists of two parallel V shapes forming a downward-pointing double chevron or arrow pattern. It typically indicates that content is collapsible and can be expanded to reveal more details or sections. */
+_unfold_less_double = 'unfold_less_double',
+/** The icon depicts two stacked, inverted V-shapes forming a single downward-pointing double arrow. This symbol commonly indicates that an element contains expandable content, suggesting more information is available if clicked or tapped. */
+_unfold_more = 'unfold_more',
+/** The design consists of two vertical sets of double chevron arrows, stacked opposingly with one pointing up and the other pointing down. In user interface contexts, this symbol typically indicates that a section can be expanded or collapsed, representing a range of options or nested levels of information. */
+_unfold_more_double = 'unfold_more_double',
+/** The design features an outlined square frame containing multiple directional arrows placed near its corners. This symbol is used in software interfaces to separate or divide several elements that were previously combined into a single group. */
+_ungroup = 'ungroup',
+/** The design shows a rectangular badge featuring the number five adjacent to a stylized human profile icon. This symbol is typically used in interfaces to represent a measurable value tied directly to a user's personal account or status. */
+_universal_currency = 'universal_currency',
+/** The design depicts a stylized arrangement combining elements that represent multiple forms of currency, such as coins and stacked bills. This symbol is widely used to indicate financial transactions, economic value, or universal payment options. */
+_universal_currency_alt = 'universal_currency_alt',
+/** The design depicts a stylized map pin placed within a defined rectangular border. It is commonly used to indicate or search for a specific geographical location, such as current position or points of interest on a map. */
+_universal_local = 'universal_local',
+/** The design shows a circular shape cut by a diagonal line, with one half marked by a plus sign and the other by a minus sign. This symbol typically represents balancing opposing values or initiating a toggle between two distinct states. */
+_unknown_2 = 'unknown_2',
+/** The design shows a curved arc with a straight horizontal line crossing through it. This simple figure is commonly used as an emoticon to convey negative emotions like sadness, disappointment, or general unhappiness. */
+_unknown_5 = 'unknown_5',
+/** The icon depicts a sheet of paper with text lines suggesting a formalized document or record. It typically signifies that the contents of the file are unknown, unclassified, or require further investigation to determine their nature. */
+_unknown_document = 'unknown_document',
+/** This symbol combines several structural elements, such as dashes, arrows, and crossing lines. It generally indicates that certain content has been crossed out or removed from a document. */
+_unknown_med = 'unknown_med',
+/** The design shows a circular graphic overlaid with a thick diagonal line strikeout. This symbol is commonly used to indicate muting sound, enforcing silence, or deactivating a feature entirely. */
+_unlicense = 'unlicense',
+/** The design shows an irregular pathway composed of dirt and loose earth materials. It generally signifies unpaved routes or destinations that require off-road travel. */
+_unpaved_road = 'unpaved_road',
+/** The design features a thick diagonal slash intersecting an enclosing circle. It universally indicates that something is canceled, disabled, or currently not available for public viewing. */
+_unpublished = 'unpublished',
+/** The design features an open envelope graphic paired with a negation symbol. This icon is universally used to indicate opting out of communications or withdrawing from a service, such as unsubscribing from emails. */
+_unsubscribe = 'unsubscribe',
+/** The design features a rectangular base that resembles an outlet or charging port, marked by radiating lightning bolts above it. This icon typically symbolizes incoming power, readiness, or the arrival of something important and charged up. */
+_upcoming = 'upcoming',
+/** The icon depicts an arrow forming an open loop that circles back on itself. This symbol is widely used to indicate that content is being refreshed or updated to display the latest information. */
+_update = 'update',
+/** The icon depicts a circular refresh arrow crossed out by a diagonal slash. It signifies that an update function is currently unavailable or disabled for use. */
+_update_disabled = 'update_disabled',
+/** The design features a solid arrow pointing sharply upward from an underlying horizontal line. This icon is commonly used to denote progress, enhancement, or the process of upgrading services or software. */
+_upgrade = 'upgrade',
+/** The design features three capitalized letters—U, P, and I—set inside a simple square border. This emblem represents the Unified Payments Interface, commonly used to indicate instant digital payment capabilities across various financial platforms. */
+_upi_pay = 'upi_pay',
+/** The design consists of an upward-pointing arrow originating directly from a horizontal baseline. It commonly signifies the process of transferring data or files from a local device to a remote server or cloud storage. */
+_upload = 'upload',
+/** The icon literally depicts a large, solid arrow pointing upward, placed above a horizontal line segment. This universally represents the action of transferring data from a local device to an external location, commonly known as uploading files or information. */
+_upload_2 = 'upload_2',
+/** The design shows a rectangular document shape with an upward-pointing arrow emerging from its top right corner. This symbol universally represents the action of uploading files or data to a cloud service or remote server. */
+_upload_file = 'upload_file',
+/** The icon combines the capital letter A with an upward-pointing arrow graphic. This symbol is often used to represent achievement of top marks, advancement in status, or positive progression. */
+_uppercase = 'uppercase',
+/** The design features a bulbous central component from which two looping, curved lines emerge. This symbol is typically used in medical contexts to represent internal bodily systems and the movement of fluids, especially those related to the urinary tract and urological health. */
+_urology = 'urology',
+/** The icon depicts a centralized junction with multiple lines extending outwards in various directions. It is used to symbolize general technological connectivity, indicating that devices can connect and transfer data through a single point. */
+_usb = 'usb',
+/** The design features intersecting lines and directional arrows suggesting a connection path or status change. This icon typically indicates that an attached peripheral, such as a USB device, is disconnected or powered down. */
+_usb_off = 'usb_off',
+/** The icon depicts a simple silhouette of a person positioned beside three parallel horizontal lines. It commonly signifies an area where detailed information or specific attributes related to a profile can be viewed or edited. */
+_user_attributes = 'user_attributes',
+/** The icon depicts a medical syringe placed beside a bottle of liquid or pill medication. It commonly symbolizes vaccinations, treatments, or general preventive healthcare services. */
+_vaccines = 'vaccines',
+/** The design depicts a curved nozzle attached to a main horizontal unit. It represents cleaning utilities, such as plumbing connections or vacuum suction tools used for household maintenance. */
+_vacuum = 'vacuum',
+/** The icon depicts a simple, open circular ring surrounding a central area. This symbol usually signifies that monitoring services are inactive, disconnected, or temporarily on pause. */
+_vacuum_2 = 'vacuum_2',
+/** The icon depicts a prominent outer ring surrounding an inner symbol resembling a stylized target or eye reticle. It typically indicates that monitoring, supervision, or location tracking services are actively running and enabled. */
+_vacuum_2_on = 'vacuum_2_on',
+/** The design is a stylized plumbing fixture featuring a main horizontal body with a vertical component attached above it. It commonly represents any mechanism used to regulate or control the flow of liquids, such as water in piping systems. */
+_valve = 'valve',
+/** The image shows a cigarette or stick with visible smoke trailing from it, overlaid by a diagonal prohibition slash. It signifies that all forms of smoking, including vaping, are strictly prohibited in this area. */
+_vape_free = 'vape_free',
+/** The icon shows a stylized pen or stylus from which wisps of smoke are visibly rising. This symbol typically indicates designated areas or rooms where smoking, vaping, or other forms of vapor are permitted. */
+_vaping_rooms = 'vaping_rooms',
+/** The icon shows a rectangular outline paired with an attached plus sign. This design is commonly used to represent an additive function, such as increasing capacity, adding power, or expanding a variable setting. */
+_variable_add = 'variable_add',
+/** The icon depicts a horizontal rectangle connected to an arrow pointing toward the right. It typically symbolizes an editable field or an insertion point where variable content can be added or expanded within a digital interface. */
+_variable_insert = 'variable_insert',
+/** The illustration depicts an open rectangular box crossed out by a large 'x'. This common symbol is used to indicate that something should be deleted, removed, or canceled. */
+_variable_remove = 'variable_remove',
+/** The icon consists of a basic, solid rectangle shape. It is used to represent a general placeholder or container for data, such as an assigned variable in programming contexts. */
+_variables = 'variables',
+/** The icon depicts a stylized nautical anchor combined with an attached rectangular component near the top curve. In medical contexts, this symbol is often used abstractly to represent stability, support, or crucial life-sustaining services like mechanical ventilation. */
+_ventilator = 'ventilator',
+/** The design features a prominent checkmark centered within a stylized starburst badge shape. It is used to signal that the associated content or information has been confirmed as authentic and trustworthy. */
+_verified = 'verified',
+/** The design features a stylized star shape overlaid with a diagonal slash mark. This symbol universally indicates cancellation, invalid status, or that a feature has been deactivated. */
+_verified_off = 'verified_off',
+/** The design features a stylized shield containing a prominent checkmark mark. It signifies that the user account has passed necessary security checks, confirming their identity as authentic and trustworthy. */
+_verified_user = 'verified_user',
+/** The icon depicts parallel horizontal lines positioned above a large, solid downward-pointing arrow. This symbol is used in layout and design tools to ensure that content aligns vertically with the bottom margin or baseline of its container. */
+_vertical_align_bottom = 'vertical_align_bottom',
+/** The icon depicts a downward-pointing arrow positioned directly above an upward-pointing arrow, separated by a connecting horizontal line. It universally signifies that content should be vertically centered or aligned precisely in the middle of its available space. */
+_vertical_align_center = 'vertical_align_center',
+/** The design features a vertical line topped with an arrowhead pointing straight up. This icon typically signifies aligning content or text flush with the top boundary of its container or section. */
+_vertical_align_top = 'vertical_align_top',
+/** The design consists of three thin, parallel horizontal bars stacked vertically. This symbol commonly indicates that there are multiple options or settings available for vertical distribution or viewing. */
+_vertical_distribute = 'vertical_distribute',
+/** The design depicts three solid, parallel vertical bars standing side by side. This icon commonly indicates an intermediate level of signal strength, battery life, or connection availability. */
+_vertical_shades = 'vertical_shades',
+/** The icon depicts multiple parallel vertical slats enclosed within a defined rectangular structure. It commonly signifies physical barriers, enclosures, or restricted areas of access. */
+_vertical_shades_closed = 'vertical_shades_closed',
+/** The icon literally depicts three stacked horizontal lines positioned next to a solid vertical rectangle. It is commonly used in software design to signify splitting content or dividing an interface into two separate views. */
+_vertical_split = 'vertical_split',
+/** The icon literally depicts a blocky, stylized drawing of a video camera or recording unit with an added square element displaying a plus symbol. This universally signifies the action of initiating a new connection or starting a live video conversation. */
+_video_call = 'video_call',
+/** The design illustrates the recognizable profile of a compact digital video camera. It is typically used in user interfaces to indicate functions related to recording, viewing media, or accessing camera controls. */
+_video_camera_back = 'video_camera_back',
+/** The icon depicts a stylized, rectangular representation of a camcorder viewed from its rear panel. It commonly indicates the ability to add new media sources or activate advanced recording functions for video capture. */
+_video_camera_back_add = 'video_camera_back_add',
+/** The icon is a stylized representation showing the front view of a digital video camera or webcam. It indicates the availability of live streaming capabilities, typically used for broadcasting, video chat, or recording personal content. */
+_video_camera_front = 'video_camera_front',
+/** The icon shows a basic outline of a video camera crossed out by a diagonal slash. This design indicates that the camera or video broadcasting function is currently disabled or turned off. */
+_video_camera_front_off = 'video_camera_front_off',
+/** The design shows a speech bubble surrounding an image of a video camera. It is typically used to indicate functions related to live video communication, such as initiating calls or virtual conferencing. */
+_video_chat = 'video_chat',
+/** The icon depicts a standard document shape containing a clear video camera or play button emblem. It is used to signify that the contained file is multimedia, indicating playable video footage or recordings. */
+_video_file = 'video_file',
+/** An outlined frame marked by corner brackets holds a prominent right-pointing triangle in its center. This icon universally signifies video playback capability, media viewing, or recording functions. */
+_video_frame_copy = 'video_frame_copy',
+/** The design combines elements representing continuous motion with an overlay indicating retention or storage. It commonly signifies the action of capturing and saving a single still image (frame) extracted from a larger video stream. */
+_video_frame_save = 'video_frame_save',
+/** The icon is depicted as a solid black rectangle with slightly rounded corners. This simple shape typically indicates media viewing, such as video playback or general display output. */
+_video_label = 'video_label',
+/** The design consists of three stacked rectangular frames, with one frame featuring a play button indicator. This icon typically represents a collection of preserved media files, indicating access to a video library or saved content archive. */
+_video_library = 'video_library',
+/** The illustration depicts a magnifying glass with a triangular play button positioned within its circular lens. It is used to signify searching or reviewing multimedia content, such as videos or streaming media. */
+_video_search = 'video_search',
+/** A stylized video player frame featuring a play button is shown alongside a settings cogwheel icon. This combination typically indicates access to controls used for adjusting parameters related to video quality, audio output, or recording options. */
+_video_settings = 'video_settings',
+/** The design features a simple frame suggesting video capture or playback. It signifies that the recorded or streamed content has been stabilized to ensure smooth viewing and reliable quality. */
+_video_stable = 'video_stable',
+/** The icon depicts a stylized rectangular frame with parallel lines that border a prominent, centered play button. This universal symbol indicates multimedia content, signaling the ability to start video playback or access digital media files. */
+_video_template = 'video_template',
+/** The illustration depicts the outline of a simple, digital video camera. It is commonly used to indicate features related to recording videos or accessing camera functions within an application. */
+_videocam = 'videocam',
+/** The design depicts the silhouette of a video camera combined with a prominent exclamation point enclosed within a circle. This symbol commonly indicates an urgent warning or crucial notification related to video capture, recording, or streaming functions. */
+_videocam_alert = 'videocam_alert',
+/** It shows an outline of a video camera with a diagonal slash drawn across it. This icon indicates that the camera feed or video function has been turned off or disabled. */
+_videocam_off = 'videocam_off',
+/** The icon depicts a rounded rectangular container that holds a prominent plus sign adjacent to three smaller dots. This symbol combination commonly signifies the ability to add new elements, expand options, or access advanced settings within an application. */
+_videogame_asset = 'videogame_asset',
+/** The design illustrates a rectangular screen or window overlaid with a prominent diagonal line crossing through it. It generally signifies canceling an active feature, deactivating alerts, or turning off a specific function or mode. */
+_videogame_asset_off = 'videogame_asset_off',
+/** The icon depicts two parallel solid horizontal bars stacked vertically. This design commonly represents a list view, suggesting structured data or distinct items within an agenda. */
+_view_agenda = 'view_agenda',
+/** The design consists of three solid, vertically oriented rectangles placed side-by-side with consistent spacing. It typically represents viewing multiple separate apps or data streams, indicating an overview selection menu for available options. */
+_view_apps = 'view_apps',
+/** The design features two distinct vertical bars separated by empty space, creating an open rectangular shape. This icon typically signifies viewing structured data, such as lists, arrays, or collections of multiple related items. */
+_view_array = 'view_array',
+/** The design shows a stylized rectangular media device with symmetrical vertical elements on either side. This icon commonly indicates the ability to browse through multiple items in sequence, such as photos or products displayed in a carousel view. */
+_view_carousel = 'view_carousel',
+/** The icon depicts four parallel, equally sized vertical rectangles placed side by side. It is commonly used in user interfaces to represent a structured column layout or the ability to view content as distinct lists of information. */
+_view_column = 'view_column',
+/** The design depicts two adjacent, uniformly sized vertical rectangles placed next to each other. This icon generally represents duality, comparison, or viewing two distinct sets of data simultaneously in parallel columns. */
+_view_column_2 = 'view_column_2',
+/** The design consists of two adjacent rectangles separated by a dividing line. It is commonly used to represent content that has been split, allowing multiple pieces of information to be viewed in parallel sections. */
+_view_comfy = 'view_comfy',
+/** The icon literally depicts four empty squares arranged neatly into a 2x2 grid pattern. This design typically represents viewing multiple discrete elements, such as data arrays, filter options, or modular content blocks. */
+_view_comfy_alt = 'view_comfy_alt',
+/** The icon depicts a 3x3 array of solid, uniform squares arranged in a perfect grid pattern. This symbol typically indicates the ability to switch to a compact, structured layout for viewing multiple items simultaneously. */
+_view_compact = 'view_compact',
+/** The icon depicts a solid outer square framing a smaller, centered internal grid composed of four equally sized squares in a two-by-two arrangement. This visual pattern typically indicates an alternative mode for displaying content, such as grouping items into compact quadrants or selecting a secondary view layout. */
+_view_compact_alt = 'view_compact_alt',
+/** The design depicts a uniform grid composed of nine empty squares arranged in three rows and three columns. It typically represents an organized view or array layout, indicating that content is structured and easily displayed across multiple sections. */
+_view_cozy = 'view_cozy',
+/** The icon shows three parallel horizontal lines stacked vertically. It generally represents grouped content or a list of items, often indicating a view across a period of time. */
+_view_day = 'view_day',
+/** The icon depicts three short, parallel horizontal lines stacked vertically. This design is widely used in digital interfaces to represent a menu, a list of items, or summarized article headlines. */
+_view_headline = 'view_headline',
+/** The design depicts a three-dimensional box rendered in an isometric perspective, showing depth and defined edges. This icon generally symbolizes interacting with or viewing digital content placed within physical space. */
+_view_in_ar = 'view_in_ar',
+/** The icon shows a geometric cube overlaid with a large diagonal 'X'. This universally recognized symbol means that a feature or function is currently disabled or turned off. */
+_view_in_ar_off = 'view_in_ar_off',
+/** The design is a stylized representation of a standard electrical wall socket or power outlet. It typically indicates the need for electricity, connection to a charger, or general power availability. */
+_view_kanban = 'view_kanban',
+/** The icon depicts a large rectangular frame that is subdivided by internal lines into six smaller, equally sized cells. This grid structure typically represents viewing content in a structured list or gallery format. */
+_view_list = 'view_list',
+/** The icon is composed of nine small squares arranged in a perfect 3x3 grid pattern. It generally signifies the ability to switch between various layout options or display modules, allowing users flexibility in how content is viewed. */
+_view_module = 'view_module',
+/** The icon consists of two parallel, solid horizontal bars stacked one above the other. It typically represents tracking an object’s journey, viewing historical data, or monitoring progress over time on a timeline. */
+_view_object_track = 'view_object_track',
+/** The icon depicts a large rectangle divided into several smaller, interconnected rectangular sections. It typically represents a grid or mosaic layout, suggesting that multiple pieces of related content are being viewed simultaneously in an organized manner. */
+_view_quilt = 'view_quilt',
+/** The icon literally displays the numerical ratio one to one. This symbol indicates that an image or video will be displayed as a perfect square, maintaining its original aspect ratio without cropping or distortion. */
+_view_real_size = 'view_real_size',
+/** The icon shows a rectangular shape with distinct segments stacked on one edge. It commonly indicates the availability of an expanded view or a sidebar menu containing multiple options or sections. */
+_view_sidebar = 'view_sidebar',
+/** The icon depicts two stacked horizontal bars separated by a line within an overall rectangular shape. This commonly represents viewing continuous content or data streams, such as news feeds, bookmarks, or articles in sequence. */
+_view_stream = 'view_stream',
+/** The icon shows stacked horizontal lines that resemble entries on a document or checklist. It typically represents a continuous flow of information, such as an activity stream, news feed, or timeline history. */
+_view_timeline = 'view_timeline',
+/** The icon features a solid rectangular indicator containing four uniform, vertical bars. This graphic is used to represent the remaining electrical charge or power level of a device. */
+_view_week = 'view_week',
+/** The icon depicts a square border enclosing a centered, horizontal oval shape. This design typically represents a camera lens or viewfinder, signifying functions related to photography or optics. */
+_vignette = 'vignette',
+/** The design features a prominent circle perfectly centered within a defined square boundary. It is typically used to symbolize photographic elements such as viewing modes, focus adjustment, or cropping an image. */
+_vignette_2 = 'vignette_2',
+/** The design depicts several layered rectangular blocks arranged together to form an architectural shape. This icon is commonly used in user interfaces to symbolize a primary location, main headquarters, or general home area. */
+_villa = 'villa',
+/** The icon depicts a stylized, simple outline of an open human eye. It is commonly used to symbolize vision, sight, and the general concept of visibility. */
+_visibility = 'visibility',
+/** The design features a stylized eye integrated with a closed padlock icon. This universally indicates that the content, information, or function is private and protected by security measures. */
+_visibility_lock = 'visibility_lock',
+/** The icon depicts a stylized eye with a diagonal slash drawn across it. It commonly signifies that visibility, tracking, or surveillance features have been disabled, indicating a state of privacy or hidden status. */
+_visibility_off = 'visibility_off',
+/** The design features a stylized waveform that mimics the distinct rhythm of a heartbeat. It is commonly used in medical contexts to represent vital signs, cardiac monitoring, or overall patient health status. */
+_vital_signs = 'vital_signs',
+/** The icon displays the scientific formula VO2 max, utilizing subscripts and letters to denote a specific physiological measurement. This metric is commonly used in health and endurance contexts to estimate an individual's maximum capacity for aerobic exercise and overall physical fitness level. */
+_vo2_max = 'vo2_max',
+/** The design presents a simple speech bubble outline, which is a common visual container for dialogue. It typically signifies an option for real-time voice communication or speaking within a chat application. */
+_voice_chat = 'voice_chat',
+/** The design shows stylized sound waves or speech indicators crossed out by a diagonal slash mark. This typically signifies that audio functionality is muted, disabled, or unavailable for communication. */
+_voice_chat_off = 'voice_chat_off',
+/** The design shows a speaker emitting sound waves that are crossed out by a diagonal line. This indicator signifies that automated voice narration or screen reading features have been disabled. */
+_voice_over_off = 'voice_over_off',
+/** The design shows stylized wavy lines that mimic the pattern of detected sounds or human speech. It generally signifies voice input capabilities, such as dictation, recording, or selecting a vocal source. */
+_voice_selection = 'voice_selection',
+/** The icon depicts a wavy squiggly line crossed out by a thick, diagonal strikethrough mark. This universally signals the deactivation or cancellation of voice selection features within an application. */
+_voice_selection_off = 'voice_selection_off',
+/** The design features an outline combining a telephone handset shape with curved lines suggesting audio waves. This icon is widely used in digital interfaces to indicate that voice messages have been recorded or are available to listen to. */
+_voicemail = 'voicemail',
+/** The design is contained within a simple rectangular frame and depicts two circular elements joined by a horizontal line. It generally represents voicemail services, indicating where users can access recorded voice messages or audio communications. */
+_voicemail_2 = 'voicemail_2',
+/** The design shows a stylized mountain peak with visible steam emissions rising from its sides. It is typically used in contexts relating to natural geography or geothermal activity. */
+_volcano = 'volcano',
+/** The icon depicts a standard loudspeaker symbol with visible sound waves emanating from it. It is used in digital interfaces to indicate a decrease in, or reduction of, the current audio output level. */
+_volume_down = 'volume_down',
+/** The icon shows a stylized speaker cone with a diagonal slash drawn across its center. This symbol indicates that audio output is currently muted or silenced. */
+_volume_mute = 'volume_mute',
+/** The design depicts a stylized speaker cone with a prominent diagonal line slashing across it. This icon is used to indicate that audio output has been disabled or that the device is muted. */
+_volume_off = 'volume_off',
+/** It shows a classic speaker symbol with stylized arcs emanating from it. This icon commonly indicates sound, audio playback, or the function to increase volume. */
+_volume_up = 'volume_up',
+/** The design depicts a supportive hand gesture positioned near or cradling a distinct heart symbol. This imagery commonly represents acts of charity, selfless giving, or involvement in community volunteerism. */
+_volunteer_activism = 'volunteer_activism',
+/** The design is presented on a smooth, rounded rectangular surface and features a plus sign alongside the numeral one. It typically signifies an increase of one unit, often used in contexts like voting, scoring points, or adding an item count. */
+_voting_chip = 'voting_chip',
+/** The icon shows a stylized key with a distinct circular head and an elongated body. It is commonly used in digital interfaces to symbolize secure access, encryption settings, or protected connection status. */
+_vpn_key = 'vpn_key',
+/** The illustration shows a stylized key connected directly to an exclamation mark. This generally serves as a warning sign that there is an issue with necessary access credentials or connection requirements. */
+_vpn_key_alert = 'vpn_key_alert',
+/** The icon literally depicts the outline of a key overlaid with a large diagonal prohibition slash. It commonly signifies that a specific feature, such as a VPN connection or secure access, is deactivated or turned off. */
+_vpn_key_off = 'vpn_key_off',
+/** The icon features a stylized globe or circular network representation with a prominent closed padlock placed over it. It universally signifies secure, private communication and access, commonly used to denote encryption, privacy protection, or the use of a Virtual Private Network (VPN). */
+_vpn_lock = 'vpn_lock',
+/** The icon features a stylized globe overlaid with a prominent padlock symbol. This design commonly signifies secure, private, or encrypted internet access, often used to indicate VPN services or enhanced data protection. */
+_vpn_lock_2 = 'vpn_lock_2',
+/** A curved path transitions into a defined square area that holds an image placeholder inside. This icon represents processes that flatten or convert advanced, multi-perspective content for standard two-dimensional viewing. */
+_vr180_create2d = 'vr180_create2d',
+/** The design features a diagonal slash crossing out an underlying graphic element that represents signal or connectivity. This icon generally indicates that a wireless service, such as Wi-Fi or cellular data, is disabled, unavailable, or has encountered an error. */
+_vr180_create2d_off = 'vr180_create2d_off',
+/** The icon depicts stylized mountain peaks contained within a curved banner shape. It is typically used to represent a geographical location, destination, or general content about nature and exploration. */
+_vrpano = 'vrpano',
+/** The icon shows a stylized figure walking next to a bicycle. It represents combining different modes of active transport, suggesting routes or options for walking and cycling together. */
+_walk_bike = 'walk_bike',
+/** The design is presented in a simple, square picture frame containing a stylized mountain landscape scene. It typically symbolizes cherished memories, displayed artwork, or a photographic print of natural scenery. */
+_wall_art = 'wall_art',
+/** The icon illustrates an electric lamp fixture mounted onto a vertical wall-like surface. It typically signifies lighting controls, ambience settings, or the adjustment of illumination levels within digital interfaces. */
+_wall_lamp = 'wall_lamp',
+/** The design depicts the solid silhouette of an opened bi-fold wallet. It generally represents personal finances, payment methods, or stored identification credentials. */
+_wallet = 'wallet',
+/** The design is a square frame containing a simple illustration of rolling mountains and hills. It typically represents capturing scenic memories or photographs taken during outdoor adventures like hiking or skiing. */
+_wallpaper = 'wallpaper',
+/** The design shows a main square frame containing multiple internal, segmented areas. This icon indicates a gallery or slideshow feature used to cycle through various background images or wallpapers. */
+_wallpaper_slideshow = 'wallpaper_slideshow',
+/** The design shows a pointed device that is emitting multiple radiating beams of bright light. This icon typically represents illumination, focus, or the function of a flashlight or laser pointer. */
+_wand_shine = 'wand_shine',
+/** The illustration depicts a stylized wand extending diagonally across the frame, surrounded by several small stars. This icon typically conveys themes of magic, celebration, or high achievement, often suggesting an award or premium status. */
+_wand_stars = 'wand_stars',
+/** The design illustrates two connected document panels, with one featuring a person silhouette and the other displaying a prominent plus sign. This symbol is commonly used in software interfaces to represent comprehensive health records, patient profiles, or clinical documentation. */
+_ward = 'ward',
+/** The design features a simplified outline of a structure topped with a peaked roofline. This icon generally represents a large industrial building or general storage warehouse. */
+_warehouse = 'warehouse',
+/** The design depicts a bold, equilateral triangle housing an exclamation point symbol. This universally recognized icon is used to draw attention to potential hazards, important warnings, or critical alerts that require immediate notice. */
+_warning = 'warning',
+/** The icon depicts a caution triangle containing an exclamation point, which is crossed out by a diagonal slash. It indicates that a warning or alert function is inactive or not applicable for this context. */
+_warning_off = 'warning_off',
+/** The icon depicts a stylized hand from which water droplets appear to drip or flow. It commonly signifies cleansing, rinsing, refreshing, or purification actions. */
+_wash = 'wash',
+/** The design depicts a simple, deep, rounded receptacle resembling an empty serving bowl. It is commonly used to represent various meals, food items, or dining service in culinary contexts. */
+_washoku = 'washoku',
+/** The design is an outline of a classic wristwatch, featuring a circular face and integrated band elements. This icon typically signifies timekeeping functions, wearable device status, or general clock controls within a user interface. */
+_watch = 'watch',
+/** The design depicts a simplified, circular watch face with a prominent exclamation mark centered on its display. This icon is used to indicate an important alert, warning, or notification related to timekeeping or wearable devices. */
+_watch_alert = 'watch_alert',
+/** The design features a stylized watch face silhouette with a prominent right-pointing arrow displayed across its center. This icon generally indicates moving forward in time, advancing a clock setting, or triggering a time-related progression. */
+_watch_arrow = 'watch_arrow',
+/** The icon depicts a stylized watch face combined with a downward-pointing arrow emerging from its center. It is commonly used to signify decrementing a value, setting a lower limit, or saving historical time data. */
+_watch_arrow_down = 'watch_arrow_down',
+/** The design represents continuous viewing or monitoring. It is typically used when a user wishes to track content and receive notifications about any future changes or updates. */
+_watch_button = 'watch_button',
+/** The icon is a simplified representation of a wrist-worn clock face. It generally signifies that a button has been pressed or an action has been taken on the wearable device, such as activating a lock or triggering an alert. */
+_watch_button_press = 'watch_button_press',
+/** The icon features the distinct silhouette of a wristwatch with a prominent checkmark placed on its display area. This typically signifies that time has been successfully confirmed, saved, or verified. */
+_watch_check = 'watch_check',
+/** The design depicts a stylized wristwatch casing containing a prominent padlock symbol in its center. This icon is used to indicate that a device's features or content are currently secured or locked for protection. */
+_watch_lock = 'watch_lock',
+/** The illustration depicts the silhouette of a wristwatch crossed out by a diagonal line. This symbol universally indicates that wearing timepieces is prohibited in the area, typically due to security regulations. */
+_watch_off = 'watch_off',
+/** This icon depicts the outline of a modern smartwatch casing with several stacked bars displayed on its face. It commonly represents tracking screen time or monitoring overall usage statistics on wearable technology. */
+_watch_screentime = 'watch_screentime',
+/** The design depicts a stylized wristwatch outline with curved lines emanating outward from its sides. This icon typically indicates that a wearable device is vibrating or providing an alert for a notification. */
+_watch_vibration = 'watch_vibration',
+/** The icon displays a clean, stylized outline of a modern smartwatch or wristwatch face. It typically indicates that the device screen is active, awake, or ready to show current time information. */
+_watch_wake = 'watch_wake',
+/** The icon depicts three parallel, continuous curved lines resembling waves. It is commonly used to signify bodies of water such as rivers, oceans, or general wet conditions. */
+_water = 'water',
+/** The design is a simple outline drawing of a contoured container with a defined neck and cap. It generally represents hydration, carrying liquids, or the availability of beverages. */
+_water_bottle = 'water_bottle',
+/** The design depicts a simple, stylized outline of a large container for liquids. It generally symbolizes available fluid reserves, hydration status, or bulk household supplies. */
+_water_bottle_large = 'water_bottle_large',
+/** The design shows a basic outline of a home structure with a single water droplet placed beneath the roofline. It is used to indicate potential leaks, moisture issues, or general signs of water damage within a residence. */
+_water_damage = 'water_damage',
+/** The design illustrates a single, stylized drop of water in a classic teardrop shape. It is typically used to represent natural water resources, spa treatments, or general concepts related to bathing and cleanliness. */
+_water_do = 'water_do',
+/** The design is a simplified, smooth teardrop shape. It generally symbolizes water in various contexts, representing themes like hydration, purity, or liquid sources. */
+_water_drop = 'water_drop',
+/** The design features two stylized, rounded water droplets of different sizes. It commonly represents themes of liquid elements, purity, refreshment, or hydration in various contexts. */
+_water_drops = 'water_drops',
+/** A single drop of water is depicted. It is commonly used to represent liquids, hydration, or environmental themes. */
+_water_ec = 'water_ec',
+/** The image shows a clear cup that is entirely filled up with water. This is often used to represent refreshment, hydration, or potable liquid. */
+_water_full = 'water_full',
+/** Depicts an appliance designed for elevating water temperature. It often signifies hot water access, warmth, or facilities like spas and saunas. */
+_water_heater = 'water_heater',
+/** A padlock overlaying a glass of water. This commonly signifies security, privacy protection, or restricted access to information. */
+_water_lock = 'water_lock',
+/** The icon depicts a simple outline of a drinking glass or cup containing a wavy horizontal line segment. This visual typically signifies low fluid levels, often used to represent dehydration or the need for increased hydration. */
+_water_loss = 'water_loss',
+/** The icon depicts stylized rays shining down onto a rippling surface of water. It commonly represents a refreshing, serene, or luxurious state of nature and water. */
+_water_lux = 'water_lux',
+/** The design depicts the simple outline of a drinking vessel containing an amount of liquid that reaches about halfway up the sides. This icon generally signifies adequate hydration, basic fluid balance, or a moderate volume of water. */
+_water_medium = 'water_medium',
+/** The icon depicts a stylized liquid droplet containing the capitalized letters ORP. It is commonly used in scientific contexts to represent water chemistry measurements, such as oxidation-reduction potential (ORP). */
+_water_orp = 'water_orp',
+/** The icon depicts a stylized water droplet containing the letters PH. This symbol is commonly used to indicate the pH level of a liquid, measuring whether it is acidic or alkaline. */
+_water_ph = 'water_ph',
+/** The illustration depicts a stylized mechanical pump structure with an attached inlet and outlet connection point. This icon generally represents fluid movement or measurement, commonly used in contexts related to plumbing or water utilities. */
+_water_pump = 'water_pump',
+/** The icon depicts a single, stylized water droplet accompanied by wavy lines emanating from its lower section. It generally signifies moisture content or fluid status, often used to indicate environmental humidity levels or signs of water loss. */
+_water_voc = 'water_voc',
+/** The design features several vertical columns of varying heights arranged in a sequence. This visualization is used to track how an initial value changes over time by showing positive and negative contributions leading to a final total. */
+_waterfall_chart = 'waterfall_chart',
+/** The design consists of several parallel, curved lines arranged horizontally. This icon is commonly used to represent flowing water, ripples, or wave patterns in general contexts. */
+_waves = 'waves',
+/** The design depicts a stylized human hand making an open, waving gesture. It is commonly used to symbolize greetings, saying goodbye, or general acknowledgment of people. */
+_waving_hand = 'waving_hand',
+/** The design consists of two stylized capital letters, A and W. It generally suggests concepts related to automated processes, wireless connectivity, or advanced media capabilities within a software platform. */
+_wb_auto = 'wb_auto',
+/** The icon shows a stylized incandescent light bulb with radiating lines suggesting emitted energy. It typically indicates active illumination, high brightness levels, or that an electrical device is powered on. */
+_wb_incandescent = 'wb_incandescent',
+/** A central horizontal element is surrounded by radiating lines that extend outwards in all directions. It typically symbolizes iridescence, suggesting environmental sensing or the capture of varying light spectrums. */
+_wb_iridescent = 'wb_iridescent',
+/** The design shows two interconnected house outlines, featuring one solid structure and another partially visible silhouette connected by an angled line. This icon typically signifies emergency shelter provisions, safety nets, or community support during crises. */
+_wb_shade = 'wb_shade',
+/** The image is a circle with radiating lines extending outwards from its center point. It generally represents clear skies, sunny conditions, or high levels of brightness and solar energy. */
+_wb_sunny = 'wb_sunny',
+/** The design depicts a curved arc with radiating points above a solid horizontal base line. This icon generally represents transitional periods of daylight, such as sunrise, sunset, or twilight. */
+_wb_twilight = 'wb_twilight',
+/** The design is a stylized depiction of a chef's hat. It commonly signifies restaurants that offer quality culinary experiences or formal dining service. */
+_wb_twilight_2 = 'wb_twilight_2',
+/** The design displays the universally recognized pictograms for men and women positioned next to each other. This symbol serves as a clear indicator that public restroom facilities are available on site. */
+_wc = 'wc',
+/** The design features a prominent, stylized cloud shape from which several distinct drops are shown falling downward. It is used to warn of severe weather conditions, typically forecasting hailstorms or intense precipitation. */
+_weather_hail = 'weather_hail',
+/** The icon shows a stylized cloud with various lines and streaks representing multiple types of falling precipitation. It is used in forecasts to indicate mixed or variable weather conditions, suggesting that different atmospheric phenomena may occur throughout the day. */
+_weather_mix = 'weather_mix',
+/** A depiction of a fluffy cloud with several spots underneath representing precipitation. This icon is used universally to indicate that snow is falling or expected at the location. */
+_weather_snowy = 'weather_snowy',
+/** The design is a solid rectangle divided equally into four quadrants by intersecting lines. This icon typically represents segmented content, suggesting the viewing of multiple online sections or aggregated information feeds. */
+_web = 'web',
+/** The icon is a simple outline of an empty rectangle or placeholder box. It typically signifies a container for web assets, embedded media, or any area designated for displaying external content. */
+_web_asset = 'web_asset',
+/** The icon depicts a bordered rectangular area crossed by a thick, diagonal strikethrough line. It is used to indicate that an element or resource is unavailable, removed, or deactivated. */
+_web_asset_off = 'web_asset_off',
+/** The design depicts a vertical, contained rectangle meant to hold visual content. This shape typically represents web stories or short-form media narratives composed of multiple sequential slides. */
+_web_stories = 'web_stories',
+/** The design shows multiple arrows radiating outward from a central point. It is commonly used to represent high volume or general flow of data across a network connection. */
+_web_traffic = 'web_traffic',
+/** The design shows three circular elements joined by pathways, forming an interconnected triangular junction. It indicates that one system automatically notifies or triggers another service when a specific event occurs. */
+_webhook = 'webhook',
+/** The design depicts a simple outline of an armchair or piece of lounge seating. It generally symbolizes comfort and relaxation, making it suitable for concepts related to leisure time, rest, or weekends. */
+_weekend = 'weekend',
+/** The design is a solid, stylized representation of a bag or clipboard object. It commonly indicates saved content, such as bookmarks, notes, or collections of items gathered for later use. */
+_weight = 'weight',
+/** The icon depicts a simple, horizontal arrow shape pointing clearly toward the left. This symbol is widely used to indicate going back, moving backward through content, or reversing direction. */
+_west = 'west',
+/** The design features a line graph with an upward slope enclosed within a circle border. This icon typically indicates growth, increasing statistics, or positive trends in data visualization. */
+_whatshot = 'whatshot',
+/** The icon displays several stylized stalks of grain, complete with mature seed heads and leaves. It is commonly used to represent harvest themes, agriculture, nourishment, or natural bounty. */
+_wheat = 'wheat',
+/** The icon depicts a stylized human figure standing beside the universal symbol for a wheelchair. It indicates accessible services or designated zones meant to accommodate people with mobility challenges. */
+_wheelchair_pickup = 'wheelchair_pickup',
+/** The icon is structured as a standard map marker that incorporates a checkmark within its body. It generally indicates a verified or confirmed location, making it suitable for marking official points of interest like designated polling centers. */
+_where_to_vote = 'where_to_vote',
+/** The icon depicts a blocky arrangement of small squares organized into neat rows and columns. It is typically used to symbolize organized content, such as a data array, database table, or grid view. */
+_widget_medium = 'widget_medium',
+/** The icon depicts a rectangular module featuring internal segmented sections and indicators, resembling a control panel for electronics. It generally represents access to system settings, modular widgets, or various functional menus within an application interface. */
+_widget_menu = 'widget_menu',
+/** The design consists of nine solid squares arranged in a perfect 3x3 grid pattern. This icon commonly symbolizes modularity or structure, suggesting that users can place multiple small widgets, data blocks, or customizable elements within a confined space. */
+_widget_small = 'widget_small',
+/** The icon depicts a solid rectangular bar positioned above three rows of uniformly sized squares arranged in a structured grid pattern. This symbol generally represents functionality related to databases, spreadsheets, or the management and viewing of organized data arrays. */
+_widget_width = 'widget_width',
+/** The design consists of several distinct square blocks arranged in a cohesive cluster. It represents modular, self-contained components used to display information or provide interaction points on a digital screen. */
+_widgets = 'widgets',
+/** This icon depicts a simple, unfilled rectangular outline. It commonly serves as a container to visually display the overall charging status or maximum capacity of an electronic device's battery. */
+_width_full = 'width_full',
+/** It consists of four adjacent, solid bars contained within a single rectangular outline. This indicator design is typically used to visualize capacity or status levels at a glance, such as remaining battery power or signal strength. */
+_width_normal = 'width_normal',
+/** The design features a solid, rectangular indicator shape commonly used for power levels. It signifies that the device has a high battery charge or is fully powered up. */
+_width_wide = 'width_wide',
+/** The design features several curved arcs radiating outwards from a central point, simulating waves or signals. This universally recognized symbol indicates that an electronic device is connected to a wireless internet network. */
+_wifi = 'wifi',
+/** The icon displays a single curved line segment that represents an arc or wave pattern. It is commonly used to indicate the current signal strength or connection quality of a wireless network. */
+_wifi_1_bar = 'wifi_1_bar',
+/** It displays a series of diminishing, concentric curved arcs emanating from an implied source point. This symbol is used to indicate the current strength and availability of a wireless internet connection. */
+_wifi_2_bar = 'wifi_2_bar',
+/** The icon combines radiating waves, symbolizing a wireless signal, with an adjacent plus sign. It is used to indicate the action of adding a new connection or setting up Wi-Fi access. */
+_wifi_add = 'wifi_add',
+/** The icon depicts the shape of a telephone handset combined with indicators suggesting wireless signals. It represents the ability to make and receive calls using an internet or Wi-Fi network connection. */
+_wifi_calling = 'wifi_calling',
+/** The icon is an outline drawing depicting the recognizable shape of a classic telephone handset or receiver. It signifies that communication services are available via a local Wi-Fi connection, allowing calls without relying on a traditional cellular signal. */
+_wifi_calling_bar_1 = 'wifi_calling_bar_1',
+/** The design features a stylized telephone receiver paired with adjacent radiating bars that represent wireless connectivity. This combination indicates that voice calls can be made or received using the local Wi-Fi network instead of cellular service. */
+_wifi_calling_bar_2 = 'wifi_calling_bar_2',
+/** The icon is a stylized graphic combining a classic telephone receiver shape with radiating signal waves. It indicates that voice calls can be successfully made or received using an internet connection rather than standard cellular service. */
+_wifi_calling_bar_3 = 'wifi_calling_bar_3',
+/** The image illustrates three distinct, curved lines that mimic radio or wireless transmission waves. It commonly signals the presence and strength of a Wi-Fi connection or other available wireless signal. */
+_wifi_channel = 'wifi_channel',
+/** The design features three progressively curved signal arcs contained within a defined boundary. It is used to represent the status, availability, and signal strength of a wireless network connection. */
+_wifi_device = 'wifi_device',
+/** The design is a stylized illustration of an eye paired with a sweeping curve that traverses across the viewing area. This icon typically suggests advanced visual capabilities, such as continuous tracking, scanning functionality, or remote monitoring services. */
+_wifi_find = 'wifi_find',
+/** The design combines a simple house outline with two curved arrows suggesting motion or renewal. This symbol typically indicates that a location or home device is connected to the internet or syncing data. */
+_wifi_home = 'wifi_home',
+/** The design features an overarching, curved line representing radiating wireless signals, paired with a distinct padlock icon below. This combination signifies that the connection is secure, private, or requires specific encryption for authorized access to a network. */
+_wifi_lock = 'wifi_lock',
+/** The design features a classic notification bell containing curved lines that symbolize a wireless signal strength indicator. This icon is used to provide an alert or status update regarding the connection quality of Wi-Fi service. */
+_wifi_notification = 'wifi_notification',
+/** The design features several curved lines radiating outwards from a central point, which are crossed out by a diagonal slash. This icon indicates that wireless internet connectivity or Wi-Fi signal has been disabled or is unavailable. */
+_wifi_off = 'wifi_off',
+/** The illustration features radiating curved lines that represent a wireless signal strength or Wi-Fi connection. Attached prominently to the end of these waves is a locked padlock symbol, indicating that the network requires a password or is secured. */
+_wifi_password = 'wifi_password',
+/** The design features two opposing, curving arrows that radiate outwards from a shared center point. This symbol generally indicates the process of linking or successfully configuring an initial connection between two different systems or devices. */
+_wifi_protected_setup = 'wifi_protected_setup',
+/** The icon illustrates a wireless signal emanating in a smooth, sweeping arc pattern. It signifies that the device's connection is routed or managed through an intermediate point or proxy server. */
+_wifi_proxy = 'wifi_proxy',
+/** The design features several concentric, diminishing arcs radiating outward from a central point. It universally signifies wireless connectivity, often indicating the availability or sharing of an internet signal with nearby devices. */
+_wifi_tethering = 'wifi_tethering',
+/** This graphic depicts multiple expanding concentric arcs around a central dot, symbolizing a wireless radio frequency transmission. It typically signifies an error state when attempting to use or share an internet connection via Wi-Fi tethering. */
+_wifi_tethering_error = 'wifi_tethering_error',
+/** The design features curved, concentric arcs that symbolize a wireless signal, which are crossed out by a diagonal slash. This icon indicates that the device's connection to Wi-Fi is currently disabled or unavailable. */
+_wifi_tethering_off = 'wifi_tethering_off',
+/** The design depicts a stylized three-bladed propeller situated next to curved lines that suggest strong airflow. This icon commonly symbolizes clean, renewable wind power or general air circulation related to ventilation and energy efficiency. */
+_wind_power = 'wind_power',
+/** The design consists of a square outline divided into nine smaller, equal quadrants arranged in three rows and three columns. This layout typically symbolizes dividing space or managing multiple panels, often used to represent windows within an application interface. */
+_window = 'window',
+/** The design is a simple outline of a rectangle horizontally bisected into two compartments. This icon generally indicates that a window or program view has been closed, signifying an inactive or shut-down state. */
+_window_closed = 'window_closed',
+/** The icon depicts a solid, rectangular frame containing two distinct stacked horizontal sections. This visual metaphor is commonly used to represent an expanded view, opening multiple panes, or accessing different modes of displayed content. */
+_window_open = 'window_open',
+/** The image is an outline of a rectangular panel that appears segmented by a horizontal divider. This icon generally represents a window sensor, indicating an area for viewing content or detecting input on electronic devices. */
+_window_sensor = 'window_sensor',
+/** The icon depicts stylized steam lines emanating from an area resembling glass or a windshield. It is used to indicate an automatic or active function designed for defrosting windows. */
+_windshield_defrost_auto = 'windshield_defrost_auto',
+/** The design features a subtle curve from which three parallel, wavy lines descend. This icon typically indicates a heating function, most often used to signify defrosting or clearing condensation from glass surfaces. */
+_windshield_defrost_front = 'windshield_defrost_front',
+/** The design shows three wavy lines radiating outwards from a solid, rectangular panel. This icon is used in vehicle controls to indicate the activation of heating elements designed to defrost or clear condensation from the rear window. */
+_windshield_defrost_rear = 'windshield_defrost_rear',
+/** The icon depicts a solid base from which stylized, wavy lines rise upwards. It is used to indicate an active heating function directed toward the front, such as warming the cabin or clearing the windshield in a vehicle. */
+_windshield_heat_front = 'windshield_heat_front',
+/** The icon depicts an empty, stemmed drinking glass shaped like a wine goblet. It commonly symbolizes places or services related to dining out or consuming alcoholic beverages. */
+_wine_bar = 'wine_bar',
+/** The icon depicts a solid black, stylized silhouette of a standing human figure with distinct feminine proportions. It is widely recognized and used in public signage to indicate facilities designated for women or females. */
+_woman = 'woman',
+/** The icon depicts a solid, stylized silhouette of an upright human figure. It is commonly used in public signage to designate facilities or areas intended for women or females. */
+_woman_2 = 'woman_2',
+/** The design depicts a simple outline of a rectangular carrying case with a handle attached to the top. This icon typically represents professional work, business documents, or career readiness. */
+_work = 'work',
+/** The design features a stylized business briefcase accompanied by a circular exclamation point symbol. This icon typically signals an important warning or critical action required regarding professional tasks, files, or service status. */
+_work_alert = 'work_alert',
+/** The icon combines the shape of a professional briefcase with an overlaying clock face. This combination typically signifies tracking work time, viewing employment history, or managing clocked hours. */
+_work_history = 'work_history',
+/** The icon depicts a stylized briefcase or file folder outline, suggesting stored work materials. It commonly represents downloading, saving, or exporting updated professional documents and data. */
+_work_update = 'work_update',
+/** The image features a prominent five-pointed star centered within a circular badge that is anchored by a decorative ribbon. This design universally suggests premium status, recognition, or achieving an exclusive award level for content or service. */
+_workspace_premium = 'workspace_premium',
+/** Three distinct outline circles are clustered together in a close group formation. It symbolizes the ability to manage or switch between multiple isolated workspaces, allowing users to organize their tasks separately. */
+_workspaces = 'workspaces',
+/** The design depicts five asterisk-like crosses aligned diagonally in a straight row. This icon is generally used to symbolize wounds, injuries, or physical damage of some kind. */
+_wounds_injuries = 'wounds_injuries',
+/** The icon depicts a horizontal line segment that transitions into a curved arrow pointing downward and rightward. It typically indicates text wrapping or continuous content flow, signifying that information continues beyond the visible area. */
+_wrap_text = 'wrap_text',
+/** The design is a simple, stylized rendering of an arm or wrist structure. This icon commonly signifies physical restrictions, limitation of movement, or a state of immobility. */
+_wrist = 'wrist',
+/** The icon depicts a stylized map location pin marker with a large 'X' drawn across its center. This symbol is commonly used to indicate that the provided location data is incorrect, unavailable, or erroneous. */
+_wrong_location = 'wrong_location',
+/** The design features several rectangular panels layered on top of each other, suggesting multiple documents or content views. It commonly indicates an editing environment where formatting and visual output are immediately apparent to the user (What You See Is What You Get). */
+_wysiwyg = 'wysiwyg',
+/** The design is a simple 'X' centered within a circular border. This symbol commonly functions in user interfaces to dismiss content, close windows, or cancel an action. */
+_x_circle = 'x_circle',
+/** The icon shows a single letter Y inscribed within a circular boundary. It typically serves as a generic marker for the letter 'Y' in language systems, initials, or abbreviations. */
+_y_circle = 'y_circle',
+/** The icon depicts a stylized, segmented line that follows an exaggerated, winding path. It commonly represents digital interaction, such as pointing, drawing, or selecting something with a virtual stylus or tool. */
+_yakitori = 'yakitori',
+/** The illustration depicts a stylized flower with multiple petals positioned above two curved leaves. It commonly represents nature, gardening, growth, or any general theme related to plant life and flora. */
+_yard = 'yard',
+/** The design features a centralized, diamond-shaped glyph enclosed by an outer ring. This symbol typically represents sudden bursts of energy, activation, or the transfer of electrical power. */
+_yoshoku = 'yoshoku',
+/** The icon depicts a stylized, compact backpack with rounded edges and an overall bag shape. It commonly represents travel itineraries, stored trips, or personalized journey planning within an application. */
+_your_trips = 'your_trips',
+/** The icon depicts a magnifying glass with a circular, curved arrow encircling it. It typically represents revisiting search history or cycling through previous queries. */
+_youtube_searched_for = 'youtube_searched_for',
+/** The icon depicts a stylized human figure situated within a marked square zone, accompanied by an adjacent circle containing an exclamation mark. It is commonly used to designate accessible areas or points of assistance related to mobility services and disability accommodations. */
+_zone_person_alert = 'zone_person_alert',
+/** The icon displays a simplified human figure positioned diagonally across an outlined square zone. It functions as a warning to keep people out or restricted from entering this designated area. */
+_zone_person_idle = 'zone_person_idle',
+/** The icon shows a stylized person figure within an implied boundary, standing next to a prominent warning triangle marked with an exclamation point. It is used to signal caution or urgent awareness regarding mobility restrictions in a specific travel zone. */
+_zone_person_urgent = 'zone_person_urgent',
+/** The icon depicts a magnifying glass that has a distinct plus sign centered within its circular lens. It is used to indicate the action of zooming in, expanding the view, or increasing magnification on content. */
+_zoom_in = 'zoom_in',
+/** The design consists of four solid, directional arrows positioned in a square pattern pointing outward from the center. Within mapping or geographical applications, this icon typically indicates an action to expand the view or zoom into detailed map sections. */
+_zoom_in_map = 'zoom_in_map',
+/** The illustration depicts a hand-drawn magnifying glass featuring a horizontal dash inside its circular aperture. This symbol is typically used in search interfaces to indicate decreasing magnification or widening the view of results. */
+_zoom_out = 'zoom_out',
+/** The design features four directional arrowheads radiating outwards from a central point. It is used in mapping interfaces to indicate zooming out, revealing a broader geographical area. */
+_zoom_out_map = 'zoom_out_map'
+}
