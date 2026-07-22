@@ -221,14 +221,27 @@ async function buildStats(versions, timestamps, outputDir) {
   await writeTextFile(path.join(outputDir, 'stats.json'), JSON.stringify(stats, null, 2));
 }
 
-async function buildTypescriptFile(versions, outputDir) {
+async function buildTypescriptFile(descriptionFiles, versions, outputDir) {
+  const descriptions = new Map();
+  for (const file of descriptionFiles) {
+    const extension = path.extname(file.path.name);
+    const symbolName = path.basename(file.path.name, extension);
+    const content = await readFile(file.path.full);
+    if (content.trim().length === 0) continue;
+    if (/<channel\|>/gm.test(content)) continue;
+    descriptions.set(symbolName, content);
+  }
   const list = [];
   for (const symbolName in versions) {
-    list.push(symbolName);
+    if (descriptions.has(symbolName)) {
+      list.push([symbolName, descriptions.get(symbolName)]);
+    } else {
+      list.push([symbolName, 'No description.']);
+    }
   }
 
   // typescript
-  const typeString = `export type MaterialSymbol = ${list.map((e) => `'${e}'`).join('\n | ')};`;
+  const typeString = `export type MaterialSymbol = ${list.map((e) => `'${e[0]}'`).join('\n | ')};\n\nexport enum MaterialSymbolList {\n${list.map((e) => `/** ${e[1]} */\n_${e[0]} = '${e[0]}'`).join(',\n')}\n}`;
 
   // output type.ts
   await writeTextFile(path.join(outputDir, 'type.ts'), typeString);
@@ -274,7 +287,7 @@ async function main() {
   await buildIndex(tagFiles, versions, outputDir);
   await buildSearchIndex(tagFiles, synonymyFiles, versions, timestamps, outputDir);
   await buildDescription(descriptionFiles, versions, timestamps, outputDir);
-  await buildTypescriptFile(versions, outputDir);
+  await buildTypescriptFile(descriptionFiles, versions, outputDir);
   await buildStats(versions, timestamps, outputDir);
   await buildDistributionPackageJSON(outputDir);
 
