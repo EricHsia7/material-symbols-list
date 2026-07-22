@@ -48,7 +48,7 @@ in package.json
 }
 ```
 
-#### Usage
+#### MaterialSymbol
 
 Direct import
 
@@ -69,6 +69,19 @@ import type { MaterialSymbol as _MaterialSymbol } from '@erichsia7/material-symb
 export type MaterialSymbol = _MaterialSymbol | '';
 ```
 
+#### MaterialSymbolList (Enum Resolution Required)
+
+Direct import
+
+```typescript
+import { MaterialSymbolList } from '@erichsia7/material-symbols-list';
+```
+
+Re-export
+
+```typescript
+export { MaterialSymbolList } from '@erichsia7/material-symbols-list';
+```
 
 ## Build Process
 
