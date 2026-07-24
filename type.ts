@@ -3102,6 +3102,7 @@ export type MaterialSymbol = '123'
  | 'sim_card'
  | 'sim_card_download'
  | 'simulation'
+ | 'single_arrow'
  | 'single_bed'
  | 'sip'
  | 'siren'
@@ -10103,6 +10104,8 @@ _sim_card = 'sim_card',
 _sim_card_download = 'sim_card_download',
 /** The design depicts a stylized silhouette of a person enclosed between two clean, vertical rectangular bars. This icon typically signifies the controlled modeling of a user role or persona within an environment, suggesting that a simulation is running with defined boundaries and variables. */
 _simulation = 'simulation',
+/** No description. */
+_single_arrow = 'single_arrow',
 /** The icon depicts a simple, stylized outline of a rectangular piece of furniture that represents a bed. It is commonly used in contexts related to hotels, lodging, or general accommodation services. */
 _single_bed = 'single_bed',
 /** The icon shows the capitalized letters S-I-P displayed prominently within a defined rectangular frame. This acronym refers to the Session Initiation Protocol, which is widely used for setting up and managing real-time communication sessions, such as Voice over IP (VoIP) calls. */
