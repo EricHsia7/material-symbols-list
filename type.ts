@@ -10104,7 +10104,7 @@ _sim_card = 'sim_card',
 _sim_card_download = 'sim_card_download',
 /** The design depicts a stylized silhouette of a person enclosed between two clean, vertical rectangular bars. This icon typically signifies the controlled modeling of a user role or persona within an environment, suggesting that a simulation is running with defined boundaries and variables. */
 _simulation = 'simulation',
-/** No description. */
+/** The icon literally depicts a chevron or angle bracket shape pointing towards the right. It is commonly used in user interfaces to indicate progression, moving forward, or expanding content. */
 _single_arrow = 'single_arrow',
 /** The icon depicts a simple, stylized outline of a rectangular piece of furniture that represents a bed. It is commonly used in contexts related to hotels, lodging, or general accommodation services. */
 _single_bed = 'single_bed',
