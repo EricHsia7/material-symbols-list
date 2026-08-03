@@ -1703,6 +1703,7 @@ export type MaterialSymbol = '123'
  | 'high_chair'
  | 'high_density'
  | 'high_quality'
+ | 'high_quality_off'
  | 'high_res'
  | 'highlight'
  | 'highlight_keyboard_focus'
@@ -7306,6 +7307,8 @@ _high_chair = 'high_chair',
 _high_density = 'high_density',
 /** The design features two capital letters, 'H' and 'Q', enclosed within a prominent square box. This icon is commonly used to indicate that content or media is available in high quality or superior resolution. */
 _high_quality = 'high_quality',
+/** The icon depicts a rectangular shape that is diagonally crossed out by a thick line. It universally signifies cancellation, prohibition, or the act of dismissing an alert or feature. */
+_high_quality_off = 'high_quality_off',
 /** The icon displays the capitalized text "HI RES" contained within a simple rectangular border. This acronym stands for High Resolution, indicating that the associated digital content possesses superior clarity and detailed visual quality. */
 _high_res = 'high_res',
 /** The design features a stylized lightbulb with visible rays emanating from it, suggesting illumination. It is widely used in user interfaces to symbolize inspiration, knowledge, or the sudden appearance of an idea. */
