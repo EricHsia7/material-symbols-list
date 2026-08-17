@@ -2,29 +2,29 @@
   "search_index": {
     "raw": "https://erichsia7.github.io/material-symbols-list/search-index.json",
     "compressed": "https://erichsia7.github.io/material-symbols-list/search-index.gz",
-    "md5": "44c3bbf329c8450defa1249b9390e788",
-    "sha256": "19031faab1cf21a613ea9f5d4d92e10156b9ff1d272899928dbd2381d0bea302",
-    "sha512": "190e7d6aa498fb23791ac4bc0f00b8781287d84edb868cad9688f30afd23bac71541ac67ca665fcff28d4d5c38df3303868f1f85b56c4a01640959b5186ca19e"
+    "md5": "1346b8e177bd7eee6e9e455ecb6842ac",
+    "sha256": "ce578cf82f26dc6002ae0beeafbdfb95b1e21a510a402d5ca94e8ab7ff7674e0",
+    "sha512": "df46213a9aeb1e1f4759014ceca43c74c1d0f4fae0ab23309ddc9d2f57270a1a6f3eb6e7a99536a939682a9b275aa64dde85380be55eb6bb2929151db437c450"
   },
   "index": {
     "raw": "https://erichsia7.github.io/material-symbols-list/index.json",
     "compressed": "https://erichsia7.github.io/material-symbols-list/index.gz",
-    "md5": "f1fda4897ebe52532a6f4133ece11cf5",
-    "sha256": "282cacc017a0f81fbbb80d262abbecb16460cfbc4a534db279e76d3338483891",
-    "sha512": "ce952654a70d3397bb20eac2ffc52ebc1f3f66540ce473733a10699e6ab8aefa623199d62e9e8337057ec03c07bd66c9fcdd3b6e4e895c9575674e6b92de5e3e"
+    "md5": "1668c4b2ee85d291caddf26cd986a603",
+    "sha256": "35c1dea91c512c51b5ae72e3f7fcb5a4bf4068b3bf58aa3ab18df32a78e9455c",
+    "sha512": "f190f84cb6a191452f5e7bdc50a1a10e328f355e365f9d2bdb00ef9152c206c51146a32316f5c6f7c544bddaeb40be0115c8b07485bb1722e372f7c6718f5742"
   },
   "similarity": {
     "raw": "https://erichsia7.github.io/material-symbols-list/similarity.json",
     "compressed": "https://erichsia7.github.io/material-symbols-list/similarity.gz",
-    "md5": "7f9b35a015f3476eac0f858632790b13",
-    "sha256": "3941f9c9d5d20f101eecd57d66cffaab5e278476f89343383d1820119bc7213a",
-    "sha512": "2f5a47380303cb13a7a5f390983b16aaf81ae8070502d6890899ec30e82a6030e6bdfac5e804bd4afb6d0b417b84ee0dfcb35a713409cef4b234d884980a67e7"
+    "md5": "7d29922fa2dac24392bd312b4c398414",
+    "sha256": "731590f64145b65097231af66d9bfe02d182f79692d21a64cc71ac4415128830",
+    "sha512": "865d0bb486c9afd6d6bf4a176c93d9863a23511cce29af549448989c2990d9ad0a432904f4e87486bde3c501f02afe59256962e5db89ae20465ed79a6370c822"
   },
   "description": {
     "raw": "https://erichsia7.github.io/material-symbols-list/description.json",
     "compressed": "https://erichsia7.github.io/material-symbols-list/description.gz",
-    "md5": "0b4026e91abbc3a8b315001154a2d241",
-    "sha256": "c6e58903720d697d83cc6ee44b8217ff4dee61ed9858379c19c35ed55acd4e21",
-    "sha512": "9c19c2a6e23198d5e453f810513e31a5d7a2f5e2aefcca14ef1be2a9fdfc82d71a40362c5d49c359de42ad9e64e1a5cf5ce58ba386c8e2f321aa46060bbbcaf6"
+    "md5": "062a956283d317fd6d775d043f9c9ec6",
+    "sha256": "ebeaca1f5d22a7f714191141d9ca79eeae2973486c555d0f5c8cbef5f8948837",
+    "sha512": "af5b1ff8abaebfbe1af687a22553b4516bf5bcf54c9c1ee01be4884347cf3abf22e68803eedb04b4ef27f2ecafd76f5b1987f1e98894fa250c00bc863c20520f"
   }
 }

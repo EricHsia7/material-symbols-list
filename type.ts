@@ -1048,6 +1048,7 @@ export type MaterialSymbol = '123'
  | 'discover_tune'
  | 'dishwasher'
  | 'dishwasher_gen'
+ | 'display_add'
  | 'display_external_input'
  | 'display_settings'
  | 'distance'
@@ -1109,6 +1110,7 @@ export type MaterialSymbol = '123'
  | 'drive_file_move'
  | 'drive_file_rename'
  | 'drive_folder_upload'
+ | 'drive_fusiontable'
  | 'drone'
  | 'drone_2'
  | 'dropdown'
@@ -1311,7 +1313,6 @@ export type MaterialSymbol = '123'
  | 'file_download_off'
  | 'file_export'
  | 'file_json'
- | 'file_map'
  | 'file_map_stack'
  | 'file_open'
  | 'file_png'
@@ -1581,6 +1582,7 @@ export type MaterialSymbol = '123'
  | 'globe_2_question'
  | 'globe_asia'
  | 'globe_book'
+ | 'globe_clock'
  | 'globe_location_pin'
  | 'globe_uk'
  | 'glucose'
@@ -3444,6 +3446,7 @@ export type MaterialSymbol = '123'
  | 'tenancy'
  | 'terminal'
  | 'terminal_2'
+ | 'terminal_add'
  | 'text_ad'
  | 'text_ad_off'
  | 'text_compare'
@@ -5997,6 +6000,8 @@ _discover_tune = 'discover_tune',
 _dishwasher = 'dishwasher',
 /** A depiction of a standard household appliance used for washing dishes. This symbol represents routine kitchen tasks or overall domestic cleanliness. */
 _dishwasher_gen = 'dishwasher_gen',
+/** The design is an outline of a computer monitor screen with a plus sign positioned in the upper right corner. This icon is generally used in user interfaces to indicate the action of adding new content, such as a document, widget, or application. */
+_display_add = 'display_add',
 /** The image shows an arrow entering a box shape representing a system or display area. This indicates that data or information is being imported from an outside source. */
 _display_external_input = 'display_external_input',
 /** Depicts an angled computer monitor showing adjustment sliders or controls. This icon is used for managing visual preferences like resolution, color space, and screen brightness. */
@@ -6119,6 +6124,8 @@ _drive_file_move = 'drive_file_move',
 _drive_file_rename = 'drive_file_rename',
 /** A folder symbol with an upward pointing arrow positioned above it. This signifies the action of transferring local content or files up to cloud storage or a network drive. */
 _drive_folder_upload = 'drive_folder_upload',
+/** The design is a square frame containing a diagonal, undulating line. This icon typically represents the merging of data, structured tables, or complex reporting functions. */
+_drive_fusiontable = 'drive_fusiontable',
 /** A flying unmanned vehicle with visible propellers and a main body structure. It commonly symbolizes advanced aerial technology, often used for photography or surveillance. */
 _drone = 'drone',
 /** A small quadcopter-style drone is shown flying in the air. It commonly represents advanced aerial technology or remote monitoring services. */
@@ -6523,8 +6530,6 @@ _file_download_off = 'file_download_off',
 _file_export = 'file_export',
 /** The design features the capitalized acronym J S O N enclosed within a simple rectangular border. It indicates data that adheres to the JSON format, which is a widely used standard for transmitting structured information. */
 _file_json = 'file_json',
-/** The design features a stylized map marker—a teardrop-shaped pin with a circular top—centered within a solid square frame. This icon generally signifies geographical location, helping users identify or pinpoint specific points of interest or their current whereabouts on a digital map. */
-_file_map = 'file_map',
 /** The icon displays several layered squares stacked vertically, resembling a stack of papers or documents. It commonly symbolizes a collection of stored geographical information, such as saved locations, directories, or multiple map files. */
 _file_map_stack = 'file_map_stack',
 /** The design shows a rectangular sheet of paper with an angled section that appears open. This icon is used to indicate the function of opening a file, allowing users to access and view its contents. */
@@ -7063,6 +7068,8 @@ _globe_2_question = 'globe_2_question',
 _globe_asia = 'globe_asia',
 /** The design features a book-like shape that incorporates stylized lines suggestive of a globe or world map. It is typically used to symbolize global knowledge, learning resources, or international education. */
 _globe_book = 'globe_book',
+/** The icon depicts a stylized globe paired with a clock face. It is typically used to represent time zone settings, global scheduling, or universal time synchronization. */
+_globe_clock = 'globe_clock',
 /** The icon displays a stylized globe featuring curved lines of latitude and longitude, with a distinct map pin marker placed over it. It typically signifies global location services, mapping features, or the ability to pinpoint an address anywhere in the world. */
 _globe_location_pin = 'globe_location_pin',
 /** This icon shows a stylized representation of the world contained within a circle, patterned after the British national flag. It indicates content or settings specifically tailored to the United Kingdom locale, language selection, or regional resources for Great Britain. */
@@ -10790,6 +10797,8 @@ _tenancy = 'tenancy',
 _terminal = 'terminal',
 /** The design shows a right-pointing arrow next to a dash or completion symbol, mimicking a terminal prompt structure. This icon typically represents deleting text, clearing an input field, or managing variables within a code or command line interface. */
 _terminal_2 = 'terminal_2',
+/** The design features a structured block, resembling a command line prompt, with an adjacent plus sign. It signifies the action of adding new elements, such as files, commands, or directories, within a coding or terminal interface. */
+_terminal_add = 'terminal_add',
 /** The icon shows three stacked horizontal lines enclosed within a clean rectangular shape. It indicates generic text content, often signaling that something can be copied or viewed as a summary document. */
 _text_ad = 'text_ad',
 /** The icon depicts structured horizontal lines, resembling a piece of written text or a document section. It is crossed by a diagonal line, indicating that advertising content has been disabled or successfully blocked. */
