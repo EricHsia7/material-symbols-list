@@ -24,7 +24,7 @@ jobs:
 
       - name: Restore cached Node dependencies
         id: restore-cached-node-dependencies
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         with:
           path: |
             ./node_modules
@@ -39,7 +39,7 @@ jobs:
 
       - name: Cache Node dependencies
         id: cache-node-dependencies
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         if: steps.restore-cached-node-dependencies.outputs.cache-hit != 'true'
         with:
           path: |
@@ -49,7 +49,7 @@ jobs:
 
       - name: Restore cached Python virtual environment
         id: restore-cached-python-venv
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         with:
           path: python_venv
           key: python-venv-${{ runner.os }}-${{ hashFiles('./similarity.requirements.txt') }}
@@ -64,7 +64,7 @@ jobs:
 
       - name: Cache Python virtual environment
         id: cache-python-venv
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         if: steps.restore-cached-python-venv.outputs.cache-hit != 'true'
         with:
           path: python_venv
