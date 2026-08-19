@@ -10,21 +10,22 @@ jobs:
     environment: update
     steps: 
       - name: Check out repository code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 24
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        id: setup-python
+        uses: actions/setup-python@v7
         with:
-          python-version: '3.11'
+          python-version: '3.11.16'
 
       - name: Restore cached Node dependencies
         id: restore-cached-node-dependencies
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         with:
           path: |
             ./node_modules
@@ -39,7 +40,7 @@ jobs:
 
       - name: Cache Node dependencies
         id: cache-node-dependencies
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         if: steps.restore-cached-node-dependencies.outputs.cache-hit != 'true'
         with:
           path: |
@@ -63,13 +64,13 @@ jobs:
 
       - name: Restore cached Python virtual environment
         id: restore-cached-python-venv
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         with:
           path: python_venv
-          key: python-venv-${{ runner.os }}-${{ hashFiles('./tag.requirements.txt') }}
+          key: python-venv-${{ runner.os }}-${{ runner.arch }}-py${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('./tag.requirements.txt') }}
           restore-keys: |
-            python-venv-${{ runner.os }}-${{ hashFiles('./tag.requirements.txt') }}
+            python-venv-${{ runner.os }}-${{ runner.arch }}-py${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('./tag.requirements.txt') }}
 
       - name: Install Python dependencies
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0 && steps.restore-cached-python-venv.outputs.cache-hit != 'true'
@@ -79,7 +80,7 @@ jobs:
 
       - name: Cache Python virtual environment
         id: cache-python-venv
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0 && steps.restore-cached-python-venv.outputs.cache-hit != 'true'
         with:
           path: python_venv
@@ -87,7 +88,7 @@ jobs:
 
       - name: Restore cached CLIP model
         id: restore-cached-clip-model
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         with:
           path: |
@@ -98,7 +99,7 @@ jobs:
 
       - name: Restore cached text features
         id: restore-cached-text-features
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         with:
           path: ./text_features.pt
@@ -115,7 +116,7 @@ jobs:
 
       - name: Cache CLIP model
         id: cache-clip-model
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0 && steps.restore-cached-clip-model.outputs.cache-hit != 'true'
         with:
           path: |
@@ -124,7 +125,7 @@ jobs:
 
       - name: Cache text features
         id: cache-text-features
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         with:
           path: ./text_features.pt
