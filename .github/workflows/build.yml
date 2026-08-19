@@ -4,21 +4,22 @@ on:
     - cron: '0 16 * * 1,3,5'
   workflow_dispatch:
 
-jobs: 
+jobs:
   build:
     runs-on: ubuntu-latest
     environment: build
-    steps: 
+    steps:
       - name: Check out repository code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 24
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        id: setup-python
+        uses: actions/setup-python@v7
         with:
           python-version: '3.11'
 
@@ -52,14 +53,14 @@ jobs:
         uses: actions/cache/restore@v6
         with:
           path: python_venv
-          key: python-venv-${{ runner.os }}-${{ hashFiles('./similarity.requirements.txt') }}
+          key: python-venv-${{ runner.os }}-${{ runner.arch }}-py${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('similarity.requirements.txt') }}
           restore-keys: |
-            python-venv-${{ runner.os }}-${{ hashFiles('./similarity.requirements.txt') }}
+            python-venv-${{ runner.os }}-${{ runner.arch }}-py${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('similarity.requirements.txt') }}
 
       - name: Install Python dependencies
         if: steps.restore-cached-python-venv.outputs.cache-hit != 'true'
         run: |
-          python -m venv python_venv
+          python -m venv --copies python_venv
           python_venv/bin/pip install -r similarity.requirements.txt
 
       - name: Cache Python virtual environment
