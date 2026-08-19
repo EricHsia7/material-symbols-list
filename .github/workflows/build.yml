@@ -21,7 +21,7 @@ jobs:
         id: setup-python
         uses: actions/setup-python@v7
         with:
-          python-version: '3.11'
+          python-version: '3.11.16'
 
       - name: Restore cached Node dependencies
         id: restore-cached-node-dependencies
@@ -60,7 +60,7 @@ jobs:
       - name: Install Python dependencies
         if: steps.restore-cached-python-venv.outputs.cache-hit != 'true'
         run: |
-          python -m venv --copies python_venv
+          python -m venv python_venv
           python_venv/bin/pip install -r similarity.requirements.txt
 
       - name: Cache Python virtual environment

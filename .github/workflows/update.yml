@@ -18,9 +18,10 @@ jobs:
           node-version: 24
 
       - name: Setup Python
+        id: setup-python
         uses: actions/setup-python@v7
         with:
-          python-version: '3.11'
+          python-version: '3.11.16'
 
       - name: Restore cached Node dependencies
         id: restore-cached-node-dependencies
@@ -67,9 +68,9 @@ jobs:
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0
         with:
           path: python_venv
-          key: python-venv-${{ runner.os }}-${{ hashFiles('./tag.requirements.txt') }}
+          key: python-venv-${{ runner.os }}-${{ runner.arch }}-py${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('./tag.requirements.txt') }}
           restore-keys: |
-            python-venv-${{ runner.os }}-${{ hashFiles('./tag.requirements.txt') }}
+            python-venv-${{ runner.os }}-${{ runner.arch }}-py${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('./tag.requirements.txt') }}
 
       - name: Install Python dependencies
         if: steps.download-updated-symbols.outputs.updated-symbols-count > 0 && steps.restore-cached-python-venv.outputs.cache-hit != 'true'
