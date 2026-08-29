@@ -578,6 +578,7 @@ export type MaterialSymbol = '123'
  | 'bug_report'
  | 'build'
  | 'build_circle'
+ | 'bullet_chart'
  | 'bungalow'
  | 'burst_mode'
  | 'bus_alert'
@@ -1073,6 +1074,7 @@ export type MaterialSymbol = '123'
  | 'domain'
  | 'domain_add'
  | 'domain_disabled'
+ | 'domain_disabled_check'
  | 'domain_verification'
  | 'domain_verification_off'
  | 'domino_mask'
@@ -1110,7 +1112,6 @@ export type MaterialSymbol = '123'
  | 'drive_file_move'
  | 'drive_file_rename'
  | 'drive_folder_upload'
- | 'drive_fusiontable'
  | 'drone'
  | 'drone_2'
  | 'dropdown'
@@ -1987,6 +1988,7 @@ export type MaterialSymbol = '123'
  | 'lips'
  | 'liquor'
  | 'list'
+ | 'list_2'
  | 'list_alt'
  | 'list_alt_add'
  | 'list_alt_check'
@@ -3104,6 +3106,7 @@ export type MaterialSymbol = '123'
  | 'signpost'
  | 'sim_card'
  | 'sim_card_download'
+ | 'sim_card_lock'
  | 'simulation'
  | 'single_arrow'
  | 'single_bed'
@@ -3183,6 +3186,7 @@ export type MaterialSymbol = '123'
  | 'special_character'
  | 'specific_gravity'
  | 'speech_to_text'
+ | 'speech_to_text_2'
  | 'speed'
  | 'speed_0_25'
  | 'speed_0_2x'
@@ -5060,6 +5064,8 @@ _bug_report = 'bug_report',
 _build = 'build',
 /** Depicts an adjustable wrench enclosed within a circle. This commonly indicates tools, maintenance, or general configuration settings. */
 _build_circle = 'build_circle',
+/** The icon depicts a main rectangular frame containing multiple internal horizontal bars. It is used to visually represent data comparisons or track multiple measurements against a scale. */
+_bullet_chart = 'bullet_chart',
 /** A single-story house with a pitched roof and simple design is depicted. This icon generally suggests a cozy, approachable home or cottage setting. */
 _bungalow = 'bungalow',
 /** It depicts a central point surrounded by radiating lines suggesting an explosion or intense energy. This symbol is typically used to indicate enhanced performance, high speed, or peak functionality. */
@@ -6050,6 +6056,8 @@ _domain = 'domain',
 _domain_add = 'domain_add',
 /** The image shows a standard internet domain symbol with a diagonal line crossing through it. This typically indicates that the domain name or website is currently unavailable or inaccessible. */
 _domain_disabled = 'domain_disabled',
+/** The icon is composed of a shopping trolley shape that is paired with a prominent checkmark indicator. It signals that a shopping-related action, such as checkout or item selection, has been successfully verified or completed. */
+_domain_disabled_check = 'domain_disabled_check',
 /** A stylized checkmark appears next to lines representing connected information or a web address. This signifies that an identity or property has been successfully verified and confirmed. */
 _domain_verification = 'domain_verification',
 /** A checked circle crossed out by a diagonal line. This indicates that verification is disabled or has not been completed for the associated domain. */
@@ -6124,8 +6132,6 @@ _drive_file_move = 'drive_file_move',
 _drive_file_rename = 'drive_file_rename',
 /** A folder symbol with an upward pointing arrow positioned above it. This signifies the action of transferring local content or files up to cloud storage or a network drive. */
 _drive_folder_upload = 'drive_folder_upload',
-/** The design is a square frame containing a diagonal, undulating line. This icon typically represents the merging of data, structured tables, or complex reporting functions. */
-_drive_fusiontable = 'drive_fusiontable',
 /** A flying unmanned vehicle with visible propellers and a main body structure. It commonly symbolizes advanced aerial technology, often used for photography or surveillance. */
 _drone = 'drone',
 /** A small quadcopter-style drone is shown flying in the air. It commonly represents advanced aerial technology or remote monitoring services. */
@@ -7878,6 +7884,8 @@ _lips = 'lips',
 _liquor = 'liquor',
 /** The icon is depicted by three short, stacked horizontal lines of equal length. It commonly represents a list, menu, or set of multiple items that can be viewed sequentially. */
 _list = 'list',
+/** The icon depicts three parallel, stacked horizontal lines. It is commonly used as a widely recognized symbol to open a menu or display a list of options. */
+_list_2 = 'list_2',
 /** The design shows multiple stacked, parallel lines contained within a defined area. It commonly represents an itemized list or checklist of items that must be reviewed or completed. */
 _list_alt = 'list_alt',
 /** The icon literally depicts a structured document format, characterized by multiple placeholder lines representing entries or items. It is commonly used to indicate adding new content, creating a checklist item, or appending data to an existing list or form. */
@@ -10112,6 +10120,8 @@ _signpost = 'signpost',
 _sim_card = 'sim_card',
 /** The icon is a stylized document container with a prominent downward-pointing arrow positioned beneath it. This design typically indicates that content is being downloaded, retrieved, or transferred into the system. */
 _sim_card_download = 'sim_card_download',
+/** The icon depicts a stylized card or chip containing a closed padlock graphic. It is used to indicate that information, features, or the device itself is protected by security measures, encryption, or access controls. */
+_sim_card_lock = 'sim_card_lock',
 /** The design depicts a stylized silhouette of a person enclosed between two clean, vertical rectangular bars. This icon typically signifies the controlled modeling of a user role or persona within an environment, suggesting that a simulation is running with defined boundaries and variables. */
 _simulation = 'simulation',
 /** The icon literally depicts a chevron or angle bracket shape pointing towards the right. It is commonly used in user interfaces to indicate progression, moving forward, or expanding content. */
@@ -10270,6 +10280,8 @@ _special_character = 'special_character',
 _specific_gravity = 'specific_gravity',
 /** The icon depicts a stylized document containing text lines placed next to an adjacent microphone symbol. It represents the function of speech-to-text, indicating that spoken audio can be captured and converted into editable written notes or documents. */
 _speech_to_text = 'speech_to_text',
+/** The illustration shows a microphone positioned next to a piece of paper. This signifies the ability to capture audio and convert spoken words into written text for transcription or note-taking. */
+_speech_to_text_2 = 'speech_to_text_2',
 /** The icon displays an arc-shaped dial face with a visible indicator needle pointing along its curve. This symbol is widely used to represent concepts like speed, momentum, or the rate at which something is progressing. */
 _speed = 'speed',
 /** The icon displays the decimal value .25. This setting indicates a significant reduction in speed, commonly used to slow down video playback or time progression for detailed viewing. */
