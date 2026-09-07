@@ -657,6 +657,7 @@ export type MaterialSymbol = '123'
  | 'car_mirror_heat'
  | 'car_rental'
  | 'car_repair'
+ | 'car_seat_off'
  | 'car_tag'
  | 'card_membership'
  | 'card_travel'
@@ -3283,6 +3284,7 @@ export type MaterialSymbol = '123'
  | 'stat_minus_1'
  | 'stat_minus_2'
  | 'stat_minus_3'
+ | 'steering_wheel_cool'
  | 'steering_wheel_heat'
  | 'step'
  | 'step_into'
@@ -5222,6 +5224,8 @@ _car_mirror_heat = 'car_mirror_heat',
 _car_rental = 'car_rental',
 /** Depicts a vehicle positioned near specialized equipment suggesting maintenance work. This icon generally indicates auto service, repairs, or mechanic assistance. */
 _car_repair = 'car_repair',
+/** The design depicts a side view of a car seat with a diagonal slash drawn across the entire object. This symbol typically warns that the seat is unusable, deactivated, or that its function is currently off. */
+_car_seat_off = 'car_seat_off',
 /** A rectangular plate is depicted on the exterior of a vehicle. This symbol typically relates to vehicle identification, parking status, or local transportation service alerts. */
 _car_tag = 'car_tag',
 /** It depicts a horizontal identification or membership card. This symbol is used to represent customer status, belonging, or accessing member-exclusive features. */
@@ -10474,6 +10478,8 @@ _stat_minus_1 = 'stat_minus_1',
 _stat_minus_2 = 'stat_minus_2',
 /** The design consists of three chevrons stacked vertically in a column. This symbol generally indicates a deeply nested list structure or an expanded, multi-level hierarchy within content outlines. */
 _stat_minus_3 = 'stat_minus_3',
+/** The design shows a stylized steering wheel combined with a snowflake graphic. It generally indicates car features or warnings related to driving in cold, snowy, or icy conditions. */
+_steering_wheel_cool = 'steering_wheel_cool',
 /** The design depicts a circular steering wheel outline with stylized wavy lines radiating from its center top. This icon generally indicates a localized heating function or warmth, suggesting features such as heated seats, windshield warming, or overall cabin heat. */
 _steering_wheel_heat = 'steering_wheel_heat',
 /** The icon depicts an arrowhead pointing right, which stops right before a solid circular dot. This symbol typically indicates progression, suggesting that there is more content available or that you should move to the next step in a process. */
