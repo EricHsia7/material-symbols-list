@@ -1005,6 +1005,7 @@ export type MaterialSymbol = '123'
  | 'developer_mode_tv'
  | 'device_band'
  | 'device_hub'
+ | 'device_swoosh_star'
  | 'device_thermostat'
  | 'devices'
  | 'devices_fold'
@@ -2198,6 +2199,7 @@ export type MaterialSymbol = '123'
  | 'mobile_sound_2'
  | 'mobile_sound_off'
  | 'mobile_speaker'
+ | 'mobile_tap'
  | 'mobile_text'
  | 'mobile_text_2'
  | 'mobile_theft'
@@ -2548,6 +2550,8 @@ export type MaterialSymbol = '123'
  | 'pending'
  | 'pending_actions'
  | 'pentagon'
+ | 'people_size_decrease'
+ | 'people_size_increase'
  | 'percent'
  | 'percent_discount'
  | 'pergola'
@@ -3176,10 +3180,12 @@ export type MaterialSymbol = '123'
  | 'space_dashboard_2'
  | 'spatial_audio'
  | 'spatial_audio_off'
+ | 'spatial_gallery'
  | 'spatial_speaker'
  | 'spatial_tracking'
  | 'speaker'
  | 'speaker_2'
+ | 'speaker_3'
  | 'speaker_group'
  | 'speaker_notes'
  | 'speaker_notes_off'
@@ -3440,6 +3446,7 @@ export type MaterialSymbol = '123'
  | 'tamper_detection_on'
  | 'tapas'
  | 'target'
+ | 'target_check'
  | 'task'
  | 'task_alt'
  | 'tatami_seat'
@@ -5920,6 +5927,8 @@ _developer_mode_tv = 'developer_mode_tv',
 _device_band = 'device_band',
 /** Depicts a central node connected to multiple radiating points or smaller shapes. This symbolizes integration and the management of several different devices or services in one location. */
 _device_hub = 'device_hub',
+/** The icon depicts an outlined star intersected by a single, sweeping curve. This combination is generally used to highlight top-tier status, a special feature, or excellent quality. */
+_device_swoosh_star = 'device_swoosh_star',
 /** A stylized device with a digital display and dials indicates control over temperature. It suggests smart home capabilities or HVAC system management. */
 _device_thermostat = 'device_thermostat',
 /** Depicts a cluster of various portable electronic devices, such as phones and tablets. This typically indicates settings used to view or manage linked hardware across different platforms. */
@@ -8306,6 +8315,8 @@ _mobile_sound_2 = 'mobile_sound_2',
 _mobile_sound_off = 'mobile_sound_off',
 /** The design pairs a rectangular device representation with an accompanying audio speaker symbol. This icon commonly indicates the capability to play media or stream sound from a portable mobile source. */
 _mobile_speaker = 'mobile_speaker',
+/** The icon features a minimal depiction of a tap gesture. It is used to represent any action that requires a tap, such as selecting text or activating a function on a mobile screen. */
+_mobile_tap = 'mobile_tap',
 /** The icon depicts a clean, vertical outline representing a modern smartphone or mobile device screen. It commonly signifies functions related to texting, messaging services, or general connectivity for a mobile user. */
 _mobile_text = 'mobile_text',
 /** The icon is a simple black outline of a vertical rectangle containing two horizontal lines near the center. It commonly represents viewing content, such as an e-book, article, or document reader mode. */
@@ -9006,6 +9017,10 @@ _pending = 'pending',
 _pending_actions = 'pending_actions',
 /** The design depicts a simple polygon with exactly five straight sides. This basic geometric form is commonly used in graphics to symbolize structure, balance, or foundational elements in design layouts. */
 _pentagon = 'pentagon',
+/** The design features three distinct human pictograms whose sizes are visibly different. This icon typically illustrates a reduction or decrease in group size, population count, or the scale of a group. */
+_people_size_decrease = 'people_size_decrease',
+/** The design shows three simplified human figures standing next to each other, with their height progressively increasing from left to right. This symbol generally represents growth, expansion in scale, or an increasing number of people within a group. */
+_people_size_increase = 'people_size_increase',
 /** The symbol is composed of a partial ring crossed by two intersecting line segments. It universally represents ratios or proportions expressed as parts per hundred, such as discounts, rates, or percentages. */
 _percent = 'percent',
 /** The icon depicts the standard percentage glyph symbol (%). It is commonly used to mark sales, discounts, or any reduction in price or quantity. */
@@ -10262,6 +10277,8 @@ _space_dashboard_2 = 'space_dashboard_2',
 _spatial_audio = 'spatial_audio',
 /** The design features an abstract depiction of radiating sound waves. It signifies that the system's specialized spatial audio effects are disabled, reverting the sound output to a standard format. */
 _spatial_audio_off = 'spatial_audio_off',
+/** The icon depicts six interconnected, rectangular panels arranged in a segmented, grid-like pattern. It commonly represents a gallery, a multi-view display, or a portfolio containing several different sections or items. */
+_spatial_gallery = 'spatial_gallery',
 /** The icon depicts a stylized rectangular speaker shape from which multiple curved lines radiate outward. This symbol indicates advanced audio output, typically representing immersive or spatial sound technology. */
 _spatial_speaker = 'spatial_speaker',
 /** The icon depicts a stylized human figure with radiating wavy lines emanating from its head area. It commonly symbolizes feelings of stress, sensory overload, or worry due to excessive input. */
@@ -10270,6 +10287,8 @@ _spatial_tracking = 'spatial_tracking',
 _speaker = 'speaker',
 /** The design is a straightforward representation of a loudspeaker with a visible cone inside its casing. It generally signifies that sound is playing, an alert is sounding, or that the device has integrated audio capabilities. */
 _speaker_2 = 'speaker_2',
+/** The design is a solid, squared-off silhouette with gently rounded corners. It is typically used to represent a general tablet or other portable electronic computing device. */
+_speaker_3 = 'speaker_3',
 /** The design shows a vertical grouping of speaker units stacked together. It commonly indicates active audio alerts, announcements, or crucial warnings provided by the system while operating. */
 _speaker_group = 'speaker_group',
 /** The design depicts a speech bubble outline containing several horizontal lines of text content. It is commonly used to indicate written notes, transcripts, or detailed message information related to conversation. */
@@ -10791,6 +10810,8 @@ _tamper_detection_on = 'tamper_detection_on',
 _tapas = 'tapas',
 /** The design is composed of several nested, circular rings arranged in a concentric bullseye pattern. This symbol commonly signifies targets, objectives, precision, or achieving a specific goal. */
 _target = 'target',
+/** The icon depicts a checkmark centered within a distinct circular, target-like ring. It is commonly used to confirm that a process is complete, that a task has been successfully verified, or that a goal has been achieved. */
+_target_check = 'target_check',
 /** The icon depicts a stylized document outline with a prominent checkmark placed inside it. It is typically used to signify that a task has been completed or an item has been successfully checked off a list. */
 _task = 'task',
 /** The image shows a checkmark positioned inside a distinct circular boundary. This universally recognized icon signifies successful confirmation, validation, or that an item has been completed correctly. */
