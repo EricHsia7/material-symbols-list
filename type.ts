@@ -239,6 +239,7 @@ export type MaterialSymbol = '123'
  | 'approval_delegation_off'
  | 'apps'
  | 'apps_outage'
+ | 'apps_plus'
  | 'aq'
  | 'aq_indoor'
  | 'ar_on_you'
@@ -703,6 +704,7 @@ export type MaterialSymbol = '123'
  | 'chat_bubble'
  | 'chat_bubble_off'
  | 'chat_dashed'
+ | 'chat_display'
  | 'chat_error'
  | 'chat_info'
  | 'chat_paste_go'
@@ -778,6 +780,7 @@ export type MaterialSymbol = '123'
  | 'closed_caption'
  | 'closed_caption_add'
  | 'closed_caption_disabled'
+ | 'closed_caption_display'
  | 'cloud'
  | 'cloud_alert'
  | 'cloud_circle'
@@ -1053,6 +1056,7 @@ export type MaterialSymbol = '123'
  | 'dishwasher_gen'
  | 'display_add'
  | 'display_external_input'
+ | 'display_group'
  | 'display_settings'
  | 'distance'
  | 'diversity_1'
@@ -1073,6 +1077,7 @@ export type MaterialSymbol = '123'
  | 'docs_apps_script'
  | 'document_scanner'
  | 'document_search'
+ | 'document_share'
  | 'domain'
  | 'domain_add'
  | 'domain_disabled'
@@ -1151,6 +1156,7 @@ export type MaterialSymbol = '123'
  | 'edit_audio'
  | 'edit_calendar'
  | 'edit_document'
+ | 'edit_line'
  | 'edit_location'
  | 'edit_location_alt'
  | 'edit_note'
@@ -1339,12 +1345,14 @@ export type MaterialSymbol = '123'
  | 'filter_alt_off'
  | 'filter_arrow_right'
  | 'filter_b_and_w'
+ | 'filter_cancel'
  | 'filter_center_focus'
  | 'filter_drama'
  | 'filter_frames'
  | 'filter_list'
  | 'filter_list_off'
  | 'filter_none'
+ | 'filter_plus'
  | 'filter_retrolux'
  | 'filter_tilt_shift'
  | 'filter_vintage'
@@ -1527,6 +1535,7 @@ export type MaterialSymbol = '123'
  | 'fullscreen_exit'
  | 'fullscreen_portrait'
  | 'function'
+ | 'function_search'
  | 'functions'
  | 'funicular'
  | 'g_mobiledata'
@@ -1624,6 +1633,7 @@ export type MaterialSymbol = '123'
  | 'grocery'
  | 'group'
  | 'group_add'
+ | 'group_eye'
  | 'group_off'
  | 'group_remove'
  | 'group_search'
@@ -1802,6 +1812,7 @@ export type MaterialSymbol = '123'
  | 'imagesmode'
  | 'immunology'
  | 'import_contacts'
+ | 'import_spark'
  | 'important_devices'
  | 'in_home_mode'
  | 'inactive_order'
@@ -2093,8 +2104,11 @@ export type MaterialSymbol = '123'
  | 'mark_email_unread'
  | 'mark_unread_chat_alt'
  | 'markdown'
+ | 'markdown_convert'
  | 'markdown_copy'
+ | 'markdown_document'
  | 'markdown_paste'
+ | 'markdown_spark'
  | 'markunread_mailbox'
  | 'masked_transitions'
  | 'masked_transitions_add'
@@ -3042,6 +3056,7 @@ export type MaterialSymbol = '123'
  | 'share_reviews'
  | 'share_windows'
  | 'shaved_ice'
+ | 'sheets_column_swap'
  | 'sheets_rtl'
  | 'shelf_auto_hide'
  | 'shelf_position'
@@ -4395,6 +4410,8 @@ _approval_delegation_off = 'approval_delegation_off',
 _apps = 'apps',
 /** A screen displays dots and an alert symbol indicating service interruption. This commonly signifies that specific applications or online features are temporarily unavailable. */
 _apps_outage = 'apps_outage',
+/** The design depicts a square grid of four empty squares with a prominent plus sign placed next to the arrangement. This icon typically signifies the action of adding a new application, widget, or content block to an existing layout. */
+_apps_plus = 'apps_plus',
 /** This depicts an underlined, wavy line structure with a smaller symbol beneath it. It commonly signifies a query function, specialized formatting element, or unresolved input field in technical writing. */
 _aq = 'aq',
 /** A diagram indicating environmental monitoring within a structure. This feature tracks various metrics such as humidity levels and air quality inside a home or building. */
@@ -5323,6 +5340,8 @@ _chat_bubble = 'chat_bubble',
 _chat_bubble_off = 'chat_bubble_off',
 /** A speech bubble containing dashed horizontal lines. This often indicates that content must be pasted or that messaging is currently unavailable due to connectivity issues. */
 _chat_dashed = 'chat_dashed',
+/** The icon depicts a stylized document containing multiple lines of text, combined with a chat bubble and a separate box element. It typically signifies the viewing or composition of textual content within a messaging interface or chat application. */
+_chat_display = 'chat_display',
 /** A dialogue bubble containing text next to an exclamation point. This indicates that there was a problem or error with the chat message, connection, or transmission. */
 _chat_error = 'chat_error',
 /** Depicts overlapping speech bubbles alongside a lowercase 'i' icon. This generally indicates access to detailed information, settings, or context about a specific conversation thread. */
@@ -5473,6 +5492,8 @@ _closed_caption = 'closed_caption',
 _closed_caption_add = 'closed_caption_add',
 /** Depicts a standard closed caption icon with a diagonal line crossing through it. This signals that subtitle viewing is disabled or turned off. */
 _closed_caption_disabled = 'closed_caption_disabled',
+/** The icon is composed of three distinct, interconnected squares or rectangles grouped together. It typically represents file organization, content grouping, or the management of multiple separate information elements. */
+_closed_caption_display = 'closed_caption_display',
 /** A group of vaporous, white masses floating in the sky. It frequently represents atmospheric weather conditions or remote data storage and syncing capabilities. */
 _cloud = 'cloud',
 /** A stylized depiction of a cloud with an exclamation mark inside. This icon typically alerts the user to an issue or warning related to cloud services and synchronization. */
@@ -6023,6 +6044,8 @@ _dishwasher_gen = 'dishwasher_gen',
 _display_add = 'display_add',
 /** The image shows an arrow entering a box shape representing a system or display area. This indicates that data or information is being imported from an outside source. */
 _display_external_input = 'display_external_input',
+/** The design features a rectangular monitor frame positioned above three stylized figures of people. This icon commonly symbolizes group interaction, such as a video call, collaborative viewing session, or group monitoring. */
+_display_group = 'display_group',
 /** Depicts an angled computer monitor showing adjustment sliders or controls. This icon is used for managing visual preferences like resolution, color space, and screen brightness. */
 _display_settings = 'display_settings',
 /** The design is a simplified marker shaped like an inverted teardrop with a distinct pointer at its base. This symbol universally indicates a specific geographical location or point of interest on a map. */
@@ -6063,6 +6086,8 @@ _docs_apps_script = 'docs_apps_script',
 _document_scanner = 'document_scanner',
 /** Depicts stacked papers near a magnifying glass, symbolizing research. This icon indicates the function of searching or filtering content within stored files. */
 _document_search = 'document_search',
+/** The design shows a stylized document with a folded corner next to a set of connected dots. This icon is used to indicate that a file or document is being shared or distributed to others. */
+_document_share = 'document_share',
 /** Depicts a web address or network root symbol, often containing letters or slashes. This is typically used to identify the main location or domain name for a website or service. */
 _domain = 'domain',
 /** It shows the word "domain" connected to a plus sign. This is typically used when registering or linking an additional website address or subdomain. */
@@ -6219,6 +6244,8 @@ _edit_audio = 'edit_audio',
 _edit_calendar = 'edit_calendar',
 /** The design features a simple rectangular document accompanied by a stylized pencil or pen. This icon is commonly used in user interfaces to indicate that content can be edited, modified, or revised. */
 _edit_document = 'edit_document',
+/** No description. */
+_edit_line = 'edit_line',
 /** This icon depicts a standard map location pin containing a writing instrument like a stylus or pencil. It is used to indicate the action of editing, modifying, or updating specific geographic locations or points on a map. */
 _edit_location = 'edit_location',
 /** The icon depicts a stylized teardrop-shaped marker, commonly recognized as a geographical map pin. It generally signifies the ability to select, adjust, or define a precise point of interest within a mapping feature. */
@@ -6595,6 +6622,8 @@ _filter_alt_off = 'filter_alt_off',
 _filter_arrow_right = 'filter_arrow_right',
 /** The design is enclosed within a square frame and features internal angular shapes created by intersecting lines. This icon signifies applying a black and white filter effect to media or photos, desaturating the image entirely for monochrome viewing. */
 _filter_b_and_w = 'filter_b_and_w',
+/** It literally depicts a funnel structure crossed out by an 'X'. This symbol is commonly used to reset or delete applied filters in software interfaces. */
+_filter_cancel = 'filter_cancel',
 /** The design illustrates a square frame defined by corner brackets surrounding a central point. This symbol typically indicates a precise focus point or guide used for alignment and positioning in graphic design. */
 _filter_center_focus = 'filter_center_focus',
 /** The icon is a simple, solid silhouette of a puffy cloud formation. It commonly symbolizes cloud computing services, representing remote data storage, synchronization, or connectivity in a digital context. */
@@ -6607,6 +6636,8 @@ _filter_list = 'filter_list',
 _filter_list_off = 'filter_list_off',
 /** The icon depicts three distinct rectangular outlines aligned vertically, suggesting multiple potential viewing panes or display areas. It generally signifies that no filters are currently active, allowing the user to view all available content by returning to a default state. */
 _filter_none = 'filter_none',
+/** The icon depicts a funnel shape joined with a plus sign. This combination is commonly used in user interfaces to indicate the option of adding new filters or refining search parameters. */
+_filter_plus = 'filter_plus',
 /** The icon depicts a stylized, geometric rhombus shape connected to a vertical pointer at its base. It typically indicates the availability of advanced options for narrowing results, applying complex filters, or refining displayed content. */
 _filter_retrolux = 'filter_retrolux',
 /** The icon literally depicts a solid inner circle surrounded by multiple dashed concentric rings. It generally symbolizes filters or controls used to adjust focus, suggesting photographic effects like tilt-shift or simulating shallow depth of field. */
@@ -6971,6 +7002,8 @@ _fullscreen_exit = 'fullscreen_exit',
 _fullscreen_portrait = 'fullscreen_portrait',
 /** The symbol consists of an italicized letter 'f' followed by the variables $x$ enclosed in parentheses. This notation is used in mathematics to define a function that establishes a relationship between an input value and its corresponding output value. */
 _function = 'function',
+/** The icon literally depicts the mathematical notation $f_a$ placed next to a magnifying glass symbol. It indicates the functionality to search for specific details, definitions, or parameters related to a function. */
+_function_search = 'function_search',
 /** The icon depicts an angular, symmetrical structure formed by two diverging lines. It commonly signifies the concept of functions, representing either mathematical summation ($\Sigma$) or defined operations within programming code. */
 _functions = 'functions',
 /** The design shows a compact cabin situated on tracks meant for traveling along an incline. This icon typically symbolizes funicular railway service, indicating specific uphill or downhill transit routes. */
@@ -7165,6 +7198,8 @@ _grocery = 'grocery',
 _group = 'group',
 /** The icon visually depicts several simplified human figures positioned together, accompanied by a prominent plus sign. It generally signifies the function of adding new members to an existing group or connecting people in a collective setting. */
 _group_add = 'group_add',
+/** The icon illustrates a composite design featuring spectacles and a dropper positioned above a detailed human eye. It is commonly used to symbolize comprehensive vision care, medical eye examinations, or general ophthalmology services. */
+_group_eye = 'group_eye',
 /** The icon depicts multiple stylized human figures connected together, all crossed out by a single diagonal line. It indicates that grouping or association features have been disabled or removed from use. */
 _group_off = 'group_off',
 /** The icon depicts a symbol representing multiple items or people that is crossed out or followed by an action of removal. It indicates the function to dissolve, clear, or remove selected elements from a group or collection. */
@@ -7521,6 +7556,8 @@ _imagesmode = 'imagesmode',
 _immunology = 'immunology',
 /** The icon depicts an open book with visible pages spread out. It generally symbolizes access to stored knowledge, records, or a directory, making it suitable for managing contacts or reference information. */
 _import_contacts = 'import_contacts',
+/** The icon depicts a bordered square alongside a right-pointing arrow and a stylized sparkle element. It commonly signifies the action of importing, adding, or incorporating new content or data. */
+_import_spark = 'import_spark',
 /** The icon depicts a desktop computer monitor placed next to a smaller, standalone tablet or mobile device. This pairing usually symbolizes connectivity across various platforms or support for a complete digital ecosystem. */
 _important_devices = 'important_devices',
 /** The design features an outlined house shape accented by a corner checkmark. This symbol is used to indicate successful activation, confirmed connection status, or operational mode within a private residential environment. */
@@ -8103,10 +8140,16 @@ _mark_email_unread = 'mark_email_unread',
 _mark_unread_chat_alt = 'mark_unread_chat_alt',
 /** The icon is displayed within a contained rectangle showing stylized characters next to a prominent downward-pointing arrow. It typically represents the action of pasting structured content or formatted code into a document or text field. */
 _markdown = 'markdown',
+/** The icon depicts a stylized document containing three distinct internal sections, positioned next to a curved arrow pointing outward. This design signifies the process of converting or exporting content, such as changing a document's format or structure. */
+_markdown_convert = 'markdown_convert',
 /** The illustration shows a stylized document containing lines of structured text. It is used to indicate copying content that utilizes Markdown formatting rules. */
 _markdown_copy = 'markdown_copy',
+/** The icon is a stylized outline of a sheet of paper with internal lines. It represents content formatted using plain text markup, commonly associated with documents like Markdown. */
+_markdown_document = 'markdown_document',
 /** The design depicts a symbol representing the action of inserting content into a document or text field. It is used to paste structured data, such as plain text formatted using Markdown syntax, while preserving its intended layout and features. */
 _markdown_paste = 'markdown_paste',
+/** The icon depicts a rectangular area, symbolizing a document or content canvas, with a stylized sparkle burst overlaid in the upper right corner. It typically indicates the ability to generate, enhance, or quickly add new content, often through markdown formatting. */
+_markdown_spark = 'markdown_spark',
 /** The design depicts a stylized folder or mailbox shape with a small banner attached to its upper corner. It commonly indicates that there are unread emails, new messages, or notifications waiting in the system. */
 _markunread_mailbox = 'markunread_mailbox',
 /** The icon depicts two distinct circular shapes that overlap partially. It typically symbolizes a smooth visual transition, blending effect, or masking action between two different digital states or components. */
@@ -10001,6 +10044,8 @@ _share_reviews = 'share_reviews',
 _share_windows = 'share_windows',
 /** The design depicts a dessert composition with visible layers and mounds of topping served in a simple bowl. It is typically used to represent sweet, cold treats like ice cream, parfaits, or other refreshing desserts. */
 _shaved_ice = 'shaved_ice',
+/** The design features two opposing arrows above a pair of adjacent, rectangular blocks. This icon is used in spreadsheets or data programs to represent the action of swapping or exchanging columns. */
+_sheets_column_swap = 'sheets_column_swap',
 /** The icon visually combines a structured grid pattern with directional cues, suggesting data or tabular content. This symbol indicates that the associated document or display should be viewed using a right-to-left orientation, which is necessary for languages like Arabic or Hebrew. */
 _sheets_rtl = 'sheets_rtl',
 /** The design illustrates a partially visible bar or dock with an indicator showing its potential collapse. This feature controls whether the system taskbar automatically hides itself to maximize screen real estate while still being easily accessible when needed. */
