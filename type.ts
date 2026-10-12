@@ -1812,7 +1812,6 @@ export type MaterialSymbol = '123'
  | 'imagesmode'
  | 'immunology'
  | 'import_contacts'
- | 'import_spark'
  | 'important_devices'
  | 'in_home_mode'
  | 'inactive_order'
@@ -2052,10 +2051,14 @@ export type MaterialSymbol = '123'
  | 'logo_dev'
  | 'logout'
  | 'looks'
+ | 'looks_0'
  | 'looks_3'
  | 'looks_4'
  | 'looks_5'
  | 'looks_6'
+ | 'looks_7'
+ | 'looks_8'
+ | 'looks_9'
  | 'looks_one'
  | 'looks_two'
  | 'loupe'
@@ -2108,7 +2111,6 @@ export type MaterialSymbol = '123'
  | 'markdown_copy'
  | 'markdown_document'
  | 'markdown_paste'
- | 'markdown_spark'
  | 'markunread_mailbox'
  | 'masked_transitions'
  | 'masked_transitions_add'
@@ -7556,8 +7558,6 @@ _imagesmode = 'imagesmode',
 _immunology = 'immunology',
 /** The icon depicts an open book with visible pages spread out. It generally symbolizes access to stored knowledge, records, or a directory, making it suitable for managing contacts or reference information. */
 _import_contacts = 'import_contacts',
-/** The icon depicts a bordered square alongside a right-pointing arrow and a stylized sparkle element. It commonly signifies the action of importing, adding, or incorporating new content or data. */
-_import_spark = 'import_spark',
 /** The icon depicts a desktop computer monitor placed next to a smaller, standalone tablet or mobile device. This pairing usually symbolizes connectivity across various platforms or support for a complete digital ecosystem. */
 _important_devices = 'important_devices',
 /** The design features an outlined house shape accented by a corner checkmark. This symbol is used to indicate successful activation, confirmed connection status, or operational mode within a private residential environment. */
@@ -8036,6 +8036,8 @@ _logo_dev = 'logo_dev',
 _logout = 'logout',
 /** The icon depicts two parallel, smoothly curving lines forming an arch shape. It is commonly used to symbolize decoration, emphasis, or general artistic input like handwriting or signatures. */
 _looks = 'looks',
+/** The icon depicts a vertical bar centered inside a square outline. It is commonly used to represent an outbox, signifying messages or data waiting to be sent. */
+_looks_0 = 'looks_0',
 /** The icon depicts the numeral three centered inside a square outline. It is generally used to signify a quantity of three, such as representing groups, steps in a process, or items counted together. */
 _looks_3 = 'looks_3',
 /** The design is a clear representation of the numeral four. This symbol is commonly used to denote a specific level, format, or version within a series of features or content. */
@@ -8044,6 +8046,12 @@ _looks_4 = 'looks_4',
 _looks_5 = 'looks_5',
 /** The icon literally depicts the numeral six enclosed within a solid square border. This symbol is typically used to denote quantities or counts of six items, often indicating progress or a selected amount. */
 _looks_6 = 'looks_6',
+/** A clear square frame contains the digit 7 at its center. It is commonly used in interfaces to indicate a value, such as a counter, filter setting, or brightness level. */
+_looks_7 = 'looks_7',
+/** The image shows the digit 8 centered within a clean square frame. This indicator typically represents a counter, a specific level, or a numerical rating within an application. */
+_looks_8 = 'looks_8',
+/** The design features a bold numeral nine centered within a simple square boundary. This icon is generally used to denote a specific quantity, ranking, or numerical value. */
+_looks_9 = 'looks_9',
 /** The icon depicts a numeral '1' centered within a simple square boundary. It commonly indicates the first item in a list, the starting point of a sequence, or a primary action button in software and games. */
 _looks_one = 'looks_one',
 /** The design is a bold representation of the number two enclosed within a simple square border. This icon typically signals a quantity of two items or indicates that a function is on its second iteration or step. */
@@ -8148,8 +8156,6 @@ _markdown_copy = 'markdown_copy',
 _markdown_document = 'markdown_document',
 /** The design depicts a symbol representing the action of inserting content into a document or text field. It is used to paste structured data, such as plain text formatted using Markdown syntax, while preserving its intended layout and features. */
 _markdown_paste = 'markdown_paste',
-/** The icon depicts a rectangular area, symbolizing a document or content canvas, with a stylized sparkle burst overlaid in the upper right corner. It typically indicates the ability to generate, enhance, or quickly add new content, often through markdown formatting. */
-_markdown_spark = 'markdown_spark',
 /** The design depicts a stylized folder or mailbox shape with a small banner attached to its upper corner. It commonly indicates that there are unread emails, new messages, or notifications waiting in the system. */
 _markunread_mailbox = 'markunread_mailbox',
 /** The icon depicts two distinct circular shapes that overlap partially. It typically symbolizes a smooth visual transition, blending effect, or masking action between two different digital states or components. */
