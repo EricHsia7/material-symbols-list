@@ -1078,6 +1078,7 @@ export type MaterialSymbol = '123'
  | 'document_scanner'
  | 'document_search'
  | 'document_share'
+ | 'document_share_stack'
  | 'domain'
  | 'domain_add'
  | 'domain_disabled'
@@ -2590,6 +2591,7 @@ export type MaterialSymbol = '123'
  | 'person_celebrate'
  | 'person_check'
  | 'person_edit'
+ | 'person_eye'
  | 'person_heart'
  | 'person_off'
  | 'person_pin'
@@ -3229,6 +3231,7 @@ export type MaterialSymbol = '123'
  | 'speed_2x'
  | 'speed_3'
  | 'speed_4'
+ | 'speed_4_progress'
  | 'speed_camera'
  | 'spellcheck'
  | 'split_scene'
@@ -6090,6 +6093,8 @@ _document_scanner = 'document_scanner',
 _document_search = 'document_search',
 /** The design shows a stylized document with a folded corner next to a set of connected dots. This icon is used to indicate that a file or document is being shared or distributed to others. */
 _document_share = 'document_share',
+/** No description. */
+_document_share_stack = 'document_share_stack',
 /** Depicts a web address or network root symbol, often containing letters or slashes. This is typically used to identify the main location or domain name for a website or service. */
 _domain = 'domain',
 /** It shows the word "domain" connected to a plus sign. This is typically used when registering or linking an additional website address or subdomain. */
@@ -9114,6 +9119,8 @@ _person_celebrate = 'person_celebrate',
 _person_check = 'person_check',
 /** The design depicts a simple silhouette of a person alongside an angled writing tool like a pencil or pen. This icon typically indicates the function of modifying content or updating personal details within an application. */
 _person_edit = 'person_edit',
+/** No description. */
+_person_eye = 'person_eye',
 /** The icon depicts a stylized human silhouette paired with an adjacent heart symbol. This combination is generally used to symbolize emotional connection, deep affection, or important personal relationships. */
 _person_heart = 'person_heart',
 /** The icon depicts a simplified human silhouette marked by a prominent diagonal line crossing through it. This universally recognized symbol indicates prohibition, suggesting that an action, feature, or item is not allowed or unavailable. */
@@ -10392,6 +10399,8 @@ _speed_2x = 'speed_2x',
 _speed_3 = 'speed_3',
 /** The icon depicts a semi-circular gauge or dial with an arrow needle positioned on its face. This symbol is typically used to indicate measurable rates, such as speed, performance level, or intensity of a given status. */
 _speed_4 = 'speed_4',
+/** No description. */
+_speed_4_progress = 'speed_4_progress',
 /** The design shows a surveillance camera mounted on an adjustable arm pointing outward. It is typically used to denote areas where excessive speeding is prohibited or actively monitored by traffic authorities. */
 _speed_camera = 'speed_camera',
 /** The icon features a stylized alphabetical character paired with a prominent approval checkmark. It commonly indicates that written material has been proofread, confirming accuracy and resolving spelling or grammatical errors. */
