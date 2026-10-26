@@ -6093,7 +6093,7 @@ _document_scanner = 'document_scanner',
 _document_search = 'document_search',
 /** The design shows a stylized document with a folded corner next to a set of connected dots. This icon is used to indicate that a file or document is being shared or distributed to others. */
 _document_share = 'document_share',
-/** No description. */
+/** A multi-layered document icon is paired with a sharing glyph. This icon indicates the ability to send or export a collection of files simultaneously. */
 _document_share_stack = 'document_share_stack',
 /** Depicts a web address or network root symbol, often containing letters or slashes. This is typically used to identify the main location or domain name for a website or service. */
 _domain = 'domain',
@@ -9119,7 +9119,7 @@ _person_celebrate = 'person_celebrate',
 _person_check = 'person_check',
 /** The design depicts a simple silhouette of a person alongside an angled writing tool like a pencil or pen. This icon typically indicates the function of modifying content or updating personal details within an application. */
 _person_edit = 'person_edit',
-/** No description. */
+/** The icon features a minimalist outline of a person accompanied by a distinct eye symbol. It is commonly used to represent vision care, ophthalmology, or eye tracking services. */
 _person_eye = 'person_eye',
 /** The icon depicts a stylized human silhouette paired with an adjacent heart symbol. This combination is generally used to symbolize emotional connection, deep affection, or important personal relationships. */
 _person_heart = 'person_heart',
@@ -10399,7 +10399,7 @@ _speed_2x = 'speed_2x',
 _speed_3 = 'speed_3',
 /** The icon depicts a semi-circular gauge or dial with an arrow needle positioned on its face. This symbol is typically used to indicate measurable rates, such as speed, performance level, or intensity of a given status. */
 _speed_4 = 'speed_4',
-/** No description. */
+/** The design displays a curved gauge meter with an indicator needle pointing towards the higher range. It is typically used to visualize performance, rate, or a high degree of completion. */
 _speed_4_progress = 'speed_4_progress',
 /** The design shows a surveillance camera mounted on an adjustable arm pointing outward. It is typically used to denote areas where excessive speeding is prohibited or actively monitored by traffic authorities. */
 _speed_camera = 'speed_camera',
