@@ -854,7 +854,10 @@ export type MaterialSymbol = '123'
  | 'contract_delete'
  | 'contract_edit'
  | 'contrast'
+ | 'contrast_auto'
  | 'contrast_circle'
+ | 'contrast_inverse'
+ | 'contrast_inverse_auto'
  | 'contrast_rtl_off'
  | 'contrast_square'
  | 'control_camera'
@@ -1839,6 +1842,7 @@ export type MaterialSymbol = '123'
  | 'inpatient'
  | 'input'
  | 'input_circle'
+ | 'input_search'
  | 'insert_chart'
  | 'insert_page_break'
  | 'insert_text'
@@ -2084,6 +2088,7 @@ export type MaterialSymbol = '123'
  | 'mail_asterisk'
  | 'mail_lock'
  | 'mail_off'
+ | 'mail_person'
  | 'mail_shield'
  | 'male'
  | 'man'
@@ -5645,8 +5650,14 @@ _contract_delete = 'contract_delete',
 _contract_edit = 'contract_edit',
 /** It depicts two interlocking or offset circles within a defined boundary. This function is used to highlight differences or adjust the distinction between elements in an image or dataset. */
 _contrast = 'contrast',
+/** The icon depicts a stylized capital letter A juxtaposed against a sweeping crescent shape. It is commonly used to indicate an automatic adjustment of visual contrast or display properties. */
+_contrast_auto = 'contrast_auto',
 /** A circle containing alternating light and dark segments. It is used to adjust the visual contrast, clarity, or dynamic range of an image. */
 _contrast_circle = 'contrast_circle',
+/** The design depicts a circle split vertically into two distinct sections. This icon typically signifies the inversion or toggling of a contrast mode. */
+_contrast_inverse = 'contrast_inverse',
+/** The icon displays a curved outline adjacent to a capital letter A. It represents a setting related to automatic contrast inversion or display mode adjustment. */
+_contrast_inverse_auto = 'contrast_inverse_auto',
 /** The symbol depicts an indicator suggesting that advanced text styling features are disabled. This setting controls whether enhanced contrast or right-to-left text rendering is actively applied. */
 _contrast_rtl_off = 'contrast_rtl_off',
 /** A square frame containing contrasting colored sections depicts visual adjustment. This setting enhances screen readability by changing color levels, improving accessibility for users with visual needs. */
@@ -7615,6 +7626,8 @@ _inpatient = 'inpatient',
 _input = 'input',
 /** The icon depicts an upward-pointing arrow enclosed within a circular border. It commonly symbolizes initiating data input, uploading information, or moving something into a process. */
 _input_circle = 'input_circle',
+/** The icon shows a magnifying glass positioned beside a simple rectangular outline. This symbol is universally used to indicate a search feature or the ability to find specific information. */
+_input_search = 'input_search',
 /** The design depicts three vertical bars of varying heights arranged side by side. It is commonly used to represent data visualization, performance metrics, or statistical growth. */
 _insert_chart = 'insert_chart',
 /** The design features two distinct rectangular blocks separated by a solid dashed line segment. This symbol is used in word processing software to manually insert a page break, ensuring that content following the current section starts cleanly on the next physical page. */
@@ -8105,6 +8118,8 @@ _mail_asterisk = 'mail_asterisk',
 _mail_lock = 'mail_lock',
 /** The icon depicts a simple outline of an open envelope overlaid with a strong diagonal slash. It is commonly used to signify sending messages or outgoing communication that leaves the current system. */
 _mail_off = 'mail_off',
+/** The design depicts a standard envelope combined with a small human silhouette. It is commonly used to symbolize personal contact, individual mail, or communication directed to a specific user. */
+_mail_person = 'mail_person',
 /** The design features an open envelope paired with a protective shield icon. This combination is commonly used to signify secure email communication, data privacy, or encrypted messaging services. */
 _mail_shield = 'mail_shield',
 /** The design is composed of a circle connected to an arrow pointing diagonally upwards and to the right. This symbol is widely used to represent the male gender or general masculinity. */
