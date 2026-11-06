@@ -1014,6 +1014,7 @@ export type MaterialSymbol = '123'
  | 'device_swoosh_star'
  | 'device_thermostat'
  | 'devices'
+ | 'devices_2'
  | 'devices_fold'
  | 'devices_fold_2'
  | 'devices_off'
@@ -2171,6 +2172,7 @@ export type MaterialSymbol = '123'
  | 'minimize'
  | 'minor_crash'
  | 'mintmark'
+ | 'mirror_stack'
  | 'missed_video_call'
  | 'missing_controller'
  | 'mist'
@@ -2754,6 +2756,7 @@ export type MaterialSymbol = '123'
  | 'public_off'
  | 'publish'
  | 'published_with_changes'
+ | 'pull_request'
  | 'pulmonology'
  | 'pulse_alert'
  | 'punch_clock'
@@ -5970,6 +5973,8 @@ _device_swoosh_star = 'device_swoosh_star',
 _device_thermostat = 'device_thermostat',
 /** Depicts a cluster of various portable electronic devices, such as phones and tablets. This typically indicates settings used to view or manage linked hardware across different platforms. */
 _devices = 'devices',
+/** The icon depicts two rectangular outlines, representing different electronic devices. It is commonly used to signify device availability or the connectivity status of multiple hardware units. */
+_devices_2 = 'devices_2',
 /** It depicts multiple layered rectangular devices, suggesting a stacked or folded form. This symbol usually relates to device settings, views, or managing multi-screen content. */
 _devices_fold = 'devices_fold',
 /** It depicts an electronic handheld device that is shown closed or folded over. This commonly symbolizes portability or a versatile, folding piece of technology. */
@@ -8284,6 +8289,8 @@ _minimize = 'minimize',
 _minor_crash = 'minor_crash',
 /** The icon depicts a stylized letter S with a horizontal line through it, accompanied by a right-pointing arrow. This symbol typically represents the action of deleting, crossing out, or making revisions to written material. */
 _mintmark = 'mintmark',
+/** The icon depicts two rectangular outlines layered slightly offset from each other. It is typically used to symbolize mirroring, duplication, or the presence of multiple related items. */
+_mirror_stack = 'mirror_stack',
 /** The design shows a recognizable symbol for a video camera alongside indicators suggesting an interrupted or past event. This icon is used to alert the user that a video call was scheduled but was unfortunately missed or did not connect. */
 _missed_video_call = 'missed_video_call',
 /** The icon features curved radiating lines above a distinct informational dot containing an "i." It commonly serves as an alert that specific details or settings regarding the current Wi-Fi connection status are available for review. */
@@ -9450,6 +9457,8 @@ _public_off = 'public_off',
 _publish = 'publish',
 /** The icon depicts arrows forming a continuous circular loop around a central point. It signifies that the published material has undergone revisions and incorporates changes from its original version. */
 _published_with_changes = 'published_with_changes',
+/** The design depicts two parallel vertical lines connected by a set of opposing arrows. It symbolizes the process of proposing or merging changes between two different versions or repositories. */
+_pull_request = 'pull_request',
 /** The icon depicts the simplified outline of a pair of human lungs connected centrally. It is commonly used in medical contexts to represent pulmonology, respiratory care, or general lung health. */
 _pulmonology = 'pulmonology',
 /** The icon literally depicts a stylized heart shape containing a jagged line representing a pulse or electrocardiogram (ECG) reading, alongside an alarm symbol. It is used to signal a critical alert status, indicating that vital signs or cardiac monitoring requires immediate attention. */
