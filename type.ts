@@ -906,7 +906,6 @@ export type MaterialSymbol = '123'
  | 'crop_7_5'
  | 'crop_9_16'
  | 'crop_free'
- | 'crop_landscape'
  | 'crop_portrait'
  | 'crop_rotate'
  | 'crop_square'
@@ -1082,6 +1081,7 @@ export type MaterialSymbol = '123'
  | 'document_scanner'
  | 'document_search'
  | 'document_share'
+ | 'document_share_off'
  | 'document_share_stack'
  | 'domain'
  | 'domain_add'
@@ -1526,6 +1526,7 @@ export type MaterialSymbol = '123'
  | 'frame_exclamation'
  | 'frame_inspect'
  | 'frame_person'
+ | 'frame_person_2'
  | 'frame_person_mic'
  | 'frame_person_off'
  | 'frame_reload'
@@ -2246,7 +2247,6 @@ export type MaterialSymbol = '123'
  | 'mode_night'
  | 'mode_of_travel'
  | 'mode_off_on'
- | 'mode_standby'
  | 'model_training'
  | 'modeling'
  | 'money'
@@ -2734,7 +2734,11 @@ export type MaterialSymbol = '123'
  | 'print_connect'
  | 'print_disabled'
  | 'print_error'
+ | 'print_landscape_long'
+ | 'print_landscape_short'
  | 'print_lock'
+ | 'print_portrait_long'
+ | 'print_portrait_short'
  | 'priority'
  | 'priority_high'
  | 'privacy'
@@ -3596,6 +3600,7 @@ export type MaterialSymbol = '123'
  | 'touch_app'
  | 'touch_double'
  | 'touch_double_2'
+ | 'touch_double_2_hold'
  | 'touch_long'
  | 'touch_triple'
  | 'touchpad_mouse'
@@ -5757,8 +5762,6 @@ _crop_7_5 = 'crop_7_5',
 _crop_9_16 = 'crop_9_16',
 /** Depicts a square frame with an open boundary across the top edge. This often signifies that cropping restrictions are removed or content can be fully viewed. */
 _crop_free = 'crop_free',
-/** Depicts a horizontal rectangle with guiding corners, indicating an area for visual framing. This tool is used to adjust the composition and aspect ratio when editing images. */
-_crop_landscape = 'crop_landscape',
 /** It displays a photographic image cropped into a vertical rectangle shape. This guides users to select or adjust content designed specifically for portrait orientation. */
 _crop_portrait = 'crop_portrait',
 /** A picture frame is depicted with curved arrows surrounding its edges. This indicates the ability to adjust or rotate the orientation of cropped content. */
@@ -6109,6 +6112,8 @@ _document_scanner = 'document_scanner',
 _document_search = 'document_search',
 /** The design shows a stylized document with a folded corner next to a set of connected dots. This icon is used to indicate that a file or document is being shared or distributed to others. */
 _document_share = 'document_share',
+/** A stylized document graphic is crossed out by a diagonal prohibition line. This icon indicates that a function related to the document, such as sharing or printing, has been disabled or is disallowed. */
+_document_share_off = 'document_share_off',
 /** A multi-layered document icon is paired with a sharing glyph. This icon indicates the ability to send or export a collection of files simultaneously. */
 _document_share_stack = 'document_share_stack',
 /** Depicts a web address or network root symbol, often containing letters or slashes. This is typically used to identify the main location or domain name for a website or service. */
@@ -6997,6 +7002,8 @@ _frame_exclamation = 'frame_exclamation',
 _frame_inspect = 'frame_inspect',
 /** The design features a person's bust silhouette enclosed within a distinct square outline. It is typically used to represent adding or modifying an avatar, profile photo, or identifying user details. */
 _frame_person = 'frame_person',
+/** The design shows two outlined rectangles, each containing a stylized silhouette of a person. This icon typically represents user profiles, visitor lists, or the option to select multiple individuals. */
+_frame_person_2 = 'frame_person_2',
 /** The design features a stylized person positioned within a square frame next to a visible microphone graphic. This icon typically indicates participation in a live audio conversation, such as joining a voice chat or video call. */
 _frame_person_mic = 'frame_person_mic',
 /** The design features a simple silhouette of a person crossed out by a thick, diagonal line. This symbol is used to indicate that human presence is forbidden, disallowed, or excluded from an area or function. */
@@ -8437,8 +8444,6 @@ _mode_night = 'mode_night',
 _mode_of_travel = 'mode_of_travel',
 /** The design is a simple circular loop with a vertical line segment passing through it. This universally recognized symbol indicates the power function for electronic devices, used both to turn them on and off. */
 _mode_off_on = 'mode_off_on',
-/** The icon depicts two concentric rings forming a circular target-like design. It is typically used to indicate that a system or device is in a standby or idle operational mode. */
-_mode_standby = 'mode_standby',
 /** The illustration shows a lightbulb situated at the base of curved, directional arrows forming an open loop. It signifies an ongoing cycle of improvement and iteration, commonly used to represent processes like machine learning or continuous refinement. */
 _model_training = 'model_training',
 /** The design features several interconnected arrows pointing in various directions around distinct rectangular sections. This symbol generally represents a structured process, illustrating relationships, data flows, or comparative steps within a model or workflow. */
@@ -9413,8 +9418,16 @@ _print_connect = 'print_connect',
 _print_disabled = 'print_disabled',
 /** The design depicts a stylized representation of a printer body combined with an alert symbol. It typically indicates that there was an error or problem encountered during the printing process. */
 _print_error = 'print_error',
+/** The icon features a document shape presented in a wide, horizontal orientation. It is commonly used to specify or denote landscape mode for viewing or printing content. */
+_print_landscape_long = 'print_landscape_long',
+/** The icon displays a document graphic, often layered. It is used to indicate that a file is being prepared for printing or exporting. */
+_print_landscape_short = 'print_landscape_short',
 /** The icon displays a stylized representation of a printer paired with a visible padlock. This signifies that printing functionality or the content itself is secured, indicating restricted access or encrypted output for enhanced safety. */
 _print_lock = 'print_lock',
+/** The icon displays a stack of two long, vertical papers. It is used to denote the feature of printing or converting long documents into a final format. */
+_print_portrait_long = 'print_portrait_long',
+/** It depicts a single sheet of paper presented in a slightly angled view. This icon is used to represent a standard document file, indicating records that are ready for viewing, editing, or sharing. */
+_print_portrait_short = 'print_portrait_short',
 /** The design features a checkmark placed inside a rounded square box outline. This symbol is universally used to indicate confirmation, successful completion, or that an item has been verified and marked as done. */
 _priority = 'priority',
 /** The icon depicts a standard exclamation point. It is widely used to signal that immediate attention is needed, indicating an alert, warning, or matter of high priority. */
@@ -11138,6 +11151,8 @@ _touch_app = 'touch_app',
 _touch_double = 'touch_double',
 /** The design is an outline of a hand making two separate, quick tapping motions near a surface. This gesture typically represents a double-tap command used in mobile interfaces for specific functions like zooming or selecting. */
 _touch_double_2 = 'touch_double_2',
+/** The icon depicts a hand gesture with the thumb extended, accompanied by curved lines suggesting a touch or press action. It typically symbolizes a double-tap or a long press function in digital interfaces. */
+_touch_double_2_hold = 'touch_double_2_hold',
 /** The icon depicts a stylized finger making contact with radiating arcs of signal waves. It typically signifies user interaction or settings adjustments related to wireless connectivity, such as turning Wi-Fi on or off. */
 _touch_long = 'touch_long',
 /** The icon depicts a stylized hand pointing downward with three curved lines radiating from the wrist area. It typically signifies broadcasting a signal, initiating a search function, or completing an advanced action sequence. */
